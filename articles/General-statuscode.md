@@ -2,7 +2,8 @@
 title: "【備忘録】ステータスコードのまとめ"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [# ステータスコード
+topics: ["ステータスコード"] # タグ。["markdown", "rust", "aws"]のように指定する
+published: false # 公開設定（falseにすると下書き）
 
 ---
 
