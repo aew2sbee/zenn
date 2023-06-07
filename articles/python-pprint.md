@@ -6,6 +6,8 @@ topics: ["python", "pprint"] # タグ。["markdown", "rust", "aws"]のように�
 published: false # 公開設定（falseにすると下書き）
 ---
 ## はじめに
+**ネストの深いJson/辞書型のデータ**
+
 文字出力のprint関数より便利なpprint関数を知ったので共有します。
 
 ### 前提条件
