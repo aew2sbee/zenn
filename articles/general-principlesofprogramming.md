@@ -1,7 +1,7 @@
 ---
 title: "【備忘録】プリンシプルオブプログラミングの感想"
 emoji: "📚"
-type: "tech" # tech: 技術記事 / idea: アイデア
+type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["技術書"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 
