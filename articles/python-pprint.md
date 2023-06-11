@@ -1,13 +1,13 @@
 ---
 title: "【Python】見づらいJsonデータを解決する方法" # 記事のタイトル
-emoji: "🐍" # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "pprint", "Json"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 ## はじめに
 Pythonで開発している時に
-下記のような**見づらいJsonデータ**を出力する時ありませんか？
+print関数で下記のような**見づらいJsonデータ**を出力する時ありませんか？
 ```git
 {'student1': {'name': 'ito', 'age': 15, 'gender': 'male'}, 'student2': {'name': 'suzuki', 'age': 14, 'gender': 'female'}, 'student3': {'name': 'sakai', 'age': 18, 'gender': 'male'}}
 ```

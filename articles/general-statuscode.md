@@ -1,6 +1,6 @@
 ---
-title: "【備忘録】ステータスコードのまとめ"
-emoji: "📚"
+title: "【備忘録】ステータスコードのまとめ" # 記事のタイトル
+emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ステータスコード", "技術書"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: false # 公開設定（falseにすると下書き）
