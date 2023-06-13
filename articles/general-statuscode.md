@@ -3,10 +3,13 @@ title: "【備忘録】ステータスコードのまとめ" # 記事のタイ�
 emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ステータスコード", "技術書"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 
 ---
-# はじめに
+## はじめに
+**Webを支える技術 -HTTP、URI、HTML、そしてREST**を先日読みました。
+ステータスコードについての備忘録が欲しかったので、執筆しました。
+
 
 ## 分類と意味
 | ステータスコード | 分類 | 意味 |
@@ -30,3 +33,7 @@ published: false # 公開設定（falseにすると下書き）
 | 500 Internal Server Error | サーバー内部エラー  |
 | 503 Service Unavailable | サービス停止  |]
 published: false
+
+## おわりに
+**Webを支える技術 -HTTP、URI、HTML、そしてREST**を全部理解するのは難しかったですが、
+必要な時に読み返して理解を深めたいと思います。
