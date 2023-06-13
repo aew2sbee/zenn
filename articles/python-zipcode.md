@@ -95,6 +95,8 @@ res = requests.get(URL, params={'zipcode': zipcode})
 pprint(res.json())
 ```
 
+address1~3を組み合わせたら、
+`東京都墨田区押上`になり目的の東京スカイツリーの住所を取得する事が出来ました。
 ```bash
 $ python zipcode.py
 {'message': None,
