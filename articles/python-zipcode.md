@@ -28,7 +28,7 @@ published: true # 公開設定（falseにすると下書き）
 ```bash
 pip install requests
 ```
-### 2. requestsライブラリーがインストールされているかを確認する
+### 2. requestsライブラリーを確認する
 `Version: 2.28.2`がインストールされている事が確認できます。
 ```bash
 $ pip show requests
