@@ -6,9 +6,8 @@ topics: ["prisma", "seed", "typescript"] # タグ。["markdown", "rust", "aws"]�
 published: true # 公開設定（falseにすると下書き）
 ---
 ## はじめに
-社内で`seed`を導入する話になりました！
+社内で`seed`を導入する話になりました
 しかし、サンプルコードを記述し、`npx prisma db seed`を実行しましたが、
-
 下記のエラーで`seed`が実行出来ませんでした。
 ```bash
 $ npx prisma db seed
