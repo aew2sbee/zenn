@@ -3,7 +3,7 @@ title: "【Django】開発環境構築" # 記事のタイトル
 emoji: "🚀" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "django"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 ## はじめに
 以前、Djangoの勉強をした記録を公開したいと思います。
@@ -11,25 +11,34 @@ published: false # 公開設定（falseにすると下書き）
 ![Djangoインストール](/images/django-install.png)
 
 ### 対象読者
-- APIで郵便番号から住所を取得する方法が分からない方
+- Django初学者
+- Python微経験者
 
 ### この記事でわかること
-- APIで郵便番号から住所を取得する方法が分かる
+- Djangoをインストール方法
 
 
 ### 前提条件
 - Python 3.9.10
 - django 4.1.4
 
+
 # 手順解説
+
+## 0. ファイル構成の確認
+下記のようなファイル構成で始めます
+```bash
+src
+└─ Django
+```
+
 ## 1. ライブラリーのインストール
-### 1. djangoライブラリーをインストールする
-下記コマンドでインストールする
+djangoライブラリーをインストールします。
+1. `djangoライブラリー`を下記コマンドでインストールする
 ```bash
 pip install django
 ```
-### 2. djangoライブラリーを確認する
-`Version: 4.1.4`がインストールされている事が確認できます。
+2. `Version: 4.1.4`がインストールされている事を確認する
 ```bash
 $ pip show django
 Name: Django
@@ -46,19 +55,16 @@ Required-by:
 
 ## 2. 設定ファイルの作成
 Djangoプロジェクトの設定を管理するためのconfigを作成します。
-下記コマンドでカレントディレクトリ内にconfigファイルを作成します。
-```bash
-django-admin startproject config .
-```
-:::message
-設定ファイルの作成コマンドのテンプレートは、下記の通りです。
-```bash
-django-admin startproject ファイル名
-```
-:::
 
-
-## configファイルの作成
+1. カレントディレクトリを`Django`に移動する
+```bash
+cd src/Django
+```
+2. 下記コマンドで内に`config`ファイルを作成します。
+```bash
+django-admin startproject config
+```
+3. configファイルの作成後のファイル構成を確認する
 ```bash
 src
 └─ Django
@@ -72,12 +78,13 @@ src
      └─ manage.py
 ```
 
-## アプリケーションの作成
+## 3. アプリケーションの作成
+アプリケーションのベースとなるファイルを作成します。
+1. `Study`というアプリケーションの作成するために、下記コマンドを実行します。
 ```bash
 python manage.py startproject Study
 ```
-### 1. djangoライブラリーをインストールする
-下記コマンドでインストールする
+2. アプリケーションの作成後のファイル構成を確認する
 ```bash
 src
 └─ Django
@@ -100,16 +107,33 @@ src
 	└── manage.py
 ```
 
-:::message
-設定ファイルの作成コマンドは、下記の通りです。
-```bash
-django-admin startproject ファイル名
+## 4. settings.pyの編集
+**アプリケーションの起動**が出来るようアプリケーション側のapps.pyのクラスを追加します。
+1. `INSTALLED_APPSの配列`に`'Study.apps.StudyConfig',`を追加します。
+```diff python: settings.py
+INSTALLED_APPS = [
++    'Study.apps.StudyConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
 ```
-:::
+2. **言語**と**タイムゾーン**をローカル環境にする
+```diff python: settings.py
+# 日本時間
+- LANGUAGE_CODE = 'en-us'
++ LANGUAGE_CODE = 'ja'
 
-## ローカル環境で起動する
-### 1. 起動コマンドの実行
-`python manage.py runserver`でdjangoを起動します
+# 東京ゾーン
+- TIME_ZONE = 'UTC'
++ TIME_ZONE = 'Asia/Tokyo'
+```
+## 5. ローカル環境で起動する
+アプリケーションを実行します。
+1. `python manage.py runserver`でdjangoを起動します
 ```bash
 $ python manage.py runserver
 Watching for file changes with StatReloader
@@ -122,14 +146,15 @@ Django version 4.1.4, using settings 'config.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
-
-### 2. ブラウザ上でアプリケーションを確認する
+2. ブラウザ上でアプリケーションを確認する
 `http://127.0.0.1:8000/`をブラウザのURL欄に入力しアプリケーションを表示させます。
+:::message
+チュートリアルのロケットを飛ばすことが出来ました！
+:::
 ![Djangoインストール](/images/django-install.png)
 
 ## おわりに
-requestsライブラリーを初めて触りましたが
-今回の学習でrequestsライブラリーの使い方を理解する事が出来ました。
-
-他にもAPIもあるので、色々触って遊びたいと思います。
+昔は、チュートリアルのロケットを見るのに1時間以上かかりましたが、
+今ではすぐに表示できるようになりました。
+次は、Dockerfileで他人でも簡単に共有できるようになりたいです。
 
