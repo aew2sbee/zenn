@@ -10,10 +10,10 @@ typescriptの学習を始めた時に、サンプルコードを見て`ver/let/c
 色々調べて`ver/let/const`の違いを理解したので、執筆しします。
 
 ### 対象読者
-- TypeScrip初学者
+- TypeScript初学者
 
 ### この記事でわかること
-- TypeScripのver/let/constが分かる
+- TypeScriptのver/let/constが分かる
 
 
 ### 前提条件
