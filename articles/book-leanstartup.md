@@ -1,6 +1,6 @@
 ---
 title: "【備忘録】リーン・スタートアップ" # 記事のタイトル
-emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: "📖" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["技術書"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
