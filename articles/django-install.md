@@ -1,5 +1,5 @@
 ---
-title: "【Django】開発環境構築" # 記事のタイトル
+title: "【Django】環境構築/インストール" # 記事のタイトル
 emoji: "🚀" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "django"] # タグ。["markdown", "rust", "aws"]のように指定する
