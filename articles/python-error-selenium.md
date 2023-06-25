@@ -195,11 +195,11 @@ driver.implicitly_wait(10)
 |  検索手段  |  旧記述  |  新記述  |
 | --- | --- | --- |
 |  id  |  `.find_element_by_id("id")`  |  `.find_element(By.ID, "id")`  |
-|  name  |  `.find_element_by_name("id")`  |  `.find_element(By.NAME, "name")`  |
+|  name  |  `.find_element_by_name("name")`  |  `.find_element(By.NAME, "name")`  |
 |  xpath  |  `.find_element_by_xpath("xpath")`  |  `.find_element(By.XPATH, "xpath")`  |
-|  リンクのテキスト  |  `.find_element_by_link_tsxt("id")`  |  `.find_element(By.LINK_TEXT, "link text")`  |
-|  リンクのテキスト(部分一致)  |  `.find_element_by_partial_link_text("id")`  |  `.find_element(By.PARTIAL_LINK_TEXT, "partial link text"))`  |
-|  タグ名  |  `.find_element_by_tag_name("id")`  |  `.find_element(By.TAG_NAME, "tag name")`  |
+|  リンクのテキスト  |  `.find_element_by_link_tsxt("link text")`  |  `.find_element(By.LINK_TEXT, "link text")`  |
+|  リンクのテキスト(部分一致)  |  `.find_element_by_partial_link_text("partial link text")`  |  `.find_element(By.PARTIAL_LINK_TEXT, "partial link text"))`  |
+|  タグ名  |  `.find_element_by_tag_name("tag name")`  |  `.find_element(By.TAG_NAME, "tag name")`  |
 |  クラス名  |  `.find_element_by_class_name("class name")`  |  `.find_element(By.CLASS_NAME, "class name")`  |
 |  cssセレクタ  |  `.find_element_by_css_selector("css selector")`  |  `.find_element(By.CSS_SELECTOR, "css selector")`  |
 
