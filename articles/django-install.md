@@ -62,7 +62,7 @@ cd src/Django
 ```
 2. 下記コマンドで内に`config`ファイルを作成します。
 ```bash
-django-admin startproject config
+django-admin startproject config .
 ```
 3. configファイルの作成後のファイル構成を確認する
 ```bash
@@ -82,7 +82,7 @@ src
 アプリケーションのベースとなるファイルを作成します。
 1. `Study`というアプリケーションの作成するために、下記コマンドを実行します。
 ```bash
-django-admin startapp Study
+python manage.py startapp Study
 ```
 2. アプリケーションの作成後のファイル構成を確認する
 ```bash
