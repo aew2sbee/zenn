@@ -1,24 +1,24 @@
 ---
-title: "【TypeScript】便利な関数(redoce)の使い方" # 記事のタイトル
+title: "【TypeScript】便利な関数(reduce)の使い方" # 記事のタイトル
 emoji: "💴" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
-topics: ["typescript", "redoce"] # タグ。["markdown", "rust", "aws"]のように指定する
+topics: ["typescript", "reduce"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 ## はじめに
-配列の各要素に対して、結合して単一の値を生成する**redoce関数**を学びましたので、執筆しました。
+配列の各要素に対して、結合して単一の値を生成する**reduce関数**を学びましたので、執筆しました。
 
 |  項目  | 内容  |
 | ---- | ---- |
 |  **対象者**  |  ・TypeScript初学者  |
-|  **伝えたい内容**  |  ・redoceの使い方が分かる  |
+|  **伝えたい内容**  |  ・reduceの使い方が分かる  |
 |  **前提条件**  |  ・TypeScript 4.8.4 |
 
 ### 結論
 :::message
 配列の各要素に対して、結合して単一の値を生成するメソッド
 ```typescript
-const hoge = list.redoce((要素1, 要素2) => 処理);
+const hoge = list.reduce((要素1, 要素2) => 処理);
 ```
 :::
 
@@ -27,7 +27,7 @@ const hoge = list.redoce((要素1, 要素2) => 処理);
 2. **初期値を指定することが可能**です。初期値を省略すると、配列の最初の要素が初期値として使用されます。
 3. 要素の合計値や積だけでなく、平均値の計算や最大値・最小値の取得、特定の条件を満たす要素の抽出など、**様々な処理**を行うことができます。
 
-## 1. redoce()で合計値を求めるサンプルコード
+## 1. reduce()で合計値を求めるサンプルコード
 ```typescript
 // 数字の配列
 const numbers = [1,2,3,4,5];
@@ -43,5 +43,5 @@ console.log(result)
 ```
 
 ## おわりに
-.redoce()といえば、減らされたくないモノをイメージして💴のemojiにしました。
+.reduce()といえば、減らされたくないモノをイメージして💴のemojiにしました。
 
