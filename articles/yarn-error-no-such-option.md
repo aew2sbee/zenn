@@ -17,14 +17,10 @@ yarn: error: no such option: --template
 
 色々調べて無事に解決出来ましたので、その方法をご紹介します。
 
-### 対象読者
-- 上記のエラーで`yarn: error: no such option: --template`が実行できない方
-
-### この記事でわかること
-- 上記のエラーの解決方法
-
-
-# 手順解説
+|  項目  | 内容  |
+| ---- | ---- |
+|  **対象者**  |  ・上記のエラーで`yarn: error: no such option: --template`が実行できない方  |
+|  **伝えたい内容**  |  ・上記のエラーの解決方法  |
 
 ## 結論
 :::message

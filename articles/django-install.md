@@ -10,18 +10,12 @@ published: true # 公開設定（falseにすると下書き）
 下記の画面が表示されるまでを解説したいと思います。
 ![Djangoインストール](/images/django-install.png)
 
-### 対象読者
-- Django初学者
-- Python微経験者
 
-### この記事でわかること
-- Djangoをインストール方法
-
-
-### 前提条件
-- Python 3.9.10
-- django 4.1.4
-
+|  項目  | 内容  |
+| ---- | ---- |
+|  **対象者**  |  ・Django初学者<br>・Python微経験者  |
+|  **伝えたい内容**  |  ・Djangoをインストール方法  |
+|  **前提条件**  |  ・Python 3.9.10<br>・django 4.1.4 |
 
 # 手順解説
 

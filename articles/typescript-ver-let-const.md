@@ -9,20 +9,16 @@ published: true # 公開設定（falseにすると下書き）
 typescriptの学習を始めた時に、サンプルコードを見て`ver/let/const`の違いが分かりませんでした。
 色々調べて`ver/let/const`の違いを理解したので、執筆しします。
 
-### 対象読者
-- TypeScript初学者
 
-### この記事でわかること
-- TypeScriptのver/let/constが分かる
-
-
-### 前提条件
-- TypeScript 3.8.3
+|  項目  | 内容  |
+| ---- | ---- |
+|  **対象者**  |  ・`ver/let/const`の違いを知りたい方  |
+|  **伝えたい内容**  |  ・`ver/let/const`の違いが分かる  |
+|  **前提条件**  |  ・TypeScript 3.8.3 |
 
 ### 結論
 :::message
 それぞれの違いは、**再代入**と**再宣言**が可能かどうかになります。
-
 :::
 
 |  変数宣言  |  意味  |  再代入  |  再宣言  |
