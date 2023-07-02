@@ -20,7 +20,7 @@ Python2年生 データ分析のしくみ 体験してわかる！会話でま�
 
 
 ## サンプルコード
-### 1. matplotlibライブラリーをインストール
+### 1. ライブラリーをインストール
 ```bash
 pip install matplotlib
 pip install pandas
