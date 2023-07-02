@@ -66,7 +66,7 @@ Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: numpy, python-dateutil, pytz
 Required-by:
 ```
-### 2. サンプルコード
+### 2. コーディング
 折れ線グラフを描きます
 ```python
 import matplotlib.pyplot as plt

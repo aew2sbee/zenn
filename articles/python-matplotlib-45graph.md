@@ -38,7 +38,7 @@ Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: contourpy, cycler, fonttools, kiwisolver, numpy, packaging, pillow, pyparsing, python-dateutil
 Required-by:
 ```
-### 2. サンプルコード
+### 2. コーディング
 右斜め45度に伸びる直線のグラフを描きます
 ```python
 import matplotlib.pyplot as plt
