@@ -24,6 +24,7 @@ Dockerに関する説明等は行いません。
 
 ## Dockerイメージとは？
 ![sweets_anko_pack](/images/sweets_anko_pack.png =250x)
+
 **解答：Dockerコンテナを作成するためのスタンドアロンのパッケージです。**
 
 つまり、あんこのことです。
@@ -34,6 +35,7 @@ Dockerに関する説明等は行いません。
 
 ## Dockerコンテナとは？
 ![sweets_taiyaki1_tsubuan](/images/sweets_taiyaki1_tsubuan.png =250x)
+
 **解答：Dockerイメージを実行するためのランタイム環境のこと**
 
 つまり、たい焼きのことです。
@@ -44,6 +46,7 @@ Dockerに関する説明等は行いません。
 
 ## Dockerfileってなんで必要なの？
 ![docker01](/images/docker01.png)
+
 **解答：DockerイメージからDockerコンテナをビルドするために必要です。**
 
 つまり、たい焼きのレシピにあたります。
@@ -51,12 +54,14 @@ Dockerに関する説明等は行いません。
 
 下記のイメージのように様々なレシピ(`Dockerfile`)があれば、**大好きなあんこのスイーツ**を作る事が出来ます。
 ![docker02](/images/docker02.png)
+
 :::message
 1つのDockerイメージからDockerfileによってオリジナルのDockerコンテナを作成できる
 :::
 
 ### PythonのDockerイメージの場合
 ![docker03](/images/docker03.png)
+
 PythonのDockerイメージから...
 - `TensorFlow`に関するDockerfile -> AIを動かす環境が出来る
 - `django`に関するDockerfile -> YoutubeのようなWebアプリを動かす環境が出来る
@@ -64,11 +69,13 @@ PythonのDockerイメージから...
 
 ## docker-compose.ymlってなんで必要なの？
 ![docker04](/images/docker04.png =500x)
+
 **解答：Docker Composeを使用して複数のコンテナを定義し、それらを組み合わせてアプリケーションの実行環境を構築するために必要です。**
 
 つまり、**大好きなあんこのスイーツ**の詰め合わせセットを作ることが出来ます。
 ### Django/PostgreSQLのDockerコンテナの場合
 ![docker05](/images/docker05.png)
+
 上記のイメージのように複数のDockerコンテナ(`django/PostgreSQL`)を組み合わせたWebアプリを動かす環境を作成する事が出来ます。
 
 ## おわりに
