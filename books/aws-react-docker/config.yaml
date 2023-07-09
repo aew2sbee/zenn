@@ -1,0 +1,7 @@
+title: "SandBooksのあゆみ"
+summary: "本書は社内の有志メンバー向けの書籍です。0からWebアプリ開発を行うハンズオン形式となっております。また、細かい内容は記載せず基本的な内容を記載します。※2023/12月の完成を向けて少しずつ執筆します。随時更新予定"
+topics: ["react", "aws", "lambda", "docker"] # トピック（5つまで）
+published: true # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - chapter01 # はじめに
