@@ -18,7 +18,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## 1. IAMユーザーを作成する
 
-### 1. IAMに開く
+### 1. IAMを開く
 **ルートユーザー**で検索欄に`IAM`と検索し検索結果から**IAM**をクリックします。
 ![sandbooks-aws-IAM-step01](/images/sandbooks-aws-IAM-step01.png)
 
