@@ -46,7 +46,7 @@ cd ~
 cd Work/
 git clone git@github.com:[ユーザー名]/sandbooks.git
 ````
-3. 手順2のコマンドを実行する
+3. `cd Work/sandbooks`のコマンドを実行する
 
 ****
 ### Q: `404 This is not the web page you are looking for.`と表示される場合は？
