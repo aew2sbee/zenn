@@ -29,7 +29,8 @@ cd Work/sandbooks
 
 今後は、この場所で作業を行います。
 
-****
+## Error対応
+
 ### Q: `bash: cd: Work/sandbooks: No such file or directory`とErrorが発生する場合は？
 :::message alert
 `sandbooks`を`git clone`していない可能性があります。
@@ -44,7 +45,11 @@ git clone git@github.com:[ユーザー名]/sandbooks.git
 ````
 3. 手順2のコマンドを実行する
 
+****
 ### Q: `404 This is not the web page you are looking for.`と表示される場合は？
+:::message alert
+`sandbooks`をフォークされていない可能があります。
+:::
 1. `https://github.com/[会社のアカウント名]/sandbooks`にアクセスする
 2. `Fork`の右横の`▼`をクリックする
 ![sandbooks-git-step03](/images/sandbooks-git-step03.png)
