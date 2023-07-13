@@ -38,6 +38,9 @@ cd Work/sandbooks
 1. `https://github.com/ユーザー名/sandbooks`をURLに入力して表示されるのか？
     - `404 This is not the web page you are looking for.`と表示される場合は、フォークされていない可能があります。
 2. 下記コマンドを実行し、`git clone`します。
+    :::message
+    `git clone`実行後、**GitHubのパスワード**を求められます。
+    :::
 ````bash
 cd ~
 cd Work/
