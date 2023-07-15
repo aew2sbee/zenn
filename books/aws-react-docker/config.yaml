@@ -6,4 +6,5 @@ price: 0 # 有料の場合200〜5000
 chapters:
   - chapter01 # はじめに
   - chapter02 # 作業する場所(ローカル環境)を確認しよう！
-  - front-chapter01 # ローカル環境にReactの動かす環境を構築しよう！
+  - front-chapter01
+  - infra-chapter01
