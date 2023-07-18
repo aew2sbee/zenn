@@ -16,47 +16,44 @@ published: true # 公開設定（falseにすると下書き）
 |  **前提条件**  |  ・AWSのルートユーザー作成済み |
 
 
-## 1. IAMユーザーを作成する
+## IAMユーザーを作成する
 
-### 1. IAMを開く
+1. IAMを開く
 **ルートユーザー**で検索欄に`IAM`と検索し検索結果から**IAM**をクリックします。
 ![sandbooks-aws-IAM-step01](/images/sandbooks-aws-IAM-step01.png)
 
-### 2. 新規ユーザー作成画面を開く
+2. 新規ユーザー作成画面を開く
 左側の`ユーザー`を選択し、右側の青色ボタンの`ユーザーを追加`をクリックします。
 ![sandbooks-aws-IAM-step02](/images/sandbooks-aws-IAM-step02.png)
 
-###  3. ユーザー名と初期パスワードを設定する
-1. ユーザー名を入力します
+3. ユーザー名を入力します
     ※任意の名前を入力します。今回は、`test_user`とします
-2. `AWSマネジメントコンソールへのユーザーアクセスを提供する`に✅を付けます。
-3. `次へ`ボタンをクリックします。
+4. `AWSマネジメントコンソールへのユーザーアクセスを提供する`に✅を付けます。
+5. `次へ`ボタンをクリックします。
 ![sandbooks-aws-IAM-step03](/images/sandbooks-aws-IAM-step03.png)
 
-### 4. ユーザー権限を設定する
-1. ポリシーを直接アタッチする
+6. `ポリシーを直接アタッチする`を選択する
 ![sandbooks-aws-IAM-step04](/images/sandbooks-aws-IAM-step04.png)
-2. `ReadOnlyAccess`を検索欄に入力する
-3. `8ページ`まで移動する
-4. `ReadOnlyAccess`に✅を付けます。
-5. `次へ`ボタンをクリックします。
+7. `ReadOnlyAccess`を検索欄に入力する
+8. `8ページ`まで移動する
+9. `ReadOnlyAccess`に✅を付けます。
+10. `次へ`ボタンをクリックします。
 ![sandbooks-aws-IAM-step05](/images/sandbooks-aws-IAM-step05.png)
 
-### 5. 設定した値を確認する
-1. 下記項目が指定した値であるか確認する
+11. 下記項目が指定した値であるか確認する
     - ユーザー名が指定した名前である
     - **許可の概要**に`ReadOnlyAccess`が含まれている
-2. `ユーザーの作成`をクリックする
+12. `ユーザーの作成`をクリックする
 ![sandbooks-aws-IAM-step06](/images/sandbooks-aws-IAM-step06.png)
 
-### 6. ユーザー名とパスワードを控える
-1. `ユーザーが正常に作成されました`のメッセージを確認する
-2. 下記項目をコピーし、ログインのために控える
-    - コンソールサインインURL
-    - ユーザー名
-    - コンソールパスワード
+13. `ユーザーが正常に作成されました`のメッセージを確認する
+14. `.csvファイルをダウンロード`をクリックしログイン情報を控える
 3. `ユーザーリストに戻る`をクリックします。
 ![sandbooks-aws-IAM-step07](/images/sandbooks-aws-IAM-step07.png)
+![sandbooks-aws-IAM-step08](/images/sandbooks-aws-IAM-step08.png)
+![sandbooks-aws-IAM-step09](/images/sandbooks-aws-IAM-step09.png)
+![sandbooks-aws-IAM-step10](/images/sandbooks-aws-IAM-step10.png)
+![sandbooks-aws-IAM-step11](/images/sandbooks-aws-IAM-step11.png)
 
 
 ## おわりに

@@ -6,5 +6,6 @@ price: 0 # 有料の場合200〜5000
 chapters:
   - chapter01 # はじめに
   - chapter02 # 作業する場所(ローカル環境)を確認しよう！
+  - chapter03 # リーダーに「このタスクをお願い！」と言われたらやること
   - front-chapter01
-  - infra-chapter01
+  # - infra-chapter01
