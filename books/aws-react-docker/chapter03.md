@@ -43,10 +43,10 @@ title: "リーダーに「このタスクをお願い！」と言われたらや
 ![sandbooks-github-branch-step05](/images/sandbooks-github-branch-step05.png)
 
 9. 下記コマンドを実行し、ローカル環境に作成したブランチを取得する
-    `[new branch] feature-#1-login-func -> origin/feature-#1-login-func`を確認出来ます。
     ````bash
     git pull
     ````
+    `[new branch] feature-#1-login-func -> origin/feature-#1-login-func`を確認出来ます。
     ![sandbooks-github-branch-step06](/images/sandbooks-github-branch-step06.png)
 
 10. 下記のコマンドを実行し作成したブランチに切り替える
