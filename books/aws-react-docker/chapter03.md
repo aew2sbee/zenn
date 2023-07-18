@@ -79,6 +79,8 @@ title: "リーダーに「このタスクをお願い！」と言われたらや
     git add [作業したファイル名]
     ````
     ※今回の場合は、`git add test.txt`になります。
+
+    <br>もう一度、`git status`を実行し、作業内容を確認する
     ※**緑色文字**は、ステージに変更されたという意味
     ![sandbooks-github-branch-step09](/images/sandbooks-github-branch-step09.png)
 
