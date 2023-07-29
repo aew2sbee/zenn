@@ -157,22 +157,21 @@ Quit the server with CONTROL-C.
 
 ## 6. models.pyの作成
 書籍の情報を管理するテーブル設計を行います
-````diff python: books/models.py
+````python: books/models.py
 from django.db import models
 
 # Create your models here.
-+ class Books(models.Model):
-+    # 書籍のタイトル
-+    title = models.CharField(max_length=100)
-+    # 登録時の日付/時刻を登録する
-+    # auto_now_add: 登録時のみ
-+    created_at = models.DateTimeField(auto_now_add=True)
-+    # 更新時の日付/時刻を更新する
-+    updated_at = models.DateTimeField(auto_now=True)
-+
-+    # 管理者画面で表示するデータをtitleの値を返す
-+    def __str__(self):
-+        return self.title
+class Books(models.Model):
+   # 書籍のタイトル
+   title = models.CharField(max_length=100)
+   # 登録時の日付/時刻を登録する
+   # auto_now_add: 登録時のみ
+   created_at = models.DateTimeField(auto_now_add=True)
+   # 更新時の日付/時刻を更新する
+   updated_at = models.DateTimeField(auto_now=True)
+   # 管理者画面で表示するデータをtitleの値を返す
+   def __str__(self):
+       return self.title
 ````
 
 
@@ -320,8 +319,13 @@ urlpatterns = [
 
 ## 動作確認
 ### 1. 初期状態を確認する
-1. `http://127.0.0.1:8000/books/list/`にアクセスする
-2. まだデータを追加していないので、`[]`が確認出来る
+アプリケーションを実行します。
+1. 下記コマンドを実行し、djangoを起動します
+````bash
+python manage.py runserver
+````
+2. `http://127.0.0.1:8000/books/list/`にアクセスする
+3. まだデータを追加していないので、`[]`が確認出来る
 ![drf-api-step01.png](/images/drf-api-step01.png)
 
 ### 2. データを追加する(Create)
