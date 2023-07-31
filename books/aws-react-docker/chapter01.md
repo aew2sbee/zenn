@@ -13,7 +13,7 @@ title: "はじめに"
 |  領域  | 使用技術/言語  |
 | ---- | ---- |
 |  フロント  |  React-TypeScript  |
-|  バックエンド  | AWS Lambda  |
+|  バックエンド  | Django rest framework  |
 |  インフラ  |  AWS |
 
 ## どうして本書を執筆したのか？
