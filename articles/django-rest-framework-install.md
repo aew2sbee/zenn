@@ -174,6 +174,8 @@ class Books(models.Model):
        return self.title
 ````
 
+#### modelsについての参考サイト
+@[card](https://zenn.dev/aew2sbee/articles/django-rest-framework-models)
 
 ## 7. makemigrationsの実行
 下記コマンドを実行し、先ほど作成したモデルの`books`を`makemigrations`を行う
