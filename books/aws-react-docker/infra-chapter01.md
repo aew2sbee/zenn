@@ -1,5 +1,5 @@
 ---
-title: "AWSの初期設定をしょう！"
+title: "[Infra] AWSの初期設定をしょう！"
 ---
 
 ## 1. IAMで読み取り専用(ReadOnlyAccess)ユーザーを作成する

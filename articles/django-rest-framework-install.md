@@ -157,6 +157,8 @@ Quit the server with CONTROL-C.
 
 ## 6. models.pyの作成
 書籍の情報を管理するテーブル設計を行います
+※modelsの書き方については下記記事を参考にしてください。
+@[card](https://zenn.dev/aew2sbee/articles/django-rest-framework-models)
 ````python: books/models.py
 from django.db import models
 
@@ -173,9 +175,6 @@ class Books(models.Model):
    def __str__(self):
        return self.title
 ````
-
-#### modelsについての参考サイト
-@[card](https://zenn.dev/aew2sbee/articles/django-rest-framework-models)
 
 ## 7. makemigrationsの実行
 下記コマンドを実行し、先ほど作成したモデルの`books`を`makemigrations`を行う
