@@ -56,5 +56,18 @@ published: true # 公開設定（falseにすると下書き）
 ### 3. WSL
 ![extension_docker](/images/extension_docker.png)
 
+
+## 補足情報
+- **Q: WSLに関するエラー対応とは？**
+    - A: 下記のようなエラーが発生する可能性があります。
+![docker_desktop_step5](/images/docker_desktop_step5.png)
+    1. Linux カーネル更新するインストーラーをダウンロードする
+    @[card](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
+    ![docker_desktop_web](/images/docker_desktop_web.png)
+    2. インストーラーを実行する
+    下記の画像のように手順を進め、WSLの更新を完了させてください。
+    ![Linux_step0](/images/Linux_step0.png)
+    ![Linux_step1](/images/Linux_step1.png)
+
 ## おわりに
 Docker DeskTopで環境差分をなくしましょう！
