@@ -7,6 +7,7 @@ chapters:
   - chapter01 # はじめに
   - chapter02 # 作業する場所(ローカル環境)を確認しよう！
   - chapter03 # リーダーに「このタスクをお願い！」と言われたらやること
+  - chapter04 # Dockerでみんなと同じ環境で開発をしよう！
   - front-chapter01
   - backend-chapter01
   - infra-chapter01
