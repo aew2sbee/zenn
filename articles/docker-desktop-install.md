@@ -50,11 +50,11 @@ published: true # 公開設定（falseにすると下書き）
 
 ## Visual Studio Codeの拡張機能の追加
 ### 1. Docker
-![extension_wsl](/images/extension_wsl.png)
+![extension_docker](/images/extension_docker.png)
 ### 2. Dev Containers
 ![extension_dev_containers](/images/extension_dev_containers.png)
 ### 3. WSL
-![extension_docker](/images/extension_docker.png)
+![extension_wsl](/images/extension_wsl.png)
 
 
 ## 補足情報
