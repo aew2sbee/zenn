@@ -34,6 +34,8 @@ about_Execution_Policies help topic at https:/go.microsoft.com/fwlink/?LinkID=13
 Do you want to change the execution policy?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
 ````
+
+
 ## 2. AWS Vaultのインストール
 `Scoop`を使って`AWS Vault`をインストールします
 ````bash
