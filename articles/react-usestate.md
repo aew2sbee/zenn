@@ -45,9 +45,9 @@ src
 └── setupTests.ts
 ```
 
-## 1. useState のキホン
+## 1. useStateのキホン
 
-まずは**useState のキホン**を理解します。
+まずは**useStateのキホン**を理解します。
 
 :::message
 `useState`のキホン分法は下記の通りになります。
@@ -194,7 +194,7 @@ npm start
 
 以上で`useState`でObjectを使う解説になります。
 
-## 3. useState で配列を使う
+## 3. useStateで配列を使う
 
 次は、`useState`を扱うデータを`List`の場合を解説します
 
@@ -269,7 +269,7 @@ npm start
 以上で`useState`でListを使う解説になります。
 
 
-## 4. useState で型を指定する
+## 4. useStateで型を指定する
 
 :::message
 `useState`のキホン分法は下記の通りになります。
@@ -296,7 +296,7 @@ export const State = () => {
 }
 ```
 
-## 5. useState で自作の型を指定する
+## 5. useStateで自作の型を指定する
 
 ```tsx: src/components/useState02.tsx
 import React,  {useState} from "react";
@@ -327,5 +327,5 @@ export const SatateObject = () => {
 
 ## さいごに
 
-これで React の useState を理解する事が出来たと思います。
+これで React の useStateを理解する事が出来たと思います。
 お疲れ様でした。
