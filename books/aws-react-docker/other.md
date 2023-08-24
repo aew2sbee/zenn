@@ -7,8 +7,13 @@ title: "おまけ情報"
 @[card](https://zenn.dev/aew2sbee/articles/git-basiccommand)
 
 ## テスト
+下記記事を参考にして作業を進めてください。
 @[card](https://zenn.dev/aew2sbee/articles/thinking-test-pattern)
 
+
+## Atomic Design
+下記記事を参考にして作業を進めてください。
+@[card](https://zenn.dev/aew2sbee/articles/atomic-design)
 
 ## TypeScript
 下記記事を参考にして作業を進めてください。
