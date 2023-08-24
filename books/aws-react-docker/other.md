@@ -13,7 +13,7 @@ title: "おまけ情報"
 
 ## Atomic Design
 下記記事を参考にして作業を進めてください。
-@[card](https://zenn.dev/aew2sbee/articles/atomic-design)
+@[card](https://zenn.dev/aew2sbee/articles/atomic-design-for-digital)
 
 ## TypeScript
 下記記事を参考にして作業を進めてください。
