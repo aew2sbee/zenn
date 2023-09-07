@@ -31,8 +31,7 @@ published: true # 公開設定（falseにすると下書き）
 | 401 Unauthorized | アクセス権不正  |
 | 404 Not Found | リソースの不在 |
 | 500 Internal Server Error | サーバー内部エラー  |
-| 503 Service Unavailable | サービス停止  |]
-published: false
+| 503 Service Unavailable | サービス停止  |
 
 ## おわりに
 **Webを支える技術 -HTTP、URI、HTML、そしてREST**を全部理解するのは難しかったですが、
