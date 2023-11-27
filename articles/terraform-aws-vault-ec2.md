@@ -153,7 +153,7 @@ variable "amis" {
 ## 5. terraformでEC2を作成する
 1. 下記コマンドを実行する
 ````powerShell
-aws-vault exec mfa -- terraform init
+aws-vault exec sandbooks -- terraform init
 ````
 
 実行結果
@@ -179,7 +179,7 @@ commands will detect it and remind you to do so if necessary.
 ````
 2. 下記コマンドを実行する
 ````powerShell
-aws-vault exec mfa -- terraform plan
+aws-vault exec sandbooks -- terraform plan
 ````
 
 実行結果：Errorが発生しなかったので、問題がなさそうですね。
@@ -248,7 +248,7 @@ you run "terraform apply" now.
 
 3. 下記コマンドを実行する
 ````powerShell
-aws-vault exec mfa -- terraform apply
+aws-vault exec sandbooks -- terraform apply
 ````
 
 実行途中で`Only 'yes' will be accepted to approve.`と尋ねられるので、`yes`と入力する
