@@ -1,0 +1,10 @@
+title: 'Next.jsのチュートリアル'
+summary: '本書は社内向けの研修資料です。0からNext.jsを学習できるに内容です。'
+topics: ['nextjs', 'typescript', '初心者向け'] # トピック（5つまで）
+published: true # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - chapter01 # はじめに
+  - tsconfig-json
+  - prettier
+  # - chapter02 # Visual Studio Codeをインストール
