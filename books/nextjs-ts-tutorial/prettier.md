@@ -34,7 +34,7 @@ npm install prettier --save-dev
 {
 "scripts": {
   ...
-  "prettier-format": "prettier --write .",
+  "prettier-format": "prettier --config .prettierrc --write .",
   }
 }
 ```
