@@ -23,7 +23,7 @@ npm install prettier --save-dev
 }
 ````
 ## package.jsonを更新する
-````json: .prettierrc
+````json: package.json
 {
 "scripts": {
   ...
