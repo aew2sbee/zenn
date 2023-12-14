@@ -126,11 +126,12 @@ title: '[知識] 静的サイト生成(SSG)'
     ✓ Compiled in 328ms (645 modules)
     [2023/12/14 11:14:16] : The getStaticProps was executed
     [2023/12/14 11:14:23] : The getStaticProps was executed
+    [2023/12/14 11:35:22] : The getStaticProps was executed
     ```
 5. [SSG実装ページ](http://localhost:3000/sgg)にアクセスする
     下記の画像のようなページが表示される
     :::message
     ページアクセス時に最新コードで`getStaticProps`が実行されるため、時刻が更新される
-    [2023/12/14 11:12:53] -> new [2023/12/14 11:14:23]
+    [2023/12/14 11:12:53] -> new [2023/12/14 11:35:22]
     :::
     ![next.js-SSG-step02](/images/next.js-SSG-step02.png)
