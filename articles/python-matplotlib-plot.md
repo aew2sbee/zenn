@@ -1,32 +1,37 @@
 ---
-title: "【Python】matplotlibで折れ線グラフを描く" # 記事のタイトル
-emoji: "⛺" # アイキャッチとして使われる絵文字（1文字だけ）
-type: "tech" # tech: 技術記事 / idea: アイデア記事
-topics: ["python", "matplotlib", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
+title: '[Python] matplotlibで折れ線グラフを描く' # 記事のタイトル
+emoji: '⛺' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['python', 'matplotlib', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
+
 ## はじめに
-Pythonのデータ分析の学習を始めたいと思い、
-Python2年生 データ分析のしくみ 体験してわかる！会話でまなべる！を購入しました。
-そこでmatplotlibで折れ線グラフを描くを学びました。
+
+Python のデータ分析の学習を始めたいと思い、
+Python2 年生 データ分析のしくみ 体験してわかる！会話でまなべる！を購入しました。
+そこで matplotlib で折れ線グラフを描くを学びました。
 
 学習した内容を執筆します。
 
-|  項目  | 内容  |
-| ---- | ---- |
-|  **対象者**  |  ・matplotlibで折れ線グラフを描く方法が分からない  |
-|  **伝えたい内容**  |  ・Pythonで折れ線グラフを描く方法  |
-|  **前提条件**  |  ・Python 3.9.10<br>・matplotlib 3.6.2<br>・seaborn 0.12.2<br>・pandas 1.5.2 |
-
+| 項目             | 内容                                                                        |
+| ---------------- | --------------------------------------------------------------------------- |
+| **対象者**       | ・matplotlib で折れ線グラフを描く方法が分からない                           |
+| **伝えたい内容** | ・Python で折れ線グラフを描く方法                                           |
+| **前提条件**     | ・Python 3.9.10<br>・matplotlib 3.6.2<br>・seaborn 0.12.2<br>・pandas 1.5.2 |
 
 ## サンプルコード
+
 ### 1. ライブラリーをインストール
+
 ```bash
 pip install matplotlib
 pip install pandas
 pip install seaborn
 ```
+
 インストールが出来たか下記コマンドで確認します。
+
 ```bash
 $ pip show matplotlib
 Name: matplotlib
@@ -40,6 +45,7 @@ Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: contourpy, cycler, fonttools, kiwisolver, numpy, packaging, pillow, pyparsing, python-dateutil
 Required-by:
 ```
+
 ```bash
 $ pip show seaborn
 Name: seaborn
@@ -53,6 +59,7 @@ Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: matplotlib, numpy, pandas
 Required-by:
 ```
+
 ```bash
 $ pip show pandas
 Name: pandas
@@ -66,8 +73,11 @@ Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: numpy, python-dateutil, pytz
 Required-by:
 ```
+
 ### 2. コーディング
+
 折れ線グラフを描きます
+
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -86,12 +96,13 @@ df = pd.DataFrame(data)
 df.plot()
 plt.show()
 ```
-1. VScodeで作業中のファイルを開き、そのファイル上で**右クリック**を押してください。
-2. 下記画像のように候補の中に**ターミナルでPythonファイルを実行する**をクリックする
-![ターミナルでPythonファイルを実行する](/images/run-matplotlib-vscode.png)
-期待通りのグラフが画像として表示されました！
-![plot](/images/plot.png)
+
+1. VScode で作業中のファイルを開き、そのファイル上で**右クリック**を押してください。
+2. 下記画像のように候補の中に**ターミナルで Python ファイルを実行する**をクリックする
+   ![ターミナルでPythonファイルを実行する](/images/run-matplotlib-vscode.png)
+   期待通りのグラフが画像として表示されました！
+   ![plot](/images/plot.png)
 
 ## おわりに
-今回のグラフは⛺に見える
 
+今回のグラフは ⛺ に見える

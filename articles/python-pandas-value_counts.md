@@ -1,31 +1,37 @@
 ---
-title: "【Python】pandasで範囲内のデータ数を求める" # 記事のタイトル
-emoji: "🧇" # アイキャッチとして使われる絵文字（1文字だけ）
-type: "tech" # tech: 技術記事 / idea: アイデア記事
-topics: ["python", "pandas"] # タグ。["markdown", "rust", "aws"]のように指定する
+title: '[Python] pandasで範囲内のデータ数を求める' # 記事のタイトル
+emoji: '🧇' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['python', 'pandas'] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
+
 ## はじめに
-Pythonのデータ分析の学習を始めたいと思い、
-Python2年生 データ分析のしくみ 体験してわかる！会話でまなべる！を購入しました。
+
+Python のデータ分析の学習を始めたいと思い、
+Python2 年生 データ分析のしくみ 体験してわかる！会話でまなべる！を購入しました。
 そこで`pandas`の使い方を学びました。
 
 学習した内容を執筆します。
 
-|  項目  | 内容  |
-| ---- | ---- |
-|  **対象者**  |  ・pandasで範囲内のデータ数を求める方法を知りたい方<br>・Python微経験者  |
-|  **伝えたい内容**  |  ・pandasで範囲内のデータ数を求める方法  |
-|  **前提条件**  |  ・Python 3.9.10<br>・pandas 1.5.2 |
-
+| 項目             | 内容                                                                     |
+| ---------------- | ------------------------------------------------------------------------ |
+| **対象者**       | ・pandas で範囲内のデータ数を求める方法を知りたい方<br>・Python 微経験者 |
+| **伝えたい内容** | ・pandas で範囲内のデータ数を求める方法                                  |
+| **前提条件**     | ・Python 3.9.10<br>・pandas 1.5.2                                        |
 
 ## 範囲内のデータ数を求めるサンプルコード
-### 1. pandasインストール
+
+### 1. pandas インストール
+
 下記コマンドでインストールします。
+
 ```bash
 pip install pandas
 ```
+
 下記コマンドでインストールされたか確認します。
+
 ```bash
 $ pip show pandas
 Name: pandas
@@ -38,7 +44,9 @@ Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: numpy, python-dateutil, pytz
 Required-by:
 ```
+
 ### 2. pandas.value_counts()でコーディングする
+
 ```python: python-value_counts.py
 import pandas as pd
 
@@ -59,7 +67,9 @@ print(cut.value_counts(sort=False))
 cut = pd.cut(df["大阪の気温(2020年)"], bins=bins, right=False)
 print(cut.value_counts(sort=False))
 ```
+
 ### 3. 出力結果を確認する
+
 ```bash
 $ python python-value_counts.py
 [0, 5)      0
@@ -79,5 +89,5 @@ Name: 大阪の気温(2020年), dtype: int64
 ```
 
 ## おわりに
-🧇のくぼみの数って何個あるんでしょうか？を思いこのemojiにしました。
 
+🧇 のくぼみの数って何個あるんでしょうか？を思いこの emoji にしました。
