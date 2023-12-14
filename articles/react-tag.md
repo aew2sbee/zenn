@@ -1,5 +1,9 @@
 ---
-title: "[Front] metaタグを理解して設定しよう！"
+title: '[React] metaタグを理解する' # 記事のタイトル
+emoji: '🧜‍♀️' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['react', 'typescript', 'nodejs', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
@@ -79,7 +83,7 @@ HTML文書の文字エンコーディングを指定するための記述です�
 スマートフォンでホーム画面に追加したときや、ショートカットを作成した場合に表示されるアイコンを設定するための記述です。
 
 ## 2. 実際にmetaタグを設定する
-`src\frontend\public\index.html`を編集します。
+`src/frontend/public/index.html`を編集します。
 先ほどの解説した必要な設定を`<head>`に追加します
 
 追加した結果が下記ファイルになります。
