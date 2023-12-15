@@ -9,3 +9,4 @@ chapters:
   - tsconfig-json
   - prettier
   - ssg
+  - link
