@@ -17,7 +17,7 @@ published: true # 公開設定（falseにすると下書き）
 :::message alert
 User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam:CreateVirtualMFADevice on resource: arn:aws:iam::XXXXXXXXXXXX:mfa/deviceName because no identity-based policy allows the iam:CreateVirtualMFADevice action
 :::
-![sandbooks-aws-IAM-MFA-step00](/images/sandbooks-aws-IAM-MFA-step00.png)
+![sandbooks-aws-IAM-MFA-step00](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step00.png)
 
 
 ## ユーザー本人でMFAの設定可能にする
@@ -25,12 +25,12 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 
 1. 左側の`ポリシー`をクリックする
 2. `ポリシーを作成`をクリックする
-![sandbooks-aws-IAM-MFA-step01](/images/sandbooks-aws-IAM-MFA-step01.png)
+![sandbooks-aws-IAM-MFA-step01](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step01.png)
 
 3. 右側の`JSON`をクリックする
 4. `ポリシーエディタ`に下記JSONをコピペする
 5. `次へ`をクリックする
-![sandbooks-aws-IAM-MFA-step02](/images/sandbooks-aws-IAM-MFA-step02.png)
+![sandbooks-aws-IAM-MFA-step02](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step02.png)
 ````json
 {
     "Version": "2012-10-17",
@@ -156,46 +156,46 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 ### 3. 任意のポリシーを設定する
 1. `ポリシー名`の欄に任意の名前を入力します。
     ※今回は、`test-MFA`という名前で作成します。
-![sandbooks-aws-IAM-MFA-step03](/images/sandbooks-aws-IAM-MFA-step03.png)
+![sandbooks-aws-IAM-MFA-step03](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step03.png)
 2. `許可`の欄に`IAM`がある事を確認する
     ※先ほどのJSONで`IAM`の内容の設定が反映されました。
 3. 内容を確認し、`ポリシーの作成`をクリックする
-![sandbooks-aws-IAM-MFA-step04](/images/sandbooks-aws-IAM-MFA-step04.png)
+![sandbooks-aws-IAM-MFA-step04](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step04.png)
 
 ### 4. 成功メッセージを確認する
 1. 画面上部に`ポリシー test-MFAが作成されました。`を確認する
 2. 任意で設定したポリシー名の`test-MFA`が一覧で確認出来ます。
-![sandbooks-aws-IAM-MFA-step05](/images/sandbooks-aws-IAM-MFA-step05.png)
+![sandbooks-aws-IAM-MFA-step05](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step05.png)
 
 ### 5. 対象ユーザーに作成したポリシーを付与する
 1. 左側の`ユーザー`をクリックする
 2. 対象のユーザーをクリックする
     ※今回は、`test-user`を選択します。
-![sandbooks-aws-IAM-MFA-step06](/images/sandbooks-aws-IAM-MFA-step06.png)
+![sandbooks-aws-IAM-MFA-step06](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step06.png)
 
 3. `許可を追加`の右横の▲をクリックし、`許可を追加`をクリックする
-![sandbooks-aws-IAM-MFA-step07](/images/sandbooks-aws-IAM-MFA-step07.png)
+![sandbooks-aws-IAM-MFA-step07](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step07.png)
 
 4. `ポリシーを直接アタッチする`を選択する
 5. 検索欄にキーワードを入力し調べやすくします。
     ※`test-MFA`だったので`test`というキーワードで検索しています。
 6. 先ほど作成した`test-MFA`に✅を付ける
 7. `次へ`をクリックする
-![sandbooks-aws-IAM-MFA-step08](/images/sandbooks-aws-IAM-MFA-step08.png)
+![sandbooks-aws-IAM-MFA-step08](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step08.png)
 8. 対象ユーザーと付与するポリシーを確認する
 9. `許可を追加`をクリックする
-![sandbooks-aws-IAM-MFA-step09](/images/sandbooks-aws-IAM-MFA-step09.png)
+![sandbooks-aws-IAM-MFA-step09](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step09.png)
 10. `ポリシーが追加されました`という成功メッセージを確認する
 11. ポリシーの一覧に`test-MFA`が追加されていることを確認する
-![sandbooks-aws-IAM-MFA-step10](/images/sandbooks-aws-IAM-MFA-step10.png)
+![sandbooks-aws-IAM-MFA-step10](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step10.png)
 
 ### 6. 本人がMFA設定を行う
 1. 対象のユーザーでログインをする
-![sandbooks-aws-IAM-step10](/images/sandbooks-aws-IAM-step10.png)
+![sandbooks-aws-IAM-step10](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-step10.png)
 2. 左側の`ダッシュボード`から`MFAを追加`をクリックする
-![sandbooks-aws-IAM-MFA-step11](/images/sandbooks-aws-IAM-MFA-step11.png)
+![sandbooks-aws-IAM-MFA-step11](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step11.png)
 3. 少しスクロールし`多要素認証(MFA)`を見つけ、`MFAデバイスの割り当て`をクリックする
-![sandbooks-aws-IAM-MFA-step12](/images/sandbooks-aws-IAM-MFA-step12.png)
+![sandbooks-aws-IAM-MFA-step12](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step12.png)
 4. 登録するデバイス名を`デバイス名`の入力欄に記入する
     :::message alert
     【注意１】
@@ -209,7 +209,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
     :::
 5. `認証アプリケーション`を選択する
 6. `次へ`をクリックする
-![sandbooks-aws-IAM-MFA-step13](/images/sandbooks-aws-IAM-MFA-step13.png)
+![sandbooks-aws-IAM-MFA-step13](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step13.png)
 
 
 7. `認証アプリケーション`をスマホにダウンロードする
@@ -219,24 +219,27 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
     :::
     自分は下記を利用しました。
     @[card](https://www.microsoft.com/ja-jp/security/mobile-authenticator-app)
-![sandbooks-aws-IAM-MFA-step14](/images/sandbooks-aws-IAM-MFA-step14.png)
+![sandbooks-aws-IAM-MFA-step14](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step14.png)
 8. `QRコードを表示`をクリックし、QRコードさせる
 9. 先ほどインストールした`認証アプリケーション`QRコードを読み込む
-![sandbooks-aws-IAM-MFA-step15](/images/sandbooks-aws-IAM-MFA-step15.png)
+![sandbooks-aws-IAM-MFA-step15](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step15.png)
 10. スマホの画面に30秒に1回6桁の数字が表示されるので、連続で6桁の数字を2回分入力する
 11. `MFAを追加`をクリックする
-![sandbooks-aws-IAM-MFA-step16](/images/sandbooks-aws-IAM-MFA-step16.png)
+![sandbooks-aws-IAM-MFA-step16](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step16.png)
 12. 成功メッセージを確認する
-![sandbooks-aws-IAM-MFA-step17](/images/sandbooks-aws-IAM-MFA-step17.png)
+![sandbooks-aws-IAM-MFA-step17](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step17.png)
 13. `多要素認証(MFA)`の一覧に先ほどのデバイス名が登録させている事を確認する
-![sandbooks-aws-IAM-MFA-step18](/images/sandbooks-aws-IAM-MFA-step18.png)
+![sandbooks-aws-IAM-MFA-step18](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step18.png)
 
 ### 7. MFAが機能しているのか確認する
 1. 一度サインアウトする
 2. 再度ログインをする
 3. 下記の画面が表示されることを確認する
-![sandbooks-aws-IAM-MFA-step19](/images/sandbooks-aws-IAM-MFA-step19.png)
+![sandbooks-aws-IAM-MFA-step19](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step19.png)
 
 ## おわりに
 セキュリティ対策として大切な設定なので必ず行いたいですね。
 
+
+
+images/articles/aws-ec2-iam-role/articles/aws-ec2-iam-role/
