@@ -239,7 +239,3 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 
 ## おわりに
 セキュリティ対策として大切な設定なので必ず行いたいですね。
-
-
-
-images/articles/aws-ec2-iam-role/articles/aws-ec2-iam-role/
