@@ -1,5 +1,5 @@
 ---
-title: "【イラスト付き】デジタル庁のサイトでAtomic Designを理解する" # 記事のタイトル
+title: "[デザイン] Atomic Designをデジタル庁のサイトで理解する" # 記事のタイトル
 emoji: "🏋️‍♀️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["atomicdesign", "design", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -43,7 +43,7 @@ Atomic Designについて下記の書籍から学びました。
 - 画像のAtomsなら**URLのみ**を渡して表示する
 
 下記は、デジタル庁サイトのフッターのAtoms要素になります
-![Atomic-Design-Atoms](/images/Atomic-Design-Atoms.png)
+![Atomic-Design-Atoms](/images/articles/atomic-design-for-digital/Atomic-Design-Atoms.png)
 *デジタル庁サイトのフッターのAtoms*
 
 
@@ -55,7 +55,7 @@ Atomic Designについて下記の書籍から学びました。
 - それぞれの位置関係をCSSで指定する
 
 下記は、デジタル庁サイトのフッターのMolecules要素になります
-![Atomic-Design-Molecules](/images/Atomic-Design-Molecules.png)
+![Atomic-Design-Molecules](/images/articles/atomic-design-for-digital/Atomic-Design-Molecules.png)
 *デジタル庁サイトのフッターのMolecules*
 
 ### 3. Organisms
@@ -64,7 +64,7 @@ Atomic Designについて下記の書籍から学びました。
 - Contextの参照
 - 見た目：Presentatational Componentで実装
 - ロジック：Container Componentで実装
-![Atomic-Design-Organisms](/images/Atomic-Design-Organisms.png)
+![Atomic-Design-Organisms](/images/articles/atomic-design-for-digital/Atomic-Design-Organisms.png)
 *デジタル庁サイトのフッターのOrganisms*
 
 ### 4. Templates
@@ -76,12 +76,10 @@ Atomic Designについて下記の書籍から学びました。
 
 ## デジタル庁のサイトのAtomic Designはどうなっているか
 #### 加工前：デジタル庁のフッター
-![Atomic-Design-step00](/images/Atomic-Design-step00.png)
+![Atomic-Design-step00](/images/articles/atomic-design-for-digital/Atomic-Design-step00.png)
 #### 加工後：デジタル庁のフッター
-![Atomic-Design-step01](/images/Atomic-Design-step01.png)
+![Atomic-Design-step01](/images/articles/atomic-design-for-digital/Atomic-Design-step01.png)
 
 ## おわりに
 Atomic-Designの概念に触れてしっかり使いこなせたら便利だなと思いました。
 チーム全体で使うには、チーム力がそこそこいるなと感じました。
-
-
