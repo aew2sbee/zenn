@@ -1,5 +1,5 @@
 ---
-title: 'Prettierの導入'
+title: '[作業] Prettierの導入'
 ---
 
 ## Prettier（プリティア）とは

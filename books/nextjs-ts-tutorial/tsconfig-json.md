@@ -1,5 +1,5 @@
 ---
-title: 'tsconfig.jsonの設定'
+title: '[作業] tsconfig.jsonの設定'
 ---
 
 ## tsconfig.jsonとは

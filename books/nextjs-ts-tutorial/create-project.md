@@ -1,5 +1,5 @@
 ---
-title: 'プロジェクト作成'
+title: '[作業] プロジェクト作成'
 ---
 
 ## Next.jsとは
@@ -110,8 +110,7 @@ $ npm run dev
 ### 起動したNext.jsにアクセスする
 http://localhost:3000
 下記画像のような画面が確認出来ます。
-![create-project-step01](/images/create-project-step01.png)
-
+![create-project-step01](/images/books/nextjs-ts-tutorial/create-project/create-project-step01.png)
 
 ## Next.jsのファイル構成(初期値)
 ````bash

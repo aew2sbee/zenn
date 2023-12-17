@@ -1,12 +1,13 @@
 title: 'Next.jsのいろは'
-summary: '本書は自己研鑽のアウトプットする成果物を目的に執筆しております。他の方にも活用して頂けると幸いです。'
+summary: '本書は自己研鑽のアウトプットする成果物を目的に執筆しております。'
 topics: ['nextjs', 'typescript', '初心者向け'] # トピック（5つまで）
 published: true # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
-  - chapter01 # はじめに
+  - index # はじめに
   - create-project
   - tsconfig-json
   - prettier
   - ssg
   - link
+  - router
