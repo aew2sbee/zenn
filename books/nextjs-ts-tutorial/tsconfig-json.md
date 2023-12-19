@@ -6,7 +6,7 @@ title: '[作業] tsconfig.jsonの設定'
 > TypeScriptプロジェクトの設定ファイルであり、TypeScriptコンパイラに対してプロジェクトのビルド方法やコンパイルオプションを指示するためのものです。
 
 ## tsconfig.jsonの作成
-下記コマンドでデフォルトで作成する事が出来ます。
+下記コマンドでデフォルトで作成する事が出来ますが、PJ作成時に作成されます。
 ````bash
 tsc --init
 ````
@@ -15,34 +15,80 @@ tsc --init
 ````json
 {
   "compilerOptions": {
-    "target": "es5",  // JavaScriptのコンパイルターゲットを指定
-    "lib": [  // コンパイルに使用するライブラリを指定
+    "target": "es5",
+    "lib": [
       "dom",
       "dom.iterable",
       "esnext"
-    ],                                        
-    "allowJs": true,  // JavaScriptファイルのコンパイルを許可
-    "skipLibCheck": true,  // ライブラリの型チェックをスキップ
-    "strict": true,  // 厳格な型チェックを有効にする
-    "forceConsistentCasingInFileNames": true,  // ファイル名の一貫性を強制
-    "noEmit": true,  // JavaScriptファイルの実際の出力を抑制
-    "esModuleInterop": true,  // ESモジュールとInterop可能な形式の相互運用性を有効にする
-    "module": "esnext",  // モジュールの形式を指定
-    "moduleResolution": "node",  // モジュール解決の方法を指定
-    "resolveJsonModule": true,  // JSONモジュールの解決を有効にする
-    "isolatedModules": true,  // ファイルごとにコンパイルを行う（incremental: true と一緒に使用）
-    "jsx": "preserve",  // JSXの処理方法を指定
-    "incremental": true,  // 増分コンパイルを有効にする
-    "baseUrl": "src"  // モジュール解決の基準となるルートディレクトリを指定
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "src"
   },
-  "include": [  // コンパイル対象のファイルやディレクトリを指定
+  "include": [
     "next-env.d.ts",
     "src/**/*.ts",
     "src/**/*.tsx"
   ],
-  "exclude": [  // コンパイル対象から除外するファイルやディレクトリを指定
+  "exclude": [
     "node_modules"
   ]
 }
 
 ````
+
+## tsconfig.jsonの解説
+
+| 項目 | 役割 |
+| ---- | ---- |
+| tacompilerOptionsget | TypeScript コンパイラの設定が含まれるセクションです。 |
+| target | コンパイルされる JavaScript のバージョンを指定します。この場合は ECMAScript 5 (es5) |
+| lib | コンパイル時に使用可能なライブラリのリストです。dom、dom.iterable、esnext が含まれています。 |
+| allowJs | JavaScript ファイルもコンパイルの対象とするかどうかを指定します。 |
+| skipLibCheck | ライブラリの型チェックをスキップするかどうかを指定します。 |
+| strict | 厳格な型チェックを有効にします。 |
+| forceConsistentCasingInFileNames | ファイル名の一貫性を強制するかどうかを指定します。 |
+| noEmit | 実際に JavaScript ファイルを生成しないようにします。 |
+| esModuleInterop | CommonJS モジュールと ES6 モジュールの相互運用性を改善するための設定です。 |
+| module | モジュールのコード生成方式を指定します。ここでは ES6 モジュールを指定しています。 |
+| moduleResolution | モジュール解決の方法を指定します。ここでは Node.js の方式を使用しています。 |
+| resolveJsonModule | JSON ファイルを import 文で読み込むことを可能にするかどうかを指定します。 |
+| isolatedModules | ファイルごとに個別の型チェックとコンパイルを行うかどうかを指定します。 |
+| jsx | JSX ファイルの扱いを指定します。ここでは "preserve" としています。 |
+| incremental | 増分ビルドを有効にするかどうかを指定します。 |
+| baseUrl | 増分ビルドを有効にするかどうかを指定します。 |
+| include | コンパイルの対象となるファイルやディレクトリのリストです。next-env.d.ts、src/**/*.ts、src/**/*.tsx が含まれています。 |
+| exclude | コンパイルから除外するファイルやディレクトリのリストです。ここでは "node_modules" が除外されています。 |
+
+## tsconfig.jsonの動作確認
+1. 下記コマンドで起動する
+````bash
+cd frontend
+npm run dev
+````
+
+````bash
+----- 出力結果 -----
+$ npm run dev
+
+> frontend@0.1.0 dev
+> next dev
+
+   ▲ Next.js 14.0.4
+   - Local:        http://localhost:3000
+
+ ✓ Ready in 9.6s
+````
+2. [ローカル環境](http://localhost:3000)にアクセスする
+3. 下記画像のような画面が確認出来る
+![create-project-step01](/images/books/nextjs-ts-tutorial/create-project/create-project-step01.png)
