@@ -8,6 +8,8 @@ chapters:
   - create-project
   - tsconfig-json
   - prettier
+  - styled-components
+  # - _document-tsx
   - ssg
   - link
   - router
