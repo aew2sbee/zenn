@@ -2,7 +2,7 @@ title: 'はじめてのWebアプリのセキュリティ対策'
 summary: '本書は自己研鑽のアウトプットする成果物を目的に執筆しております。「」'
 topics: ['セキュリティ', '初心者向け'] # トピック（5つまで）
 published: true # falseだと下書き
-price: 500 # 有料の場合200〜5000
+price: 390 # 有料の場合200〜5000
 chapters:
   - free-index
   - free-password
