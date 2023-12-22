@@ -1,5 +1,6 @@
 ---
 title: '[知識] ページ遷移(routerオブジェクト)'
+free: true
 ---
 
 ## routerオブジェクトとは

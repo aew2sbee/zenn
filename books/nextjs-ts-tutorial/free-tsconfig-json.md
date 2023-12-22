@@ -1,5 +1,6 @@
 ---
 title: '[作業] tsconfig.jsonの設定'
+free: true
 ---
 
 ## tsconfig.jsonとは

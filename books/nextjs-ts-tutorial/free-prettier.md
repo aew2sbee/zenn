@@ -1,5 +1,6 @@
 ---
 title: '[作業] Prettierの導入'
+free: true
 ---
 
 ## Prettier（プリティア）とは

@@ -1,5 +1,6 @@
 ---
 title: '[知識] 静的サイト生成(SSG)'
+free: true
 ---
 
 ## SSG (Static Site Generation)とは

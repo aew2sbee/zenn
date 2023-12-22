@@ -1,5 +1,6 @@
 ---
 title: '[作業] styled-componentsの設定'
+free: true
 ---
 
 ## styled-componentsとは
