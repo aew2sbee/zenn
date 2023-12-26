@@ -8,7 +8,7 @@ free: true
 
 ### SSGのイメージ
 
-![next.js-SSG-step01](/images/next.js-SSG-step01.png)
+![next.js-SSG-step01](/images/books/nextjs-ts-tutorial/ssg/next.js-SSG-step01.png)
 
 ### SSGの流れ
 1. build時に`getStaticProps`がページに必要なデータをAPI等で取得し、`props`を返す
@@ -135,7 +135,59 @@ free: true
     ページアクセス時に最新コードで`getStaticProps`が実行されるため、時刻が更新される
     [2023/12/14 11:12:53] -> new [2023/12/14 11:35:22]
     :::
-    ![next.js-SSG-step02](/images/next.js-SSG-step02.png)
+    ![next.js-SSG-step02](/images/books/nextjs-ts-tutorial/ssg/next.js-SSG-step02.png)
+
+6. build生成静的ファイル
+下記画像のようにhtmlファイルが静的された事が確認できる
+![next.js-SSG-step04](/images/books/nextjs-ts-tutorial/ssg/next.js-SSG-step04.png)
+
+
+```html: frontend/.next/server/pages/ssg.html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Static Site Generation</title>
+    <a rel="icon" href="/favicon.ico"></a>
+    <meta name="next-head-count" content="4" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-4fa19345907df07d.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/framework-b7ba9a8e7304c68b.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/main-76e8a0b64b446374.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/pages/_app-98cb51ec6f9f135f.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/814-7359d0aa77c78938.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/pages/ssg-0648e9d5e1295a9b.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/p1rpjW2QfRaHnJT5FW1qk/_buildManifest.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/p1rpjW2QfRaHnJT5FW1qk/_ssgManifest.js" defer="" crossorigin=""></script>
+  </head>
+  <body>
+    <div id="__next">
+      <main>
+        <button>back</button>
+        <p>This page was generated using Static Site Generation (SSG).</p>
+        <p>[2023/12/26 22:06:17] : The getStaticProps was executed</p>
+      </main>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json" crossorigin="">
+      {
+        "props": {
+          "pageProps": { "message": "[2023/12/26 22:06:17] : The getStaticProps was executed" },
+          "__N_SSG": true
+        },
+        "page": "/ssg",
+        "query": {},
+        "buildId": "p1rpjW2QfRaHnJT5FW1qk",
+        "isFallback": false,
+        "gsp": true,
+        "scriptLoader": []
+      }
+    </script>
+  </body>
+</html>
+
+```
 
 ## SSGによるページの実装 [複数ページ]
 1. `frontend/src/pages/books/[id].tsx`を新規で作成する
@@ -263,4 +315,54 @@ free: true
     ```
 5. [SSG実装ページ](http://localhost:3000/books/1)にアクセスする
     下記の画像のようなページが表示される
-    ![next.js-SSG-step03](/images/next.js-SSG-step03.png)
+    ![next.js-SSG-step03](/images/books/nextjs-ts-tutorial/ssg/next.js-SSG-step03.png)
+
+
+6. build生成静的ファイル
+下記画像のようにhtmlファイルが静的された事が確認できる
+![next.js-SSG-step05](/images/books/nextjs-ts-tutorial/ssg/next.js-SSG-step05.png)
+
+
+```html: frontend/.next/server/pages/books/1.html
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Static Site Generation</title>
+    <a rel="icon" href="/favicon.ico"></a>
+    <meta name="next-head-count" content="4" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-4fa19345907df07d.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/framework-b7ba9a8e7304c68b.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/main-76e8a0b64b446374.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/pages/_app-98cb51ec6f9f135f.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/814-7359d0aa77c78938.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/chunks/pages/books/%5Bid%5D-dc91dec39b4f7180.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/p1rpjW2QfRaHnJT5FW1qk/_buildManifest.js" defer="" crossorigin=""></script>
+    <script src="/_next/static/p1rpjW2QfRaHnJT5FW1qk/_ssgManifest.js" defer="" crossorigin=""></script>
+  </head>
+  <body>
+    <div id="__next">
+      <main>
+        <p>This page was generated using Static Site Generation (SSG).</p>
+        <p>This URL of page was /books/1</p>
+      </main>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json" crossorigin="">
+      {
+        "props": { "pageProps": { "id": "1" }, "__N_SSG": true },
+        "page": "/books/[id]",
+        "query": { "id": "1" },
+        "buildId": "p1rpjW2QfRaHnJT5FW1qk",
+        "isFallback": false,
+        "gsp": true,
+        "scriptLoader": []
+      }
+    </script>
+  </body>
+</html>
+
+
+```
