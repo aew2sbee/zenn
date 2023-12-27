@@ -137,8 +137,4 @@ free: true
     ```
 5. [ISR実装ページ](http://localhost:3000/isr)にアクセスする
     下記の画像のようなページが表示される
-    :::message
-    ページアクセス時に最新コードで`getStaticProps`が実行されるため、時刻が更新される
-    [2023/12/14 11:12:53] -> new [2023/12/14 11:35:22]
-    :::
     ![nextjs-isr-step01](/images/books/nextjs-ts-tutorial/isr/nextjs-isr-step01.png)
