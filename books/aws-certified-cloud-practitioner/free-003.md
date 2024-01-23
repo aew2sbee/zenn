@@ -1,5 +1,5 @@
 ---
-title: '003. AWSのDNSサービスは'
+title: 'AWSのDNSサービスは'
 free: true
 ---
 

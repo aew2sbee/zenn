@@ -1,5 +1,5 @@
 ---
-title: '005. DDoS攻撃軽減に使用できるAWSサービス'
+title: 'DDoS攻撃軽減に使用できるAWSサービス'
 free: true
 ---
 

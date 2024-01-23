@@ -1,5 +1,5 @@
 ---
-title: '004. AWSのコストメリット'
+title: 'AWSのコストメリット'
 free: true
 ---
 
