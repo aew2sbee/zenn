@@ -1,5 +1,5 @@
 ---
-title: '002. AWSでソフトウェアを購入する場所'
+title: '003. AWSのDNSサービスは'
 free: true
 ---
 
