@@ -6,3 +6,4 @@ price: 500 # 有料の場合200〜5000
 chapters:
   - free-index # はじめに
   - free-001
+  - cost-tip
