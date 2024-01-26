@@ -1,5 +1,5 @@
 ---
-title: '[SELECT文] 指定した条件を満たすデータを取得する'
+title: '指定した条件を満たすデータを取得する'
 free: true
 ---
 
@@ -39,7 +39,7 @@ SELECT * FROM テーブル名 WHERE 条件式
 
 :::
 
-### サンプル
+## サンプル
 
 `item_name = 'リンゴ'`に該当する値を取得する
 
@@ -47,52 +47,6 @@ SELECT * FROM テーブル名 WHERE 条件式
 SELECT * FROM sales WHERE item_name = 'リンゴ'
 ```
 
-### 出力結果
+## 出力結果
 
 ![SELECT-06](/images/books/basic-postgresql/SELECT-06.png)
-
-## 7. 複数条件を満たすデータを取得する
-
-:::message
-下記が`基本構文`なります
-
-```sql
-SELECT * FROM テーブル名 WHERE 条件式1 AND 条件式2
-```
-
-:::
-
-### サンプル
-
-`item_name = 'リンゴ'`かつ`'2024-01-04'以降`に該当する値を取得する
-
-```sql
-SELECT * FROM sales WHERE item_name = 'リンゴ' AND date >= '2024-01-04'
-```
-
-### 出力結果
-
-![SELECT-07](/images/books/basic-postgresql/SELECT-07.png)
-
-## 8. 複数条件を満たすデータを取得する
-
-:::message
-下記が`基本構文`なります
-
-```sql
-SELECT * FROM テーブル名 WHERE 条件式1 OR 条件式2
-```
-
-:::
-
-### サンプル
-
-`item_name = 'リンゴ'`か`'item_name != バナナ`に該当する値を取得する
-
-```sql
-SELECT * FROM sales WHERE item_name = 'リンゴ' OR item_name <> 'バナナ'
-```
-
-### 出力結果
-
-![SELECT-08](/images/books/basic-postgresql/SELECT-08.png)

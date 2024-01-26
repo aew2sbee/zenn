@@ -1,5 +1,5 @@
 ---
-title: '[SELECT文] 複数カラムのデータを取得する'
+title: '複数カラムのデータを取得する'
 free: true
 ---
 
@@ -17,7 +17,6 @@ free: true
 | 7 | 2024-01-07 | イチゴ | 6 | 230 | G さん | False | null |
 | 8 | 2024-01-08 | リンゴ | 2 | 410 | H さん | True | 0.3 |
 
-
 ## 基本構文
 
 :::message
@@ -29,7 +28,7 @@ SELECT カラム名1, カラム名2, ... FROM テーブル名
 
 :::
 
-### サンプル
+## サンプル
 
 `item_name`と`customer`の値を取得する
 
@@ -37,6 +36,6 @@ SELECT カラム名1, カラム名2, ... FROM テーブル名
 SELECT item_name, customer FROM sales
 ```
 
-### 出力結果
+## 出力結果
 
 ![SELECT-03](/images/books/basic-postgresql/SELECT-03.png)

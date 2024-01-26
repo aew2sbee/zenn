@@ -1,5 +1,5 @@
 ---
-title: '[SELECT文] データを取得する'
+title: 'データを取得する'
 free: true
 ---
 

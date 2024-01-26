@@ -1,5 +1,5 @@
 ---
-title: '[SELECT文] 全データを取得する'
+title: '全データを取得する'
 free: true
 ---
 
@@ -21,6 +21,7 @@ free: true
 
 :::message
 下記が`基本構文`なります
+
 ```sql
 SELECT * FROM テーブル名
 ```

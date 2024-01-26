@@ -1,5 +1,5 @@
 ---
-title: '[SELECT文] 重複を取り除いたデータを取得する'
+title: '重複を取り除いたデータを取得する'
 free: true
 ---
 
@@ -39,4 +39,3 @@ SELECT DISTINCT item_name FROM sales
 ### 出力結果
 
 ![SELECT-04](/images/books/basic-postgresql/SELECT-04.png)
-

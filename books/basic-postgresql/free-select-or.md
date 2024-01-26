@@ -1,5 +1,5 @@
 ---
-title: '[SELECT文] OR条件を満たすデータを取得する'
+title: 'OR条件を満たすデータを取得する'
 free: true
 ---
 
@@ -26,9 +26,20 @@ free: true
 SELECT * FROM テーブル名 WHERE 条件式1 OR 条件式2
 ```
 
+**記号の種類**
+
+| 記号 | 意味                 |
+| ---- | -------------------- |
+| =    | 左辺と右辺が同じ     |
+| <    | 左辺が右辺より小さい |
+| >    | 左辺が右辺より大きい |
+| <=   | 左辺が右辺以下       |
+| >=   | 左辺が右辺以上       |
+| <>   | 左辺と右辺が異なる   |
+
 :::
 
-### サンプル
+## サンプル
 
 `item_name = 'リンゴ'`か`'item_name != バナナ`に該当する値を取得する
 
@@ -36,6 +47,6 @@ SELECT * FROM テーブル名 WHERE 条件式1 OR 条件式2
 SELECT * FROM sales WHERE item_name = 'リンゴ' OR item_name <> 'バナナ'
 ```
 
-### 出力結果
+## 出力結果
 
 ![SELECT-08](/images/books/basic-postgresql/SELECT-08.png)

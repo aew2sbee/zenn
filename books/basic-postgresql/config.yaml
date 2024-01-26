@@ -6,12 +6,12 @@ price: 500 # 有料の場合200〜5000
 chapters:
   - free-index
   - free-select-all
-  - free-select-and
-  - free-select-as
   - free-select-column
   - free-select-multiple-column
   - free-select-distinct
-  - free-select-or
   - free-select-where
+  - free-select-as
+  - free-select-and
+  - free-select-or
   - cost-tip
   - cost-other
