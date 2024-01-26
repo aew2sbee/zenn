@@ -9,7 +9,7 @@ chapters:
   - free-select-and
   - free-select-as
   - free-select-column
-  - free-select-columnA-columnB
+  - free-select-multiple-column
   - free-select-distinct
   - free-select-or
   - free-select-where
