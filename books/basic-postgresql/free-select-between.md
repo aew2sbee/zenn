@@ -1,5 +1,5 @@
 ---
-title: '重複を取り除いたデータを取得する'
+title: '指定した条件を満たすデータを取得する'
 free: true
 ---
 
@@ -23,19 +23,18 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT DISTINCT カラム名 FROM テーブル名
+SELECT * FROM テーブル名 WHERE 条件式
 ```
-
 :::
 
-### サンプル
+## サンプル
 
-`item_name`の値を取得し重複を取り除く
+`item_name = 'リンゴ'`に該当する値を取得する
 
 ```sql
-SELECT DISTINCT item_name FROM sales
+SELECT * FROM sales WHERE price BETWEEN 300 AND 400
 ```
 
-### 出力結果
+## 出力結果
 
-![select-distinct](/images/books/basic-postgresql/select-distinct.png)
+![SELECT-11](/images/books/basic-postgresql/SELECT-11.png)

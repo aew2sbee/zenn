@@ -29,7 +29,7 @@ free: true
 仮に、1 秒に 1 回ログインを試みて`1億パターン`試みると、`約3.17年`かかります。
 :::
 
-![password-step00](/images/books/secure-web-app/password/password-step00.png)
+![password-step00](/images/books/secure-web-app/password-step00.png)
 
 ## 2. パスワードに`英字、数値、記号`を 1 文字以上含める
 
@@ -45,9 +45,9 @@ free: true
 仮に、1 秒に 1 回ログインを試みて`約6100兆`パターン試みると、`約1,991,341年`かかります。
 :::
 
-![password-step01](/images/books/secure-web-app/password/password-step01.png)
-![password-step02](/images/books/secure-web-app/password/password-step02.png)
-![password-step03](/images/books/secure-web-app/password/password-step03.png)
+![password-step01](/images/books/secure-web-app/password-step01.png)
+![password-step02](/images/books/secure-web-app/password-step02.png)
+![password-step03](/images/books/secure-web-app/password-step03.png)
 
 参考テーブル
 | 文字の種類 | 4 桁 | 6 桁 | 8 桁 |

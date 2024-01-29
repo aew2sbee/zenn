@@ -38,4 +38,4 @@ SELECT item_name FROM sales
 
 ### 出力結果
 
-![SELECT-02](/images/books/basic-postgresql/SELECT-02.png)
+![select-column](/images/books/basic-postgresql/select-column.png)

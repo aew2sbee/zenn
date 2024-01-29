@@ -1,5 +1,5 @@
 ---
-title: '重複を取り除いたデータを取得する'
+title: 'NOT IN条件を満たすデータを取得する'
 free: true
 ---
 
@@ -23,19 +23,18 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT DISTINCT カラム名 FROM テーブル名
+SELECT * FROM テーブル名 WHERE カラム名 NOT IN (データ名1, データ名2, ...)
 ```
-
 :::
 
-### サンプル
+## サンプル
 
-`item_name`の値を取得し重複を取り除く
+`item_name'`で`'リンゴ', 'バナナ'`に該当する値を取得する
 
 ```sql
-SELECT DISTINCT item_name FROM sales
+SELECT * FROM sales WHERE item_name NOT IN ('リンゴ', 'バナナ')
 ```
 
-### 出力結果
+## 出力結果
 
-![select-distinct](/images/books/basic-postgresql/select-distinct.png)
+![SELECT-10](/images/books/basic-postgresql/SELECT-10.png)

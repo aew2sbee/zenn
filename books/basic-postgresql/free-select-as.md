@@ -38,4 +38,4 @@ SELECT item_name AS 商品名 FROM sales
 
 ### 出力結果
 
-![SELECT-05](/images/books/basic-postgresql/SELECT-05.png)
+![select-as](/images/books/basic-postgresql/select-as.png)

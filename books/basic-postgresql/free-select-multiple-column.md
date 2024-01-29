@@ -38,4 +38,4 @@ SELECT item_name, customer FROM sales
 
 ## 出力結果
 
-![SELECT-03](/images/books/basic-postgresql/SELECT-03.png)
+![select-multiple-column](/images/books/basic-postgresql/select-multiple-column.png)

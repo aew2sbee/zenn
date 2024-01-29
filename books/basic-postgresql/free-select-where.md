@@ -37,6 +37,16 @@ SELECT * FROM テーブル名 WHERE 条件式
 | >=   | 左辺が右辺以上       |
 | <>   | 左辺と右辺が異なる   |
 
+**優先順位**
+
+| 優先順位 | 記号         |
+| -------- | ------------ |
+| 高       | <, >, <=, >= |
+|          | =, <>        |
+|          | NOT          |
+|          | AND          |
+| 低       | OR           |
+
 :::
 
 ## サンプル
@@ -49,4 +59,4 @@ SELECT * FROM sales WHERE item_name = 'リンゴ'
 
 ## 出力結果
 
-![SELECT-06](/images/books/basic-postgresql/SELECT-06.png)
+![select-where](/images/books/basic-postgresql/select-where.png)

@@ -1,5 +1,5 @@
 ---
-title: '重複を取り除いたデータを取得する'
+title: '指定した条件を満たさないデータを取得する'
 free: true
 ---
 
@@ -23,19 +23,40 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT DISTINCT カラム名 FROM テーブル名
+SELECT * FROM テーブル名 WHERE NOT 条件式
 ```
+
+**記号の種類**
+
+| 記号 | 意味                 |
+| ---- | -------------------- |
+| =    | 左辺と右辺が同じ     |
+| <    | 左辺が右辺より小さい |
+| >    | 左辺が右辺より大きい |
+| <=   | 左辺が右辺以下       |
+| >=   | 左辺が右辺以上       |
+| <>   | 左辺と右辺が異なる   |
+
+**優先順位**
+
+| 優先順位 | 記号         |
+| -------- | ------------ |
+| 高       | <, >, <=, >= |
+|          | =, <>        |
+|          | NOT          |
+|          | AND          |
+| 低       | OR           |
 
 :::
 
-### サンプル
+## サンプル
 
-`item_name`の値を取得し重複を取り除く
+`item_name = 'リンゴ'`に該当しない値を取得する
 
 ```sql
-SELECT DISTINCT item_name FROM sales
+SELECT * FROM sales WHERE NOT item_name = 'リンゴ'
 ```
 
-### 出力結果
+## 出力結果
 
-![select-distinct](/images/books/basic-postgresql/select-distinct.png)
+![SELECT-08](/images/books/basic-postgresql/SELECT-08.png)

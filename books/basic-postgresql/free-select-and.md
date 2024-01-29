@@ -26,17 +26,6 @@ free: true
 SELECT * FROM テーブル名 WHERE 条件式1 AND 条件式2
 ```
 
-**記号の種類**
-
-| 記号 | 意味                 |
-| ---- | -------------------- |
-| =    | 左辺と右辺が同じ     |
-| <    | 左辺が右辺より小さい |
-| >    | 左辺が右辺より大きい |
-| <=   | 左辺が右辺以下       |
-| >=   | 左辺が右辺以上       |
-| <>   | 左辺と右辺が異なる   |
-
 :::
 
 ### サンプル
@@ -49,4 +38,4 @@ SELECT * FROM sales WHERE item_name = 'リンゴ' AND date >= '2024-01-04'
 
 ### 出力結果
 
-![SELECT-07](/images/books/basic-postgresql/SELECT-07.png)
+![select-and](/images/books/basic-postgresql/select-and.png)

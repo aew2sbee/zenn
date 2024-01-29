@@ -37,6 +37,16 @@ SELECT * FROM テーブル名 WHERE 条件式1 OR 条件式2
 | >=   | 左辺が右辺以上       |
 | <>   | 左辺と右辺が異なる   |
 
+**優先順位**
+
+| 優先順位 | 記号         |
+| -------- | ------------ |
+| 高       | <, >, <=, >= |
+|          | =, <>        |
+|          | NOT          |
+|          | AND          |
+| 低       | OR           |
+
 :::
 
 ## サンプル
@@ -49,4 +59,4 @@ SELECT * FROM sales WHERE item_name = 'リンゴ' OR item_name <> 'バナナ'
 
 ## 出力結果
 
-![SELECT-08](/images/books/basic-postgresql/SELECT-08.png)
+![select-or](/images/books/basic-postgresql/select-or.png)
