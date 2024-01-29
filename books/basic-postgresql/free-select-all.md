@@ -38,4 +38,4 @@ SELECT * FROM sales
 
 ### 出力結果
 
-![SELECT-01](/images/books/basic-postgresql/SELECT-01.png)
+![select-all](/images/books/basic-postgresql/select-all.png)
