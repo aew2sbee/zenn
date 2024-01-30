@@ -35,6 +35,7 @@ chapters:
   - free-delete-all
   - free-drop-table
   - free-join
+  - free-join-where
   - free-trivia
   - cost-tip
   - cost-other
