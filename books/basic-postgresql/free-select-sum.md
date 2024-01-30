@@ -27,7 +27,6 @@ SELECT SUM(カラム名) FROM テーブル名
 ```
 
 :::
-Trivia
 ### サンプル
 
 `price`の合計値を取得する

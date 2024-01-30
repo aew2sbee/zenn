@@ -30,6 +30,7 @@ chapters:
   - free-select-order-by-multiple
   - free-create-table
   - free-insert
+  - free-update
   - free-trivia
   - cost-tip
   - cost-other
