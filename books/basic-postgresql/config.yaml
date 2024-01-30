@@ -18,5 +18,8 @@ chapters:
   - free-select-not-in
   - free-select-between
   - free-select-not-between
+  - free-select-count
+  - free-select-sum
+  - free-select-avg
   - cost-tip
   - cost-other
