@@ -33,7 +33,7 @@ chapters:
   - free-update
   - free-delete
   - free-delete-all
-  - frrr-drop-table
+  - free-drop-table
   - free-trivia
   - cost-tip
   - cost-other
