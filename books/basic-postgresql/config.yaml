@@ -31,6 +31,9 @@ chapters:
   - free-create-table
   - free-insert
   - free-update
+  - free-delete
+  - free-delete-all
+  - frrr-drop-table
   - free-trivia
   - cost-tip
   - cost-other
