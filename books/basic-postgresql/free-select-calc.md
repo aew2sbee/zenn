@@ -33,7 +33,7 @@ SELECT 計算 FROM テーブル名
 `item_name`x`price`の値を取得する
 
 ```sql
-SELECT item_cont * price FROM sales
+SELECT item_cont * price as 合計値段 FROM sales
 ```
 
 ### 出力結果
