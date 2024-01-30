@@ -21,5 +21,10 @@ chapters:
   - free-select-count
   - free-select-sum
   - free-select-avg
+  - free-select-min
+  - free-select-max
+  - free-select-group
+  - free-select-group-having
+  - free-trivia
   - cost-tip
   - cost-other

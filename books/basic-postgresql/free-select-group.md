@@ -1,5 +1,5 @@
 ---
-title: 'データの合計値を取得する'
+title: 'データをグループ化して取得する'
 free: true
 ---
 
@@ -23,19 +23,19 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT SUM(カラム名) FROM テーブル名
+SELECT カラム名A, 関数(引数) FROM テーブル名 GROUP BY カラム名A
 ```
 
 :::
-Trivia
+
 ### サンプル
 
-`price`の合計値を取得する
+各`item_name`のデータ数を取得する
 
 ```sql
-SELECT SUM(price) FROM sales
+SELECT item_name, COUNT(*) FROM sales GROUP BY item_name
 ```
 
 ### 出力結果
 
-![select-sum](/images/books/basic-postgresql/select-sum.png)
+![select-group](/images/books/basic-postgresql/select-group.png)

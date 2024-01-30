@@ -1,5 +1,5 @@
 ---
-title: 'データの合計値を取得する'
+title: 'グループ化する条件を加えてデータを取得する'
 free: true
 ---
 
@@ -23,19 +23,19 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT SUM(カラム名) FROM テーブル名
+SELECT カラム名A, 集計関数 FROM テーブル名 GROUP BY カラム名A HAVING 条件式
 ```
 
 :::
-Trivia
+
 ### サンプル
 
-`price`の合計値を取得する
+各`item_name`のデータ数で3回以上のデータを取得する
 
 ```sql
-SELECT SUM(price) FROM sales
+SELECT item_name, COUNT(*) FROM sales GROUP BY item_name HAVING COUNT(*) >= 3
 ```
 
 ### 出力結果
 
-![select-sum](/images/books/basic-postgresql/select-sum.png)
+![select-group-having](/images/books/basic-postgresql/select-group-having.png)
