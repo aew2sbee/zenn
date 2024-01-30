@@ -25,6 +25,8 @@ chapters:
   - free-select-max
   - free-select-group
   - free-select-group-having
+  - free-select-order-by
+  - free-select-order-by-desc
   - free-trivia
   - cost-tip
   - cost-other
