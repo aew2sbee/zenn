@@ -32,9 +32,9 @@ SELECT * FROM テーブル名 WHERE カラム名 IN (データ名1, データ名
 `item_name'`で`'リンゴ', 'バナナ'`に該当する値を取得する
 
 ```sql
-SELECT * FROM sales WHERE price BETWEEN 300 AND 400
+SELECT * FROM sales WHERE item_name IN ('リンゴ', 'バナナ')
 ```
 
 ## 出力結果
 
-![SELECT-09](/images/books/basic-postgresql/SELECT-09.png)
+![select-in](/images/books/basic-postgresql/select-in.png)

@@ -1,5 +1,5 @@
 ---
-title: '指定した条件を満たすデータを取得する'
+title: '特定の範囲を満たすデータを取得する'
 free: true
 ---
 
@@ -23,13 +23,13 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT * FROM テーブル名 WHERE 条件式
+SELECT * FROM テーブル名 WHERE カラム名 BETWEEN 条件A AND 条件B
 ```
 :::
 
 ## サンプル
 
-`item_name = 'リンゴ'`に該当する値を取得する
+`price`が`300`と`400`の間に該当する値を取得する
 
 ```sql
 SELECT * FROM sales WHERE price BETWEEN 300 AND 400
@@ -37,4 +37,4 @@ SELECT * FROM sales WHERE price BETWEEN 300 AND 400
 
 ## 出力結果
 
-![SELECT-11](/images/books/basic-postgresql/SELECT-11.png)
+![select-between](/images/books/basic-postgresql/select-between.png)

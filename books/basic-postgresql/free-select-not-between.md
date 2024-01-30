@@ -1,5 +1,5 @@
 ---
-title: 'NOT IN条件を満たすデータを取得する'
+title: '特定の範囲を満さないデータを取得する'
 free: true
 ---
 
@@ -23,18 +23,18 @@ free: true
 下記が`基本構文`なります
 
 ```sql
-SELECT * FROM テーブル名 WHERE カラム名 NOT IN (データ名1, データ名2, ...)
+SELECT * FROM テーブル名 WHERE カラム名 NOt BETWEEN 条件A AND 条件B
 ```
 :::
 
 ## サンプル
 
-`item_name'`で`'リンゴ', 'バナナ'`に該当しない値を取得する
+`price`が`300`と`400`の間に該当しない値を取得する
 
 ```sql
-SELECT * FROM sales WHERE item_name NOT IN ('リンゴ', 'バナナ')
+SELECT * FROM sales WHERE price NOt BETWEEN 300 AND 400
 ```
 
 ## 出力結果
 
-![select-not-in](/images/books/basic-postgresql/select-not-in.png)
+![select-not-between](/images/books/basic-postgresql/select-not-between.png)

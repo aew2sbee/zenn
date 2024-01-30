@@ -1,5 +1,5 @@
 ---
-title: '指定した条件を満たさないデータを取得する'
+title: '条件を満たさないデータを取得する'
 free: true
 ---
 
@@ -59,4 +59,4 @@ SELECT * FROM sales WHERE NOT item_name = 'リンゴ'
 
 ## 出力結果
 
-![SELECT-08](/images/books/basic-postgresql/SELECT-08.png)
+![select-not](/images/books/basic-postgresql/select-not.png)

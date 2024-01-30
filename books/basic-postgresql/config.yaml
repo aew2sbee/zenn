@@ -13,5 +13,10 @@ chapters:
   - free-select-as
   - free-select-and
   - free-select-or
+  - free-select-not
+  - free-select-in
+  - free-select-not-in
+  - free-select-between
+  - free-select-not-between
   - cost-tip
   - cost-other
