@@ -28,6 +28,8 @@ chapters:
   - free-select-order-by
   - free-select-order-by-desc
   - free-select-order-by-multiple
+  - free-create-table
+  - free-insert
   - free-trivia
   - cost-tip
   - cost-other
