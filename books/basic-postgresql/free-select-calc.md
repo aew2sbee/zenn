@@ -25,6 +25,7 @@ free: true
 ```sql
 SELECT 計算 FROM テーブル名
 ```
+[算術演算子について](https://zenn.dev/aew2sbee/books/basic-postgresql/viewer/free-trivia#%E7%AE%97%E8%A1%93%E6%BC%94%E7%AE%97%E5%AD%90)
 
 :::
 
