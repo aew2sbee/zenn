@@ -26,26 +26,9 @@ free: true
 SELECT * FROM テーブル名 WHERE NOT 条件式
 ```
 
-**記号の種類**
+[記号の種類](https://zenn.dev/aew2sbee/books/basic-postgresql/viewer/free-trivia#%E8%A8%98%E5%8F%B7%E3%81%AE%E7%A8%AE%E9%A1%9E)
 
-| 記号 | 意味                 |
-| ---- | -------------------- |
-| =    | 左辺と右辺が同じ     |
-| <    | 左辺が右辺より小さい |
-| >    | 左辺が右辺より大きい |
-| <=   | 左辺が右辺以下       |
-| >=   | 左辺が右辺以上       |
-| <>   | 左辺と右辺が異なる   |
-
-**優先順位**
-
-| 優先順位 | 記号         |
-| -------- | ------------ |
-| 高       | <, >, <=, >= |
-|          | =, <>        |
-|          | NOT          |
-|          | AND          |
-| 低       | OR           |
+[条件式の優先順位](https://zenn.dev/aew2sbee/books/basic-postgresql/viewer/free-trivia#%E8%A8%98%E5%8F%B7%E3%81%AE%E7%A8%AE%E9%A1%9E)
 
 :::
 
