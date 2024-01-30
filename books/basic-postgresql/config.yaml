@@ -27,6 +27,7 @@ chapters:
   - free-select-group-having
   - free-select-order-by
   - free-select-order-by-desc
+  - free-select-order-by-multiple
   - free-trivia
   - cost-tip
   - cost-other
