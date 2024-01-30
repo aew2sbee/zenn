@@ -36,6 +36,7 @@ chapters:
   - free-drop-table
   - free-join
   - free-join-where
+  - free-select-calc
   - free-trivia
   - cost-tip
   - cost-other
