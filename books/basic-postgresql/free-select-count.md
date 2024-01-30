@@ -1,5 +1,5 @@
 ---
-title: 'データ数を取得する'
+title: '[SELECT] データ数を取得する'
 free: true
 ---
 

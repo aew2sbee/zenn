@@ -1,5 +1,5 @@
 ---
-title: 'テーブルを削除する'
+title: '[DROP] テーブルを削除する'
 free: true
 ---
 

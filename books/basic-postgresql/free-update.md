@@ -1,5 +1,5 @@
 ---
-title: 'データを更新する'
+title: '[UPDATE] データを更新する'
 free: true
 ---
 

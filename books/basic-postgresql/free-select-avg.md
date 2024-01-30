@@ -1,5 +1,5 @@
 ---
-title: 'データの平均値を取得する'
+title: '[SELECT] データの平均値を取得する'
 free: true
 ---
 

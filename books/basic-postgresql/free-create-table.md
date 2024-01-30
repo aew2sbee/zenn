@@ -1,5 +1,5 @@
 ---
-title: 'テーブルを作成する'
+title: '[CREATE] テーブルを作成する'
 free: true
 ---
 

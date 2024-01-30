@@ -1,5 +1,5 @@
 ---
-title: 'データの最低値を取得する'
+title: '[SELECT] データの最低値を取得する'
 free: true
 ---
 

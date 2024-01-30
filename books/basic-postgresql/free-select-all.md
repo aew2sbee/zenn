@@ -1,5 +1,5 @@
 ---
-title: '全データを取得する'
+title: '[SELECT] 全データを取得する'
 free: true
 ---
 

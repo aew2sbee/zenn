@@ -1,5 +1,5 @@
 ---
-title: 'データを作成する'
+title: '[INSERT] データを作成する'
 free: true
 ---
 

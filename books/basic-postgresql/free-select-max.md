@@ -1,5 +1,5 @@
 ---
-title: 'データの最大値を取得する'
+title: '[SELECT] データの最大値を取得する'
 free: true
 ---
 

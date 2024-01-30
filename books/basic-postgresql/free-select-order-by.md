@@ -1,5 +1,5 @@
 ---
-title: '昇順にデータを並べ替える'
+title: '[SELECT] 昇順にデータを並べ替える'
 free: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'NOT IN条件を満たすデータを取得する'
+title: '[SELECT] NOT IN条件を満たすデータを取得する'
 free: true
 ---
 

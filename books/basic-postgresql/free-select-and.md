@@ -1,5 +1,5 @@
 ---
-title: 'AND条件を満たすデータを取得する'
+title: '[SELECT] AND条件を満たすデータを取得する'
 free: true
 ---
 

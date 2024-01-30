@@ -1,5 +1,5 @@
 ---
-title: 'データの合計値を取得する'
+title: '[SELECT] データの合計値を取得する'
 free: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'IN条件を満たすデータを取得する'
+title: '[SELECT] IN条件を満たすデータを取得する'
 free: true
 ---
 

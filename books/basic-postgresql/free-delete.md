@@ -1,5 +1,5 @@
 ---
-title: 'データを削除する'
+title: '[DELETE] データを削除する'
 free: true
 ---
 
