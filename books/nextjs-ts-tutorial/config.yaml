@@ -5,8 +5,8 @@ published: true # falseだと下書き
 price: 500 # 有料の場合200〜5000
 chapters:
   - free-index # はじめに
-  - free-create-project
-  - free-tsconfig-json
+  # - free-create-project
+  # - free-tsconfig-json
   - free-prettier
   - free-styled-components
   - free-ssg
@@ -14,6 +14,6 @@ chapters:
   - free-link
   - free-image
   - free-router
-  - free-env
+  # - free-env
   - cost-tip
   - cost-other

@@ -3,12 +3,10 @@ title: '[TypeScript] 便利な関数(find)の使い方' # 記事のタイトル
 emoji: '🔎' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', 'find'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: false # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
-
-配列の各要素に対して指定された条件に一致する最初の要素を返す**find 関数**を学びましたので、執筆しました。
 
 | 項目             | 内容                    |
 | ---------------- | ----------------------- |
