@@ -12,7 +12,7 @@ chapters:
   - free-ssg
   - free-isr
   - free-link
-  - free-image
+  # - free-image
   - free-router
   # - free-env
   - cost-tip
