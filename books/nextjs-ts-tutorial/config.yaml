@@ -1,19 +1,19 @@
 title: 'Next.jsのいろは'
 summary: '本書は自己研鑽のアウトプットする成果物を目的に執筆しております。'
 topics: ['nextjs', 'typescript', '初心者向け'] # トピック（5つまで）
-published: true # falseだと下書き
+published: false # falseだと下書き
 price: 500 # 有料の場合200〜5000
 chapters:
   - free-index # はじめに
   # - free-create-project
   # - free-tsconfig-json
-  - free-prettier
-  - free-styled-components
-  - free-ssg
-  - free-isr
-  - free-link
+  # - free-prettier
+  # - free-styled-components
+  # - free-ssg
+  # - free-isr
+  # - free-link
   # - free-image
-  - free-router
+  # - free-router
   # - free-env
   - cost-tip
   - cost-other
