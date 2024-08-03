@@ -24,7 +24,7 @@ published: true # 公開設定（falseにすると下書き）
 例えば、、 
 **ReadOnlyAccess権限のユーザーにEC2の権限を付与したい場合**
     ※ReadOnlyAccess権限の為、読み取りのみで**EC2の設定を更新する**事が出来ません。
-![AWS-IAM-role-step01](/images/AWS-IAM-role-step01.png)
+![AWS-IAM-role-step01](/images/articles/aws-ec2-iam-why-role/AWS-IAM-role-step01.png)
 *ReadOnlyAccess権限のユーザーがEC2にアクセス出来ないイメージ図*
 
 下記の手順を取る必要があります。
@@ -40,7 +40,7 @@ published: true # 公開設定（falseにすると下書き）
 - 複雑化したポリシーを管理するのが大変
 :::
 ### スイッチロールした場合
-![AWS-IAM-role-step02](/images/AWS-IAM-role-step02.png)
+![AWS-IAM-role-step02](/images/articles/aws-ec2-iam-why-role/AWS-IAM-role-step02.png)
 *スイッチロールでReadOnlyAccess権限のユーザーがEC2にアクセス出来るイメージ図*
 1. EC2の権限を許可するロールを作成する
 2. 対象ユーザーにロールを伝える
