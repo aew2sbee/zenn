@@ -1,33 +1,40 @@
 ---
-title: "【Django】django rest framework環境構築/インストール" # 記事のタイトル
-emoji: "🚁" # アイキャッチとして使われる絵文字（1文字だけ）
-type: "tech" # tech: 技術記事 / idea: アイデア記事
-topics: ["python", "django", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
+title: '[Django]django rest framework環境構築/インストール' # 記事のタイトル
+emoji: '🚁' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['python', 'django', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
+
 ## はじめに
-社内の有志メンバーの活動でDRFを使用したので、導入方法を記録として残しておきます。
+
+社内の有志メンバーの活動で DRF を使用したので、導入方法を記録として残しておきます。
 
 `http://127.0.0.1:8000/books/list/`にアクセスして
 下記の画面が表示されるまでを解説します
 ![drf-api-step01.png](/images/drf-api-step01.png)
 
 ## 0. ファイル構成の確認
+
 下記のようなファイル構成で始めます
-````bash
+
+```bash
 src
 └─ backend
-````
+```
 
 ## 1. ライブラリーのインストール
+
 1. `django`と`django rest framework`を下記コマンドでインストールする
-````bash
+
+```bash
 pip install django
 pip install djangorestframework
-````
+```
 
-2. djangoのVersionを確認する
-````bash
+2. django の Version を確認する
+
+```bash
 $ pip show django
 Name: Django
 Version: 4.1.4
@@ -38,11 +45,12 @@ Author-email: foundation@djangoproject.com
 License: BSD-3-Clause
 Location: /home/furuta/.local/lib/python3.9/site-packages
 Requires: asgiref, sqlparse
-Required-by: 
-````
+Required-by:
+```
 
-3. django rest frameworkのVersionを確認する
-````bash
+3. django rest framework の Version を確認する
+
+```bash
 $ pip show djangorestframework
 Name: djangorestframework
 Version: 3.14.0
@@ -54,21 +62,27 @@ License: BSD
 Location: c:\users\furutan\appdata\local\programs\python\python310\lib\site-packages
 Requires: django, pytz
 Required-by:
-````
+```
 
 ## 2. 設定ファイルの作成
-Djangoプロジェクトの設定を管理するための`config`を作成します。
+
+Django プロジェクトの設定を管理するための`config`を作成します。
 
 1. カレントディレクトリを`backend`に移動する
-````bash
+
+```bash
 cd src/backend
-````
+```
+
 2. 下記コマンドで内に`config`ファイルを作成します。
-````bash
+
+```bash
 django-admin startproject config .
-````
-3. configファイルの作成後のファイル構成を確認する
-````bash
+```
+
+3. config ファイルの作成後のファイル構成を確認する
+
+```bash
 src
 └─ backend
      ├─ config
@@ -79,16 +93,21 @@ src
      │   └─ wsgi.py
      ├─ db.sqlite3
      └─ manage.py
-````
+```
 
 ## 3. アプリケーションの作成
+
 アプリケーションのベースとなるファイルを作成します。
+
 1. 書籍の情報を管理する`books`というアプリケーションの作成するために、下記コマンドを実行します。
-````bash
+
+```bash
 python manage.py startapp books
-````
+```
+
 2. アプリケーションの作成後のファイル構成を確認する
-````bash
+
+```bash
 src
 └─ backend
 	├── books
@@ -108,12 +127,15 @@ src
 	│   └── wsgi.py
 	├── db.sqlite3
 	└── manage.py
-````
+```
 
-## 4. settings.pyの編集
-**アプリケーションの起動**が出来るようアプリケーション側のapps.pyのクラスを追加します。
+## 4. settings.py の編集
+
+**アプリケーションの起動**が出来るようアプリケーション側の apps.py のクラスを追加します。
+
 1. `INSTALLED_APPSの配列`に`'books.apps.BooksConfig',`と`'rest_framework',`を追加します。
-````diff python: settings.py
+
+```diff python: settings.py
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -124,9 +146,11 @@ INSTALLED_APPS = [
 +    'books.apps.BooksConfig',
 +    'rest_framework',
 ]
-````
+```
+
 2. **言語**と**タイムゾーン**をローカル環境にする
-````diff python: settings.py
+
+```diff python: settings.py
 # 日本時間
 - LANGUAGE_CODE = 'en-us'
 + LANGUAGE_CODE = 'ja'
@@ -134,11 +158,15 @@ INSTALLED_APPS = [
 # 東京ゾーン
 - TIME_ZONE = 'UTC'
 + TIME_ZONE = 'Asia/Tokyo'
-````
+```
+
 ## 5. ローカル環境で起動する
+
 アプリケーションを実行します。
-1. `python manage.py runserver`でdjangoを起動します
-````bash
+
+1. `python manage.py runserver`で django を起動します
+
+```bash
 $ python manage.py runserver
 Watching for file changes with StatReloader
 Performing system checks...
@@ -149,17 +177,20 @@ December 30, 2022 - 01:44:09
 Django version 4.1.4, using settings 'config.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
-````
-2. ブラウザ上でアプリケーションを確認する
-`http://127.0.0.1:8000/`をブラウザのURL欄に入力しアプリケーションを表示させます。
-無事にDjangoを起動する事が出来ました。
-![Djangoインストール](/images/django-install.png)
+```
 
-## 6. models.pyの作成
+2. ブラウザ上でアプリケーションを確認する
+   `http://127.0.0.1:8000/`をブラウザの URL 欄に入力しアプリケーションを表示させます。
+   無事に Django を起動する事が出来ました。
+   ![Djangoインストール](/images/django-install.png)
+
+## 6. models.py の作成
+
 書籍の情報を管理するテーブル設計を行います
-※modelsの書き方については下記記事を参考にしてください。
+※models の書き方については下記記事を参考にしてください。
 @[card](https://zenn.dev/aew2sbee/articles/django-rest-framework-models)
-````python: books/models.py
+
+```python: books/models.py
 from django.db import models
 
 # Create your models here.
@@ -174,25 +205,33 @@ class Books(models.Model):
    # 管理者画面で表示するデータをtitleの値を返す
    def __str__(self):
        return self.title
-````
+```
 
-## 7. makemigrationsの実行
+## 7. makemigrations の実行
+
 下記コマンドを実行し、先ほど作成したモデルの`books`を`makemigrations`を行う
-> makemigrations を実行することで、Djangoにモデルに変更があったこと(この場合、新しいものを作成しました)を伝え、そして変更を マイグレーション の形で保存することができる。
-````bash
+
+> makemigrations を実行することで、Django にモデルに変更があったこと(この場合、新しいものを作成しました)を伝え、そして変更を マイグレーション の形で保存することができる。
+
+```bash
 python manage.py makemigrations books
-````
+```
+
 実行結果は、下記の通りです
-````bash
+
+```bash
 $ python manage.py makemigrations books
 Migrations for 'books':
   books\migrations\0001_initial.py
     - Create model Books
-````
+```
+
 `books`配下の`migrations`に下記のファイルが作成されます。
+
 - `_init__.py`
 - `0001_initial.py`
-````diff bash
+
+```diff bash
  .
  └── backend
      ├── books
@@ -220,17 +259,21 @@ Migrations for 'books':
      │   └── wsgi.py
      ├── db.sqlite3
      └── manage.py
-````
+```
 
+## 8. migrate の実行
 
-## 8. migrateの実行
-下記コマンドを実行し、`books`の情報をDBに変更・適用します
-> migrateは、自動でデータベーススキーマを管理するためのコマンドです
-````bash
+下記コマンドを実行し、`books`の情報を DB に変更・適用します
+
+> migrate は、自動でデータベーススキーマを管理するためのコマンドです
+
+```bash
 python manage.py migrate
-````
+```
+
 実行結果は、下記の通りです
-````bash
+
+```bash
 $ python manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, books, contenttypes, sessions
@@ -255,13 +298,14 @@ Running migrations:
   Applying books.0001_initial... OK
   Applying sessions.0001_initial... OK
 
-````
+```
 
+## 9. serializers.py の作成
 
-## 9. serializers.pyの作成
-DBへの入出力するデータをバリデーションやJson形式に変換する処理を行う`serializers.py`を作成します。
+DB への入出力するデータをバリデーションや Json 形式に変換する処理を行う`serializers.py`を作成します。
 ※新規で`serializers.py`をファイル作成を行う
-````python: books/serializers.py
+
+```python: books/serializers.py
 from rest_framework import serializers
 from books.models import Books
 from datetime import datetime
@@ -274,11 +318,13 @@ class BooksSerializer(serializers.ModelSerializer):
     class Meta:
         model = Books
         fields = ['id', 'title', 'created_at', 'updated_at']
-````
+```
 
-## 8. viewsの作成
-CRUD操作を行うために、`views.py`を作成する
-````python: books/views.py
+## 8. views の作成
+
+CRUD 操作を行うために、`views.py`を作成する
+
+```python: books/views.py
 from django.shortcuts import render
 from .models import Books
 from rest_framework import viewsets
@@ -287,12 +333,14 @@ from .serializers import BooksSerializer
 # Create your views here.
 class BooksViewSet(viewsets.ModelViewSet):
     queryset = Books.objects.all()
-    serializer_class = BooksSerializer 
-````
+    serializer_class = BooksSerializer
+```
 
-## 9. urls.pyの作成
-APIのURLの設定を行う為、`urls.py`を作成する
-````diff python: config/urls.py
+## 9. urls.py の作成
+
+API の URL の設定を行う為、`urls.py`を作成する
+
+```diff python: config/urls.py
   from django.contrib import admin
   from django.urls import path
 + from django.conf.urls import include
@@ -302,8 +350,9 @@ APIのURLの設定を行う為、`urls.py`を作成する
 +    path('books/', include('books.urls'))
  ]
 
-````
-````python: books/urls.py
+```
+
+```python: books/urls.py
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
@@ -316,45 +365,53 @@ urlpatterns = [
     path('', include(router.urls))
 ]
 
-````
+```
 
 ## 動作確認
+
 ### 1. 初期状態を確認する
+
 アプリケーションを実行します。
-1. 下記コマンドを実行し、djangoを起動します
-````bash
+
+1. 下記コマンドを実行し、django を起動します
+
+```bash
 python manage.py runserver
-````
+```
+
 2. `http://127.0.0.1:8000/books/list/`にアクセスする
 3. まだデータを追加していないので、`[]`が確認出来る
-![drf-api-step01.png](/images/drf-api-step01.png)
+   ![drf-api-step01.png](/images/drf-api-step01.png)
 
 ### 2. データを追加する(Create)
+
 1. `Title`欄に書籍のタイトルを入力する
 2. `POST`ボタンをクリックする
-    ![drf-api-step02.png](/images/drf-api-step02.png)
+   ![drf-api-step02.png](/images/drf-api-step02.png)
 3. さきほど`[]`だったのが、データが追加されたことが確認出来ます。
-![drf-api-step03.png](/images/drf-api-step03.png)
+   ![drf-api-step03.png](/images/drf-api-step03.png)
 
 ### 3. データを更新する(Update)
-1. 追加したデータの`id`をURLに追加し、`http://127.0.0.1:8000/books/list/1/`にアクセスする
+
+1. 追加したデータの`id`を URL に追加し、`http://127.0.0.1:8000/books/list/1/`にアクセスする
 2. タイトルを`リーダブルコード`から`新リーダブルコード`に変更する
 3. `POST`ボタンをクリックする
-![drf-api-step04.png](/images/drf-api-step04.png)
+   ![drf-api-step04.png](/images/drf-api-step04.png)
 4. `Title`と`updated_at`が更新されていることを確認出来る
-※`created_at`は、設定ミスで更新されてしまいました。
-![drf-api-step05.png](/images/drf-api-step05.png)
+   ※`created_at`は、設定ミスで更新されてしまいました。
+   ![drf-api-step05.png](/images/drf-api-step05.png)
 
 ### 2. データを削除する(Delete)
+
 1. `http://127.0.0.1:8000/books/list/1/`にアクセスする
 2. `DELETE`ボタンをクリックする
-![drf-api-step06.png](/images/drf-api-step06.png)
+   ![drf-api-step06.png](/images/drf-api-step06.png)
 3. ポップアップの`Delete`に対してもボタンをクリックする
-![drf-api-step07.png](/images/drf-api-step07.png)
+   ![drf-api-step07.png](/images/drf-api-step07.png)
 4. 初期状態と同じデータが`[]`になる
-![drf-api-step01.png](/images/drf-api-step01.png)
+   ![drf-api-step01.png](/images/drf-api-step01.png)
 
 ## おわりに
-django rest frameworkの環境構築の記事には、見つからなくて大変でした。
-結局、Udemyを購入して学習しました。
 
+django rest framework の環境構築の記事には、見つからなくて大変でした。
+結局、Udemy を購入して学習しました。
