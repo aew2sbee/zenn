@@ -1,16 +1,28 @@
 ---
-title: '安全なパスワードにするには？'
-free: true
+title: "[セキュリティ対策] 安全なパスワードにするには？" # 記事のタイトル
+emoji: "🔐" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ['セキュリティ', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
+
 ---
+## はじめに
 
-## 結論
 
+
+@[card](https://www.sbcr.jp/product/4797393163/)
+
+
+### 結論
+:::message
 下記条件を満たすと安全性が高まります。
 
 1. パスワードの桁数を`8桁以上`にする
 2. パスワードに`英字、数値、記号`を 1 文字以上含める
 3. パスワードに`ユーザー情報に類似した情報`を含めない
 4. パスワードに`パスワード辞書に載っていそうな単語`を含めない
+
+:::
 
 ## 1. パスワードの桁数を`8桁以上`にする
 
@@ -29,7 +41,7 @@ free: true
 仮に、1 秒に 1 回ログインを試みて`1億パターン`試みると、`約3.17年`かかります。
 :::
 
-![password-step00](/images/books/secure-web-app/password-step00.png)
+![password-step00](/images/articles/secure-web-app-password/password-step00.png)
 
 ## 2. パスワードに`英字、数値、記号`を 1 文字以上含める
 
@@ -45,9 +57,9 @@ free: true
 仮に、1 秒に 1 回ログインを試みて`約6100兆`パターン試みると、`約1,991,341年`かかります。
 :::
 
-![password-step01](/images/books/secure-web-app/password-step01.png)
-![password-step02](/images/books/secure-web-app/password-step02.png)
-![password-step03](/images/books/secure-web-app/password-step03.png)
+![password-step01](/images/articles/secure-web-app-password/password-step01.png)
+![password-step02](/images/articles/secure-web-app-password/password-step02.png)
+![password-step03](/images/articles/secure-web-app-password/password-step03.png)
 
 参考テーブル
 | 文字の種類 | 4 桁 | 6 桁 | 8 桁 |
