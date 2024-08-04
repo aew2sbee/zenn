@@ -8,7 +8,7 @@ published: false # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-今回は下記書籍で TypeScript について学習しました。
+今回は下記書籍で`TypeScript`について学習しました。
 下記内容まで解説します。
 - インターフェース(interface)を継承する方法について
 
