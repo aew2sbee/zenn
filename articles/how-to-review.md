@@ -16,8 +16,7 @@ published: true # 公開設定（falseにすると下書き）
 
 - レビューを依頼する人
 - レビューを受ける人
-
-https://bookplus.nikkei.com/atcl/catalog/23/11/07/01094/
+@[card](https://bookplus.nikkei.com/atcl/catalog/23/11/07/01094/)
 
 ## 前提
 
