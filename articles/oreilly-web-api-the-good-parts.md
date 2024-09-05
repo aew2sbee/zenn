@@ -1,5 +1,5 @@
 ---
-title: "【Oreilly】Web API The Good Parts" # 記事のタイトル
+title: "[API設計] 良いAPI(URL)とは" # 記事のタイトル
 emoji: "🩹" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["初心者向け", "API", "Oreilly"] # タグ。["markdown", "rust", "aws"]のように指定する
