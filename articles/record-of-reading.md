@@ -1,5 +1,5 @@
 ---
-title: '私が読んだ技術書たち (27冊)' # 記事のタイトル
+title: '私が読んだ技術書たち (30冊)' # 記事のタイトル
 emoji: '📖' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'idea' # tech: 技術記事 / idea: アイデア
 topics: ['技術書', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -30,6 +30,10 @@ published: true # 公開設定（falseにすると下書き）
 
 @[card](https://www.shoeisha.co.jp/book/detail/9784798178189)
 
+### 1 月
+
+@[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
+
 ## 2023 年 
 ### 9 月
 
@@ -37,6 +41,8 @@ published: true # 公開設定（falseにすると下書き）
 
 ### 8 月
 
+@[card](https://bnn.co.jp/products/9784802512480)
+@[card](https://www.oreilly.co.jp/books/9784873116860/)
 @[card](https://book.impress.co.jp/books/1121101138)
 @[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
 
