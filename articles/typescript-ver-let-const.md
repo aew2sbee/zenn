@@ -2,32 +2,34 @@
 title: '[TypeScript] ver/let/constの違い' # 記事のタイトル
 emoji: '👨‍👦‍👦' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
-typescript の学習を始めた時に、サンプルコードを見て`ver/let/const`の違いが分かりませんでした。
-色々調べて`ver/let/const`の違いを理解したので、執筆しします。
+`TypeScript`の学習を始めた時に、サンプルコードを見て`ver/let/const`の違いが分かりませんでした。
+下記書籍で`ver/let/const`の違いを理解したので、執筆しします。
 
-| 項目             | 内容                                |
-| ---------------- | ----------------------------------- |
-| **対象者**       | ・`ver/let/const`の違いを知りたい方 |
-| **伝えたい内容** | ・`ver/let/const`の違いが分かる     |
-| **前提条件**     | ・TypeScript 3.8.3                  |
+@[card](https://oukayuka.booth.pm/items/2368045)
 
-### 結論
+## 結論
 
 :::message
 それぞれの違いは、**再代入**と**再宣言**が可能かどうかになります。
-:::
+
+基本的には潜在的なバグを生みにくい順番として**const > let > var**である
 
 | 変数宣言 | 意味                     | 再代入 | 再宣言 |
 | :------: | :----------------------- | :----: | :----: |
 |   var    | varible(変数)            |   〇   |   〇   |
 |   let    | let it be (あるがままに) |   〇   |   ×    |
 |  const   | constant (定数)          |   ×    |   ×    |
+
+理由: 再代入/再宣言が可能なほど意図しない動作が発生するの為
+→ 安定したプログラムを作成する時は、**const**を優先的に使用し、再代入したい場合は、**let**を使用する。
+
+:::
 
 ## 解説
 
@@ -43,7 +45,7 @@ typescript の学習を始めた時に、サンプルコードを見て`ver/let/
 
 var の再代入についてサンプルコードとともに確認します。
 
-```typescript
+```ts
 // 初回宣言
 var price = 100;
 console.log(price);
@@ -65,7 +67,7 @@ var の再代入が可能である事が確認出来ました。
 
 var の再宣言についてサンプルコードとともに確認します。
 
-```typescript
+```ts
 // 初回宣言
 var price = 100;
 console.log(price);
@@ -95,7 +97,7 @@ var の再宣言が可能である事が確認出来ました。
 
 let の再代入についてサンプルコードとともに確認します。
 
-```typescript
+```ts
 // 初回宣言
 let price = 100;
 console.log(price);
@@ -117,7 +119,7 @@ let の再代入が可能である事が確認出来ました。
 
 let の再宣言についてサンプルコードとともに確認します。
 
-```typescript
+```ts
 // 初回宣言
 let price = 100;
 console.log(price);
@@ -148,7 +150,7 @@ error TS2451: Cannot redeclare block-scoped variable 'price'.
 
 const の再代入についてサンプルコードとともに確認します。
 
-```typescript
+```ts
 // 初回宣言
 const price = 100;
 console.log(price);
@@ -171,7 +173,7 @@ error TS2588: Cannot assign to 'price' because it is a constant.
 
 const の再宣言についてサンプルコードとともに確認します。
 
-```typescript
+```ts
 // 初回宣言
 const price = 100;
 console.log(price);
@@ -189,9 +191,3 @@ const を使って同じ変数を**再宣言**している
 ----- 出力結果 -----
 error TS2451: Cannot redeclare block-scoped variable 'price'.
 ```
-
-## おわりに
-
-基本的には潜在的なバグを生みにくい順番として**const > let > var**である
-理由: 再代入/再宣言が可能なほど意図しない動作が発生するの為
-→ 安定したプログラムを作成する時は、**const**を優先的に使用し、再代入したい場合は、**let**を使用する。
