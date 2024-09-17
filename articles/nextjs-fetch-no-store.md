@@ -12,7 +12,7 @@ published: true # 公開設定（falseにすると下書き）
 下記書籍の`キャッシュ`について学びがあったので、記事として記録します。
 @[card](https://gihyo.jp/book/2024/978-4-297-14061-8)
 
-### 結論
+## 結論
 
 :::message
 **{ cache: "no-store" }** を fetch 関数のオプションを追加する
