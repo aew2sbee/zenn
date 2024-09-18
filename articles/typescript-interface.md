@@ -15,7 +15,7 @@ published: false # 公開設定（falseにすると下書き）
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
 
 ### 結論
-
+:::message
 ```ts
 interface 継承元 {
   変数名1: データ型;
@@ -25,6 +25,7 @@ interface 継承先 extends 継承元 {
   変数名2: データ型;
 }
 ```
+:::
 
 ### メリット
 :::message
