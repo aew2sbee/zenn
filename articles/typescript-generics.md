@@ -3,7 +3,7 @@ title: '[TypeScript] 関数内で扱う型を引数のように受け取るジ�
 emoji: '💊' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: false # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
