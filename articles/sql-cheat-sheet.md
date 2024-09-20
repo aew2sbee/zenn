@@ -1,4 +1,17 @@
+---
+title: '[SQL] 私なりのチートシート' # 記事のタイトル
+emoji: '🫦' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア
+topics: ['sql', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: false # 公開設定（falseにすると下書き）
+---
+
 ## はじめに
+
+SQLの学習をこれまで行っておらず、
+PJでBackendの処理を触る機会がある為、`SQL`を下記書籍で学習しました。
+チートシートを作成していつでも振り返れる事が出来るようにするために執筆しました。
+@[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
 
 ## 前提条件
 
@@ -71,7 +84,7 @@ sales のテーブルの全データを削除する
 ```sql
 DELETE FROM sales WHERE
 ```
-
+---
 ### データを削除する
 
 #### 基本構文
@@ -154,7 +167,7 @@ sales と items の id が同じの items のデータを取得する
 SELECT item_name FROM sales
 INNER JOIN items ON sales.id = items.id
 ```
-
+---
 ### 条件を含めてテーブルを結合してデータを取得する
 
 #### 基本構文
@@ -212,8 +225,6 @@ SELECT * FROM sales
 ```
 
 ### AND 条件を満たすデータを取得する
-
-### 全データを取得する
 
 #### 基本構文
 
