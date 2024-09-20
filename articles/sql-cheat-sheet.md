@@ -8,8 +8,8 @@ published: false # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-SQLの学習をこれまで行っておらず、
-PJでBackendの処理を触る機会がある為、`SQL`を下記書籍で学習しました。
+SQL の学習をこれまで行っておらず、
+PJ で Backend の処理を触る機会がある為、`SQL`を下記書籍で学習しました。
 チートシートを作成していつでも振り返れる事が出来るようにするために執筆しました。
 @[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
 
@@ -37,11 +37,9 @@ PJでBackendの処理を触る機会がある為、`SQL`を下記書籍で学習
 
 ## CREATE
 
-### テーブルを作成する
+### 1. テーブルを作成する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 CREATE TABLE テーブル名 (
     カラム名A データ型,
     カラム名B データ型,
@@ -50,11 +48,8 @@ CREATE TABLE テーブル名 (
 )
 ```
 
-#### サンプル
-
-sales を下記データ型で設定する
-
-```sql
+```sql:サンプル
+-- sales を下記データ型で設定する
 CREATE TABLE sales (
     id SERIAL PRIMARY KEY,
     date DATE,
@@ -69,74 +64,56 @@ CREATE TABLE sales (
 
 ## DELETE
 
-### 全てデータを削除する
+### 1. 全てデータを削除する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 DELETE FROM テーブル名
 ```
 
-#### サンプル
-
-sales のテーブルの全データを削除する
-
-```sql
+```sql:サンプル
+-- sales のテーブルの全データを削除する
 DELETE FROM sales WHERE
 ```
+
 ---
-### データを削除する
 
-#### 基本構文
+### 2. データを削除する
 
-```sql
+```sql:基本構文
 DELETE FROM テーブル名 WHERE 条件式
 ```
 
-#### サンプル
-
+```sql:サンプル
 2024-01-01 のデータを削除する
-
-```sql
 DELETE FROM sales WHERE date = '2024-01-01'
 ```
 
 ## DROP
 
-### テーブルを削除する
+### 1. テーブルを削除する
 
-#### 基本構文
-
-```sql
+```sql: 基本構文
 DROP TABLE テーブル名
 ```
 
-#### サンプル
-
-sales のテーブルを削除する
-
-```sql
+```sql: サンプル
+-- sales のテーブルを削除する
 DROP TABLE sales
 ```
 
 ## INSERT
 
-### データを作成する
+### 1. データを作成する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 INSERT INTO テーブル名 VALUES
     (カラム名Aのデータ1, カラム名Bのデータ1, カラム名Cのデータ1),
     (カラム名Aのデータ2, カラム名Bのデータ2, カラム名Cのデータ2),
     (カラム名Aのデータ3, カラム名Bのデータ3, カラム名Cのデータ3),
 ```
 
-#### サンプル
-
-sales に 8 件のデータを作成する
-
-```sql
+```sql: サンプル
+-- sales に 8 件のデータを作成する
 INSERT INTO sales VALUES
     (1, '2024-01-01', 'リンゴ', 3, 260, 'Aさん', TRUE, 0.1),
     (2, '2024-01-02', 'バナナ', 2, 340, 'Bさん', FALSE, NULL),
@@ -150,39 +127,31 @@ INSERT INTO sales VALUES
 
 ## JOIN
 
-### テーブルを結合してデータを取得する
+### 1. テーブルを結合してデータを取得する
 
-#### 基本構文
-
-```sql
+```sql: 基本構文
 SELECT カラム FROM テーブル名A
 INNER JOIN テーブル名B ON テーブル名A.カラム名 = テーブル名B.カラム名
 ```
 
-#### サンプル
-
-sales と items の id が同じの items のデータを取得する
-
-```sql
+```sql:サンプル
+-- sales と items の id が同じの items のデータを取得する
 SELECT item_name FROM sales
 INNER JOIN items ON sales.id = items.id
 ```
+
 ---
-### 条件を含めてテーブルを結合してデータを取得する
 
-#### 基本構文
+### 2. 条件を含めてテーブルを結合してデータを取得する
 
-```sql
+```sql:基本構文
 SELECT カラム FROM テーブル名A
 INNER JOIN テーブル名B ON テーブル名A.カラム名 = テーブル名B.カラム名
 WHERE 条件式
 ```
 
-#### サンプル
-
-sales と items の id が同じの items のデータの中で item_cont が 2 より多いデータを取得する
-
-```sql
+```sql:サンプル
+-- sales と items の id が同じの items のデータの中で item_cont が 2 より多いデータを取得する
 SELECT item_name FROM sales
 INNER JOIN items ON sales.id = items.id
 WHERE item_cont > 2
@@ -190,391 +159,269 @@ WHERE item_cont > 2
 
 ## UPDATE
 
-### データを更新する
+### 1. データを更新する
 
-#### 基本構文
-
-```sql
+```sql: 基本構文
 UPDATE テーブル名 SET カラム名 = 設定したい値 WHERE 条件式
 ```
 
-#### サンプル
-
-2024-01-01 のデータを 2024-01-15 に更新する
-
-```sql
+```sql: サンプル
+-- 2024-01-01 のデータを 2024-01-15 に更新する
 UPDATE sales SET date = '2024-01-15' WHERE date = '2024-01-01'
 ```
 
 ## SELECT
 
-### 全データを取得する
+### 1. 全データを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名
 ```
 
-#### サンプル
-
-sales の全てのカラムの値を取得する
-
-```sql
+```sql:サンプル
+-- sales の全てのカラムの値を取得する
 SELECT * FROM sales
 ```
 
-### AND 条件を満たすデータを取得する
+### 2. AND 条件を満たすデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 WHERE 条件式1 AND 条件式2
 ```
 
-#### サンプル
-
-item_name = `リンゴ`かつ`2024-01-04`以降に該当する値を取得する
-
-```sql
+```sql:サンプル
+-- item_name = `リンゴ`かつ`2024-01-04`以降に該当する値を取得する
 SELECT * FROM sales WHERE item_name = 'リンゴ' AND date >= '2024-01-04'
 ```
 
-### カラムを別名にしてデータを取得する
+### 3. カラムを別名にしてデータを取得する
 
-### 全データを取得する
-
-#### 基本構文
-
-```sql
+```sql: 基本構文
 SELECT カラム名 AS 別カラム名 FROM テーブル名
 ```
 
-#### サンプル
-
-item_name = `リンゴ`かつ`2024-01-04`以降に該当する値を取得する
-
-```sql
+```sql:サンプル
+-- item_name -> 商品名として値を取得する
 SELECT item_name AS 商品名 FROM sales
 ```
 
-### データの平均値を取得する
+### 4. データの平均値を取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT AVG(カラム名) FROM テーブル名
 ```
 
-#### サンプル
-
-price の平均値を取得する
-
-```sql
+```sql:サンプル
+-- price の平均値を取得する
 SELECT AVG(price) FROM sales
 ```
 
-### 特定の範囲を満たすデータを取得する
+### 5. 特定の範囲を満たすデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 WHERE カラム名 BETWEEN 条件A AND 条件B
 ```
 
-#### サンプル
-
-price が 300 と 400 の間に該当する値を取得する
-
-```sql
+```sql:サンプル
+-- price が 300 と 400 の間に該当する値を取得する
 SELECT * FROM sales WHERE price BETWEEN 300 AND 400
 ```
 
-### 計算した値を取得する
+### 6. 計算した値を取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT 計算 FROM テーブル名
 ```
 
-#### サンプル
-
-item_name x price の値を取得する
-
-```sql
+```sql:サンプル
+-- item_name と price の乗算を取得する
 SELECT item_cont * price as 合計値段 FROM sales
 ```
 
-### データ数を取得する
+### 7. データ数を取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT COUNT(*) FROM テーブル名
 ```
 
-#### サンプル
-
-sales のデータ数を取得する
-
-```sql
+```sql:サンプル
+-- sales のデータ数を取得する
 SELECT COUNT(*) FROM sales
 ```
 
-### 重複を取り除いたデータを取得する
+### 8. 重複を取り除いたデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT DISTINCT カラム名 FROM テーブル名
 ```
 
-#### サンプル
-
-item_name の値を取得し重複を取り除く
-
-```sql
+```sql:サンプル
+-- item_name の値を取得し重複を取り除く
 SELECT DISTINCT item_name FROM sales
 ```
 
-### グループ化する条件を加えてデータを取得する
+### 9. グループ化する条件を加えてデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT カラム名A, 集計関数 FROM テーブル名 GROUP BY カラム名A HAVING 条件式
 ```
 
-#### サンプル
-
-各 item_name のデータ数で 3 回以上のデータを取得する
-
-```sql
+```sql:サンプル
+-- 各 item_name のデータ数で 3 回以上のデータを取得する
 SELECT item_name, COUNT(*) FROM sales GROUP BY item_name HAVING COUNT(*) >= 3
 ```
 
-### データをグループ化して取得する
+### 10. データをグループ化して取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT カラム名A, 関数(引数) FROM テーブル名 GROUP BY カラム名A
 ```
 
-#### サンプル
-
-各 item_name のデータ数を取得する
-
-```sql
+```sql:サンプル
+-- 各 item_name のデータ数を取得する
 SELECT item_name, COUNT(*) FROM sales GROUP BY item_name
 ```
 
-### IN 条件を満たすデータを取得する
+### 11. IN 条件を満たすデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 WHERE カラム名 IN (データ名1, データ名2, ...)
 ```
 
-#### サンプル
-
-item_name で`リンゴ`, `バナナ`に該当する値を取得する
-
-```sql
+```sql:サンプル
+-- item_name で`リンゴ`, `バナナ`に該当する値を取得する
 SELECT * FROM sales WHERE item_name IN ('リンゴ', 'バナナ')
 ```
 
-### データの最大値を取得する
+### 12. データの最大値を取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT MAX(カラム名) FROM テーブル名
 ```
 
-#### サンプル
-
-price の最大値を取得する
-
-```sql
+```sql:サンプル
+-- price の最大値を取得する
 SELECT MAX(price) FROM sales
 ```
 
-### データの最低値を取得する
+### 13. データの最低値を取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT MIN(カラム名) FROM テーブル名
 ```
 
-#### サンプル
-
-price の最低値を取得する
-
-```sql
+```sql:サンプル
+-- price の最低値を取得する
 SELECT MIN(price) FROM sales
 ```
 
-### 複数カラムのデータを取得する
+### 14. 複数カラムのデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT カラム名1, カラム名2, ... FROM テーブル名
 ```
 
-#### サンプル
-
-item_name と customer の値を取得する
-
-```sql
+```sql:サンプル
+-- item_name と customer の値を取得する
 SELECT item_name, customer FROM sales
 ```
 
-### 特定の範囲を満さないデータを取得する
+### 15. 特定の範囲を満さないデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 WHERE カラム名 NOt BETWEEN 条件A AND 条件B
 ```
 
-#### サンプル
-
-price が 300 と 400 の間に該当しない値を取得する
-
-```sql
+```sql:サンプル
+-- price が 300 と 400 の間に該当しない値を取得する
 SELECT * FROM sales WHERE price NOt BETWEEN 300 AND 400
 ```
 
-### NOT IN 条件を満たすデータを取得する
+### 16. NOT IN 条件を満たすデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 WHERE カラム名 NOT IN (データ名1, データ名2, ...)
 ```
 
-#### サンプル
-
-item_name で`リンゴ`, `バナナ`に該当しない値を取得する
-
-```sql
+```sql:サンプル
+-- item_name で`リンゴ`, `バナナ`に該当しない値を取得する
 SELECT * FROM sales WHERE item_name NOT IN ('リンゴ', 'バナナ')
 ```
 
-### 条件を満たさないデータを取得する
+### 17. 条件を満たさないデータを取得する
 
-#### 基本構文
-
-```sql
+```sql: 基本構文
 SELECT * FROM テーブル名 WHERE NOT 条件式
 ```
 
-#### サンプル
-
-item_name = `リンゴ`に該当しない値を取得する
-
-```sql
+```sql:サンプル
+-- item_name = `リンゴ`に該当しない値を取得する
 SELECT * FROM sales WHERE NOT item_name = 'リンゴ'
 ```
 
-### OR 条件を満たすデータを取得する
+### 18. OR 条件を満たすデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 WHERE 条件式1 OR 条件式2
 ```
 
-#### サンプル
-
-item_name = `リンゴ`か item_name != バナナに該当する値を取得する
-
-```sql
+```sql:サンプル
+-- item_name = `リンゴ`か item_name != バナナに該当する値を取得する
 SELECT * FROM sales WHERE item_name = 'リンゴ' OR item_name <> 'バナナ'
 ```
 
-### 降順にデータを並べ替える
+### 19. 降順にデータを並べ替える
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 ORDER BY 並べ替え基準のカラム名 DESC
 ```
 
-#### サンプル
-
-price が高い順に値を取得する
-
-```sql
+```sql:サンプル
+-- price が高い順に値を取得する
 SELECT * FROM sales ORDER BY price DESC
 ```
 
-### 昇順にデータを並べ替える
+### 20. 昇順にデータを並べ替える
 
-#### 基本構文
-
-```sql
+```sql: 基本構文
 SELECT * FROM テーブル名 ORDER BY 並べ替え基準のカラム名 ASC
 ```
 
-#### サンプル
-
-price が安い順に値を取得する
-
-```sql
+```sql:サンプル
+-- price が安い順に値を取得する
 SELECT * FROM sales ORDER BY price ASC
 ```
 
-### 複数の条件でデータを並べ替える
+### 21.複数の条件でデータを並べ替える
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT * FROM テーブル名 ORDER BY 並べ替え基準のカラム名A, 並べ替え基準のカラム名B, ...
 ```
 
-#### サンプル
-
-price が安い順に並べた後に item_cont の小さい順に値を取得する
-
-```sql
+```sql:サンプル
+-- price が安い順に並べた後に item_cont の小さい順に値を取得する
 SELECT * FROM sales ORDER BY price, item_cont
 ```
 
-### データの合計値を取得する
+### 22. データの合計値を取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT SUM(カラム名) FROM テーブル名
 ```
 
-#### サンプル
-
-price の合計値を取得する
-
-```sql
+```sql:サンプル
+-- price の合計値を取得する
 SELECT SUM(price) FROM sales
 ```
 
-### 条件を満たすデータを取得する
+### 23. 条件を満たすデータを取得する
 
-#### 基本構文
-
-```sql
+```sql:基本構文
 SELECT SUM(カラム名) FROM テーブル名
 ```
 
-#### サンプル
-
-item_name = 'リンゴ'に該当する値を取得する
-
-```sql
+```sql:サンプル
+-- item_name = 'リンゴ'に該当する値を取得する
 SELECT * FROM sales WHERE item_name = 'リンゴ'
 ```
 
