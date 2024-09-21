@@ -3,7 +3,7 @@ title: '[TypeScript] 関数の引数を必須ではなくオプションにす�
 emoji: '🪂' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
@@ -43,7 +43,7 @@ const announceSong = (song: string, singer?: string) => {
 
 ## やり方
 
-### オプションパラメーターに文字列の引数を渡す
+### 1. オプションパラメーターに文字列の引数を渡す
 
 指定した文字列に文字列を引数として渡したので、問題がない
 
@@ -56,7 +56,7 @@ announceSong('Have fun !', 'ayaka');
 "Singer: ayaka"
 ```
 
-### オプションパラメーターに undefined の引数を渡す
+### 2. オプションパラメーターに undefined の引数を渡す
 
 singer は「undefined」が追加された合併型になるので、Error にならない
 
@@ -68,7 +68,7 @@ announceSong('Have fun !', undefined);
 "Song: Have fun !"
 ```
 
-### オプションパラメーターは、必ず最後であること
+### 3. オプションパラメーターは、必ず最後であること
 
 オプションパラメーターを先頭に持ってくると、下記のような Error が発生する
 
