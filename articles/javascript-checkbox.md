@@ -3,21 +3,20 @@ title: "[JavaScript]チェックボックスによるボタンの活性/非活�
 emoji: "🙆‍♀️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["html", "css", "javascript", '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 この記事では、Webサイトの「利用規約への同意」等で使用される、チェックボックスによるボタンの活性/非活性の切り替えのJavaScriptでの実装方法をまとめていきます。
 
-## やり方
-### 1. HTMLファイルの編集
+## 1. HTMLファイルの編集
 ```html
 <input type="checkbox" id="agreement-check">
 <label for="agreement-check"><a href="#" target="_brank">利用規約</a>に同意する</label>
 <button type="submit" value="登録" class="submit_btn" disabled=”disabled”>登録</button>
 ```
 
-### 2. CSSファイルの編集
+## 2. CSSファイルの編集
 ```css
 .submit_btn {
   cursor: pointer;
@@ -39,7 +38,7 @@ published: false # 公開設定（falseにすると下書き）
     opacity: .5;
 }
 ```
-### 3. JavaScriptファイルの編集
+## 3. JavaScriptファイルの編集
 
 ```js
 $(function () {
@@ -54,5 +53,5 @@ $(function () {
 });
 ```
 
-
+## おわり
 チェックボックスのチェックの有無を判別し、ボタンタグにdisabledをつけ外しし、CSSでスタイルを変更することによって実装しました。

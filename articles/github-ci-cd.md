@@ -3,19 +3,19 @@ title: "[GitHub Actions] Pull Request時に自動テスト/prettier/ESLintを実
 emoji: "🍖" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["git", "github", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 
 ## はじめに
+この記事では、GitHub Actionsで**自動テスト/prettier/ESLintを実行する方法**を解説します。
 
 
-## 手順
-### 1. github/workflows配下にcode_check.yamlを作成する
+## 1. github/workflows配下にcode_check.yamlを作成する
 ```bash
 1. github/workflows配下にcode_check.yamlを作成する
 ```
-### 2. code_check.yamlを記述する
+## 2. code_check.yamlを記述する
 - 自動テスト
 - prettier
 - ESLint
@@ -57,5 +57,5 @@ jobs:
 ※ **自動テスト/prettier/ESLint**の各コマンドは、所属プロジェクトの`package.json`の`scripts`を確認してください
 :::
 
-### 3. 開発ブランチに取り込み
+## 3. 開発ブランチに取り込み
 今後のPR(Pull Request)を出されたときにGitHub Actionsが実行する

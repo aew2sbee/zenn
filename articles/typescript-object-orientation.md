@@ -3,17 +3,17 @@ title: '[TypeScript] メンテしやすいコードの書き方' # 記事のタ�
 emoji: '🪂' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
-今回は下記書籍で`コーディング規約`について学習しました。
-下記内容までまとめました。
+この記事では、TypeScriptの**メンテしやすいコードの書き方**を解説します。
 
-- `parameter` について
-
+:::details 参考資料
 @[card](https://gihyo.jp/book/2017/978-4-7741-9087-7)
+:::
+
 
 ## 1. 小さくまとめてわかりやすくする
 

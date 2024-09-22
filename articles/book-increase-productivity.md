@@ -3,13 +3,18 @@ title: "[思考法] 生産性を上げる行動" # 記事のタイトル
 emoji: "📖" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["技術書"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
-
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
+この記事では、エンジニアの**生産性を上げる行動**を解説します。
+
+:::details 参考資料
 @[card](https://books.bunshun.jp/ud/book/num/9784163917689)
+:::
+
+
 
 ## 1. むやみに手を動かさない
 1. 事実を1つを見つける

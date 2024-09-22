@@ -3,11 +3,13 @@ title: "[GitHub] fork元のレポジトリーをupstreamに設定する" # 記�
 emoji: "🌾" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["git", "github", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 
 ## はじめに
+
+この記事では、**fork元のレポジトリーをupstreamに設定する方法**を解説します。
 
 ## 結論
 :::message
@@ -17,8 +19,7 @@ git remote add upstream https://github.com/<Fork元のユーザー名>/<リポ�
 ```
 :::
 
-## やり方
-### 1. 状況を確認する
+## 1. 状況を確認する
 下記コマンドで状況を確認します
 ```bash
 git remote -v
@@ -32,7 +33,7 @@ origin  https://github.com/user-name/sample-project.git (push)
 ```
 :::
 
-### 2. upstreamに設定する
+## 2. upstreamに設定する
 下記コマンドでupstreamに設定する
 ```bash
 git remote add upstream https://github.com/company-name/sample-project.git
