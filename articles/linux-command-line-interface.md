@@ -1,6 +1,6 @@
 ---
 title: '[Linux] 基本コマンド操作(CLI)' # 記事のタイトル
-emoji: '📰' # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: '🎫' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['linux', 'cli'] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
@@ -443,7 +443,7 @@ mv memo.md ../
 
 :::details 実行結果を確認する。
 ```bash
-root@c4f422135b83:~/sample# mv memo.md ../ 
+root@c4f422135b83:~/sample# mv memo.md ../
 root@c4f422135b83:~/sample# ll
 total 8
 drwxr-xr-x 2 root root 4096 Mar 22 05:55 ./
