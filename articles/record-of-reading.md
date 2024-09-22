@@ -34,7 +34,7 @@ published: true # 公開設定（falseにすると下書き）
 
 @[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
 
-## 2023 年 
+## 2023 年
 ### 9 月
 
 @[card](https://www.shoeisha.co.jp/book/detail/9784798167282)
@@ -75,12 +75,12 @@ published: true # 公開設定（falseにすると下書き）
 @[card](https://oukayuka.booth.pm/items/2368019)
 @[card](https://oukayuka.booth.pm/items/2368045)
 
-## 2022 年 
+## 2022 年
 ### 12 月
 
 @[card](https://bookplus.nikkei.com/atcl/catalog/22/04/24/00110/)
 
-## 2021 年 
+## 2021 年
 
 ### 5 月
 
