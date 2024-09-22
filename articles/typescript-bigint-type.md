@@ -7,10 +7,10 @@ published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
-
-`TypeScript`をより深く理解したく下記書籍を読みました。
-下記書籍の`bigint型`について学びがあったので、記事として記録します。
+この記事では、**TypeScriptのbigint型** をまとめております。
+:::details 参考書籍
 @[card](https://www.oreilly.co.jp/books/9784873119045/)
+:::
 
 ## 結論
 
@@ -28,19 +28,19 @@ const num:bigint = 2 ** 53
 `BigInt` と `number` は互換性がないため、混在させて計算することはできません。
 :::
 
-## OK: 安全な整数の最小値を扱う
+## 1. 安全な整数の最小値を扱う
 ```ts
 // 安全な整数の最小値
 const num:bigint = -2 ** 53
 ```
 
-## OK: 安全な整数の最大値を扱う
+## 2. 安全な整数の最大値を扱う
 ```ts
 // 安全な整数の最大値
 const num:bigint = 2 ** 53
 ```
 
-## NG: bigintで小さい値を扱う
+## 3. bigintで小さい値を扱う
 
 ```ts
 // Type 'number' is not assignable to type 'bigint'.
