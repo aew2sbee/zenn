@@ -1,8 +1,14 @@
-
+---
+title: '[Linux] 基本コマンド操作(CLI)' # 記事のタイトル
+emoji: '📰' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['linux', 'cli'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
+---
 
 
 ## はじめに
-
+この記事では、**linuxのcli** をまとめております。
 
 ## 事前準備[Linux(ubuntu)環境の構築]
 ### 1. dockerイメージをpullする
