@@ -1,19 +1,27 @@
-
+---
+title: '[Next.js] tsconfig.jsonの設定' # 記事のタイトル
+emoji: '🎩' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['nextjs', 'typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
+---
 
 
 ## はじめに
+この記事では、**tsconfig.jsonの設定方法** をまとめております。
 
+:::details 参考書籍
+@[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
+:::
 
-## やり方
-### 1. tsconfig.jsonの作成
+## 1. tsconfig.jsonの作成
 下記コマンドでデフォルトで作成する事が出来ますが、PJ作成時に作成されます。
 
 ```bash
 tsc --init
 ```
 
-
-### 2. tsconfig.jsonの更新
+## 2. tsconfig.jsonの更新
 下記内容ようにファイルを更新します。
 ```json:tsconfig.json
 {
