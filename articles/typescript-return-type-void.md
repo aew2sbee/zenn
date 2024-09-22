@@ -17,7 +17,7 @@ published: true # 公開設定（falseにすると下書き）
 ## 結論
 
 :::message
-void とは、**return 文を持たない**や**値を返さない return 文**を有する関数の場合、
+`void` とは、**return 文を持たない**や**値を返さない return 文**を有する関数の場合、
 戻り値の型を使う事ができる型です。
 :::
 
