@@ -10,7 +10,7 @@ published: true # 公開設定（falseにすると下書き）
 
 この記事では、**TypeScriptのevery** をまとめております。
 
-:::details 参考書籍
+:::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
 :::
 

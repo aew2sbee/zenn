@@ -10,7 +10,7 @@ published: true # 公開設定（falseにすると下書き）
 ## はじめに
 この記事では、**tsconfig.jsonの設定方法** をまとめております。
 
-:::details 参考書籍
+:::details 参考資料
 @[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
 :::
 

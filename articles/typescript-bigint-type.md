@@ -8,7 +8,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 この記事では、**TypeScriptのbigint型** をまとめております。
-:::details 参考書籍
+:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784873119045/)
 :::
 

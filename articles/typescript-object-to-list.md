@@ -1,34 +1,38 @@
 ---
-title: '[TypeScript] オブジェクト(object)を配列に変換したい' # 記事のタイトル
-emoji: '🤹' # アイキャッチとして使われる絵文字（1文字だけ）
+title: '[TypeScript] オブジェクト(object)を配列に変換する' # 記事のタイトル
+emoji: '🐄' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', 'object'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
+この記事では、コードをシンプルに書ける**反復処理**を解説します。
 
-オブジェクトを配列にする方法(**反復処理**)を学びましたので、執筆しました。
+## 結論
 
-| 項目             | 内容                                     |
-| ---------------- | ---------------------------------------- |
-| **対象者**       | ・オブジェクトを配列に変換したい方       |
-| **伝えたい内容** | ・オブジェクトの反復処理の使い方が分かる |
-| **前提条件**     | ・TypeScript 4.8.4                       |
+:::message
+下記コードで配列の末尾の値を取得する可能です。
 
-### 結論
+```ts
+// オブジェクトのkeyのみを取得する
+const hoge = Object.keys(オブジェクト変数)
 
-| 種類             | 処理説明                                       | メリット                                                                            |
-| ---------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Object.keys()    | オブジェクトの**key**のみを取得する            | 1 行で処理する事が出来る(for 文不要)<br>map()などの処理にも併せて利用する事が出来る |
-| Object.values()  | オブジェクトの**value**のみを取得する          | 同上                                                                                |
-| Object.entries() | オブジェクトの**key**と**value**のみを取得する | 同上                                                                                |
+// オブジェクトのvalueのみを取得する
+const hoge = Object.values(オブジェクト変数)
 
-## Object.keys のサンプルコード
+// オブジェクトのkeyとvalueのみを取得する
+const hoge = Object.entries(オブジェクト変数)
+```
 
-user_info の**key**のみを取得します。
+**メリット**
+1. 1 行で処理する事が出来る(for 文不要)
+2. map()などの処理にも併せて利用する事が出来る
+:::
 
-```typescript
+## 1. オブジェクトのkeyのみを取得する
+
+```ts
 const user_info = {
   name: 'ogura',
   age: 18,
@@ -37,17 +41,15 @@ const user_info = {
 console.log(Object.keys(user_info));
 ```
 
-出力結果を確認します。
-
+:::details 実行結果を確認する
 ```bash
-["ogura", 18, "female"]
+["name", "age", "gender"]
 ```
+:::
 
-## Object.values のサンプルコード
+## 2. オブジェクトのvalueのみを取得する
 
-user_info の**value**のみを取得します。
-
-```typescript
+```ts
 const user_info = {
   name: 'ogura',
   age: 18,
@@ -57,17 +59,15 @@ const user_info = {
 console.log(Object.values(user_info));
 ```
 
-出力結果を確認します。
-
+:::details 実行結果を確認する
 ```bash
 ["ogura", 18, "female"]
 ```
+:::
 
-## Object.entries のサンプルコード
+## 3. オブジェクトのkeyとvalueのみを取得する
 
-user_info の**key**と**value**のみを取得します。
-
-```typescript
+```ts
 const user_info = {
   name: 'ogura',
   age: 18,
@@ -77,12 +77,8 @@ const user_info = {
 console.log(Object.entries(user_info));
 ```
 
-出力結果を確認します。
-
+:::details 実行結果を確認する
 ```bash
 [["name", "ogura"], ["age", 18], ["gender", "female"]]
 ```
-
-## おわりに
-
-オブジェクトの反復処理のイメージで反復練習が必要な 🤹 を連想しました。
+:::
