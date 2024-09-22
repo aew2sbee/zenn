@@ -3,20 +3,17 @@ title: '[TypeScript] Jsonファイルを直接インポートする' # 記事の
 emoji: '🏑' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', 'json', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
-今回は下記書籍で TypeScript について学習しました。
-下記内容まで解説します。
-- Jsonファイルを直接インポートする方法について
-
-
-
+この記事では、**Jsonファイルを直接インポートする方法** をまとめております。
+:::details 参考書籍
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
+:::
 
-### 結論
+## 結論
 
 :::message
 tsconfig.json の **"resolveJsonModule": true,** を追加する
@@ -32,9 +29,8 @@ tsconfig.json の **"resolveJsonModule": true,** を追加する
 
 :::
 
-## やり方
 
-### 0. 前提条件：ディレクトリー構成
+## 0. 前提条件：ディレクトリー構成
 
 ```bash
 .
@@ -44,7 +40,7 @@ tsconfig.json の **"resolveJsonModule": true,** を追加する
 
 ```
 
-### 1. tsconfig.json の設定
+## 1. tsconfig.json の設定
 
 `"resolveJsonModule": true,`を追加する
 
@@ -58,7 +54,7 @@ tsconfig.json の **"resolveJsonModule": true,** を追加する
 
 ```
 
-### 2. 読み取る対象の Json ファイルの作成
+## 2. 読み取る対象の Json ファイルの作成
 
 ```json:data.json
 {
@@ -79,7 +75,7 @@ tsconfig.json の **"resolveJsonModule": true,** を追加する
 
 ```
 
-### 3-1. Json ファイルの全てを出力する
+## 3-1. Json ファイルの全てを出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
@@ -87,7 +83,7 @@ import * as data from './data.json';
 console.log(data);
 
 ```
-
+:::details 実行結果を確認する
 ```bash
 $ ts-node resolveJsonModule.ts
 {
@@ -98,23 +94,24 @@ $ ts-node resolveJsonModule.ts
 }
 
 ```
+:::
 
-### 3-2. Json ファイルの全てを出力する
+## 3-2. Json ファイルの全てを出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 
 console.log(data.timestamp);
-
 ```
 
+:::details 実行結果を確認する
 ```bash
 $ ts-node resolveJsonModule.ts
 2019-01-01 12:00:00
-
 ```
+:::
 
-### 3-3. Json ファイルの data の配列を出力する
+## 3-3. Json ファイルの data の配列を出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
@@ -123,13 +120,14 @@ console.log(data.data);
 
 ```
 
+:::details 実行結果を確認する
 ```bash
 $ ts-node resolveJsonModule.ts
 [ { id: 1, name: 'Michael' }, { id: 2, name: 'John' } ]
-
 ```
+:::
 
-### 3-4. Json ファイルの data の配列の 0 番目を出力する
+## 3-4. Json ファイルの data の配列の 0 番目を出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
@@ -137,9 +135,9 @@ import * as data from './data.json';
 console.log(data.data[0].name);
 
 ```
-
+:::details 実行結果を確認する
 ```bash
 $ ts-node resolveJsonModule.ts
 Michael
-
 ```
+:::
