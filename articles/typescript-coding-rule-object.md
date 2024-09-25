@@ -1,19 +1,19 @@
 ---
-title: '[コーディング規約] オブジェクト指向らしい設計にする方法' # 記事のタイトル
+title: '[TypeScript] オブジェクト指向らしい設計にする方法' # 記事のタイトル
 emoji: '🪂' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
-今回は下記書籍で`コーディング規約`について学習しました。
-下記内容までまとめました。
+この記事では、TypeScriptで**オブジェクト指向らしい設計にする方法**を解説します。
 
-- `parameter` について
-
+:::details 参考資料
 @[card](https://gihyo.jp/book/2017/978-4-7741-9087-7)
+:::
+
 
 ## 1. １つのメソッドのインデントは1つまで
 1番深いインデントの処理をメソッドを抽出し、次のインデントをさらにメソッドに抽出するパターンです。
@@ -30,7 +30,7 @@ function calculateDiscount(price: number): number | string {
     if (price <= 0) {
         return "価格は正の値でなければなりません";
     }
-    
+
     // ガード節を通過した場合の処理
     const discount: number = price * 0.1;
     const discountedPrice: number = price - discount;

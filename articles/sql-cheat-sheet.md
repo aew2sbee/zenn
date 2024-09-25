@@ -1,17 +1,17 @@
 ---
 title: '[SQL] 私なりのチートシート' # 記事のタイトル
-emoji: '🫦' # アイキャッチとして使われる絵文字（1文字だけ）
+emoji: '👯' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['sql', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
+この記事では、**基本的なSQLコマンド**を解説します。
 
-SQL の学習をこれまで行っておらず、
-PJ で Backend の処理を触る機会がある為、`SQL`を下記書籍で学習しました。
-チートシートを作成していつでも振り返れる事が出来るようにするために執筆しました。
+:::details 参考資料
 @[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
+:::
 
 ## 前提条件
 
