@@ -37,16 +37,17 @@ published: false # 公開設定（falseにすると下書き）
 ### フロントエンド
 |  技術名  |  選定理由  |
 | ---- | ---- |
-| [TypeScript](https://www.typescriptlang.org/)  |  TD  |
+| [TypeScript](https://www.typescriptlang.org/)  |  現職で使用言語のためスキルアップ  |
 | [Redux](https://redux.js.org/)   |  TD  |
 | [Next.js](https://nextjs.org)   |  TD  |
+| [tailwindcss](https://tailwindcss.com/)   |  `Next.js`をインストール時に  |
 
 ### バックエンド
 
 |  技術名  |  選定理由  |
 | ---- | ---- |
-| [Python](https://www.python.org/)  |  TD  |
-| [Django REST framework](https://www.django-rest-framework.org/)   |  TD  |
+| [Python](https://www.python.org/)  |  - 前職で`Python`の実務経験(2年)<br>- 他のメンバーにも経験者あり  |
+| [Django REST framework](https://www.django-rest-framework.org/)   |  - `Django`で一度実装したかった  |
 
 ### その他
 
@@ -82,6 +83,13 @@ graph TB
 
 ![mypage](/images/articles/experience-sandbooks/mypage.png)
 ![admin-page](/images/articles/experience-sandbooks/admin-page.png)
+
+### 3. JWT認証システムでログイン機能を実装
+### 4. Atomic Designの導入
+### 5. ページネーションの導入
+### 6. 冗長なテーブル構造にならないような工夫
+### 7. 実装コストの軽減案の検討
+
 
 ## テーブル設計
 ### 書籍マスターテーブル
@@ -132,3 +140,20 @@ graph TB
 |  郵便番号  |  TD  |
 
 ## 今回の学び/反省
+### 1. カタチにするを優先した
+### 2. 
+
+
+### 苦労
+
+
+:::details 参考資料
+[[基礎編]React Hooks + Django REST Framework API でフルスタックWeb開発
+](https://www.udemy.com/share/103nIU3@Qctp7EIJRFkDrweoOxhKeg1QWpJ7x5UocVsa983X_7v5nbzgUclAMRzEW82N9TiXLA==/)
+[[Instagramクローン編] React Hooks + Django Restframework
+](https://www.udemy.com/share/104jEo3@0zqcHITGuuVkMMj7aH-z_DK_jTjJopm4A_6U-HoAUoL_jrR6Ol5bMdJTF2yYCbDMeQ==/)
+[Nextjs + Tailwind CSS + Django REST Framework で学ぶモダンReact開発](https://www.udemy.com/share/1046vI3@VJq_k1x_RTTI5o3mpX8tqOUxAvZirkcibpfV3Z34wEEsGtsGRqRqvr4bEfmyOadXgA==/)
+@[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
+[Django REST FrameworkでJWT認証システム構築](https://zenn.dev/hathle/books/drf-auth-book)
+[Django REST Framework + NextJS + Stripeサブスク有料会員サイト構築](https://zenn.dev/hathle/books/next-drf-membership-book)
+:::
