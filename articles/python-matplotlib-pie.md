@@ -105,7 +105,3 @@ plt.show()
    ![ターミナルでPythonファイルを実行する](/images/run-matplotlib-vscode.png)
    期待通りのグラフが画像として表示されました！
    ![pie_sample](/images/pie_sample.png)
-
-## おわりに
-
-🍥 はぐるぐる
