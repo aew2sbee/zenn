@@ -21,6 +21,10 @@ published: true # 公開設定（falseにすると下書き）
 @[card](https://book.mynavi.jp/ec/products/detail/id=134252)
 @[card](https://bookplus.nikkei.com/atcl/catalog/23/11/07/01094/)
 
+:::details 関連記事
+https://zenn.dev/aew2sbee/articles/test-high-performance-at-minimal-cost
+:::
+
 ### 7 月
 
 @[card](https://gihyo.jp/book/2024/978-4-297-14061-8)
