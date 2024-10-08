@@ -24,7 +24,7 @@ published: false # 公開設定（falseにすると下書き）
 借用者が多くない為、下記アプリを駆使し管理者2人で対応しておりました。
 
 しかし、借用者が増加したら管理コストが増加すること容易に想像できます。
-そこで下記アプリを駆使しするのではなくなるべく削減した運用に切り替える事を目標になりました。
+そこで下記アプリを駆使しするのではなく削減した運用に切り替える事を目標になりました。
 
 
 
@@ -88,6 +88,9 @@ published: false # 公開設定（falseにすると下書き）
 > 下記画像では郵送:🚛, 持ち出し:🖐のアイコンを表示
 
 ![book-deteils](/images/articles/experience-sandbooks/book-deteils.png)
+
+`ローディング`が分かるようにサークルが観点するアニメーションを追加
+![book-deteils](/images/articles/experience-sandbooks/loading.png)
 
 ### 2. アプリの状態がわかりやすいように表示する
 表示するデータない時は、単に`「データがありません」`と表示するのではなく
@@ -160,7 +163,7 @@ published: false # 公開設定（falseにすると下書き）
 2. `あったらいいな!`機能の実装優先順位を落とし、`社内専用アプリ`にとって必須な機能のみ絞り込み
 
 ### 6. 開発目標がぶれないようにメンバーで議論
-- 「なぜ？このアプリが必要なのか?作成する必要があるのか?」メンバーで明確化し、方針がぶれそうなときに振り替えるために考案しました。
+「なぜ？このアプリが必要なのか?作成する必要があるのか?」メンバーで明確化し、方針がぶれそうなときに振り替えるために下記目標を考案しました。
 1. `社内専用アプリ`を通じて社員の**スキルアップ/社員の自己実現**をサポートする
 2. 読みたい本を読みたい時にすぐに見つけられるアプリ
 3. 直感的な操作可能なアプリ
@@ -182,25 +185,32 @@ Microsoft Teamsの通知で必要な時に確認する楽な運用を可能に�
 ### 2. モダン技術に安易に手を出さない
 今回の技術選定で比較的にモダンな技術を選択しました。※誰もモダン技術の実務経験なし
 結果的に開発の半分以上は学習期間だったため、開発する期間をあまり確保する事が出来なかった
+特に参考になる資料を集めるのが大変でした
 :::message
 **今振り返ると...**
-アプリ動作確認する前に、`ドキュメント単位`や`イラスト単位`で確認してもらう方が出戻り作業の精神的ダメージが少ないと感じる
+モダン技術の選択は悪いと感じませんが、それなりのコストが必要であることを次回に生かしたい
 :::
 
+### 3. やっぱり開発作業は学びが多い
+記事/書籍を読む、チュートリアルを進めるでは**得られない経験が多く良い体験**になりました。
+`Django REST framework`で意図的にネストした形式にデータ成形するのが難しく、当時情報も少なく苦労しました。
+また、通信量を減らすために必要なキーバリューのみを返す設定も実践的な学びでした
+
+:::message
+**今振り返ると...**
+`Django REST framework`は、お手軽に簡単なAPIを作成することは出来ますが、実践的なAPIを作成しようと思うと`パッケージ化`されているため、実装方法が極端に難しいものでした。
+:::
+
+## 参考資料
+@[card](https://www.udemy.com/share/103nIU3@Qctp7EIJRFkDrweoOxhKeg1QWpJ7x5UocVsa983X_7v5nbzgUclAMRzEW82N9TiXLA==/)
 
 
-:::details 参考資料
-[[基礎編]React Hooks + Django REST Framework API でフルスタックWeb開発
-](https://www.udemy.com/share/103nIU3@Qctp7EIJRFkDrweoOxhKeg1QWpJ7x5UocVsa983X_7v5nbzgUclAMRzEW82N9TiXLA==/)
-[[Instagramクローン編] React Hooks + Django Restframework
-](https://www.udemy.com/share/104jEo3@0zqcHITGuuVkMMj7aH-z_DK_jTjJopm4A_6U-HoAUoL_jrR6Ol5bMdJTF2yYCbDMeQ==/)
-[Nextjs + Tailwind CSS + Django REST Framework で学ぶモダンReact開発](https://www.udemy.com/share/1046vI3@VJq_k1x_RTTI5o3mpX8tqOUxAvZirkcibpfV3Z34wEEsGtsGRqRqvr4bEfmyOadXgA==/)
+- [[基礎編]React Hooks + Django REST Framework API でフルスタックWeb開発]()
+- [[Instagramクローン編] React Hooks + Django Restframework](https://www.udemy.com/share/104jEo3@0zqcHITGuuVkMMj7aH-z_DK_jTjJopm4A_6U-HoAUoL_jrR6Ol5bMdJTF2yYCbDMeQ==/)
+- [Nextjs + Tailwind CSS + Django REST Framework で学ぶモダンReact開発](https://www.udemy.com/share/1046vI3@VJq_k1x_RTTI5o3mpX8tqOUxAvZirkcibpfV3Z34wEEsGtsGRqRqvr4bEfmyOadXgA==/)
+- [Django REST FrameworkでJWT認証システム構築](https://zenn.dev/hathle/books/drf-auth-book)
+- [Django REST Framework + NextJS + Stripeサブスク有料会員サイト構築](https://zenn.dev/hathle/books/next-drf-membership-book)
+
 @[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
-[Django REST FrameworkでJWT認証システム構築](https://zenn.dev/hathle/books/drf-auth-book)
-[Django REST Framework + NextJS + Stripeサブスク有料会員サイト構築](https://zenn.dev/hathle/books/next-drf-membership-book)
-:::
-
-
-## ページ遷移図
 
 
