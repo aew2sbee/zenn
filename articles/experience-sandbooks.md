@@ -3,7 +3,7 @@ title: "[体験談] 未完成な社内図書館アプリ" # 記事のタイト�
 emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["初心者向け", "個人開発", "nextjs", "react", "django"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
@@ -202,15 +202,11 @@ Microsoft Teamsの通知で必要な時に確認する楽な運用を可能に�
 :::
 
 ## 参考資料
-@[card](https://www.udemy.com/share/103nIU3@Qctp7EIJRFkDrweoOxhKeg1QWpJ7x5UocVsa983X_7v5nbzgUclAMRzEW82N9TiXLA==/)
-
-
-- [[基礎編]React Hooks + Django REST Framework API でフルスタックWeb開発]()
-- [[Instagramクローン編] React Hooks + Django Restframework](https://www.udemy.com/share/104jEo3@0zqcHITGuuVkMMj7aH-z_DK_jTjJopm4A_6U-HoAUoL_jrR6Ol5bMdJTF2yYCbDMeQ==/)
-- [Nextjs + Tailwind CSS + Django REST Framework で学ぶモダンReact開発](https://www.udemy.com/share/1046vI3@VJq_k1x_RTTI5o3mpX8tqOUxAvZirkcibpfV3Z34wEEsGtsGRqRqvr4bEfmyOadXgA==/)
-- [Django REST FrameworkでJWT認証システム構築](https://zenn.dev/hathle/books/drf-auth-book)
-- [Django REST Framework + NextJS + Stripeサブスク有料会員サイト構築](https://zenn.dev/hathle/books/next-drf-membership-book)
-
 @[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
+@[card](https://zenn.dev/hathle/books/drf-auth-book)
+@[card](https://zenn.dev/hathle/books/next-drf-membership-book)
+@[card](https://www.udemy.com/share/1037Fy3@j8o-426vfY4p_qwjiikuJEKRFiMDdenUIb4u72A3xsU_Lh5IPqtDefGVFAuyBAKANQ==/)
+@[card](https://www.udemy.com/share/103uBq3@FAD6xQiCfghCH0yx7b8KMAwN4r0VdozCC0sN8lPUmY1MyCEcCNE2iurvXNPlgo8G-w==/)
+@[card](https://www.udemy.com/share/103VXW3@0RHYvP5N5d2FJiCSNevN-Do6zccYF5p7tZaHNMBFxcWV5GVDCgGemq72NMJuK0I50g==/)
 
 
