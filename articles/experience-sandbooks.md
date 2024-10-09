@@ -89,7 +89,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ![book-deteils](/images/articles/experience-sandbooks/book-deteils.png)
 
-`ローディング`が分かるようにサークルが観点するアニメーションを追加
+`ローディング`が分かるようにサークルが回転するアニメーションを追加
 ![book-deteils](/images/articles/experience-sandbooks/loading.png)
 
 ### 2. アプリの状態がわかりやすいように表示する
