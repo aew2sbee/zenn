@@ -38,10 +38,155 @@ const buttons = await page.getByRole('button');
 
 ### コントロールに関するroleとそれに対応するtag
 
-|  role  |  tag  | 説明  |
-| ---- | ---- | ---- |
-|  form  |  <form>  |  ユーザーから入力を受け取るためのインターフェース  |
-|  dialog  |  TD  |  TD  |
+```html:form
+
+<form>
+```
+
+```html:dialog
+
+<dialog>
+```
+
+```html:button
+
+<button>
+<input type="button">
+<input type="image">
+<input type="reset">
+<input type="submit">
+```
+
+```html:checkbox
+
+<input type="checkbox">
+```
+
+```html:spinbutton
+
+<input type="number">
+```
+
+```html:radio
+
+<input type="radio">
+```
+
+```html:slider
+
+<input type="range">
+```
+
+```html:textboox
+
+<!-- 上記以外の -->
+<input>
+<textarea>
+```
+
+```html:combobox
+
+<!-- mutiple属性がついておらず、sizeが1 -->
+<select>
+```
+
+```html:listbox
+
+<!-- 上記以外 -->
+<select>
+```
+
+```html:group
+
+<optgroup>
+```
+
+```html:progressbar
+
+<progress>
+```
+
+### インライン要素に関するroleとそれに対応するtag
+
+```html:link
+<a>
+<area>
+```
+
+```html:status
+
+<output>
+```
+
+### リストに関するroleとそれに対応するtag
+
+```html:list
+<menu>
+<ol>
+<ul>
+```
+
+```html:listitem
+
+<li>
+```
+
+```html:definition
+
+<dd>
+```
+
+```html:group
+
+<details>
+<fieldset>
+```
+
+```html:term
+
+<dfn>
+<dt>
+```
+
+### テーブルに関するroleとそれに対応するtag
+
+```html:table
+
+<table>
+```
+
+```html:caption
+
+<caption>
+```
+
+```html:rowgroup
+
+<tbody>
+<tfoot>
+<thead>
+```
+
+```html:row
+
+<tr>
+```
+
+```html:cell
+通常の<table>に属しscope属性のない<th>,<td>
+```
+
+```html:gridecll
+
+```
+
+```html:columnheadr
+
+```
+
+```html:rowheader
+
+```
 
 :::
 
