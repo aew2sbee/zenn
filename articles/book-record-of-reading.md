@@ -15,6 +15,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ### 10 月
 @[card](https://gihyo.jp/magazine/SD)
+@[card](https://gihyo.jp/book/2024/978-4-297-14220-9)
 
 ### 9 月
 @[card](https://gihyo.jp/book/2024/978-4-297-14285-8)
