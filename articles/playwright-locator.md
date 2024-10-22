@@ -142,55 +142,43 @@ const buttons = await page.getByRole('button');
 ```
 
 ```html:role属性="group"
-
+<!-- 折りたたみ可能なインタラクティブな詳細情報の表示に使います。 -->
 <details>
+<!-- フォームの関連する入力フィールドやコントロールをグループ化するために使います。 -->
 <fieldset>
 ```
 
 ```html:role属性="term"
-
+<!-- 用語の定義を示すために使用されます。このタグで囲まれたテキストは、その用語の定義や説明であることを意味します。 -->
 <dfn>
+    <!-- 定義リスト（<dl>）内で、用語やアイテムを表すタグです。 -->
 <dt>
 ```
 
 ### テーブルに関するroleとそれに対応するtag
 
 ```html:role属性="table"
-
+<!-- 表を作成するためのタグです。 -->
 <table>
 ```
 
 ```html:role属性="caption"
-
+<!-- テーブルのタイトルやキャプションを指定します。 -->
 <caption>
 ```
 
 ```html:role属性="rowgroup"
-
-<tbody>
-<tfoot>
+<!-- テーブルのヘッダー部分を定義します。 -->
 <thead>
+<!-- テーブルの本体部分（行やデータセル）を定義します。 -->
+<tbody>
+<!-- テーブルのフッター部分を定義します。 -->
+<tfoot>
 ```
 
 ```html:role属性="row"
-
+<!-- HTMLテーブル内で行（row）を作成するためのタグです。 -->
 <tr>
-```
-
-```html:role属性="cell"
-通常の<table>に属しscope属性のない<th>,<td>
-```
-
-```html:role属性="gridecll"
-
-```
-
-```html:role属性="columnheadr"
-
-```
-
-```html:role属性="rowheader"
-
 ```
 
 :::
