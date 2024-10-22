@@ -38,111 +38,111 @@ const buttons = await page.getByRole('button');
 
 ### コントロールに関するroleとそれに対応するtag
 
-```html:form
-
+```html:role属性="form"
+<!-- ユーザーがデータを入力し、サーバーに送信するための領域 -->
 <form>
 ```
 
-```html:dialog
-
+```html:role属性="dialog"
+<!-- モーダルウィンドウやダイアログボックスを表示するために使用 -->
 <dialog>
 ```
 
-```html:button
-
+```html:role属性="button"
+<!-- ボタンを作成するためのタグ -->
 <button>
+<!-- <button>タグとは異なり、フォームデータの送信機能はありません。JavaScriptで動作をカスタマイズする際に使われます。 -->
 <input type="button">
+<!-- ボタンとして機能する画像を表示し、クリックするとフォームを送信できます。 -->
 <input type="image">
+<!-- フォーム内の入力フィールドをリセット（初期状態に戻す）するボタンを作成します。 -->
 <input type="reset">
+<!-- フォームの送信ボタンを作成します。クリックするとフォームデータが送信されます。 -->
 <input type="submit">
 ```
 
-```html:checkbox
-
+```html:role属性="checkbox"
+<!-- チェックボックスを作成します。複数の選択肢から複数の選択を可能にします。 -->
 <input type="checkbox">
 ```
 
-```html:spinbutton
-
+```html:role属性="spinbutton"
+<!-- 数値の入力フィールドを作成します。 -->
 <input type="number">
 ```
 
-```html:radio
-
+```html:role属性="radio"
+<!-- ラジオボタンを作成します。複数の選択肢から1つだけ選択できる場合に使用されます。 -->
 <input type="radio">
 ```
 
-```html:slider
-
+```html:role属性="slider"
+<!-- スライダーを作成します。ユーザーが範囲内の数値を選択するために使用されます。 -->
 <input type="range">
 ```
 
-```html:textboox
-
-<!-- 上記以外の -->
-<input>
+```html:role属性="textboox"
+上記以外の<input>
+<!-- 複数行のテキスト入力フィールドを作成します。メモやコメントなど長文を入力する場合に使用されます。 -->
 <textarea>
 ```
 
-```html:combobox
-
-<!-- mutiple属性がついておらず、sizeが1 -->
-<select>
+```html:role属性="combobox"
+<!-- ドロップダウンリストを作成します。ユーザーがリストから1つまたは複数の選択肢を選べるようにします。 -->
+<select>(mutiple属性がついておらず、sizeが1)
 ```
 
-```html:listbox
-
-<!-- 上記以外 -->
-<select>
+```html:role属性="listbox"
+<select>(上記以外)
 ```
 
-```html:group
-
+```html:role属性="group"
+<!-- <select>要素内で、選択肢をグループ化するために使用されます。リストの選択肢を整理する際に使われます。 -->
 <optgroup>
 ```
 
-```html:progressbar
-
+```html:role属性="progressbar"
+<!-- 進捗バーを表示するために使用されます。タスクの進行状況を視覚的に示すことができます。 -->
 <progress>
 ```
 
 ### インライン要素に関するroleとそれに対応するtag
 
-```html:link
+```html:role属性="link"
 <a>
 <area>
 ```
 
-```html:status
+```html:role属性="status"
 
 <output>
 ```
 
 ### リストに関するroleとそれに対応するtag
 
-```html:list
+```html:role属性="list"
 <menu>
 <ol>
 <ul>
 ```
 
-```html:listitem
+```html:role属性="listitem"
 
 <li>
 ```
 
-```html:definition
+```html:role属性="definition"
 
 <dd>
 ```
 
-```html:group
+```html:role属性="group"
 
 <details>
 <fieldset>
 ```
 
-```html:term
+```html:role属性="term"
 
 <dfn>
 <dt>
@@ -150,41 +150,41 @@ const buttons = await page.getByRole('button');
 
 ### テーブルに関するroleとそれに対応するtag
 
-```html:table
+```html:role属性="table"
 
 <table>
 ```
 
-```html:caption
+```html:role属性="caption"
 
 <caption>
 ```
 
-```html:rowgroup
+```html:role属性="rowgroup"
 
 <tbody>
 <tfoot>
 <thead>
 ```
 
-```html:row
+```html:role属性="row"
 
 <tr>
 ```
 
-```html:cell
+```html:role属性="cell"
 通常の<table>に属しscope属性のない<th>,<td>
 ```
 
-```html:gridecll
+```html:role属性="gridecll"
 
 ```
 
-```html:columnheadr
+```html:role属性="columnheadr"
 
 ```
 
-```html:rowheader
+```html:role属性="rowheader"
 
 ```
 
