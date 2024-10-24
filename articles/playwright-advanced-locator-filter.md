@@ -9,8 +9,20 @@ published: true # 公開設定（falseにすると下書き）
 ## はじめに
 この記事では、**Playwrightのfilter()** についてをまとめております。
 
-
-> filter()メソッドを使うことで取得した要素の中からさらに条件に合致するものを絞り込むことができます。
+## 結論
+:::message
+filter()メソッドを使うこと絞り込むことができます。
+```ts
+// 特定のテキストを持つ
+.filter({ hasText: テキスト })
+// 特定のテキストを持たない
+.filter({ hasNotText: テキスト })
+// 特定の属性を持つ
+.filter({ has: ロケーター })
+// 特定の属性を持たない
+.filter({ hasNot: ロケーター })
+```
+:::
 
 ## 1. 特定のテキストを持つ: { hasText: テキスト }
 ```ts
@@ -20,7 +32,7 @@ published: true # 公開設定（falseにすると下書き）
 await page.getByRole('button').filter({ hasText: '/Login/' }).click();
 ```
 
-## 1. 特定のテキストを持たない: { hasNotText: テキスト }
+## 2. 特定のテキストを持たない: { hasNotText: テキスト }
 ```ts
 // getByRole('button') でページ上のすべてのボタンを取得
 // filter({ hasText: 'Login' }) で「Login」というテキストを持たないボタンをフィルタリング
@@ -28,14 +40,14 @@ await page.getByRole('button').filter({ hasText: '/Login/' }).click();
 await page.getByRole('button').filter({ hasNotText: '/Login/' }).click();
 ```
 
-## 3. 特定の属性を持つ要素を絞り込む: { has: ロケーター }
+## 3. 特定の属性を持つ: { has: ロケーター }
 ```ts
 // getByRole('textbox') でテキスト入力フィールドを取得
 // filter({ has: page.locator('input[name="email"]') }) でname="email"属性を持つ入力フィールドをフィルタリング
 await page.getByRole('textbox').filter({ has: page.locator('input[name="email"]') });
 ```
 
-## 4. 特定の属性を持つ要素を絞り込む: { hasNot: ロケーター }
+## 4. 特定の属性を持たない: { hasNot: ロケーター }
 ```ts
 // getByRole('textbox') でテキスト入力フィールドを取得
 // filter({ has: page.locator('input[name="email"]') }) でname="email"属性を持たない入力フィールドをフィルタリング
