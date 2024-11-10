@@ -24,6 +24,8 @@ published: true # 公開設定（falseにすると下書き）
 下記URLから最新のpict.exeをダウンロード
 @[card](https://github.com/microsoft/pict/releases)
 
+![pict-install-step01](/images/articles/test-pict-install/pict-install-step01.png)
+
 :::message
 [note] 2024/11/10時点では、**Version 3.7.4**が最新でした。
 :::
