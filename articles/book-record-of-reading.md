@@ -11,43 +11,85 @@ published: true # 公開設定（falseにすると下書き）
 自分が読んだ技術書の備忘録になります。
 ※随時更新予定
 
+:::message
+ポイント：購入して良かった度
+- 💛🤍🤍🤍🤍: 得れる情報がなかった
+- 💛💛🤍🤍🤍: 期待度が高すぎた
+- 💛💛💛🤍🤍: 普通/復習になった
+- 💛💛💛💛🤍: 勉強になった!/タメになった！
+- 💛💛💛💛💛: 本業で活躍することが出来た
+:::
+
 ## 2024 年
 
 ### 11 月
 @[card](https://gihyo.jp/magazine/SD/archive/2024/202405)
+> ポイント：💛💛💛🤍🤍
+> 感想：TypeScriptの復習につながったが、本業に活かせる情報を見つけられなかった
+
+
 @[card](https://gihyo.jp/magazine/SD/archive/2024/202401)
+> ポイント：💛💛🤍🤍🤍
+> 感想：GitHub Copilotの設定等の情報で拡張機能の情報がもっと欲しかった
+
 
 ### 10 月
 @[card](https://gihyo.jp/magazine/SD/archive/2024/202410)
+> ポイント：💛💛💛💛🤍
+> 感想：ADR-toolsを知ることが出来たし、やる気になるエクササイズがタメになった！
+
 @[card](https://gihyo.jp/book/2024/978-4-297-14220-9)
+> ポイント：💛💛💛💛💛
+> 感想：Playwrightの基礎を学べて本業に活かせることが出来た！
 
 ### 9 月
 @[card](https://gihyo.jp/book/2024/978-4-297-14285-8)
+> ポイント：💛💛💛💛🤍
+> 感想：いつもYouTubeで拝見してて、わかりやすく丁寧な解説です！
+
 
 ### 8 月
 
 @[card](https://book.mynavi.jp/ec/products/detail/id=134252)
+> ポイント：💛💛💛💛🤍
+> 感想：テストコードの構成を学べることが出来た！
+
 @[card](https://bookplus.nikkei.com/atcl/catalog/23/11/07/01094/)
+> ポイント：💛💛💛💛🤍
+> 感想：レビューについて学べたが、期待度が高かった
+
 
 :::details 関連記事
 https://zenn.dev/aew2sbee/articles/test-high-performance-at-minimal-cost
 :::
 
 ### 7 月
-
 @[card](https://gihyo.jp/book/2024/978-4-297-14061-8)
+> ポイント：💛💛💛💛🤍
+> 感想：Next.jsの基礎を学べて手元に置いておきたい書籍です！
+
 
 ### 4 月
-
 @[card](https://gihyo.jp/book/2023/978-4-297-13871-4)
+> ポイント：💛💛💛🤍🤍
+> 感想：初学者向けにはよい書籍でしたが、自分にとっては復習の内容でした
 
 ### 2 月
 
 @[card](https://www.shoeisha.co.jp/book/detail/9784798178189)
+> ポイント：💛💛💛💛🤍
+> 感想：テストについて概要を学ぶことが出来たが、現時点ですこし難しい内容があった
+
 
 ### 1 月
 
 @[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
+> ポイント：💛💛💛💛💛
+> 感想：SQL未経験で本業で避けていたが、本業で基本操作ができるまでに成長できた
+
+:::details 関連記事
+https://zenn.dev/aew2sbee/articles/sql-cheat-sheet
+:::
 
 ## 2023 年
 ### 9 月
