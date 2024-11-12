@@ -27,7 +27,7 @@ published: true # 公開設定（falseにすると下書き）
 ![pict-install-step01](/images/articles/test-pict-install/pict-install-step01.png)
 
 :::message
-[note] 2024/11/10時点では、**Version 3.7.4**が最新でした。
+2024/11/10時点では、**Version 3.7.4**が最新でした。
 :::
 ## 2. pict.exeをローカルの任意の場所に配置
 自分は下記のファイルに配置しました。
@@ -79,11 +79,11 @@ Options:
 :::
 
 :::message
-[info] 下記コマンドでpictコマンドが使えない方は、VSCode/PCの再起動を試してください
+下記コマンドでpictコマンドが使えない方は、VSCode/PCの再起動を試してください
 :::
 
 :::message alert
-[error] **msvcp140.dllが見つからないため、コードの実行を続行できません** or **コマンドを実行しても何も反応しない**と表示される方は下記を試してください
+**msvcp140.dllが見つからないため、コードの実行を続行できません** or **コマンドを実行しても何も反応しない**と表示される方は下記を試してください
 ※自分はこれに該当しました。
 
   1. [Microsoft Visual C++ 2015 再頒布可能パッケージ](https://www.microsoft.com/ja-jp/download/details.aspx?id=53840)にアクセス
