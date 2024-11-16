@@ -173,3 +173,116 @@ html {
 ```
 
 ![line-clamp](/images/articles/tailwind-css-cheat-sheet/line-clamp.png)
+
+## 3. margin/pading
+### 1. 四方にスペーシングを設定する
+
+```html
+<div class="bg-cyan-200 m-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 p-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p](/images/articles/tailwind-css-cheat-sheet/m-p.png)
+
+### 2. 上側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 mt-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 pt-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p-t](/images/articles/tailwind-css-cheat-sheet/m-p-t.png)
+
+
+### 3. 右側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 mr-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 pr-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p-r](/images/articles/tailwind-css-cheat-sheet/m-p-r.png)
+
+### 4. 下側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 mb-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 pb-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p-b](/images/articles/tailwind-css-cheat-sheet/m-p-b.png)
+
+### 5. 左側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 ml-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 pl-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p-l](/images/articles/tailwind-css-cheat-sheet/m-p-l.png)
+
+### 6. 左右側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 mx-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 px-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p-x](/images/articles/tailwind-css-cheat-sheet/m-p-x.png)
+
+### 7. 上下側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 my-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 py-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![m-p-y](/images/articles/tailwind-css-cheat-sheet/m-p-y.png)
+
+### 8. 内側にスペーシングを設定する
+```html
+<div class="bg-cyan-200 -m-6">
+  <div class="h-20 w-20">margin: 24px</div>
+</div>
+<div class="bg-rose-200 -p-6">
+  <div class="h-20 w-20">pading: 24px</div>
+</div>
+```
+![-m-p](/images/articles/tailwind-css-cheat-sheet/-m-p.png)
+
+
+## 9. 左右側にスペーシングを間隔で設定する
+```html
+<div class="flex mx-10 bg-gray-50 space-x-4">
+  <div class="h-20 w-20 bg-cyan-200">1</div>
+  <div class="h-20 w-20 bg-cyan-200">2</div>
+  <div class="h-20 w-20 bg-cyan-200">3</div>
+</div>
+```
+![space-x](/images/articles/tailwind-css-cheat-sheet/space-x.png)
+
+
+## 10. 上下側にスペーシングを間隔で設定する
+```html
+<div class="flex flex-col justify-center items-start min-h-screen mx-10 bg-gray-50 space-y-4">
+<div class="h-20 w-20 bg-cyan-200">1</div>
+<div class="h-20 w-20 bg-cyan-200">2</div>
+<div class="h-20 w-20 bg-cyan-200">3</div>
+</div>
+```
+![space-y](/images/articles/tailwind-css-cheat-sheet/space-y.png)
