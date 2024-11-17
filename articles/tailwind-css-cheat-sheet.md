@@ -266,7 +266,7 @@ html {
 ![-m-p](/images/articles/tailwind-css-cheat-sheet/-m-p.png)
 
 
-## 9. 左右側にスペーシングを間隔で設定する
+### 9. 左右側にスペーシングを間隔で設定する
 ```html
 <div class="flex mx-10 bg-gray-50 space-x-4">
   <div class="h-20 w-20 bg-cyan-200">1</div>
@@ -277,7 +277,7 @@ html {
 ![space-x](/images/articles/tailwind-css-cheat-sheet/space-x.png)
 
 
-## 10. 上下側にスペーシングを間隔で設定する
+### 10. 上下側にスペーシングを間隔で設定する
 ```html
 <div class="flex flex-col justify-center items-start min-h-screen mx-10 bg-gray-50 space-y-4">
 <div class="h-20 w-20 bg-cyan-200">1</div>
@@ -286,3 +286,38 @@ html {
 </div>
 ```
 ![space-y](/images/articles/tailwind-css-cheat-sheet/space-y.png)
+
+## 4. ボーダー
+### 1. 境界線を設定する
+```html
+<div class="h-20 w-20 bg-cyan-200">境界線なし</div>
+<div class="h-20 w-20 bg-rose-200 border border-indigo-500">境界線あり<br>1px solid</div>
+```
+![border](/images/articles/tailwind-css-cheat-sheet/border.png)
+
+### 2. 境界線の太く設定する
+```html
+<div class="h-20 w-20 bg-cyan-200 border-indigo-500 border">1px</div>
+<div class="h-20 w-20 bg-rose-200 border-indigo-500 border-4">4px</div>
+```
+![border-weight](/images/articles/tailwind-css-cheat-sheet/border-weight.png)
+
+### 3. 境界線の位置を設定する
+```html
+<div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-t-4">上</div>
+<div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-r-4">右</div>
+<div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-b-4">下</div>
+<div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-l-4">左</div>
+<div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-x-4">左右</div>
+<div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-y-4">上下</div>
+```
+![border-position](/images/articles/tailwind-css-cheat-sheet/border-position.png)
+
+### 4. 境界線のスタイルを設定する
+```html
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dashed">点線</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dotted">ドット</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-double">二重線</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-hidden">非表示</div>
+```
+![border-style](/images/articles/tailwind-css-cheat-sheet/border-style.png)
