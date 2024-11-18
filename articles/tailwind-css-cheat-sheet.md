@@ -3,7 +3,7 @@ title: '[Tailwind CSS] 私なりのチートシート' # 記事のタイトル
 emoji: '🍃' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
@@ -363,3 +363,14 @@ html {
 </div>
 ```
 ![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
+
+## 7. 角を設定する
+### 1. 縦幅を割合で設定する
+
+```html
+<div class="w-20 bg-cyan-100 rounded">4px</div>
+<div class="w-20 bg-cyan-200 rounded-md">6px</div>
+<div class="w-20 bg-cyan-300 rounded-lg">8px</div>
+<div class="w-20 bg-cyan-400 rounded-2xl">12px</div>
+```
+![rounded](/images/articles/tailwind-css-cheat-sheet/rounded.png)
