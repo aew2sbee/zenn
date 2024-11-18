@@ -321,3 +321,45 @@ html {
 <div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-hidden">非表示</div>
 ```
 ![border-style](/images/articles/tailwind-css-cheat-sheet/border-style.png)
+
+## 5. 横幅を設定する
+### 1. 横幅を割合で設定する
+
+```html
+<div class="flex mt-2 mx-10 bg-gray-50">
+  <div class="h-20 bg-cyan-200 w-2/5">40%</div>
+  <div class="h-20 bg-rose-200 w-3/5">60%</div>
+</div>
+```
+![w-percent](/images/articles/tailwind-css-cheat-sheet/w-percent.png)
+
+### 2. w-fullとw-auto横幅をで設定する
+
+```html
+<div class="flex mt-2 mx-10 bg-gray-50">
+  <div class="h-20 bg-cyan-200 w-full">w-full: 親要素いっぱいに広がる</div>
+  <div class="h-20 bg-rose-200 w-auto">w-auto: 内容やコンテンツのサイズに応じて広がる</div>
+</div>
+```
+![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
+
+## 6. 縦幅を設定する
+### 1. 縦幅を割合で設定する
+
+```html
+<div class="flex mt-2 mx-10 bg-gray-50">
+  <div class="h-20 bg-cyan-200 w-2/5">40%</div>
+  <div class="h-20 bg-rose-200 w-3/5">60%</div>
+</div>
+```
+![w-percent](/images/articles/tailwind-css-cheat-sheet/w-percent.png)
+
+### 2. w-fullとw-auto縦幅をで設定する
+
+```html
+<div class="flex mt-2 mx-10 bg-gray-50">
+  <div class="h-20 bg-cyan-200 w-full">w-full: 親要素いっぱいに広がる</div>
+  <div class="h-20 bg-rose-200 w-auto">w-auto: 内容やコンテンツのサイズに応じて広がる</div>
+</div>
+```
+![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
