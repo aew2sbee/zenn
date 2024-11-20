@@ -155,8 +155,6 @@ html {
 
 ### 8. 省略と改行を設定する
 
-
-
 ```html
 <div class="mb-3">
   <p class="font-black">1行目まで表示</p>
@@ -365,7 +363,25 @@ html {
 ```
 ![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
 
-### 3. 縦幅nの最大幅で設定する
+### 3. 縦幅の最大幅で設定する
+
+
+:::details 各横幅に対応するスマホ・デバイス例
+| **Tailwindクラス** | **最大幅(px)** | **主なデバイス例**                                          |
+|--------------------|---------------|------------------------------------------------------------|
+| **max-w-xs**      | 320px         | iPhone SE (第1世代)、iPhone 5/5S、Pixel 4a                 |
+| **max-w-sm**      | 384px         | 一部の小型Androidスマートフォン、iPhone SE (第2世代)       |
+| **max-w-md**      | 448px         | 中小型スマートフォンの中間サイズ                           |
+| **max-w-lg**      | 512px         | 一部の大型スマートフォン、Pixel 6                          |
+| **max-w-xl**      | 576px         | iPhone 12/13 Mini、Pixel 5、Galaxy S8                      |
+| **max-w-2xl**     | 672px         | iPhone 11/12/13/14 Pro、Galaxy S10、Pixel 6 Pro            |
+| **max-w-3xl**     | 768px         | 一部の折りたたみスマートフォン (Galaxy Z Fold 閉じた状態)  |
+| **max-w-4xl**     | 896px         | タブレット (iPad Mini 横向き)、折りたたみスマートフォンの展開時 |
+| **max-w-5xl**     | 1024px        | タブレット (iPad 横向き)、iPad Air/Pro 11インチ横向き       |
+| **max-w-6xl**     | 1152px        | 大型タブレット (iPad Pro 12.9インチ 横向き)                 |
+| **max-w-7xl**     | 1280px        | 小型ノートPC (MacBook Air/Pro 13インチのブラウザ幅)         |
+
+:::
 
 ```html
 <div class="p-4">
@@ -383,6 +399,7 @@ html {
 </div>
 ```
 ![max-w](/images/articles/tailwind-css-cheat-sheet/max-w.png)
+
 
 
 
