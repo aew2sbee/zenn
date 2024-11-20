@@ -365,6 +365,27 @@ html {
 ```
 ![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
 
+### 3. 縦幅nの最大幅で設定する
+
+```html
+<div class="p-4">
+  <div class="bg-sky-300 max-w-xs">320px</div>
+  <div class="bg-sky-300 max-w-sm">384px</div>
+  <div class="bg-sky-300 max-w-md">448px</div>
+  <div class="bg-sky-300 max-w-lg">512px</div>
+  <div class="bg-sky-300 max-w-xl">576px</div>
+  <div class="bg-sky-300 max-w-2xl">672px</div>
+  <div class="bg-sky-300 max-w-3xl">768px</div>
+  <div class="bg-sky-300 max-w-4xl">896px</div>
+  <div class="bg-sky-300 max-w-5xl">1024px</div>
+  <div class="bg-sky-300 max-w-6xl">1152px</div>
+  <div class="bg-sky-300 max-w-7xl">1280px</div>
+</div>
+```
+![max-w](/images/articles/tailwind-css-cheat-sheet/max-w.png)
+
+
+
 ## 7. 角を設定する
 ### 1. 縦幅を割合で設定する
 
@@ -375,3 +396,5 @@ html {
 <div class="w-20 bg-cyan-400 rounded-2xl">12px</div>
 ```
 ![rounded](/images/articles/tailwind-css-cheat-sheet/rounded.png)
+
+

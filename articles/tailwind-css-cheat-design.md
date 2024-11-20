@@ -47,3 +47,23 @@ published: false # 公開設定（falseにすると下書き）
 ```
 
 ![button03](/images/articles/tailwind-css-cheat-design/button03.png)
+
+## 吹き出し
+<div class="my-10 mx-64">
+  <div class="flex justify-end items-center">
+    <!-- 吹き出し -->
+    <div class="relative bg-sky-300 px-3 py-2 rounded-lg shadow-xl">
+      <p>こちらが吹き出しの内容です。</p>
+      <!-- 吹き出しの矢印 -->
+      <div class="absolute top-2 -right-2 border-l-[10px] border-l-sky-300 border-y-[6px] border-y-transparent"></div>
+    </div>
+  </div>
+  <div class="flex justify-start items-center">
+    <!-- 吹き出し -->
+    <div class="relative bg-gray-200 px-3 py-2 rounded-lg shadow-xl">
+      <p>こちらが吹き出しの内容です。</p>
+      <!-- 吹き出しの矢印 -->
+      <div class="absolute top-2 -left-2 border-r-[10px] border-r-gray-200 border-y-[6px] border-y-transparent"></div>
+    </div>
+  </div>
+</div>
