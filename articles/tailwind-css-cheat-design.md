@@ -9,6 +9,7 @@ published: false # 公開設定（falseにすると下書き）
 ## はじめに
 
 この記事では、**Tailwind CSSでよくあるデザイン**を作成しました。
+※ 随時更新予定です。
 
 :::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
