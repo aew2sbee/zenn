@@ -9,6 +9,11 @@ published: true # 公開設定（falseにすると下書き）
 ## はじめに
 この記事では、**Playwrightの.nth(index)/.first()/.last()** についてをまとめております。
 
+:::details 参考資料
+@[card](https://gihyo.jp/book/2024/978-4-297-14220-9)
+:::
+
+
 ## 結論
 :::message
 下記メソッドで絞り込みが出来ます。
