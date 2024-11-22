@@ -400,9 +400,6 @@ html {
 ```
 ![max-w](/images/articles/tailwind-css-cheat-sheet/max-w.png)
 
-
-
-
 ## 7. 角を設定する
 ### 1. 縦幅を割合で設定する
 
@@ -415,3 +412,26 @@ html {
 ![rounded](/images/articles/tailwind-css-cheat-sheet/rounded.png)
 
 
+## 8. レスポンシブ対応
+### 1. 横幅に応じて非表示にする
+```html
+<div class="bg-sky-100 sm:hidden">640px未満の場合のみ非表示</div>
+<div class="bg-sky-200 md:hidden">768px未満の場合のみ非表示</div>
+<div class="bg-sky-300 lg:hidden">1024px未満の場合のみ非表示</div>
+<div class="bg-sky-400 xl:hidden">1280px未満の場合のみ非表示</div>
+<div class="bg-sky-500 2xl:hidden">1536px未満の場合のみ非表示</div>
+```
+![620px](/images/articles/tailwind-css-cheat-sheet/620px.png)
+*横幅:620px*
+
+![720px](/images/articles/tailwind-css-cheat-sheet/720px.png)
+*横幅:720px*
+
+![1020px](/images/articles/tailwind-css-cheat-sheet/1020px.png)
+*横幅:1020px*
+
+![1120px](/images/articles/tailwind-css-cheat-sheet/1120px.png)
+*横幅:1120px*
+
+![1520px](/images/articles/tailwind-css-cheat-sheet/1520px.png)
+*横幅:1520px*
