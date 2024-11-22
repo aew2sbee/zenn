@@ -435,3 +435,156 @@ html {
 
 ![1520px](/images/articles/tailwind-css-cheat-sheet/1520px.png)
 *横幅:1520px*
+
+## 9. フレックス
+### 1. 横並びにする
+```html
+<!-- 横並びしない -->
+<div class="p-4">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+
+<!-- 横並びする -->
+<div class="p-4 flex flex-row">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+
+```
+![flex-row](/images/articles/tailwind-css-cheat-sheet/flex-row.png)
+
+### 2. 逆向きに横並びにする
+```html
+<!-- 横並びしない -->
+<div class="p-4">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+<!-- 横並びする -->
+<div class="p-4 flex flex-row-reverse">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+```
+![flex-row-reverse](/images/articles/tailwind-css-cheat-sheet/flex-row-reverse.png)
+
+### 3. 縦並びにする
+```html
+<!-- 縦並びしない -->
+<div class="p-4">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+<!-- 縦並びする -->
+<div class="p-4 flex flex-col">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+```
+![flex-col](/images/articles/tailwind-css-cheat-sheet/flex-col.png)
+
+### 4. 逆向きに縦並びにする
+```html
+<!-- 縦並びしない -->
+<div class="p-4">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+<!-- 縦並びする -->
+<div class="p-4 flex flex-col-reverse">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+</div>
+```
+![flex-col-reverse](/images/articles/tailwind-css-cheat-sheet/flex-col-reverse.png)
+
+### 5. 折り返しする
+
+```html
+<!-- 折り返ししない -->
+<div class="p-4 flex flex-row">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+  <div class="bg-sky-600">テキストが入ります</div>
+</div>
+<!-- 折り返しする -->
+<div class="p-4 flex flex-row flex-wrap">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+  <div class="bg-sky-600">テキストが入ります</div>
+</div>
+```
+![flex-wrap](/images/articles/tailwind-css-cheat-sheet/flex-wrap.png)
+
+### 6. 逆向きに折り返しする
+
+```html
+<!-- 折り返ししない -->
+<div class="p-4 flex flex-row flex-wrap">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+  <div class="bg-sky-600">テキストが入ります</div>
+</div>
+<!-- 折り返しする -->
+<div class="p-4 flex flex-row flex-wrap-reverse">
+  <div class="bg-sky-100">テキストが入ります</div>
+  <div class="bg-sky-200">テキストが入ります</div>
+  <div class="bg-sky-300">テキストが入ります</div>
+  <div class="bg-sky-400">テキストが入ります</div>
+  <div class="bg-sky-500">テキストが入ります</div>
+  <div class="bg-sky-600">テキストが入ります</div>
+</div>
+```
+![flex-wrap-reverse](/images/articles/tailwind-css-cheat-sheet/flex-wrap-reverse.png)
+
+### 7. 子要素の横幅を割合で設定する
+
+```html
+<div class="p-4 flex flex-row flex-wrap">
+  <div class="bg-sky-200 basis-1/2">basis-1/2</div>
+  <div class="bg-sky-300 basis-1/2">basis-1/2</div>
+  <div class="bg-sky-200 basis-1/4">basis-1/4</div>
+  <div class="bg-sky-300 basis-3/4">basis-3/4</div>
+  <div class="bg-sky-200 basis-2/5">basis-2/5</div>
+  <div class="bg-sky-300 basis-3/5">basis-3/5</div>
+  <div class="bg-sky-200 basis-2/6">basis-2/6</div>
+  <div class="bg-sky-300 basis-4/6">basis-4/6</div>
+  <div class="bg-sky-200 basis-4/12">basis-4/12</div>
+  <div class="bg-sky-300 basis-8/12">basis-8/12</div>
+</div>
+```
+![basis](/images/articles/tailwind-css-cheat-sheet/basis.png)
