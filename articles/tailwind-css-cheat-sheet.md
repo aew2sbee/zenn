@@ -286,6 +286,19 @@ html {
 ```
 ![space-y](/images/articles/tailwind-css-cheat-sheet/space-y.png)
 
+### 11. box-sizing
+
+```html
+<div class="bg-cyan-100 box-boerder h-32 w-32 pr-4 border-r-4 border-sky-300">
+  <p class="bg-cyan-100">横幅=128px</p>
+</div>
+<div class="bg-cyan-100 box-content h-32 w-32 pr-4 border-r-4 border-sky-300">
+  <p class="bg-cyan-300">横幅=128px</p>
+</div>
+```
+![box-sizing](/images/articles/tailwind-css-cheat-sheet/box-sizing.png)
+
+
 ## 4. ボーダー
 ### 1. 境界線を設定する
 ```html
