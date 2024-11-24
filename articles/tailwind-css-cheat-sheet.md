@@ -14,8 +14,7 @@ published: true # 公開設定（falseにすると下書き）
 :::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
 :::
-
-## 0. 前提条件
+:::details 前提条件
 
 1. 下記サイトを活用して表示しております。
    @[card](https://play.tailwindcss.com/)
@@ -37,6 +36,7 @@ html {
 ```
 
 4. 見やすいように**背景色(`bg-cyan-X00`)** を設定している場合があります。
+   :::
 
 ## 1. 背景
 
@@ -197,7 +197,6 @@ html {
 ```
 ![m-p-t](/images/articles/tailwind-css-cheat-sheet/m-p-t.png)
 
-
 ### 3. 右側にスペーシングを設定する
 ```html
 <div class="bg-cyan-200 mr-6">
@@ -263,7 +262,6 @@ html {
 </div>
 ```
 ![-m-p](/images/articles/tailwind-css-cheat-sheet/-m-p.png)
-
 
 ### 9. 左右側にスペーシングを間隔で設定する
 ```html
@@ -364,6 +362,7 @@ html {
   <div class="h-20 bg-rose-200 w-3/5">60%</div>
 </div>
 ```
+
 ![w-percent](/images/articles/tailwind-css-cheat-sheet/w-percent.png)
 
 ### 2. w-fullとw-auto縦幅をで設定する
@@ -423,7 +422,6 @@ html {
 <div class="w-20 bg-cyan-400 rounded-2xl">12px</div>
 ```
 ![rounded](/images/articles/tailwind-css-cheat-sheet/rounded.png)
-
 
 ## 8. レスポンシブ対応
 ### 1. 横幅に応じて非表示にする
@@ -601,3 +599,49 @@ html {
 </div>
 ```
 ![basis](/images/articles/tailwind-css-cheat-sheet/basis.png)
+
+## 10. グリッド
+### 1. n列の要素に設定する
+
+```html
+<!-- 設定しない -->
+<div class="p-4 grid">
+  <div class="bg-sky-100">01</div>
+  <div class="bg-sky-200">02</div>
+  <div class="bg-sky-300">03</div>
+  <div class="bg-sky-400">04</div>
+  <div class="bg-sky-500">05</div>
+  <div class="bg-sky-600">06</div>
+</div>
+<!-- 設定する -->
+<div class="p-4 grid grid-cols-3">
+  <div class="bg-sky-100">01</div>
+  <div class="bg-sky-200">02</div>
+  <div class="bg-sky-300">03</div>
+  <div class="bg-sky-400">04</div>
+  <div class="bg-sky-500">05</div>
+  <div class="bg-sky-600">06</div>
+</div>
+```
+
+![grid](/images/articles/tailwind-css-cheat-sheet/grid.png)
+
+### 2. 横幅に応じてn列の要素に設定する
+
+```html
+<div class="p-4 grid grid-cols-2 md:grid-cols-3">
+  <div class="bg-sky-100">01</div>
+  <div class="bg-sky-200">02</div>
+  <div class="bg-sky-300">03</div>
+  <div class="bg-sky-400">04</div>
+  <div class="bg-sky-500">05</div>
+  <div class="bg-sky-600">06</div>
+</div>
+```
+
+
+![grid-720px](/images/articles/tailwind-css-cheat-sheet/grid-720px.png)
+*横幅:720px*
+
+![grid-1020px](/images/articles/tailwind-css-cheat-sheet/grid-1020px.png)
+*横幅:1020px*
