@@ -645,3 +645,50 @@ html {
 
 ![grid-1020px](/images/articles/tailwind-css-cheat-sheet/grid-1020px.png)
 *横幅:1020px*
+
+## 11. テーブル
+
+### 1. 表にキャプション
+```html
+<table class="bg-sky-100">
+  <caption class="caption-top">caption-top</caption>
+  <caption class="caption-bottom">caption-bottom</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Doe</td>
+      <td>john.doe@example.com</td>
+      <td>Admin</td>
+    </tr>
+  </tbody>
+</table>
+```
+![caption](/images/articles/tailwind-css-cheat-sheet/caption.png)
+
+## 12. ブロックレイアウト
+### 1. 自動で画面幅に応じて横幅を設定する
+```html
+<div class="container mx-auto px-4 bg-sky-100">
+  <p>この要素は中央揃えで、画面幅に応じて調整されます。</p>
+</div>
+```
+![container-620px](/images/articles/tailwind-css-cheat-sheet/container-620px.png)
+*横幅:620px*
+
+![container-720px](/images/articles/tailwind-css-cheat-sheet/container-720px.png)
+*横幅:720px*
+
+![container-1020px](/images/articles/tailwind-css-cheat-sheet/container-1020px.png)
+*横幅:1020px*
+
+![container-1120px](/images/articles/tailwind-css-cheat-sheet/container-1120px.png)
+*横幅:1120px*
+
+![container-1520px](/images/articles/tailwind-css-cheat-sheet/container-1520px.png)
+*横幅:1520px*
