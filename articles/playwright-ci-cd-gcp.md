@@ -3,19 +3,13 @@ title: "[Playwright] CI/CDで社内環境に対してGitHub ActionsのIPを許�
 emoji: "🎭‍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["playwright", "github", "cicd", "googlecloud", "contest2024"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 
 ## はじめに
 この記事では、**社内で初めてCI/CDに組み込む時に苦労した点と対策**を解説します。
-
-
-
-
-
-## 結論
-
+:::details 実際に使ったyaml
 ```yaml
 name: Playwright Tests
 
@@ -79,6 +73,7 @@ jobs:
       run: |
         gcloud compute security-policies rules delete NUMBER --security-policy XXXXX --quiet
 ```
+:::
 
 ## 1. google-github-actions/authのエラーが解消できない
 このエラーを解消するのに大変時間を要しました。
@@ -173,7 +168,20 @@ Allow GitHub Actions to create and approve pull requests
 
 ※インフラ担当の方に依頼したので詳細はよく分かりません。
 
-### 5. Fork先から実行するのではなく、Fork元から実行する
+### 5. `google-github-actions/auth`の前に`actions/checkout`を追加する
+下記サイトを参考に`actions/checkout`を追加しましたが、解消には繋がりませんでした。
+@[card](https://github.com/google-github-actions/auth?tab=readme-ov-file#prerequisites)
+
+```diff yaml
++ - uses: actions/checkout@v4
+  - uses: google-github-actions/auth@v2
+    with:
+      workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+      service_account: 'example@project.iam.gserviceaccount.com'
+```
+
+
+### 6. Fork先から実行するのではなく、Fork元から実行する
 この対応で`google-github-actions/auth`のエラーが解消されました。
 :::message
 Fork元で新しいブランチを作成し、新しくPRを作成したら、解消されました!
