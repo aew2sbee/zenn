@@ -692,3 +692,25 @@ html {
 
 ![container-1520px](/images/articles/tailwind-css-cheat-sheet/container-1520px.png)
 *横幅:1520px*
+
+## 12. 陰影
+
+```html
+<div class="shadow-inner">shadow-inner</div>
+<div class="shadow-sm">shadow-sm</div>
+<div class="shadow">shadow</div>
+<div class="shadow-md">shadow-md</div>
+<div class="shadow-lg">shadow-lg</div>
+<div class="shadow-xl">shadow-xl</div>
+<div class="shadow-2xl">shadow-2xl</div>
+```
+![shadow](/images/articles/tailwind-css-cheat-sheet/shadow.png)
+
+## 13. 輪郭
+```html
+<button class="outline outline-offset-2 outline-1">outline-1</button>
+<button class="outline outline-offset-2 outline-2">outline-2</button>
+<button class="outline outline-offset-2 outline-4">outline-4</button>
+<button class="outline outline-offset-2 outline-8">outline-8</button>
+```
+![outline](/images/articles/tailwind-css-cheat-sheet/outline.png)
