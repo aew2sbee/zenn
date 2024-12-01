@@ -3,7 +3,7 @@ title: '[Tailwind CSS] ロードUI/スケルトンUI' # 記事のタイトル
 emoji: '🍃' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['ui', 'css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
@@ -17,7 +17,7 @@ published: false # 公開設定（falseにすると下書き）
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
 :::
 
-## 1.iPhoneで見かけそうなUIデザイン
+## 1. iPhoneで見かけそうなUIデザイン
 
 ![Tailwind-CSS-animate-spin](https://storage.googleapis.com/zenn-user-upload/ae6609094bb9-20241201.gif)
 
@@ -53,11 +53,11 @@ published: false # 公開設定（falseにすると下書き）
 </div>
 ```
 
-## 4. バランスボールが跳ねているようなUIデザイン
+## 4. ゲームの右下で見かけそうなUIデザイン
 ![Tailwind-CSS-animate-bounce](https://storage.googleapis.com/zenn-user-upload/d183a29fc437-20241201.gif)
 
 ```html
 <div class="flex items-center justify-center animate-spin min-h-screen">
-  <svg class="w-12 h-12  bg-gradient-to-t from-gray-300 to-gray-400 rounded-full animate-bounce"></svg>
+  <svg class="w-12 h-12 bg-gradient-to-t from-gray-300 to-gray-400 rounded-full animate-bounce"></svg>
 </div>
 ```
