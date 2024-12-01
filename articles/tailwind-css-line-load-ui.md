@@ -14,8 +14,9 @@ published: false # 公開設定（falseにすると下書き）
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
 :::
 
-## 1.
+## 1. 回転するUI①
 
+![](https://storage.googleapis.com/zenn-user-upload/ae6609094bb9-20241201.gif)
 
 ```html
 <div class="flex items-center justify-center animate-spin min-h-screen">
@@ -30,4 +31,12 @@ published: false # 公開設定（falseにすると下書き）
 </div>
 ```
 
-![Tailwind-CSS-animate-spin](/images/articles/tailwind-css-cheat-sheet/Tailwind-CSS-animate-spin)
+
+
+##  2. 
+
+```html
+<div class="flex items-center justify-center animate-spin min-h-screen">
+  <div class="w-10 h-10 border-4 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
+</div>
+```
