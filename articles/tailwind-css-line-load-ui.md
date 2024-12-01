@@ -9,7 +9,6 @@ published: true # 公開設定（falseにすると下書き）
 ## はじめに
 
 この記事では、**ロードUI/スケルトンUIの実装方法**を解説します。
-
 下記サイトを活用して表示しております。
 @[card](https://play.tailwindcss.com/)
 
