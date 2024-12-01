@@ -14,7 +14,7 @@ published: false # 公開設定（falseにすると下書き）
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
 :::
 
-## 1. 回転するUI①
+## 1.iPhoneでシャットダウン時みたいなUIデザイン
 
 ![](https://storage.googleapis.com/zenn-user-upload/ae6609094bb9-20241201.gif)
 
@@ -31,9 +31,9 @@ published: false # 公開設定（falseにすると下書き）
 </div>
 ```
 
+##  2. Androidのロード時みたいなUIデザイン
 
-
-##  2. 
+![Tailwind CSS animate-spin-2](https://storage.googleapis.com/zenn-user-upload/545cea848b7a-20241201.gif)
 
 ```html
 <div class="flex items-center justify-center animate-spin min-h-screen">
