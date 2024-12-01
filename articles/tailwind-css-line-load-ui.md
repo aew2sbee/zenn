@@ -41,7 +41,20 @@ published: false # 公開設定（falseにすると下書き）
 </div>
 ```
 
-## 3. バランスボールが跳ねているようなUIデザイン
+
+
+## 4. YouTubeで見かけそうなUIデザイン
+
+```html
+<div class="flex items-center justify-center min-h-screen">
+  <svg class="w-10 h-10 bg-gray-400 rounded-full animate-pulse"></svg>
+  <svg class="w-20 h-10 bg-gray-400 rounded-lg animate-pulse mx-4"></svg>\
+</div>
+```
+
+## 4. バランスボールが跳ねているようなUIデザイン
+[Tailwind-CSS-animate-bounce](https://storage.googleapis.com/zenn-user-upload/d183a29fc437-20241201.gif)
+
 ```html
 <div class="flex items-center justify-center animate-spin min-h-screen">
   <svg class="w-12 h-12  bg-gradient-to-t from-gray-300 to-gray-400 rounded-full animate-bounce"></svg>
