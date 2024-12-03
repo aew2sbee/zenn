@@ -16,7 +16,7 @@ published: true # 公開設定（falseにすると下書き）
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
 :::
 
-## 1. iPhoneで見かけそうなUIデザイン
+## 1. iPhoneで見かけそうなUI
 
 ![Tailwind-CSS-animate-spin](https://storage.googleapis.com/zenn-user-upload/ae6609094bb9-20241201.gif)
 
@@ -33,7 +33,7 @@ published: true # 公開設定（falseにすると下書き）
 </div>
 ```
 
-## 2. Androidで見かけそうなUIデザイン
+## 2. Androidで見かけそうなUI
 
 ![Tailwind CSS animate-spin-2](https://storage.googleapis.com/zenn-user-upload/545cea848b7a-20241201.gif)
 
@@ -43,7 +43,7 @@ published: true # 公開設定（falseにすると下書き）
 </div>
 ```
 
-## 3. YouTubeで見かけそうなUIデザイン
+## 3. YouTubeで見かけそうなUI
 ![Tailwind-CSS-animate-pulse](https://storage.googleapis.com/zenn-user-upload/dedf353c1f82-20241201.gif)
 ```html
 <div class="flex items-center justify-center min-h-screen">
@@ -52,7 +52,7 @@ published: true # 公開設定（falseにすると下書き）
 </div>
 ```
 
-## 4. ゲームの右下で見かけそうなUIデザイン
+## 4. ゲームの右下で見かけそうなUI
 ![Tailwind-CSS-animate-bounce](https://storage.googleapis.com/zenn-user-upload/d183a29fc437-20241201.gif)
 
 ```html
