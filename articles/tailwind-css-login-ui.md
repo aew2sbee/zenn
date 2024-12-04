@@ -3,7 +3,7 @@ title: '[Tailwind CSS] ログイン画面UI' # 記事のタイトル
 emoji: '🍃' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['ui', 'css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
@@ -23,9 +23,9 @@ published: false # 公開設定（falseにすると下書き）
 *ボタンにhoverしたとき*
 :::message
 **工夫した点**
-1. ボタンhover時に色を少し濃くし押すことが出来るボタンをアピール
+1. ボタンhover時に色を少し濃くし押すことが出来ることをアピール
 2. 入力欄の右上に入力項目を記載し何を入力すべきかを視覚的にアピール
-3. 周りを薄いグレーにすることで入力すべきログイン項目を視覚的にアピール
+3. 周りを薄いグレーにすることで中央の白い画面目立たせてを視覚的にアピール
 :::
 ```html
 <div class="bg-gray-100 min-h-screen flex items-center justify-center">
