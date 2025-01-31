@@ -3,32 +3,55 @@ title: '[YouTube API] ライブ/配信中のチャットを取得する' # 記�
 emoji: '🎥' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['python', 'youtubeapi', 'youtubelive', 'youtubedataapi', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
-この記事では、**Browser Use**を触る機会がありその感想をまとめます。
+この記事では、**YouTube API**を活用して配信中のチャットを取得する方法をまとめております。
+
+```bash: 取得イメージ
+$ python src/main.py
+[2025-01-31 10:14:43] 小倉あん: テスト
+[2025-01-31 10:14:46] 小倉あん: テスト
+[2025-01-31 10:14:48] 小倉あん: テスト
+```
+
 
 :::details 参考資料
-@[card](https://zenn.dev/gunjo/articles/8450e69537dbb6)
+@[card](https://developers.google.com/youtube/v3/live/docs/liveChatMessages/list?hl=ja)
 :::
-@[card](https://gihyo.jp/magazine/SD)
 
 ## 結論
 
 
-:::message alert
-
+:::message
+1. [Google Cloud](https://console.cloud.google.com/)で「YouTube Data API」のAPI Keyを作成する
+2. `google-api-python-client`を使ってデータを取得する
 :::
 
+## 注意事項
+:::message alert
+1. **配信中のチャットのみ**しか取得が出来ません！
+2. **10.000 queries**を超えると料金が発生します!
+![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries.png)
+*YouTube Data APIを初めて検証したときに1日の量*
+:::
 
-## 0. 前提条件
+## 1. YouTube Data API Keyを発行
+[Google Cloud](https://console.cloud.google.com/)で新規プロジェクトを作成する。
+検索窓に「YouTube」と入力し、`YouTube Data API v3`を選択し有効化する
+![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api.png)
+
+
+## 2. インストール
+```bash
+pip install -r requirements.txt
+```
 ```txt: requirements.txt
 google-api-python-client
 python-dotenv
 ```
-
 :::details 詳細情報
 ```bash
 
@@ -58,25 +81,22 @@ Required-by: browser-use, lmnr
 ```
 :::
 
-## 1. インストール
 
 
-https://www.youtube.com/watch?v=FM_T0rNH-Bg
-
-
-```bash
-pip install -r requirements.txt
-```
 
 ## 2. コーディング
+`YOUTUBE_API_KEY`は、[Google Cloud](https://console.cloud.google.com/)で表示されているKeyを入力する
+`VIDEO_ID`は、配信中のIDを入力する
 
-```.env
+例えば、下記動画であれば`VIDEO_ID=FM_T0rNH-Bg`になる
+@[card](https://www.youtube.com/watch?v=FM_T0rNH-Bg)
+
+```.env:.env
 YOUTUBE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXX
 VIDEO_ID=XXXXXXXXXX
 ```
 
-
-```py
+```py:main.py
 import os
 from googleapiclient.discovery import build
 from datetime import datetime, timezone
@@ -154,21 +174,11 @@ python src/main.py
 ```
 ```bash
 $ python src/main.py
-[2025-01-31 02:14:43] 小倉あん: テスト
-[2025-01-31 02:14:46] 小倉あん: テスト
-[2025-01-31 02:14:48] 小倉あん: テスト
+[2025-01-31 10:14:43] 小倉あん: テスト
+[2025-01-31 10:14:46] 小倉あん: テスト
+[2025-01-31 10:14:48] 小倉あん: テスト
 ```
+連続で[小倉あん](https://www.youtube.com/@aew2sbee)というアカウントから「テスト」のコメントをタイムスタンプと一緒に取得する事が出来ました！
 
 
-ちゃんと最新の記事のタイトルを取得することは出来ました！
-```json
-{"done":{"text":"The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago."}}
-```
 
-
-https://www.youtube.com/watch?v=HOtk_cMPP8o&list=PL6PuwuVHc-IBACCr4Pu0qFFDo4Ax67pKq
-
-https://console.cloud.google.com/
-
-![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api.png)
-![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries.png)
