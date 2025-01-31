@@ -36,6 +36,9 @@ $ python src/main.py
 2. **10.000 queries**を超えると料金が発生します!
 ![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries.png)
 *YouTube Data APIを初めて検証したときに1日の量*
+
+![youtube-api-queries-expansion](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries-expansion.png)
+*[拡大版] YouTube Data APIを初めて検証したときに1日の量*
 :::
 
 ## 1. YouTube Data API Keyを発行
