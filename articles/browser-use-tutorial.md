@@ -73,7 +73,7 @@ Home-page:
 Author: Gregor Zunic
 Author-email:
 License:
-Location: C:\Users\furutan\AppData\Local\Programs\Python\Python312\Lib\site-packages
+Location: C:\Users\xxxxx\AppData\Local\Programs\Python\Python312\Lib\site-packages
 Requires: beautifulsoup4, httpx, langchain, langchain-anthropic, langchain-aws, langchain-fireworks, langchain-google-genai, langchain-ollama, langchain-openai, lmnr, maincontentextractor, playwright, posthog, pydantic, python-dotenv, requests, setuptools
 Required-by
 
