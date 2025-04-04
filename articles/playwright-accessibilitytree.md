@@ -14,9 +14,8 @@ published: false # 公開設定（falseにすると下書き）
 @[card](https://github.com/microsoft/playwright-mcp)
 
 ### 結論
-
+Zennのトップページでアクセシビリティツリーを可視化した結果はこちらになります。
 :::message
-Zennのトップページでアクセシビリティツリーを可視化した結果はこちらになります、
 ```json
 {
   "role": "WebArea",
@@ -77,6 +76,8 @@ import { chromium } from 'playwright';
     await browser.close();
 })();
 ```
+
+確かに、ブラウザー情報をデータ化にすれば、処理速度は向上し、正確性は向上しますね。
 
 :::details 実行結果を確認する
 ```bash
@@ -1380,3 +1381,4 @@ console.log(accessibilityTree.children.filter((i) => i.role === 'link'))
 
 ```
 :::
+
