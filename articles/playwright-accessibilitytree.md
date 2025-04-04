@@ -16,7 +16,7 @@ published: false # 公開設定（falseにすると下書き）
 ### 結論
 Zennのトップページでアクセシビリティツリーを可視化した結果はこちらになります。
 :::message
-```json
+```ts
 {
   "role": "WebArea",
   "name": "Zenn｜エンジニアのための情報共有コミュニティ",
@@ -24,24 +24,24 @@ Zennのトップページでアクセシビリティツリーを可視化した�
     {
       "role": "link",
       "name": "Zenn | エンジニアのための情報共有コミュニティ",
-      "value": null,
-      "checked": null,
-      "pressed": null,
-      "children": null
+      "value": undefined,
+      "checked": undefined,
+      "pressed": undefined,
+      "children": undefined
     },
     {
       "role": "link",
       "name": "検索",
-      "value": null,
-      "checked": null,
-      "pressed": null,
-      "children": null
+      "value": undefined,
+      "checked": undefined,
+      "pressed": undefined,
+      "children": undefined
     }
     ... more
   ],
-  "value": null,
-  "checked": null,
-  "pressed": null
+  "value": undefined,
+  "checked": undefined,
+  "pressed": undefined
 }
 ```
 
