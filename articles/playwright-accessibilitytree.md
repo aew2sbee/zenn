@@ -1382,3 +1382,12 @@ console.log(accessibilityTree.children.filter((i) => i.role === 'link'))
 ```
 :::
 
+## 備考
+各 OS には独自のアクセシビリティ API があり、ブラウザはこれを通じてデータを提供される
+|  OS / プラットフォーム  |  	アクセシビリティ API  |
+| ---- | ---- |
+|  Windows  |  	UI Automation (UIA)  |
+|  macOS  |  NSAccessibility  |
+|  Linux  |  	AT-SPI  |
+|  Android  |  	AccessibilityNodeInfo  |
+|  iOS  |  UIAccessibility  |
