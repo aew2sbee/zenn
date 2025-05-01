@@ -142,7 +142,9 @@ src/
 ### 3. 自動生成されたファイル(`.generated.*`)は編集しない
 
 ## 🔷 型
-### 1. 他コンポーネントで共有しないならexportしない
+
+### 1. 他コンポーネントで共有しないなら export しない
+
 ```diff ts
 - const usr = 'Ogura'
 + const user = 'Ogura'
@@ -151,11 +153,11 @@ src/
 + function calculateTotal(price: number)
 ```
 
-### 2.
-
+### 2.グローバル名前空間には追加しない
 
 ❌ ダメな例（グローバルを汚染する）
 これらは他のコードやライブラリと名前がかぶるリスクがあり、予期せぬバグの温床になります。
+
 ```ts: global.d.ts
 // どこでも User 型が使えるが、衝突や上書きの原因に
 interface User {
@@ -163,7 +165,9 @@ interface User {
   age: number;
 }
 ```
+
 ✅ 良い例（スコープを限定する）
+
 ```ts:types/user.ts
 // types/user.ts に定義し、必要なファイルでインポート
 export interface User {
@@ -174,7 +178,9 @@ export interface User {
 ```
 
 ### 3. 共通の型は types.ts にまとめる
+
 🔧 よくある NG パターン
+
 ```ts: parser.ts
 interface Config {
   mode: string;
@@ -189,6 +195,7 @@ function parseConfig(config: Config) {
 ```
 
 ✅ よい構成の例
+
 ```bash
 src/
 ├── types.ts      // 共通の型
@@ -196,13 +203,13 @@ src/
 
 ```
 
-
 ```ts: types.ts
 export interface Config {
   mode: string;
   verbose: boolean;
 }
 ```
+
 ```ts: parser.ts
 import { Config } from "./types";
 
@@ -211,8 +218,8 @@ function parseConfig(config: Config) {
 }
 ```
 
-
 ### 4. 型定義はファイルの最初に記載する
+
 ```diff ts
 - function scan() { ... }
 - function parse() { ... }
@@ -224,3 +231,42 @@ function parseConfig(config: Config) {
 + function scan() { ... }
 + function parse() { ... }
 ```
+
+## 🔷 `null`と`undefined`
+
+### 1. `undefined`を使い`null`は使わない。
+
+:::details なぜ undefined を使って null は避けるのか？
+
+1. 一貫性のため
+   JavaScript では、初期化されていない変数や存在しないプロパティは undefined になります。
+
+```ts
+let a;
+console.log(a); // undefined
+```
+
+API や内部コードで`undefined`を使うことで、デフォルトの挙動と合わせられる。
+
+2. 二重管理の複雑さを避ける
+   `null`と`undefined`の両方を使うと、「どっちが来るか」を常に意識しないといけません。
+
+```ts
+function getName(): string | null | undefined {
+  // 呼び出し側は3通りの分岐が必要
+}
+```
+
+`undefined`に統一すれば、分岐の数を減らし、コードがシンプルになる。
+
+3. 型システムとの相性が良い
+   TypeScript の型チェックでは、`undefined`の方が柔軟に扱えます。
+   `Partial<T>`や`?`をつけたオプショナル型は`undefined`を前提としています。
+
+```ts
+interface User {
+  name?: string; // name: string | undefined
+}
+```
+
+:::
