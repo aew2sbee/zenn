@@ -1,5 +1,5 @@
 ---
-title: '[TypeScript] MicrosoftのCoding guidelinesの要約' # 記事のタイトル
+title: '[TypeScript] 私なりのMicrosoftのコーディングガイドの要約' # 記事のタイトル
 emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['typescript', '初心者向け', 'コーディング規約'] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -8,11 +8,10 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、\*\*\*\* をまとめております。
+この記事では、一部抜粋した**Microsoft のコーディングガイド** をまとめております。
+また、**注意事項**を確認してください
 
-:::details 参考資料
 @[card](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines)
-:::
 
 :::message alert
 **注意事項**
@@ -32,17 +31,6 @@ published: true # 公開設定（falseにすると下書き）
 > We have chosen many of them for team consistency. Feel free to adopt them for your own team.
 >
 > AGAIN: This is NOT a prescriptive guideline for the TypeScript community
-> :::
-
-## 結論
-
-:::message
-**ジェネリクス関数**とは、データ型を引数のように扱う関数のこと
-**型引数(type argument)**=データ型を引数のように扱う
-
-```ts
-const 関数名 = <関数内で扱うデータ型>(引数名: 関数内で扱うデータ型[]) => 処理;
-```
 
 :::
 
@@ -270,3 +258,74 @@ interface User {
 ```
 
 :::
+
+## 🔷 前提条件
+
+### 1.Node や Symbol などのオブジェクトは作成元以外では変更しない
+
+❌ 悪い例：ノードを勝手に書き換える
+
+```ts
+function tamperNode(node: ts.Node) {
+  node.kind = ts.SyntaxKind.StringLiteral; // ❌ 他の処理にも影響する
+}
+```
+
+✅ 良い例：読み取り専用として扱う
+
+```ts
+function tamperNode(node: ts.Node) {
+  node.kind = ts.SyntaxKind.StringLiteral; // ❌ 他の処理にも影響する
+}
+```
+
+### 2. 配列は基本的に不変として扱う
+
+配列の値は部分的に更新をしない
+❌ 悪い例：配列やオブジェクトを直接変更
+
+```ts
+const user = { name: 'Alice', age: 30 };
+user.age = 31; // ← 直接変更（副作用の原因）
+
+const list = [1, 2, 3];
+list.push(4); // ← 元の配列を直接変更
+```
+
+✅ 良い例：コピーして変更（不変）
+
+```ts
+const user = { name: 'Alice', age: 30 };
+const updatedUser = { ...user, age: 31 }; // 新しいオブジェクトを作る
+
+const list = [1, 2, 3];
+const newList = [...list, 4]; // 新しい配列を作る
+```
+
+✅ より強力に：readonly を使う
+
+```ts
+interface User {
+  readonly id: number;
+  readonly name: string;
+}
+
+const user: User = { id: 1, name: 'Alice' };
+// user.name = "Bob"; // ❌ エラー！readonlyなので変更不可
+const numbers: readonly number[] = [1, 2, 3];
+// numbers.push(4); // ❌ エラー
+```
+
+## 🔷 コメント
+
+### 1. JSDoc 形式を使用（関数・型・クラスなど）
+
+```ts
+/**
+ * ユーザー情報を取得する
+ * @param userId - 対象のユーザーID
+ */
+function fetchUser(userId: number): UserInfo {
+  // ...
+}
+```
