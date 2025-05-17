@@ -713,3 +713,10 @@ html {
 <button class="outline outline-offset-2 outline-8">outline-8</button>
 ```
 ![outline](/images/articles/tailwind-css-cheat-sheet/outline.png)
+
+## Youtubeの宣伝
+
+ポモドーロタイマー（25分勉強＋5分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、一緒に頑張りたいときにぜひご活用ください。
+ご興味がありましたら、お気軽に遊びに来てください！
+@[card](https://www.youtube.com/@aew2sbee)
