@@ -714,7 +714,7 @@ html {
 ```
 ![outline](/images/articles/tailwind-css-cheat-sheet/outline.png)
 
-## Youtubeの宣伝
+## YouTubeの宣伝
 
 ポモドーロタイマー（25分勉強＋5分休憩）を活用した作業・勉強配信を行っています。
 集中したいときや、一緒に頑張りたいときにぜひご活用ください。
