@@ -22,17 +22,17 @@ VSCode から EC2 で立ち上げたサーバーに接続する方法を学習�
 
 目的のサーバーのインスタンス状態が`実行中`にである事確認します。
 次に、インスタンス ID の`リンク`をクリックしページ遷移します。
-![vscode-ssh-step1](/images/vscode-ssh-step1.png)
+![vscode-ssh-step1](/images/articles/aws-ec2-vscode/vscode-ssh-step1.png)
 
 ### 2. 接続に関する情報の確認する
 
 `接続`ボタンをクリックし、詳細ページに遷移します。
-![vscode-ssh-step2](/images/vscode-ssh-step2.png)
+![vscode-ssh-step2](/images/articles/aws-ec2-vscode/vscode-ssh-step2.png)
 
 ### 3. SSH コマンドのコピーする
 
 `SSHクライアント`をクリックし、`SSHコマンド`をコピーします
-![vscode-ssh-step3](/images/vscode-ssh-step3.png)
+![vscode-ssh-step3](/images/articles/aws-ec2-vscode/vscode-ssh-step3.png)
 
 - **Q: SSH コマンドの意味とは？**
   - A: ssh -i "秘密鍵のファイルパス" ユーザー名@ホスト名
@@ -58,54 +58,54 @@ VSCode から EC2 で立ち上げたサーバーに接続する方法を学習�
 ### 5. VSCode に拡張機能の追加する
 
 拡張機能の検索欄から`ssh`と検索し`インストール`して下さい。
-![vscode-ssh-step4](/images/vscode-ssh-step4.png)
+![vscode-ssh-step4](/images/articles/aws-ec2-vscode/vscode-ssh-step4.png)
 
 ### 6. SSH コマンドの実行する
 
 画面左側の`パソコンマーク`をクリックし
 SSH と書かれているバーの`＋`をクリックし
 入力欄が表示されるため、先ほどの`SSHコマンド`を入力し実行する
-![vscode-ssh-step5](/images/vscode-ssh-step5.png)
+![vscode-ssh-step5](/images/articles/aws-ec2-vscode/vscode-ssh-step5.png)
 :::message
 例: 入力欄に SSH コマンドを入力した状態
 :::
-![vscode-ssh-step6](/images/vscode-ssh-step6.png)
+![vscode-ssh-step6](/images/articles/aws-ec2-vscode/vscode-ssh-step6.png)
 
 ### 7. config ファイルの指定する
 
 自分の名前のファイルの`config`ファイルを選択し、接続情報を記録します。
-![vscode-ssh-step7](/images/vscode-ssh-step7.png)
+![vscode-ssh-step7](/images/articles/aws-ec2-vscode/vscode-ssh-step7.png)
 
 ### 8. SSH 接続を開始
 
 右下のポップアップの`接続`ボタンをクリックすると、接続が開始されます。
-![vscode-ssh-step8](/images/vscode-ssh-step8.png)
+![vscode-ssh-step8](/images/articles/aws-ec2-vscode/vscode-ssh-step8.png)
 
 ### 9. OS の選択する
 
 今回は、`ubuntu`なので`Linux`を選択します。
 選択後、少しロードが行われて接続が完了します。
-![vscode-ssh-step9](/images/vscode-ssh-step9.png)
+![vscode-ssh-step9](/images/articles/aws-ec2-vscode/vscode-ssh-step9.png)
 
 ## SSH 接続の確認
 
 ### 1. アイコンで接続状態を確認する
 
 画面左側の SSH アイコンのが`緑色`に変化を確認する
-![vscode-ssh-step10](/images/vscode-ssh-step10.png)
+![vscode-ssh-step10](/images/articles/aws-ec2-vscode/vscode-ssh-step10.png)
 
 ### 2. 接続先のファイルを開く
 
 `ファルダーを開く`をクリックし、
 パスを確認し、`OK`をクリックすると、接続先のファイルを確認出来ます。
-![vscode-ssh-step11](/images/vscode-ssh-step11.png)
+![vscode-ssh-step11](/images/articles/aws-ec2-vscode/vscode-ssh-step11.png)
 
 `OK`をクリック後、`ファイルの作成者に信頼しますか？`と尋ねられるので
 `信頼します`と選択してください。
-![vscode-ssh-step12](/images/vscode-ssh-step12.png)
+![vscode-ssh-step12](/images/articles/aws-ec2-vscode/vscode-ssh-step12.png)
 信頼を確認後、下記の画像のように接続先のサーバーのファイル構成が確認が出来ます。
 
-![vscode-ssh-step13](/images/vscode-ssh-step13.png)
+![vscode-ssh-step13](/images/articles/aws-ec2-vscode/vscode-ssh-step13.png)
 
 ## YouTube のご案内
 
