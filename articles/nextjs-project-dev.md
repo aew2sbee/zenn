@@ -115,14 +115,17 @@ import { Button } from '../../../components/button';
 import { Button } from '@/components/button';
 ```
 
-
 ### 2. プロジェクト起動(開発モード)
+
 下記コマンドを実行し、プロジェクトを起動する
+
 ```bash
 cd next-js/
 npm run dev
 ```
+
 実行結果は、下記の通りです
+
 ```bash
 $ npm run dev
 
@@ -138,3 +141,12 @@ $ npm run dev
 
 `http://localhost:3000` にアクセスして確認する
 ![next-js-page](/images/articles/nextjs-project-dev/next-js-local.png)
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

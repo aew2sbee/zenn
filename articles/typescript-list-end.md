@@ -14,8 +14,6 @@ published: true # 公開設定（falseにすると下書き）
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
 :::
 
-
-
 ## 結論
 
 :::message
@@ -35,9 +33,11 @@ console.log(numList[numList.length - 1]);
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 10
 ```
+
 :::
 
 ## 2. .at()を使う
@@ -54,9 +54,11 @@ console.log(numList.at(-1));
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 10
 ```
+
 :::
 
 :::message alert
@@ -70,8 +72,18 @@ console.log(numList.at(11));
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 undefined
 ```
+
 :::
 
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

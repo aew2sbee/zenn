@@ -7,12 +7,12 @@ published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
-この記事では、**TypeScriptのアロー関数式(=>)** をまとめております。
+
+この記事では、**TypeScript のアロー関数式(=>)** をまとめております。
 
 :::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
 :::
-
 
 ## 結論
 
@@ -32,13 +32,11 @@ const clac_tax = (price: number) => Math.floor(price * 1.1);
 ```
 
 **メリット**
+
 - アロー関数式: **function**を省略する可能
 - アロー関数式 (省略記法): **return**と **{}** を省略する可能
 
 :::
-
-
-
 
 ## 1. function を使用した関数
 
@@ -50,12 +48,14 @@ const clac_tax = function (price: number) {
 };
 console.log(clac_tax(100));
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 110
 ```
-:::
 
+:::
 
 ## 2. アロー関数式
 
@@ -71,13 +71,17 @@ console.log(clac_tax(100));
 };
 console.log(clac_tax(100));
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 110
 ```
+
 :::
 
 ## 3. アロー関数式 (省略記法)
+
 ```diff ts
 - const clac_tax = (price: number) => {
 -  return Math.floor(price * 1.1);
@@ -87,7 +91,18 @@ console.log(clac_tax(100));
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 110
 ```
+
 :::
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

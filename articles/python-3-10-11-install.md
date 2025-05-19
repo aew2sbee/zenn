@@ -55,8 +55,11 @@ python -V
 3. 下記の画像の通り、`Python 3.10.11`である事を確認する
    ![python-install-step06](/images/python-install-step06.png)
 
-### おわりに
+## YouTube のご案内
 
-無事に Python をインストール出来ました。
-別 PJ で別 ver の Python を利用している場合は、お互いの PJ に影響がないように
-Docker や Pyenv などを活用して切り分けてください。
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

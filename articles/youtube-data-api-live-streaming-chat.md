@@ -17,45 +17,50 @@ $ python src/main.py
 [2025-01-31 10:14:48] 小倉あん: テスト
 ```
 
-
 :::details 参考資料
 @[card](https://developers.google.com/youtube/v3/live/docs/liveChatMessages/list?hl=ja)
 :::
 
 ## 結論
 
-
 :::message
-1. [Google Cloud](https://console.cloud.google.com/)で「YouTube Data API」のAPI Keyを作成する
+
+1. [Google Cloud](https://console.cloud.google.com/)で「YouTube Data API」の API Key を作成する
 2. `google-api-python-client`を使ってデータを取得する
-:::
+   :::
 
 ## 注意事項
+
 :::message alert
+
 1. **配信中のチャットのみ**しか取得が出来ません！
 2. **10.000 queries**を超えると料金が発生します!
-![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries.png)
-*YouTube Data APIを初めて検証したときに1日の量*
+   ![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries.png)
+   _YouTube Data API を初めて検証したときに 1 日の量_
 
 ![youtube-api-queries-expansion](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries-expansion.png)
-*[拡大版] YouTube Data APIを初めて検証したときに1日の量*
+_[拡大版] YouTube Data API を初めて検証したときに 1 日の量_
 :::
 
-## 1. YouTube Data API Keyを発行
+## 1. YouTube Data API Key を発行
+
 [Google Cloud](https://console.cloud.google.com/)で新規プロジェクトを作成する。
 検索窓に「YouTube」と入力し、`YouTube Data API v3`を選択し有効化する
 ![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api.png)
 
-
 ## 2. インストール
+
 ```bash
 pip install -r requirements.txt
 ```
+
 ```txt: requirements.txt
 google-api-python-client
 python-dotenv
 ```
+
 :::details 詳細情報
+
 ```bash
 
 $ pip show google-api-python-client
@@ -69,6 +74,7 @@ License: Apache 2.0
 Location: C:\Users\xxxxx\AppData\Local\Programs\Python\Python312\Lib\site-packages
 Requires: google-api-core, google-auth, google-auth-httplib2, httplib2, uritemplate
 ```
+
 ```bash
 $ pip show python-dotenv
 Name: python-dotenv
@@ -82,14 +88,13 @@ Location: C:\Users\xxxxx\AppData\Local\Programs\Python\Python312\Lib\site-packag
 Requires:
 Required-by: browser-use, lmnr
 ```
+
 :::
 
-
-
-
 ## 2. コーディング
-`YOUTUBE_API_KEY`は、[Google Cloud](https://console.cloud.google.com/)で表示されているKeyを入力する
-`VIDEO_ID`は、配信中のIDを入力する
+
+`YOUTUBE_API_KEY`は、[Google Cloud](https://console.cloud.google.com/)で表示されている Key を入力する
+`VIDEO_ID`は、配信中の ID を入力する
 
 例えば、下記動画であれば`VIDEO_ID=FM_T0rNH-Bg`になる
 @[card](https://www.youtube.com/watch?v=FM_T0rNH-Bg)
@@ -175,13 +180,21 @@ if __name__ == "__main__":
 ```bash
 python src/main.py
 ```
+
 ```bash
 $ python src/main.py
 [2025-01-31 10:14:43] 小倉あん: テスト
 [2025-01-31 10:14:46] 小倉あん: テスト
 [2025-01-31 10:14:48] 小倉あん: テスト
 ```
+
 連続で[小倉あん](https://www.youtube.com/@aew2sbee)というアカウントから「テスト」のコメントをタイムスタンプと一緒に取得する事が出来ました！
 
+## YouTube のご案内
 
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
 
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

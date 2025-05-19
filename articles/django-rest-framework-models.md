@@ -14,24 +14,24 @@ published: true # 公開設定（falseにすると下書き）
 
 ## Field(フィールド)一覧
 
-| Field の種類            | フィールドの説明                                         | 備考 |
+| Field の種類            | フィールドの説明                                         | 備考               |
 | ----------------------- | -------------------------------------------------------- | ------------------ |
-| `BooleanField`          | boolean 値 (True/False)                                  | |
-| `CharField`             | 文字列                                                   | |
+| `BooleanField`          | boolean 値 (True/False)                                  |                    |
+| `CharField`             | 文字列                                                   |                    |
 | `TextField`             | 長い文字列（テキスト）                                   | `max_length`が必須 |
-| `SlugField`             | 文字列(アルファベット、数字、アンダーバー、ハイフンのみ) | |
-| `JSONField`             | JSON エンコードされたデータ                              | |
-| `IntegerField`          | 整数                                                     | |
-| `FloatField`            | 浮動小数点数                                             | |
-| `PositiveIntegerField`  | 0 または正の整数                                         | |
-| `DateTimeField`         | 日付と時刻                                               | |
-| `DateField`             | 日付                                                     | |
-| `TimeField`             | 時刻                                                     | |
-| `EmailField`            | メールアドレス                                           | |
-| `URLField`              | URL                                                      | |
-| `FileField`             | ファイル                                                 | |
-| `ImageField`            | 画像ファイル                                             | |
-| `GenericIPAddressField` | IP アドレス                                              | |
+| `SlugField`             | 文字列(アルファベット、数字、アンダーバー、ハイフンのみ) |                    |
+| `JSONField`             | JSON エンコードされたデータ                              |                    |
+| `IntegerField`          | 整数                                                     |                    |
+| `FloatField`            | 浮動小数点数                                             |                    |
+| `PositiveIntegerField`  | 0 または正の整数                                         |                    |
+| `DateTimeField`         | 日付と時刻                                               |                    |
+| `DateField`             | 日付                                                     |                    |
+| `TimeField`             | 時刻                                                     |                    |
+| `EmailField`            | メールアドレス                                           |                    |
+| `URLField`              | URL                                                      |                    |
+| `FileField`             | ファイル                                                 |                    |
+| `ImageField`            | 画像ファイル                                             |                    |
+| `GenericIPAddressField` | IP アドレス                                              |                    |
 
 ## Field 詳細
 
@@ -356,3 +356,12 @@ hoge = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(1
 
 今回公式ドキュメントを読み、「こんな事まで出来るのか！」と色々学びになりました。
 やぱり、公式ドキュメントを読んで理解できるエンジニアは強いなと感じました。
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

@@ -655,3 +655,12 @@ $ python sample_client_to_server.py
 
 pyModbusTCP ライブラリーで ModbusTCP 通信環境を構築しました。
 pyModbusTCP ライブラリーについて情報が少なく苦戦しましたが、自分の記事が参考になったら幸いです。
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

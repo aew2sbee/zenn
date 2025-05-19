@@ -15,7 +15,9 @@ published: true # 公開設定（falseにすると下書き）
 :::
 
 ## 結論
+
 :::message
+
 ```ts
 interface 継承元 {
   変数名1: データ型;
@@ -25,17 +27,22 @@ interface 継承先 extends 継承元 {
   変数名2: データ型;
 }
 ```
+
 **メリット**
+
 - 似たようなコードを複数書くことが軽減する事が可能
 
 **デメリット**
+
 - 注意: 継承が深い場合など可読性がバグに繋がる可能性がある
-:::
+  :::
 
 ## 1. 問題がないパターン
+
 :::message
-Writingが継承されて構文エラーが発生していない
+Writing が継承されて構文エラーが発生していない
 :::
+
 ```ts
 interface Writing {
   title: string;
@@ -48,13 +55,14 @@ interface Novella extends Writing {
 const MyNovella: Novella = {
   page: 100,
   title: 'MyNovella',
-}
+};
 ```
 
 ## 2. 継承先の型が不足
+
 :::message alert
 
-page: 100が足りない為、下記のようなエラーが発生する
+page: 100 が足りない為、下記のようなエラーが発生する
 Property 'page' is missing in type '{ title: string; }' but required in type 'Novella'.
 
 :::
@@ -70,16 +78,17 @@ interface Novella extends Writing {
 
 const MyNovella: Novella = {
   title: 'MyNovella',
-}
+};
 ```
 
-
 ## 3. 継承元の型が不足
+
 :::message alert
 
 title: 'MyNovella'が足りない為、下記のようなエラーが発生する
 Property 'title' is missing in type '{ page: number; }' but required in type 'Novella'.
 :::
+
 ```ts
 interface Writing {
   title: string;
@@ -91,5 +100,14 @@ interface Novella extends Writing {
 
 const MyNovella: Novella = {
   page: 100,
-}
+};
 ```
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

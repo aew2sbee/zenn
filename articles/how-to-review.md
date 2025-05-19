@@ -16,7 +16,7 @@ published: true # 公開設定（falseにすると下書き）
 
 - レビューを依頼する人
 - レビューを受ける人
-@[card](https://bookplus.nikkei.com/atcl/catalog/23/11/07/01094/)
+  @[card](https://bookplus.nikkei.com/atcl/catalog/23/11/07/01094/)
 
 ## 前提
 
@@ -143,3 +143,12 @@ published: true # 公開設定（falseにすると下書き）
 ### 10. 「現状通り」
 
 現状が何であるかを、読み手が知っているとは限らない。現状についての説明を付けて加える
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

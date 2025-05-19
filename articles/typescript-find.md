@@ -8,7 +8,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、**TypeScriptのfind** をまとめております。
+この記事では、**TypeScript の find** をまとめております。
 :::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
 :::
@@ -30,8 +30,7 @@ const hoge = list.find((各要素) => 条件式);
 1. for ループなどを使用する場合よりも、**シンプルなコード**を書くことができます
 2. 要素が見つからなかった場合は undefined を返すため、**エラー処理**が簡単に行えます。
 3. 配列内の要素が多数ある場合でも、検索が*高速*に行えます。
-:::
-
+   :::
 
 ## 1. 条件を満たす
 
@@ -44,12 +43,14 @@ const result = numbers.find((i) => i > 2);
 // 期待値： 3
 console.log(result);
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 3
 ```
-:::
 
+:::
 
 ## 2. 条件を満たさない
 
@@ -62,10 +63,13 @@ const result = numbers.find((i) => i > 10);
 // 期待値： undefined
 console.log(result);
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 undefined
 ```
+
 :::
 
 ## 3. 条件を満たさないかつ undefined を返さない
@@ -79,9 +83,20 @@ const result = numbers.find((i) => i > 10) ?? false;
 // 期待値： false
 console.log(result);
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 false
 ```
+
 :::
 
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)
