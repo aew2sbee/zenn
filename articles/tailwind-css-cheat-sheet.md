@@ -35,7 +35,7 @@ html {
 ```
 
 4. 見やすいように**背景色(`bg-cyan-X00`)** を設定している場合があります。
-:::
+   :::
 
 ## 1. 背景
 
@@ -84,9 +84,7 @@ html {
 ```html
 <p class="bg-cyan-100 text-xs">font-size: 0.75rem; line-height: 1rem;</p>
 <p class="bg-cyan-200 text-base">font-size: 1rem; line-height: 1.5rem;</p>
-<p class="bg-cyan-300 text-lg">
-  font-size: 1.125rem; line-height: 1.75rem;
-</p>
+<p class="bg-cyan-300 text-lg">font-size: 1.125rem; line-height: 1.75rem;</p>
 <p class="bg-cyan-400 text-xl">font-size: 1.25rem; line-height: 1.75rem;</p>
 <p class="bg-cyan-500 text-2xl">font-size: 1.5rem; line-height: 2rem;</p>
 ```
@@ -141,6 +139,7 @@ html {
 :::
 
 ### 7. 数値表示設定
+
 :::message
 数字を等幅フォント（すべての数字が同じ幅）で表示する設定です。
 :::
@@ -173,6 +172,7 @@ html {
 ![line-clamp](/images/articles/tailwind-css-cheat-sheet/line-clamp.png)
 
 ## 3. margin/pading
+
 ### 1. 四方にスペーシングを設定する
 
 ```html
@@ -183,9 +183,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p](/images/articles/tailwind-css-cheat-sheet/m-p.png)
 
 ### 2. 上側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 mt-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -194,9 +196,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p-t](/images/articles/tailwind-css-cheat-sheet/m-p-t.png)
 
 ### 3. 右側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 mr-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -205,9 +209,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p-r](/images/articles/tailwind-css-cheat-sheet/m-p-r.png)
 
 ### 4. 下側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 mb-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -216,9 +222,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p-b](/images/articles/tailwind-css-cheat-sheet/m-p-b.png)
 
 ### 5. 左側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 ml-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -227,9 +235,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p-l](/images/articles/tailwind-css-cheat-sheet/m-p-l.png)
 
 ### 6. 左右側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 mx-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -238,9 +248,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p-x](/images/articles/tailwind-css-cheat-sheet/m-p-x.png)
 
 ### 7. 上下側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 my-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -249,9 +261,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![m-p-y](/images/articles/tailwind-css-cheat-sheet/m-p-y.png)
 
 ### 8. 内側にスペーシングを設定する
+
 ```html
 <div class="bg-cyan-200 -m-6">
   <div class="h-20 w-20">margin: 24px</div>
@@ -260,9 +274,11 @@ html {
   <div class="h-20 w-20">pading: 24px</div>
 </div>
 ```
+
 ![-m-p](/images/articles/tailwind-css-cheat-sheet/-m-p.png)
 
 ### 9. 左右側にスペーシングを間隔で設定する
+
 ```html
 <div class="flex mx-10 bg-gray-50 space-x-4">
   <div class="h-20 w-20 bg-cyan-200">1</div>
@@ -270,17 +286,21 @@ html {
   <div class="h-20 w-20 bg-cyan-200">3</div>
 </div>
 ```
+
 ![space-x](/images/articles/tailwind-css-cheat-sheet/space-x.png)
 
-
 ### 10. 上下側にスペーシングを間隔で設定する
+
 ```html
-<div class="flex flex-col justify-center items-start min-h-screen mx-10 bg-gray-50 space-y-4">
-<div class="h-20 w-20 bg-cyan-200">1</div>
-<div class="h-20 w-20 bg-cyan-200">2</div>
-<div class="h-20 w-20 bg-cyan-200">3</div>
+<div
+  class="flex flex-col justify-center items-start min-h-screen mx-10 bg-gray-50 space-y-4"
+>
+  <div class="h-20 w-20 bg-cyan-200">1</div>
+  <div class="h-20 w-20 bg-cyan-200">2</div>
+  <div class="h-20 w-20 bg-cyan-200">3</div>
 </div>
 ```
+
 ![space-y](/images/articles/tailwind-css-cheat-sheet/space-y.png)
 
 ### 11. box-sizing
@@ -293,25 +313,33 @@ html {
   <p class="bg-cyan-300">横幅=128px</p>
 </div>
 ```
+
 ![box-sizing](/images/articles/tailwind-css-cheat-sheet/box-sizing.png)
 
-
 ## 4. ボーダー
+
 ### 1. 境界線を設定する
+
 ```html
 <div class="h-20 w-20 bg-cyan-200">境界線なし</div>
-<div class="h-20 w-20 bg-rose-200 border border-indigo-500">境界線あり<br>1px solid</div>
+<div class="h-20 w-20 bg-rose-200 border border-indigo-500">
+  境界線あり<br />1px solid
+</div>
 ```
+
 ![border](/images/articles/tailwind-css-cheat-sheet/border.png)
 
 ### 2. 境界線の太く設定する
+
 ```html
 <div class="h-20 w-20 bg-cyan-200 border-indigo-500 border">1px</div>
 <div class="h-20 w-20 bg-rose-200 border-indigo-500 border-4">4px</div>
 ```
+
 ![border-weight](/images/articles/tailwind-css-cheat-sheet/border-weight.png)
 
 ### 3. 境界線の位置を設定する
+
 ```html
 <div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-t-4">上</div>
 <div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-r-4">右</div>
@@ -320,18 +348,30 @@ html {
 <div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-x-4">左右</div>
 <div class="h-10 w-10 bg-cyan-200 border-indigo-500 border-y-4">上下</div>
 ```
+
 ![border-position](/images/articles/tailwind-css-cheat-sheet/border-position.png)
 
 ### 4. 境界線のスタイルを設定する
+
 ```html
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dashed">点線</div>
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dotted">ドット</div>
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-double">二重線</div>
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-hidden">非表示</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dashed">
+  点線
+</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dotted">
+  ドット
+</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-double">
+  二重線
+</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-hidden">
+  非表示
+</div>
 ```
+
 ![border-style](/images/articles/tailwind-css-cheat-sheet/border-style.png)
 
 ## 5. 横幅を設定する
+
 ### 1. 横幅を割合で設定する
 
 ```html
@@ -340,19 +380,24 @@ html {
   <div class="h-20 bg-rose-200 w-3/5">60%</div>
 </div>
 ```
+
 ![w-percent](/images/articles/tailwind-css-cheat-sheet/w-percent.png)
 
-### 2. w-fullとw-auto横幅をで設定する
+### 2. w-full と w-auto 横幅をで設定する
 
 ```html
 <div class="flex mt-2 mx-10 bg-gray-50">
   <div class="h-20 bg-cyan-200 w-full">w-full: 親要素いっぱいに広がる</div>
-  <div class="h-20 bg-rose-200 w-auto">w-auto: 内容やコンテンツのサイズに応じて広がる</div>
+  <div class="h-20 bg-rose-200 w-auto">
+    w-auto: 内容やコンテンツのサイズに応じて広がる
+  </div>
 </div>
 ```
+
 ![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
 
 ## 6. 縦幅を設定する
+
 ### 1. 縦幅を割合で設定する
 
 ```html
@@ -364,33 +409,35 @@ html {
 
 ![w-percent](/images/articles/tailwind-css-cheat-sheet/w-percent.png)
 
-### 2. w-fullとw-auto縦幅をで設定する
+### 2. w-full と w-auto 縦幅をで設定する
 
 ```html
 <div class="flex mt-2 mx-10 bg-gray-50">
   <div class="h-20 bg-cyan-200 w-full">w-full: 親要素いっぱいに広がる</div>
-  <div class="h-20 bg-rose-200 w-auto">w-auto: 内容やコンテンツのサイズに応じて広がる</div>
+  <div class="h-20 bg-rose-200 w-auto">
+    w-auto: 内容やコンテンツのサイズに応じて広がる
+  </div>
 </div>
 ```
+
 ![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
 
 ### 3. 縦幅の最大幅で設定する
 
-
 :::details 各横幅に対応するスマホ・デバイス例
-| **Tailwindクラス** | **最大幅(px)** | **主なデバイス例**                                          |
+| **Tailwind クラス** | **最大幅(px)** | **主なデバイス例** |
 |--------------------|---------------|------------------------------------------------------------|
-| **max-w-xs**      | 320px         | iPhone SE (第1世代)、iPhone 5/5S、Pixel 4a                 |
-| **max-w-sm**      | 384px         | 一部の小型Androidスマートフォン、iPhone SE (第2世代)       |
-| **max-w-md**      | 448px         | 中小型スマートフォンの中間サイズ                           |
-| **max-w-lg**      | 512px         | 一部の大型スマートフォン、Pixel 6                          |
-| **max-w-xl**      | 576px         | iPhone 12/13 Mini、Pixel 5、Galaxy S8                      |
-| **max-w-2xl**     | 672px         | iPhone 11/12/13/14 Pro、Galaxy S10、Pixel 6 Pro            |
-| **max-w-3xl**     | 768px         | 一部の折りたたみスマートフォン (Galaxy Z Fold 閉じた状態)  |
-| **max-w-4xl**     | 896px         | タブレット (iPad Mini 横向き)、折りたたみスマートフォンの展開時 |
-| **max-w-5xl**     | 1024px        | タブレット (iPad 横向き)、iPad Air/Pro 11インチ横向き       |
-| **max-w-6xl**     | 1152px        | 大型タブレット (iPad Pro 12.9インチ 横向き)                 |
-| **max-w-7xl**     | 1280px        | 小型ノートPC (MacBook Air/Pro 13インチのブラウザ幅)         |
+| **max-w-xs** | 320px | iPhone SE (第 1 世代)、iPhone 5/5S、Pixel 4a |
+| **max-w-sm** | 384px | 一部の小型 Android スマートフォン、iPhone SE (第 2 世代) |
+| **max-w-md** | 448px | 中小型スマートフォンの中間サイズ |
+| **max-w-lg** | 512px | 一部の大型スマートフォン、Pixel 6 |
+| **max-w-xl** | 576px | iPhone 12/13 Mini、Pixel 5、Galaxy S8 |
+| **max-w-2xl** | 672px | iPhone 11/12/13/14 Pro、Galaxy S10、Pixel 6 Pro |
+| **max-w-3xl** | 768px | 一部の折りたたみスマートフォン (Galaxy Z Fold 閉じた状態) |
+| **max-w-4xl** | 896px | タブレット (iPad Mini 横向き)、折りたたみスマートフォンの展開時 |
+| **max-w-5xl** | 1024px | タブレット (iPad 横向き)、iPad Air/Pro 11 インチ横向き |
+| **max-w-6xl** | 1152px | 大型タブレット (iPad Pro 12.9 インチ 横向き) |
+| **max-w-7xl** | 1280px | 小型ノート PC (MacBook Air/Pro 13 インチのブラウザ幅) |
 
 :::
 
@@ -409,9 +456,11 @@ html {
   <div class="bg-sky-300 max-w-7xl">1280px</div>
 </div>
 ```
+
 ![max-w](/images/articles/tailwind-css-cheat-sheet/max-w.png)
 
 ## 7. 角を設定する
+
 ### 1. 縦幅を割合で設定する
 
 ```html
@@ -420,10 +469,13 @@ html {
 <div class="w-20 bg-cyan-300 rounded-lg">8px</div>
 <div class="w-20 bg-cyan-400 rounded-2xl">12px</div>
 ```
+
 ![rounded](/images/articles/tailwind-css-cheat-sheet/rounded.png)
 
 ## 8. レスポンシブ対応
+
 ### 1. 横幅に応じて非表示にする
+
 ```html
 <div class="bg-sky-100 sm:hidden">640px未満の場合のみ非表示</div>
 <div class="bg-sky-200 md:hidden">768px未満の場合のみ非表示</div>
@@ -431,23 +483,26 @@ html {
 <div class="bg-sky-400 xl:hidden">1280px未満の場合のみ非表示</div>
 <div class="bg-sky-500 2xl:hidden">1536px未満の場合のみ非表示</div>
 ```
+
 ![620px](/images/articles/tailwind-css-cheat-sheet/620px.png)
-*横幅:620px*
+_横幅:620px_
 
 ![720px](/images/articles/tailwind-css-cheat-sheet/720px.png)
-*横幅:720px*
+_横幅:720px_
 
 ![1020px](/images/articles/tailwind-css-cheat-sheet/1020px.png)
-*横幅:1020px*
+_横幅:1020px_
 
 ![1120px](/images/articles/tailwind-css-cheat-sheet/1120px.png)
-*横幅:1120px*
+_横幅:1120px_
 
 ![1520px](/images/articles/tailwind-css-cheat-sheet/1520px.png)
-*横幅:1520px*
+_横幅:1520px_
 
 ## 9. フレックス
+
 ### 1. 横並びにする
+
 ```html
 <!-- 横並びしない -->
 <div class="p-4">
@@ -466,11 +521,12 @@ html {
   <div class="bg-sky-400">テキストが入ります</div>
   <div class="bg-sky-500">テキストが入ります</div>
 </div>
-
 ```
+
 ![flex-row](/images/articles/tailwind-css-cheat-sheet/flex-row.png)
 
 ### 2. 逆向きに横並びにする
+
 ```html
 <!-- 横並びしない -->
 <div class="p-4">
@@ -489,9 +545,11 @@ html {
   <div class="bg-sky-500">テキストが入ります</div>
 </div>
 ```
+
 ![flex-row-reverse](/images/articles/tailwind-css-cheat-sheet/flex-row-reverse.png)
 
 ### 3. 縦並びにする
+
 ```html
 <!-- 縦並びしない -->
 <div class="p-4">
@@ -510,9 +568,11 @@ html {
   <div class="bg-sky-500">テキストが入ります</div>
 </div>
 ```
+
 ![flex-col](/images/articles/tailwind-css-cheat-sheet/flex-col.png)
 
 ### 4. 逆向きに縦並びにする
+
 ```html
 <!-- 縦並びしない -->
 <div class="p-4">
@@ -531,6 +591,7 @@ html {
   <div class="bg-sky-500">テキストが入ります</div>
 </div>
 ```
+
 ![flex-col-reverse](/images/articles/tailwind-css-cheat-sheet/flex-col-reverse.png)
 
 ### 5. 折り返しする
@@ -555,6 +616,7 @@ html {
   <div class="bg-sky-600">テキストが入ります</div>
 </div>
 ```
+
 ![flex-wrap](/images/articles/tailwind-css-cheat-sheet/flex-wrap.png)
 
 ### 6. 逆向きに折り返しする
@@ -579,6 +641,7 @@ html {
   <div class="bg-sky-600">テキストが入ります</div>
 </div>
 ```
+
 ![flex-wrap-reverse](/images/articles/tailwind-css-cheat-sheet/flex-wrap-reverse.png)
 
 ### 7. 子要素の横幅を割合で設定する
@@ -597,10 +660,12 @@ html {
   <div class="bg-sky-300 basis-8/12">basis-8/12</div>
 </div>
 ```
+
 ![basis](/images/articles/tailwind-css-cheat-sheet/basis.png)
 
 ## 10. グリッド
-### 1. n列の要素に設定する
+
+### 1. n 列の要素に設定する
 
 ```html
 <!-- 設定しない -->
@@ -625,7 +690,7 @@ html {
 
 ![grid](/images/articles/tailwind-css-cheat-sheet/grid.png)
 
-### 2. 横幅に応じてn列の要素に設定する
+### 2. 横幅に応じて n 列の要素に設定する
 
 ```html
 <div class="p-4 grid grid-cols-2 md:grid-cols-3">
@@ -638,20 +703,24 @@ html {
 </div>
 ```
 
-
 ![grid-720px](/images/articles/tailwind-css-cheat-sheet/grid-720px.png)
-*横幅:720px*
+_横幅:720px_
 
 ![grid-1020px](/images/articles/tailwind-css-cheat-sheet/grid-1020px.png)
-*横幅:1020px*
+_横幅:1020px_
 
 ## 11. テーブル
 
 ### 1. 表にキャプション
+
 ```html
 <table class="bg-sky-100">
-  <caption class="caption-top">caption-top</caption>
-  <caption class="caption-bottom">caption-bottom</caption>
+  <caption class="caption-top">
+    caption-top
+  </caption>
+  <caption class="caption-bottom">
+    caption-bottom
+  </caption>
   <thead>
     <tr>
       <th>Name</th>
@@ -668,29 +737,33 @@ html {
   </tbody>
 </table>
 ```
+
 ![caption](/images/articles/tailwind-css-cheat-sheet/caption.png)
 
 ## 12. ブロックレイアウト
+
 ### 1. 自動で画面幅に応じて横幅を設定する
+
 ```html
 <div class="container mx-auto px-4 bg-sky-100">
   <p>この要素は中央揃えで、画面幅に応じて調整されます。</p>
 </div>
 ```
+
 ![container-620px](/images/articles/tailwind-css-cheat-sheet/container-620px.png)
-*横幅:620px*
+_横幅:620px_
 
 ![container-720px](/images/articles/tailwind-css-cheat-sheet/container-720px.png)
-*横幅:720px*
+_横幅:720px_
 
 ![container-1020px](/images/articles/tailwind-css-cheat-sheet/container-1020px.png)
-*横幅:1020px*
+_横幅:1020px_
 
 ![container-1120px](/images/articles/tailwind-css-cheat-sheet/container-1120px.png)
-*横幅:1120px*
+_横幅:1120px_
 
 ![container-1520px](/images/articles/tailwind-css-cheat-sheet/container-1520px.png)
-*横幅:1520px*
+_横幅:1520px_
 
 ## 12. 陰影
 
@@ -703,20 +776,25 @@ html {
 <div class="shadow-xl">shadow-xl</div>
 <div class="shadow-2xl">shadow-2xl</div>
 ```
+
 ![shadow](/images/articles/tailwind-css-cheat-sheet/shadow.png)
 
 ## 13. 輪郭
+
 ```html
 <button class="outline outline-offset-2 outline-1">outline-1</button>
 <button class="outline outline-offset-2 outline-2">outline-2</button>
 <button class="outline outline-offset-2 outline-4">outline-4</button>
 <button class="outline outline-offset-2 outline-8">outline-8</button>
 ```
+
 ![outline](/images/articles/tailwind-css-cheat-sheet/outline.png)
 
-## YouTubeの宣伝
+## YouTube のご案内
 
-ポモドーロタイマー（25分勉強＋5分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、一緒に頑張りたいときにぜひご活用ください。
-ご興味がありましたら、お気軽に遊びに来てください！
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
 @[card](https://www.youtube.com/@aew2sbee)

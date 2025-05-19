@@ -70,3 +70,12 @@ npm run dev
 実行結果は、下記の通りです
 `http://localhost:3000/sample` にアクセスして確認する
 ![next-js-page](/images/articles/nextjs-page-tsx/next-js-page.png)
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

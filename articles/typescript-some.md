@@ -8,7 +8,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、コードをシンプルに書ける**some関数**を解説します。
+この記事では、コードをシンプルに書ける**some 関数**を解説します。
 
 :::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
@@ -24,15 +24,19 @@ const hoge = list.some((各要素) => 条件式);
 ```
 
 **メリット**
+
 1. 引数として関数を直接に渡すことも可能です。
+
 ```diff ts
 const numbers = [1, 2, 3, 4, 5];
 const isEven = (num: number) => num % 2 === 0;
 - const result2 = numbers.some((num) => num % 2 === 0);
 + const result1 = numbers.some(isEven);
 ```
+
 2. includes と some の違い
-**指定された条件**か**指定された要素**が含まれるのかの違いです。
+   **指定された条件**か**指定された要素**が含まれるのかの違いです。
+
 ```ts
 // 数字の配列
 const numbers = [1, 2, 3, 4, 5];
@@ -55,9 +59,11 @@ console.log(result(items));
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 true
 ```
+
 :::
 
 ## 2. 条件を満たさない
@@ -72,7 +78,18 @@ console.log(result(items));
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 false
 ```
+
 :::
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

@@ -8,12 +8,11 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、TypeScriptの**メンテしやすいコードの書き方**を解説します。
+この記事では、TypeScript の**メンテしやすいコードの書き方**を解説します。
 
 :::details 参考資料
 @[card](https://gihyo.jp/book/2017/978-4-7741-9087-7)
 :::
-
 
 ## 1. 小さくまとめてわかりやすくする
 
@@ -154,12 +153,12 @@ const addNumbers = (num1: Number1To5, num2: Number1To5): number => num1 + num2;
 
 ```ts
 if (isChild()) {
-    return 0;
-  } else if (isSenior()) {
-    return 1;
-  } else {
-    return 2;
-  }
+  return 0;
+} else if (isSenior()) {
+  return 1;
+} else {
+  return 2;
+}
 ```
 
 :::
@@ -169,17 +168,16 @@ if (isChild()) {
 -> 条件の変更も対応しやすい
 
 ```ts
-if (isChild()) return 0
-if (isSenior()) return 1
-return 2
+if (isChild()) return 0;
+if (isSenior()) return 1;
+return 2;
 ```
 
 :::
 
-
 ## 業務ロジックを分かりやすく整理する
-### メソッドをロジックの置き場にする
 
+### メソッドをロジックの置き場にする
 
 :::message alert
 受け取った値をただ返すだけのメソッドで意味がない
@@ -230,8 +228,16 @@ class PersonName {
   getFullName(): string {
     return this.lastName + this.firstName;
   }
-
 }
 ```
 
 :::
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

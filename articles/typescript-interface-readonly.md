@@ -16,15 +16,19 @@ published: true # 公開設定（falseにすると下書き）
 
 :::message
 下記がテンプレートになります。
+
 ```ts
 interface インターフェース名 {
   readonly 変数名: データ型;
 }
 ```
+
 :::
 
 ## 1. 読み取り専用(readonly)を使用しない
-letなので値の上書きが可能です
+
+let なので値の上書きが可能です
+
 ```ts
 interface Writing {
   title: string;
@@ -32,13 +36,13 @@ interface Writing {
 
 let book: Writing = {
   title: '初めての',
-}
+};
 
-book.title += 'TypeScript'
-
+book.title += 'TypeScript';
 ```
 
 ## 2. 読み取り専用(readonly)を使用する
+
 ```ts
 interface Writing {
   readonly title: string;
@@ -46,13 +50,22 @@ interface Writing {
 
 let book: Writing = {
   title: '初めての',
-}
+};
 
-book.title += 'TypeScript'
-
+book.title += 'TypeScript';
 ```
+
 出力結果を確認する
 
 ```bash
 Cannot assign to 'title' because it is a read-only property.
 ```
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

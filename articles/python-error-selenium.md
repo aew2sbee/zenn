@@ -233,3 +233,12 @@ driver.implicitly_wait(10)
 | タグ名                     | `.find_element_by_tag_name("tag name")`                   | `.find_element(By.TAG_NAME, "tag name")`                    |
 | クラス名                   | `.find_element_by_class_name("class name")`               | `.find_element(By.CLASS_NAME, "class name")`                |
 | css セレクタ               | `.find_element_by_css_selector("css selector")`           | `.find_element(By.CSS_SELECTOR, "css selector")`            |
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

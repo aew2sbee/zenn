@@ -8,7 +8,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、**Jsonファイルを直接インポートする方法** をまとめております。
+この記事では、**Json ファイルを直接インポートする方法** をまとめております。
 :::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
 :::
@@ -28,7 +28,6 @@ tsconfig.json の **"resolveJsonModule": true,** を追加する
 ```
 
 :::
-
 
 ## 0. 前提条件：ディレクトリー構成
 
@@ -83,7 +82,9 @@ import * as data from './data.json';
 console.log(data);
 
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 {
@@ -94,6 +95,7 @@ $ ts-node resolveJsonModule.ts
 }
 
 ```
+
 :::
 
 ## 3-2. Json ファイルの全てを出力する
@@ -105,10 +107,12 @@ console.log(data.timestamp);
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 2019-01-01 12:00:00
 ```
+
 :::
 
 ## 3-3. Json ファイルの data の配列を出力する
@@ -121,10 +125,12 @@ console.log(data.data);
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 [ { id: 1, name: 'Michael' }, { id: 2, name: 'John' } ]
 ```
+
 :::
 
 ## 3-4. Json ファイルの data の配列の 0 番目を出力する
@@ -135,9 +141,21 @@ import * as data from './data.json';
 console.log(data.data[0].name);
 
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 Michael
 ```
+
 :::
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

@@ -8,7 +8,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、**TypeScriptのincludes** をまとめております。
+この記事では、**TypeScript の includes** をまとめております。
 
 :::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
@@ -24,12 +24,11 @@ const hoge = list.includes(指定された要素);
 ```
 
 **メリット**
+
 1. for ループなどを使用する場合よりも、**シンプルなコード**を書くことができます
 2. 第二引数として**検索を開始するインデックスを指定する**ことができる
 3. 配列の要素の型を明示的に指定することができ、**型安全性**を確保できる。
-:::
-
-
+   :::
 
 ## 1. 条件を満たす
 
@@ -44,9 +43,11 @@ console.log(result);
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 true
 ```
+
 :::
 
 ## 2. 条件を満たさない
@@ -62,9 +63,11 @@ console.log(result);
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 false
 ```
+
 :::
 
 ## 3. 第二引数を指定する
@@ -80,7 +83,18 @@ console.log(result);
 ```
 
 :::details 実行結果を確認する
+
 ```bash
 false
 ```
+
 :::
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

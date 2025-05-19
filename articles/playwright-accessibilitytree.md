@@ -14,8 +14,10 @@ published: true # 公開設定（falseにすると下書き）
 @[card](https://github.com/microsoft/playwright-mcp)
 
 ### 結論
-Zennのトップページでアクセシビリティツリーを可視化した結果はこちらになります。
+
+Zenn のトップページでアクセシビリティツリーを可視化した結果はこちらになります。
 :::message
+
 ```ts
 {
   "role": "WebArea",
@@ -49,37 +51,39 @@ Zennのトップページでアクセシビリティツリーを可視化した�
 
 ### 前提
 
-検証時のverは下記の通りです。
+検証時の ver は下記の通りです。
+
 ```bash
 "playwright": "^1.51.1"
 "typescript": "^5.8.2"
 ```
 
-
-
 ## やり方
+
 下記コードを実行します。
 
-### 1. accessibilityTreeを取得
+### 1. accessibilityTree を取得
+
 ```ts
 import { chromium } from 'playwright';
 
 (async () => {
-    const browser = await chromium.launch();
-    const page = await browser.newPage();
-    await page.goto('https://zenn.dev/');
-    await page.waitForTimeout(1 * 1000);
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+  await page.goto('https://zenn.dev/');
+  await page.waitForTimeout(1 * 1000);
 
-    const accessibilityTree = await page.accessibility.snapshot();
-    console.log(accessibilityTree);
+  const accessibilityTree = await page.accessibility.snapshot();
+  console.log(accessibilityTree);
 
-    await browser.close();
+  await browser.close();
 })();
 ```
 
 確かに、ブラウザー情報をデータ化にすれば、処理速度は向上し、正確性は向上しますね。
 
 :::details 実行結果を確認する
+
 ```bash
 $ node playwright-mcp.js
 {
@@ -894,15 +898,18 @@ $ node playwright-mcp.js
   pressed: undefined
 }
 ```
+
 :::
 
-
 ### 2. データ加工
+
 ```ts
 // roleがlinkでフィルターをかける
-console.log(accessibilityTree.children.filter((i) => i.role === 'link'))
+console.log(accessibilityTree.children.filter((i) => i.role === 'link'));
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 [
   {
@@ -1380,14 +1387,25 @@ console.log(accessibilityTree.children.filter((i) => i.role === 'link'))
 ]
 
 ```
+
 :::
 
 ## 備考
+
 各 OS には独自のアクセシビリティ API があり、ブラウザはこれを通じてデータを提供される
-|  OS / プラットフォーム  |  	アクセシビリティ API  |
+| OS / プラットフォーム | アクセシビリティ API |
 | ---- | ---- |
-|  Windows  |  	UI Automation (UIA)  |
-|  macOS  |  NSAccessibility  |
-|  Linux  |  	AT-SPI  |
-|  Android  |  	AccessibilityNodeInfo  |
-|  iOS  |  UIAccessibility  |
+| Windows | UI Automation (UIA) |
+| macOS | NSAccessibility |
+| Linux | AT-SPI |
+| Android | AccessibilityNodeInfo |
+| iOS | UIAccessibility |
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

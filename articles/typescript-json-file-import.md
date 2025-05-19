@@ -15,7 +15,7 @@ published: true # 公開設定（falseにすると下書き）
 ## 結論
 
 :::message
-tsconfig.jsonの`"resolveJsonModule": true,`を追加する
+tsconfig.json の`"resolveJsonModule": true,`を追加する
 
 ```json:tsconfig.json
 {
@@ -28,16 +28,18 @@ tsconfig.jsonの`"resolveJsonModule": true,`を追加する
 
 :::
 
-
 ## 準備
+
 ### 1. ディレクトリー構成の確認
+
 ```bash
 .
 ├── data.json
 ├── resolveJsonModule.ts
 └── tsconfig.json
 ```
-### 2. 読み取る対象のJsonファイルの確認
+
+### 2. 読み取る対象の Json ファイルの確認
 
 ```json:data.json
 {
@@ -56,12 +58,14 @@ tsconfig.jsonの`"resolveJsonModule": true,`を追加する
   ]
 }
 ```
-### 3.Jsonファイルを読み取るtsファイルの編集
+
+### 3.Json ファイルを読み取る ts ファイルの編集
+
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 ```
 
-### 4.tsconfig.jsonの編集
+### 4.tsconfig.json の編集
 
 ```json:tsconfig.json
 {
@@ -73,13 +77,17 @@ import * as data from './data.json';
 ```
 
 ## 出力確認
-### 1. Jsonファイルの全てを出力する
+
+### 1. Json ファイルの全てを出力する
+
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 
 console.log(data);
 ```
+
 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 {
@@ -90,38 +98,56 @@ $ ts-node resolveJsonModule.ts
 }
 ```
 
-### 2. Jsonファイルのタイムスタンプを出力する
+### 2. Json ファイルのタイムスタンプを出力する
+
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 
 console.log(data.timestamp);
 ```
+
 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 2019-01-01 12:00:00
 ```
 
-### 3. Jsonファイルのdataの配列を出力する
+### 3. Json ファイルの data の配列を出力する
+
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 
 console.log(data.data);
 ```
+
 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 [ { id: 1, name: 'Michael' }, { id: 2, name: 'John' } ]
 ```
 
-### 4. Jsonファイルのdataの配列の0番目を出力する
+### 4. Json ファイルの data の配列の 0 番目を出力する
+
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 
 console.log(data.data[0].name);
 ```
+
 実行結果を確認する
+
 ```bash
 $ ts-node resolveJsonModule.ts
 Michael
 ```
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)
