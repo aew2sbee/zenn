@@ -21,36 +21,36 @@ Terraform で AWS のサービスを管理したく、`AWS Vaultコマンド`で
    @[card](https://aws.amazon.com/jp/cli/)
 
 2. Windows の方は、`64ビット`をクリックしインストーラーをダウンロードする
-   ![terraform-aws-vault-ec2-step00](/images/terraform-aws-vault-ec2-step00.png)
+   ![terraform-aws-vault-ec2-step00](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step00.png)
 
 3. ダウンロードされたインストーラーを実行する
-   ![terraform-aws-vault-ec2-step02](/images/terraform-aws-vault-ec2-step02.png)
+   ![terraform-aws-vault-ec2-step02](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step02.png)
 
 4. ✅ を付けて`Next`をクリックする
-   ![terraform-aws-vault-ec2-step08](/images/terraform-aws-vault-ec2-step09.png)
+   ![terraform-aws-vault-ec2-step08](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step09.png)
 
 5. インストールを開始するために、`Next`をクリックする
-   ![terraform-aws-vault-ec2-step03](/images/terraform-aws-vault-ec2-step03.png)
+   ![terraform-aws-vault-ec2-step03](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step03.png)
 
 6. `Next`をクリックする
-   ![terraform-aws-vault-ec2-step04](/images/terraform-aws-vault-ec2-step04.png)
+   ![terraform-aws-vault-ec2-step04](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step04.png)
 
 7. `Next`をクリックする
-   ![terraform-aws-vault-ec2-step05](/images/terraform-aws-vault-ec2-step05.png)
+   ![terraform-aws-vault-ec2-step05](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step05.png)
 
 8. `Install`をクリックする
-   ![terraform-aws-vault-ec2-step06](/images/terraform-aws-vault-ec2-step06.png)
+   ![terraform-aws-vault-ec2-step06](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step06.png)
 
 9. インストールが完了するまで待つ
-   ![terraform-aws-vault-ec2-step07](/images/terraform-aws-vault-ec2-step07.png)
+   ![terraform-aws-vault-ec2-step07](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step07.png)
 
 10. 完了したら`Finish`をクリックする
-    ![terraform-aws-vault-ec2-step08](/images/terraform-aws-vault-ec2-step08.png)
+    ![terraform-aws-vault-ec2-step08](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step08.png)
 
 ## 2. `~/.aws/config`を設定する
 
 1. `エクスプローラー`から`~/.aws/config`を開きます。
-   ![terraform-aws-vault-ec2-step01](/images/terraform-aws-vault-ec2-step01.png)
+   ![terraform-aws-vault-ec2-step01](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step01.png)
 
 2. 下記のように変更します。
 
@@ -363,7 +363,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
    **インスタンスを起動後にサーバーが起動する=料金の発生する!!**
    :::
 
-![terraform-aws-vault-ec2-step10](/images/terraform-aws-vault-ec2-step10.png)
+![terraform-aws-vault-ec2-step10](/images/articles/terraform-aws-vault-ec2/terraform-aws-vault-ec2-step10.png)
 
 ## おわりに
 
