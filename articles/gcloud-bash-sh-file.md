@@ -13,11 +13,11 @@ published: true # 公開設定（falseにすると下書き）
 その解消方法を紹介します。
 
 ## 再現
-### 1. シェルスクリプトと.envファイルを作成する
 
-> .envファイルに定義されたバケット名を読み取る
-> ローカルにあるファイルをstorageにアップロードする
+### 1. シェルスクリプトと.env ファイルを作成する
 
+> .env ファイルに定義されたバケット名を読み取る
+> ローカルにあるファイルを storage にアップロードする
 
 ```sh:script.sh
 #!/bin/sh
@@ -42,40 +42,56 @@ GCP_BUCKET_NAME="sample_bucket"
 ```
 
 ### 2. シェルスクリプトを実行する
+
 ```bash
 bash script.sh
 ```
+
 実行結果を確認します。
+
 ```bash
 $ bash script.sh
 'RROR: (gcloud.storage.cp) HTTPError 400: Invalid bucket name: 'sample_bucket
 ```
 
-もちろん、GCP上にsample_bucketというbucket名は存在するのに、
-存在しないとErrorになる
-
+もちろん、GCP 上に sample_bucket という bucket 名は存在するのに、
+存在しないと Error になる
 
 ## 原因
 
 :::message alert
-原因：.envファイルの改行コードがCRLFになっている事が原因でした。
-CRLFをLFに変換する必要があります！
+原因：.env ファイルの改行コードが CRLF になっている事が原因でした。
+CRLF を LF に変換する必要があります！
 :::
 
 ## 解決
+
 :::message
 **bash script.sh** を実行する前に**dos2unix .env**を実行する
 :::
-dos2unix: DOSやWindows環境で作成されたテキストファイルのCRLFをUnix/Linux環境で使われるLFに変換する事が出来ます
+dos2unix: DOS や Windows 環境で作成されたテキストファイルの CRLF を Unix/Linux 環境で使われる LF に変換する事が出来ます
+
 ```bash
 dos2unix .env
 bash script.sh
 ```
+
 実行結果を確認します。
+
 ```bash
 $ bash script.sh
 Copying file://files\images\sampleimage.png to gs://sample_bucket/images/sampleimage.png
 
 Average throughput: 1.2MiB/s
 ```
+
 問題なくシェルスクリプトが実行出来ました！
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

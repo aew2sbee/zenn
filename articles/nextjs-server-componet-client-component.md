@@ -16,37 +16,39 @@ published: true # 公開設定（falseにすると下書き）
 
 :::message
 **Server Compoent を使うべきケース**
+
 - データを取得する
 - バックエンドリソースを取得する
 - 機密情報を扱う
 
 ---
 
-**Client Compoentを使うべきケース**
+**Client Compoent を使うべきケース**
+
 - インタラクティブな機能を持つ
 - コンポーネントに保持した値を扱う
-- ブラウザ専用のAPIを使用する
-- ブラウザ専用のHoolを使用する
-- React Classコンポーネントを使う
+- ブラウザ専用の API を使用する
+- ブラウザ専用の Hool を使用する
+- React Class コンポーネントを使う
 
 :::
 
 ## Server Componet(SRC)とは
+
 > サーバーサイドのみ実装されるコンポーネント
 
 :::message
 **「非同期関数(async function)」** が使える
-⇒直接外部WebAPIのデータを取得してレンダリングする事が可能
+⇒ 直接外部 WebAPI のデータを取得してレンダリングする事が可能
 :::
 
-
 :::message alert
-何も宣言をしなければ、defaultですべてのコンポーネントがSRCとして扱われる
-⇒ブラウザで実行すべきJavaScriptが送られない=イベントハンドラー等が出来ない
+何も宣言をしなければ、default ですべてのコンポーネントが SRC として扱われる
+⇒ ブラウザで実行すべき JavaScript が送られない=イベントハンドラー等が出来ない
 :::
 
 ```tsx
-export default async function ServerComponent () {
+export default async function ServerComponent() {
   const res = await fetch('http://localhost:4000/posts');
   const posts = await res.json();
   return (
@@ -61,22 +63,22 @@ export default async function ServerComponent () {
 }
 ```
 
-## Client Componentとは
-> ブラウザ/サーバー両方で実行されるコンポーネント
-:::message
-ブラウザで実行すべきJavaScriptが送れる=イベントハンドラー等が出来る
-:::
+## Client Component とは
 
+> ブラウザ/サーバー両方で実行されるコンポーネント
+> :::message
+> ブラウザで実行すべき JavaScript が送れる=イベントハンドラー等が出来る
+> :::
 
 :::message alert
 ファイル冒頭に **"use client";** を記載する
-⇒Client Componentとして扱われる
+⇒Client Component として扱われる
 
-もし、親がClient Componentなら再宣言する必要がありません。
+もし、親が Client Component なら再宣言する必要がありません。
 :::
 
 ```tsx
-"use client"; 
+'use client';
 
 import { useState } from 'react';
 
@@ -90,3 +92,12 @@ export default function Counter() {
   );
 }
 ```
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

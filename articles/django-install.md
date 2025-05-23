@@ -165,3 +165,12 @@ Quit the server with CONTROL-C.
    チュートリアルのロケットを飛ばすことが出来ました！
    :::
    ![Djangoインストール](/images/django-install.png)
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

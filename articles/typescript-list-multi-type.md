@@ -36,6 +36,7 @@ console.log(stgList);
 ```
 
 ### 2. 数値のみの配列
+
 ```ts
 const numList: number[] = [1, 2, 3, 4, 5];
 
@@ -49,6 +50,7 @@ console.log(numList);
 ```
 
 ### 3. 数値のみの配列に文字列が含まれている
+
 ```ts
 const numList: number[] = [1, 2, 3, '4', '5'];
 
@@ -62,6 +64,7 @@ Type 'string' is not assignable to type 'number'.
 ```
 
 ### 4. 合併型(文字列/数値)の配列
+
 ```ts
 const numOrStgList: (number | string)[] = [1, 2, 3, '4', '5'];
 
@@ -75,11 +78,12 @@ console.log(numOrStgList);
 ```
 
 ### 5. 数値のみの多次元配列
+
 ```ts
 const numMultiList: number[][] = [
   [1, 2, 3, 4, 5],
   [6, 7, 8, 9, 10],
-]
+];
 
 console.log(numMultiList);
 ```
@@ -91,11 +95,12 @@ console.log(numMultiList);
 ```
 
 ### 6. 合併型(文字列/数値)の多次元配列
+
 ```ts
 const numOrStgListMulti: (number | string)[][] = [
   ['1', '2', '3', '4', '5'],
   [6, 7, 8, 9, 10],
-]
+];
 
 console.log(numMultiList);
 ```
@@ -105,3 +110,12 @@ console.log(numMultiList);
 ```bash
 [["1", "2", "3", "4", "5"], [6, 7, 8, 9, 10]]
 ```
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)

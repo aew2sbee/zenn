@@ -6,18 +6,22 @@ topics: ['linux', 'cli'] # タグ。["markdown", "rust", "aws"]のように指�
 published: true # 公開設定（falseにすると下書き）
 ---
 
-
 ## はじめに
-この記事では、**linuxのcli** をまとめております。
+
+この記事では、**linux の cli** をまとめております。
 
 ## 事前準備[Linux(ubuntu)環境の構築]
-### 1. dockerイメージをpullする
 
-dockerコマンドを使ってLinux(ubuntu)環境の用意します。
+### 1. docker イメージを pull する
+
+docker コマンドを使って Linux(ubuntu)環境の用意します。
+
 ```bash
 docker pull ubuntu
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 $ docker pull ubuntu
 Using default tag: latest
@@ -26,45 +30,58 @@ Digest: sha256:77906da86b60585ce12215807090eb327e7386c8fafb5402369e421f44eff17e
 Status: Image is up to date for ubuntu:latest
 docker.io/library/ubuntu:latest
 ```
+
 :::
 
-### 2. dockerイメージが作成されているか確認する
+### 2. docker イメージが作成されているか確認する
+
 ```bash
 docker images
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 $ docker images
 REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
 ubuntu       latest    ca2b0f26964c   3 weeks ago   77.9MB
 ```
+
 :::
 
+### 3. 作成した docker イメージでコンテナを起動する
 
-### 3. 作成したdockerイメージでコンテナを起動する
 ```bash
 docker run -d -it --name sample ubuntu
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 $ docker run -d -it --name sample ubuntu
 c4f422135b83f475dc2f2c44fcadeafce4047b6849e724ee672f160ddc8575cf
 ```
+
 :::
 
 ### 4. 起動したコンテナの中に入る
+
 ```bash
 docker exec -it sample bash
 ```
+
 :::details 実行結果を確認する
+
 ```bash
 $ docker exec -it sample bash
 root@c4f422135b83:/#
 ```
+
 :::
 
 ## 1. パッケージ管理(apt)
-> “APT” は “Advanced Package Tool” の略で、DebianベースのLinuxディストリビューションで使用されるパッケージ管理システムです。 APTは、パッケージのインストール、アップグレード、削除、および依存関係の解決を自動化することができます。
+
+> “APT” は “Advanced Package Tool” の略で、Debian ベースの Linux ディストリビューションで使用されるパッケージ管理システムです。 APT は、パッケージのインストール、アップグレード、削除、および依存関係の解決を自動化することができます。
 
 - apt install [package]: パッケージをインストールします。
 - apt remove [package]: パッケージを削除します。
@@ -72,15 +89,19 @@ root@c4f422135b83:/#
 - apt upgrade: インストールされている全てパッケージを最新版にアップグレードします。
 - apt install --only-upgrade [package]: 特定のパッケージを最新版にアップグレードします。
 
-### 1. gitをaptでインストールする
-apt updateでパッケージリストを最新化後、gitをインストールします。
+### 1. git を apt でインストールする
+
+apt update でパッケージリストを最新化後、git をインストールします。
+
 ```
 apt update
 apt install git
 ```
+
 :::details 実行結果を確認する
+
 ```bash
-root@c4f422135b83:/# apt update 
+root@c4f422135b83:/# apt update
 Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
 Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
 Get:3 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1619 kB]
@@ -159,51 +180,59 @@ Updating certificates in /etc/ssl/certs...
 Running hooks in /etc/ca-certificates/update.d...
 done.
 ```
+
 :::
 
-### 2. gitがインストールされている事を確認する
+### 2. git がインストールされている事を確認する
+
 ```bash
 git version
 ```
 
-:::details 実行結果を確認する。version 2.34.1がインストールされている事が確認出来ました。
+:::details 実行結果を確認する。version 2.34.1 がインストールされている事が確認出来ました。
+
 ```bash
 root@c4f422135b83:/# git version
 git version 2.34.1
 root@c4f422135b83:/#
 ```
+
 :::
 
-
 ## 2. 現在のディレクトリを表示する
+
 現在は、ルートディレクトリにいると思うので、下記コマンドで確認します。
 ※/はルートディレクトリを表します。
+
 ```bash
 pwd
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
 root@c4f422135b83:/# pwd
 /
 root@c4f422135b83:/#
 ```
+
 :::
 
-
 ## 3. ディレクトリ内のファイル/ディレクトリを表示する
+
 ```bash
 ls
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
 root@c4f422135b83:/# ls
 bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 root@c4f422135b83:/#
 ```
-:::
 
+:::
 
 ## 4. ディレクトリ内のファイル/ディレクトリの詳細を表示する
 
@@ -212,6 +241,7 @@ ll
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
 root@c4f422135b83:/# ll
 total 68
@@ -239,41 +269,52 @@ dr-xr-xr-x  11 root root    0 Mar 21 07:58 sys/
 drwxrwxrwt   1 root root 4096 Mar 21 08:14 tmp/
 drwxr-xr-x   1 root root 4096 Feb 27 15:59 usr/
 drwxr-xr-x   1 root root 4096 Feb 27 16:02 var/
-root@c4f422135b83:/# 
+root@c4f422135b83:/#
 ```
+
 :::
 
-
 ## 5. ディレクトリ移動
+
 :::message
 目的のディレクトリへ移動
+
 ```bash
 cd [移動先のディレクトリ名のパス]
 ```
-1つ上のディレクトリへ移動
+
+1 つ上のディレクトリへ移動
+
 ```bash
 cd ..
 ```
+
 前回のディレクトリに戻る
+
 ```bash
 cd -
 ```
+
 :::
 
-
 ## 6. ディレクトリの作成
+
 :::message
+
 ```bash
 mkdir [ディレクトリ名]
 ```
+
 :::
-./root配下にsampleという名前で作成します
+./root 配下に sample という名前で作成します
+
 ```bash
 cd ./root
 mkdir sample
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
 root@c4f422135b83:~# mkdir sample
 root@c4f422135b83:~# ll
@@ -286,21 +327,26 @@ drwxr-xr-x 1 root root 4096 Mar 21 07:58 ../
 drwxr-xr-x 2 root root 4096 Mar 22 05:31 sample/
 root@c4f422135b83:~#
 ```
+
 :::
 
-
 ## 7. ファイルの作成
+
 :::message
+
 ```bash
 touch [ファイルのパス]
 ```
+
 :::
-sample/配下にmemo.mdを新規作成します。
+sample/配下に memo.md を新規作成します。
+
 ```bash
 touch memo.md
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
 root@c4f422135b83:~/sample# touch memo.md
 root@c4f422135b83:~/sample# ll
@@ -310,23 +356,28 @@ drwx------ 1 root root 4096 Mar 22 05:31 ../
 -rw-r--r-- 1 root root    0 Mar 22 05:44 memo.md
 root@c4f422135b83:~/sample#
 ```
+
 :::
 
 ## 8. ファイルの中身を表示
 
 :::message
+
 ```bash
 cat [ファイルのパス]
 ```
+
 :::
 .bashrc の中身を表示します
+
 ```bash
-cat .bashrc 
+cat .bashrc
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
-root@c4f422135b83:~# cat .bashrc 
+root@c4f422135b83:~# cat .bashrc
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -334,7 +385,7 @@ root@c4f422135b83:~# cat .bashrc
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# don't put duplicate lines in the history. See bash(1) for more options  
+# don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
@@ -428,20 +479,26 @@ fi
 #fi
 root@c4f422135b83:~#
 ```
+
 :::
 
 ## 9. ファイル/ディレクトリの移動
+
 :::message
+
 ```bash
 mv [移動対象のパス] [移動先のパス]
 ```
+
 :::
-sample/配下にあるmemo.mdをsample/の外に移動します。
+sample/配下にある memo.md を sample/の外に移動します。
+
 ```bash
-mv memo.md ../ 
+mv memo.md ../
 ```
 
 :::details 実行結果を確認する。
+
 ```bash
 root@c4f422135b83:~/sample# mv memo.md ../
 root@c4f422135b83:~/sample# ll
@@ -460,4 +517,14 @@ drwxr-xr-x 1 root root 4096 Mar 21 07:58 ../
 drwxr-xr-x 2 root root 4096 Mar 22 05:55 sample/
 root@c4f422135b83:~#
 ```
+
 :::
+
+## YouTube のご案内
+
+ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
+集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
+
+ご興味のある方は、ぜひお気軽に遊びに来てください！
+
+@[card](https://www.youtube.com/@aew2sbee)
