@@ -77,7 +77,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ### 1. ChatGPT に「勉強時間目安」や「分からない単語」を質問する
 
-受験のレベルに併せた勉強を時間を提示してくれる
+受験のレベルに合わせた勉強時間の目安を提示してくれる
 
 ![ipa-sg-03](/images/articles/ipa-information-security-management-examination/ipa-sg-03.png)
 _勉強目安を聞く_
