@@ -10,6 +10,7 @@ published: true # 公開設定（falseにすると下書き）
 
 2025/05/25 に`情報セキュリティマネジメント試験`を受験し、無事に合格しました。
 その時の体験記をまとめております。
+@[card](https://www.ipa.go.jp/shiken/kubun/sg.html)
 
 ![ipa-sg-01](/images/articles/ipa-information-security-management-examination/ipa-sg-01.png)
 
@@ -66,22 +67,36 @@ published: true # 公開設定（falseにすると下書き）
 | ページ数 | 304 ページ                        |
 | 購入理由 | メルカリで目に留まっただけ        |
 
-## 効果のあった勉強法
+## 個人的に効果のあった勉強法
 
 ### 1. ChatGPT に勉強目安や分からない単語を質問する
 
+受験のレベルに併せた勉強を時間を提示してくれる
+
 ![ipa-sg-03](/images/articles/ipa-information-security-management-examination/ipa-sg-03.png)
-_キャプション_
+_勉強目安を聞く_
+
+覚え方や活用方法なども教えてくれる
+![ipa-sg-04](/images/articles/ipa-information-security-management-examination/ipa-sg-04.png)
+_ハイブリット暗号方式について質問_
 
 ### 2. アクティブリコール
-
+:::message
+**記憶を強化するための非常に効果的な学習法**
 > 記憶を強化するための非常に効果的な学習法です。
 > 何かを覚えるときに、自分の頭から情報を積極的に引き出す（思い出す）練習を繰り返す方法です。
 > ノートや教科書を読む「受動的な復習」とは違い、「問題を解く」「自分に問いかける」「白紙に書> き出す」といった能動的なアプローチが特徴です。
+:::
+
+これまで、`あいまい`に覚えていたIT用語に略語や似たような単語が頻繁に出題されるので、一度で理解できる事が増えました!!
 
 ### 2. 苦手分野の可視化
 
-IPA の試験問題はいかに苦手分野を減らすか？のゲームだと考えております。
+IPA の試験問題はいかに**苦手分野を減らすか？のゲーム**だと考えております。
+普通に問題を解くのでなく、次に繋げるためにも**間違えた問題**や**分からない単語**をメモしました。
+
+全ての問題を解きなおすのは無駄なため、必要最小限の問題を復習するためにスプレッドシートを活用しました。
+
 ![ipa-sg-02](/images/articles/ipa-information-security-management-examination/ipa-sg-02.png)
 _スプレッドシートに結果と分からない単語を記載記載_
 
