@@ -1,5 +1,5 @@
 ---
-title: '[AI] GitHub Copilotの基本的な使い型' # 記事のタイトル
+title: '[AI] GitHub Copilotの基本的な使い方' # 記事のタイトル
 emoji: '🧠' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['ai', 'vscode', 'githubcopilot', 'contest2025ts', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
