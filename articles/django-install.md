@@ -7,7 +7,8 @@ published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
-この記事では、Djangoインストールし下記の画面が表示手順を解説します。
+
+この記事では、Django インストールし下記の画面が表示手順を解説します。
 ![Djangoインストール](/images/django-install.png)
 
 ## 0. ファイル構成の確認
@@ -172,5 +173,6 @@ Quit the server with CONTROL-C.
 集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
 
 ご興味のある方は、ぜひお気軽に遊びに来てください！
+「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
 
 @[card](https://www.youtube.com/@aew2sbee)

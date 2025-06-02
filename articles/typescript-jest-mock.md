@@ -133,5 +133,6 @@ Ran all test suites matching /test\\unittest\\mock02.test.ts/i.
 集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
 
 ご興味のある方は、ぜひお気軽に遊びに来てください！
+「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
 
 @[card](https://www.youtube.com/@aew2sbee)

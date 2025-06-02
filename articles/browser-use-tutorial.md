@@ -15,52 +15,62 @@ published: true # 公開設定（falseにすると下書き）
 :::
 
 ## 結論
+
 :::message
-### 1. Zennで自分の最新記事を取得する
+
+### 1. Zenn で自分の最新記事を取得する
+
 結果: **できた**
 補足: 本記事で解説してます
 
 ---
 
 ### 2. 調べたら分かりそうなこと
+
 結果: **できた**
 補足: 自社の社長の名前を調べて正しかった
 
 ---
 
 ### 3. 自社の勤怠管理の操作
+
 結果: **できなかった**
 補足: 自社の勤怠管理を検索したが、オープンな情報ではないので見つけられない。
 また、たまたま名前が同じサービスを検索結果から見つけてログインページを探すが迷走していた。
 
 ---
 
-### 4. 自社の勤怠管理の操作 + URLを教える
-結果: **指定した勤怠管理を開くことができ、適当なIDとPWを入力してログインしようとした**
-補足: ログイン試行回数は、3回でタイムアウトになった
+### 4. 自社の勤怠管理の操作 + URL を教える
+
+結果: **指定した勤怠管理を開くことができ、適当な ID と PW を入力してログインしようとした**
+補足: ログイン試行回数は、3 回でタイムアウトになった
 
 ---
 
-### 5. 自社の勤怠管理の操作 + URLを教える + IDとPWを指定
-結果: **指定したIDとPWでログインをしようとした**
-補足: IDとPWは、11111111111, XXXXXXXXXにしております。
+### 5. 自社の勤怠管理の操作 + URL を教える + ID と PW を指定
+
+結果: **指定した ID と PW でログインをしようとした**
+補足: ID と PW は、11111111111, XXXXXXXXX にしております。
 
 ---
 
-### 6. HTMLの要素がぐちゃぐちゃなWebアプリを操作できるのか
+### 6. HTML の要素がぐちゃぐちゃな Web アプリを操作できるのか
+
 結果: **できたが....**
 補足: 表形式のデータは、一つの文字列として返ってきた
 
 ---
 
-### 7. 業務知識が必要なWebアプリを操作できるのか
+### 7. 業務知識が必要な Web アプリを操作できるのか
+
 結果: **できた**
-補足: 業務知識がない人が操作するには難しいWebアプリを最短で操作することが出来た
+補足: 業務知識がない人が操作するには難しい Web アプリを最短で操作することが出来た
 :::
 
-
 ## 0. 前提条件
-各システム/ライブラリー等のver
+
+各システム/ライブラリー等の ver
+
 ```bash
 $ python -V
 Python 3.12.8
@@ -80,12 +90,14 @@ Required-by
 ```
 
 ## 1. インストール
+
 ```bash
 pip install browser-use
 playwright install
 ```
 
 ## 2. コーディング
+
 ```py
 # 必要なライブラリをインポート
 from langchain_openai import ChatOpenAI  # OpenAIのチャットモデルを利用するためのライブラリ
@@ -111,12 +123,12 @@ asyncio.run(main())
 
 ```
 
-
 ## 3. 過程
 
 :::details 実行結果
+
 ```bash
-$ python main.py 
+$ python main.py
 INFO     [browser_use] BrowserUse logging setup complete with level info
 INFO     [root] Anonymized telemetry enabled. See https://github.com/browser-use/browser-use for more information.
 INFO     [agent] 🚀 Starting task: Zennで小倉さんというユーザーの最新記事を教えて
@@ -343,55 +355,60 @@ basiccommand)
 
 
 
-INFO     [agent] 
+INFO     [agent]
 📍 Step 3
 INFO     [agent] 👍 Eval: Success - Accessed the page with the articles of 小倉さん.
 INFO     [agent] 🧠 Memory: On the profile page of 小倉さん on Zenn, viewing the list of articles.
 INFO     [agent] 🎯 Next goal: Identify the latest article by 小倉さん and provide its details.
-INFO     [agent] 🛠️  Action 1/1: {"done":{"text":"The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago."}}     
+INFO     [agent] 🛠️  Action 1/1: {"done":{"text":"The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago."}}
 INFO     [agent] 📄 Result: The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago.
 INFO     [agent] ✅ Task completed successfully
 INFO     [agent] Created GIF at agent_history.gif
-AgentHistoryList(all_results=[ActionResult(is_done=False, extracted_content='🔍  Searched for "site:zenn.dev 小倉" in Google', error=None, include_in_memory=True), ActionResult(is_done=False, extracted_content='🖱️  Clicked button with index 30: 小倉あん🥝さんの記事一覧', error=None, include_in_memory=True), ActionResult(is_done=Fal 
-se, extracted_content="📄  Extracted page as markdown\n: [tech](/tech-or-idea)[📄[ドキュメント]\nわかりやすい文章を書くには14日前3](/aew2sbee/articles/document-write)[tech](/tech-or-\nidea)[🎭[Playwright] 0から勉強して導入した話18日前4](/aew2sbee/articles/playwright-\nimplementation)[tech](/tech-or-idea)[🍃[Tailwind CSS]\nボタンUI19日前2](/aew2sbee/articles/tailwind-css-button-ui)[tech](/tech-or-\nidea)[🍃[Tailwind CSS] ログイン画面UI2ヶ月前](/aew2sbee/articles/tailwind-css-login-\nui)[tech](/tech-or-idea)[🍃[Tailwind CSS]\nロードUI/スケルトンUI2ヶ月前1](/aew2sbee/articles/tailwind-css-load-ui)[tech](/tech-or-\nidea)[🎭[Playwright] CI/CDで社内環境に対してGitHub ActionsのIPを許可する in\nGCP編2ヶ月前2](/aew2sbee/articles/playwright-ci-cd-gcp)[tech](/tech-or-\nidea)[🍃[Tailwind CSS] 私なりのチートシート2ヶ月前2](/aew2sbee/articles/tailwind-css-cheat-\nsheet)[tech](/tech-or-idea)[🍃[Tailwind CSS]\nn行目以降の文章は「...」と表示する2ヶ月前](/aew2sbee/articles/tailwind-css-line-\nclamp)[tech](/tech-or-idea)[🧪[テスト] pictの使い方2ヶ月前](/aew2sbee/articles/test-how-\nto-use-pict)[tech](/tech-or-idea)[🧪[テスト]\nWindowsにpictを使えるようにする方法2ヶ月前](/aew2sbee/articles/test-pict-\ninstall)[tech](/tech-or-idea)[🎭[Playwright]\n複数の要素からn番目を取得する3ヶ月前](/aew2sbee/articles/playwright-advanced-locator-\nnth)[tech](/tech-or-idea)[🎭[Playwright]\n高度なロケーターのfilter()種類と使い方3ヶ月前](/aew2sbee/articles/playwright-advanced-locator-\nfilter)[tech](/tech-or-idea)[🎭[Playwright]\nロケーターの種類と使い方3ヶ月前1](/aew2sbee/articles/playwright-locator)[tech](/tech-or-\nidea)[🥝[体験談] 未完成な社内図書館アプリ4ヶ月前3](/aew2sbee/articles/experience-\nsandbooks)[idea](/tech-or-idea)[📖[2025年1月] 私が読んだ技術書たち\n(39冊)4ヶ月前](/aew2sbee/articles/book-record-of-reading)[tech](/tech-or-\nidea)[🛡[TypeScript] メンテしやすいコードの書き方4ヶ月前2](/aew2sbee/articles/typescript-object-\norientation)[tech](/tech-or-idea)[🛡[TypeScript]\nオブジェクト指向らしい   設計にする方法4ヶ月前](/aew2sbee/articles/typescript-coding-rule-\nobject)[tech](/tech-or-idea)[🗃️[SQL] 私なりのチートシート4ヶ月前](/aew2sbee/articles/sql-\ncheat-sh 
-eet)[tech](/tech-or-idea)[🙆\u200d♀️[JavaScript]\nチェックボックスによるボタンの活性/非活性の切り替え4ヶ月前](/aew2sbee/articles/javascript-\ncheckbox)[tech](/tech-or--idea)[🐙[GitHub]\nfork元のレポジトリーをupstreamに設定する4ヶ月前](/aew2sbee/articles/github-\nupstream)[tech](/tech-or-idea)[🐙[GitHub]\nReviewersが自分であるPRを表示する4ヶ月前](/aew2sbee/articles/github-reviewers-\nme)[tech](/tech-or-idea)[🐙[GitHub Actions] Pull\nRequest時に自動テスト/prettier/ESLintを実行する4ヶ月前](/aew2sbee/articles/github-ci-\ncd)[tech](/tech-or-idea)[🐼[bash]\nシェルスクリプトでgcloudが実行できない4ヶ月前](/aew2sbee/articles/gcloud-bash-sh-\nfile)[idea](/tech-or-idea)[�[[思考法] 生産性を上げる行動4ヶ月前](/aew2sbee/articles/book-\nincrease-productivity)[tech](/tech-or-idea)[🛡[TypeScript]\n残りの引数(...hoge)を配列に格納する4ヶ月前]( 
-/aew2sbee/articles/typescript-rest-\nparameter)[tech](/tech-or-idea)[🛡[TypeScript]\nインターフェース(interface)を継承する4ヶ月前](/aew2sbee/articles/typescript-\ninte 
-rface)[tech](/tech-or-idea)[🛡[TypeScript]\n処理しない関数には、戻り値の型(never)を使う4ヶ月前](/aew2sbee/articles/typescript-return-type-\nnever)[tech](/tech-or-idea) 
-[🛡[Jest]\nmockモジュールを使ってテストを行う4ヶ月前](/aew2sbee/articles/typescript-jest-mock)[tech](/tech-\nor-idea)[🛡[TypeScript]\n何も返さない関数には、戻り値の型(  
-void)を使う4ヶ月前](/aew2sbee/articles/typescript-return-type-\nvoid)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の末尾の値を取得する4ヶ月前](/aew2sbee/articles/typescri 
-pt-list-end)[tech](/tech-or-\nidea)[🛡[TypeScript] Jsonファイルを直接インポートする4ヶ月前](/aew2sbee/articles/typescript-\nimport-json)[tech](/tech-or-idea)[🛡[TypeSc  
-ript]\n関数の引数を必須ではなくオプションにする4ヶ月前](/aew2sbee/articles/typescript-option-\nparameter)[tech](/tech-or-idea)[🛡[TypeScript]\n合併型の配列(複数の型が  含まれているを配列)の型定義4ヶ月前](/aew2sbee/articles/typescript-list-multi-\ntype)[tech](/tech-or-idea)[🛡[TypeScript]\nJsonファイルを直接インポートする4ヶ月前](/aew 
-2sbee/articles/typescript-json-file-\nimport)[tech](/tech-or-idea)[🛡[Jest]\nTypescript環境でカバレッジレポートを表示する4ヶ月前](/aew2sbee/articles/typescript-jest-\n 
-coverage)[tech](/tech-or-idea)[🛡[TypeScript]\nインターフェース(interface)と型エイリアス(type)の違い4ヶ月前](/aew2sbee/articles/typescript-\ninterface-vs-type)[tech](/ 
-tech-or-idea)[🛡[TypeScript]\nインターフェース(interface)で読み取り専用にする4ヶ月前](/aew2sbee/articles/typescript-interface-\nreadonly)[tech](/tech-or-idea)[🛡[TypeS  
-cript]\n関数内で扱う型を引数のように受け取るジェネリクス関数4ヶ月前](/aew2sbee/articles/typescript-generics-\nfunc)[tech](/tech-or-idea)[⚡[Next.js]\ntsconfig.jsonの設定4ヶ月前2](/aew2sbee/articles/nextjs-tsconfig-json)[tech](/tech-\nor-idea)[⚡[Next.js] Prettierの導入4ヶ月前1](/aew2sbee/articles/nextjs-\nprettier)[tech](/tech-or-idea)[🎫[Linux]\n基本コマンド操作(CLI)4ヶ月前](/aew2sbee/articles/linux-command-line-\ninterface)[tech](/tech-or-idea)[🎡[Jest]\nTypescript環境でカバレッジレポートを表示する4ヶ月前](/aew2sbee/articles/jest-\ncoverage)[tech](/tech-or-idea)[🍧[JavaScript]\n一文字ずつ時間差で表示するアニメーション4ヶ月前1](/aew2sbee/articles/javascript-timelag-\nanimation)[tech](/tech-or-idea)[⚡[Next.js] Root\nlayoutファイルでheaderタグとfooterタグを共通化する4ヶ月前1](/aew2sbee/articles/nextjs-root-\nlayout-file)[tech](/tech-or-idea)[🛡[TypeScript]\nそれぞれで型定義ではなく、呼び出しシグネチャを使う4ヶ月前](/aew2sbee/articles/typescript-call-\nsignature)[tech](/tech-or-idea)[⚡[N 
-ext.js]\nLinkコンポーネントとuseRouterの違い4ヶ月前](/aew2sbee/articles/nextjs-link-\nuserouter)[tech](/tech-or-idea)[🛡[TypeScript]\n非常に大きな整数はbigint型を使う4 
-ヶ月前](/aew2sbee/articles/typescript-bigint-\ntype)[tech](/tech-or-idea)[🛡[TypeScript]\nエラー処理/例外処理の3つの方法4ヶ月前](/aew2sbee/articles/typescript-error-\n 
-handling)[tech](/tech-or-idea)[⚡[Next.js] プロジェクトの始め方-\n開発モード起動4ヶ月前](/aew2sbee/articles/nextjs-project-dev)[tech](/tech-or-\nidea)[⚡[Next.js] page.tsxについて4ヶ月前](/aew2sbee/articles/nextjs-page-\ntsx)[tech](/tech-or-idea)[⚡[Next.js] Server Componet とClient\nComponentとは？4ヶ月前1](/aew2sbee/articles/nextjs-server-componet-client-\ncomponent)[tech](/tech-or-idea)[⚡[Next.js]\nfetch関数で取得したデータをキャッシュにしない4ヶ月前](/aew2sbee/articles/nextjs-fetch-no-\nstore)[tech](/tech-or-idea)[🧪[テスト]\n今よりも単体テストを良くする考え方4ヶ月前5](/aew2sbee/articles/test-high-performance-at-minimal-\ncost)[idea](/tech-or-idea)[🔎[レ ビュー] 指摘漏れを減らす方法5ヶ月前](/aew2sbee/articles/how-to-\nreview)[tech](/tech-or-idea)[🔐[セキュリティ対策]\n安全なパスワードにするには？6ヶ月前](/aew2sbee/articles/book-secure-web-app-\npassword)[tech](/tech-or-idea)[🧜\u200d♀️[React]\nmetaタグを理解する2023/12/141](/aew2sbee/articles/react-meta-tag)[tech](/tech-or-\nidea)[��[[TypeScript] enum（列挙型）2023/12/12](/aew2sbee/articles/typescript-\nenum)[tech](/tech-or-idea)[🩹[API設計]\n良いAPI(URL)とは2023/09/093](/aew2sbee/articles/oreilly-web-api-the-good-\nparts)[tech](/tech-or-idea)[🎨[デザイン] Atomic\nDesignをデジタル庁のサイトで理解する2023/08/242](/aew2sbee/articles/atomic-design-for-\ndigital)[tech](/tech-or-idea)[🚀[Django]\ndb.sqlite3からpostgresqlに変更する方法2023/08/201](/aew2sbee/articles/django-rest-\nframework-postgres)[tech](/tech-or-idea)[🦇[React]\nuseStateの使い方2023/08/202](/aew2sbee/articles/react-usestate)[tech](/tech-or-\nidea)[💨[AWS]AWS\nVaultとTerraformでEC2を作成する2023/08/171](/aew2sbee/articles/terraform-aws-vault-\nec2)[tech](/tech-or-idea)[☁️[AWS] PowerShellにAWS\nVaultコマンドを使えるようにする2023/08/16](/aew2sbee/articles/aws-vault-install-to-\npowershell)[ttech](/tech-or-idea)[🐳[Docker] Docker\nDeskTopのインストール2023/08/09](/aew2sbee/articles/docker-desktop-\ninstall)[tech](/tech-or-idea)[🐍[Python]\nPython3.10.11をインストールする2023/08/081](/aew2sbee/articles/python-3-10-11-install)[tech](/tech-\nor-idea)[🧪[テスト] サンプル仕様からテストパターンを考える2023/08/061](/aew2sbee/articles/thinking-\ntest-pattern)[tech](/tech-or-idea)[🚀[Django]\nmodelsのField一覧2023/08/01](/aew2sbee/articles/django-rest-framework-\nmodels)[tech](/tech-or-idea)[�[[Django] django rest\nframework環境構築/インストール2023/07/291](/aew2sbee/articles/django-rest-framework-\ninstall)[tech](/tech-or-\nidea)[🤦【備忘録】未経験者チームのリーダーをやって2ヶ月経過2023/07/191](/aew2sbee/articles/first-time-\nleader)[tech](/tech-or-idea)[☁️[AWS]\nIAMで読み取り専用ユーザー本人がMFAの設定が出来るようにす  る方法2023/07/19](/aew2sbee/articles/aws-ec2-iam-\nrole)[tech](/tech-or-idea)[☁️[AWS]\nなぜ、IAMロールでスイッチロールする必要があるのか？2023/07/19](/aew2sbee/articlees/aws-ec2-iam-why-\nrole)[tech](/tech-or-\nidea)[❄[React]ローカル環境にTypeScriptで動かす環境を構築2023/07/182](/aew2sbee/articles/react-\ninstall)[tech](/tech-or-idea)[☁️[AWS]\nIAMで読み取り専用ユーザーを作成する2023/07/131](/aew2sbee/articles/aws-ec2-iam-create-\nuser)[tech](/tech-or-idea)[🐳[Docker]\nReactの環境構築2023/07/072](//aew2sbee/articles/docker-react-env)[tech](/tech-or-\nidea)[🐳[Docker] 少しだけ分かった気がする「イラスト付き」2023/07/051](/aew2sbee/articles/docker-\ncomprehension)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで折れ線グラフを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\nplot)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで円 グラフを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\npie)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibでヒストグラムを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\nhist)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで棒グラフを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\nbar)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで直線グラフを描く2023/07/02](/aew2sbee/articles/python-\nmatplotlib-45graph)[idea](/tech-or-idea)[🌆[SES]\n良い転職したいならテックブログを書こう!!2023/07/012](/aew2sbee/articles/tech-blog-for-job-\nchange)[tech](/tech-or-idea)[☁️[AWS]\nVSCodeからEC2クラウドにSSH接続する2023/07/0112](/aew2sbee/articles/aws-\nec2-vscode))[tech](/tech-or-idea)[☁️[AWS]\nEC2でWebサーバーを構築する2023/06/30](/aew2sbee/articles/aws-ec2-web-\nserver)[tech](/tech-or-idea)[🐍[Python]\nCSVファイルを読み込む2 パターン2023/06/301](/aew2sbee/articles/python-\ncsv-2pattern)[tech](/tech-or-idea)[🛡[TypeScript]\n数字型配列の合計値を求めるreduce関数2023/06/28](/aew2sbee/articles/ty 
-pescript-\nreduce)[tech](/tech-or-idea)[🛡[TypeScript]\n配列に指定された条件を判定するsome関数2023/06/273](/aew2sbee/articles/typescript-\nsome)[tech](/tech-or-idea)[� 
-[[TypeScript]\n配列の各要素に対して処理できるmap関数2023/06/272](/aew2sbee/articles/typescript-\nmap)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の含有を判定するincludes 
-関数2023/06/27](/aew2sbee/articles/typescript-\nincludes)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の条件に一致する最初の要素を取得するfind関数2023/06/27](/aew2sbee/ar 
-ticles/typescript-\nfind)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の条件を満たす要素で新しい配列を作成するfilter関数2023/06/27](/aew2sbee/articles/typescript-\nfilter 
-)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の全ての要素を判定するevery関数2023/06/272](/aew2sbee/articles/typescript-\nevery)[tech](/tech-or-idea)[🐍[Python]\npandasで 
-範囲内のデータ数を求める2023/06/27](/aew2sbee/articles/python-pandas-\nvalue_counts)[tech](/tech-or-idea)[🐍[Python]\npandasで中央値を求める2023/06/27](/aew2sbee/articles/python-pandas-\nmedian)[tech](/tech-or-idea)[🐍[Python]\npandasで平均値を求める2023/06/271](/aew2sbee/articles/python-pandas-mean)[tech](/tech-\nor-idea)[🛡[TypeSc 
-ript]\nオブジェクト(object)を配列に変換する2023/06/27](/aew2sbee/articles/typescript-object-to-\nlist)[tech](/tech-or-idea)[🐍[Python]\nseleniumの仕様が変わっていた!?(2023/06時点)2023/06/258](/aew2sbee/articles/python-error-\nselenium)[tech](/tech-or-idea)[🚀[Django]\n環境構築/インストール2023/06/23](/aew2sbee/articles/django-install)[tech](/tech-or-\nidea)[🛡[TypeScript]\nこれ('||')とそれ('&&')って何？2023/06/232](/aew2sbee/articles/typescript-or-\nand)[tech](/tech-or-idea)[🛡[TypeScript]\nver/l  
-et/constの違い2023/06/221](/aew2sbee/articles/typescript-ver-let-\nconst)[tech](/tech-or-idea)[🛡[TypeScript]\nこれ('=>')って何？2023/06/20](/aew2sbee/articles/typescr 
+AgentHistoryList(all_results=[ActionResult(is_done=False, extracted_content='🔍  Searched for "site:zenn.dev 小倉" in Google', error=None, include_in_memory=True), ActionResult(is_done=False, extracted_content='🖱️  Clicked button with index 30: 小倉あん🥝さんの記事一覧', error=None, include_in_memory=True), ActionResult(is_done=Fal
+se, extracted_content="📄  Extracted page as markdown\n: [tech](/tech-or-idea)[📄[ドキュメント]\nわかりやすい文章を書くには14日前3](/aew2sbee/articles/document-write)[tech](/tech-or-\nidea)[🎭[Playwright] 0から勉強して導入した話18日前4](/aew2sbee/articles/playwright-\nimplementation)[tech](/tech-or-idea)[🍃[Tailwind CSS]\nボタンUI19日前2](/aew2sbee/articles/tailwind-css-button-ui)[tech](/tech-or-\nidea)[🍃[Tailwind CSS] ログイン画面UI2ヶ月前](/aew2sbee/articles/tailwind-css-login-\nui)[tech](/tech-or-idea)[🍃[Tailwind CSS]\nロードUI/スケルトンUI2ヶ月前1](/aew2sbee/articles/tailwind-css-load-ui)[tech](/tech-or-\nidea)[🎭[Playwright] CI/CDで社内環境に対してGitHub ActionsのIPを許可する in\nGCP編2ヶ月前2](/aew2sbee/articles/playwright-ci-cd-gcp)[tech](/tech-or-\nidea)[🍃[Tailwind CSS] 私なりのチートシート2ヶ月前2](/aew2sbee/articles/tailwind-css-cheat-\nsheet)[tech](/tech-or-idea)[🍃[Tailwind CSS]\nn行目以降の文章は「...」と表示する2ヶ月前](/aew2sbee/articles/tailwind-css-line-\nclamp)[tech](/tech-or-idea)[🧪[テスト] pictの使い方2ヶ月前](/aew2sbee/articles/test-how-\nto-use-pict)[tech](/tech-or-idea)[🧪[テスト]\nWindowsにpictを使えるようにする方法2ヶ月前](/aew2sbee/articles/test-pict-\ninstall)[tech](/tech-or-idea)[🎭[Playwright]\n複数の要素からn番目を取得する3ヶ月前](/aew2sbee/articles/playwright-advanced-locator-\nnth)[tech](/tech-or-idea)[🎭[Playwright]\n高度なロケーターのfilter()種類と使い方3ヶ月前](/aew2sbee/articles/playwright-advanced-locator-\nfilter)[tech](/tech-or-idea)[🎭[Playwright]\nロケーターの種類と使い方3ヶ月前1](/aew2sbee/articles/playwright-locator)[tech](/tech-or-\nidea)[🥝[体験談] 未完成な社内図書館アプリ4ヶ月前3](/aew2sbee/articles/experience-\nsandbooks)[idea](/tech-or-idea)[📖[2025年1月] 私が読んだ技術書たち\n(39冊)4ヶ月前](/aew2sbee/articles/book-record-of-reading)[tech](/tech-or-\nidea)[🛡[TypeScript] メンテしやすいコードの書き方4ヶ月前2](/aew2sbee/articles/typescript-object-\norientation)[tech](/tech-or-idea)[🛡[TypeScript]\nオブジェクト指向らしい   設計にする方法4ヶ月前](/aew2sbee/articles/typescript-coding-rule-\nobject)[tech](/tech-or-idea)[🗃️[SQL] 私なりのチートシート4ヶ月前](/aew2sbee/articles/sql-\ncheat-sh
+eet)[tech](/tech-or-idea)[🙆\u200d♀️[JavaScript]\nチェックボックスによるボタンの活性/非活性の切り替え4ヶ月前](/aew2sbee/articles/javascript-\ncheckbox)[tech](/tech-or--idea)[🐙[GitHub]\nfork元のレポジトリーをupstreamに設定する4ヶ月前](/aew2sbee/articles/github-\nupstream)[tech](/tech-or-idea)[🐙[GitHub]\nReviewersが自分であるPRを表示する4ヶ月前](/aew2sbee/articles/github-reviewers-\nme)[tech](/tech-or-idea)[🐙[GitHub Actions] Pull\nRequest時に自動テスト/prettier/ESLintを実行する4ヶ月前](/aew2sbee/articles/github-ci-\ncd)[tech](/tech-or-idea)[🐼[bash]\nシェルスクリプトでgcloudが実行できない4ヶ月前](/aew2sbee/articles/gcloud-bash-sh-\nfile)[idea](/tech-or-idea)[�[[思考法] 生産性を上げる行動4ヶ月前](/aew2sbee/articles/book-\nincrease-productivity)[tech](/tech-or-idea)[🛡[TypeScript]\n残りの引数(...hoge)を配列に格納する4ヶ月前](
+/aew2sbee/articles/typescript-rest-\nparameter)[tech](/tech-or-idea)[🛡[TypeScript]\nインターフェース(interface)を継承する4ヶ月前](/aew2sbee/articles/typescript-\ninte
+rface)[tech](/tech-or-idea)[🛡[TypeScript]\n処理しない関数には、戻り値の型(never)を使う4ヶ月前](/aew2sbee/articles/typescript-return-type-\nnever)[tech](/tech-or-idea)
+[🛡[Jest]\nmockモジュールを使ってテストを行う4ヶ月前](/aew2sbee/articles/typescript-jest-mock)[tech](/tech-\nor-idea)[🛡[TypeScript]\n何も返さない関数には、戻り値の型(
+void)を使う4ヶ月前](/aew2sbee/articles/typescript-return-type-\nvoid)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の末尾の値を取得する4ヶ月前](/aew2sbee/articles/typescri
+pt-list-end)[tech](/tech-or-\nidea)[🛡[TypeScript] Jsonファイルを直接インポートする4ヶ月前](/aew2sbee/articles/typescript-\nimport-json)[tech](/tech-or-idea)[🛡[TypeSc
+ript]\n関数の引数を必須ではなくオプションにする4ヶ月前](/aew2sbee/articles/typescript-option-\nparameter)[tech](/tech-or-idea)[🛡[TypeScript]\n合併型の配列(複数の型が  含まれているを配列)の型定義4ヶ月前](/aew2sbee/articles/typescript-list-multi-\ntype)[tech](/tech-or-idea)[🛡[TypeScript]\nJsonファイルを直接インポートする4ヶ月前](/aew
+2sbee/articles/typescript-json-file-\nimport)[tech](/tech-or-idea)[🛡[Jest]\nTypescript環境でカバレッジレポートを表示する4ヶ月前](/aew2sbee/articles/typescript-jest-\n
+coverage)[tech](/tech-or-idea)[🛡[TypeScript]\nインターフェース(interface)と型エイリアス(type)の違い4ヶ月前](/aew2sbee/articles/typescript-\ninterface-vs-type)[tech](/
+tech-or-idea)[🛡[TypeScript]\nインターフェース(interface)で読み取り専用にする4ヶ月前](/aew2sbee/articles/typescript-interface-\nreadonly)[tech](/tech-or-idea)[🛡[TypeS
+cript]\n関数内で扱う型を引数のように受け取るジェネリクス関数4ヶ月前](/aew2sbee/articles/typescript-generics-\nfunc)[tech](/tech-or-idea)[⚡[Next.js]\ntsconfig.jsonの設定4ヶ月前2](/aew2sbee/articles/nextjs-tsconfig-json)[tech](/tech-\nor-idea)[⚡[Next.js] Prettierの導入4ヶ月前1](/aew2sbee/articles/nextjs-\nprettier)[tech](/tech-or-idea)[🎫[Linux]\n基本コマンド操作(CLI)4ヶ月前](/aew2sbee/articles/linux-command-line-\ninterface)[tech](/tech-or-idea)[🎡[Jest]\nTypescript環境でカバレッジレポートを表示する4ヶ月前](/aew2sbee/articles/jest-\ncoverage)[tech](/tech-or-idea)[🍧[JavaScript]\n一文字ずつ時間差で表示するアニメーション4ヶ月前1](/aew2sbee/articles/javascript-timelag-\nanimation)[tech](/tech-or-idea)[⚡[Next.js] Root\nlayoutファイルでheaderタグとfooterタグを共通化する4ヶ月前1](/aew2sbee/articles/nextjs-root-\nlayout-file)[tech](/tech-or-idea)[🛡[TypeScript]\nそれぞれで型定義ではなく、呼び出しシグネチャを使う4ヶ月前](/aew2sbee/articles/typescript-call-\nsignature)[tech](/tech-or-idea)[⚡[N
+ext.js]\nLinkコンポーネントとuseRouterの違い4ヶ月前](/aew2sbee/articles/nextjs-link-\nuserouter)[tech](/tech-or-idea)[🛡[TypeScript]\n非常に大きな整数はbigint型を使う4
+ヶ月前](/aew2sbee/articles/typescript-bigint-\ntype)[tech](/tech-or-idea)[🛡[TypeScript]\nエラー処理/例外処理の3つの方法4ヶ月前](/aew2sbee/articles/typescript-error-\n
+handling)[tech](/tech-or-idea)[⚡[Next.js] プロジェクトの始め方-\n開発モード起動4ヶ月前](/aew2sbee/articles/nextjs-project-dev)[tech](/tech-or-\nidea)[⚡[Next.js] page.tsxについて4ヶ月前](/aew2sbee/articles/nextjs-page-\ntsx)[tech](/tech-or-idea)[⚡[Next.js] Server Componet とClient\nComponentとは？4ヶ月前1](/aew2sbee/articles/nextjs-server-componet-client-\ncomponent)[tech](/tech-or-idea)[⚡[Next.js]\nfetch関数で取得したデータをキャッシュにしない4ヶ月前](/aew2sbee/articles/nextjs-fetch-no-\nstore)[tech](/tech-or-idea)[🧪[テスト]\n今よりも単体テストを良くする考え方4ヶ月前5](/aew2sbee/articles/test-high-performance-at-minimal-\ncost)[idea](/tech-or-idea)[🔎[レ ビュー] 指摘漏れを減らす方法5ヶ月前](/aew2sbee/articles/how-to-\nreview)[tech](/tech-or-idea)[🔐[セキュリティ対策]\n安全なパスワードにするには？6ヶ月前](/aew2sbee/articles/book-secure-web-app-\npassword)[tech](/tech-or-idea)[🧜\u200d♀️[React]\nmetaタグを理解する2023/12/141](/aew2sbee/articles/react-meta-tag)[tech](/tech-or-\nidea)[��[[TypeScript] enum（列挙型）2023/12/12](/aew2sbee/articles/typescript-\nenum)[tech](/tech-or-idea)[🩹[API設計]\n良いAPI(URL)とは2023/09/093](/aew2sbee/articles/oreilly-web-api-the-good-\nparts)[tech](/tech-or-idea)[🎨[デザイン] Atomic\nDesignをデジタル庁のサイトで理解する2023/08/242](/aew2sbee/articles/atomic-design-for-\ndigital)[tech](/tech-or-idea)[🚀[Django]\ndb.sqlite3からpostgresqlに変更する方法2023/08/201](/aew2sbee/articles/django-rest-\nframework-postgres)[tech](/tech-or-idea)[🦇[React]\nuseStateの使い方2023/08/202](/aew2sbee/articles/react-usestate)[tech](/tech-or-\nidea)[💨[AWS]AWS\nVaultとTerraformでEC2を作成する2023/08/171](/aew2sbee/articles/terraform-aws-vault-\nec2)[tech](/tech-or-idea)[☁️[AWS] PowerShellにAWS\nVaultコマンドを使えるようにする2023/08/16](/aew2sbee/articles/aws-vault-install-to-\npowershell)[ttech](/tech-or-idea)[🐳[Docker] Docker\nDeskTopのインストール2023/08/09](/aew2sbee/articles/docker-desktop-\ninstall)[tech](/tech-or-idea)[🐍[Python]\nPython3.10.11をインストールする2023/08/081](/aew2sbee/articles/python-3-10-11-install)[tech](/tech-\nor-idea)[🧪[テスト] サンプル仕様からテストパターンを考える2023/08/061](/aew2sbee/articles/thinking-\ntest-pattern)[tech](/tech-or-idea)[🚀[Django]\nmodelsのField一覧2023/08/01](/aew2sbee/articles/django-rest-framework-\nmodels)[tech](/tech-or-idea)[�[[Django] django rest\nframework環境構築/インストール2023/07/291](/aew2sbee/articles/django-rest-framework-\ninstall)[tech](/tech-or-\nidea)[🤦【備忘録】未経験者チームのリーダーをやって2ヶ月経過2023/07/191](/aew2sbee/articles/first-time-\nleader)[tech](/tech-or-idea)[☁️[AWS]\nIAMで読み取り専用ユーザー本人がMFAの設定が出来るようにす  る方法2023/07/19](/aew2sbee/articles/aws-ec2-iam-\nrole)[tech](/tech-or-idea)[☁️[AWS]\nなぜ、IAMロールでスイッチロールする必要があるのか？2023/07/19](/aew2sbee/articlees/aws-ec2-iam-why-\nrole)[tech](/tech-or-\nidea)[❄[React]ローカル環境にTypeScriptで動かす環境を構築2023/07/182](/aew2sbee/articles/react-\ninstall)[tech](/tech-or-idea)[☁️[AWS]\nIAMで読み取り専用ユーザーを作成する2023/07/131](/aew2sbee/articles/aws-ec2-iam-create-\nuser)[tech](/tech-or-idea)[🐳[Docker]\nReactの環境構築2023/07/072](//aew2sbee/articles/docker-react-env)[tech](/tech-or-\nidea)[🐳[Docker] 少しだけ分かった気がする「イラスト付き」2023/07/051](/aew2sbee/articles/docker-\ncomprehension)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで折れ線グラフを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\nplot)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで円 グラフを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\npie)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibでヒストグラムを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\nhist)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで棒グラフを描く2023/07/02](/aew2sbee/articles/python-matplotlib-\nbar)[tech](/tech-or-idea)[🐍[Python]\nmatplotlibで直線グラフを描く2023/07/02](/aew2sbee/articles/python-\nmatplotlib-45graph)[idea](/tech-or-idea)[🌆[SES]\n良い転職したいならテックブログを書こう!!2023/07/012](/aew2sbee/articles/tech-blog-for-job-\nchange)[tech](/tech-or-idea)[☁️[AWS]\nVSCodeからEC2クラウドにSSH接続する2023/07/0112](/aew2sbee/articles/aws-\nec2-vscode))[tech](/tech-or-idea)[☁️[AWS]\nEC2でWebサーバーを構築する2023/06/30](/aew2sbee/articles/aws-ec2-web-\nserver)[tech](/tech-or-idea)[🐍[Python]\nCSVファイルを読み込む2 パターン2023/06/301](/aew2sbee/articles/python-\ncsv-2pattern)[tech](/tech-or-idea)[🛡[TypeScript]\n数字型配列の合計値を求めるreduce関数2023/06/28](/aew2sbee/articles/ty
+pescript-\nreduce)[tech](/tech-or-idea)[🛡[TypeScript]\n配列に指定された条件を判定するsome関数2023/06/273](/aew2sbee/articles/typescript-\nsome)[tech](/tech-or-idea)[�
+[[TypeScript]\n配列の各要素に対して処理できるmap関数2023/06/272](/aew2sbee/articles/typescript-\nmap)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の含有を判定するincludes
+関数2023/06/27](/aew2sbee/articles/typescript-\nincludes)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の条件に一致する最初の要素を取得するfind関数2023/06/27](/aew2sbee/ar
+ticles/typescript-\nfind)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の条件を満たす要素で新しい配列を作成するfilter関数2023/06/27](/aew2sbee/articles/typescript-\nfilter
+)[tech](/tech-or-idea)[🛡[TypeScript]\n配列の全ての要素を判定するevery関数2023/06/272](/aew2sbee/articles/typescript-\nevery)[tech](/tech-or-idea)[🐍[Python]\npandasで
+範囲内のデータ数を求める2023/06/27](/aew2sbee/articles/python-pandas-\nvalue_counts)[tech](/tech-or-idea)[🐍[Python]\npandasで中央値を求める2023/06/27](/aew2sbee/articles/python-pandas-\nmedian)[tech](/tech-or-idea)[🐍[Python]\npandasで平均値を求める2023/06/271](/aew2sbee/articles/python-pandas-mean)[tech](/tech-\nor-idea)[🛡[TypeSc
+ript]\nオブジェクト(object)を配列に変換する2023/06/27](/aew2sbee/articles/typescript-object-to-\nlist)[tech](/tech-or-idea)[🐍[Python]\nseleniumの仕様が変わっていた!?(2023/06時点)2023/06/258](/aew2sbee/articles/python-error-\nselenium)[tech](/tech-or-idea)[🚀[Django]\n環境構築/インストール2023/06/23](/aew2sbee/articles/django-install)[tech](/tech-or-\nidea)[🛡[TypeScript]\nこれ('||')とそれ('&&')って何？2023/06/232](/aew2sbee/articles/typescript-or-\nand)[tech](/tech-or-idea)[🛡[TypeScript]\nver/l
+et/constの違い2023/06/221](/aew2sbee/articles/typescript-ver-let-\nconst)[tech](/tech-or-idea)[🛡[TypeScript]\nこれ('=>')って何？2023/06/20](/aew2sbee/articles/typescr
 ipt-arrow)[tech](/tech-or-\nidea)[🧵[yarn] yarn: error: no such option:\nXXXを解決2023/06/201](/aew2sbee/articles/yarn-error-no-such-option)[tech](/tech-\nor-idea)[⛰[Prisma] npx prisma db\nseedが実行できない2023/06/202](/aew2sbee/articles/prisma-seed-error)[tech](/tech-or-\nidea)[🐍[Python] ModbusTCP通信環境を構築する2023/06/132](/aew2sbee/articles/python-\npymodbustcp)[tech](/tech-or-idea)[🐍[Python]\nAPIで郵便番号から住所を取得する方法2023/06/131](/aew2sbee/articles/python-\nzipcode)[tech](/tech-or-\nidea)[📉【備忘録】ステータスコードのまとめ2023/06/13](/aew2sbee/articles/general-\nstatuscode)[idea](/tech-or-\nidea)[📖【備忘録】リーン・スタートアップ2023/06/13](/aew2sbee/articles/book-\nleanstartup)[idea](/tech-or-\nidea)[📖【備忘録】プリンシプルオブプログラミングの感想2023/06/11](/aew2sbee/articles/book-\nprinciplesofprogramming)[tech](/tech-or-idea)[🐍[Python]\nVScodeでmatplotlibのグラフを表示する方法2023/06/09](/aew2sbee/articles/python-matplotlib-\nvscode)[tech](/tech-or-idea)[🐍[Python]\n見づらいJsonデータを解決する方法2023/06/091](/aew2sbee/articles/python-pprint)[tech](/tech-\nor-idea)[🐙[Git] よく使うGitコマンドのまとめ2023/06/07](/aew2sbee/articles/git-\nbasiccommand)\n\n\n", error=None, include_in_memory=False), ActionResult(is_done=True, extracted_content="The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago.", error=None, include_in_memory=False)], all_model_outputs=[{'search_google': {'query': 'site:zenn.dev 小倉'}}, {'click_element': {'index': 30}}, {'extract_content': {'include_links': True}}, {'done': {'text': "The latest article by 小倉さん on Zenn is '[ドキュメント]  わかりやすい文章を書くには', published 14 days ago."}}])
 ```
+
 :::
 
-
-1. Googleで「site:zenn.dev 小倉」と検索
+1. Google で「site:zenn.dev 小倉」と検索
 2. 該当する検索結果をクリックする
-![step01](/images/articles/browser-use-tutorial/step01.png)
+   ![step01](/images/articles/browser-use-tutorial/step01.png)
 3. 全記事のデータを取得し、最新のデータを取得した
-![step02](/images/articles/browser-use-tutorial/step02.png)
-
+   ![step02](/images/articles/browser-use-tutorial/step02.png)
 
 ## 4. 結果
+
 ちゃんと最新の記事のタイトルを取得することは出来ました！
+
 ```json
-{"done":{"text":"The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago."}}
+{
+  "done": {
+    "text": "The latest article by 小倉さん on Zenn is '[ドキュメント] わかりやすい文章を書くには', published 14 days ago."
+  }
+}
 ```
 
 ## YouTube のご案内
@@ -400,5 +417,6 @@ ipt-arrow)[tech](/tech-or-\nidea)[🧵[yarn] yarn: error: no such option:\nXXX�
 集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
 
 ご興味のある方は、ぜひお気軽に遊びに来てください！
+「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
 
 @[card](https://www.youtube.com/@aew2sbee)
