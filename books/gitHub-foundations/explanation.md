@@ -5,15 +5,15 @@ free: true
 
 # 翻訳元の問題集サイト
 
-@[card](https://ghcertified.com/practice_tests)
+@[card](https://ghcertified.com/practice_tests/)
 
 # 問題集の GitHub レポジトリー
 
-@[card](https://github.com/FidelusAleksander/ghcertified)
+@[card](https://github.com/FidelusAleksander/ghcertified/)
 
 # ライセンスの日本語翻訳
 
-@[card](https://github.com/FidelusAleksander/ghcertified?tab=MIT-1-ov-file)
+@[card](https://github.com/FidelusAleksander/ghcertified?tab=MIT-1-ov-file/)
 
 > Copyright (c) 2024 Aleksander Fidelus
 >
