@@ -80,7 +80,7 @@
 - [ ] When a GitHub Action is triggered, create a new item in your GitHub Project.
 
 
----------------------↑ まで完了------------------------------
+
 
 ### What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)
 
@@ -93,6 +93,8 @@
 - [ ] GitHub Charts
 - [ ] GitHub Dependabot
 - [ ] Project items
+
+---------------------↑ まで完了------------------------------
 
 ### What is the difference between GitHub projects and GitHub projects classic?
 
