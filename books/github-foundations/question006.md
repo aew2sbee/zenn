@@ -2,9 +2,9 @@
 title: 'ビューのレイアウトを変更する'
 ---
 
-# Q6: GitHub Projects で利用可能なレイアウトには、次のうちどれがありますか？（3つ選んでください）
+## Q6: GitHub Projects で利用可能なレイアウトには、次のうちどれがありますか？（3 つ選んでください）
 
-## 選択肢
+### 選択肢
 
 - テーブル レイアウト（Table layout）
 - ボード レイアウト（Board layout）
@@ -13,7 +13,7 @@ title: 'ビューのレイアウトを変更する'
 - アジャイル レイアウト（Agile layout）
 - プロジェクト レイアウト（Project layout）
 
-## 回答欄
+### 回答欄
 
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view)
