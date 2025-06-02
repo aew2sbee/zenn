@@ -1,6 +1,5 @@
 ---
 title: 'GitHub Projects と Issues、Pull Request の間の情報同期はどのように行われますか？'
-free: true
 ---
 
 # 選択肢
