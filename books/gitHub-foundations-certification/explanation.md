@@ -3,13 +3,13 @@ title: '本書について'
 free: true
 ---
 
-# GitHub レポジトリー
-
-@[card](https://github.com/FidelusAleksander/ghcertified)
-
-# 翻訳元のサイト
+# 翻訳元の問題集サイト
 
 @[card](https://ghcertified.com/practice_tests)
+
+# 問題集の GitHub レポジトリー
+
+@[card](https://github.com/FidelusAleksander/ghcertified)
 
 # ライセンスの日本語翻訳
 
