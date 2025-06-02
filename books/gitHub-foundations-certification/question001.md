@@ -3,7 +3,7 @@ title: 'GitHub アカウントの種類にはどのようなものがありま�
 free: true
 ---
 
-# Q1: GitHub アカウントの種類にはどのようなものがありますか？（3 つ選びなさい）: What are the possible GitHub account types? (Select three.)
+# Q1: What are the possible GitHub account types? (Select three.)
 
 - 個人アカウント（Personal accounts）
 - 組織アカウント（Organization accounts）
