@@ -67,7 +67,7 @@
 1. [ ] Roadmap layout
 1. [ ] Agile layout
 
----------------------↑ まで完了------------------------------
+
 
 ### Which of these workflows are built-in automations in GitHub Projects? (Choose two.)
 
@@ -78,6 +78,9 @@
 - [ ] When issues or pull requests are opened in your project, their status is set to Done.
 - [ ] When a new contributor is added to a repository, the unassigned issues are assigned to him.
 - [ ] When a GitHub Action is triggered, create a new item in your GitHub Project.
+
+
+---------------------↑ まで完了------------------------------
 
 ### What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)
 
