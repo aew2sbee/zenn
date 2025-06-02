@@ -14,7 +14,7 @@ title: 'GitHub Projects/Issues/Pull Requestの情報同期'
 ## 回答欄
 
 :::details 回答を見る
-[公式ドキュメント ▶ 最新の状態に保つ](https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#staying-up-to-date)
+[公式ドキュメント](https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#staying-up-to-date)
 
 - [x] Issues や Pull Requests の更新は GitHub Projects に自動的に反映されます。この統合は双方向に機能し、プロジェクト内で Pull Request や Issue に関する情報を変更すると、それらにも反映されます。
 - [ ] Issues や Pull Requests の更新は GitHub Projects に自動では反映されず、ユーザーが手動でトリガーする必要があります。

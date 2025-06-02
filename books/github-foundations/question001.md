@@ -14,7 +14,7 @@ title: 'アカウントの種類'
 ## 回答欄
 
 :::details 回答を見る
-[公式ドキュメント ▶ GitHub アカウントの種類](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
+[公式ドキュメント](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
 
 - [x] 個人アカウント（Personal accounts）
 - [x] 組織アカウント（Organization accounts）
