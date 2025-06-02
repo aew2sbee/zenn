@@ -105,7 +105,7 @@
 1. [ ] GitHub Projects classic is simpler way to manage your GitHub Projects and is recommended for beginners.
 1. [ ] GitHub Projects classic is the enhanced versions which in addition to GitHub Projects offers some pre-cooked templates such as roadmaps and sprints.
 
----------------------↑ まで完了------------------------------
+
 
 ### What are the use cases for labels?
 
@@ -117,6 +117,9 @@
        &gt; You can&#39;t assign labels to releases
 1. [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
        &gt; You can&#39;t assign labels to contributors
+
+
+---------------------↑ まで完了------------------------------
 
 ### Why would a repository owner want to use milestones? (Choose two.)
 
