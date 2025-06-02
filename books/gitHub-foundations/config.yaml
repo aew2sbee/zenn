@@ -1,0 +1,18 @@
+title: "[日本語版] GitHub Foundationsの過去問集"
+summary: "GitHub Foundationsの過去問集を日本語に翻訳したものです。GitHub Foundationsの学習としてご利用ください。"
+topics: ["github", "資格勉強", "githubfoundations"] # トピック（5つまで）
+published: false # falseだと下書き
+price: 1000 # 有料の場合200〜5000
+chapters:
+  - explanation
+  - question001
+  - question002
+  - question003
+  - question004
+  - question005
+  - question006
+  - question007
+  - question008
+  - question009
+  - question010
+  - question011
