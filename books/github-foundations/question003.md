@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Projects/Issues/Pull Requestの情報同期'
+title: '最新の状態に保つ'
 ---
 
 # Q3: GitHub Projects と Issues、Pull Request の間の情報同期はどのように行われますか？

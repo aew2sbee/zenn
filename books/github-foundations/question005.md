@@ -1,5 +1,5 @@
 ---
-title: 'Issue, Pull Requestの追加方法'
+title: 'プロジェクトへの issue と pull request の追加'
 ---
 
 # Q5: GitHub プロジェクトボードに Issue や Pull Request を追加する方法には、どのような方法がありますか？

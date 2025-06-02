@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Projectsのレイアウト'
+title: 'ビューのレイアウトを変更する'
 ---
 
 # Q6: GitHub Projects で利用可能なレイアウトには、次のうちどれがありますか？（3つ選んでください）

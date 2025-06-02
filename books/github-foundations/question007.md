@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Projectsのレイアウト'
+title: 'ボード レイアウトのカスタマイズ'
 ---
 
 # Q7: GitHub Projects のレイアウトのうち、どれがカンバンボードとして最も適していますか？
