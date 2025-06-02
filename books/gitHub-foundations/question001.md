@@ -3,7 +3,7 @@ title: 'GitHub アカウントの種類にはどのようなものがありま�
 free: true
 ---
 
-# Q1: What are the possible GitHub account types? (Select three.)
+# 選択肢
 
 - 個人アカウント（Personal accounts）
 - 組織アカウント（Organization accounts）
@@ -11,7 +11,10 @@ free: true
 - 共有アカウント（Shared accounts）
 - 会社アカウント（Company accounts）
 
+# 回答欄
+
 :::details 回答を見る
+[公式ドキュメント ▶ GitHub アカウントの種類](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
 
 - [x] 個人アカウント（Personal accounts）
 - [x] 組織アカウント（Organization accounts）
@@ -19,5 +22,4 @@ free: true
 - [ ] 共有アカウント（Shared accounts）
 - [ ] 会社アカウント（Company accounts）
 
-[公式ドキュメント ▶ GitHub アカウントの種類](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
 :::
