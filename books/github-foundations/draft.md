@@ -33,7 +33,7 @@
 1. [ ] Custom fields are exclusively for aesthetic modifications and do not add any meaningful metadata.
 1. [ ] Custom fields are limited to predefined options and cannot include user-defined metadata.
 
----------------------↑ まで完了------------------------------
+
 
 ### What are the different available options for adding issues and pull requests to a GitHub Project board?
 
@@ -43,6 +43,9 @@
 1. [ ] Only manually, one at a time.
 1. [ ] Only individually or in bulk
 1. [ ] Only automatically using project workflows
+
+
+---------------------↑ まで完了------------------------------
 
 ### Which of these layouts are available in GitHub Projects? (Choose three.)
 
