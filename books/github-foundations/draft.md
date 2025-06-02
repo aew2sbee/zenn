@@ -56,7 +56,7 @@
 - [ ] Agile layout
 - [ ] Project layout
 
----------------------↑ まで完了------------------------------
+
 
 ### Which GitHub Project layout would best serve as a Kanban board?
 
@@ -66,6 +66,8 @@
 1. [ ] Table layout
 1. [ ] Roadmap layout
 1. [ ] Agile layout
+
+---------------------↑ まで完了------------------------------
 
 ### Which of these workflows are built-in automations in GitHub Projects? (Choose two.)
 
