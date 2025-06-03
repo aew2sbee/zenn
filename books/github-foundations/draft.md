@@ -135,8 +135,6 @@
 1. [ ] Repository templates
 1. [ ] Labels
 
-
-
 ### Which of these statements about `saved replies` are true? (Choose two.)
 
 &gt; https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
@@ -145,8 +143,6 @@
 - [x] Saved replies are comments that you can reuse in issues and pull requests.
 - [ ] When someone comments on your issue or pull request, you can save their reply and set a notification to remind yourself about responding to it later.
 - [ ] Saved replies are only available to repository owners which can setup automated replies to issues and pull requests.
-
-
 
 ### What are some actions you can do in regards to Repository Templates? (Choose two.)
 
@@ -158,8 +154,6 @@
 - [ ] Delete all repositories created from a repository template
 - [ ] Delete all repositories that do not use a repository template provided by your organization
 
-
-
 ### Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?
 
 &gt; https://docs.github.com/en/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects
@@ -170,8 +164,6 @@
 1. [ ] Copilot Charts
        &gt; There is no such thing as Copilot Charts.
 
----------------------↑ まで完了------------------------------
-
 ### What is the name of GitHub&#39;s continuous integration and continuous delivery (CI/CD) platform?
 
 &gt; https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
@@ -180,6 +172,8 @@
 1. [ ] GitHub Workflows
 1. [ ] GitHub Pipelines
 1. [ ] GitHub Projects
+
+---------------------↑ まで完了------------------------------
 
 ### Which of these is a common use case for GitHub Actions?
 
