@@ -257,8 +257,6 @@
 1. [ ] GitHub Copilot
 1. [ ] GitHub DevEnv
 
-
-
 ### What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)
 
 &gt; https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
@@ -270,8 +268,6 @@
 - [ ] GitHub Remote
 - [ ] GitHub Online
 
----------------------↑ まで完了------------------------------
-
 ### What are the different possible lifecycle phases for a GitHub Codespace?
 
 &gt; https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle
@@ -280,6 +276,8 @@
 1. [ ] Create, Delete
 1. [ ] Create, Stop, Delete
 1. [ ] Create, Rebuild, Delete
+
+---------------------↑ まで完了------------------------------
 
 ### If you stop your GitHub Codespace environment can you come back to the changes later if you haven&#39;t committed them?
 
