@@ -16,7 +16,7 @@ title: 'codespace ライフサイクルについて'
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/codespaces/overviews)
+[公式ドキュメント](https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor)
 
 - GitHub Codespaces
 - github.dev editor
