@@ -2,23 +2,23 @@
 title: '返信テンプレートを使う'
 ---
 
-## Q14: もしあなたが、Issue や Pull Request に対して同じコメントを頻繁に書く場合、時間を節約するためにどの GitHub 機能を使うべきですか？
+## Q14: もしあなたが課題やプルリクエストに同じコメントを書くことが多いなら、時間を節約するためにどんな GitHub の機能を使いますか？
 
 ### 選択肢
 
-- 保存済み返信（Saved replies）
-- コメントテンプレート（Comment templates）
-- リポジトリテンプレート（Repository templates）
-- ラベル（Labels）
+- Saved replies
+- Comment templates
+- Repository templates
+- Labels
 
 ### 回答欄
 
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-replies/using-saved-replies)
 
-- [x] 保存済み返信（Saved replies）
-- [ ] コメントテンプレート（Comment templates）
-- [ ] リポジトリテンプレート（Repository templates）
-- [ ] ラベル（Labels）
+- [x] Saved replies
+- [ ] Comment templates
+- [ ] Repository templates
+- [ ] Labels
 
 :::
