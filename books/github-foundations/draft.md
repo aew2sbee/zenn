@@ -211,8 +211,6 @@
 1. [ ] GitHub Partner
 1. [ ] GitHub Assistant
 
-
-
 ### Is GitHub Copilot free to use?
 
 &gt; https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business
@@ -223,8 +221,6 @@
 1. [ ] Yes, but only for individuals working on public repositories
        &gt; There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
 
----------------------↑ まで完了------------------------------
-
 ### What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
 
 &gt; https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot
@@ -233,6 +229,8 @@
 1. [ ] GitHub Copilot Individual uses an AI model trained on public source code and GitHub Copilot Business uses an AI model trained on private source code
 1. [ ] GitHub Copilot Individual is free and GitHub Copilot Business is a paid feature
 1. [ ] GitHub Copilot Individual can only be used when working on public repositories and GitHub Copilot Business can be used when working on public and private repositories within an organization
+
+---------------------↑ まで完了------------------------------
 
 ### How can you start using GitHub Copilot after activating the GitHub Copilot subscription?
 
