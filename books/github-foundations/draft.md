@@ -966,12 +966,12 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 
 https://git-scm.com/docs/git-switch
 
-- [x] git checkout -b `&lt;new_branch_name&gt;`
-- [ ] git branch -c `&lt;new_branch_name&gt;`
-- [x] git switch -c `&lt;new_branch_name&gt;`
-- [ ] git merge -m `&lt;new_branch_name&gt;`
-- [ ] git switch -m `&lt;new_branch_name&gt;`
-- [ ] git checkout -m `&lt;new_branch_name&gt;`
+- [x] git checkout -b `<new_branch_name>`
+- [ ] git branch -c `<new_branch_name>`
+- [x] git switch -c `<new_branch_name>`
+- [ ] git merge -m `<new_branch_name>`
+- [ ] git switch -m `<new_branch_name>`
+- [ ] git checkout -m `<new_branch_name>`
 
 ### If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?
 
@@ -979,7 +979,7 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-iss
 
 - [x] No
 - [ ] Yes
-       When you &#34;convert&#34; a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
+       When you "convert" a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
 
 ### Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
 
@@ -1071,7 +1071,7 @@ https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-
 - [x] `- [ ] and - [x]`
 - [ ] `# TODO: and # DONE:`
 - [ ] `// TODO: and // DONE:`
-- [ ] `&lt;taskand &lt;done&gt;`
+- [ ] `<taskand <done>`
 
 ### Which Markdown element is not correctly paired with its syntax?
 
@@ -1196,10 +1196,10 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 
 **More info**: [Searching issues and pull requests](https://docs.github.com/ja/search-github/searching-on-github/searching-issues-and-pull-requests)
 
-- [ ] `is:pr is:open label:test &#34;fix&#34;`
-- [ ] `is:issue in:comments label:test &#34;fix&#34;`
-- [x] `is:issue is:open label:test &#34;fix&#34;`
-- [ ] `type:issue label:test is:open body:&#34;fix&#34;`
+- [ ] `is:pr is:open label:test "fix"`
+- [ ] `is:issue in:comments label:test "fix"`
+- [x] `is:issue is:open label:test "fix"`
+- [ ] `type:issue label:test is:open body:"fix"`
 
 ### Which of the following are valid states for a pull request on GitHub? (Choose four.)
 
@@ -1280,12 +1280,12 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 
 **More info**: [Searching repositories](https://docs.github.com/ja/search-github/searching-on-github/searching-for-repositories)
 
-- [x] `in:name docker stars:&gt;100 is:public`  
+- [x] `in:name docker stars:>100 is:public`  
         **Correct**. This will find all public repositories that have 'docker' in their name and more than 100 stars.
-- [ ] `docker in:description stars:&lt;100 is:public`
+- [ ] `docker in:description stars:<100 is:public`
 - [ ] `is:public name:docker stars:100`  
-        This is missing the range operator (`&gt;`) for stars, and `name:docker` is not a valid syntax.
-- [ ] `topic:docker stars:&gt;100 in:readme`  
+        This is missing the range operator (`>`) for stars, and `name:docker` is not a valid syntax.
+- [ ] `topic:docker stars:>100 in:readme`  
         This searches within topics or readmes, not the repository name.
 
 ### Which of the following best describes GitHub secret scanning?
