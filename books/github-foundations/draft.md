@@ -146,7 +146,7 @@
 - [ ] When someone comments on your issue or pull request, you can save their reply and set a notification to remind yourself about responding to it later.
 - [ ] Saved replies are only available to repository owners which can setup automated replies to issues and pull requests.
 
----------------------↑ まで完了------------------------------
+
 
 ### What are some actions you can do in regards to Repository Templates? (Choose two.)
 
@@ -157,6 +157,8 @@
 - [ ] Create an organization from a repository template
 - [ ] Delete all repositories created from a repository template
 - [ ] Delete all repositories that do not use a repository template provided by your organization
+
+---------------------↑ まで完了------------------------------
 
 ### Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?
 
