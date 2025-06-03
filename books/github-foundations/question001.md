@@ -6,21 +6,21 @@ title: 'GitHub アカウントの種類'
 
 ### 選択肢
 
-- 個人アカウント（Personal accounts）
-- 組織アカウント（Organization accounts）
-- エンタープライズアカウント（Enterprise accounts）
-- 共有アカウント（Shared accounts）
-- 会社アカウント（Company accounts）
+- Personal accounts
+- Organization accounts
+- Enterprise accounts
+- Shared accounts
+- Company accounts
 
 ### 回答欄
 
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
 
-- [x] 個人アカウント（Personal accounts）
-- [x] 組織アカウント（Organization accounts）
-- [x] エンタープライズアカウント（Enterprise accounts）
-- [ ] 共有アカウント（Shared accounts）
-- [ ] 会社アカウント（Company accounts）
+- [x] Personal accounts
+- [x] Organization accounts
+- [x] Enterprise accounts
+- [ ] Shared accounts
+- [ ] Company accounts
 
 :::
