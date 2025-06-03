@@ -126,8 +126,6 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/assigning-issue
 - [ ] By mentioning them in the issue or pull request description
 - [ ] It's not possible to assign a person to an issue or pull request.
 
-
-
 ### 14. If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
 
 https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
@@ -137,8 +135,6 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-repl
 - [ ] Repository templates
 - [ ] Labels
 
----------------------↑ まで完了------------------------------
-
 ### 15. Which of these statements about `saved replies` are true? (Choose two.)
 
 https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
@@ -147,6 +143,8 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-repl
 - [x] Saved replies are comments that you can reuse in issues and pull requests.
 - [ ] When someone comments on your issue or pull request, you can save their reply and set a notification to remind yourself about responding to it later.
 - [ ] Saved replies are only available to repository owners which can setup automated replies to issues and pull requests.
+
+---------------------↑ まで完了------------------------------
 
 ### 16. What are some actions you can do in regards to Repository Templates? (Choose two.)
 
