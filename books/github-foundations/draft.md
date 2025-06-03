@@ -173,8 +173,6 @@
 1. [ ] GitHub Pipelines
 1. [ ] GitHub Projects
 
----------------------↑ まで完了------------------------------
-
 ### Which of these is a common use case for GitHub Actions?
 
 &gt; https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration
@@ -183,6 +181,8 @@
 1. [ ] Adding sponsorship button to your project
 1. [ ] Large data processing and analytics
 1. [ ] Training machine learning models
+
+---------------------↑ まで完了------------------------------
 
 ### GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support? (Choose two.)
 
