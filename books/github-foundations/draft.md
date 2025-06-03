@@ -126,8 +126,6 @@
 1. [ ] By mentioning them in the issue or pull request description
 1. [ ] It&#39;s not possible to assign a person to an issue or pull request.
 
----------------------↑ まで完了------------------------------
-
 ### If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
 
 &gt; https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
@@ -136,6 +134,8 @@
 1. [ ] Comment templates
 1. [ ] Repository templates
 1. [ ] Labels
+
+---------------------↑ まで完了------------------------------
 
 ### Which of these statements about `saved replies` are true? (Choose two.)
 
