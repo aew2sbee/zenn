@@ -93,8 +93,6 @@ https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/manag
 - [ ] GitHub Projects classic is simpler way to manage your GitHub Projects and is recommended for beginners.
 - [ ] GitHub Projects classic is the enhanced versions which in addition to GitHub Projects offers some pre-cooked templates such as roadmaps and sprints.
 
----------------------↑ まで完了------------------------------
-
 ### 11. What are the use cases for labels?
 
 https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/managing-labels
@@ -105,6 +103,8 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/mana
       You can't assign labels to releases
 - [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
       You can't assign labels to contributors
+
+---------------------↑ まで完了------------------------------
 
 ### 12. Why would a repository owner want to use milestones? (Choose two.)
 
