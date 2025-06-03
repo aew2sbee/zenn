@@ -72,8 +72,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating
 - [ ] When a new contributor is added to a repository, the unassigned issues are assigned to him.
 - [ ] When a GitHub Action is triggered, create a new item in your GitHub Project.
 
----------------------↑ まで完了------------------------------
-
 ### 9. What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating-your-project/
@@ -85,6 +83,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating
 - [ ] GitHub Charts
 - [ ] GitHub Dependabot
 - [ ] Project items
+
+---------------------↑ まで完了------------------------------
 
 ### 10. What is the difference between GitHub projects and GitHub projects classic?
 
