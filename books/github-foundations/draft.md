@@ -202,7 +202,7 @@
 1. [ ] GitHub private repositories
 1. [ ] GitHub Actions Project Boards
 
----------------------↑ まで完了------------------------------
+
 
 ### Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
 
@@ -212,6 +212,9 @@
 1. [ ] GitHub AI Aid
 1. [ ] GitHub Partner
 1. [ ] GitHub Assistant
+
+
+---------------------↑ まで完了------------------------------
 
 ### Is GitHub Copilot free to use?
 
