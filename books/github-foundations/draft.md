@@ -117,8 +117,6 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/abou
       That's what Dependency graph and Dependabot are for
 - [ ] To list the repository contributors
 
----------------------↑ まで完了------------------------------
-
 ### 13. How can you assign a person to an issue or pull request?
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users
@@ -127,6 +125,8 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/assigning-issue
 - [ ] By adding a label with their GitHub username to that issue or pull request
 - [ ] By mentioning them in the issue or pull request description
 - [ ] It's not possible to assign a person to an issue or pull request.
+
+---------------------↑ まで完了------------------------------
 
 ### 14. If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
 
