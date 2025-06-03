@@ -84,8 +84,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating
 - [ ] GitHub Dependabot
 - [ ] Project items
 
----------------------↑ まで完了------------------------------
-
 ### 10. What is the difference between GitHub projects and GitHub projects classic?
 
 https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards
@@ -94,6 +92,8 @@ https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/manag
 - [ ] GitHub Projects classic is a the new GitHub experience which offers a lot of new features and improvements over the older GitHub Projects.
 - [ ] GitHub Projects classic is simpler way to manage your GitHub Projects and is recommended for beginners.
 - [ ] GitHub Projects classic is the enhanced versions which in addition to GitHub Projects offers some pre-cooked templates such as roadmaps and sprints.
+
+---------------------↑ まで完了------------------------------
 
 ### 11. What are the use cases for labels?
 

@@ -2,23 +2,23 @@
 title: 'projects (classic)について'
 ---
 
-## Q10: GitHub Projects と GitHub Projects Classic の違いは何ですか？
+## Q10: GitHubプロジェクトとGitHubプロジェクトクラシックの違いは何ですか？
 
 ### 選択肢
 
-- GitHub Projects は新しい GitHub の体験であり、旧バージョンの GitHub Projects Classic に比べて多くの新機能や改善が提供されています。
-- GitHub Projects Classic は新しい GitHub の体験であり、旧バージョンの GitHub Projects に比べて多くの新機能や改善が提供されています。
-- GitHub Projects Classic は GitHub Projects を管理するためのよりシンプルな方法であり、初心者に推奨されています。
-- GitHub Projects Classic は GitHub Projects の強化版であり、ロードマップやスプリントなどの事前作成されたテンプレートが提供されています。
+- GitHub Projects classicは、GitHubの新しいエクスペリエンスであり、旧来のGitHub Projects classicよりも多くの新機能や改良が加えられています。
+- GitHub Projects classicは、GitHubの新しいエクスペリエンスであり、旧来のGitHub Projectsよりも多くの新機能や改良が加えられています。
+- GitHub Projects classic は、GitHub Projects をよりシンプルに管理でき、初心者におすすめです。
+- GitHub Projects classicは、GitHub Projectsに加え、ロードマップやスプリントなどのテンプレートがあらかじめ用意されている強化版です。
 
 ### 回答欄
 
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
 
-- [x] GitHub Projects は新しい GitHub の体験であり、旧バージョンの GitHub Projects Classic に比べて多くの新機能や改善が提供されています。
-- [ ] GitHub Projects Classic は新しい GitHub の体験であり、旧バージョンの GitHub Projects に比べて多くの新機能や改善が提供されています。
-- [ ] GitHub Projects Classic は GitHub Projects を管理するためのよりシンプルな方法であり、初心者に推奨されています。
-- [ ] GitHub Projects Classic は GitHub Projects の強化版であり、ロードマップやスプリントなどの事前作成されたテンプレートが提供されています。
+- [x] GitHub Projects classicは、GitHubの新しいエクスペリエンスであり、旧来のGitHub Projects classicよりも多くの新機能や改良が加えられています。
+- [ ] GitHub Projects classicは、GitHubの新しいエクスペリエンスであり、旧来のGitHub Projectsよりも多くの新機能や改良が加えられています。
+- [ ] GitHub Projects classic は、GitHub Projects をよりシンプルに管理でき、初心者におすすめです。
+- [ ] GitHub Projects classicは、GitHub Projectsに加え、ロードマップやスプリントなどのテンプレートがあらかじめ用意されている強化版です。
 
 :::
