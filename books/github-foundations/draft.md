@@ -33,8 +33,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-a
 - [ ] Custom fields are exclusively for aesthetic modifications and do not add any meaningful metadata.
 - [ ] Custom fields are limited to predefined options and cannot include user-defined metadata.
 
----------------------↑ まで完了------------------------------
-
 ### 5. What are the different available options for adding issues and pull requests to a GitHub Project board?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project
@@ -43,6 +41,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-i
 - [ ] Only manually, one at a time.
 - [ ] Only individually or in bulk
 - [ ] Only automatically using project workflows
+
+---------------------↑ まで完了------------------------------
 
 ### 6. Which of these layouts are available in GitHub Projects? (Choose three.)
 
