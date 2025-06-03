@@ -182,8 +182,6 @@
 1. [ ] Large data processing and analytics
 1. [ ] Training machine learning models
 
----------------------↑ まで完了------------------------------
-
 ### GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support? (Choose two.)
 
 &gt; https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
@@ -194,6 +192,8 @@
 - [ ] A new vulnerability has been detected in a dependency
       &gt; This is not a valid event that could trigger a workflow. It&#39;s a feature of Dependabot.
 - [ ] A new member has been added to the repository
+
+---------------------↑ まで完了------------------------------
 
 ### Where can you find publicly available GitHub Actions?
 
