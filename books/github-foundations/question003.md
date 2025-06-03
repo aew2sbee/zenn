@@ -1,8 +1,8 @@
 ---
-title: '最新の状態に保つ'
+title: 'Projects について'
 ---
 
-## Q3: GitHub Projects と Issues、Pull Request の間の情報同期はどのように行われますか？
+## Q3: GitHubのプロジェクト、課題、プルリクエスト間の同期はどのように行われるのですか？
 
 ### 選択肢
 
