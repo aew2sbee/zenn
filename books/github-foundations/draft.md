@@ -135,7 +135,7 @@
 1. [ ] Repository templates
 1. [ ] Labels
 
----------------------↑ まで完了------------------------------
+
 
 ### Which of these statements about `saved replies` are true? (Choose two.)
 
@@ -145,6 +145,8 @@
 - [x] Saved replies are comments that you can reuse in issues and pull requests.
 - [ ] When someone comments on your issue or pull request, you can save their reply and set a notification to remind yourself about responding to it later.
 - [ ] Saved replies are only available to repository owners which can setup automated replies to issues and pull requests.
+
+---------------------↑ まで完了------------------------------
 
 ### What are some actions you can do in regards to Repository Templates? (Choose two.)
 
