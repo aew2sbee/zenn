@@ -117,8 +117,6 @@
       &gt; That&#39;s what Dependency graph and Dependabot are for
 - [ ] To list the repository contributors
 
----------------------↑ まで完了------------------------------
-
 ### How can you assign a person to an issue or pull request?
 
 &gt; https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users
@@ -127,6 +125,8 @@
 1. [ ] By adding a label with their GitHub username to that issue or pull request
 1. [ ] By mentioning them in the issue or pull request description
 1. [ ] It&#39;s not possible to assign a person to an issue or pull request.
+
+---------------------↑ まで完了------------------------------
 
 ### If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
 
