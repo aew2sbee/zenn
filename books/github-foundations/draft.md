@@ -193,8 +193,6 @@
       &gt; This is not a valid event that could trigger a workflow. It&#39;s a feature of Dependabot.
 - [ ] A new member has been added to the repository
 
----------------------↑ まで完了------------------------------
-
 ### Where can you find publicly available GitHub Actions?
 
 &gt; https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace
@@ -203,6 +201,8 @@
 1. [ ] GitHub Public Action Storage
 1. [ ] GitHub private repositories
 1. [ ] GitHub Actions Project Boards
+
+---------------------↑ まで完了------------------------------
 
 ### Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
 
