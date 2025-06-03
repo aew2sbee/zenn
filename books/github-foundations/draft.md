@@ -33,6 +33,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-a
 - [ ] Custom fields are exclusively for aesthetic modifications and do not add any meaningful metadata.
 - [ ] Custom fields are limited to predefined options and cannot include user-defined metadata.
 
+---------------------↑ まで完了------------------------------
+
 ### What are the different available options for adding issues and pull requests to a GitHub Project board?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project
@@ -100,9 +102,9 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/mana
 - [x] Categorizing issues and pull requests
 - [ ] Categorizing files in the repository
 - [ ] Assigning them to releases so that they are included in the release notes
-       You can't assign labels to releases
+      You can't assign labels to releases
 - [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
-       You can't assign labels to contributors
+      You can't assign labels to contributors
 
 ### Why would a repository owner want to use milestones? (Choose two.)
 
@@ -162,7 +164,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/viewing-in
 - [ ] GitHub Actions
 - [ ] Milestones
 - [ ] Copilot Charts
-       There is no such thing as Copilot Charts.
+      There is no such thing as Copilot Charts.
 
 ### What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?
 
@@ -219,7 +221,7 @@ https://docs.github.com/ja/copilot/overview-of-github-copilot/about-github-copil
 - [ ] Yes
 - [x] Yes, if you are a student, teacher, or maintainer of a popular open source project
 - [ ] Yes, but only for individuals working on public repositories
-       There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
+      There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
 
 ### What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
 
@@ -302,9 +304,7 @@ https://docs.github.com/ja/codespaces/customizing-your-codespace/changing-the-ma
 
 - [x] Yes, you can choose an alternative machine type either when you create a codespace or at any time after you've created a codespace.
 - [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running
-       GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use
-
----------------------↑ まで完了------------------------------
+      GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use
 
 ### How can you customize the environment that is run in GitHub Codespaces?
 
@@ -371,7 +371,7 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 
 - [x] Yes
 - [ ] No
-       Features such as issues, wikis or projects can be disabled on a repository in the repository settings
+      Features such as issues, wikis or projects can be disabled on a repository in the repository settings
 
 ### Where can you disable repository features such as issues, wikis or projects on a repository that you own?
 
@@ -463,9 +463,9 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 
 - [x] Collaborators are people who have been granted write access to a repository.
 - [ ] Collaborators are people who have made code contributions to a repository.
-       That's contributors. You can be a collaborator on a repository without having contributed to it. You can also contribute to a repository without being a collaborator, by forking the repository and submitting a pull request.
+      That's contributors. You can be a collaborator on a repository without having contributed to it. You can also contribute to a repository without being a collaborator, by forking the repository and submitting a pull request.
 - [ ] Collaborators are people who have funded a repository.
-       That's sponsors
+      That's sponsors
 - [ ] Collaborators are people who have raised issues or pull requests on a repository.
 
 ### How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?
@@ -484,7 +484,7 @@ https://docs.github.com/ja/organizations/organizing-members-into-teams/about-tea
 - [x] It's a group of GitHub users from the same organization.
 - [ ] It's a version of Microsoft Teams for GitHub.
 - [ ] It's a way of managing access to personal GitHub repositories to many users at once.
-       Personal repositories cannot be shared with teams, only with individual collaborators.
+      Personal repositories cannot be shared with teams, only with individual collaborators.
 
 ### What is the role of an organization moderator?
 
@@ -492,11 +492,11 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 
 - [x] Moderators are organization members who, in addition to their permissions as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization.
 - [ ] Moderators are organization members who have complete access to the organization.
-       That's organization owners
+      That's organization owners
 - [ ] Moderators are organization members who can manage the billing settings for your organization, such as payment information.
-       That's billing managers
+      That's billing managers
 - [ ] Moderators are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
-       That's security managers
+      That's security managers
 
 ### What is the role of an organization security manager?
 
@@ -504,11 +504,11 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 
 - [x] Security managers are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
 - [ ] Security managers are organization members who, in addition to their permissions as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization.
-       That's moderators
+      That's moderators
 - [ ] Security managers are organization members who have complete access to the organization.
-       That's organization owners
+      That's organization owners
 - [ ] Security managers are organization members who can manage the billing settings for your organization, such as payment information.
-       That's billing managers
+      That's billing managers
 
 ### Which of these definitions best describes open source software?
 
@@ -554,7 +554,7 @@ https://docs.github.com/ja/apps/github-marketplace/github-marketplace-overview/a
 - [ ] GitHub Marketplace is a place where companies can find developers to hire.
 - [ ] GitHub Marketplace is a place where developers offer to sell ownership of their repositories.
 - [ ] GitHub Marketplace is a place where you can sponsor open-source developers on a subscription basis.
-       That is GitHub Sponsors
+      That is GitHub Sponsors
 
 ### What is InnerSource?
 
@@ -924,7 +924,7 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
 - [x] Wikis is repository feature for hosting documentation.
 - [ ] Wikis is the official GitHub documentation.
 - [ ] Wikis is a feature for hosting code snippets.
-       That's Gists
+      That's Gists
 - [ ] Wikis is a place where you hold the project's `README.md` file.
 
 ### What are the two available options when you no longer need to use a Project?
@@ -942,7 +942,7 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 
 - [ ] Yes
 - [x] No
-       After creating a gist, you cannot convert it from public to secret.
+      After creating a gist, you cannot convert it from public to secret.
 
 ### What happens when you choose to close a Project?
 
@@ -979,7 +979,7 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-iss
 
 - [x] No
 - [ ] Yes
-       When you "convert" a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
+      When you "convert" a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
 
 ### Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
 
@@ -1020,12 +1020,12 @@ Official GitHub documentation: https://docs.github.com/ja/organizations/managing
 https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works
 
 - [ ] PATs can be managed by the organization and enterprise.
-       PAT's as the name suggests, are personal. Organizations and Enterprises can manage other forms of authentication, such as LDAP, SAML, and SSH keys.
+      PAT's as the name suggests, are personal. Organizations and Enterprises can manage other forms of authentication, such as LDAP, SAML, and SSH keys.
 - [ ] PAT is an extra layer of security used when logging into websites or apps. With PAT, users have to sign in with their username and password and provide another form of authentication that only they have access to.
-       This is a description of multi-factor or two-factor authentication.
+      This is a description of multi-factor or two-factor authentication.
 - [x] PAT can be used for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub's settings option, and tie the token permissions to a repository or organization.
 - [ ] PAT lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access.
-       This is a description of LDAP's benefits for GitHub, not PAT.
+      This is a description of LDAP's benefits for GitHub, not PAT.
 
 ### What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)
 
@@ -1237,11 +1237,11 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 **More info**: [Roles in an organization](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
 - [ ] Outside collaborators  
-        Outside collaborators have repository-specific permissions only and are not organization members with security privileges.
+       Outside collaborators have repository-specific permissions only and are not organization members with security privileges.
 - [ ] Repository maintainers  
-        Maintainers can manage certain repository settings but do not have default access to organization-wide security alerts.
+       Maintainers can manage certain repository settings but do not have default access to organization-wide security alerts.
 - [x] Organization owners and Security managers  
-        **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
+       **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
 - [ ] Billing managers
 
 ### Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?
@@ -1249,20 +1249,20 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 **More info**: [Types of GitHub accounts](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
 
 - [x] An organization account can have multiple owners and members, whereas a personal account belongs to a single user only.  
-        **Correct**. Organizations allow for collaborative management by multiple people, while a personal account is tied to an individual.
+       **Correct**. Organizations allow for collaborative management by multiple people, while a personal account is tied to an individual.
 - [ ] A personal account allows unlimited private repositories, but an organization account only allows public repositories.
 - [ ] A personal account can only be accessed via SSH keys, while an organization account can only be accessed via passwords.
 - [ ] An organization account can only be created if you have a GitHub Enterprise plan.  
-        Organizations are available on Free, Team, or Enterprise plans.
+       Organizations are available on Free, Team, or Enterprise plans.
 
 ### Which statement best describes the difference between cloning a repository and forking a repository?
 
 **More info**: [About forks](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 
 - [ ] When you clone a repository, changes you push go directly to the original repository. Forking requires a separate local copy.  
-        Cloning and forking both result in separate local copies, but pushing to a clone requires the correct permission on the original repo.
+       Cloning and forking both result in separate local copies, but pushing to a clone requires the correct permission on the original repo.
 - [x] Forking creates a copy under your GitHub account, while cloning creates a local copy on your computer without linking ownership to your account.  
-        **Correct**. A fork is a GitHub-level copy that appears in your account, whereas a clone is a local-only copy.
+       **Correct**. A fork is a GitHub-level copy that appears in your account, whereas a clone is a local-only copy.
 - [ ] Cloning always transfers repository ownership, while forking does not.
 - [ ] Only private repositories can be forked, whereas only public repositories can be cloned.
 
@@ -1272,7 +1272,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 
 - [ ] You can pin up to 10 repositories on your profile.
 - [x] You can pin up to six repositories or gists on your profile for quick access.  
-        **Correct**. GitHub supports pinning up to six items (repositories or gists).
+       **Correct**. GitHub supports pinning up to six items (repositories or gists).
 - [ ] You can only pin public repositories, not private ones.
 - [ ] Pinning an item deletes it from your repository list.
 
@@ -1281,33 +1281,33 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 **More info**: [Searching repositories](https://docs.github.com/ja/search-github/searching-on-github/searching-for-repositories)
 
 - [x] `in:name docker stars:>100 is:public`  
-        **Correct**. This will find all public repositories that have 'docker' in their name and more than 100 stars.
+       **Correct**. This will find all public repositories that have 'docker' in their name and more than 100 stars.
 - [ ] `docker in:description stars:<100 is:public`
 - [ ] `is:public name:docker stars:100`  
-        This is missing the range operator (`>`) for stars, and `name:docker` is not a valid syntax.
+       This is missing the range operator (`>`) for stars, and `name:docker` is not a valid syntax.
 - [ ] `topic:docker stars:>100 in:readme`  
-        This searches within topics or readmes, not the repository name.
+       This searches within topics or readmes, not the repository name.
 
 ### Which of the following best describes GitHub secret scanning?
 
 **More info**: [About secret scanning](https://docs.github.com/ja/code-security/secret-scanning/about-secret-scanning)
 
 - [ ] A feature that scans issues for unverified credentials and deletes them automatically.  
-        Secret scanning doesn't automatically delete anything; it detects potentially leaked secrets.
+       Secret scanning doesn't automatically delete anything; it detects potentially leaked secrets.
 - [ ] A feature that encrypts your repository secrets before pushing them to GitHub.  
-        GitHub Actions Encrypted Secrets handle encryption, but that’s different from secret scanning.
+       GitHub Actions Encrypted Secrets handle encryption, but that’s different from secret scanning.
 - [ ] A feature that runs third-party password managers on your code to store secrets securely.
 - [x] A feature that searches repositories for known secret formats to prevent accidental exposure of sensitive data.  
-        **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
+       **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
 
 ### Which of these statements about GitHub Pages is correct?
 
 **More info**: [About GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages)
 
 - [ ] GitHub Pages allows you to host a private website for free, accessible only by organization members.  
-        GitHub Pages sites are always publicly accessible, unless you use a project site with enterprise firewall rules on GitHub Enterprise Server.
+       GitHub Pages sites are always publicly accessible, unless you use a project site with enterprise firewall rules on GitHub Enterprise Server.
 - [x] GitHub Pages enables you to host static sites from a GitHub repository.  
-        **Correct**. GitHub Pages is specifically for static site hosting from your repo.
+       **Correct**. GitHub Pages is specifically for static site hosting from your repo.
 - [ ] GitHub Pages automatically converts Java files into dynamic web apps.
 - [ ] GitHub Pages can only be used by organization accounts.  
-        Both personal and organization accounts can use Pages.
+       Both personal and organization accounts can use Pages.
