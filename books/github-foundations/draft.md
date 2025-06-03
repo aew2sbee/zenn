@@ -21,8 +21,8 @@
 
 1. [x] Updates to the issues and pull requests will be automatically reflected in GitHub Projects. This integration works both ways, so that when you change information about a pull request or issue in your project, the pull request or issue reflects that information.
 1. [ ] Updates to the issues and pull requests will not be automatically reflected in GitHub Projects, it has to be triggered manually by the user.
-1. [ ] Information synchronization only works in one direction - from project to issues and pull requests. Updates to issues and pull requests won&#39;t be automatically mirrored in GitHub Project items.
-1. [ ] Information synchronization only works in one direction - from issues and pull requests to projects. Updates to Project items won&#39;t be automatically mirrored in issues and pull requests.
+1. [ ] Information synchronization only works in one direction - from project to issues and pull requests. Updates to issues and pull requests won't be automatically mirrored in GitHub Project items.
+1. [ ] Information synchronization only works in one direction - from issues and pull requests to projects. Updates to Project items won't be automatically mirrored in issues and pull requests.
 
 ### Which of these is true regarding custom fields for items in GitHub Projects?
 
@@ -100,9 +100,9 @@
 1. [x] Categorizing issues and pull requests
 1. [ ] Categorizing files in the repository
 1. [ ] Assigning them to releases so that they are included in the release notes
-       &gt; You can&#39;t assign labels to releases
+       &gt; You can't assign labels to releases
 1. [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
-       &gt; You can&#39;t assign labels to contributors
+       &gt; You can't assign labels to contributors
 
 ### Why would a repository owner want to use milestones? (Choose two.)
 
@@ -111,10 +111,10 @@
 - [x] To associate issues and pull requests with specific project phases
 - [x] To have an overview of how much work is left to complete a project phase
 - [ ] To bring automation to the repository
-      &gt; That&#39;s what GitHub Actions is for
+      &gt; That's what GitHub Actions is for
 - [ ] To communicate that the repository is in a stable state
 - [ ] To track the repository dependencies
-      &gt; That&#39;s what Dependency graph and Dependabot are for
+      &gt; That's what Dependency graph and Dependabot are for
 - [ ] To list the repository contributors
 
 ### How can you assign a person to an issue or pull request?
@@ -124,7 +124,7 @@
 1. [x] By using the Assignees field in the sidebar
 1. [ ] By adding a label with their GitHub username to that issue or pull request
 1. [ ] By mentioning them in the issue or pull request description
-1. [ ] It&#39;s not possible to assign a person to an issue or pull request.
+1. [ ] It's not possible to assign a person to an issue or pull request.
 
 ### If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
 
@@ -164,7 +164,7 @@
 1. [ ] Copilot Charts
        &gt; There is no such thing as Copilot Charts.
 
-### What is the name of GitHub&#39;s continuous integration and continuous delivery (CI/CD) platform?
+### What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?
 
 &gt; https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions
 
@@ -190,7 +190,7 @@
 - [x] A pull request is opened
 - [ ] A change is made to the repository settings
 - [ ] A new vulnerability has been detected in a dependency
-      &gt; This is not a valid event that could trigger a workflow. It&#39;s a feature of Dependabot.
+      &gt; This is not a valid event that could trigger a workflow. It's a feature of Dependabot.
 - [ ] A new member has been added to the repository
 
 ### Where can you find publicly available GitHub Actions?
@@ -234,7 +234,7 @@
 
 &gt; https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot
 
-1. [x] Setup GitHub Copilot in one of the supported IDE&#39;s such as Visual Studio Code or JetBrains and start coding
+1. [x] Setup GitHub Copilot in one of the supported IDE's such as Visual Studio Code or JetBrains and start coding
 1. [ ] GitHub Copilot will automatically start giving suggestions on pull requests and issues in your repository
 1. [ ] You need to setup a GitHub Action that will setup GitHub Copilot on your repository
 1. [ ] You need to edit the repository settings and enable GitHub Copilot for the repository
@@ -243,7 +243,7 @@
 
 &gt; https://docs.github.com/en/codespaces/overview
 
-1. [x] It&#39;s a preconfigured development environment specifically setup for a repository. It allows you immediately start writing code for a project without having to setup a local development environment.
+1. [x] It's a preconfigured development environment specifically setup for a repository. It allows you immediately start writing code for a project without having to setup a local development environment.
 1. [ ] A GitHub Codespace is an interactive holographic coding environment that required special hardware to use.
 1. [ ] GitHub Codespace is an AI-powered coding tool that auto-generates near flawless code
 1. [ ] GitHub Codespace is an annual GitHub hosted event where developers can meet and discuss coding topics.
@@ -277,20 +277,18 @@
 1. [ ] Create, Stop, Delete
 1. [ ] Create, Rebuild, Delete
 
-### If you stop your GitHub Codespace environment can you come back to the changes later if you haven&#39;t committed them?
+### If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?
 
 &gt; https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace
 
-1. [x] Yes, that&#39;s the default behavior when stopping and then starting a GitHub Codespace
+1. [x] Yes, that's the default behavior when stopping and then starting a GitHub Codespace
 1. [ ] No, these changes will be lost. You need to commit them before stopping the Codespace.
-
----------------------↑ まで完了------------------------------
 
 ### Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)
 
 &gt; https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle
 
-- [x] A Codespace&#39;s lifecycle begins when you create a Codespace and ends when you delete it.
+- [x] A Codespace's lifecycle begins when you create a Codespace and ends when you delete it.
 - [x] You can stop and restart a Codespace without losing the changes that you make to your project.
 - [x] You can disconnect and reconnect to an active Codespace without affecting its running processes.
 - [ ] You can stop and restart a Codespace without affecting its running processes.
@@ -298,11 +296,13 @@
 - [ ] If you close the browser tab in which your Codespace was running, the Codespace will automatically be stopped
       &gt; Closing the browser tab does not stop the Codespace and the processes continue running. If you only closed the tab, the Codespace will stop after reaching the inactivity timeout period
 
+---------------------↑ まで完了------------------------------
+
 ### Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?
 
 &gt; https://docs.github.com/en/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace
 
-1. [x] Yes, you can choose an alternative machine type either when you create a codespace or at any time after you&#39;ve created a codespace.
+1. [x] Yes, you can choose an alternative machine type either when you create a codespace or at any time after you've created a codespace.
 1. [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running
        &gt; GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use
 
@@ -319,17 +319,17 @@
 
 &gt; https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces#configuring-more-options
 
-1. [x] It&#39;s a link that points to a specific GitHub.com Page that allows you to create a new GitHub Codespace and select specific configuration
-1. [ ] It&#39;s a link between the GitHub Codespace and the repository which keeps the Codespace in sync with the changes in the repository
-1. [ ] It&#39;s a link to the most recent GitHub Codespace that was created for the repository
-1. [ ] It&#39;s a link to the most recent GitHub Codespace that you have used in any repository
+1. [x] It's a link that points to a specific GitHub.com Page that allows you to create a new GitHub Codespace and select specific configuration
+1. [ ] It's a link between the GitHub Codespace and the repository which keeps the Codespace in sync with the changes in the repository
+1. [ ] It's a link to the most recent GitHub Codespace that was created for the repository
+1. [ ] It's a link to the most recent GitHub Codespace that you have used in any repository
 
 ### Who should have 2 Factor Authentication enabled on GitHub?
 
 &gt; https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
 
 1. [x] All GitHub users
-1. [ ] It&#39;s not recommended to use 2FA on GitHub for anyone
+1. [ ] It's not recommended to use 2FA on GitHub for anyone
 1. [ ] GitHub Organization owners
 1. [ ] GitHub Enterprise Server users
 
@@ -337,10 +337,10 @@
 
 &gt; https://docs.github.com/en/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#about-enterprise-managed-users
 
-1. [x] It&#39;s a GitHub Enterprise feature that allows you to manage user access from an external identity provider such as Azure AD or Okta
-1. [ ] It&#39;s a GitHub Enterprise support user that can be used to manage your Enterprise by GitHub Support once requested
-1. [ ] It&#39;s a shared user account that can be used by multiple users in your Enterprise
-1. [ ] It&#39;s an user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
+1. [x] It's a GitHub Enterprise feature that allows you to manage user access from an external identity provider such as Azure AD or Okta
+1. [ ] It's a GitHub Enterprise support user that can be used to manage your Enterprise by GitHub Support once requested
+1. [ ] It's a shared user account that can be used by multiple users in your Enterprise
+1. [ ] It's an user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
 
 ### What are the different permission levels for a repository owned by a personal account? (Choose two.)
 
@@ -452,10 +452,10 @@
 
 &gt; https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs
 
-1. [x] It&#39;s a place where you can see data about the repository such as code frequency, list of the most active contributors and more.
-1. [ ] Repository Insights is a feature that allows you to see the repository&#39;s secret and code scanning alerts.
-1. [ ] It&#39;s a list of best practices to follow when administrating a repository.
-1. [ ] It&#39;s a feature that allows you to see the repository&#39;s security overview.
+1. [x] It's a place where you can see data about the repository such as code frequency, list of the most active contributors and more.
+1. [ ] Repository Insights is a feature that allows you to see the repository's secret and code scanning alerts.
+1. [ ] It's a list of best practices to follow when administrating a repository.
+1. [ ] It's a feature that allows you to see the repository's security overview.
 
 ### Who are repository collaborators?
 
@@ -463,9 +463,9 @@
 
 1. [x] Collaborators are people who have been granted write access to a repository.
 1. [ ] Collaborators are people who have made code contributions to a repository.
-       &gt; That&#39;s contributors. You can be a collaborator on a repository without having contributed to it. You can also contribute to a repository without being a collaborator, by forking the repository and submitting a pull request.
+       &gt; That's contributors. You can be a collaborator on a repository without having contributed to it. You can also contribute to a repository without being a collaborator, by forking the repository and submitting a pull request.
 1. [ ] Collaborators are people who have funded a repository.
-       &gt; That&#39;s sponsors
+       &gt; That's sponsors
 1. [ ] Collaborators are people who have raised issues or pull requests on a repository.
 
 ### How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?
@@ -474,16 +474,16 @@
 
 1. [x] Go to repository settings and invite him as a collaborator
 1. [ ] Add him to `CODEOWNERS` file
-1. [ ] It&#39;s not possible to work together on personal repositories. You can only do that for repositories owned by organizations.
+1. [ ] It's not possible to work together on personal repositories. You can only do that for repositories owned by organizations.
 1. [ ] Provide your friend your GitHub credentials
 
 ### What are GitHub teams?
 
 &gt; https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams
 
-1. [x] It&#39;s a group of GitHub users from the same organization.
-1. [ ] It&#39;s a version of Microsoft Teams for GitHub.
-1. [ ] It&#39;s a way of managing access to personal GitHub repositories to many users at once.
+1. [x] It's a group of GitHub users from the same organization.
+1. [ ] It's a version of Microsoft Teams for GitHub.
+1. [ ] It's a way of managing access to personal GitHub repositories to many users at once.
        &gt; Personal repositories cannot be shared with teams, only with individual collaborators.
 
 ### What is the role of an organization moderator?
@@ -492,11 +492,11 @@
 
 1. [x] Moderators are organization members who, in addition to their permissions as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization.
 1. [ ] Moderators are organization members who have complete access to the organization.
-       &gt; That&#39;s organization owners
+       &gt; That's organization owners
 1. [ ] Moderators are organization members who can manage the billing settings for your organization, such as payment information.
-       &gt; That&#39;s billing managers
+       &gt; That's billing managers
 1. [ ] Moderators are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
-       &gt; That&#39;s security managers
+       &gt; That's security managers
 
 ### What is the role of an organization security manager?
 
@@ -504,29 +504,29 @@
 
 1. [x] Security managers are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
 1. [ ] Security managers are organization members who, in addition to their permissions as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization.
-       &gt; That&#39;s moderators
+       &gt; That's moderators
 1. [ ] Security managers are organization members who have complete access to the organization.
-       &gt; That&#39;s organization owners
+       &gt; That's organization owners
 1. [ ] Security managers are organization members who can manage the billing settings for your organization, such as payment information.
-       &gt; That&#39;s billing managers
+       &gt; That's billing managers
 
 ### Which of these definitions best describes open source software?
 
 &gt; https://opensource.com/resources/what-open-source
 
-1. [x] It&#39;s software with source code that anyone can inspect, modify, and enhance.
-1. [ ] It&#39;s free to use for any purposes as long as you sign the open source license.
-1. [ ] It&#39;s free to use for any personal purposes as long as you don&#39;t make profit out of it.
-1. [ ] It&#39;s software with source code that anyone can rely on.
+1. [x] It's software with source code that anyone can inspect, modify, and enhance.
+1. [ ] It's free to use for any purposes as long as you sign the open source license.
+1. [ ] It's free to use for any personal purposes as long as you don't make profit out of it.
+1. [ ] It's software with source code that anyone can rely on.
 
 ### What is the GitHub Sponsors program?
 
 &gt; https://docs.github.com/en/sponsors/getting-started-with-github-sponsors/about-github-sponsors
 
-1. [x] It&#39;s a way to financially support the developers of the open source projects
-1. [ ] It&#39;s a group of companies that fund GitHub
-1. [ ] It&#39;s a program that helps people find a job in the tech industry
-1. [ ] It&#39;s a program where highly skilled developers volunteer to help students learn how to use GitHub
+1. [x] It's a way to financially support the developers of the open source projects
+1. [ ] It's a group of companies that fund GitHub
+1. [ ] It's a program that helps people find a job in the tech industry
+1. [ ] It's a program where highly skilled developers volunteer to help students learn how to use GitHub
 
 ### On your personal GitHub dashboard you received a notification that user `octocat` has created a new repository `octocat/my-repo`. Why did you receive that notification?
 
@@ -578,7 +578,7 @@
 
 &gt; https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
 
-1. [x] A fork is a personal copy of another user&#39;s repository that lives on your account.
+1. [x] A fork is a personal copy of another user's repository that lives on your account.
 1. [ ] A fork is the place where a branch splits off into at least two other branches.
 1. [ ] A fork is the state of a repository when it is not up to date with the remote repository.
 1. [ ] A fork is a branch that is not up to date with the default branch of the repository.
@@ -616,10 +616,10 @@
 
 &gt; https://docs.github.com/en/get-started/using-git/about-git#about-version-control-and-git
 
-1. [x] It&#39;s a system that tracks the history of changes made to a collection of files.
-1. [ ] It&#39;s a system that leverages the git command line tool.
-1. [ ] It&#39;s a system that allows you to create a local copy of a project&#39;s source code.
-1. [ ] It&#39;s a system that allows tracking of what people install on their computers.
+1. [x] It's a system that tracks the history of changes made to a collection of files.
+1. [ ] It's a system that leverages the git command line tool.
+1. [ ] It's a system that allows you to create a local copy of a project's source code.
+1. [ ] It's a system that allows tracking of what people install on their computers.
 
 ### What is the meaning of the word `distributed` in distributed version control system?
 
@@ -661,9 +661,9 @@
 
 &gt; https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
 
-1. [x] It&#39;s a place where you can store your code, your files, and each file&#39;s revision history.
-1. [ ] It&#39;s a place where you can store your Docker images or NPM packages.
-1. [ ] It&#39;s a visual code editor that allows you to edit your source code in the browser.
+1. [x] It's a place where you can store your code, your files, and each file's revision history.
+1. [ ] It's a place where you can store your Docker images or NPM packages.
+1. [ ] It's a visual code editor that allows you to edit your source code in the browser.
 1. [ ] A repository in GitHub is a chat room where developers can discuss code-related issues.
 
 ### What is a git commit?
@@ -688,9 +688,9 @@
 
 &gt; https://docs.github.com/en/get-started/quickstart/github-flow
 
-1. [x] It refers to a branch-based workflow where developers create a branch for each new change they&#39;re working on, and then open pull requests to get their code reviewed, tested, and merged into the main branch.
-1. [ ] It&#39;s a practice where every time a commit is pushed to the main branch, a new release is automatically created and deployed.
-1. [ ] It&#39;s a practice where every time a commit is pushed to the main branch, a set of CI/CD pipelines are triggered to run tests and validate the code changes.
+1. [x] It refers to a branch-based workflow where developers create a branch for each new change they're working on, and then open pull requests to get their code reviewed, tested, and merged into the main branch.
+1. [ ] It's a practice where every time a commit is pushed to the main branch, a new release is automatically created and deployed.
+1. [ ] It's a practice where every time a commit is pushed to the main branch, a set of CI/CD pipelines are triggered to run tests and validate the code changes.
 1. [ ] It refers to a one branch workflow where developers work on their features on the `master` branch, and then get their feature code reviewed, tested, and committed.
 
 ### What is a GitHub Pro plan?
@@ -759,10 +759,10 @@
 &gt; https://docs.github.com/en/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
 
 - [x] GitHub Enterprise Cloud is a set of advanced functionality on GitHub.com
-- [x] GitHub Enterprise Server is a self-hosted platform that runs on the company&#39;s infrastructure
+- [x] GitHub Enterprise Server is a self-hosted platform that runs on the company's infrastructure
 - [ ] GitHub Enterprise Server is a set of advanced functionality on GitHub.com
-- [ ] GitHub Enterprise Cloud is a cloud hosted platform that runs on the company&#39;s cloud infrastructure
-- [ ] GitHub Enterprise Cloud is a self-hosted platform that runs on the company&#39;s infrastructure
+- [ ] GitHub Enterprise Cloud is a cloud hosted platform that runs on the company's cloud infrastructure
+- [ ] GitHub Enterprise Cloud is a self-hosted platform that runs on the company's infrastructure
 
 ### What are pinned repositories on GitHub?
 
@@ -790,41 +790,41 @@
 1. [ ] AsciiDoc
 1. [ ] reStructuredText
 
-### What are GitHub&#39;s slash commands?
+### What are GitHub's slash commands?
 
 &gt; https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands
 
-1. [x] It&#39;s a way to quickly insert complex Markdown into your pull request or issue comments and descriptions.
-1. [ ] It&#39;s a way of automating GitHub Actions.
-1. [ ] It&#39;s an another name for the GitHub CLI.
-1. [ ] It&#39;s a way to quickly fix code formatting issues in your pull request&#39;s code changes.
+1. [x] It's a way to quickly insert complex Markdown into your pull request or issue comments and descriptions.
+1. [ ] It's a way of automating GitHub Actions.
+1. [ ] It's an another name for the GitHub CLI.
+1. [ ] It's a way to quickly fix code formatting issues in your pull request's code changes.
 
-### How does GitHub help people that want to write proper issue and pull request comments but don&#39;t know Markdown syntax?
+### How does GitHub help people that want to write proper issue and pull request comments but don't know Markdown syntax?
 
 &gt; https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github#text-formatting-toolbar
 
 1. [x] There is a text formatting toolbar on issue and pull request comment forms which generates Markdown for you.
 1. [ ] By providing a Markdown cheat sheet.
 1. [ ] GitHub automatically converts HTML to Markdown in issue and pull request comments.
-1. [ ] GitHub pull requests and issues don&#39;t support Markdown.
+1. [ ] GitHub pull requests and issues don't support Markdown.
 
 ### What is GitHub Desktop?
 
 &gt; https://docs.github.com/en/desktop
 
-1. [x] It&#39;s a GUI Application for working with Git and GitHub on your computer.
-1. [ ] It&#39;s a self hosted version of GitHub that you can install on your own servers or personal computer.
-1. [ ] It&#39;s a GitHub pricing plan for personal accounts that offers additional features in addition to the free plan.
-1. [ ] It&#39;s an online editor that allows you to work on your repository in the browser.
+1. [x] It's a GUI Application for working with Git and GitHub on your computer.
+1. [ ] It's a self hosted version of GitHub that you can install on your own servers or personal computer.
+1. [ ] It's a GitHub pricing plan for personal accounts that offers additional features in addition to the free plan.
+1. [ ] It's an online editor that allows you to work on your repository in the browser.
 
 ### What is GitHub Mobile?
 
 &gt; https://docs.github.com/en/get-started/using-github/github-mobile
 
-1. [x] It&#39;s a mobile app for iOS and Android that allows you to work with GitHub from your phone.
-1. [ ] It&#39;s a service that allows you to test your mobile apps on real devices.
-1. [ ] It&#39;s a GitHub data transfer service for petabytes of data where a GitHub owned car will drive to your location and transfer the data to your local network.
-1. [ ] It&#39;s a GitHub telemetry service that allows you to track your users&#39; activity on your website or mobile app.
+1. [x] It's a mobile app for iOS and Android that allows you to work with GitHub from your phone.
+1. [ ] It's a service that allows you to test your mobile apps on real devices.
+1. [ ] It's a GitHub data transfer service for petabytes of data where a GitHub owned car will drive to your location and transfer the data to your local network.
+1. [ ] It's a GitHub telemetry service that allows you to track your users' activity on your website or mobile app.
 
 ### How can you link a pull request to an issue? (Choose two.)
 
@@ -854,7 +854,7 @@
 1. [ ] Gists
 1. [ ] Pull requests
 
-### What is the effect of adding a line `Closes #11` to the pull request&#39;s description?
+### What is the effect of adding a line `Closes #11` to the pull request's description?
 
 &gt; https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests#linking-a-pull-request-to-an-issue
 
@@ -924,8 +924,8 @@
 1. [x] Wikis is repository feature for hosting documentation.
 1. [ ] Wikis is the official GitHub documentation.
 1. [ ] Wikis is a feature for hosting code snippets.
-       &gt; That&#39;s Gists
-1. [ ] Wikis is a place where you hold the project&#39;s `README.md` file.
+       &gt; That's Gists
+1. [ ] Wikis is a place where you hold the project's `README.md` file.
 
 ### What are the two available options when you no longer need to use a Project?
 
@@ -979,7 +979,7 @@
 
 1. [x] No
 1. [ ] Yes
-       &gt; When you &#34;convert&#34; a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn&#39;t a bigger connection between them.
+       &gt; When you &#34;convert&#34; a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
 
 ### Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
 
@@ -1020,12 +1020,12 @@
 &gt; https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works
 
 1. [ ] PATs can be managed by the organization and enterprise.
-       &gt; PAT&#39;s as the name suggests, are personal. Organizations and Enterprises can manage other forms of authentication, such as LDAP, SAML, and SSH keys.
+       &gt; PAT's as the name suggests, are personal. Organizations and Enterprises can manage other forms of authentication, such as LDAP, SAML, and SSH keys.
 1. [ ] PAT is an extra layer of security used when logging into websites or apps. With PAT, users have to sign in with their username and password and provide another form of authentication that only they have access to.
        &gt; This is a description of multi-factor or two-factor authentication.
-1. [x] PAT can be used for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub&#39;s settings option, and tie the token permissions to a repository or organization.
+1. [x] PAT can be used for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub's settings option, and tie the token permissions to a repository or organization.
 1. [ ] PAT lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access.
-       &gt; This is a description of LDAP&#39;s benefits for GitHub, not PAT.
+       &gt; This is a description of LDAP's benefits for GitHub, not PAT.
 
 ### What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)
 
@@ -1079,7 +1079,7 @@
 
 1. [ ] Heading - `# Heading`
 1. [ ] Bold text - `**bold**`
-1. [x] Inline code - `&#39;&#39;&#39;code&#39;&#39;&#39;`
+1. [x] Inline code - `'''code'''`
 1. [ ] Hyperlink - `[title](https://)`
 
 ### What feature is unique to GitHub Desktop compared to github.com?
@@ -1109,7 +1109,7 @@
 
 - [ ] With write permission, set an existing project as a template
       &gt; You need admin permissions to set an existing project as a template
-- [x] Configure recommended templates to your organization&#39;s members
+- [x] Configure recommended templates to your organization's members
 - [x] Create a new template to be used as a base for new projects
 - [x] With admin or write permissions, copy an existing project as a template
 - [ ] Publish your templates in GitHub Marketplace for anyone to use
@@ -1190,7 +1190,7 @@
 - [x] Convert it to an issue
 - [ ] Merge it into an existing pull request
 
-### Which search query finds all open issues labeled `test` that mention &#39;fix&#39; in their body text?
+### Which search query finds all open issues labeled `test` that mention 'fix' in their body text?
 
 &gt; **More info**: [Searching issues and pull requests](https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests)
 
@@ -1274,12 +1274,12 @@
 1. [ ] You can only pin public repositories, not private ones.
 1. [ ] Pinning an item deletes it from your repository list.
 
-### Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention &#39;docker&#39; in their name?
+### Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention 'docker' in their name?
 
 &gt; **More info**: [Searching repositories](https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories)
 
 1. [x] `in:name docker stars:&gt;100 is:public`  
-        &gt; **Correct**. This will find all public repositories that have &#39;docker&#39; in their name and more than 100 stars.
+        &gt; **Correct**. This will find all public repositories that have 'docker' in their name and more than 100 stars.
 1. [ ] `docker in:description stars:&lt;100 is:public`
 1. [ ] `is:public name:docker stars:100`  
         &gt; This is missing the range operator (`&gt;`) for stars, and `name:docker` is not a valid syntax.
@@ -1291,7 +1291,7 @@
 &gt; **More info**: [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
 
 1. [ ] A feature that scans issues for unverified credentials and deletes them automatically.  
-        &gt; Secret scanning doesn&#39;t automatically delete anything; it detects potentially leaked secrets.
+        &gt; Secret scanning doesn't automatically delete anything; it detects potentially leaked secrets.
 1. [ ] A feature that encrypts your repository secrets before pushing them to GitHub.  
         &gt; GitHub Actions Encrypted Secrets handle encryption, but that’s different from secret scanning.
 1. [ ] A feature that runs third-party password managers on your code to store secrets securely.
