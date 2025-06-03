@@ -202,8 +202,6 @@
 1. [ ] GitHub private repositories
 1. [ ] GitHub Actions Project Boards
 
-
-
 ### Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
 
 &gt; https://docs.github.com/en/copilot/quickstart#introduction
@@ -214,7 +212,6 @@
 1. [ ] GitHub Assistant
 
 
----------------------↑ まで完了------------------------------
 
 ### Is GitHub Copilot free to use?
 
@@ -225,6 +222,8 @@
 1. [x] Yes, if you are a student, teacher, or maintainer of a popular open source project
 1. [ ] Yes, but only for individuals working on public repositories
        &gt; There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
+
+---------------------↑ まで完了------------------------------
 
 ### What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
 
