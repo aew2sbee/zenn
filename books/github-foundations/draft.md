@@ -42,8 +42,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-i
 - [ ] Only individually or in bulk
 - [ ] Only automatically using project workflows
 
----------------------↑ まで完了------------------------------
-
 ### 6. Which of these layouts are available in GitHub Projects? (Choose three.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view
@@ -54,6 +52,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizin
 - [ ] Scrum layout
 - [ ] Agile layout
 - [ ] Project layout
+
+---------------------↑ まで完了------------------------------
 
 ### 7. Which GitHub Project layout would best serve as a Kanban board?
 
