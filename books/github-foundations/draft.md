@@ -239,8 +239,6 @@
 1. [ ] You need to setup a GitHub Action that will setup GitHub Copilot on your repository
 1. [ ] You need to edit the repository settings and enable GitHub Copilot for the repository
 
----------------------↑ まで完了------------------------------
-
 ### What is a GitHub Codespace?
 
 &gt; https://docs.github.com/en/codespaces/overview
@@ -249,6 +247,8 @@
 1. [ ] A GitHub Codespace is an interactive holographic coding environment that required special hardware to use.
 1. [ ] GitHub Codespace is an AI-powered coding tool that auto-generates near flawless code
 1. [ ] GitHub Codespace is an annual GitHub hosted event where developers can meet and discuss coding topics.
+
+---------------------↑ まで完了------------------------------
 
 ### What GitHub feature allows the creation of preconfigured development environments where all necessary tools and dependencies to contribute to a repository are installed?
 
