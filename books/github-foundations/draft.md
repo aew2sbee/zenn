@@ -257,7 +257,7 @@
 1. [ ] GitHub Copilot
 1. [ ] GitHub DevEnv
 
----------------------↑ まで完了------------------------------
+
 
 ### What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)
 
@@ -269,6 +269,8 @@
 - [ ] GitHub Dependabot
 - [ ] GitHub Remote
 - [ ] GitHub Online
+
+---------------------↑ まで完了------------------------------
 
 ### What are the different possible lifecycle phases for a GitHub Codespace?
 
