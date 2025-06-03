@@ -53,8 +53,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizin
 - [ ] Agile layout
 - [ ] Project layout
 
----------------------↑ まで完了------------------------------
-
 ### 7. Which GitHub Project layout would best serve as a Kanban board?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout#about-the-board-layout
@@ -63,6 +61,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizin
 - [ ] Table layout
 - [ ] Roadmap layout
 - [ ] Agile layout
+
+---------------------↑ まで完了------------------------------
 
 ### 8. Which of these workflows are built-in automations in GitHub Projects? (Choose two.)
 
