@@ -158,7 +158,7 @@
 - [ ] Delete all repositories created from a repository template
 - [ ] Delete all repositories that do not use a repository template provided by your organization
 
----------------------↑ まで完了------------------------------
+
 
 ### Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?
 
@@ -169,6 +169,8 @@
 1. [ ] Milestones
 1. [ ] Copilot Charts
        &gt; There is no such thing as Copilot Charts.
+
+---------------------↑ まで完了------------------------------
 
 ### What is the name of GitHub&#39;s continuous integration and continuous delivery (CI/CD) platform?
 
