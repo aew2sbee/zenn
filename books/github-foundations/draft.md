@@ -33,8 +33,6 @@
 1. [ ] Custom fields are exclusively for aesthetic modifications and do not add any meaningful metadata.
 1. [ ] Custom fields are limited to predefined options and cannot include user-defined metadata.
 
-
-
 ### What are the different available options for adding issues and pull requests to a GitHub Project board?
 
 &gt; https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project
@@ -43,7 +41,6 @@
 1. [ ] Only manually, one at a time.
 1. [ ] Only individually or in bulk
 1. [ ] Only automatically using project workflows
-
 
 ### Which of these layouts are available in GitHub Projects? (Choose three.)
 
@@ -56,8 +53,6 @@
 - [ ] Agile layout
 - [ ] Project layout
 
-
-
 ### Which GitHub Project layout would best serve as a Kanban board?
 
 &gt; https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout#about-the-board-layout
@@ -66,8 +61,6 @@
 1. [ ] Table layout
 1. [ ] Roadmap layout
 1. [ ] Agile layout
-
-
 
 ### Which of these workflows are built-in automations in GitHub Projects? (Choose two.)
 
@@ -78,9 +71,6 @@
 - [ ] When issues or pull requests are opened in your project, their status is set to Done.
 - [ ] When a new contributor is added to a repository, the unassigned issues are assigned to him.
 - [ ] When a GitHub Action is triggered, create a new item in your GitHub Project.
-
-
-
 
 ### What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)
 
@@ -94,8 +84,6 @@
 - [ ] GitHub Dependabot
 - [ ] Project items
 
-
-
 ### What is the difference between GitHub projects and GitHub projects classic?
 
 &gt; https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards
@@ -104,8 +92,6 @@
 1. [ ] GitHub Projects classic is a the new GitHub experience which offers a lot of new features and improvements over the older GitHub Projects.
 1. [ ] GitHub Projects classic is simpler way to manage your GitHub Projects and is recommended for beginners.
 1. [ ] GitHub Projects classic is the enhanced versions which in addition to GitHub Projects offers some pre-cooked templates such as roadmaps and sprints.
-
-
 
 ### What are the use cases for labels?
 
@@ -117,9 +103,6 @@
        &gt; You can&#39;t assign labels to releases
 1. [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
        &gt; You can&#39;t assign labels to contributors
-
-
----------------------↑ まで完了------------------------------
 
 ### Why would a repository owner want to use milestones? (Choose two.)
 
@@ -133,6 +116,8 @@
 - [ ] To track the repository dependencies
       &gt; That&#39;s what Dependency graph and Dependabot are for
 - [ ] To list the repository contributors
+
+---------------------↑ まで完了------------------------------
 
 ### How can you assign a person to an issue or pull request?
 
@@ -1250,11 +1235,11 @@
 &gt; **More info**: [Roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
 1. [ ] Outside collaborators  
-       &gt; Outside collaborators have repository-specific permissions only and are not organization members with security privileges.
+        &gt; Outside collaborators have repository-specific permissions only and are not organization members with security privileges.
 1. [ ] Repository maintainers  
-       &gt; Maintainers can manage certain repository settings but do not have default access to organization-wide security alerts.
+        &gt; Maintainers can manage certain repository settings but do not have default access to organization-wide security alerts.
 1. [x] Organization owners and Security managers  
-       &gt; **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
+        &gt; **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
 1. [ ] Billing managers
 
 ### Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?
@@ -1262,20 +1247,20 @@
 &gt; **More info**: [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
 
 1. [x] An organization account can have multiple owners and members, whereas a personal account belongs to a single user only.  
-       &gt; **Correct**. Organizations allow for collaborative management by multiple people, while a personal account is tied to an individual.
+        &gt; **Correct**. Organizations allow for collaborative management by multiple people, while a personal account is tied to an individual.
 1. [ ] A personal account allows unlimited private repositories, but an organization account only allows public repositories.
 1. [ ] A personal account can only be accessed via SSH keys, while an organization account can only be accessed via passwords.
 1. [ ] An organization account can only be created if you have a GitHub Enterprise plan.  
-       &gt; Organizations are available on Free, Team, or Enterprise plans.
+        &gt; Organizations are available on Free, Team, or Enterprise plans.
 
 ### Which statement best describes the difference between cloning a repository and forking a repository?
 
 &gt; **More info**: [About forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 
 1. [ ] When you clone a repository, changes you push go directly to the original repository. Forking requires a separate local copy.  
-       &gt; Cloning and forking both result in separate local copies, but pushing to a clone requires the correct permission on the original repo.
+        &gt; Cloning and forking both result in separate local copies, but pushing to a clone requires the correct permission on the original repo.
 1. [x] Forking creates a copy under your GitHub account, while cloning creates a local copy on your computer without linking ownership to your account.  
-       &gt; **Correct**. A fork is a GitHub-level copy that appears in your account, whereas a clone is a local-only copy.
+        &gt; **Correct**. A fork is a GitHub-level copy that appears in your account, whereas a clone is a local-only copy.
 1. [ ] Cloning always transfers repository ownership, while forking does not.
 1. [ ] Only private repositories can be forked, whereas only public repositories can be cloned.
 
@@ -1285,7 +1270,7 @@
 
 1. [ ] You can pin up to 10 repositories on your profile.
 1. [x] You can pin up to six repositories or gists on your profile for quick access.  
-       &gt; **Correct**. GitHub supports pinning up to six items (repositories or gists).
+        &gt; **Correct**. GitHub supports pinning up to six items (repositories or gists).
 1. [ ] You can only pin public repositories, not private ones.
 1. [ ] Pinning an item deletes it from your repository list.
 
@@ -1294,33 +1279,33 @@
 &gt; **More info**: [Searching repositories](https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories)
 
 1. [x] `in:name docker stars:&gt;100 is:public`  
-       &gt; **Correct**. This will find all public repositories that have &#39;docker&#39; in their name and more than 100 stars.
+        &gt; **Correct**. This will find all public repositories that have &#39;docker&#39; in their name and more than 100 stars.
 1. [ ] `docker in:description stars:&lt;100 is:public`
 1. [ ] `is:public name:docker stars:100`  
-       &gt; This is missing the range operator (`&gt;`) for stars, and `name:docker` is not a valid syntax.
+        &gt; This is missing the range operator (`&gt;`) for stars, and `name:docker` is not a valid syntax.
 1. [ ] `topic:docker stars:&gt;100 in:readme`  
-       &gt; This searches within topics or readmes, not the repository name.
+        &gt; This searches within topics or readmes, not the repository name.
 
 ### Which of the following best describes GitHub secret scanning?
 
 &gt; **More info**: [About secret scanning](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning)
 
 1. [ ] A feature that scans issues for unverified credentials and deletes them automatically.  
-       &gt; Secret scanning doesn&#39;t automatically delete anything; it detects potentially leaked secrets.
+        &gt; Secret scanning doesn&#39;t automatically delete anything; it detects potentially leaked secrets.
 1. [ ] A feature that encrypts your repository secrets before pushing them to GitHub.  
-       &gt; GitHub Actions Encrypted Secrets handle encryption, but that’s different from secret scanning.
+        &gt; GitHub Actions Encrypted Secrets handle encryption, but that’s different from secret scanning.
 1. [ ] A feature that runs third-party password managers on your code to store secrets securely.
 1. [x] A feature that searches repositories for known secret formats to prevent accidental exposure of sensitive data.  
-       &gt; **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
+        &gt; **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
 
 ### Which of these statements about GitHub Pages is correct?
 
 &gt; **More info**: [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
 1. [ ] GitHub Pages allows you to host a private website for free, accessible only by organization members.  
-       &gt; GitHub Pages sites are always publicly accessible, unless you use a project site with enterprise firewall rules on GitHub Enterprise Server.
+        &gt; GitHub Pages sites are always publicly accessible, unless you use a project site with enterprise firewall rules on GitHub Enterprise Server.
 1. [x] GitHub Pages enables you to host static sites from a GitHub repository.  
-       &gt; **Correct**. GitHub Pages is specifically for static site hosting from your repo.
+        &gt; **Correct**. GitHub Pages is specifically for static site hosting from your repo.
 1. [ ] GitHub Pages automatically converts Java files into dynamic web apps.
 1. [ ] GitHub Pages can only be used by organization accounts.  
-       &gt; Both personal and organization accounts can use Pages.
+        &gt; Both personal and organization accounts can use Pages.
