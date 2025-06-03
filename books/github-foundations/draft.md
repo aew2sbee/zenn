@@ -1,4 +1,4 @@
-### What are the possible GitHub account types? (Select three.)
+### 1. What are the possible GitHub account types? (Select three.)
 
 https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts
 
@@ -8,14 +8,14 @@ https://docs.github.com/ja/get-started/learning-about-github/types-of-github-acc
 - [ ] Shared accounts
 - [ ] Company accounts
 
-### Which of these GitHub features serves the purpose of an adaptable spreadsheet, task board and a roadmap that integrates with issues and pull requests on GitHub to plan and track your work effectively?
+### 2. Which of these GitHub features serves the purpose of an adaptable spreadsheet, task board and a roadmap that integrates with issues and pull requests on GitHub to plan and track your work effectively?
 
 - [x] GitHub Project
 - [ ] GitHub Copilot
 - [ ] GitHub Repository
 - [ ] GitHub Organization
 
-### How does the synchronization between GitHub projects, issues and pull requests work?
+### 3. How does the synchronization between GitHub projects, issues and pull requests work?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#staying-up-to-date
 
@@ -24,7 +24,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-a
 - [ ] Information synchronization only works in one direction - from project to issues and pull requests. Updates to issues and pull requests won't be automatically mirrored in GitHub Project items.
 - [ ] Information synchronization only works in one direction - from issues and pull requests to projects. Updates to Project items won't be automatically mirrored in issues and pull requests.
 
-### Which of these is true regarding custom fields for items in GitHub Projects?
+### 4. Which of these is true regarding custom fields for items in GitHub Projects?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#adding-metadata-to-your-items
 
@@ -35,7 +35,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-a
 
 ---------------------↑ まで完了------------------------------
 
-### What are the different available options for adding issues and pull requests to a GitHub Project board?
+### 5. What are the different available options for adding issues and pull requests to a GitHub Project board?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project#adding-issues-and-pull-requests-to-a-project
 
@@ -44,7 +44,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-i
 - [ ] Only individually or in bulk
 - [ ] Only automatically using project workflows
 
-### Which of these layouts are available in GitHub Projects? (Choose three.)
+### 6. Which of these layouts are available in GitHub Projects? (Choose three.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view
 
@@ -55,7 +55,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizin
 - [ ] Agile layout
 - [ ] Project layout
 
-### Which GitHub Project layout would best serve as a Kanban board?
+### 7. Which GitHub Project layout would best serve as a Kanban board?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout#about-the-board-layout
 
@@ -64,7 +64,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/customizin
 - [ ] Roadmap layout
 - [ ] Agile layout
 
-### Which of these workflows are built-in automations in GitHub Projects? (Choose two.)
+### 8. Which of these workflows are built-in automations in GitHub Projects? (Choose two.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations
 
@@ -74,7 +74,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating
 - [ ] When a new contributor is added to a repository, the unassigned issues are assigned to him.
 - [ ] When a GitHub Action is triggered, create a new item in your GitHub Project.
 
-### What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)
+### 9. What are the different options that allow you to automate operations in your GitHub Project? (Choose three.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating-your-project/
 
@@ -86,7 +86,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/automating
 - [ ] GitHub Dependabot
 - [ ] Project items
 
-### What is the difference between GitHub projects and GitHub projects classic?
+### 10. What is the difference between GitHub projects and GitHub projects classic?
 
 https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards
 
@@ -95,7 +95,7 @@ https://docs.github.com/ja/issues/organizing-your-work-with-project-boards/manag
 - [ ] GitHub Projects classic is simpler way to manage your GitHub Projects and is recommended for beginners.
 - [ ] GitHub Projects classic is the enhanced versions which in addition to GitHub Projects offers some pre-cooked templates such as roadmaps and sprints.
 
-### What are the use cases for labels?
+### 11. What are the use cases for labels?
 
 https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/managing-labels
 
@@ -106,7 +106,7 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/mana
 - [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
       You can't assign labels to contributors
 
-### Why would a repository owner want to use milestones? (Choose two.)
+### 12. Why would a repository owner want to use milestones? (Choose two.)
 
 https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/about-milestones
 
@@ -119,7 +119,7 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/abou
       That's what Dependency graph and Dependabot are for
 - [ ] To list the repository contributors
 
-### How can you assign a person to an issue or pull request?
+### 13. How can you assign a person to an issue or pull request?
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users
 
@@ -128,7 +128,7 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/assigning-issue
 - [ ] By mentioning them in the issue or pull request description
 - [ ] It's not possible to assign a person to an issue or pull request.
 
-### If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
+### 14. If you face yourself often writing the same set of comments on issues or pull requests, what GitHub feature would you use to save time?
 
 https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
 
@@ -137,7 +137,7 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-repl
 - [ ] Repository templates
 - [ ] Labels
 
-### Which of these statements about `saved replies` are true? (Choose two.)
+### 15. Which of these statements about `saved replies` are true? (Choose two.)
 
 https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-replies/using-saved-replies
 
@@ -146,7 +146,7 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-saved-repl
 - [ ] When someone comments on your issue or pull request, you can save their reply and set a notification to remind yourself about responding to it later.
 - [ ] Saved replies are only available to repository owners which can setup automated replies to issues and pull requests.
 
-### What are some actions you can do in regards to Repository Templates? (Choose two.)
+### 16. What are some actions you can do in regards to Repository Templates? (Choose two.)
 
 https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 
@@ -156,7 +156,7 @@ https://docs.github.com/ja/repositories/creating-and-managing-repositories/creat
 - [ ] Delete all repositories created from a repository template
 - [ ] Delete all repositories that do not use a repository template provided by your organization
 
-### Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?
+### 17. Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects
 
@@ -166,7 +166,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/viewing-in
 - [ ] Copilot Charts
       There is no such thing as Copilot Charts.
 
-### What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?
+### 18. What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?
 
 https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions
 
@@ -175,7 +175,7 @@ https://docs.github.com/ja/actions/learn-github-actions/understanding-github-act
 - [ ] GitHub Pipelines
 - [ ] GitHub Projects
 
-### Which of these is a common use case for GitHub Actions?
+### 19. Which of these is a common use case for GitHub Actions?
 
 https://docs.github.com/ja/actions/automating-builds-and-tests/about-continuous-integration
 
@@ -184,7 +184,7 @@ https://docs.github.com/ja/actions/automating-builds-and-tests/about-continuous-
 - [ ] Large data processing and analytics
 - [ ] Training machine learning models
 
-### GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support? (Choose two.)
+### 20. GitHub Action workflows are triggered by events. Which of these are valid events that GitHub Actions support? (Choose two.)
 
 https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
 
@@ -195,7 +195,7 @@ https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows
       This is not a valid event that could trigger a workflow. It's a feature of Dependabot.
 - [ ] A new member has been added to the repository
 
-### Where can you find publicly available GitHub Actions?
+### 21. Where can you find publicly available GitHub Actions?
 
 https://docs.github.com/ja/actions/creating-actions/publishing-actions-in-github-marketplace
 
@@ -204,7 +204,7 @@ https://docs.github.com/ja/actions/creating-actions/publishing-actions-in-github
 - [ ] GitHub private repositories
 - [ ] GitHub Actions Project Boards
 
-### Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
+### 22. Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
 
 https://docs.github.com/ja/copilot/quickstart#introduction
 
@@ -213,7 +213,7 @@ https://docs.github.com/ja/copilot/quickstart#introduction
 - [ ] GitHub Partner
 - [ ] GitHub Assistant
 
-### Is GitHub Copilot free to use?
+### 23. Is GitHub Copilot free to use?
 
 https://docs.github.com/ja/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business
 
@@ -223,7 +223,7 @@ https://docs.github.com/ja/copilot/overview-of-github-copilot/about-github-copil
 - [ ] Yes, but only for individuals working on public repositories
       There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
 
-### What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
+### 24. What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
 
 https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-github-copilot
 
@@ -232,7 +232,7 @@ https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-g
 - [ ] GitHub Copilot Individual is free and GitHub Copilot Business is a paid feature
 - [ ] GitHub Copilot Individual can only be used when working on public repositories and GitHub Copilot Business can be used when working on public and private repositories within an organization
 
-### How can you start using GitHub Copilot after activating the GitHub Copilot subscription?
+### 25. How can you start using GitHub Copilot after activating the GitHub Copilot subscription?
 
 https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot
 
@@ -241,7 +241,7 @@ https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-git
 - [ ] You need to setup a GitHub Action that will setup GitHub Copilot on your repository
 - [ ] You need to edit the repository settings and enable GitHub Copilot for the repository
 
-### What is a GitHub Codespace?
+### 26. What is a GitHub Codespace?
 
 https://docs.github.com/ja/codespaces/overview
 
@@ -250,7 +250,7 @@ https://docs.github.com/ja/codespaces/overview
 - [ ] GitHub Codespace is an AI-powered coding tool that auto-generates near flawless code
 - [ ] GitHub Codespace is an annual GitHub hosted event where developers can meet and discuss coding topics.
 
-### What GitHub feature allows the creation of preconfigured development environments where all necessary tools and dependencies to contribute to a repository are installed?
+### 27. What GitHub feature allows the creation of preconfigured development environments where all necessary tools and dependencies to contribute to a repository are installed?
 
 https://docs.github.com/ja/codespaces/overview#benefits-of-github-codespaces
 
@@ -259,7 +259,7 @@ https://docs.github.com/ja/codespaces/overview#benefits-of-github-codespaces
 - [ ] GitHub Copilot
 - [ ] GitHub DevEnv
 
-### What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)
+### 28. What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)
 
 https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor
 
@@ -270,7 +270,7 @@ https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor
 - [ ] GitHub Remote
 - [ ] GitHub Online
 
-### What are the different possible lifecycle phases for a GitHub Codespace?
+### 29. What are the different possible lifecycle phases for a GitHub Codespace?
 
 https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespace-lifecycle
 
@@ -279,14 +279,14 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [ ] Create, Stop, Delete
 - [ ] Create, Rebuild, Delete
 
-### If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?
+### 30. If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?
 
 https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace
 
 - [x] Yes, that's the default behavior when stopping and then starting a GitHub Codespace
 - [ ] No, these changes will be lost. You need to commit them before stopping the Codespace.
 
-### Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)
+### 31. Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)
 
 https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespace-lifecycle
 
@@ -298,7 +298,7 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [ ] If you close the browser tab in which your Codespace was running, the Codespace will automatically be stopped
       Closing the browser tab does not stop the Codespace and the processes continue running. If you only closed the tab, the Codespace will stop after reaching the inactivity timeout period
 
-### Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?
+### 32. Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?
 
 https://docs.github.com/ja/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace
 
@@ -306,7 +306,7 @@ https://docs.github.com/ja/codespaces/customizing-your-codespace/changing-the-ma
 - [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running
       GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use
 
-### How can you customize the environment that is run in GitHub Codespaces?
+### 33. How can you customize the environment that is run in GitHub Codespaces?
 
 https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
 
@@ -315,7 +315,7 @@ https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/add
 - [ ] By creating a `.github/codespaces.yml` configuration file
 - [ ] By creating custom machine images with the repository installed
 
-### What is a GitHub Codespace deep link?
+### 34. What is a GitHub Codespace deep link?
 
 https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces#configuring-more-options
 
@@ -324,7 +324,7 @@ https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/set
 - [ ] It's a link to the most recent GitHub Codespace that was created for the repository
 - [ ] It's a link to the most recent GitHub Codespace that you have used in any repository
 
-### Who should have 2 Factor Authentication enabled on GitHub?
+### 35. Who should have 2 Factor Authentication enabled on GitHub?
 
 https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
 
@@ -333,7 +333,7 @@ https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-
 - [ ] GitHub Organization owners
 - [ ] GitHub Enterprise Server users
 
-### What are Enterprise Managed Users?
+### 36. What are Enterprise Managed Users?
 
 https://docs.github.com/ja/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#about-enterprise-managed-users
 
@@ -342,7 +342,7 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/identity-and-access-man
 - [ ] It's a shared user account that can be used by multiple users in your Enterprise
 - [ ] It's an user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
 
-### What are the different permission levels for a repository owned by a personal account? (Choose two.)
+### 37. What are the different permission levels for a repository owned by a personal account? (Choose two.)
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/permission-levels-for-a-personal-account-repository
 
@@ -352,7 +352,7 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] security manager
 - [ ] project owner
 
-### Which of these is NOT a role in a GitHub Organization?
+### 38. Which of these is NOT a role in a GitHub Organization?
 
 https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
 
@@ -365,7 +365,7 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] GitHub App manager
 - [ ] Outside collaborator
 
-### Can you disable the issues tab on a repository?
+### 39. Can you disable the issues tab on a repository?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues
 
@@ -373,7 +373,7 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] No
       Features such as issues, wikis or projects can be disabled on a repository in the repository settings
 
-### Where can you disable repository features such as issues, wikis or projects on a repository that you own?
+### 40. Where can you disable repository features such as issues, wikis or projects on a repository that you own?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository
 
@@ -382,7 +382,7 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] These features cannot be disabled
 - [ ] In your account settings
 
-### What are the different repository visibility options?
+### 41. What are the different repository visibility options?
 
 https://docs.github.com/ja/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility
 
@@ -391,7 +391,7 @@ https://docs.github.com/ja/enterprise-cloud@latest/repositories/managing-your-re
 - [ ] Private and Public
 - [ ] Personal and Public
 
-### What is the purpose of a `CODEOWNERS` file?
+### 42. What is the purpose of a `CODEOWNERS` file?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
@@ -400,7 +400,7 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] The `CODEOWNERS` file includes information about the code quality and the maintainability of the code.
 - [ ] The `CODEOWNERS` file contains contact details to the repository owners.
 
-### How can you enforce status checks passing before merging a pull request to the `main` branch?
+### 43. How can you enforce status checks passing before merging a pull request to the `main` branch?
 
 https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#about-branch-protection-settings
 
@@ -409,7 +409,7 @@ https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-
 - [ ] By running tests locally prior to pushing to the remote repository
 - [ ] By making the repository private
 
-### Which of these actions will make sure that prior to any push to the `main` branch, the changes have been approved by at least two people? (Choose three.)
+### 44. Which of these actions will make sure that prior to any push to the `main` branch, the changes have been approved by at least two people? (Choose three.)
 
 https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging
 
@@ -421,7 +421,7 @@ https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-
 - [ ] Setup a CODEOWNERS file in the repository
 - [ ] Enforce status checks are passing before merging a pull request to the `main` branch
 
-### What can you find in the security tab of a repository?
+### 45. What can you find in the security tab of a repository?
 
 https://docs.github.com/ja/code-security/getting-started/securing-your-repository
 
@@ -430,7 +430,7 @@ https://docs.github.com/ja/code-security/getting-started/securing-your-repositor
 - [ ] A list of all best practices that GitHub recommends for securing your software
 - [ ] Contact information to the security team at GitHub
 
-### What is CodeQL?
+### 46. What is CodeQL?
 
 https://codeql.github.com/
 
@@ -439,7 +439,7 @@ https://codeql.github.com/
 - [ ] A text editor
 - [ ] A version control system
 
-### Which tool helps you keep the repository dependencies up to date?
+### 47. Which tool helps you keep the repository dependencies up to date?
 
 https://docs.github.com/ja/code-security/dependabot
 
@@ -448,7 +448,7 @@ https://docs.github.com/ja/code-security/dependabot
 - [ ] CodeQL
 - [ ] GitHub Actions
 
-### What are Repository Insights?
+### 48. What are Repository Insights?
 
 https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs
 
@@ -457,7 +457,7 @@ https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repos
 - [ ] It's a list of best practices to follow when administrating a repository.
 - [ ] It's a feature that allows you to see the repository's security overview.
 
-### Who are repository collaborators?
+### 49. Who are repository collaborators?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository
 
@@ -468,7 +468,7 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
       That's sponsors
 - [ ] Collaborators are people who have raised issues or pull requests on a repository.
 
-### How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?
+### 50. How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository
 
@@ -477,7 +477,7 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] It's not possible to work together on personal repositories. You can only do that for repositories owned by organizations.
 - [ ] Provide your friend your GitHub credentials
 
-### What are GitHub teams?
+### 51. What are GitHub teams?
 
 https://docs.github.com/ja/organizations/organizing-members-into-teams/about-teams
 
@@ -486,7 +486,7 @@ https://docs.github.com/ja/organizations/organizing-members-into-teams/about-tea
 - [ ] It's a way of managing access to personal GitHub repositories to many users at once.
       Personal repositories cannot be shared with teams, only with individual collaborators.
 
-### What is the role of an organization moderator?
+### 52. What is the role of an organization moderator?
 
 https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
 
@@ -498,7 +498,7 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] Moderators are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
       That's security managers
 
-### What is the role of an organization security manager?
+### 53. What is the role of an organization security manager?
 
 https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
 
@@ -510,7 +510,7 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] Security managers are organization members who can manage the billing settings for your organization, such as payment information.
       That's billing managers
 
-### Which of these definitions best describes open source software?
+### 54. Which of these definitions best describes open source software?
 
 https://opensource.com/resources/what-open-source
 
@@ -519,7 +519,7 @@ https://opensource.com/resources/what-open-source
 - [ ] It's free to use for any personal purposes as long as you don't make profit out of it.
 - [ ] It's software with source code that anyone can rely on.
 
-### What is the GitHub Sponsors program?
+### 55. What is the GitHub Sponsors program?
 
 https://docs.github.com/ja/sponsors/getting-started-with-github-sponsors/about-github-sponsors
 
@@ -528,7 +528,7 @@ https://docs.github.com/ja/sponsors/getting-started-with-github-sponsors/about-g
 - [ ] It's a program that helps people find a job in the tech industry
 - [ ] It's a program where highly skilled developers volunteer to help students learn how to use GitHub
 
-### On your personal GitHub dashboard you received a notification that user `octocat` has created a new repository `octocat/my-repo`. Why did you receive that notification?
+### 56. On your personal GitHub dashboard you received a notification that user `octocat` has created a new repository `octocat/my-repo`. Why did you receive that notification?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/about-your-personal-dashboard#staying-updated-with-activity-from-the-community
 
@@ -537,7 +537,7 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] Because you contributed to the `octocat/my-repo` repository
 - [ ] Because you starred the `octocat/my-repo` repository
 
-### What are the effects of you following a user on GitHub?
+### 57. What are the effects of you following a user on GitHub?
 
 https://docs.github.com/ja/get-started/quickstart/be-social#following-people
 
@@ -546,7 +546,7 @@ https://docs.github.com/ja/get-started/quickstart/be-social#following-people
 - [ ] You will get access to their private repositories once the follow request is accepted.
 - [ ] You can engage in private conversations with them using GitHub Chat.
 
-### What is the GitHub Marketplace?
+### 58. What is the GitHub Marketplace?
 
 https://docs.github.com/ja/apps/github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps
 
@@ -556,7 +556,7 @@ https://docs.github.com/ja/apps/github-marketplace/github-marketplace-overview/a
 - [ ] GitHub Marketplace is a place where you can sponsor open-source developers on a subscription basis.
       That is GitHub Sponsors
 
-### What is InnerSource?
+### 59. What is InnerSource?
 
 https://resources.github.com/innersource/what-is-innersource/
 
@@ -565,7 +565,7 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] InnerSource refers to the internal knowledge base of an organization about the project they are working on.
 - [ ] InnerSource is a tool that allows organizations to see what open source projects they are using in their code.
 
-### Which of these is a practice that encourages collaboration, visibility and sharing of code among different teams within an organization?
+### 60. Which of these is a practice that encourages collaboration, visibility and sharing of code among different teams within an organization?
 
 https://resources.github.com/innersource/what-is-innersource/
 
@@ -574,7 +574,7 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] Continuous Integration
 - [ ] Git Flow
 
-### What is a fork in GitHub?
+### 61. What is a fork in GitHub?
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
 
@@ -583,7 +583,7 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/workin
 - [ ] A fork is the state of a repository when it is not up to date with the remote repository.
 - [ ] A fork is a branch that is not up to date with the default branch of the repository.
 
-### Which of these can make a repository more discoverable? (Choose three.)
+### 62. Which of these can make a repository more discoverable? (Choose three.)
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository
 
@@ -594,7 +594,7 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] Covering the repository software with tests
 - [ ] Using a wide range of GitHub Apps and GitHub Actions
 
-### How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?
+### 63. How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?
 
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
 
@@ -603,7 +603,7 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Set up GitHub Projects
 - [ ] Have an example issue in the repository that is easy to copy and is never closed
 
-### What is a pull request template?
+### 64. What is a pull request template?
 
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository
 
@@ -612,7 +612,7 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Pull request template is a pull request that is chosen by the repository owner for reference when creating new pull requests.
 - [ ] Pull request template is an example of how code changes should look like in a pull request in a given repository.
 
-### Which of these statements best describes a version control system?
+### 65. Which of these statements best describes a version control system?
 
 https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git
 
@@ -621,7 +621,7 @@ https://docs.github.com/ja/get-started/using-git/about-git#about-version-control
 - [ ] It's a system that allows you to create a local copy of a project's source code.
 - [ ] It's a system that allows tracking of what people install on their computers.
 
-### What is the meaning of the word `distributed` in distributed version control system?
+### 66. What is the meaning of the word `distributed` in distributed version control system?
 
 https://about.gitlab.com/topics/version-control/benefits-distributed-version-control-system/
 
@@ -630,7 +630,7 @@ https://about.gitlab.com/topics/version-control/benefits-distributed-version-con
 - [ ] The term refers to the peer-to-peer sharing of code files among users.
 - [ ] It means that the codebase is distributed across multiple servers for load balancing.
 
-### Which of these best describes git?
+### 67. Which of these best describes git?
 
 https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git
 
@@ -639,7 +639,7 @@ https://docs.github.com/ja/get-started/using-git/about-git#about-version-control
 - [ ] Git is the product of GitHub that allows for version control.
 - [ ] Git is a file sharing system.
 
-### Which of these statements best describes what GitHub is?
+### 68. Which of these statements best describes what GitHub is?
 
 https://docs.github.com/ja/get-started/using-git/about-git#how-github-works
 
@@ -648,7 +648,7 @@ https://docs.github.com/ja/get-started/using-git/about-git#how-github-works
 - [ ] GitHub is a file sharing platform with features that make collaboration on projects easy using centralized version control.
 - [ ] GitHub is a modern CI/CD platform with features that help drive rapid product development.
 
-### What is the relation between Git and GitHub?
+### 69. What is the relation between Git and GitHub?
 
 https://docs.github.com/ja/get-started/using-git/about-git
 
@@ -657,7 +657,7 @@ https://docs.github.com/ja/get-started/using-git/about-git
 - [ ] Git is a file sharing system and GitHub is a platform that uses Git as its core technology.
 - [ ] GitHub is a file sharing system and Git is a platform that uses GitHub as its core technology.
 
-### What is a repository in GitHub?
+### 70. What is a repository in GitHub?
 
 https://docs.github.com/ja/repositories/creating-and-managing-repositories/about-repositories
 
@@ -666,7 +666,7 @@ https://docs.github.com/ja/repositories/creating-and-managing-repositories/about
 - [ ] It's a visual code editor that allows you to edit your source code in the browser.
 - [ ] A repository in GitHub is a chat room where developers can discuss code-related issues.
 
-### What is a git commit?
+### 71. What is a git commit?
 
 https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits
 
@@ -675,7 +675,7 @@ https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/crea
 - [ ] A commit refers to the code changes made to a repository in a pull request.
 - [ ] A commit is human readable text that describes the changes made to a repository.
 
-### Which git feature allows developers to concurrently work on the same codebase without causing conflicts with each other?
+### 72. Which git feature allows developers to concurrently work on the same codebase without causing conflicts with each other?
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches
 
@@ -684,7 +684,7 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] remote
 - [ ] working tree
 
-### What is the GitHub Flow?
+### 73. What is the GitHub Flow?
 
 https://docs.github.com/ja/get-started/quickstart/github-flow
 
@@ -693,7 +693,7 @@ https://docs.github.com/ja/get-started/quickstart/github-flow
 - [ ] It's a practice where every time a commit is pushed to the main branch, a set of CI/CD pipelines are triggered to run tests and validate the code changes.
 - [ ] It refers to a one branch workflow where developers work on their features on the `master` branch, and then get their feature code reviewed, tested, and committed.
 
-### What is a GitHub Pro plan?
+### 74. What is a GitHub Pro plan?
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#github-pro
 
@@ -702,14 +702,14 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#githu
 - [ ] GitHub Pro is a certification path at the end of which you become a GitHub Pro.
 - [ ] GitHub Pro is a paid plan for enterprises to self-host GitHub on their own servers.
 
-### Is there a free version of GitHub for organizations?
+### 75. Is there a free version of GitHub for organizations?
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#github-free-for-organizations
 
 - [x] Yes
 - [ ] No
 
-### What are the different GitHub pricing plans for organization accounts? (Select three.)
+### 76. What are the different GitHub pricing plans for organization accounts? (Select three.)
 
 https://github.com/pricing
 
@@ -721,7 +721,7 @@ https://github.com/pricing
 - [ ] Business
 - [ ] Advanced
 
-### Which GitHub pricing plan offers self-hosted deployment of GitHub?
+### 77. Which GitHub pricing plan offers self-hosted deployment of GitHub?
 
 https://docs.github.com/ja/<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a0f041e0f181a1803190f47190f181c0f182a594452">[email&#160;protected]</a>/admin/overview/about-github-enterprise-server
 
@@ -732,7 +732,7 @@ https://docs.github.com/ja/<a href="/cdn-cgi/l/email-protection" class="__cf_ema
 - [ ] All of them
 - [ ] None of them
 
-### Under which GitHub pricing plan can you create an unlimited number of public repositories?
+### 78. Under which GitHub pricing plan can you create an unlimited number of public repositories?
 
 https://github.com/pricing
 
@@ -743,7 +743,7 @@ https://github.com/pricing
 - [ ] Team and Enterprise
 - [ ] Free
 
-### What are the different deployment options for GitHub Enterprise? (Select two.)
+### 79. What are the different deployment options for GitHub Enterprise? (Select two.)
 
 https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
 
@@ -754,7 +754,7 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-f
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
 
-### Which of these statements about GitHub Enterprise deployment options are true? (Select two.)
+### 80. Which of these statements about GitHub Enterprise deployment options are true? (Select two.)
 
 https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
 
@@ -764,7 +764,7 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-f
 - [ ] GitHub Enterprise Cloud is a cloud hosted platform that runs on the company's cloud infrastructure
 - [ ] GitHub Enterprise Cloud is a self-hosted platform that runs on the company's infrastructure
 
-### What are pinned repositories on GitHub?
+### 81. What are pinned repositories on GitHub?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile
 
@@ -773,7 +773,7 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-gith
 - [ ] Pinned repositories are repositories that have been temporarily or indefinitely suspended by GitHub.
 - [ ] Pinned repositories are repositories that have been marked as favorites by GitHub users.
 
-### Which of these files can customize your GitHub profile?
+### 82. Which of these files can customize your GitHub profile?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme
 
@@ -781,7 +781,7 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-gith
 - [ ] a profile `CONTRIBUTING.md` file
 - [ ] profile is not customizable through files but through the account settings
 
-### What language is used to write comments on GitHub issues and pull requests?
+### 83. What language is used to write comments on GitHub issues and pull requests?
 
 https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
@@ -790,7 +790,7 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 - [ ] AsciiDoc
 - [ ] reStructuredText
 
-### What are GitHub's slash commands?
+### 84. What are GitHub's slash commands?
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-slash-commands
 
@@ -799,7 +799,7 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-slash-com
 - [ ] It's an another name for the GitHub CLI.
 - [ ] It's a way to quickly fix code formatting issues in your pull request's code changes.
 
-### How does GitHub help people that want to write proper issue and pull request comments but don't know Markdown syntax?
+### 85. How does GitHub help people that want to write proper issue and pull request comments but don't know Markdown syntax?
 
 https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github#text-formatting-toolbar
 
@@ -808,7 +808,7 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 - [ ] GitHub automatically converts HTML to Markdown in issue and pull request comments.
 - [ ] GitHub pull requests and issues don't support Markdown.
 
-### What is GitHub Desktop?
+### 86. What is GitHub Desktop?
 
 https://docs.github.com/ja/desktop
 
@@ -817,7 +817,7 @@ https://docs.github.com/ja/desktop
 - [ ] It's a GitHub pricing plan for personal accounts that offers additional features in addition to the free plan.
 - [ ] It's an online editor that allows you to work on your repository in the browser.
 
-### What is GitHub Mobile?
+### 87. What is GitHub Mobile?
 
 https://docs.github.com/ja/get-started/using-github/github-mobile
 
@@ -826,7 +826,7 @@ https://docs.github.com/ja/get-started/using-github/github-mobile
 - [ ] It's a GitHub data transfer service for petabytes of data where a GitHub owned car will drive to your location and transfer the data to your local network.
 - [ ] It's a GitHub telemetry service that allows you to track your users' activity on your website or mobile app.
 
-### How can you link a pull request to an issue? (Choose two.)
+### 88. How can you link a pull request to an issue? (Choose two.)
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue
 
@@ -836,7 +836,7 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-
 - [ ] By including the issue number in the code changes.
 - [ ] By including the issue number in the commit message.
 
-### What improvement do issue forms bring over issue templates?
+### 89. What improvement do issue forms bring over issue templates?
 
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 
@@ -845,7 +845,7 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Issue form is a feature that automatically closes issues after a certain period of time, providing a more efficient issue management compared to issue templates.
 - [ ] Issue form is a tool for creating issues that only contain form fields for title and description, simplifying the process but not necessarily improving the information quality compared to issue templates.
 
-### Which of these is a repository feature that is used as a community forum to have conversations, ask questions, post announcements and share ideas?
+### 90. Which of these is a repository feature that is used as a community forum to have conversations, ask questions, post announcements and share ideas?
 
 https://docs.github.com/ja/discussions/quickstart#introduction
 
@@ -854,7 +854,7 @@ https://docs.github.com/ja/discussions/quickstart#introduction
 - [ ] Gists
 - [ ] Pull requests
 
-### What is the effect of adding a line `Closes #11` to the pull request's description?
+### 91. What is the effect of adding a line `Closes #11` to the pull request's description?
 
 https://docs.github.com/ja/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests#linking-a-pull-request-to-an-issue
 
@@ -864,7 +864,7 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-advanced-f
 - [ ] That pull request will be automatically merged once the issue #11 is closed.
 - [ ] That pull request will be automatically merged on the 11th of that month.
 
-### In GitHub a proposal to merge a set of changes from one branch into another branch is called a:
+### 92. In GitHub a proposal to merge a set of changes from one branch into another branch is called a:
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
 
@@ -874,14 +874,14 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] Commit
 - [ ] A merge branch
 
-### You want to merge changes from branch `feature-a` into `main` and you are creating a pull request. Which branch should be the `base` branch and which branch should be the `compare` branch?
+### 93. You want to merge changes from branch `feature-a` into `main` and you are creating a pull request. Which branch should be the `base` branch and which branch should be the `compare` branch?
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-comparing-branches-in-pull-requests
 
 - [x] `main` is the base branch and `feature-a` is the compare branch.
 - [ ] `feature-a` is the base branch and `main` is the compare branch.
 
-### What are draft pull requests?
+### 94. What are draft pull requests?
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests
 
@@ -890,7 +890,7 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] Draft pull requests are pull requests that have already been reviewed but not approved.
 - [ ] Draft pull requests are templates for creating new pull requests.
 
-### What are the possible statuses for a pull request review? (Choose three.)
+### 95. What are the possible statuses for a pull request review? (Choose three.)
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews#about-pull-request-reviews
 
@@ -901,14 +901,14 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/review
 - [ ] Deny
 - [ ] Applaud
 
-### Which of these statements about the differences of issues and discussions is true?
+### 96. Which of these statements about the differences of issues and discussions is true?
 
 https://docs.github.com/ja/discussions/quickstart
 
 - [x] GitHub Discussions are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Issues.
 - [ ] GitHub Issues are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Discussions.
 
-### Which of the GitHub features best serves as a simple way to share small code snippets with others?
+### 97. Which of the GitHub features best serves as a simple way to share small code snippets with others?
 
 https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
 
@@ -917,7 +917,7 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 - [ ] Issues
 - [ ] Projects
 
-### What are GitHub Wikis?
+### 98. What are GitHub Wikis?
 
 https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis
 
@@ -927,7 +927,7 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
       That's Gists
 - [ ] Wikis is a place where you hold the project's `README.md` file.
 
-### What are the two available options when you no longer need to use a Project?
+### 99. What are the two available options when you no longer need to use a Project?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects
 
@@ -936,7 +936,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [ ] Archive and close
 - [ ] Deactivate and archive
 
-### Can you change a gist from public to secret after creating it?
+### 100. Can you change a gist from public to secret after creating it?
 
 https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
 
@@ -944,7 +944,7 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 - [x] No
       After creating a gist, you cannot convert it from public to secret.
 
-### What happens when you choose to close a Project?
+### 101. What happens when you choose to close a Project?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects
 
@@ -953,7 +953,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [ ] Associated values and insights data are deleted
 - [ ] The Project is moved to a separate folder
 
-### If there are multiple Readme.md files in a GitHub repository, what is the priority order to show them?
+### 102. If there are multiple Readme.md files in a GitHub repository, what is the priority order to show them?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
 
@@ -962,7 +962,7 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [x] `.github` directory, Root directory, `.docs` directory
 - [ ] `.docs` directory, `.github` directory, Root directory
 
-### Which of the following Git commands allow you to create a new branch and start working on it in one line? (Select two.)
+### 103. Which of the following Git commands allow you to create a new branch and start working on it in one line? (Select two.)
 
 https://git-scm.com/docs/git-switch
 
@@ -973,7 +973,7 @@ https://git-scm.com/docs/git-switch
 - [ ] git switch -m `<new_branch_name>`
 - [ ] git checkout -m `<new_branch_name>`
 
-### If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?
+### 104. If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-discussion
 
@@ -981,7 +981,7 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-iss
 - [ ] Yes
       When you "convert" a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
 
-### Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
+### 105. Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
 
 https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/using-pulse-to-view-a-summary-of-repository-activity
 
@@ -992,7 +992,7 @@ https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repos
 - [x] List of unresolved conversations
 - [ ] Amount of forks of the repo
 
-### What are the different levels of GitHub organizational hierarchy? (Choose three.)
+### 106. What are the different levels of GitHub organizational hierarchy? (Choose three.)
 
 https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
 
@@ -1004,7 +1004,7 @@ https://learn.microsoft.com/en-us/training/modules/github-introduction-administr
       GitHub Pro is a type of account and not an organizational hierarchy on GitHub.
 - [x] Enterprise level
 
-### Who can setup billing or assign billing managers for an organization? (Select three.)
+### 107. Who can setup billing or assign billing managers for an organization? (Select three.)
 
 Official GitHub documentation: https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization, Microsoft Learn study guide: https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
 
@@ -1015,7 +1015,7 @@ Official GitHub documentation: https://docs.github.com/ja/organizations/managing
 - [x] Owner at the organization level
 - [x] Owner at the enterprise level
 
-### What is one of the main benefits for using a Personal Access Token (PAT) instead of a standard username and password for GitHub authentication?
+### 108. What is one of the main benefits for using a Personal Access Token (PAT) instead of a standard username and password for GitHub authentication?
 
 https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works
 
@@ -1027,7 +1027,7 @@ https://learn.microsoft.com/en-us/training/modules/github-introduction-administr
 - [ ] PAT lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access.
       This is a description of LDAP's benefits for GitHub, not PAT.
 
-### What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)
+### 109. What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)
 
 https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication
 
@@ -1040,7 +1040,7 @@ https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-
 - [x] GitHub mobile
 - [x] Time-based one-time password (TOTP)
 
-### What are the different GitHub pricing plans for personal accounts? (Select two)
+### 110. What are the different GitHub pricing plans for personal accounts? (Select two)
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 
@@ -1052,7 +1052,7 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 - [ ] Business
 - [ ] Advanced
 
-### What is/are the common GitHub pricing plan(s) for both personal and organization accounts?
+### 111. What is/are the common GitHub pricing plan(s) for both personal and organization accounts?
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 
@@ -1064,7 +1064,7 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 - [ ] Business
 - [ ] Advanced
 
-### What syntax is used in GitHub Markdown to create a task list?
+### 112. What syntax is used in GitHub Markdown to create a task list?
 
 https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
 
@@ -1073,7 +1073,7 @@ https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-
 - [ ] `// TODO: and // DONE:`
 - [ ] `<taskand <done>`
 
-### Which Markdown element is not correctly paired with its syntax?
+### 113. Which Markdown element is not correctly paired with its syntax?
 
 https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
 
@@ -1082,7 +1082,7 @@ https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-
 - [x] Inline code - `'''code'''`
 - [ ] Hyperlink - `[title](https://)`
 
-### What feature is unique to GitHub Desktop compared to github.com?
+### 114. What feature is unique to GitHub Desktop compared to github.com?
 
 GitHub Desktop provides a graphical interface for visualizing branch histories, which is unique compared to the website
 
@@ -1094,7 +1094,7 @@ GitHub Desktop provides a graphical interface for visualizing branch histories, 
 - [ ] View repository insights
 - [x] Visualize branch histories in a graphical interface
 
-### Which of the following actions cannot be performed directly from GitHub Desktop?
+### 115. Which of the following actions cannot be performed directly from GitHub Desktop?
 
 Managing GitHub Actions is not a feature available in GitHub Desktop and must be done via github.com or CI/CD integration
 
@@ -1105,7 +1105,7 @@ Managing GitHub Actions is not a feature available in GitHub Desktop and must be
 - [ ] Switching between branches
 - [ ] Committing changes
 
-### What are some actions you can do in regards to Project Templates in your organization? (Choose three.)
+### 116. What are some actions you can do in regards to Project Templates in your organization? (Choose three.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-your-project/managing-project-templates-in-your-organization
 
@@ -1116,7 +1116,7 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [x] With admin or write permissions, copy an existing project as a template
 - [ ] Publish your templates in GitHub Marketplace for anyone to use
 
-### Which of the following is true about GitHub wikis?
+### 117. Which of the following is true about GitHub wikis?
 
 https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis
 
@@ -1125,7 +1125,7 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
 - [x] Wikis in public repositories are accessible to anyone, while those in private repositories are only accessible to repository collaborators.
 - [ ] Markdown cannot be used to add rendered math expressions, diagrams, maps, and 3D models to a wiki.
 
-### Which of the following roles are available for a repository at the organization level on GitHub? (Choose five.)
+### 118. Which of the following roles are available for a repository at the organization level on GitHub? (Choose five.)
 
 https://docs.github.com/ja/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations
 
@@ -1136,7 +1136,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Write
 - [x] Maintain
 
-### What is the minimum permission a user must have to directly push commits to a repository owned by an organization?
+### 119. What is the minimum permission a user must have to directly push commits to a repository owned by an organization?
 
 **More info**: [Repository roles for organizations](https://docs.github.com/ja/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
 
@@ -1146,7 +1146,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Change repository settings
 - [ ] Create new repositories
 
-### Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?
+### 120. Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?
 
 **More info**: [Roles in an organization](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
@@ -1155,7 +1155,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] They can turn off code reviews for repositories in the organization.
 - [ ] They can remove the `Require status checks to pass before merging` branch protection rule.
 
-### Which feature provides pre-built charts or visualizations for repository activity and health?
+### 121. Which feature provides pre-built charts or visualizations for repository activity and health?
 
 **More info**: [About repository insights](https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs)
 
@@ -1164,7 +1164,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Projects
 - [ ] GitHub Discussions
 
-### Which of these features does GitHub Copilot for Business offer that GitHub Copilot for Individuals does not?
+### 122. Which of these features does GitHub Copilot for Business offer that GitHub Copilot for Individuals does not?
 
 **More info**: [GitHub Copilot for Business](https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-github-copilot)
 
@@ -1173,7 +1173,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] 24/7 phone support from GitHub Copilot team
 - [ ] Local hosting of the AI model behind GitHub Copilot
 
-### What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?
+### 123. What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?
 
 **More info**: [Adding outside collaborators to repositories in your organization](https://docs.github.com/ja/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization)
 
@@ -1182,7 +1182,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Members can never contribute to private repositories, while outside collaborators can.
 - [ ] Outside collaborators automatically become team maintainers in the organization.
 
-### Which of the following actions can you perform on a GitHub Discussion? (Choose three.)
+### 124. Which of the following actions can you perform on a GitHub Discussion? (Choose three.)
 
 **More info**: [About discussions](https://docs.github.com/ja/discussions/quickstart#introduction)
 
@@ -1192,7 +1192,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Convert it to an issue
 - [ ] Merge it into an existing pull request
 
-### Which search query finds all open issues labeled `test` that mention 'fix' in their body text?
+### 125. Which search query finds all open issues labeled `test` that mention 'fix' in their body text?
 
 **More info**: [Searching issues and pull requests](https://docs.github.com/ja/search-github/searching-on-github/searching-issues-and-pull-requests)
 
@@ -1201,7 +1201,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] `is:issue is:open label:test "fix"`
 - [ ] `type:issue label:test is:open body:"fix"`
 
-### Which of the following are valid states for a pull request on GitHub? (Choose four.)
+### 126. Which of the following are valid states for a pull request on GitHub? (Choose four.)
 
 **More info**: [About pull requests](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
@@ -1212,7 +1212,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Pending
 - [ ] Abandoned
 
-### Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?
+### 127. Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?
 
 **More info**: [About projects](https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#differences-from-projects-classic)
 
@@ -1221,7 +1221,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Projects Classic supports code scanning and secret scanning, while the new GitHub Projects do not.
 - [ ] The new GitHub Projects only allow you to manage open issues without supporting pull requests.
 
-### Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file? (Choose three.)
+### 128. Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file? (Choose three.)
 
 **More info**: [Introduction to dev containers](https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 
@@ -1232,7 +1232,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Repository branch protection rules
 - [ ] Organization-level policies
 
-### Which roles in an organization can view and manage security alerts for private repositories?
+### 129. Which roles in an organization can view and manage security alerts for private repositories?
 
 **More info**: [Roles in an organization](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
@@ -1244,7 +1244,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
        **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
 - [ ] Billing managers
 
-### Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?
+### 130. Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?
 
 **More info**: [Types of GitHub accounts](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
 
@@ -1255,7 +1255,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] An organization account can only be created if you have a GitHub Enterprise plan.  
        Organizations are available on Free, Team, or Enterprise plans.
 
-### Which statement best describes the difference between cloning a repository and forking a repository?
+### 131. Which statement best describes the difference between cloning a repository and forking a repository?
 
 **More info**: [About forks](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
 
@@ -1266,7 +1266,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Cloning always transfers repository ownership, while forking does not.
 - [ ] Only private repositories can be forked, whereas only public repositories can be cloned.
 
-### Which of these statements about pinned items on your GitHub profile is true?
+### 132. Which of these statements about pinned items on your GitHub profile is true?
 
 **More info**: [Pinning items to your profile](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile)
 
@@ -1276,7 +1276,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] You can only pin public repositories, not private ones.
 - [ ] Pinning an item deletes it from your repository list.
 
-### Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention 'docker' in their name?
+### 133. Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention 'docker' in their name?
 
 **More info**: [Searching repositories](https://docs.github.com/ja/search-github/searching-on-github/searching-for-repositories)
 
@@ -1288,7 +1288,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] `topic:docker stars:>100 in:readme`  
        This searches within topics or readmes, not the repository name.
 
-### Which of the following best describes GitHub secret scanning?
+### 134. Which of the following best describes GitHub secret scanning?
 
 **More info**: [About secret scanning](https://docs.github.com/ja/code-security/secret-scanning/about-secret-scanning)
 
@@ -1300,7 +1300,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] A feature that searches repositories for known secret formats to prevent accidental exposure of sensitive data.  
        **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
 
-### Which of these statements about GitHub Pages is correct?
+### 135. Which of these statements about GitHub Pages is correct?
 
 **More info**: [About GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages)
 
