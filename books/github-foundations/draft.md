@@ -104,8 +104,6 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/mana
 - [ ] Assigning labels to repository contributors to indicate their role and permissions in the project
       You can't assign labels to contributors
 
----------------------↑ まで完了------------------------------
-
 ### 12. Why would a repository owner want to use milestones? (Choose two.)
 
 https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/about-milestones
@@ -118,6 +116,8 @@ https://docs.github.com/ja/issues/using-labels-and-milestones-to-track-work/abou
 - [ ] To track the repository dependencies
       That's what Dependency graph and Dependabot are for
 - [ ] To list the repository contributors
+
+---------------------↑ まで完了------------------------------
 
 ### 13. How can you assign a person to an issue or pull request?
 
