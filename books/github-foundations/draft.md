@@ -419,8 +419,6 @@ https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-
 - [ ] Setup a CODEOWNERS file in the repository
 - [ ] Enforce status checks are passing before merging a pull request to the `main` branch
 
----------------------↑ まで完了------------------------------
-
 ### 45. What can you find in the security tab of a repository?
 
 https://docs.github.com/ja/code-security/getting-started/securing-your-repository
@@ -429,6 +427,8 @@ https://docs.github.com/ja/code-security/getting-started/securing-your-repositor
 - [ ] A list of all the GitHub Issues that have been opened in the repository for security reasons
 - [ ] A list of all best practices that GitHub recommends for securing your software
 - [ ] Contact information to the security team at GitHub
+
+---------------------↑ まで完了------------------------------
 
 ### 46. What is CodeQL?
 
