@@ -428,8 +428,6 @@ https://docs.github.com/ja/code-security/getting-started/securing-your-repositor
 - [ ] A list of all best practices that GitHub recommends for securing your software
 - [ ] Contact information to the security team at GitHub
 
----------------------↑ まで完了------------------------------
-
 ### 46. What is CodeQL?
 
 https://codeql.github.com/
@@ -438,6 +436,8 @@ https://codeql.github.com/
 - [ ] A programming language
 - [ ] A text editor
 - [ ] A version control system
+
+---------------------↑ まで完了------------------------------
 
 ### 47. Which tool helps you keep the repository dependencies up to date?
 
