@@ -154,8 +154,6 @@ https://docs.github.com/ja/repositories/creating-and-managing-repositories/creat
 - [ ] Delete all repositories created from a repository template
 - [ ] Delete all repositories that do not use a repository template provided by your organization
 
----------------------↑ まで完了------------------------------
-
 ### 17. Which feature in GitHub Projects enables you to effortlessly generate graphs and charts for visualizing the current status and historical progression of your project?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects
@@ -165,6 +163,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/viewing-in
 - [ ] Milestones
 - [ ] Copilot Charts
       There is no such thing as Copilot Charts.
+
+---------------------↑ まで完了------------------------------
 
 ### 18. What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?
 
