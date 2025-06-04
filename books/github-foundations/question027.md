@@ -6,10 +6,10 @@ title: 'GitHub Codespaces とは'
 
 ### 選択肢
 
-- [x] GitHub Codespaces
-- [ ] GitHub Docker
-- [ ] GitHub Copilot
-- [ ] GitHub DevEnv
+- GitHub Codespaces
+- GitHub Docker
+- GitHub Copilot
+- GitHub DevEnv
 
 ### 回答欄
 
