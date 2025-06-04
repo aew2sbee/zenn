@@ -284,8 +284,6 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [x] Yes, that's the default behavior when stopping and then starting a GitHub Codespace
 - [ ] No, these changes will be lost. You need to commit them before stopping the Codespace.
 
----------------------↑ まで完了------------------------------
-
 ### 31. Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)
 
 https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespace-lifecycle
@@ -297,6 +295,8 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [ ] If you create another Codespace on a branch which already had a Codespace running on it, the original Codespace will be deleted
 - [ ] If you close the browser tab in which your Codespace was running, the Codespace will automatically be stopped
       Closing the browser tab does not stop the Codespace and the processes continue running. If you only closed the tab, the Codespace will stop after reaching the inactivity timeout period
+
+---------------------↑ まで完了------------------------------
 
 ### 32. Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?
 
