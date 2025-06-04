@@ -164,8 +164,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/viewing-in
 - [ ] Copilot Charts
       There is no such thing as Copilot Charts.
 
----------------------↑ まで完了------------------------------
-
 ### 18. What is the name of GitHub's continuous integration and continuous delivery (CI/CD) platform?
 
 https://docs.github.com/ja/actions/learn-github-actions/understanding-github-actions
@@ -174,6 +172,8 @@ https://docs.github.com/ja/actions/learn-github-actions/understanding-github-act
 - [ ] GitHub Workflows
 - [ ] GitHub Pipelines
 - [ ] GitHub Projects
+
+---------------------↑ まで完了------------------------------
 
 ### 19. Which of these is a common use case for GitHub Actions?
 
