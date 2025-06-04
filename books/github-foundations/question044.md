@@ -1,0 +1,27 @@
+---
+title: 'マージ前に Pull Request レビュー必須'
+---
+
+## Q44: main ブランチにプッシュする前に、その変更が少なくとも 2 人の承認を得ていることを確認するためのアクションはどれでしょうか？
+
+### 選択肢
+
+- ブランチ保護ルールを作成する
+- GitHub アクションを使う
+- リモートリポジトリにプッシュする前にローカルでテストを実行する
+- リポジトリを非公開にする
+
+### 回答欄
+
+:::details 回答を見る
+[公式ドキュメント](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging)
+
+- [x] `main`ブランチのブランチ保護ルールを作成する
+- [x] ブランチ保護ルールで、マージする前にプルリクエストを要求する
+- [x] ブランチ保護ルールで、プルリクエストをマージする前に少なくとも 2 つの承認を必要とする
+- [ ] `main` ブランチのデプロイメント保護ルールを作成する
+- [ ] デプロイメント保護ルールで、プルリクエストをマージする前に少なくとも 2 つの承認を必要とする
+- [ ] リポジトリに CODEOWNERS ファイルを設定する
+- [ ] `main` ブランチにプルリクエストをマージする前にステータスチェックを行う
+
+:::

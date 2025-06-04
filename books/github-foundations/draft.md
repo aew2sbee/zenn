@@ -407,8 +407,6 @@ https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-
 - [ ] By running tests locally prior to pushing to the remote repository
 - [ ] By making the repository private
 
----------------------↑ まで完了------------------------------
-
 ### 44. Which of these actions will make sure that prior to any push to the `main` branch, the changes have been approved by at least two people? (Choose three.)
 
 https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging
@@ -420,6 +418,8 @@ https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-
 - [ ] On the deployment protection rule, require at least 2 approvals before merging a pull request
 - [ ] Setup a CODEOWNERS file in the repository
 - [ ] Enforce status checks are passing before merging a pull request to the `main` branch
+
+---------------------↑ まで完了------------------------------
 
 ### 45. What can you find in the security tab of a repository?
 
