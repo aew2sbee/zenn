@@ -2,7 +2,7 @@
 title: 'GitHub Marketplaceでのアクションの公開'
 ---
 
-## Q21: GitHub Actions の公開されているものはどこで見つけられますか？
+## Q21: 公開されているGitHub Actionsはどこにありますか？
 
 ### 選択肢
 

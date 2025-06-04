@@ -193,8 +193,6 @@ https://docs.github.com/ja/actions/using-workflows/events-that-trigger-workflows
       This is not a valid event that could trigger a workflow. It's a feature of Dependabot.
 - [ ] A new member has been added to the repository
 
----------------------↑ まで完了------------------------------
-
 ### 21. Where can you find publicly available GitHub Actions?
 
 https://docs.github.com/ja/actions/creating-actions/publishing-actions-in-github-marketplace
@@ -203,6 +201,8 @@ https://docs.github.com/ja/actions/creating-actions/publishing-actions-in-github
 - [ ] GitHub Public Action Storage
 - [ ] GitHub private repositories
 - [ ] GitHub Actions Project Boards
+
+---------------------↑ まで完了------------------------------
 
 ### 22. Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
 
