@@ -340,8 +340,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/identity-and-access-man
 - [ ] It's a shared user account that can be used by multiple users in your Enterprise
 - [ ] It's an user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
 
----------------------↑ まで完了------------------------------
-
 ### 37. What are the different permission levels for a repository owned by a personal account? (Choose two.)
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/permission-levels-for-a-personal-account-repository
@@ -351,6 +349,8 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] billing manager
 - [ ] security manager
 - [ ] project owner
+
+---------------------↑ まで完了------------------------------
 
 ### 38. Which of these is NOT a role in a GitHub Organization?
 
