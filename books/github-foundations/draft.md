@@ -363,8 +363,6 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] GitHub App manager
 - [ ] Outside collaborator
 
----------------------↑ まで完了------------------------------
-
 ### 39. Can you disable the issues tab on a repository?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues
@@ -372,6 +370,8 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [x] Yes
 - [ ] No
       Features such as issues, wikis or projects can be disabled on a repository in the repository settings
+
+---------------------↑ まで完了------------------------------
 
 ### 40. Where can you disable repository features such as issues, wikis or projects on a repository that you own?
 
