@@ -455,8 +455,6 @@ https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repos
 - [ ] It's a list of best practices to follow when administrating a repository.
 - [ ] It's a feature that allows you to see the repository's security overview.
 
----------------------↑ まで完了------------------------------
-
 ### 49. Who are repository collaborators?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository
@@ -467,6 +465,8 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] Collaborators are people who have funded a repository.
       That's sponsors
 - [ ] Collaborators are people who have raised issues or pull requests on a repository.
+
+---------------------↑ まで完了------------------------------
 
 ### 50. How can you work together with a friend of yours on a repository that you have created on your personal GitHub account?
 
