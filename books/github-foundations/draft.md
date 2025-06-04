@@ -268,8 +268,6 @@ https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor
 - [ ] GitHub Remote
 - [ ] GitHub Online
 
----------------------↑ まで完了------------------------------
-
 ### 29. What are the different possible lifecycle phases for a GitHub Codespace?
 
 https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespace-lifecycle
@@ -278,6 +276,8 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [ ] Create, Delete
 - [ ] Create, Stop, Delete
 - [ ] Create, Rebuild, Delete
+
+---------------------↑ まで完了------------------------------
 
 ### 30. If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?
 

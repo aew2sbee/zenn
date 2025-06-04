@@ -2,7 +2,7 @@
 title: 'codespace ライフサイクルについて'
 ---
 
-## Q29: GitHub Codespace の可能なライフサイクルフェーズにはどのようなものがありますか？
+## Q29: GitHub Codespace のライフサイクルにはどのような段階がありますか？
 
 ### 選択肢
 
