@@ -211,8 +211,6 @@ https://docs.github.com/ja/copilot/quickstart#introduction
 - [ ] GitHub Partner
 - [ ] GitHub Assistant
 
----------------------↑ まで完了------------------------------
-
 ### 23. Is GitHub Copilot free to use?
 
 https://docs.github.com/ja/copilot/overview-of-github-copilot/about-github-copilot-individual#understanding-the-differences-between-copilot-individual-and-copilot-business
@@ -222,6 +220,8 @@ https://docs.github.com/ja/copilot/overview-of-github-copilot/about-github-copil
 - [x] Yes, if you are a student, teacher, or maintainer of a popular open source project
 - [ ] Yes, but only for individuals working on public repositories
       There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
+
+---------------------↑ まで完了------------------------------
 
 ### 24. What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
 
