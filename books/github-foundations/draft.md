@@ -350,8 +350,6 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] security manager
 - [ ] project owner
 
----------------------↑ まで完了------------------------------
-
 ### 38. Which of these is NOT a role in a GitHub Organization?
 
 https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
@@ -364,6 +362,8 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] Security manager
 - [ ] GitHub App manager
 - [ ] Outside collaborator
+
+---------------------↑ まで完了------------------------------
 
 ### 39. Can you disable the issues tab on a repository?
 
