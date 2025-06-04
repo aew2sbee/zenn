@@ -230,8 +230,6 @@ https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-g
 - [ ] GitHub Copilot Individual is free and GitHub Copilot Business is a paid feature
 - [ ] GitHub Copilot Individual can only be used when working on public repositories and GitHub Copilot Business can be used when working on public and private repositories within an organization
 
----------------------↑ まで完了------------------------------
-
 ### 25. How can you start using GitHub Copilot after activating the GitHub Copilot subscription?
 
 https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot
@@ -240,6 +238,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-git
 - [ ] GitHub Copilot will automatically start giving suggestions on pull requests and issues in your repository
 - [ ] You need to setup a GitHub Action that will setup GitHub Copilot on your repository
 - [ ] You need to edit the repository settings and enable GitHub Copilot for the repository
+
+---------------------↑ まで完了------------------------------
 
 ### 26. What is a GitHub Codespace?
 
