@@ -371,8 +371,6 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] No
       Features such as issues, wikis or projects can be disabled on a repository in the repository settings
 
----------------------↑ まで完了------------------------------
-
 ### 40. Where can you disable repository features such as issues, wikis or projects on a repository that you own?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository
@@ -381,6 +379,8 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] In the `.github/settings.yml` configuration file
 - [ ] These features cannot be disabled
 - [ ] In your account settings
+
+---------------------↑ まで完了------------------------------
 
 ### 41. What are the different repository visibility options?
 
