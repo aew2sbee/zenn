@@ -304,8 +304,6 @@ https://docs.github.com/ja/codespaces/customizing-your-codespace/changing-the-ma
 - [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running
       GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use
 
----------------------↑ まで完了------------------------------
-
 ### 33. How can you customize the environment that is run in GitHub Codespaces?
 
 https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
@@ -314,6 +312,8 @@ https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/add
 - [ ] By creating a custom Dockerfile in the root of your repository
 - [ ] By creating a `.github/codespaces.yml` configuration file
 - [ ] By creating custom machine images with the repository installed
+
+---------------------↑ まで完了------------------------------
 
 ### 34. What is a GitHub Codespace deep link?
 
