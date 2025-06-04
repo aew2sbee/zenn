@@ -6,10 +6,10 @@ title: 'リポジトリの可視性を設定する'
 
 ### 選択肢
 
-- [x] Private, Public, Internal (企業のみ)
-- [ ] Personal, Public, Internal (企業のみ)
-- [ ] Private と Public
-- [ ] Personal と Public
+- Private, Public, Internal (企業のみ)
+- Personal, Public, Internal (企業のみ)
+- Private と Public
+- Personal と Public
 
 ### 回答欄
 
