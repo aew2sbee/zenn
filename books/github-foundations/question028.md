@@ -2,7 +2,7 @@
 title: 'codespace ライフサイクルについて'
 ---
 
-## Q28: GitHub のどの機能を使えば、リポジトリの貢献者がウェブブラウザ上で簡単なコード変更を直接行うことができますか？（2つ選んでください）
+## Q28: GitHub のどの機能を使えば、リポジトリの貢献者がウェブブラウザ上で簡単なコード変更を直接行うことができますか？（2 つ選んでください）
 
 ### 選択肢
 
@@ -18,11 +18,11 @@ title: 'codespace ライフサイクルについて'
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor)
 
-- GitHub Codespaces
-- github.dev editor
-- GitHub Projects
-- GitHub Dependabot
-- GitHub Remote
-- GitHub Online
+- [x] GitHub Codespaces
+- [x] github.dev editor
+- [ ] GitHub Projects
+- [ ] GitHub Dependabot
+- [ ] GitHub Remote
+- [ ] GitHub Online
 
 :::

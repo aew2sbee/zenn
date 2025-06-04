@@ -257,8 +257,6 @@ https://docs.github.com/ja/codespaces/overview#benefits-of-github-codespaces
 - [ ] GitHub Copilot
 - [ ] GitHub DevEnv
 
----------------------↑ まで完了------------------------------
-
 ### 28. What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)
 
 https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor
@@ -269,6 +267,8 @@ https://docs.github.com/ja/codespaces/the-githubdev-web-based-editor
 - [ ] GitHub Dependabot
 - [ ] GitHub Remote
 - [ ] GitHub Online
+
+---------------------↑ まで完了------------------------------
 
 ### 29. What are the different possible lifecycle phases for a GitHub Codespace?
 
