@@ -446,8 +446,6 @@ https://docs.github.com/ja/code-security/dependabot
 - [ ] CodeQL
 - [ ] GitHub Actions
 
----------------------↑ まで完了------------------------------
-
 ### 48. What are Repository Insights?
 
 https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs
@@ -456,6 +454,8 @@ https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repos
 - [ ] Repository Insights is a feature that allows you to see the repository's secret and code scanning alerts.
 - [ ] It's a list of best practices to follow when administrating a repository.
 - [ ] It's a feature that allows you to see the repository's security overview.
+
+---------------------↑ まで完了------------------------------
 
 ### 49. Who are repository collaborators?
 
