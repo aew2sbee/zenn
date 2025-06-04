@@ -313,8 +313,6 @@ https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/add
 - [ ] By creating a `.github/codespaces.yml` configuration file
 - [ ] By creating custom machine images with the repository installed
 
----------------------↑ まで完了------------------------------
-
 ### 34. What is a GitHub Codespace deep link?
 
 https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces#configuring-more-options
@@ -323,6 +321,8 @@ https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/set
 - [ ] It's a link between the GitHub Codespace and the repository which keeps the Codespace in sync with the changes in the repository
 - [ ] It's a link to the most recent GitHub Codespace that was created for the repository
 - [ ] It's a link to the most recent GitHub Codespace that you have used in any repository
+
+---------------------↑ まで完了------------------------------
 
 ### 35. Who should have 2 Factor Authentication enabled on GitHub?
 
