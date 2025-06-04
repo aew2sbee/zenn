@@ -248,8 +248,6 @@ https://docs.github.com/ja/codespaces/overview
 - [ ] GitHub Codespace is an AI-powered coding tool that auto-generates near flawless code
 - [ ] GitHub Codespace is an annual GitHub hosted event where developers can meet and discuss coding topics.
 
----------------------↑ まで完了------------------------------
-
 ### 27. What GitHub feature allows the creation of preconfigured development environments where all necessary tools and dependencies to contribute to a repository are installed?
 
 https://docs.github.com/ja/codespaces/overview#benefits-of-github-codespaces
@@ -258,6 +256,8 @@ https://docs.github.com/ja/codespaces/overview#benefits-of-github-codespaces
 - [ ] GitHub Docker
 - [ ] GitHub Copilot
 - [ ] GitHub DevEnv
+
+---------------------↑ まで完了------------------------------
 
 ### 28. What GitHub features allow repository contributors to work on simple code changes directly through the web browser? (Choose two.)
 
