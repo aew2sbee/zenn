@@ -380,8 +380,6 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] These features cannot be disabled
 - [ ] In your account settings
 
----------------------↑ まで完了------------------------------
-
 ### 41. What are the different repository visibility options?
 
 https://docs.github.com/ja/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility
@@ -390,6 +388,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/repositories/managing-your-re
 - [ ] Personal, Public and Internal (Enterprise only)
 - [ ] Private and Public
 - [ ] Personal and Public
+
+---------------------↑ まで完了------------------------------
 
 ### 42. What is the purpose of a `CODEOWNERS` file?
 
