@@ -277,14 +277,14 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [ ] Create, Stop, Delete
 - [ ] Create, Rebuild, Delete
 
----------------------↑ まで完了------------------------------
-
 ### 30. If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?
 
 https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespace-lifecycle#stopping-a-codespace
 
 - [x] Yes, that's the default behavior when stopping and then starting a GitHub Codespace
 - [ ] No, these changes will be lost. You need to commit them before stopping the Codespace.
+
+---------------------↑ まで完了------------------------------
 
 ### 31. Which of these statements regarding GitHub Codespaces lifecycle are true? (Choose three.)
 
