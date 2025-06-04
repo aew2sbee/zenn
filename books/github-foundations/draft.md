@@ -484,8 +484,6 @@ https://docs.github.com/ja/organizations/organizing-members-into-teams/about-tea
 - [ ] It's a way of managing access to personal GitHub repositories to many users at once.
       Personal repositories cannot be shared with teams, only with individual collaborators.
 
----------------------↑ まで完了------------------------------
-
 ### 52. What is the role of an organization moderator?
 
 https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
@@ -497,6 +495,8 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
       That's billing managers
 - [ ] Moderators are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
       That's security managers
+
+---------------------↑ まで完了------------------------------
 
 ### 53. What is the role of an organization security manager?
 
