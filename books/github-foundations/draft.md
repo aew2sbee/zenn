@@ -437,8 +437,6 @@ https://codeql.github.com/
 - [ ] A text editor
 - [ ] A version control system
 
----------------------↑ まで完了------------------------------
-
 ### 47. Which tool helps you keep the repository dependencies up to date?
 
 https://docs.github.com/ja/code-security/dependabot
@@ -447,6 +445,8 @@ https://docs.github.com/ja/code-security/dependabot
 - [ ] GitHub Copilot
 - [ ] CodeQL
 - [ ] GitHub Actions
+
+---------------------↑ まで完了------------------------------
 
 ### 48. What are Repository Insights?
 
