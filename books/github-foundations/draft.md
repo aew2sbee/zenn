@@ -475,8 +475,6 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] It's not possible to work together on personal repositories. You can only do that for repositories owned by organizations.
 - [ ] Provide your friend your GitHub credentials
 
----------------------↑ まで完了------------------------------
-
 ### 51. What are GitHub teams?
 
 https://docs.github.com/ja/organizations/organizing-members-into-teams/about-teams
@@ -485,6 +483,8 @@ https://docs.github.com/ja/organizations/organizing-members-into-teams/about-tea
 - [ ] It's a version of Microsoft Teams for GitHub.
 - [ ] It's a way of managing access to personal GitHub repositories to many users at once.
       Personal repositories cannot be shared with teams, only with individual collaborators.
+
+---------------------↑ まで完了------------------------------
 
 ### 52. What is the role of an organization moderator?
 
