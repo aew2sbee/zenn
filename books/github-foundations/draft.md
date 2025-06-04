@@ -389,8 +389,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/repositories/managing-your-re
 - [ ] Private and Public
 - [ ] Personal and Public
 
----------------------↑ まで完了------------------------------
-
 ### 42. What is the purpose of a `CODEOWNERS` file?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
@@ -399,6 +397,8 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] The `CODEOWNERS` file contains information about the software licensing fees and conditions under which the code can be used.
 - [ ] The `CODEOWNERS` file includes information about the code quality and the maintainability of the code.
 - [ ] The `CODEOWNERS` file contains contact details to the repository owners.
+
+---------------------↑ まで完了------------------------------
 
 ### 43. How can you enforce status checks passing before merging a pull request to the `main` branch?
 
