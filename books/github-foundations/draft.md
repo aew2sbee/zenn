@@ -322,8 +322,6 @@ https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/set
 - [ ] It's a link to the most recent GitHub Codespace that was created for the repository
 - [ ] It's a link to the most recent GitHub Codespace that you have used in any repository
 
----------------------↑ まで完了------------------------------
-
 ### 35. Who should have 2 Factor Authentication enabled on GitHub?
 
 https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
@@ -332,6 +330,8 @@ https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-
 - [ ] It's not recommended to use 2FA on GitHub for anyone
 - [ ] GitHub Organization owners
 - [ ] GitHub Enterprise Server users
+
+---------------------↑ まで完了------------------------------
 
 ### 36. What are Enterprise Managed Users?
 
