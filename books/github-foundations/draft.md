@@ -398,8 +398,6 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] The `CODEOWNERS` file includes information about the code quality and the maintainability of the code.
 - [ ] The `CODEOWNERS` file contains contact details to the repository owners.
 
----------------------↑ まで完了------------------------------
-
 ### 43. How can you enforce status checks passing before merging a pull request to the `main` branch?
 
 https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#about-branch-protection-settings
@@ -408,6 +406,8 @@ https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-
 - [ ] By using GitHub Actions
 - [ ] By running tests locally prior to pushing to the remote repository
 - [ ] By making the repository private
+
+---------------------↑ まで完了------------------------------
 
 ### 44. Which of these actions will make sure that prior to any push to the `main` branch, the changes have been approved by at least two people? (Choose three.)
 
