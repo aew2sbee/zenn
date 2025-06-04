@@ -221,8 +221,6 @@ https://docs.github.com/ja/copilot/overview-of-github-copilot/about-github-copil
 - [ ] Yes, but only for individuals working on public repositories
       There is a free trial. However GitHub Copilot is a paid feature even for Individuals.
 
----------------------↑ まで完了------------------------------
-
 ### 24. What are the differences between GitHub Copilot Individual and GitHub Copilot Business?
 
 https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-github-copilot
@@ -231,6 +229,8 @@ https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-g
 - [ ] GitHub Copilot Individual uses an AI model trained on public source code and GitHub Copilot Business uses an AI model trained on private source code
 - [ ] GitHub Copilot Individual is free and GitHub Copilot Business is a paid feature
 - [ ] GitHub Copilot Individual can only be used when working on public repositories and GitHub Copilot Business can be used when working on public and private repositories within an organization
+
+---------------------↑ まで完了------------------------------
 
 ### 25. How can you start using GitHub Copilot after activating the GitHub Copilot subscription?
 
