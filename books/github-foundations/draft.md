@@ -331,8 +331,6 @@ https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-
 - [ ] GitHub Organization owners
 - [ ] GitHub Enterprise Server users
 
----------------------↑ まで完了------------------------------
-
 ### 36. What are Enterprise Managed Users?
 
 https://docs.github.com/ja/enterprise-cloud@latest/admin/identity-and-access-management/understanding-iam-for-enterprises/about-enterprise-managed-users#about-enterprise-managed-users
@@ -341,6 +339,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/identity-and-access-man
 - [ ] It's a GitHub Enterprise support user that can be used to manage your Enterprise by GitHub Support once requested
 - [ ] It's a shared user account that can be used by multiple users in your Enterprise
 - [ ] It's an user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
+
+---------------------↑ まで完了------------------------------
 
 ### 37. What are the different permission levels for a repository owned by a personal account? (Choose two.)
 
