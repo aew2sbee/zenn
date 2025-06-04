@@ -296,8 +296,6 @@ https://docs.github.com/ja/codespaces/getting-started/understanding-the-codespac
 - [ ] If you close the browser tab in which your Codespace was running, the Codespace will automatically be stopped
       Closing the browser tab does not stop the Codespace and the processes continue running. If you only closed the tab, the Codespace will stop after reaching the inactivity timeout period
 
----------------------↑ まで完了------------------------------
-
 ### 32. Your project requires appropriate hardware to run. Can you customize the amount of CPU cores that will be allocated to your GitHub Codespace environment?
 
 https://docs.github.com/ja/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace
@@ -305,6 +303,8 @@ https://docs.github.com/ja/codespaces/customizing-your-codespace/changing-the-ma
 - [x] Yes, you can choose an alternative machine type either when you create a codespace or at any time after you've created a codespace.
 - [ ] No, GitHub Codespaces are hosted on Microsoft Azure and we have no control on what hardware they are running
       GitHub Codespaces are indeed hosted on Microsoft Azure, but you can configure the machine type to use
+
+---------------------↑ まで完了------------------------------
 
 ### 33. How can you customize the environment that is run in GitHub Codespaces?
 
