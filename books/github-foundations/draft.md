@@ -202,8 +202,6 @@ https://docs.github.com/ja/actions/creating-actions/publishing-actions-in-github
 - [ ] GitHub private repositories
 - [ ] GitHub Actions Project Boards
 
----------------------↑ まで完了------------------------------
-
 ### 22. Which of these tools serves as an AI pair programmer that offers autocomplete-style suggestions as you code?
 
 https://docs.github.com/ja/copilot/quickstart#introduction
@@ -212,6 +210,8 @@ https://docs.github.com/ja/copilot/quickstart#introduction
 - [ ] GitHub AI Aid
 - [ ] GitHub Partner
 - [ ] GitHub Assistant
+
+---------------------↑ まで完了------------------------------
 
 ### 23. Is GitHub Copilot free to use?
 
