@@ -6,8 +6,8 @@ title: 'Issues を無効化する'
 
 ### 選択肢
 
-- [x] Yes
-- [ ] No
+- Yes
+- No
 
 ### 回答欄
 
