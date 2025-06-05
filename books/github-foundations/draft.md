@@ -496,8 +496,6 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] Moderators are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
       That's security managers
 
----------------------↑ まで完了------------------------------
-
 ### 53. What is the role of an organization security manager?
 
 https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization
@@ -509,6 +507,8 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
       That's organization owners
 - [ ] Security managers are organization members who can manage the billing settings for your organization, such as payment information.
       That's billing managers
+
+---------------------↑ まで完了------------------------------
 
 ### 54. Which of these definitions best describes open source software?
 
