@@ -544,8 +544,6 @@ https://docs.github.com/ja/get-started/quickstart/be-social#following-people
 - [ ] You will get access to their private repositories once the follow request is accepted.
 - [ ] You can engage in private conversations with them using GitHub Chat.
 
----------------------↑ まで完了------------------------------
-
 ### 58. What is the GitHub Marketplace?
 
 https://docs.github.com/ja/apps/github-marketplace/github-marketplace-overview/about-github-marketplace-for-apps
@@ -555,6 +553,8 @@ https://docs.github.com/ja/apps/github-marketplace/github-marketplace-overview/a
 - [ ] GitHub Marketplace is a place where developers offer to sell ownership of their repositories.
 - [ ] GitHub Marketplace is a place where you can sponsor open-source developers on a subscription basis.
       That is GitHub Sponsors
+
+---------------------↑ まで完了------------------------------
 
 ### 59. What is InnerSource?
 
