@@ -508,8 +508,6 @@ https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organiz
 - [ ] Security managers are organization members who can manage the billing settings for your organization, such as payment information.
       That's billing managers
 
----------------------↑ まで完了------------------------------
-
 ### 54. Which of these definitions best describes open source software?
 
 https://opensource.com/resources/what-open-source
@@ -518,6 +516,8 @@ https://opensource.com/resources/what-open-source
 - [ ] It's free to use for any purposes as long as you sign the open source license.
 - [ ] It's free to use for any personal purposes as long as you don't make profit out of it.
 - [ ] It's software with source code that anyone can rely on.
+
+---------------------↑ まで完了------------------------------
 
 ### 55. What is the GitHub Sponsors program?
 
