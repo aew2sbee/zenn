@@ -592,8 +592,6 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] Covering the repository software with tests
 - [ ] Using a wide range of GitHub Apps and GitHub Actions
 
----------------------↑ まで完了------------------------------
-
 ### 63. How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?
 
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates
@@ -602,6 +600,8 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Add labels to issues that they create
 - [ ] Set up GitHub Projects
 - [ ] Have an example issue in the repository that is easy to copy and is never closed
+
+---------------------↑ まで完了------------------------------
 
 ### 64. What is a pull request template?
 
