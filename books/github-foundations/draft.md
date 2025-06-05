@@ -601,8 +601,6 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Set up GitHub Projects
 - [ ] Have an example issue in the repository that is easy to copy and is never closed
 
----------------------↑ まで完了------------------------------
-
 ### 64. What is a pull request template?
 
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository
@@ -611,6 +609,8 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Pull request template is a pull request that is automatically generated when a new branch is created.
 - [ ] Pull request template is a pull request that is chosen by the repository owner for reference when creating new pull requests.
 - [ ] Pull request template is an example of how code changes should look like in a pull request in a given repository.
+
+---------------------↑ まで完了------------------------------
 
 ### 65. Which of these statements best describes a version control system?
 
