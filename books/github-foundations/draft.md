@@ -610,8 +610,6 @@ https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issue
 - [ ] Pull request template is a pull request that is chosen by the repository owner for reference when creating new pull requests.
 - [ ] Pull request template is an example of how code changes should look like in a pull request in a given repository.
 
----------------------↑ まで完了------------------------------
-
 ### 65. Which of these statements best describes a version control system?
 
 https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git
@@ -620,6 +618,8 @@ https://docs.github.com/ja/get-started/using-git/about-git#about-version-control
 - [ ] It's a system that leverages the git command line tool.
 - [ ] It's a system that allows you to create a local copy of a project's source code.
 - [ ] It's a system that allows tracking of what people install on their computers.
+
+---------------------↑ まで完了------------------------------
 
 ### 66. What is the meaning of the word `distributed` in distributed version control system?
 
