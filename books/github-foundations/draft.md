@@ -581,8 +581,6 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/workin
 - [ ] A fork is the state of a repository when it is not up to date with the remote repository.
 - [ ] A fork is a branch that is not up to date with the default branch of the repository.
 
----------------------↑ まで完了------------------------------
-
 ### 62. Which of these can make a repository more discoverable? (Choose three.)
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository
@@ -593,6 +591,8 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] Defining proper CI/CD pipelines
 - [ ] Covering the repository software with tests
 - [ ] Using a wide range of GitHub Apps and GitHub Actions
+
+---------------------↑ まで完了------------------------------
 
 ### 63. How can you define guiding protocols for users intending to submit bug reports or propose new features in your repository so they know what information to fill-in?
 
