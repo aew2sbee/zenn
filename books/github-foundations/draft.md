@@ -563,8 +563,6 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] InnerSource refers to the internal knowledge base of an organization about the project they are working on.
 - [ ] InnerSource is a tool that allows organizations to see what open source projects they are using in their code.
 
-
-
 ### 60. Which of these is a practice that encourages collaboration, visibility and sharing of code among different teams within an organization?
 
 https://resources.github.com/innersource/what-is-innersource/
@@ -574,8 +572,6 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] Continuous Integration
 - [ ] Git Flow
 
----------------------↑ まで完了------------------------------
-
 ### 61. What is a fork in GitHub?
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
@@ -584,6 +580,8 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/workin
 - [ ] A fork is the place where a branch splits off into at least two other branches.
 - [ ] A fork is the state of a repository when it is not up to date with the remote repository.
 - [ ] A fork is a branch that is not up to date with the default branch of the repository.
+
+---------------------↑ まで完了------------------------------
 
 ### 62. Which of these can make a repository more discoverable? (Choose three.)
 
