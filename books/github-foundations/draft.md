@@ -563,7 +563,7 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] InnerSource refers to the internal knowledge base of an organization about the project they are working on.
 - [ ] InnerSource is a tool that allows organizations to see what open source projects they are using in their code.
 
----------------------↑ まで完了------------------------------
+
 
 ### 60. Which of these is a practice that encourages collaboration, visibility and sharing of code among different teams within an organization?
 
@@ -573,6 +573,8 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] OpenSource
 - [ ] Continuous Integration
 - [ ] Git Flow
+
+---------------------↑ まで完了------------------------------
 
 ### 61. What is a fork in GitHub?
 
