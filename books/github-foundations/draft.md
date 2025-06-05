@@ -517,8 +517,6 @@ https://opensource.com/resources/what-open-source
 - [ ] It's free to use for any personal purposes as long as you don't make profit out of it.
 - [ ] It's software with source code that anyone can rely on.
 
----------------------↑ まで完了------------------------------
-
 ### 55. What is the GitHub Sponsors program?
 
 https://docs.github.com/ja/sponsors/getting-started-with-github-sponsors/about-github-sponsors
@@ -527,6 +525,8 @@ https://docs.github.com/ja/sponsors/getting-started-with-github-sponsors/about-g
 - [ ] It's a group of companies that fund GitHub
 - [ ] It's a program that helps people find a job in the tech industry
 - [ ] It's a program where highly skilled developers volunteer to help students learn how to use GitHub
+
+---------------------↑ まで完了------------------------------
 
 ### 56. On your personal GitHub dashboard you received a notification that user `octocat` has created a new repository `octocat/my-repo`. Why did you receive that notification?
 
