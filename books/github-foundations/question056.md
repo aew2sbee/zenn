@@ -6,7 +6,7 @@ title: 'コミュニティからのアクティビティの更新を受ける'
 
 ### 選択肢
 
-- ユーザー `octocat` をフォローしているからです。
+- ユーザーが `octocat` をフォローしているからです。
 - 最近 `octocat` ユーザーのプロフィールにアクセスしたからです。
 - あなたが `octocat/my-repo` リポジトリに貢献したからです。
 - `octocat/my-repo` リポジトリをスターにしたからです。
@@ -16,7 +16,7 @@ title: 'コミュニティからのアクティビティの更新を受ける'
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/about-your-personal-dashboard#staying-updated-with-activity-from-the-community)
 
-- [x] ユーザー `octocat` をフォローしているからです。
+- [x] ユーザーが `octocat` をフォローしているからです。
 - [ ] 最近 `octocat` ユーザーのプロフィールにアクセスしたからです。
 - [ ] あなたが `octocat/my-repo` リポジトリに貢献したからです。
 - [ ] `octocat/my-repo` リポジトリをスターにしたからです。
