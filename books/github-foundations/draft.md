@@ -526,8 +526,6 @@ https://docs.github.com/ja/sponsors/getting-started-with-github-sponsors/about-g
 - [ ] It's a program that helps people find a job in the tech industry
 - [ ] It's a program where highly skilled developers volunteer to help students learn how to use GitHub
 
----------------------↑ まで完了------------------------------
-
 ### 56. On your personal GitHub dashboard you received a notification that user `octocat` has created a new repository `octocat/my-repo`. Why did you receive that notification?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/about-your-personal-dashboard#staying-updated-with-activity-from-the-community
@@ -536,6 +534,8 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-pers
 - [ ] Because you recently visited `octocat` user profile
 - [ ] Because you contributed to the `octocat/my-repo` repository
 - [ ] Because you starred the `octocat/my-repo` repository
+
+---------------------↑ まで完了------------------------------
 
 ### 57. What are the effects of you following a user on GitHub?
 
