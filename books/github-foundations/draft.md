@@ -554,8 +554,6 @@ https://docs.github.com/ja/apps/github-marketplace/github-marketplace-overview/a
 - [ ] GitHub Marketplace is a place where you can sponsor open-source developers on a subscription basis.
       That is GitHub Sponsors
 
----------------------↑ まで完了------------------------------
-
 ### 59. What is InnerSource?
 
 https://resources.github.com/innersource/what-is-innersource/
@@ -564,6 +562,8 @@ https://resources.github.com/innersource/what-is-innersource/
 - [ ] InnerSource refers to the practice of applying open source principles in personal projects
 - [ ] InnerSource refers to the internal knowledge base of an organization about the project they are working on.
 - [ ] InnerSource is a tool that allows organizations to see what open source projects they are using in their code.
+
+---------------------↑ まで完了------------------------------
 
 ### 60. Which of these is a practice that encourages collaboration, visibility and sharing of code among different teams within an organization?
 
