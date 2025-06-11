@@ -700,14 +700,14 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#githu
 - [ ] GitHub Pro is a certification path at the end of which you become a GitHub Pro.
 - [ ] GitHub Pro is a paid plan for enterprises to self-host GitHub on their own servers.
 
----------------------↑ まで完了------------------------------
-
 ### 75. Is there a free version of GitHub for organizations?
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#github-free-for-organizations
 
 - [x] Yes
 - [ ] No
+
+---------------------↑ まで完了------------------------------
 
 ### 76. What are the different GitHub pricing plans for organization accounts? (Select three.)
 
