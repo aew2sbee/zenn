@@ -672,7 +672,6 @@ https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/crea
 - [ ] A commit refers to a new or updated file in a repository.
 - [ ] A commit refers to the code changes made to a repository in a pull request.
 - [ ] A commit is human readable text that describes the changes made to a repository.
-      ---------------------↑ まで完了------------------------------
 
 ### 72. Which git feature allows developers to concurrently work on the same codebase without causing conflicts with each other?
 
@@ -682,6 +681,8 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] commit
 - [ ] remote
 - [ ] working tree
+
+---------------------↑ まで完了------------------------------
 
 ### 73. What is the GitHub Flow?
 
