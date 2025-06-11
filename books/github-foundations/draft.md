@@ -691,8 +691,6 @@ https://docs.github.com/ja/get-started/quickstart/github-flow
 - [ ] It's a practice where every time a commit is pushed to the main branch, a set of CI/CD pipelines are triggered to run tests and validate the code changes.
 - [ ] It refers to a one branch workflow where developers work on their features on the `master` branch, and then get their feature code reviewed, tested, and committed.
 
----------------------↑ まで完了------------------------------
-
 ### 74. What is a GitHub Pro plan?
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#github-pro
@@ -701,6 +699,8 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#githu
 - [ ] GitHub Pro is a paid plan for organizations that offers additional features in addition to the free organizations plan.
 - [ ] GitHub Pro is a certification path at the end of which you become a GitHub Pro.
 - [ ] GitHub Pro is a paid plan for enterprises to self-host GitHub on their own servers.
+
+---------------------↑ まで完了------------------------------
 
 ### 75. Is there a free version of GitHub for organizations?
 
