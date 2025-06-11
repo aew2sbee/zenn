@@ -682,8 +682,6 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] remote
 - [ ] working tree
 
----------------------↑ まで完了------------------------------
-
 ### 73. What is the GitHub Flow?
 
 https://docs.github.com/ja/get-started/quickstart/github-flow
@@ -692,6 +690,8 @@ https://docs.github.com/ja/get-started/quickstart/github-flow
 - [ ] It's a practice where every time a commit is pushed to the main branch, a new release is automatically created and deployed.
 - [ ] It's a practice where every time a commit is pushed to the main branch, a set of CI/CD pipelines are triggered to run tests and validate the code changes.
 - [ ] It refers to a one branch workflow where developers work on their features on the `master` branch, and then get their feature code reviewed, tested, and committed.
+
+---------------------↑ まで完了------------------------------
 
 ### 74. What is a GitHub Pro plan?
 
