@@ -655,8 +655,6 @@ https://docs.github.com/ja/get-started/using-git/about-git
 - [ ] Git is a file sharing system and GitHub is a platform that uses Git as its core technology.
 - [ ] GitHub is a file sharing system and Git is a platform that uses GitHub as its core technology.
 
----------------------↑ まで完了------------------------------
-
 ### 70. What is a repository in GitHub?
 
 https://docs.github.com/ja/repositories/creating-and-managing-repositories/about-repositories
@@ -665,6 +663,8 @@ https://docs.github.com/ja/repositories/creating-and-managing-repositories/about
 - [ ] It's a place where you can store your Docker images or NPM packages.
 - [ ] It's a visual code editor that allows you to edit your source code in the browser.
 - [ ] A repository in GitHub is a chat room where developers can discuss code-related issues.
+
+---------------------↑ まで完了------------------------------
 
 ### 71. What is a git commit?
 
