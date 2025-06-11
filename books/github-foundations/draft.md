@@ -637,8 +637,6 @@ https://docs.github.com/ja/get-started/using-git/about-git#about-version-control
 - [ ] Git is the product of GitHub that allows for version control.
 - [ ] Git is a file sharing system.
 
----------------------↑ まで完了------------------------------
-
 ### 68. Which of these statements best describes what GitHub is?
 
 https://docs.github.com/ja/get-started/using-git/about-git#how-github-works
@@ -647,6 +645,8 @@ https://docs.github.com/ja/get-started/using-git/about-git#how-github-works
 - [ ] GitHub is a distributed version control system with features that make collaboration on projects easy.
 - [ ] GitHub is a file sharing platform with features that make collaboration on projects easy using centralized version control.
 - [ ] GitHub is a modern CI/CD platform with features that help drive rapid product development.
+
+---------------------↑ まで完了------------------------------
 
 ### 69. What is the relation between Git and GitHub?
 
