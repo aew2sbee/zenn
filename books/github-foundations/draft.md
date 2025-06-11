@@ -619,8 +619,6 @@ https://docs.github.com/ja/get-started/using-git/about-git#about-version-control
 - [ ] It's a system that allows you to create a local copy of a project's source code.
 - [ ] It's a system that allows tracking of what people install on their computers.
 
----------------------↑ まで完了------------------------------
-
 ### 66. What is the meaning of the word `distributed` in distributed version control system?
 
 https://about.gitlab.com/topics/version-control/benefits-distributed-version-control-system/
@@ -629,6 +627,8 @@ https://about.gitlab.com/topics/version-control/benefits-distributed-version-con
 - [ ] It means that tasks among the team members using the system are easily distributed.
 - [ ] The term refers to the peer-to-peer sharing of code files among users.
 - [ ] It means that the codebase is distributed across multiple servers for load balancing.
+
+---------------------↑ まで完了------------------------------
 
 ### 67. Which of these best describes git?
 
