@@ -646,8 +646,6 @@ https://docs.github.com/ja/get-started/using-git/about-git#how-github-works
 - [ ] GitHub is a file sharing platform with features that make collaboration on projects easy using centralized version control.
 - [ ] GitHub is a modern CI/CD platform with features that help drive rapid product development.
 
----------------------↑ まで完了------------------------------
-
 ### 69. What is the relation between Git and GitHub?
 
 https://docs.github.com/ja/get-started/using-git/about-git
@@ -656,6 +654,8 @@ https://docs.github.com/ja/get-started/using-git/about-git
 - [ ] GitHub is a distributed version control system and Git is a platform that uses GitHub as its core technology.
 - [ ] Git is a file sharing system and GitHub is a platform that uses Git as its core technology.
 - [ ] GitHub is a file sharing system and Git is a platform that uses GitHub as its core technology.
+
+---------------------↑ まで完了------------------------------
 
 ### 70. What is a repository in GitHub?
 
