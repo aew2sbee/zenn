@@ -628,8 +628,6 @@ https://about.gitlab.com/topics/version-control/benefits-distributed-version-con
 - [ ] The term refers to the peer-to-peer sharing of code files among users.
 - [ ] It means that the codebase is distributed across multiple servers for load balancing.
 
----------------------↑ まで完了------------------------------
-
 ### 67. Which of these best describes git?
 
 https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git
@@ -638,6 +636,8 @@ https://docs.github.com/ja/get-started/using-git/about-git#about-version-control
 - [ ] Git is a centralized version control system.
 - [ ] Git is the product of GitHub that allows for version control.
 - [ ] Git is a file sharing system.
+
+---------------------↑ まで完了------------------------------
 
 ### 68. Which of these statements best describes what GitHub is?
 
