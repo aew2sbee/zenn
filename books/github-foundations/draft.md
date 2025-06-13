@@ -752,8 +752,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-f
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
 
----------------------↑ まで完了------------------------------
-
 ### 80. Which of these statements about GitHub Enterprise deployment options are true? (Select two.)
 
 https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
@@ -763,6 +761,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-f
 - [ ] GitHub Enterprise Server is a set of advanced functionality on GitHub.com
 - [ ] GitHub Enterprise Cloud is a cloud hosted platform that runs on the company's cloud infrastructure
 - [ ] GitHub Enterprise Cloud is a self-hosted platform that runs on the company's infrastructure
+
+---------------------↑ まで完了------------------------------
 
 ### 81. What are pinned repositories on GitHub?
 
