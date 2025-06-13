@@ -707,9 +707,7 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#githu
 - [x] Yes
 - [ ] No
 
----------------------↑ まで完了------------------------------
-
-### 76. What are the different GitHub pricing plans for organization accounts? (Select three.)
+### 76. What are the different GitHub pricing plans for organization accounts? (Select three.)ferent GitHub pricing plans for organization accounts? (Select three.)
 
 https://github.com/pricing
 
@@ -720,6 +718,8 @@ https://github.com/pricing
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+
+---------------------↑ まで完了------------------------------
 
 ### 77. Which GitHub pricing plan offers self-hosted deployment of GitHub?
 
