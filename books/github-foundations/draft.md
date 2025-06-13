@@ -741,8 +741,6 @@ https://github.com/pricing
 - [ ] Team and Enterprise
 - [ ] Free
 
----------------------↑ まで完了------------------------------
-
 ### 79. What are the different deployment options for GitHub Enterprise? (Select two.)
 
 https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options
@@ -753,6 +751,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-f
 - [ ] GitHub Enterprise Team
 - [ ] GitHub Enterprise Free
 - [ ] GitHub Enterprise Advanced
+
+---------------------↑ まで完了------------------------------
 
 ### 80. Which of these statements about GitHub Enterprise deployment options are true? (Select two.)
 
