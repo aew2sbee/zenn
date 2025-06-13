@@ -1,0 +1,28 @@
+---
+title: 'GitHub Enterprise Server について'
+---
+
+## Q78: GitHub のどの料金プランなら、公開リポジトリを無制限に作成できますか？
+
+### 選択肢
+
+- すべて
+- エンタープライズ
+- プロ
+- チーム
+- チームとエンタープライズ
+- 無料
+
+### 回答欄
+
+:::details 回答を見る
+[公式ドキュメント](https://docs.github.com/ja/admin/overview/about-github-enterprise-server)
+
+- [x] すべて
+- [ ] エンタープライズ
+- [ ] プロ
+- [ ] チーム
+- [ ] チームとエンタープライズ
+- [ ] 無料
+
+:::

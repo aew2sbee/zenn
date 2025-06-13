@@ -730,8 +730,6 @@ https://docs.github.com/ja/admin/overview/about-github-enterprise-server
 - [ ] All of them
 - [ ] None of them
 
----------------------↑ まで完了------------------------------
-
 ### 78. Under which GitHub pricing plan can you create an unlimited number of public repositories?
 
 https://github.com/pricing
@@ -742,6 +740,8 @@ https://github.com/pricing
 - [ ] Team
 - [ ] Team and Enterprise
 - [ ] Free
+
+---------------------↑ まで完了------------------------------
 
 ### 79. What are the different deployment options for GitHub Enterprise? (Select two.)
 
