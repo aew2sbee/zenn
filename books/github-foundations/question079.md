@@ -18,11 +18,11 @@ title: 'デプロイ オプションについて'
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options)
 
-- GitHub Enterprise Cloud
-- GitHub Enterprise Server
-- GitHub Enterprise Pro
-- GitHub Enterprise Team
-- GitHub Enterprise Free
-- GitHub Enterprise Advanced
+- [x] GitHub Enterprise Cloud
+- [x] GitHub Enterprise Server
+- [ ] GitHub Enterprise Pro
+- [ ] GitHub Enterprise Team
+- [ ] GitHub Enterprise Free
+- [ ] GitHub Enterprise Advanced
 
 :::
