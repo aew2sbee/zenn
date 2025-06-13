@@ -707,7 +707,7 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans#githu
 - [x] Yes
 - [ ] No
 
-### 76. What are the different GitHub pricing plans for organization accounts? (Select three.)ferent GitHub pricing plans for organization accounts? (Select three.)
+### 76. What are the different GitHub pricing plans for organization accounts? (Select three.)
 
 https://github.com/pricing
 
@@ -719,11 +719,9 @@ https://github.com/pricing
 - [ ] Business
 - [ ] Advanced
 
----------------------↑ まで完了------------------------------
-
 ### 77. Which GitHub pricing plan offers self-hosted deployment of GitHub?
 
-https://docs.github.com/ja/<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a0f041e0f181a1803190f47190f181c0f182a594452">[email&#160;protected]</a>/admin/overview/about-github-enterprise-server
+https://docs.github.com/ja/admin/overview/about-github-enterprise-server
 
 - [x] Enterprise
 - [ ] Pro
@@ -731,6 +729,8 @@ https://docs.github.com/ja/<a href="/cdn-cgi/l/email-protection" class="__cf_ema
 - [ ] Free
 - [ ] All of them
 - [ ] None of them
+
+---------------------↑ まで完了------------------------------
 
 ### 78. Under which GitHub pricing plan can you create an unlimited number of public repositories?
 
