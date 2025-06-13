@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Enterprise Server について'
+title: 'デプロイ オプションについて'
 ---
 
 ## Q79: GitHub Enterprise にはどのようなデプロイメントオプションがありますか？(2 つ選んでください)
@@ -16,7 +16,7 @@ title: 'GitHub Enterprise Server について'
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/admin/overview/about-github-enterprise-server)
+[公式ドキュメント](https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-for-enterprises#about-deployment-options)
 
 - GitHub Enterprise Cloud
 - GitHub Enterprise Server
