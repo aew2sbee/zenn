@@ -797,8 +797,6 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-slash-com
 - [ ] It's an another name for the GitHub CLI.
 - [ ] It's a way to quickly fix code formatting issues in your pull request's code changes.
 
----------------------↑ まで完了------------------------------
-
 ### 85. How does GitHub help people that want to write proper issue and pull request comments but don't know Markdown syntax?
 
 https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github#text-formatting-toolbar
@@ -807,6 +805,8 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 - [ ] By providing a Markdown cheat sheet.
 - [ ] GitHub automatically converts HTML to Markdown in issue and pull request comments.
 - [ ] GitHub pull requests and issues don't support Markdown.
+
+---------------------↑ まで完了------------------------------
 
 ### 86. What is GitHub Desktop?
 
