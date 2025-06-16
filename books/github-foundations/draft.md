@@ -779,8 +779,6 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-gith
 - [ ] a profile `CONTRIBUTING.md` file
 - [ ] profile is not customizable through files but through the account settings
 
----------------------↑ まで完了------------------------------
-
 ### 83. What language is used to write comments on GitHub issues and pull requests?
 
 https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
@@ -789,6 +787,8 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 - [ ] HTML
 - [ ] AsciiDoc
 - [ ] reStructuredText
+
+---------------------↑ まで完了------------------------------
 
 ### 84. What are GitHub's slash commands?
 
