@@ -771,8 +771,6 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-gith
 - [ ] Pinned repositories are repositories that have been temporarily or indefinitely suspended by GitHub.
 - [ ] Pinned repositories are repositories that have been marked as favorites by GitHub users.
 
----------------------↑ まで完了------------------------------
-
 ### 82. Which of these files can customize your GitHub profile?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme
@@ -780,6 +778,8 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-gith
 - [x] a profile `README.md` file
 - [ ] a profile `CONTRIBUTING.md` file
 - [ ] profile is not customizable through files but through the account settings
+
+---------------------↑ まで完了------------------------------
 
 ### 83. What language is used to write comments on GitHub issues and pull requests?
 
