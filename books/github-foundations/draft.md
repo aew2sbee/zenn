@@ -762,8 +762,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/admin/overview/about-github-f
 - [ ] GitHub Enterprise Cloud is a cloud hosted platform that runs on the company's cloud infrastructure
 - [ ] GitHub Enterprise Cloud is a self-hosted platform that runs on the company's infrastructure
 
----------------------↑ まで完了------------------------------
-
 ### 81. What are pinned repositories on GitHub?
 
 https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile
@@ -772,6 +770,8 @@ https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-gith
 - [ ] Pinned repositories are repositories that GitHub promotes. There are new pinned repositories each month.
 - [ ] Pinned repositories are repositories that have been temporarily or indefinitely suspended by GitHub.
 - [ ] Pinned repositories are repositories that have been marked as favorites by GitHub users.
+
+---------------------↑ まで完了------------------------------
 
 ### 82. Which of these files can customize your GitHub profile?
 
