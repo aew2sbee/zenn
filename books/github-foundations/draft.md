@@ -788,8 +788,6 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 - [ ] AsciiDoc
 - [ ] reStructuredText
 
----------------------↑ まで完了------------------------------
-
 ### 84. What are GitHub's slash commands?
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-slash-commands
@@ -798,6 +796,8 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-slash-com
 - [ ] It's a way of automating GitHub Actions.
 - [ ] It's an another name for the GitHub CLI.
 - [ ] It's a way to quickly fix code formatting issues in your pull request's code changes.
+
+---------------------↑ まで完了------------------------------
 
 ### 85. How does GitHub help people that want to write proper issue and pull request comments but don't know Markdown syntax?
 
