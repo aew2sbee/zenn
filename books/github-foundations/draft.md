@@ -824,8 +824,6 @@ https://docs.github.com/ja/get-started/using-github/github-mobile
 - [ ] It's a GitHub data transfer service for petabytes of data where a GitHub owned car will drive to your location and transfer the data to your local network.
 - [ ] It's a GitHub telemetry service that allows you to track your users' activity on your website or mobile app.
 
----------------------↑ まで完了------------------------------
-
 ### 88. How can you link a pull request to an issue? (Choose two.)
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue
@@ -835,6 +833,8 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-
 - [ ] By using a keyword in the pull request description and referencing the issue title.
 - [ ] By including the issue number in the code changes.
 - [ ] By including the issue number in the commit message.
+
+---------------------↑ まで完了------------------------------
 
 ### 89. What improvement do issue forms bring over issue templates?
 
