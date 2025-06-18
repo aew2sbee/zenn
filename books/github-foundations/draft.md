@@ -834,8 +834,6 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/linking-a-pull-
 - [ ] By including the issue number in the code changes.
 - [ ] By including the issue number in the commit message.
 
----------------------↑ まで完了------------------------------
-
 ### 89. What improvement do issue forms bring over issue templates?
 
 https://docs.github.com/ja/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
@@ -853,6 +851,8 @@ https://docs.github.com/ja/discussions/quickstart#introduction
 - [ ] Wikis
 - [ ] Gists
 - [ ] Pull requests
+
+---------------------↑ まで完了------------------------------
 
 ### 91. What is the effect of adding a line `Closes #11` to the pull request's description?
 
