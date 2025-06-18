@@ -862,8 +862,6 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-advanced-f
 - [ ] That pull request will be automatically merged once the issue #11 is closed.
 - [ ] That pull request will be automatically merged on the 11th of that month.
 
----------------------↑ まで完了------------------------------
-
 ### 92. In GitHub a proposal to merge a set of changes from one branch into another branch is called a:
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
@@ -873,6 +871,8 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] Issue
 - [ ] Commit
 - [ ] A merge branch
+
+---------------------↑ まで完了------------------------------
 
 ### 93. You want to merge changes from branch `feature-a` into `main` and you are creating a pull request. Which branch should be the `base` branch and which branch should be the `compare` branch?
 
