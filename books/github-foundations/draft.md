@@ -852,8 +852,6 @@ https://docs.github.com/ja/discussions/quickstart#introduction
 - [ ] Gists
 - [ ] Pull requests
 
----------------------↑ まで完了------------------------------
-
 ### 91. What is the effect of adding a line `Closes #11` to the pull request's description?
 
 https://docs.github.com/ja/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests#linking-a-pull-request-to-an-issue
@@ -863,6 +861,8 @@ https://docs.github.com/ja/get-started/writing-on-github/working-with-advanced-f
 - [ ] Once that pull request is merged, the #11th branch will be deleted automatically.
 - [ ] That pull request will be automatically merged once the issue #11 is closed.
 - [ ] That pull request will be automatically merged on the 11th of that month.
+
+---------------------↑ まで完了------------------------------
 
 ### 92. In GitHub a proposal to merge a set of changes from one branch into another branch is called a:
 
