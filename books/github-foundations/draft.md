@@ -806,8 +806,6 @@ https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-wr
 - [ ] GitHub automatically converts HTML to Markdown in issue and pull request comments.
 - [ ] GitHub pull requests and issues don't support Markdown.
 
----------------------↑ まで完了------------------------------
-
 ### 86. What is GitHub Desktop?
 
 https://docs.github.com/ja/desktop
@@ -816,6 +814,8 @@ https://docs.github.com/ja/desktop
 - [ ] It's a self hosted version of GitHub that you can install on your own servers or personal computer.
 - [ ] It's a GitHub pricing plan for personal accounts that offers additional features in addition to the free plan.
 - [ ] It's an online editor that allows you to work on your repository in the browser.
+
+---------------------↑ まで完了------------------------------
 
 ### 87. What is GitHub Mobile?
 
