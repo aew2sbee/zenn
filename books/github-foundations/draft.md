@@ -815,8 +815,6 @@ https://docs.github.com/ja/desktop
 - [ ] It's a GitHub pricing plan for personal accounts that offers additional features in addition to the free plan.
 - [ ] It's an online editor that allows you to work on your repository in the browser.
 
----------------------↑ まで完了------------------------------
-
 ### 87. What is GitHub Mobile?
 
 https://docs.github.com/ja/get-started/using-github/github-mobile
@@ -825,6 +823,8 @@ https://docs.github.com/ja/get-started/using-github/github-mobile
 - [ ] It's a service that allows you to test your mobile apps on real devices.
 - [ ] It's a GitHub data transfer service for petabytes of data where a GitHub owned car will drive to your location and transfer the data to your local network.
 - [ ] It's a GitHub telemetry service that allows you to track your users' activity on your website or mobile app.
+
+---------------------↑ まで完了------------------------------
 
 ### 88. How can you link a pull request to an issue? (Choose two.)
 
