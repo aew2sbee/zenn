@@ -888,8 +888,6 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] Draft pull requests are pull requests that have already been reviewed but not approved.
 - [ ] Draft pull requests are templates for creating new pull requests.
 
----------------------↑ まで完了------------------------------
-
 ### 95. What are the possible statuses for a pull request review? (Choose three.)
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews#about-pull-request-reviews
@@ -900,6 +898,8 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/review
 - [ ] Close
 - [ ] Deny
 - [ ] Applaud
+
+---------------------↑ まで完了------------------------------
 
 ### 96. Which of these statements about the differences of issues and discussions is true?
 
