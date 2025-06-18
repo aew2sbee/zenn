@@ -879,8 +879,6 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [x] `main` is the base branch and `feature-a` is the compare branch.
 - [ ] `feature-a` is the base branch and `main` is the compare branch.
 
----------------------↑ まで完了------------------------------
-
 ### 94. What are draft pull requests?
 
 https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests
@@ -889,6 +887,8 @@ https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/propos
 - [ ] Draft pull requests are pull requests that have already been reviewed but not merged.
 - [ ] Draft pull requests are pull requests that have already been reviewed but not approved.
 - [ ] Draft pull requests are templates for creating new pull requests.
+
+---------------------↑ まで完了------------------------------
 
 ### 95. What are the possible statuses for a pull request review? (Choose three.)
 
