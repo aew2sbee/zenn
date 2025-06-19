@@ -915,8 +915,6 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 - [ ] Issues
 - [ ] Projects
 
----------------------↑ まで完了------------------------------
-
 ### 98. What are GitHub Wikis?
 
 https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis
@@ -926,6 +924,8 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
 - [ ] Wikis is a feature for hosting code snippets.
       That's Gists
 - [ ] Wikis is a place where you hold the project's `README.md` file.
+
+---------------------↑ まで完了------------------------------
 
 ### 99. What are the two available options when you no longer need to use a Project?
 
