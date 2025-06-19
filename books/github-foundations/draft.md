@@ -925,8 +925,6 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
       That's Gists
 - [ ] Wikis is a place where you hold the project's `README.md` file.
 
----------------------↑ まで完了------------------------------
-
 ### 99. What are the two available options when you no longer need to use a Project?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects
@@ -935,6 +933,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [x] Close and delete
 - [ ] Archive and close
 - [ ] Deactivate and archive
+
+---------------------↑ まで完了------------------------------
 
 ### 100. Can you change a gist from public to secret after creating it?
 
