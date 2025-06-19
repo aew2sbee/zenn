@@ -906,8 +906,6 @@ https://docs.github.com/ja/discussions/quickstart
 - [x] GitHub Discussions are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Issues.
 - [ ] GitHub Issues are for conversations that need to be transparent and accessible but do not need to be tracked on a project board and are not related to code, unlike GitHub Discussions.
 
----------------------↑ まで完了------------------------------
-
 ### 97. Which of the GitHub features best serves as a simple way to share small code snippets with others?
 
 https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
@@ -916,6 +914,8 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 - [ ] Wikis
 - [ ] Issues
 - [ ] Projects
+
+---------------------↑ まで完了------------------------------
 
 ### 98. What are GitHub Wikis?
 
