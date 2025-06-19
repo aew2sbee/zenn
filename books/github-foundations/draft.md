@@ -934,8 +934,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [ ] Archive and close
 - [ ] Deactivate and archive
 
----------------------↑ まで完了------------------------------
-
 ### 100. Can you change a gist from public to secret after creating it?
 
 https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
@@ -943,6 +941,8 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 - [ ] Yes
 - [x] No
       After creating a gist, you cannot convert it from public to secret.
+
+---------------------↑ まで完了------------------------------
 
 ### 101. What happens when you choose to close a Project?
 
