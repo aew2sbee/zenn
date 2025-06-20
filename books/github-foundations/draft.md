@@ -960,8 +960,6 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [x] `.github` directory, Root directory, `.docs` directory
 - [ ] `.docs` directory, `.github` directory, Root directory
 
----------------------↑ まで完了------------------------------
-
 ### 103. Which of the following Git commands allow you to create a new branch and start working on it in one line? (Select two.)
 
 https://git-scm.com/docs/git-switch
@@ -972,6 +970,8 @@ https://git-scm.com/docs/git-switch
 - [ ] git merge -m `<new_branch_name>`
 - [ ] git switch -m `<new_branch_name>`
 - [ ] git checkout -m `<new_branch_name>`
+
+---------------------↑ まで完了------------------------------
 
 ### 104. If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?
 
