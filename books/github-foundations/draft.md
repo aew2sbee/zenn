@@ -951,8 +951,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [ ] Associated values and insights data are deleted
 - [ ] The Project is moved to a separate folder
 
----------------------↑ まで完了------------------------------
-
 ### 102. If there are multiple Readme.md files in a GitHub repository, what is the priority order to show them?
 
 https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
@@ -961,6 +959,8 @@ https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-f
 - [ ] `.docs` directory, Root directory, `.github` directory
 - [x] `.github` directory, Root directory, `.docs` directory
 - [ ] `.docs` directory, `.github` directory, Root directory
+
+---------------------↑ まで完了------------------------------
 
 ### 103. Which of the following Git commands allow you to create a new branch and start working on it in one line? (Select two.)
 
