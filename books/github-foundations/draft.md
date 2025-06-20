@@ -971,8 +971,6 @@ https://git-scm.com/docs/git-switch
 - [ ] git switch -m `<new_branch_name>`
 - [ ] git checkout -m `<new_branch_name>`
 
----------------------↑ まで完了------------------------------
-
 ### 104. If a GitHub Discussion is converted into an Issue and the issue is closed or referred to using its corresponding # number, will the discussion be modified?
 
 https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-discussion
@@ -980,6 +978,8 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-iss
 - [x] No
 - [ ] Yes
       When you "convert" a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
+
+---------------------↑ まで完了------------------------------
 
 ### 105. Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
 
