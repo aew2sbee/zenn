@@ -942,8 +942,6 @@ https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-con
 - [x] No
       After creating a gist, you cannot convert it from public to secret.
 
----------------------↑ まで完了------------------------------
-
 ### 101. What happens when you choose to close a Project?
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-your-project/closing-and-deleting-your-projects
@@ -952,6 +950,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [x] The content is retained and you have the ability to reopen it later.
 - [ ] Associated values and insights data are deleted
 - [ ] The Project is moved to a separate folder
+
+---------------------↑ まで完了------------------------------
 
 ### 102. If there are multiple Readme.md files in a GitHub repository, what is the priority order to show them?
 
