@@ -979,8 +979,6 @@ https://docs.github.com/ja/issues/tracking-your-work-with-issues/creating-an-iss
 - [ ] Yes
       When you "convert" a discussion into an Issue it essentially creates a new issue that is soft linked to the discussion and pre-fills the issue information. There isn't a bigger connection between them.
 
----------------------↑ まで完了------------------------------
-
 ### 105. Which information can be found in the Pulse section in the Insights tab of a repository? (Choose four)
 
 https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/using-pulse-to-view-a-summary-of-repository-activity
@@ -991,6 +989,8 @@ https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repos
 - [ ] List of issue discussions
 - [x] List of unresolved conversations
 - [ ] Amount of forks of the repo
+
+---------------------↑ まで完了------------------------------
 
 ### 106. What are the different levels of GitHub organizational hierarchy? (Choose three.)
 
