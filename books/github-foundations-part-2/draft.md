@@ -1071,8 +1071,6 @@ https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-wha
 - [ ] `// TODO: and // DONE:`
 - [ ] `<taskand <done>`
 
----------------------↑ まで完了------------------------------
-
 ### 113. Which Markdown element is not correctly paired with its syntax?
 
 https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-what-is-markdown
@@ -1081,6 +1079,8 @@ https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-wha
 - [ ] Bold text - `**bold**`
 - [x] Inline code - `'''code'''`
 - [ ] Hyperlink - `[title](https://)`
+
+---------------------↑ まで完了------------------------------
 
 ### 114. What feature is unique to GitHub Desktop compared to github.com?
 
