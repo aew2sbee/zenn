@@ -1092,7 +1092,7 @@ GitHub Desktop provides a graphical interface for visualizing branch histories, 
 - [ ] View repository insights
 - [x] Visualize branch histories in a graphical interface
 
----------------------↑ まで完了------------------------------
+
 
 ### 115. Which of the following actions cannot be performed directly from GitHub Desktop?
 
@@ -1104,6 +1104,9 @@ Managing GitHub Actions is not a feature available in GitHub Desktop and must be
 - [x] Managing GitHub Actions
 - [ ] Switching between branches
 - [ ] Committing changes
+
+
+---------------------↑ まで完了------------------------------
 
 ### 116. What are some actions you can do in regards to Project Templates in your organization? (Choose three.)
 
