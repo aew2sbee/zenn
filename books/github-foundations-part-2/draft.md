@@ -1080,8 +1080,6 @@ https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-wha
 - [x] Inline code - `'''code'''`
 - [ ] Hyperlink - `[title](https://)`
 
----------------------↑ まで完了------------------------------
-
 ### 114. What feature is unique to GitHub Desktop compared to github.com?
 
 GitHub Desktop provides a graphical interface for visualizing branch histories, which is unique compared to the website
@@ -1093,6 +1091,8 @@ GitHub Desktop provides a graphical interface for visualizing branch histories, 
 - [ ] Create new repositories
 - [ ] View repository insights
 - [x] Visualize branch histories in a graphical interface
+
+---------------------↑ まで完了------------------------------
 
 ### 115. Which of the following actions cannot be performed directly from GitHub Desktop?
 
