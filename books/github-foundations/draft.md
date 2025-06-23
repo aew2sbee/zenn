@@ -990,11 +990,9 @@ https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repos
 - [x] List of unresolved conversations
 - [ ] Amount of forks of the repo
 
----------------------↑ まで完了------------------------------
-
 ### 106. What are the different levels of GitHub organizational hierarchy? (Choose three.)
 
-https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
+https://learn.microsoft.com/ja/training/modules/github-introduction-administration/2-what-is-github-administration
 
 - [x] Team level
 - [x] Organization level
@@ -1003,6 +1001,8 @@ https://learn.microsoft.com/en-us/training/modules/github-introduction-administr
 - [ ] Pro level
       GitHub Pro is a type of account and not an organizational hierarchy on GitHub.
 - [x] Enterprise level
+
+---------------------↑ まで完了------------------------------
 
 ### 107. Who can setup billing or assign billing managers for an organization? (Select three.)
 
