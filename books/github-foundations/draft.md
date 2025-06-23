@@ -1006,7 +1006,7 @@ https://learn.microsoft.com/ja/training/modules/github-introduction-administrati
 
 ### 107. Who can setup billing or assign billing managers for an organization? (Select three.)
 
-Official GitHub documentation: https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization, Microsoft Learn study guide: https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/2-what-is-github-administration
+Official GitHub documentation: https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization, 
 
 - [ ] Owner of the repository
 - [ ] Team maintainer at the team level
