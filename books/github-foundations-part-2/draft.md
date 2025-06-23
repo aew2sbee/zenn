@@ -1050,8 +1050,6 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 - [ ] Business
 - [ ] Advanced
 
----------------------↑ まで完了------------------------------
-
 ### 111. What is/are the common GitHub pricing plan(s) for both personal and organization accounts?
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
@@ -1063,6 +1061,8 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+
+---------------------↑ まで完了------------------------------
 
 ### 112. What syntax is used in GitHub Markdown to create a task list?
 
