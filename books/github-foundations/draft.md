@@ -1038,8 +1038,6 @@ https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-
 - [x] GitHub mobile
 - [x] Time-based one-time password (TOTP)
 
----------------------↑ まで完了------------------------------
-
 ### 110. What are the different GitHub pricing plans for personal accounts? (Select two)
 
 https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
@@ -1051,6 +1049,8 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 - [ ] Personal
 - [ ] Business
 - [ ] Advanced
+
+---------------------↑ まで完了------------------------------
 
 ### 111. What is/are the common GitHub pricing plan(s) for both personal and organization accounts?
 
