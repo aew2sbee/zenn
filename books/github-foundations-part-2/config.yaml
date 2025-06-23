@@ -1,0 +1,43 @@
+title: '[日本語版] GitHub Foundationsの過去問 Part2'
+summary: "GitHub Foundationsの過去問集を日本語に翻訳したものです。\n100~135問掲載(本のチャプターは最大100個まで)\nGitHub Foundationsの学習としてご利用ください。\n本書の概要 ▶ https://zenn.dev/aew2sbee/books/github-foundations/viewer/explanation"
+topics: ['github', '資格勉強', 'githubfoundations'] # トピック（5つまで）
+published: true # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - question100
+  - question101
+  - question102
+  - question103
+  - question104
+  - question105
+  - question106
+  - question107
+  - question108
+  - question109
+  - question110
+  - question111
+  - question112
+  - question113
+  - question114
+  - question115
+  - question116
+  - question117
+  - question118
+  - question119
+  - question120
+  - question121
+  - question122
+  - question123
+  - question124
+  - question125
+  - question126
+  - question127
+  - question128
+  - question129
+  - question130
+  - question131
+  - question132
+  - question133
+  - question134
+  - question135
+  - explanation
