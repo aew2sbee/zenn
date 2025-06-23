@@ -1062,8 +1062,6 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 - [ ] Business
 - [ ] Advanced
 
----------------------↑ まで完了------------------------------
-
 ### 112. What syntax is used in GitHub Markdown to create a task list?
 
 https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-what-is-markdown
@@ -1072,6 +1070,8 @@ https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-wha
 - [ ] `# TODO: and # DONE:`
 - [ ] `// TODO: and // DONE:`
 - [ ] `<taskand <done>`
+
+---------------------↑ まで完了------------------------------
 
 ### 113. Which Markdown element is not correctly paired with its syntax?
 
