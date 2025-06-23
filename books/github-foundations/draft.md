@@ -1025,8 +1025,6 @@ https://learn.microsoft.com/ja/training/modules/github-introduction-administrati
 - [ ] PAT lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access.
       This is a description of LDAP's benefits for GitHub, not PAT.
 
----------------------↑ まで完了------------------------------
-
 ### 109. What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)
 
 https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-authentication-2fa/accessing-github-using-two-factor-authentication
@@ -1039,6 +1037,8 @@ https://docs.github.com/ja/authentication/securing-your-account-with-two-factor-
 - [x] Security key
 - [x] GitHub mobile
 - [x] Time-based one-time password (TOTP)
+
+---------------------↑ まで完了------------------------------
 
 ### 110. What are the different GitHub pricing plans for personal accounts? (Select two)
 
