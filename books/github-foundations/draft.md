@@ -1002,11 +1002,9 @@ https://learn.microsoft.com/ja/training/modules/github-introduction-administrati
       GitHub Pro is a type of account and not an organizational hierarchy on GitHub.
 - [x] Enterprise level
 
----------------------↑ まで完了------------------------------
-
 ### 107. Who can setup billing or assign billing managers for an organization? (Select three.)
 
-Official GitHub documentation: https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization, 
+Official GitHub documentation: https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/adding-a-billing-manager-to-your-organization,
 
 - [ ] Owner of the repository
 - [ ] Team maintainer at the team level
@@ -1017,7 +1015,7 @@ Official GitHub documentation: https://docs.github.com/ja/organizations/managing
 
 ### 108. What is one of the main benefits for using a Personal Access Token (PAT) instead of a standard username and password for GitHub authentication?
 
-https://learn.microsoft.com/en-us/training/modules/github-introduction-administration/3-how-github-authentication-works
+https://learn.microsoft.com/ja/training/modules/github-introduction-administration/3-how-github-authentication-works
 
 - [ ] PATs can be managed by the organization and enterprise.
       PAT's as the name suggests, are personal. Organizations and Enterprises can manage other forms of authentication, such as LDAP, SAML, and SSH keys.
@@ -1026,6 +1024,8 @@ https://learn.microsoft.com/en-us/training/modules/github-introduction-administr
 - [x] PAT can be used for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub's settings option, and tie the token permissions to a repository or organization.
 - [ ] PAT lets you authenticate GitHub Enterprise Server against your existing accounts and centrally manage repository access.
       This is a description of LDAP's benefits for GitHub, not PAT.
+
+---------------------↑ まで完了------------------------------
 
 ### 109. What are the different forms of two-factor or multi-factor authentication supported by GitHub? (Choose five.)
 
@@ -1066,7 +1066,7 @@ https://docs.github.com/ja/get-started/learning-about-github/githubs-plans
 
 ### 112. What syntax is used in GitHub Markdown to create a task list?
 
-https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
+https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-what-is-markdown
 
 - [x] `- [ ] and - [x]`
 - [ ] `# TODO: and # DONE:`
@@ -1075,7 +1075,7 @@ https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-
 
 ### 113. Which Markdown element is not correctly paired with its syntax?
 
-https://learn.microsoft.com/en-us/training/modules/communicate-using-markdown/2-what-is-markdown
+https://learn.microsoft.com/ja/training/modules/communicate-using-markdown/2-what-is-markdown
 
 - [ ] Heading - `# Heading`
 - [ ] Bold text - `**bold**`
