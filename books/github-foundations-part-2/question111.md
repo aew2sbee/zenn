@@ -17,7 +17,7 @@ title: '2 要素認証を利用した GitHub へのアクセス'
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](hhttps://docs.github.com/ja/get-started/learning-about-github/githubs-plans)
+[公式ドキュメント](https://docs.github.com/ja/get-started/learning-about-github/githubs-plans)
 
 - [x] Free
 - [ ] Team
