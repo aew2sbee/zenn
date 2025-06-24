@@ -1092,8 +1092,6 @@ GitHub Desktop provides a graphical interface for visualizing branch histories, 
 - [ ] View repository insights
 - [x] Visualize branch histories in a graphical interface
 
-
-
 ### 115. Which of the following actions cannot be performed directly from GitHub Desktop?
 
 Managing GitHub Actions is not a feature available in GitHub Desktop and must be done via github.com or CI/CD integration
@@ -1105,9 +1103,6 @@ Managing GitHub Actions is not a feature available in GitHub Desktop and must be
 - [ ] Switching between branches
 - [ ] Committing changes
 
-
----------------------↑ まで完了------------------------------
-
 ### 116. What are some actions you can do in regards to Project Templates in your organization? (Choose three.)
 
 https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-your-project/managing-project-templates-in-your-organization
@@ -1118,6 +1113,8 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [x] Create a new template to be used as a base for new projects
 - [x] With admin or write permissions, copy an existing project as a template
 - [ ] Publish your templates in GitHub Marketplace for anyone to use
+
+---------------------↑ まで完了------------------------------
 
 ### 117. Which of the following is true about GitHub wikis?
 
