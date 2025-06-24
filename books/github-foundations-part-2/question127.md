@@ -2,7 +2,7 @@
 title: 'Projects について'
 ---
 
-## Q126: 新しい GitHub Projects と GitHub Projects Classic の大きな違いについて、最も適切な説明はどれですか？
+## Q128: 新しい GitHub Projects と GitHub Projects Classic の大きな違いについて、最も適切な説明はどれですか？
 
 ### 選択肢
 
