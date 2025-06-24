@@ -1153,8 +1153,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] They can turn off code reviews for repositories in the organization.
 - [ ] They can remove the `Require status checks to pass before merging` branch protection rule.
 
----------------------↑ まで完了------------------------------
-
 ### 121. Which feature provides pre-built charts or visualizations for repository activity and health?
 
 **More info**: [About repository insights](https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs)
@@ -1163,6 +1161,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Actions
 - [ ] GitHub Projects
 - [ ] GitHub Discussions
+
+---------------------↑ まで完了------------------------------
 
 ### 122. Which of these features does GitHub Copilot for Business offer that GitHub Copilot for Individuals does not?
 
