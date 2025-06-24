@@ -1210,8 +1210,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Pending
 - [ ] Abandoned
 
----------------------↑ まで完了------------------------------
-
 ### 127. Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?
 
 **More info**: [About projects](https://docs.github.com/ja/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects#differences-from-projects-classic)
@@ -1220,6 +1218,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Projects Classic has a built-in AI that automatically closes pull requests, while the new GitHub Projects do not.
 - [ ] GitHub Projects Classic supports code scanning and secret scanning, while the new GitHub Projects do not.
 - [ ] The new GitHub Projects only allow you to manage open issues without supporting pull requests.
+
+---------------------↑ まで完了------------------------------
 
 ### 128. Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file? (Choose three.)
 
