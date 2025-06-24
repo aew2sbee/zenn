@@ -1162,8 +1162,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Projects
 - [ ] GitHub Discussions
 
----------------------↑ まで完了------------------------------
-
 ### 122. Which of these features does GitHub Copilot for Business offer that GitHub Copilot for Individuals does not?
 
 **More info**: [GitHub Copilot for Business](https://docs.github.com/ja/copilot/about-github-copilot/subscription-plans-for-github-copilot)
@@ -1172,6 +1170,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Exemption from all paid usage fees
 - [ ] 24/7 phone support from GitHub Copilot team
 - [ ] Local hosting of the AI model behind GitHub Copilot
+
+---------------------↑ まで完了------------------------------
 
 ### 123. What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?
 
