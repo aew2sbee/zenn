@@ -1134,8 +1134,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Write
 - [x] Maintain
 
----------------------↑ まで完了------------------------------
-
 ### 119. What is the minimum permission a user must have to directly push commits to a repository owned by an organization?
 
 **More info**: [Repository roles for organizations](https://docs.github.com/ja/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization)
@@ -1145,6 +1143,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Delete the repository
 - [ ] Change repository settings
 - [ ] Create new repositories
+
+---------------------↑ まで完了------------------------------
 
 ### 120. Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?
 
