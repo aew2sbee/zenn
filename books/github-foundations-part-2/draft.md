@@ -1253,8 +1253,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] An organization account can only be created if you have a GitHub Enterprise plan.  
        Organizations are available on Free, Team, or Enterprise plans.
 
----------------------↑ まで完了------------------------------
-
 ### 131. Which statement best describes the difference between cloning a repository and forking a repository?
 
 **More info**: [About forks](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks)
@@ -1265,6 +1263,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
        **Correct**. A fork is a GitHub-level copy that appears in your account, whereas a clone is a local-only copy.
 - [ ] Cloning always transfers repository ownership, while forking does not.
 - [ ] Only private repositories can be forked, whereas only public repositories can be cloned.
+
+---------------------↑ まで完了------------------------------
 
 ### 132. Which of these statements about pinned items on your GitHub profile is true?
 
