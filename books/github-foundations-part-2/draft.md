@@ -1114,8 +1114,6 @@ https://docs.github.com/ja/issues/planning-and-tracking-with-projects/managing-y
 - [x] With admin or write permissions, copy an existing project as a template
 - [ ] Publish your templates in GitHub Marketplace for anyone to use
 
----------------------↑ まで完了------------------------------
-
 ### 117. Which of the following is true about GitHub wikis?
 
 https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about-wikis
@@ -1124,6 +1122,8 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
 - [ ] You can only edit wikis directly on GitHub; local editing is not supported.
 - [x] Wikis in public repositories are accessible to anyone, while those in private repositories are only accessible to repository collaborators.
 - [ ] Markdown cannot be used to add rendered math expressions, diagrams, maps, and 3D models to a wiki.
+
+---------------------↑ まで完了------------------------------
 
 ### 118. Which of the following roles are available for a repository at the organization level on GitHub? (Choose five.)
 
