@@ -1144,8 +1144,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Change repository settings
 - [ ] Create new repositories
 
----------------------↑ まで完了------------------------------
-
 ### 120. Which of these is a capability of a Security Manager with respect to GitHub Actions in an organization?
 
 **More info**: [Roles in an organization](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
@@ -1154,6 +1152,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] They can delete all workflow runs from private repositories that are over 90 days old.
 - [ ] They can turn off code reviews for repositories in the organization.
 - [ ] They can remove the `Require status checks to pass before merging` branch protection rule.
+
+---------------------↑ まで完了------------------------------
 
 ### 121. Which feature provides pre-built charts or visualizations for repository activity and health?
 
