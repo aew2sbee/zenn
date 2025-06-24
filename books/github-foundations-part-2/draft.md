@@ -1298,8 +1298,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] A feature that searches repositories for known secret formats to prevent accidental exposure of sensitive data.  
        **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
 
----------------------↑ まで完了------------------------------
-
 ### 135. Which of these statements about GitHub Pages is correct?
 
 **More info**: [About GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages)
@@ -1311,3 +1309,5 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Pages automatically converts Java files into dynamic web apps.
 - [ ] GitHub Pages can only be used by organization accounts.  
        Both personal and organization accounts can use Pages.
+
+---------------------↑ まで完了------------------------------
