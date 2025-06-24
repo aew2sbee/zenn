@@ -1199,8 +1199,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] `is:issue is:open label:test "fix"`
 - [ ] `type:issue label:test is:open body:"fix"`
 
----------------------↑ まで完了------------------------------
-
 ### 126. Which of the following are valid states for a pull request on GitHub? (Choose four.)
 
 **More info**: [About pull requests](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
@@ -1211,6 +1209,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Closed
 - [ ] Pending
 - [ ] Abandoned
+
+---------------------↑ まで完了------------------------------
 
 ### 127. Which statement best describes a major difference between new GitHub Projects and GitHub Projects Classic?
 
