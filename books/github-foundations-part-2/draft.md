@@ -1190,8 +1190,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Convert it to an issue
 - [ ] Merge it into an existing pull request
 
----------------------↑ まで完了------------------------------
-
 ### 125. Which search query finds all open issues labeled `test` that mention 'fix' in their body text?
 
 **More info**: [Searching issues and pull requests](https://docs.github.com/ja/search-github/searching-on-github/searching-issues-and-pull-requests)
@@ -1200,6 +1198,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] `is:issue in:comments label:test "fix"`
 - [x] `is:issue is:open label:test "fix"`
 - [ ] `type:issue label:test is:open body:"fix"`
+
+---------------------↑ まで完了------------------------------
 
 ### 126. Which of the following are valid states for a pull request on GitHub? (Choose four.)
 
