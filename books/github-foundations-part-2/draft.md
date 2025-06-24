@@ -1171,8 +1171,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] 24/7 phone support from GitHub Copilot team
 - [ ] Local hosting of the AI model behind GitHub Copilot
 
----------------------↑ まで完了------------------------------
-
 ### 123. What is the main difference between an organization member and an outside collaborator for a repository owned by that organization?
 
 **More info**: [Adding outside collaborators to repositories in your organization](https://docs.github.com/ja/organizations/managing-access-to-your-organizations-repositories/adding-outside-collaborators-to-repositories-in-your-organization)
@@ -1181,6 +1179,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Outside collaborators can manage billing settings, while members cannot.
 - [ ] Members can never contribute to private repositories, while outside collaborators can.
 - [ ] Outside collaborators automatically become team maintainers in the organization.
+
+---------------------↑ まで完了------------------------------
 
 ### 124. Which of the following actions can you perform on a GitHub Discussion? (Choose three.)
 
