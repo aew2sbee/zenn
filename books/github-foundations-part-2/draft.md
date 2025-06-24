@@ -1264,8 +1264,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Cloning always transfers repository ownership, while forking does not.
 - [ ] Only private repositories can be forked, whereas only public repositories can be cloned.
 
----------------------↑ まで完了------------------------------
-
 ### 132. Which of these statements about pinned items on your GitHub profile is true?
 
 **More info**: [Pinning items to your profile](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/pinning-items-to-your-profile)
@@ -1275,6 +1273,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
        **Correct**. GitHub supports pinning up to six items (repositories or gists).
 - [ ] You can only pin public repositories, not private ones.
 - [ ] Pinning an item deletes it from your repository list.
+
+---------------------↑ まで完了------------------------------
 
 ### 133. Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention 'docker' in their name?
 
