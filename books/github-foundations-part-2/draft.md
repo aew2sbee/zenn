@@ -1219,8 +1219,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Projects Classic supports code scanning and secret scanning, while the new GitHub Projects do not.
 - [ ] The new GitHub Projects only allow you to manage open issues without supporting pull requests.
 
----------------------↑ まで完了------------------------------
-
 ### 128. Which of these can you customize in a Codespaces `.devcontainer/devcontainer.json` configuration file? (Choose three.)
 
 **More info**: [Introduction to dev containers](https://docs.github.com/ja/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
@@ -1231,6 +1229,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Codespace display name
 - [ ] Repository branch protection rules
 - [ ] Organization-level policies
+
+---------------------↑ まで完了------------------------------
 
 ### 129. Which roles in an organization can view and manage security alerts for private repositories?
 
