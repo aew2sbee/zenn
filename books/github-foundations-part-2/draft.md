@@ -1180,8 +1180,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Members can never contribute to private repositories, while outside collaborators can.
 - [ ] Outside collaborators automatically become team maintainers in the organization.
 
----------------------↑ まで完了------------------------------
-
 ### 124. Which of the following actions can you perform on a GitHub Discussion? (Choose three.)
 
 **More info**: [About discussions](https://docs.github.com/ja/discussions/quickstart#introduction)
@@ -1191,6 +1189,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Convert the discussion to a secret gist
 - [x] Convert it to an issue
 - [ ] Merge it into an existing pull request
+
+---------------------↑ まで完了------------------------------
 
 ### 125. Which search query finds all open issues labeled `test` that mention 'fix' in their body text?
 
