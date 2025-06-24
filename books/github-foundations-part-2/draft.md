@@ -1123,8 +1123,6 @@ https://docs.github.com/ja/communities/documenting-your-project-with-wikis/about
 - [x] Wikis in public repositories are accessible to anyone, while those in private repositories are only accessible to repository collaborators.
 - [ ] Markdown cannot be used to add rendered math expressions, diagrams, maps, and 3D models to a wiki.
 
----------------------↑ まで完了------------------------------
-
 ### 118. Which of the following roles are available for a repository at the organization level on GitHub? (Choose five.)
 
 https://docs.github.com/ja/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations
@@ -1135,6 +1133,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Admin
 - [x] Write
 - [x] Maintain
+
+---------------------↑ まで完了------------------------------
 
 ### 119. What is the minimum permission a user must have to directly push commits to a repository owned by an organization?
 
