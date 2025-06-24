@@ -1274,8 +1274,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] You can only pin public repositories, not private ones.
 - [ ] Pinning an item deletes it from your repository list.
 
----------------------↑ まで完了------------------------------
-
 ### 133. Which advanced search operator combination would you use to find public repositories with more than 100 stars that mention 'docker' in their name?
 
 **More info**: [Searching repositories](https://docs.github.com/ja/search-github/searching-on-github/searching-for-repositories)
@@ -1287,6 +1285,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
        This is missing the range operator (`>`) for stars, and `name:docker` is not a valid syntax.
 - [ ] `topic:docker stars:>100 in:readme`  
        This searches within topics or readmes, not the repository name.
+
+---------------------↑ まで完了------------------------------
 
 ### 134. Which of the following best describes GitHub secret scanning?
 
