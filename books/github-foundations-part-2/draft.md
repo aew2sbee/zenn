@@ -1230,8 +1230,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Repository branch protection rules
 - [ ] Organization-level policies
 
----------------------↑ まで完了------------------------------
-
 ### 129. Which roles in an organization can view and manage security alerts for private repositories?
 
 **More info**: [Roles in an organization](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
@@ -1243,6 +1241,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Organization owners and Security managers  
        **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
 - [ ] Billing managers
+
+---------------------↑ まで完了------------------------------
 
 ### 130. Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?
 
