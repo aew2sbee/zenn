@@ -1286,8 +1286,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] `topic:docker stars:>100 in:readme`  
        This searches within topics or readmes, not the repository name.
 
----------------------↑ まで完了------------------------------
-
 ### 134. Which of the following best describes GitHub secret scanning?
 
 **More info**: [About secret scanning](https://docs.github.com/ja/code-security/secret-scanning/about-secret-scanning)
@@ -1299,6 +1297,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] A feature that runs third-party password managers on your code to store secrets securely.
 - [x] A feature that searches repositories for known secret formats to prevent accidental exposure of sensitive data.  
        **Correct**. Secret scanning detects tokens, keys, and other credentials to help avoid leaks.
+
+---------------------↑ まで完了------------------------------
 
 ### 135. Which of these statements about GitHub Pages is correct?
 
