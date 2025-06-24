@@ -1242,8 +1242,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
        **Correct**. Organization owners and Security managers can view and manage security alerts, including for private repositories.
 - [ ] Billing managers
 
----------------------↑ まで完了------------------------------
-
 ### 130. Which of these statements accurately describes a difference between personal accounts and organization accounts on GitHub?
 
 **More info**: [Types of GitHub accounts](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
@@ -1254,6 +1252,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] A personal account can only be accessed via SSH keys, while an organization account can only be accessed via passwords.
 - [ ] An organization account can only be created if you have a GitHub Enterprise plan.  
        Organizations are available on Free, Team, or Enterprise plans.
+
+---------------------↑ まで完了------------------------------
 
 ### 131. Which statement best describes the difference between cloning a repository and forking a repository?
 
