@@ -14,8 +14,6 @@ Article Grant access to Copilot for members of an organization -https://docs.git
 - [ ] Via your Organizations settings, enable GitHub Copilot for either selected teams or users or the entire organization.
 - [ ] You can use GitHub's REST API to grant access to GitHub Copilot for teams, or specific users, in your organization.
 
----------------------↑ まで完了------------------------------
-
 ### 3. What IDEs does GitHub Copilot support? (Choose two.)
 
 https://docs.github.com/ja/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot
@@ -24,6 +22,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/getting-code-suggestions
 - [x] Azure Data Studio, Visual Studio, IntelliJ IDEA
 - [ ] Visual Studio, NetBeans, Eclipse
 - [ ] Visual Studio, BlueJ, NetBeans
+
+---------------------↑ まで完了------------------------------
 
 ### 4. What command is used to install the GitHub Copilot extension on the CLI?
 
