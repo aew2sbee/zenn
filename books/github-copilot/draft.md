@@ -14,6 +14,8 @@ Article Grant access to Copilot for members of an organization -https://docs.git
 - [ ] Via your Organizations settings, enable GitHub Copilot for either selected teams or users or the entire organization.
 - [ ] You can use GitHub's REST API to grant access to GitHub Copilot for teams, or specific users, in your organization.
 
+---------------------↑ まで完了------------------------------
+
 ### 3. What IDEs does GitHub Copilot support? (Choose two.)
 
 https://docs.github.com/ja/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot
@@ -47,7 +49,7 @@ https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-g
 https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
 
 - [ ] Editing the file .gitignore
-       .gitignore is used to exclude the file from git, not copilot
+      .gitignore is used to exclude the file from git, not copilot
 - [x] Browsing to the repository settings on GitHub and adding the paths to exclude
 - [ ] Configuring exclusions in the Copilot configuration file
 - [ ] Using a command in the terminal
@@ -98,9 +100,9 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/customizing-copilot/a
 - [x] By creating a file named `.github/copilot-instructions.md` in the repository
 - [ ] By sending an email to GitHub support with your project details
 - [ ] By modifying the `.gitconfig` file to include custom instructions
-       Modifying the `.gitconfig` file does not provide custom instructions to GitHub Copilot.
+      Modifying the `.gitconfig` file does not provide custom instructions to GitHub Copilot.
 - [ ] By creating a GitHub issue named `copilot-instructions` in the repository with the necessary context
-       Creating a GitHub issue does not provide custom instructions to GitHub Copilot.
+      Creating a GitHub issue does not provide custom instructions to GitHub Copilot.
 
 ### 12. Can GitHub Copilot use semantic information from a file that is ignored by GitHub Copilot content exclusions?
 
@@ -108,7 +110,7 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 
 - [x] Yes, if the information is provided by the IDE indirectly.
 - [ ] No, it will ignore all information from excluded files.
-       It's possible that Copilot may use semantic information from an excluded file if the information is provided by the IDE indirectly. Examples of such content include type information and hover-over definitions for symbols used in code, as well as general project properties such as build configuration information.
+      It's possible that Copilot may use semantic information from an excluded file if the information is provided by the IDE indirectly. Examples of such content include type information and hover-over definitions for symbols used in code, as well as general project properties such as build configuration information.
 
 ### 13. What happens when you exclude content from GitHub Copilot? (Choose two)
 
