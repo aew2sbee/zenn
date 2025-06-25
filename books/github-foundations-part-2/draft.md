@@ -1312,7 +1312,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 
 ---------------------↑ まで完了------------------------------
 
-### Which of the following scenarios is a common use case for a version control system?
+### 136. Which of the following scenarios is a common use case for a version control system?
 
 [About VCS](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 
@@ -1321,7 +1321,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Gathering feature requirements for a large project and communicating them to stakeholders.
 - [ ] Scheduling team meetings and tracking attendance for project updates.
 
-### What is another name for a version control system?
+### 137. What is another name for a version control system?
 
 [About version control](https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git)
 
@@ -1329,7 +1329,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Software control management (SCM) system.
 - [x] Software configuration management (SCM) system.
 
-### What Git command gives information about how to use Git?
+### 138. What Git command gives information about how to use Git?
 
 [Git Reference - Getting Help](https://git-scm.com/docs/git#_getting_help)
 
@@ -1337,7 +1337,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] git init
 - [x] git help
 
-### In what scenario would GitHub Issues be more effective than Discussions?
+### 139. In what scenario would GitHub Issues be more effective than Discussions?
 
 [About GitHub Issues](https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-issues)
 
@@ -1345,7 +1345,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] When tracking specific tasks and bugs that require resolution.
 - [ ] When seeking community input on project ideas and improvements.
 
-### Your team is preparing to deploy a new feature using GitHub branches. What should be done to ensure the feature branch is ready for deployment?
+### 140. Your team is preparing to deploy a new feature using GitHub branches. What should be done to ensure the feature branch is ready for deployment?
 
 [About pull requests](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
@@ -1353,7 +1353,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Delete the feature branch to finalize the deployment process.
 - [x] Ensure all changes are reviewed and approved through a pull request before merging into the main branch.
 
-### What is the significance of the &#39;commit message&#39; in the GitHub flow process?
+### 141. What is the significance of the 'commit message' in the GitHub flow process?
 
 [About commits](https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)
 
@@ -1361,7 +1361,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] It creates a backup of the repository.
 - [x] It provides a summary of changes made in a commit, aiding in project history tracking.
 
-### Why might a team choose GitHub Issues over Discussions for managing bug reports?
+### 142. Why might a team choose GitHub Issues over Discussions for managing bug reports?
 
 [About issues](https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-issues)
 
@@ -1369,7 +1369,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Issues provide a structured format for tracking and resolving bugs.
 - [ ] Issues are automatically resolved when linked to pull requests.
 
-### When should a GitHub issue be used instead of a discussion?
+### 143. When should a GitHub issue be used instead of a discussion?
 
 [Discussions vs Issues](https://docs.github.com/ja/discussions/collaborating-with-your-community-using-discussions/about-discussions#discussions-and-issues)
 
@@ -1377,7 +1377,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] When seeking open-ended feedback on a project idea.
 - [ ] When announcing project milestones to the team.
 
-### While working on a feature, you decide to create a new branch for changes. What is the primary benefit of using branches in GitHub?
+### 144. While working on a feature, you decide to create a new branch for changes. What is the primary benefit of using branches in GitHub?
 
 [About branches](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 
@@ -1385,7 +1385,7 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] They automatically deploy changes to production environments.
 - [x] They allow development work without affecting the main branch.
 
-### Which action is necessary for adding a file to a GitHub repository?
+### 145. Which action is necessary for adding a file to a GitHub repository?
 
 [Repository permission levels for an organization](https://docs.github.com/ja/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization)
 
