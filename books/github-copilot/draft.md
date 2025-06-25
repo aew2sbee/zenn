@@ -1,11 +1,11 @@
-### Is GitHub Copilot free to use for everyone?
+### 1. Is GitHub Copilot free to use for everyone?
 
 https://github.com/features/copilot/plans
 
 - [ ] No
 - [x] Yes
 
-### Which option below is NOT a possible way to grant access to Copilot for members of an organization?
+### 2. Which option below is NOT a possible way to grant access to Copilot for members of an organization?
 
 Article Grant access to Copilot for members of an organization -https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-access-to-github-copilot-in-your-organization/granting-access-to-copilot-for-members-of-your-organization
 
@@ -14,7 +14,7 @@ Article Grant access to Copilot for members of an organization -https://docs.git
 - [ ] Via your Organizations settings, enable GitHub Copilot for either selected teams or users or the entire organization.
 - [ ] You can use GitHub's REST API to grant access to GitHub Copilot for teams, or specific users, in your organization.
 
-### What IDEs does GitHub Copilot support? (Choose two.)
+### 3. What IDEs does GitHub Copilot support? (Choose two.)
 
 https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot
 
@@ -23,7 +23,7 @@ https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions
 - [ ] Visual Studio, NetBeans, Eclipse
 - [ ] Visual Studio, BlueJ, NetBeans
 
-### What command is used to install the GitHub Copilot extension on the CLI?
+### 4. What command is used to install the GitHub Copilot extension on the CLI?
 
 https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/installing-github-copilot-in-the-cli
 
@@ -32,7 +32,7 @@ https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/
 - [ ] gh copilot setup
 - [ ] gh extension add copilot
 
-### What are some of the principles of Prompt Engineering? (Choose three.)
+### 5. What are some of the principles of Prompt Engineering? (Choose three.)
 
 https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-github-copilot
 
@@ -42,7 +42,7 @@ https://docs.github.com/en/copilot/using-github-copilot/prompt-engineering-for-g
 - [ ] Write long, complex instructions
       If you want Copilot to complete a complex or large task, break the task into multiple simple, small tasks.
 
-### How can you exclude specific files from GitHub Copilot?
+### 6. How can you exclude specific files from GitHub Copilot?
 
 https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
 
@@ -52,7 +52,7 @@ https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] Configuring exclusions in the Copilot configuration file
 - [ ] Using a command in the terminal
 
-### Which is true about Copilot's Content exclusions? (Choose two)
+### 7. Which is true about Copilot's Content exclusions? (Choose two)
 
 https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
 
@@ -64,7 +64,7 @@ https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] Content exclusions are applied instantly
       After you add or change content exclusions, it can take up to 30 minutes to take effect
 
-### Which of the following describes the GitHub Copilot Editor configuration file?
+### 8. Which of the following describes the GitHub Copilot Editor configuration file?
 
 https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
 
@@ -73,7 +73,7 @@ https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instruction
 - [ ] A YAML file with build instructions
 - [ ] An XML file with deploy settings
 
-### Which of the following describes how to use the GitHub Copilot's Productivity API?
+### 9. Which of the following describes how to use the GitHub Copilot's Productivity API?
 
 https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/analyzing-usage-over-time-with-the-copilot-metrics-api
 
@@ -82,7 +82,7 @@ https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/analyzing
 - [x] To collect usage metrics from organization members
 - [ ] To automatically update Copilot
 
-### Which of the following integrates GitHub Copilot Chat with external tools?
+### 10. Which of the following integrates GitHub Copilot Chat with external tools?
 
 https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/using-extensions-to-integrate-external-tools-with-copilot-chat
 
@@ -91,7 +91,7 @@ https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/
 - [ ] GitHub Copilot Integrations
 - [ ] GitHub Copilot Open
 
-### How can you provide GitHub Copilot with context to generate tailored responses for your repository?
+### 11. How can you provide GitHub Copilot with context to generate tailored responses for your repository?
 
 https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
 
@@ -102,7 +102,7 @@ https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/a
 - [ ] By creating a GitHub issue named `copilot-instructions` in the repository with the necessary context
        Creating a GitHub issue does not provide custom instructions to GitHub Copilot.
 
-### Can GitHub Copilot use semantic information from a file that is ignored by GitHub Copilot content exclusions?
+### 12. Can GitHub Copilot use semantic information from a file that is ignored by GitHub Copilot content exclusions?
 
 https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#limitations-of-content-exclusions
 
@@ -110,7 +110,7 @@ https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] No, it will ignore all information from excluded files.
        It's possible that Copilot may use semantic information from an excluded file if the information is provided by the IDE indirectly. Examples of such content include type information and hover-over definitions for symbols used in code, as well as general project properties such as build configuration information.
 
-### What happens when you exclude content from GitHub Copilot? (Choose two)
+### 13. What happens when you exclude content from GitHub Copilot? (Choose two)
 
 https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#about-content-exclusions-for-copilot
 
@@ -119,7 +119,7 @@ https://docs.github.com/en/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] The content in affected files will continue to inform GitHub Copilot Chat's responses.
 - [ ] Code completion will be unaffected in the affected files.
 
-### What is the easiest way to get started with GitHub Copilot?
+### 14. What is the easiest way to get started with GitHub Copilot?
 
 https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot
 
@@ -128,7 +128,7 @@ https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-git
 - [x] Install the Copilot extension in your preferred environment, such as Visual Studio Code.
 - [ ] Create a new public GitHub repo and enable Copilot to scan your code and make suggestions.
 
-### What does GitHub Copilot analyze to offer relevant suggestions as you are developing new code?
+### 15. What does GitHub Copilot analyze to offer relevant suggestions as you are developing new code?
 
 https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot#guide-copilot-towards-helpful-outputs
 
@@ -137,7 +137,7 @@ https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using
 - [ ] Analyzes only the context within the current file.
 - [ ] Analyzes only the context within the current line of code.
 
-### Which of the following options best describes GitHub Copilot?
+### 16. Which of the following options best describes GitHub Copilot?
 
 https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot
 
@@ -146,7 +146,7 @@ https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot
 - [ ] A code editor that provides debugging and error-checking features.
 - [ ] A tool that automatically tests and deploys code to production environments.
 
-### How does GitHub Copilot handle data retention for code suggestions in the IDE?
+### 17. How does GitHub Copilot handle data retention for code suggestions in the IDE?
 
 https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
 
@@ -155,7 +155,7 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Suggestions are automatically saved to GitHub repositories for version control
 - [ ] Code snippets are cached on disk for 30 days before being deleted
 
-### Which steps occur when GitHub Copilot's proxy service processes a prompt?
+### 18. Which steps occur when GitHub Copilot's proxy service processes a prompt?
 
 https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
 
@@ -164,7 +164,7 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Automatic code compilation and execution in a sandbox environment
 - [ ] Direct transmission to public repositories for reference checking
 
-### Which set of principles correctly represents Microsoft's six key principles for Responsible AI that guide GitHub Copilot's development?
+### 19. Which set of principles correctly represents Microsoft's six key principles for Responsible AI that guide GitHub Copilot's development?
 
 https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/3-six-principles-of-responsible-ai
 
@@ -173,7 +173,7 @@ https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-co
 - [ ] Privacy, Performance, Accessibility, Scalability, Maintainability, and Testing
 - [ ] Security, Development, Operations, Maintenance, Support, and Documentation
 
-### Which of the following is a potential benefit of using GitHub Copilot to enhance developer workflows?
+### 20. Which of the following is a potential benefit of using GitHub Copilot to enhance developer workflows?
 
 https://docs.github.com/en/copilot
 
@@ -182,7 +182,7 @@ https://docs.github.com/en/copilot
 - [ ] It automatically merges pull requests without human approval.
 - [ ] It only works with software written in a single programming language.
 
-### Which statement correctly describes GitHub Copilot's CLI command functionality?
+### 21. Which statement correctly describes GitHub Copilot's CLI command functionality?
 
 https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line
 
@@ -191,7 +191,7 @@ https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-
 - [ ] The 'gh copilot explain' command modifies system files without showing the explanation
 - [ ] Suggested commands are directly executed without being copied to the clipboard first
 
-### What is the primary purpose of the '/tests' slash command in GitHub Copilot?
+### 22. What is the primary purpose of the '/tests' slash command in GitHub Copilot?
 
 https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot
 
@@ -200,7 +200,7 @@ https://docs.github.com/en/copilot/using-github-copilot/guides-on-using-github-c
 - [ ] It only validates the syntax of existing test files without creating new tests
 - [ ] It permanently removes all existing test files to start fresh
 
-### How is seat usage calculated for GitHub Copilot at the enterprise level during a billing cycle?
+### 23. How is seat usage calculated for GitHub Copilot at the enterprise level during a billing cycle?
 
 https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/managing-copilot-for-your-enterprise/managing-access-to-copilot-in-your-enterprise/viewing-copilot-license-usage-in-your-enterprise
 
@@ -209,7 +209,7 @@ https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/mana
 - [ ] Number of code suggestions × Number of accepted completions
 - [ ] Total repository size × Number of organizations
 
-### How does GitHub Copilot's matching public code feature work?
+### 24. How does GitHub Copilot's matching public code feature work?
 
 https://docs.github.com/en/copilot/using-github-copilot/finding-public-code-that-matches-github-copilot-suggestions
 
@@ -218,7 +218,7 @@ https://docs.github.com/en/copilot/using-github-copilot/finding-public-code-that
 - [ ] It only matches code from repositories that were created in the last 24 hours
 - [ ] It checks code against external code hosting platforms outside of GitHub
 
-### What are the post-processing checks performed on GitHub Copilot's responses?
+### 25. What are the post-processing checks performed on GitHub Copilot's responses?
 
 https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
 
@@ -227,7 +227,7 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Performance benchmarking and memory usage optimization
 - [ ] Just checking for compilation errors and runtime exceptions
 
-### Which elements can GitHub Copilot use as context when generating suggestions?
+### 26. Which elements can GitHub Copilot use as context when generating suggestions?
 
 https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot#using-context-in-github-copilot
 
