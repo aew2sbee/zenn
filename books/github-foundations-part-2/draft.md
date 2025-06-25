@@ -1311,3 +1311,84 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
        Both personal and organization accounts can use Pages.
 
 ---------------------↑ まで完了------------------------------
+
+### Which of the following scenarios is a common use case for a version control system?
+
+[About VCS](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+
+- [ ] Deleting earlier versions of a project or file, so you know you are working only with the most current file or data.
+- [x] Making experimental changes to your project in an isolated branch.
+- [ ] Gathering feature requirements for a large project and communicating them to stakeholders.
+- [ ] Scheduling team meetings and tracking attendance for project updates.
+
+### What is another name for a version control system?
+
+[About version control](https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git)
+
+- [ ] Version management software (VMS).
+- [ ] Software control management (SCM) system.
+- [x] Software configuration management (SCM) system.
+
+### What Git command gives information about how to use Git?
+
+[Git Reference - Getting Help](https://git-scm.com/docs/git#_getting_help)
+
+- [ ] git status
+- [ ] git init
+- [x] git help
+
+### In what scenario would GitHub Issues be more effective than Discussions?
+
+[About GitHub Issues](https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-issues)
+
+- [ ] When making announcements and sharing news with the team.
+- [x] When tracking specific tasks and bugs that require resolution.
+- [ ] When seeking community input on project ideas and improvements.
+
+### Your team is preparing to deploy a new feature using GitHub branches. What should be done to ensure the feature branch is ready for deployment?
+
+[About pull requests](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+
+- [ ] Commit all changes directly to the main branch without review.
+- [ ] Delete the feature branch to finalize the deployment process.
+- [x] Ensure all changes are reviewed and approved through a pull request before merging into the main branch.
+
+### What is the significance of the &#39;commit message&#39; in the GitHub flow process?
+
+[About commits](https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)
+
+- [ ] It automatically merges changes into the main branch.
+- [ ] It creates a backup of the repository.
+- [x] It provides a summary of changes made in a commit, aiding in project history tracking.
+
+### Why might a team choose GitHub Issues over Discussions for managing bug reports?
+
+[About issues](https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-issues)
+
+- [ ] Discussions provide better visibility and tracking for bug reports.
+- [x] Issues provide a structured format for tracking and resolving bugs.
+- [ ] Issues are automatically resolved when linked to pull requests.
+
+### When should a GitHub issue be used instead of a discussion?
+
+[Discussions vs Issues](https://docs.github.com/ja/discussions/collaborating-with-your-community-using-discussions/about-discussions#discussions-and-issues)
+
+- [x] When tracking specific tasks or bugs related to a project.
+- [ ] When seeking open-ended feedback on a project idea.
+- [ ] When announcing project milestones to the team.
+
+### While working on a feature, you decide to create a new branch for changes. What is the primary benefit of using branches in GitHub?
+
+[About branches](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+
+- [ ] They prevent unauthorized users from viewing the repository.
+- [ ] They automatically deploy changes to production environments.
+- [x] They allow development work without affecting the main branch.
+
+### Which action is necessary for adding a file to a GitHub repository?
+
+[Repository permission levels for an organization](https://docs.github.com/ja/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization)
+
+- [x] Being a repository owner.
+- [ ] Having read access to the repository.
+- [ ] Having write access to the repository.
