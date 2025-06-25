@@ -1,26 +1,20 @@
 ---
-title: 'GitHub アカウントの種類'
+title: '料金'
 ---
 
-## Q1: GitHub アカウントにはどのような種類がありますか？(3 つ選んでください)
+## Q1: GitHub Copilot は誰でも無料で使えますか？
 
 ### 選択肢
 
-- Personal accounts
-- Organization accounts
-- Enterprise accounts
-- Shared accounts
-- Company accounts
+- No
+- Yes
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/get-started/learning-about-github/types-of-github-accounts)
+[公式ドキュメント](https://github.com/features/copilot/plans)
 
-- [x] Personal accounts
-- [x] Organization accounts
-- [x] Enterprise accounts
-- [ ] Shared accounts
-- [ ] Company accounts
+- [ ] No
+- [x] Yes
 
 :::
