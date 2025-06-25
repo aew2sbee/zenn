@@ -23,8 +23,6 @@ https://docs.github.com/ja/copilot/using-github-copilot/getting-code-suggestions
 - [ ] Visual Studio, NetBeans, Eclipse
 - [ ] Visual Studio, BlueJ, NetBeans
 
----------------------↑ まで完了------------------------------
-
 ### 4. What command is used to install the GitHub Copilot extension on the CLI?
 
 https://docs.github.com/ja/copilot/managing-copilot/configure-personal-settings/installing-github-copilot-in-the-cli
@@ -33,6 +31,8 @@ https://docs.github.com/ja/copilot/managing-copilot/configure-personal-settings/
 - [ ] gh copilot install
 - [ ] gh copilot setup
 - [ ] gh extension add copilot
+
+---------------------↑ まで完了------------------------------
 
 ### 5. What are some of the principles of Prompt Engineering? (Choose three.)
 
