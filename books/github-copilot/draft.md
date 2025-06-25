@@ -32,8 +32,6 @@ https://docs.github.com/ja/copilot/managing-copilot/configure-personal-settings/
 - [ ] gh copilot setup
 - [ ] gh extension add copilot
 
----------------------↑ まで完了------------------------------
-
 ### 5. What are some of the principles of Prompt Engineering? (Choose three.)
 
 https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot
@@ -43,6 +41,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-g
 - [x] Provide rich context for AI
 - [ ] Write long, complex instructions
       If you want Copilot to complete a complex or large task, break the task into multiple simple, small tasks.
+
+---------------------↑ まで完了------------------------------
 
 ### 6. How can you exclude specific files from GitHub Copilot?
 
