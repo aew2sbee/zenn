@@ -73,8 +73,6 @@ https://docs.github.com/ja/copilot/customizing-copilot/adding-custom-instruction
 - [ ] A YAML file with build instructions
 - [ ] An XML file with deploy settings
 
----------------------↑ まで完了------------------------------
-
 ### 9. Which of the following describes how to use the GitHub Copilot's Productivity API?
 
 https://docs.github.com/ja/copilot/rolling-out-github-copilot-at-scale/analyzing-usage-over-time-with-the-copilot-metrics-api
@@ -83,6 +81,8 @@ https://docs.github.com/ja/copilot/rolling-out-github-copilot-at-scale/analyzing
 - [ ] To exclude specific files
 - [x] To collect usage metrics from organization members
 - [ ] To automatically update Copilot
+
+---------------------↑ まで完了------------------------------
 
 ### 10. Which of the following integrates GitHub Copilot Chat with external tools?
 
