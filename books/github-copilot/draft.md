@@ -102,8 +102,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/customizing-copilot/a
 - [ ] By creating a GitHub issue named `copilot-instructions` in the repository with the necessary context
       Creating a GitHub issue does not provide custom instructions to GitHub Copilot.
 
----------------------↑ まで完了------------------------------
-
 ### 12. Can GitHub Copilot use semantic information from a file that is ignored by GitHub Copilot content exclusions?
 
 https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#limitations-of-content-exclusions
@@ -111,6 +109,8 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [x] Yes, if the information is provided by the IDE indirectly.
 - [ ] No, it will ignore all information from excluded files.
       It's possible that Copilot may use semantic information from an excluded file if the information is provided by the IDE indirectly. Examples of such content include type information and hover-over definitions for symbols used in code, as well as general project properties such as build configuration information.
+
+---------------------↑ まで完了------------------------------
 
 ### 13. What happens when you exclude content from GitHub Copilot? (Choose two)
 
