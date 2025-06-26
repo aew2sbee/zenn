@@ -82,8 +82,6 @@ https://docs.github.com/ja/copilot/rolling-out-github-copilot-at-scale/analyzing
 - [x] To collect usage metrics from organization members
 - [ ] To automatically update Copilot
 
----------------------↑ まで完了------------------------------
-
 ### 10. Which of the following integrates GitHub Copilot Chat with external tools?
 
 https://docs.github.com/ja/enterprise-cloud@latest/copilot/using-github-copilot/using-extensions-to-integrate-external-tools-with-copilot-chat
@@ -92,6 +90,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/using-github-copilot/
 - [ ] GitHub Copilot Marketplace
 - [ ] GitHub Copilot Integrations
 - [ ] GitHub Copilot Open
+
+---------------------↑ まで完了------------------------------
 
 ### 11. How can you provide GitHub Copilot with context to generate tailored responses for your repository?
 
