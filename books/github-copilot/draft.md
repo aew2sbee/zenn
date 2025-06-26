@@ -110,8 +110,6 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] No, it will ignore all information from excluded files.
       It's possible that Copilot may use semantic information from an excluded file if the information is provided by the IDE indirectly. Examples of such content include type information and hover-over definitions for symbols used in code, as well as general project properties such as build configuration information.
 
----------------------↑ まで完了------------------------------
-
 ### 13. What happens when you exclude content from GitHub Copilot? (Choose two)
 
 https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#about-content-exclusions-for-copilot
@@ -120,6 +118,8 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [x] The content in affected files will not inform code completion suggestions in other files.
 - [ ] The content in affected files will continue to inform GitHub Copilot Chat's responses.
 - [ ] Code completion will be unaffected in the affected files.
+
+---------------------↑ まで完了------------------------------
 
 ### 14. What is the easiest way to get started with GitHub Copilot?
 
