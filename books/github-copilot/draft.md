@@ -119,8 +119,6 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] The content in affected files will continue to inform GitHub Copilot Chat's responses.
 - [ ] Code completion will be unaffected in the affected files.
 
----------------------↑ まで完了------------------------------
-
 ### 14. What is the easiest way to get started with GitHub Copilot?
 
 https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot
@@ -129,6 +127,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-git
 - [ ] Use the Copilot website and paste your code when asking for suggestions.
 - [x] Install the Copilot extension in your preferred environment, such as Visual Studio Code.
 - [ ] Create a new public GitHub repo and enable Copilot to scan your code and make suggestions.
+
+---------------------↑ まで完了------------------------------
 
 ### 15. What does GitHub Copilot analyze to offer relevant suggestions as you are developing new code?
 
