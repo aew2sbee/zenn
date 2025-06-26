@@ -91,8 +91,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/using-github-copilot/
 - [ ] GitHub Copilot Integrations
 - [ ] GitHub Copilot Open
 
----------------------↑ まで完了------------------------------
-
 ### 11. How can you provide GitHub Copilot with context to generate tailored responses for your repository?
 
 https://docs.github.com/ja/enterprise-cloud@latest/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
@@ -103,6 +101,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/customizing-copilot/a
       Modifying the `.gitconfig` file does not provide custom instructions to GitHub Copilot.
 - [ ] By creating a GitHub issue named `copilot-instructions` in the repository with the necessary context
       Creating a GitHub issue does not provide custom instructions to GitHub Copilot.
+
+---------------------↑ まで完了------------------------------
 
 ### 12. Can GitHub Copilot use semantic information from a file that is ignored by GitHub Copilot content exclusions?
 
