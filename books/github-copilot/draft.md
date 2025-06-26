@@ -137,8 +137,6 @@ https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using
 - [ ] Analyzes only the context within the current file.
 - [ ] Analyzes only the context within the current line of code.
 
----------------------↑ まで完了------------------------------
-
 ### 16. Which of the following options best describes GitHub Copilot?
 
 https://docs.github.com/ja/copilot/about-github-copilot/what-is-github-copilot
@@ -147,6 +145,8 @@ https://docs.github.com/ja/copilot/about-github-copilot/what-is-github-copilot
 - [ ] A version control system that tracks and manages changes in a codebase.
 - [ ] A code editor that provides debugging and error-checking features.
 - [ ] A tool that automatically tests and deploys code to production environments.
+
+---------------------↑ まで完了------------------------------
 
 ### 17. How does GitHub Copilot handle data retention for code suggestions in the IDE?
 
