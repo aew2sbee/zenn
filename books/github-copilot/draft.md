@@ -64,8 +64,6 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] Content exclusions are applied instantly
       After you add or change content exclusions, it can take up to 30 minutes to take effect
 
----------------------↑ まで完了------------------------------
-
 ### 8. Which of the following describes the GitHub Copilot Editor configuration file?
 
 https://docs.github.com/ja/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot
@@ -74,6 +72,8 @@ https://docs.github.com/ja/copilot/customizing-copilot/adding-custom-instruction
 - [x] A Markdown file with natural language instructions for customizing Copilot Chat responses
 - [ ] A YAML file with build instructions
 - [ ] An XML file with deploy settings
+
+---------------------↑ まで完了------------------------------
 
 ### 9. Which of the following describes how to use the GitHub Copilot's Productivity API?
 
