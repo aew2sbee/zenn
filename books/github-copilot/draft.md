@@ -42,8 +42,6 @@ https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-g
 - [ ] Write long, complex instructions
       If you want Copilot to complete a complex or large task, break the task into multiple simple, small tasks.
 
----------------------↑ まで完了------------------------------
-
 ### 6. How can you exclude specific files from GitHub Copilot?
 
 https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
@@ -53,6 +51,8 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [x] Browsing to the repository settings on GitHub and adding the paths to exclude
 - [ ] Configuring exclusions in the Copilot configuration file
 - [ ] Using a command in the terminal
+
+---------------------↑ まで完了------------------------------
 
 ### 7. Which is true about Copilot's Content exclusions? (Choose two)
 
