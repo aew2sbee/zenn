@@ -52,8 +52,6 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] Configuring exclusions in the Copilot configuration file
 - [ ] Using a command in the terminal
 
----------------------↑ まで完了------------------------------
-
 ### 7. Which is true about Copilot's Content exclusions? (Choose two)
 
 https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot
@@ -65,6 +63,8 @@ https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-con
 - [ ] Content exclusions do not affect code completion
 - [ ] Content exclusions are applied instantly
       After you add or change content exclusions, it can take up to 30 minutes to take effect
+
+---------------------↑ まで完了------------------------------
 
 ### 8. Which of the following describes the GitHub Copilot Editor configuration file?
 
