@@ -146,8 +146,6 @@ https://docs.github.com/ja/copilot/about-github-copilot/what-is-github-copilot
 - [ ] A code editor that provides debugging and error-checking features.
 - [ ] A tool that automatically tests and deploys code to production environments.
 
----------------------↑ まで完了------------------------------
-
 ### 17. How does GitHub Copilot handle data retention for code suggestions in the IDE?
 
 https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
@@ -156,6 +154,8 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] All suggestions are permanently stored in a local database for future reference
 - [ ] Suggestions are automatically saved to GitHub repositories for version control
 - [ ] Code snippets are cached on disk for 30 days before being deleted
+
+---------------------↑ まで完了------------------------------
 
 ### 18. Which steps occur when GitHub Copilot's proxy service processes a prompt?
 
