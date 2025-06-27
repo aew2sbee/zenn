@@ -200,8 +200,6 @@ https://docs.github.com/ja/copilot/using-github-copilot/guides-on-using-github-c
 - [ ] It only validates the syntax of existing test files without creating new tests
 - [ ] It permanently removes all existing test files to start fresh
 
----------------------↑ まで完了------------------------------
-
 ### 23. How is seat usage calculated for GitHub Copilot at the enterprise level during a billing cycle?
 
 https://docs.github.com/ja/enterprise-cloud@latest/copilot/managing-copilot/managing-copilot-for-your-enterprise/managing-access-to-copilot-in-your-enterprise/viewing-copilot-license-usage-in-your-enterprise
@@ -210,6 +208,8 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/managing-copilot/mana
 - [ ] Total number of commits × Number of active developers
 - [ ] Number of code suggestions × Number of accepted completions
 - [ ] Total repository size × Number of organizations
+
+---------------------↑ まで完了------------------------------
 
 ### 24. How does GitHub Copilot's matching public code feature work?
 
