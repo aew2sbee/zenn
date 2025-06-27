@@ -173,8 +173,6 @@ https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-co
 - [ ] Privacy, Performance, Accessibility, Scalability, Maintainability, and Testing
 - [ ] Security, Development, Operations, Maintenance, Support, and Documentation
 
----------------------↑ まで完了------------------------------
-
 ### 20. Which of the following is a potential benefit of using GitHub Copilot to enhance developer workflows?
 
 https://docs.github.com/ja/copilot
@@ -183,6 +181,8 @@ https://docs.github.com/ja/copilot
 - [ ] It completely replaces the need for code review in every project.
 - [ ] It automatically merges pull requests without human approval.
 - [ ] It only works with software written in a single programming language.
+
+---------------------↑ まで完了------------------------------
 
 ### 21. Which statement correctly describes GitHub Copilot's CLI command functionality?
 
