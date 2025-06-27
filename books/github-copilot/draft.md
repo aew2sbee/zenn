@@ -209,8 +209,6 @@ https://docs.github.com/ja/enterprise-cloud@latest/copilot/managing-copilot/mana
 - [ ] Number of code suggestions × Number of accepted completions
 - [ ] Total repository size × Number of organizations
 
----------------------↑ まで完了------------------------------
-
 ### 24. How does GitHub Copilot's matching public code feature work?
 
 https://docs.github.com/ja/copilot/using-github-copilot/finding-public-code-that-matches-github-copilot-suggestions
@@ -219,6 +217,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/finding-public-code-that
 - [ ] It performs real-time searches across all GitHub repositories, including private ones
 - [ ] It only matches code from repositories that were created in the last 24 hours
 - [ ] It checks code against external code hosting platforms outside of GitHub
+
+---------------------↑ まで完了------------------------------
 
 ### 25. What are the post-processing checks performed on GitHub Copilot's responses?
 
