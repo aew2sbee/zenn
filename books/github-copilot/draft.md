@@ -182,8 +182,6 @@ https://docs.github.com/ja/copilot
 - [ ] It automatically merges pull requests without human approval.
 - [ ] It only works with software written in a single programming language.
 
----------------------↑ まで完了------------------------------
-
 ### 21. Which statement correctly describes GitHub Copilot's CLI command functionality?
 
 https://docs.github.com/ja/copilot/using-github-copilot/using-github-copilot-in-the-command-line
@@ -192,6 +190,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/using-github-copilot-in-
 - [ ] Commands are automatically executed without user confirmation when using 'gh copilot suggest'
 - [ ] The 'gh copilot explain' command modifies system files without showing the explanation
 - [ ] Suggested commands are directly executed without being copied to the clipboard first
+
+---------------------↑ まで完了------------------------------
 
 ### 22. What is the primary purpose of the '/tests' slash command in GitHub Copilot?
 
