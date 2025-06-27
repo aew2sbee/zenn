@@ -14,7 +14,7 @@ title: 'コマンド ラインでの GitHub Copilot の使用'
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/copilot)
+[公式ドキュメント](https://docs.github.com/ja/copilot/using-github-copilot/using-github-copilot-in-the-command-line)
 
 - [x] `gh copilot explain` でコマンドの説明を、`gh copilot suggest` でコマンドの提案を得ることができます。
 - [ ] `gh copilot suggest` を使用すると、ユーザーの確認なしにコマンドが自動的に実行されます。
