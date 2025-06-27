@@ -191,8 +191,6 @@ https://docs.github.com/ja/copilot/using-github-copilot/using-github-copilot-in-
 - [ ] The 'gh copilot explain' command modifies system files without showing the explanation
 - [ ] Suggested commands are directly executed without being copied to the clipboard first
 
----------------------↑ まで完了------------------------------
-
 ### 22. What is the primary purpose of the '/tests' slash command in GitHub Copilot?
 
 https://docs.github.com/ja/copilot/using-github-copilot/guides-on-using-github-copilot/writing-tests-with-github-copilot
@@ -201,6 +199,8 @@ https://docs.github.com/ja/copilot/using-github-copilot/guides-on-using-github-c
 - [ ] It runs all existing unit tests in the project without generating new ones
 - [ ] It only validates the syntax of existing test files without creating new tests
 - [ ] It permanently removes all existing test files to start fresh
+
+---------------------↑ まで完了------------------------------
 
 ### 23. How is seat usage calculated for GitHub Copilot at the enterprise level during a billing cycle?
 
