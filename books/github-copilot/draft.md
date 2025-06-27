@@ -155,8 +155,6 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Suggestions are automatically saved to GitHub repositories for version control
 - [ ] Code snippets are cached on disk for 30 days before being deleted
 
----------------------↑ まで完了------------------------------
-
 ### 18. Which steps occur when GitHub Copilot's proxy service processes a prompt?
 
 https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
@@ -165,6 +163,8 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Translation to multiple programming languages and syntax validation
 - [ ] Automatic code compilation and execution in a sandbox environment
 - [ ] Direct transmission to public repositories for reference checking
+
+---------------------↑ まで完了------------------------------
 
 ### 19. Which set of principles correctly represents Microsoft's six key principles for Responsible AI that guide GitHub Copilot's development?
 
