@@ -164,8 +164,6 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Automatic code compilation and execution in a sandbox environment
 - [ ] Direct transmission to public repositories for reference checking
 
----------------------↑ まで完了------------------------------
-
 ### 19. Which set of principles correctly represents Microsoft's six key principles for Responsible AI that guide GitHub Copilot's development?
 
 https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/3-six-principles-of-responsible-ai
@@ -174,6 +172,8 @@ https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-co
 - [ ] Efficiency, Speed, Accuracy, Innovation, Reliability, and Security
 - [ ] Privacy, Performance, Accessibility, Scalability, Maintainability, and Testing
 - [ ] Security, Development, Operations, Maintenance, Support, and Documentation
+
+---------------------↑ まで完了------------------------------
 
 ### 20. Which of the following is a potential benefit of using GitHub Copilot to enhance developer workflows?
 
