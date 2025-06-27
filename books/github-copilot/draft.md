@@ -227,8 +227,6 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Performance benchmarking and memory usage optimization
 - [ ] Just checking for compilation errors and runtime exceptions
 
----------------------↑ まで完了------------------------------
-
 ### 26. Which elements can GitHub Copilot use as context when generating suggestions?
 
 https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot#using-context-in-github-copilot
@@ -237,3 +235,5 @@ https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-git
 - [ ] Only the current line of code being edited without any surrounding context
 - [ ] Exclusively external documentation from the internet
 - [ ] Just the project's README file and nothing else
+
+---------------------↑ まで完了------------------------------
