@@ -218,8 +218,6 @@ https://docs.github.com/ja/copilot/using-github-copilot/finding-public-code-that
 - [ ] It only matches code from repositories that were created in the last 24 hours
 - [ ] It checks code against external code hosting platforms outside of GitHub
 
----------------------↑ まで完了------------------------------
-
 ### 25. What are the post-processing checks performed on GitHub Copilot's responses?
 
 https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/
@@ -228,6 +226,8 @@ https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilo
 - [ ] Only syntax validation and code formatting checks
 - [ ] Performance benchmarking and memory usage optimization
 - [ ] Just checking for compilation errors and runtime exceptions
+
+---------------------↑ まで完了------------------------------
 
 ### 26. Which elements can GitHub Copilot use as context when generating suggestions?
 
