@@ -1343,8 +1343,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] When tracking specific tasks and bugs that require resolution.
 - [ ] When seeking community input on project ideas and improvements.
 
----------------------↑ まで完了------------------------------
-
 ### 140. Your team is preparing to deploy a new feature using GitHub branches. What should be done to ensure the feature branch is ready for deployment?
 
 [About pull requests](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
@@ -1352,6 +1350,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Commit all changes directly to the main branch without review.
 - [ ] Delete the feature branch to finalize the deployment process.
 - [x] Ensure all changes are reviewed and approved through a pull request before merging into the main branch.
+
+---------------------↑ まで完了------------------------------
 
 ### 141. What is the significance of the 'commit message' in the GitHub flow process?
 
