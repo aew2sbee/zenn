@@ -1327,8 +1327,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Software control management (SCM) system.
 - [x] Software configuration management (SCM) system.
 
----------------------↑ まで完了------------------------------
-
 ### 138. What Git command gives information about how to use Git?
 
 [Git Reference - Getting Help](https://git-scm.com/docs/git#_getting_help)
@@ -1336,6 +1334,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] git status
 - [ ] git init
 - [x] git help
+
+---------------------↑ まで完了------------------------------
 
 ### 139. In what scenario would GitHub Issues be more effective than Discussions?
 
