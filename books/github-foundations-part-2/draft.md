@@ -1335,8 +1335,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] git init
 - [x] git help
 
----------------------↑ まで完了------------------------------
-
 ### 139. In what scenario would GitHub Issues be more effective than Discussions?
 
 [About GitHub Issues](https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-issues)
@@ -1344,6 +1342,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] When making announcements and sharing news with the team.
 - [x] When tracking specific tasks and bugs that require resolution.
 - [ ] When seeking community input on project ideas and improvements.
+
+---------------------↑ まで完了------------------------------
 
 ### 140. Your team is preparing to deploy a new feature using GitHub branches. What should be done to ensure the feature branch is ready for deployment?
 
