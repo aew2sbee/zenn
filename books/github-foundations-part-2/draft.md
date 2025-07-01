@@ -1319,8 +1319,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Gathering feature requirements for a large project and communicating them to stakeholders.
 - [ ] Scheduling team meetings and tracking attendance for project updates.
 
----------------------↑ まで完了------------------------------
-
 ### 137. What is another name for a version control system?
 
 [About version control](https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git)
@@ -1328,6 +1326,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Version management software (VMS).
 - [ ] Software control management (SCM) system.
 - [x] Software configuration management (SCM) system.
+
+---------------------↑ まで完了------------------------------
 
 ### 138. What Git command gives information about how to use Git?
 
