@@ -1310,8 +1310,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] GitHub Pages can only be used by organization accounts.  
        Both personal and organization accounts can use Pages.
 
----------------------↑ まで完了------------------------------
-
 ### 136. Which of the following scenarios is a common use case for a version control system?
 
 [About VCS](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
@@ -1320,6 +1318,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Making experimental changes to your project in an isolated branch.
 - [ ] Gathering feature requirements for a large project and communicating them to stakeholders.
 - [ ] Scheduling team meetings and tracking attendance for project updates.
+
+---------------------↑ まで完了------------------------------
 
 ### 137. What is another name for a version control system?
 
