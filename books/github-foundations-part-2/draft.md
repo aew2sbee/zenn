@@ -1359,8 +1359,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] It creates a backup of the repository.
 - [x] It provides a summary of changes made in a commit, aiding in project history tracking.
 
----------------------↑ まで完了------------------------------
-
 ### 142. Why might a team choose GitHub Issues over Discussions for managing bug reports?
 
 [About issues](https://docs.github.com/ja/issues/tracking-your-work-with-issues/about-issues)
@@ -1368,6 +1366,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Discussions provide better visibility and tracking for bug reports.
 - [x] Issues provide a structured format for tracking and resolving bugs.
 - [ ] Issues are automatically resolved when linked to pull requests.
+
+---------------------↑ まで完了------------------------------
 
 ### 143. When should a GitHub issue be used instead of a discussion?
 
