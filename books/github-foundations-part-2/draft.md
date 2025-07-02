@@ -1351,8 +1351,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] Delete the feature branch to finalize the deployment process.
 - [x] Ensure all changes are reviewed and approved through a pull request before merging into the main branch.
 
----------------------↑ まで完了------------------------------
-
 ### 141. What is the significance of the 'commit message' in the GitHub flow process?
 
 [About commits](https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)
@@ -1360,6 +1358,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] It automatically merges changes into the main branch.
 - [ ] It creates a backup of the repository.
 - [x] It provides a summary of changes made in a commit, aiding in project history tracking.
+
+---------------------↑ まで完了------------------------------
 
 ### 142. Why might a team choose GitHub Issues over Discussions for managing bug reports?
 
