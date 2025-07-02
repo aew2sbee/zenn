@@ -1367,8 +1367,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Issues provide a structured format for tracking and resolving bugs.
 - [ ] Issues are automatically resolved when linked to pull requests.
 
----------------------↑ まで完了------------------------------
-
 ### 143. When should a GitHub issue be used instead of a discussion?
 
 [Discussions vs Issues](https://docs.github.com/ja/discussions/collaborating-with-your-community-using-discussions/about-discussions#discussions-and-issues)
@@ -1376,6 +1374,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] When tracking specific tasks or bugs related to a project.
 - [ ] When seeking open-ended feedback on a project idea.
 - [ ] When announcing project milestones to the team.
+
+---------------------↑ まで完了------------------------------
 
 ### 144. While working on a feature, you decide to create a new branch for changes. What is the primary benefit of using branches in GitHub?
 
