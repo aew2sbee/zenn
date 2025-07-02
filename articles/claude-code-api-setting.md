@@ -3,14 +3,14 @@ title: '[Claude Code] 任意のAPIを設定する' # 記事のタイトル
 emoji: '🧠' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['claudecode', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
 
 この記事では、**Claude Code の任意の`ANTHROPIC_API_KEY`を設定方法**解説します
 
-会社から配布された API の設定方法に戸惑ったので記事にしました。
+会社から配布された API を設定する方法に戸惑ったので記事にしました。
 [公式ドキュメントの手順通り](https://docs.anthropic.com/ja/docs/claude-code/setup#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%A8%E8%AA%8D%E8%A8%BC)だと勝手に API が作成、設定され任意の API を設定できなかったです。
 
 :::details 参考資料
@@ -19,38 +19,68 @@ published: false # 公開設定（falseにすると下書き）
 
 ## 結論
 
-1. `~/.claude/settings.json`を作成する
-2. 必要な`key`, `value`を設定する
+:::message
+`~/.claude/settings.json`に`ANTHROPIC_API_KEY`を設定する
 
-```json: .claude/settings.json
+```diff json: .claude/settings.json
 {
-  "env": {
-    "ANTHROPIC_API_KEY": "sk-ant-api03-XXXXXXXXXXXXXXXXXXXXX"
-  }
+  --- 略 ---
++  "env": {
++    "ANTHROPIC_API_KEY": "sk-ant-api03-XXXXXXXXXXXXXXXXXXXXX"
++  }
 }
 ```
 
-## 1. 一度ログアウトする
+:::
 
-`~/.claude/settings.json`を作成、設定を行うと
-下記のようなメッセージが表示されると思います。
+## 1. `~/.claude/settings.json`を編集する
 
-`claude /logout`でログアウトをしてください。
+:::message alert
+`~/.claude/settings.json`が存在しない場合は、新規作成する
+:::
 
-:::message
-注意喚起のメッセージが表示される
+下記のように`ANTHROPIC_API_KEY`に設定したい`API KEY`を追加してください
 
-```bash
-
-⚠ Auth conflict: Using ANTHROPIC_API_KEY instead of Anthropic Console key.
-Either unset ANTHROPIC_API_KEY, or run `claude /logout`.
-
---- 日本語訳 ---
-認証の衝突： Anthropicコンソールのキーの代わりにANTHROPIC_API_KEYを使用しています。
-ANTHROPIC_API_KEYの設定を解除するか、`claude /logout`を実行してください。
+```diff json: .claude/settings.json
+{
+  --- 略 ---
++  "env": {
++    "ANTHROPIC_API_KEY": "sk-ant-api03-XXXXXXXXXXXXXXXXXXXXX"
++  }
+}
 ```
 
-:::
+## 2. Claude Code を起動する
+
+下記コマンドを実行して Claude Code を起動する
+
+```bash
+claude
+```
+
+Claude Code を起動すると下記画面が表示する
+![step1](/images/articles/claude-code-api-setting/step1.png)
+
+`1.Yes`を選択する
+
+```bash
+// このAPIキーを使用しますか？
+Do you want to use this API key?
+❯ 1.Yes
+  2. No (recommended)✔
+```
+
+## 3. 設定された API を確認する
+
+先ほどの`1.Yes`を選択すると、現在設定されている`API Key`が表示されます。
+下記のように表示されているので設定が出来ていますね
+
+```bash
+// 認証の衝突： Anthropicコンソールのキーの代わりにANTHROPIC_API_KEYを使用しています。
+⚠ Auth conflict: Using ANTHROPIC_API_KEY instead of Anthropic Console key.
+```
+
+![step2](/images/articles/claude-code-api-setting/step2.png)
 
 ## YouTube のご案内
 
