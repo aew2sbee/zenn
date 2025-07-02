@@ -1375,8 +1375,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] When seeking open-ended feedback on a project idea.
 - [ ] When announcing project milestones to the team.
 
----------------------↑ まで完了------------------------------
-
 ### 144. While working on a feature, you decide to create a new branch for changes. What is the primary benefit of using branches in GitHub?
 
 [About branches](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
@@ -1384,6 +1382,8 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] They prevent unauthorized users from viewing the repository.
 - [ ] They automatically deploy changes to production environments.
 - [x] They allow development work without affecting the main branch.
+
+---------------------↑ まで完了------------------------------
 
 ### 145. Which action is necessary for adding a file to a GitHub repository?
 
