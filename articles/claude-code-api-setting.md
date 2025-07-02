@@ -20,7 +20,7 @@ published: true # 公開設定（falseにすると下書き）
 ## 結論
 
 :::message
-`~/.claude/settings.json`に`ANTHROPIC_API_KEY`を設定する
+`.claude/settings.json`に`ANTHROPIC_API_KEY`を設定する
 
 ```diff json: .claude/settings.json
 {
@@ -33,10 +33,10 @@ published: true # 公開設定（falseにすると下書き）
 
 :::
 
-## 1. `~/.claude/settings.json`を編集する
+## 1. `.claude/settings.json`を編集する
 
 :::message alert
-`~/.claude/settings.json`が存在しない場合は、新規作成する
+`.claude/settings.json`が存在しない場合は、新規作成する
 :::
 
 下記のように`ANTHROPIC_API_KEY`に設定したい`API KEY`を追加してください
