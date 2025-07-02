@@ -1383,8 +1383,6 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [ ] They automatically deploy changes to production environments.
 - [x] They allow development work without affecting the main branch.
 
----------------------↑ まで完了------------------------------
-
 ### 145. Which action is necessary for adding a file to a GitHub repository?
 
 [Repository permission levels for an organization](https://docs.github.com/ja/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization)
@@ -1392,3 +1390,5 @@ https://docs.github.com/ja/organizations/managing-user-access-to-your-organizati
 - [x] Being a repository owner.
 - [ ] Having read access to the repository.
 - [ ] Having write access to the repository.
+
+---------------------↑ まで完了------------------------------
