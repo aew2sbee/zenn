@@ -6,19 +6,19 @@ topics: ['ai', 'vscode', 'githubcopilot', 'contest2025ts', '初心者向け'] # 
 published: true # 公開設定（falseにすると下書き）
 ---
 
-## はじめに
+## 🌱 はじめに
 
 今回は、会社で`GitHub Copilot`が使えるようになったため、
 `GitHub Copilot`の操作や使い方を解説します。
 サンプルコードとして`TypeScript`を使用します。
 
-## 拡張機能のインストール
+## 🌱 拡張機能のインストール
 
 `VScode`の拡張機能の検索窓に`GitHub Copilot`と検索し、インストールする
 
 ![5](/images/articles/ai-github-copilot/5.png)
 
-## 1. コード補完: コメントからコードを提案をしてもらう
+## 🌱 1. コード補完: コメントからコードを提案をしてもらう
 
 下記のようなコメントだけを書きました。
 
@@ -29,12 +29,12 @@ published: true # 公開設定（falseにすると下書き）
 しばらくすると、AI がコメントを確認してくれてコードを提案してくれます。
 ![2](/images/articles/ai-github-copilot/2.png)
 
-## 2. コード補完: 提案されたコードを全部採用する
+## 🌱 2. コード補完: 提案されたコードを全部採用する
 
 下記のような提案をしてくれたコードを全て採用する場合は、`Tab キー`を実行します。
 ![2](/images/articles/ai-github-copilot/2.png)
 
-## 3. コード補完: 提案して貰ったコードの一部を採用する
+## 🌱 3. コード補完: 提案して貰ったコードの一部を採用する
 
 下記コマンドで`次の単語まで採用する`
 `export function sumArray`まで採用してみました。
@@ -47,7 +47,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ![3](/images/articles/ai-github-copilot/3.png)
 
-## 4. コード補完: 他の提案を提示して貰う
+## 🌱 4. コード補完: 他の提案を提示して貰う
 
 下記コマンドで`他の提案をして貰いました。`
 `if文`を追加された別の提案をしてくれました。
@@ -60,7 +60,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ![4](/images/articles/ai-github-copilot/4.png)
 
-## チャット AI の使い方
+## 🌱 チャット AI の使い方
 
 1. `VSCode`の画面上段のアイコンをクリックすると、画面右側にチャット欄が表示される
 
@@ -81,13 +81,3 @@ AI のモデルを選択できます。
 ※モデルによって利用金額等が変わります。
 
 ![6](/images/articles/ai-github-copilot/6.png)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
