@@ -6,7 +6,7 @@ topics: ['typescript', '初心者向け', 'コーディング規約'] # タグ�
 published: true # 公開設定（falseにすると下書き）
 ---
 
-## はじめに
+## 🌱 はじめに
 
 この記事では、一部抜粋した**Microsoft のコーディングガイド** をまとめております。
 また、**注意事項**を確認してください
@@ -34,7 +34,7 @@ published: true # 公開設定（falseにすると下書き）
 
 :::
 
-## 🔷 命名規則
+## 🌱 命名規則
 
 ### 1. 型名はパスカルケース（PascalCase）を使う
 
@@ -50,7 +50,7 @@ published: true # 公開設定（falseにすると下書き）
 + interface UserInfo
 ```
 
-### 3. 列挙値（enum)の名はパスカルケース（PascalCase）を使う
+### 3. 列挙値(enum)の名はパスカルケース（PascalCase）を使う
 
 ```diff ts
 enum LogLevel {
@@ -100,7 +100,7 @@ enum LogLevel {
 + function calculateTotal(price: number)
 ```
 
-## 🔷 コンポーネント
+## 🌱 コンポーネント
 
 ### 1. 1 つのファイルで複数の役割を持たせない
 
@@ -129,7 +129,7 @@ src/
 
 ### 3. 自動生成されたファイル(`.generated.*`)は編集しない
 
-## 🔷 型
+## 🌱 型
 
 ### 1. 他コンポーネントで共有しないなら export しない
 
@@ -220,7 +220,7 @@ function parseConfig(config: Config) {
 + function parse() { ... }
 ```
 
-## 🔷 `null`と`undefined`
+## 🌱 `null`と`undefined`
 
 ### 1. `undefined`を使い`null`は使わない。
 
@@ -259,7 +259,7 @@ interface User {
 
 :::
 
-## 🔷 前提条件
+## 🌱 前提条件
 
 ### 1.Node や Symbol などのオブジェクトは作成元以外では変更しない
 
@@ -316,7 +316,7 @@ const numbers: readonly number[] = [1, 2, 3];
 // numbers.push(4); // ❌ エラー
 ```
 
-## 🔷 コメント
+## 🌱 コメント
 
 ### 1. JSDoc 形式を使用（関数・型・クラスなど）
 
@@ -329,13 +329,3 @@ function fetchUser(userId: number): UserInfo {
   // ...
 }
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
