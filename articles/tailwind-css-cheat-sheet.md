@@ -6,7 +6,7 @@ topics: ['css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust"
 published: true # 公開設定（falseにすると下書き）
 ---
 
-## はじめに
+## 🌱 はじめに
 
 この記事では、**基本的な Tailwind CSS**を解説します。
 
@@ -37,7 +37,7 @@ html {
 4. 見やすいように**背景色(`bg-cyan-X00`)** を設定している場合があります。
    :::
 
-## 1. 背景
+## 🌱 背景
 
 ### 1. 背景色を設定する
 
@@ -58,7 +58,7 @@ html {
 
 ![bk-opacity](/images/articles/tailwind-css-cheat-sheet/bk-opacity.png)
 
-## 2.文字
+## 🌱 文字
 
 ### 1. 文字色を設定する
 
@@ -171,7 +171,7 @@ html {
 
 ![line-clamp](/images/articles/tailwind-css-cheat-sheet/line-clamp.png)
 
-## 3. margin/pading
+## 🌱 margin/pading
 
 ### 1. 四方にスペーシングを設定する
 
@@ -316,7 +316,7 @@ html {
 
 ![box-sizing](/images/articles/tailwind-css-cheat-sheet/box-sizing.png)
 
-## 4. ボーダー
+## 🌱 ボーダー
 
 ### 1. 境界線を設定する
 
@@ -370,7 +370,7 @@ html {
 
 ![border-style](/images/articles/tailwind-css-cheat-sheet/border-style.png)
 
-## 5. 横幅を設定する
+## 🌱 横幅を設定する
 
 ### 1. 横幅を割合で設定する
 
@@ -396,7 +396,7 @@ html {
 
 ![w-auto-fill](/images/articles/tailwind-css-cheat-sheet/w-auto-fill.png)
 
-## 6. 縦幅を設定する
+## 🌱 縦幅を設定する
 
 ### 1. 縦幅を割合で設定する
 
@@ -459,7 +459,7 @@ html {
 
 ![max-w](/images/articles/tailwind-css-cheat-sheet/max-w.png)
 
-## 7. 角を設定する
+## 🌱 角を設定する
 
 ### 1. 縦幅を割合で設定する
 
@@ -472,7 +472,7 @@ html {
 
 ![rounded](/images/articles/tailwind-css-cheat-sheet/rounded.png)
 
-## 8. レスポンシブ対応
+## 🌱 レスポンシブ対応
 
 ### 1. 横幅に応じて非表示にする
 
@@ -499,7 +499,7 @@ _横幅:1120px_
 ![1520px](/images/articles/tailwind-css-cheat-sheet/1520px.png)
 _横幅:1520px_
 
-## 9. フレックス
+## 🌱 フレックス
 
 ### 1. 横並びにする
 
@@ -663,7 +663,7 @@ _横幅:1520px_
 
 ![basis](/images/articles/tailwind-css-cheat-sheet/basis.png)
 
-## 10. グリッド
+## 🌱 グリッド
 
 ### 1. n 列の要素に設定する
 
@@ -709,7 +709,7 @@ _横幅:720px_
 ![grid-1020px](/images/articles/tailwind-css-cheat-sheet/grid-1020px.png)
 _横幅:1020px_
 
-## 11. テーブル
+## 🌱 テーブル
 
 ### 1. 表にキャプション
 
@@ -740,7 +740,7 @@ _横幅:1020px_
 
 ![caption](/images/articles/tailwind-css-cheat-sheet/caption.png)
 
-## 12. ブロックレイアウト
+## 🌱 ブロックレイアウト
 
 ### 1. 自動で画面幅に応じて横幅を設定する
 
@@ -765,7 +765,7 @@ _横幅:1120px_
 ![container-1520px](/images/articles/tailwind-css-cheat-sheet/container-1520px.png)
 _横幅:1520px_
 
-## 12. 陰影
+## 🌱 陰影
 
 ```html
 <div class="shadow-inner">shadow-inner</div>
@@ -779,7 +779,7 @@ _横幅:1520px_
 
 ![shadow](/images/articles/tailwind-css-cheat-sheet/shadow.png)
 
-## 13. 輪郭
+## 🌱 輪郭
 
 ```html
 <button class="outline outline-offset-2 outline-1">outline-1</button>
@@ -789,13 +789,3 @@ _横幅:1520px_
 ```
 
 ![outline](/images/articles/tailwind-css-cheat-sheet/outline.png)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
