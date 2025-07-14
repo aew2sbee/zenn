@@ -41,7 +41,9 @@ published: false # 公開設定（falseにすると下書き）
 2. 単体テストの対象アルゴリズムを`フィボナッチ数列`とする
    → 簡単すぎず、難しくないアルゴリズムを選択
 
-## 🌱 1. フィボナッチ数列を作成
+## 🌱 実装
+### 1. フィボナッチ数列を作成
+
 下記のようなプロンプトを依頼してアルゴリズムを作成しました。
 
 ```bash
@@ -50,7 +52,7 @@ published: false # 公開設定（falseにすると下書き）
 
 生成されたコードはこちらになります。
 
-```ts:src/fibonacci.ts
+````ts:src/fibonacci.ts
 /**
  * 反復的なアプローチを使用してn番目のフィボナッチ数を計算します。
  *
@@ -93,10 +95,9 @@ export function fibonacci(n: number): number {
   return b;
 }
 
-```
+````
 
-## 🌱 2. Jest関連のインストール
-
+### 2. Jest 関連のインストール
 
 ```js:jest.config.js
 module.exports = {
@@ -178,7 +179,7 @@ module.exports = {
 
 ```
 
-## 🌱 3. テストコードを作成
+### 3. テストコードを作成
 
 ```ts:test/fibonacci.test.ts
 import { fibonacci } from '../src/fibonacci';
@@ -222,7 +223,9 @@ describe('fibonacci', () => {
 });
 ```
 
-## 🌱 4. テスト結果
+## 🌱 テスト結果
+
+### 1. 単体テストの結果
 
 ```bash
 $ npm test
@@ -246,4 +249,83 @@ Tests:       5 passed, 5 total
 Snapshots:   0 total
 Time:        2.785 s, estimated 3 s
 Ran all test suites.
+```
+
+### 2. カバレッジ結果
+カバレッジ率が`100%`になりました。
+
+![index_html](/images/articles/claude-code-ai-testing/index_html.png)
+
+
+
+
+
+
+
+
+
+
+
+
+## 🌱 package.json
+
+```diff json:package.json
+{
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+-    "@types/node": "24.0.13",
+    "jest": "30.0.4",
+    "ts-jest": "29.4.0",
+-    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  }
+}
+
+```
+
+| パッケージ名 | 役割                                                                                                 | 備考                                                                                                                                                  |
+| ------------ | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| @types/node  | `TypeScript` で `Node.js` の型定義を提供するパッケージです。                                             | `Node.js` には `fs`, `path`, `http`, `process` などの組み込みモジュールがありますが、それらの型情報はデフォルトでは `TypeScript` に含まれていません。 |
+| ts-node      | `TypeScript` ファイルをトランスパイル（変換）せずにそのまま実行できる `Node.js` のランタイム環境です。 | `Jest` 環境に必ず必要なものではない                                                                                                                   |
+
+## 🌱 tsconfig.json
+```diff json:tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2020",
+-    "module": "esnext",
++    "module": "commonjs",
++    "lib": ["es2020"],
+-    "outDir": "./dist",
++    "outDir": "--modelueResolution",
++    "rootDir": "./src",
+    "allowJs": true,
+    "outDir": "--modelueResolution",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+-   "noImplicitAny": false,
+-   "noImplicitThis": false,
++   "declaration": true,
++   "declarationMap": true,
++   "sourceMap": true
+    "skipLibCheck": true
+  },
+-  "files": [
+-    "node"
+-  ]
++  "include": [
+-    "src/**/*.ts"
+-    "src/**/*.tsx"
++    "src/**/*"
++  ],
++  "exclude": [
++    "node_modules",
++    "dist",
++    "t
+  ]
+}
+
 ```
