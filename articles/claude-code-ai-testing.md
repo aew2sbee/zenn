@@ -3,49 +3,28 @@ title: '[Claude Code] AIにテストを任せても大丈夫なのか？' # 記�
 emoji: '🧠' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['claudecode', 'jest', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開設定（falseにすると下書き）
 ---
 
 ## 🌱 はじめに
 
-この記事では、**Claude Code が書くテストコードの信頼性について**解説します
+この記事では、**Claude Code が書く`フィボナッチ数`の実装に対するテストコードの信頼性について**検証しました。
 
 会社の取り組みで、`Claude Code`を活用して生産効率を上げる取り組みに参加しています。
-`Claude Code`で簡単なアプリを作成することは確認済みです。
-**しかし、テストコードも任せることは可能か？** 議論に上がったので今回検証しました。
-
-:::details 参考資料
-@[card](https://peaks.cc/testing_with_jest)
-:::
 
 @[card](https://github.com/aew2sbee/claude-code-ai-testing)
 
 ## 🌱 結論
 
 :::message
-フィボナッチ数列レベルのアルゴリズムであれば、任せても良いと感じました。
-※実業務では、業務知識や
+**30 分程度で`コーディング`と`テスト`のタスクを完了する事が出来ました。**
+**フィボナッチ数のアルゴリズムであれば、任せても良いと感じました。**
+※実際の業務では 業務知識やより複雑な条件があるため、こんなにうまくいかないと考えています
 :::
 
-## 🌱 確認観点
-
-1. フィボナッチ数列を実装できるのか？
-2. カバレッジ率の高いテストパターンを作成する事が可能か？
-3. 可読性の高いテストコードを書くことができるのか？
-
-## 🌱 前提条件
-
-1. 下記書籍を Jest に関する正しい情報として生成物と比較する
-
-@[card](https://peaks.cc/testing_with_jest)
-
-2. 単体テストの対象アルゴリズムを`フィボナッチ数列`とする
-   → 簡単すぎず、難しくないアルゴリズムを選択
-
 ## 🌱 実装
-### 1. フィボナッチ数列を作成
 
-生成されたコードはこちらになります。
+### 1. フィボナッチ数を求めるプログラムの作成
 
 ````ts:src/fibonacci.ts
 /**
@@ -92,93 +71,7 @@ export function fibonacci(n: number): number {
 
 ````
 
-### 2. jest.config.js
-
-```js:jest.config.js
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  testMatch: ['<rootDir>/test/**/*.test.ts'],
-  collectCoverageFrom: [
-    'src/**/*.ts',
-    '!src/**/*.d.ts',
-  ],
-  coverageDirectory: 'coverage',
-  coverageReporters: ['text', 'lcov', 'html'],
-};
-
-```
-
-### 3. package.json
-
-```json:package.json
-{
-  "name": "claude-code-ai-testing",
-  "version": "1.0.0",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "build": "tsc",
-    "build:watch": "tsc --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aew2sbee/claude-code-ai-testing.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aew2sbee/claude-code-ai-testing/issues"
-  },
-  "homepage": "https://github.com/aew2sbee/claude-code-ai-testing#readme",
-  "description": "",
-  "devDependencies": {
-    "@types/jest": "^30.0.0",
-    "jest": "^30.0.4",
-    "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
-  }
-}
-
-```
-
-### 4. tsconfig.json
-
-```json:tsconfig.json
-{
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "commonjs",
-    "lib": ["es2020"],
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "test"
-  ]
-}
-
-```
-
-### 5. テストコードを作成
+### 2. テストコードの作成
 
 ```ts:test/fibonacci.test.ts
 import { fibonacci } from '../src/fibonacci';
@@ -222,9 +115,97 @@ describe('fibonacci', () => {
 });
 ```
 
+### 3. jest.config.js
+
+```js:jest.config.js
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  testMatch: ['<rootDir>/test/**/*.test.ts'],
+  collectCoverageFrom: [
+    'src/**/*.ts',
+    '!src/**/*.d.ts',
+  ],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'html'],
+};
+
+```
+
+### 4. package.json
+
+```json:package.json
+{
+  "name": "claude-code-ai-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aew2sbee/claude-code-ai-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aew2sbee/claude-code-ai-testing/issues"
+  },
+  "homepage": "https://github.com/aew2sbee/claude-code-ai-testing#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.4",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  }
+}
+
+```
+
+### 5. tsconfig.json
+
+```json:tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test"
+  ]
+}
+
+```
+
 ## 🌱 テスト結果
 
 ### 1. 単体テストの結果
+
+5 つのテストに対して全てのテストが`passed`しました！
 
 ```bash
 $ npm test
@@ -251,6 +232,7 @@ Ran all test suites.
 ```
 
 ### 2. カバレッジ結果
+
 カバレッジ率が`100%`になりました。
 
 ![index_html](/images/articles/claude-code-ai-testing/index_html.png)
