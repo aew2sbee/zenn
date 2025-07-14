@@ -24,12 +24,13 @@ published: false # 公開設定（falseにすると下書き）
 
 :::message
 フィボナッチ数列レベルのアルゴリズムであれば、任せても良いと感じました。
+※実業務では、業務知識や
 :::
 
 ## 🌱 確認観点
 
-1. カバレッジ率の高いテストパターンを作成する事が可能か？
-2. Jest のインストールや初期設定を正しく実施されるか？
+1. フィボナッチ数列を実装できるのか？
+2. カバレッジ率の高いテストパターンを作成する事が可能か？
 3. 可読性の高いテストコードを書くことができるのか？
 
 ## 🌱 前提条件
@@ -43,12 +44,6 @@ published: false # 公開設定（falseにすると下書き）
 
 ## 🌱 実装
 ### 1. フィボナッチ数列を作成
-
-下記のようなプロンプトを依頼してアルゴリズムを作成しました。
-
-```bash
-フィボナッチのアルゴリズムを TypeScript で./src/配下に作成してください
-```
 
 生成されたコードはこちらになります。
 
@@ -97,7 +92,7 @@ export function fibonacci(n: number): number {
 
 ````
 
-### 2. Jest 関連のインストール
+### 2. jest.config.js
 
 ```js:jest.config.js
 module.exports = {
@@ -113,6 +108,8 @@ module.exports = {
 };
 
 ```
+
+### 3. package.json
 
 ```json:package.json
 {
@@ -151,6 +148,8 @@ module.exports = {
 
 ```
 
+### 4. tsconfig.json
+
 ```json:tsconfig.json
 {
   "compilerOptions": {
@@ -179,7 +178,7 @@ module.exports = {
 
 ```
 
-### 3. テストコードを作成
+### 5. テストコードを作成
 
 ```ts:test/fibonacci.test.ts
 import { fibonacci } from '../src/fibonacci';
@@ -255,77 +254,3 @@ Ran all test suites.
 カバレッジ率が`100%`になりました。
 
 ![index_html](/images/articles/claude-code-ai-testing/index_html.png)
-
-
-
-
-
-
-
-
-
-
-
-
-## 🌱 package.json
-
-```diff json:package.json
-{
-  "devDependencies": {
-    "@types/jest": "30.0.0",
--    "@types/node": "24.0.13",
-    "jest": "30.0.4",
-    "ts-jest": "29.4.0",
--    "ts-node": "10.9.2",
-    "typescript": "5.8.3"
-  }
-}
-
-```
-
-| パッケージ名 | 役割                                                                                                 | 備考                                                                                                                                                  |
-| ------------ | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| @types/node  | `TypeScript` で `Node.js` の型定義を提供するパッケージです。                                             | `Node.js` には `fs`, `path`, `http`, `process` などの組み込みモジュールがありますが、それらの型情報はデフォルトでは `TypeScript` に含まれていません。 |
-| ts-node      | `TypeScript` ファイルをトランスパイル（変換）せずにそのまま実行できる `Node.js` のランタイム環境です。 | `Jest` 環境に必ず必要なものではない                                                                                                                   |
-
-## 🌱 tsconfig.json
-```diff json:tsconfig.json
-{
-  "compilerOptions": {
-    "target": "es2020",
--    "module": "esnext",
-+    "module": "commonjs",
-+    "lib": ["es2020"],
--    "outDir": "./dist",
-+    "outDir": "--modelueResolution",
-+    "rootDir": "./src",
-    "allowJs": true,
-    "outDir": "--modelueResolution",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
--   "noImplicitAny": false,
--   "noImplicitThis": false,
-+   "declaration": true,
-+   "declarationMap": true,
-+   "sourceMap": true
-    "skipLibCheck": true
-  },
--  "files": [
--    "node"
--  ]
-+  "include": [
--    "src/**/*.ts"
--    "src/**/*.tsx"
-+    "src/**/*"
-+  ],
-+  "exclude": [
-+    "node_modules",
-+    "dist",
-+    "t
-  ]
-}
-
-```
