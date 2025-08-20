@@ -28,3 +28,5 @@ published: false # 公開設定（falseにすると下書き）
 1. 視聴者(利用者)には、勉強や作業に専念できるように**ユーザーから操作を最小限にする**
 
 ## 🌱 開発工夫ポイント
+
+![youtubr-about](/images/articles/personal-development-youtube-nextjs/youtubr-about.png)
