@@ -81,3 +81,8 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 @[card](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)
 @[card](https://www.nintendo.com/jp/ring/index.html)
+
+
+## 🌱 悩んだけど、実装しなかった機能案
+
+### 1. 24時間配信/無人配信
