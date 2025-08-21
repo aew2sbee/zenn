@@ -45,7 +45,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## 🌱 やり方
 
-### 0. SECRET_INFO に適当な値を設定する
+### 0. secrets情報を設定する
 
 今回は、検証のため、`ABCDEFG`を設定します
 
@@ -66,7 +66,7 @@ ABCDEFG
 --- 略 ---
 ```
 
-## 2. GitHub Action を実行
+### 2. GitHub Action を実行
 
 :::message
 **なぜ 表示されるのか？**
