@@ -110,7 +110,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 - これまでの配信での集中した **累計時間**
 - **褒め言葉** (ex. 素晴らしい努力ですね, 熱心に取り組まれていますね)
 
-### 3. 「Monthly Challenge」でみんなで 1 つの挑戦!!
+### 3. 「Monthly Challenge」でみんなで挑戦!!
 
 ![monthly-challenge](/images/articles/personal-development-youtube-nextjs/monthly-challenge.png)
 
@@ -147,6 +147,8 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 ### 2. 勉強配信の中で機能的な配信が少なかった(ブルーオーシャン)
 
+![victory](/images/articles/personal-development-youtube-nextjs/victory.png)
+
 たまたま、`Twitch`でコーディング配信（HTML/CSS）をやっている海外の方がいました。
 その配信には 10 人程度の視聴者が集まり、「意外とマニアックな配信を見る人もいるんだな」と衝撃を受けました。
 
@@ -160,8 +162,6 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 **ここで`YouTube API`を活用した機能を実装したら、頭一つ抜けた配信になる!!**
 
 と思い開発を始めました。
-
-![victory](/images/articles/personal-development-youtube-nextjs/victory.png)
 
 ## 🌱 仕様工夫ポイント
 
