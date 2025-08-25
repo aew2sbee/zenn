@@ -291,14 +291,6 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 ![analytics](/images/articles/personal-development-youtube-nextjs/analytics.png)
 _2025/08/25 時点の全期間のアナリティクス画像です。_
 
-:::message
-**概要**
-
-- 視聴回数：1.7 万回
-- 総再生時間：3,992 時間
-
-:::
-
 ## 🌱 参考にしたサービス
 
 @[card](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)
