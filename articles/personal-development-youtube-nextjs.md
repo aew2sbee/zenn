@@ -101,6 +101,19 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 チャット欄に「end」のみを入力すると、約 1 分後に配信画面の左下に
 **Focusing => Finished** に切り替わり、計測が終了します。
 
+### 2. 「Bot くん」が累計時間の通知と褒めてくれる
+
+![chat-bot](/images/articles/personal-development-youtube-nextjs/chat-bot.png)
+
+チャット欄に「end」のみを入力すると、モデレーターの「Bot くん」からコメントが貰えます
+
+- これまでの配信での集中した **累計時間**
+- **褒め言葉** (ex. 素晴らしい努力ですね, 熱心に取り組まれていますね)
+
+
+### 3. 「Monthly Challenge」でみんなで1つの挑戦!!
+![monthly-challenge](/images/articles/personal-development-youtube-nextjs/monthly-challenge.png)
+
 ## 🌱 開発動機や背景
 
 ### 1. 以前から`勉強や教育が楽しくなる`Web アプリを作りたい思いがあった
@@ -121,12 +134,12 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 (日本語で指示したら Web アプリを作成してくれるようになりました。)
 
 `Claude Code`の登場により、重かった腰が上がりました!!
-とりあえず、動く Web アプリを作成してから色々考える→作り直すを繰り返す
+とりあえず、動く Web アプリを作成してから色々考える → 作り直すを繰り返す
 
 ### 2. 勉強配信の中で機能的な配信が少なかった(ブルーオーシャン)
 
 たまたま、`Twitch`でコーディング配信（HTML/CSS）をやっている海外の方がいました。
-その配信には10人程度の視聴者が集まり、「意外とマニアックな配信を見る人もいるんだな」と衝撃を受けました。
+その配信には 10 人程度の視聴者が集まり、「意外とマニアックな配信を見る人もいるんだな」と衝撃を受けました。
 
 `Youtube`で「勉強配信」って調べると意外と配信されている方もいて
 「Study With Me」という文化もそこで知りました。
@@ -141,19 +154,32 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 ![victory](/images/articles/personal-development-youtube-nextjs/victory.png)
 
-
-
 ## 🌱 仕様工夫ポイント
 
 1. 視聴者(利用者)には、勉強や作業に専念できるように**ユーザーから操作を最小限にする**
+
+Chat欄に入力できるコマンドを増やせば、出来る事の幅が増えます。
+しかし、あえてやらなかったです。
+
+この配信は「いつもの勉強が「楽しみ!!」に変える配信」なので
+コマンドで遊んで本質の勉強をしないという状態を望まないため、
+
+
+
 
 ## 🌱 開発工夫ポイント
 
 ![youtube-about](/images/articles/personal-development-youtube-nextjs/youtube-about.png)
 
-@[card](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)
-@[card](https://www.nintendo.com/jp/ring/index.html)
 
 ## 🌱 悩んだけど、実装しなかった機能案
 
 ### 1. 24 時間配信/無人配信
+
+### 2. 週間/月間の時間を Bot くん通知する
+
+
+## 🌱 参考にしたサービス
+
+@[card](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)
+@[card](https://www.nintendo.com/jp/ring/index.html)
