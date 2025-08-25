@@ -23,7 +23,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 :::message
 
-**いつもの勉強が「楽しみ!!」に変える配信にする Web アプリ**としております。
+**いつもの勉強が「楽しみ!!」に変える配信にする Web アプリ**
 
 :::
 
@@ -72,7 +72,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 ![worry-3](/images/articles/personal-development-youtube-nextjs/worry-3.png)
 
-一昨昨日も昨日もも勉強出来たけど、3 日目の勉強ができない= **三日坊主になる**
+一昨昨日も昨日も勉強出来たけど、3 日目の勉強ができない= **三日坊主になる**
 2 日間勉強しても...
 
 - 誰からも褒めてくれない
@@ -82,7 +82,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 解決案として
 
 - 今回のアプリでは、計測終了後に「Bot くん」が誰かの代わりに褒めてくれます!!
-- 配信画面上には、今集中している仲間が見えるため、孤独感を感じにくい仕組み!!
+- 配信画面上には、今集中している仲間が見えるため、孤独感を感じにくい!!
 
 :::
 
@@ -93,7 +93,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 ![chat-start](/images/articles/personal-development-youtube-nextjs/chat-start.png)
 
 チャット欄に「start」のみを入力すると、約 1 分後に配信画面の左下に
-名前, アイコン, 現在の継続時間が表示されています
+「名前, アイコン, 現在の継続時間」が表示されています
 
 ![chat-end](/images/articles/personal-development-youtube-nextjs/chat-end.png)
 
@@ -113,6 +113,11 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 ### 3. 「Monthly Challenge」でみんなで 1 つの挑戦!!
 
 ![monthly-challenge](/images/articles/personal-development-youtube-nextjs/monthly-challenge.png)
+
+本来の目標(大学受験、資格合格)に向けてみなさん頑張っていると思います。
+しかし、その目標に心がつぶされたり、目をそらしたい時があると思います。
+
+そこで 違うもの目標があれば、気分転換や達成感を得て勉強のやる気に繋がればいいなと考えております。
 
 ## 🌱 開発動機や背景
 
@@ -179,7 +184,6 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 
 上記のサイクルを実現できるように各機能をデザインしました!
 
-
 ### 3. 視聴者同志の競争性を生まないようにする
 
 ## 🌱 開発工夫ポイント
@@ -224,17 +228,28 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 
 @[card](https://nextjs.org/)
 
+フロントエンドエンジニアを目指しております。
+2023 年頃から「Next.js」勉強していて何度も挫折しており、
+今度こそ理解したいと思い選定しております。
+
 ### TypeScript
 
 @[card](https://www.typescriptlang.org/)
+
+今の会社でも`TypeScript`は使っており、`Next.js`でも使えるので選定しました。
 
 ### Tailwind CSS
 
 @[card](https://tailwindcss.com/)
 
+`Next.js`のオプションで使え、個人的にも勉強しているので選定しました。
+
 ### SQLite
 
 @[card](https://sqlite.org/)
+
+個人の学習時間を記録するだけなため、軽量な`SQLite`を選定しました。
+今のデータであれば、100 万件記録出来そうなので、運用面でも大丈夫だと思います。
 
 ## 🌱 最後に
 
