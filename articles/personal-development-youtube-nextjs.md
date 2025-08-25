@@ -171,7 +171,7 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 ![cycle](/images/articles/personal-development-youtube-nextjs/cycle.png)
 
 多くの方に長く この配信を活用して欲しいと考えております。
-そこで「大人のやる気ペン」のサイクルを参考しました。
+そこで[「大人のやる気ペン」](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)のサイクルを参考しました。
 
 :::message
 勉強 → データの可視化 →Bot くんから褒められる...(繰り返し)
@@ -179,13 +179,10 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 
 上記のサイクルを実現できるように各機能をデザインしました!
 
-@[card](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)
 
 ### 3. 視聴者同志の競争性を生まないようにする
 
 ## 🌱 開発工夫ポイント
-
-![youtube-about](/images/articles/personal-development-youtube-nextjs/youtube-about.png)
 
 ## 🌱 悩んだけど、実装しなかった機能案
 
@@ -243,7 +240,7 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 
 2025 年の年内で**登録者 1000 人**を目指しております!!
 
-本チャンネルにご興味がある方や一緒に勉強をしてくれる方はチャンネル登録をよろしくお願いいたします。
+本チャンネルに「ご興味がある方」や「一緒に勉強をしてくれる方」はチャンネル登録をよろしくお願いいたします!!
 
 また、収益化したら、高くてなかなか買えない技術の書籍(O'Reilly 本など)を買う経費にしたいと考えております。(私のおこづかいは 5,000 円/月)
 
@@ -260,4 +257,5 @@ _2025/08/25 時点の全期間のアナリティクス画像です。_
 
 ## 🌱 参考にしたサービス
 
+@[card](https://www.kokuyo-st.co.jp/stationery/otonayarukipen/index.html)
 @[card](https://www.nintendo.com/jp/ring/index.html)
