@@ -114,7 +114,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 ![monthly-challenge](/images/articles/personal-development-youtube-nextjs/monthly-challenge.png)
 
-みなさんの集中した時間が`お花を育てます`ことができます。
+みなさんの集中した時間が`お花を育てる`ことができます。
 毎月 月末に「来月の目標時間」のアンケートを実施しております。
 
 本来の目標(大学受験、資格合格)に向けてみなさん頑張っていると思います。
