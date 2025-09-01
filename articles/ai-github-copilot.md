@@ -38,6 +38,7 @@ published: true # 公開設定（falseにすると下書き）
 
 下記コマンドで`次の単語まで採用する`
 `export function sumArray`まで採用してみました。
+
 :::message
 
 **Win**: `Ctrl + →`
@@ -51,6 +52,7 @@ published: true # 公開設定（falseにすると下書き）
 
 下記コマンドで`他の提案をして貰いました。`
 `if文`を追加された別の提案をしてくれました。
+
 :::message
 
 **Win**: `Alt + ]`
