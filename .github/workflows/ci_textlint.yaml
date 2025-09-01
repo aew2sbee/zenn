@@ -1,7 +1,7 @@
 ## Zenn の記事/書籍の Markdown に対して textlint を実行する CI
 ## - PR の差分 Markdown のみを対象
 ## - 変更がなければスキップして時間/リソースを節約
-name: textlint
+name: CI - Textlint
 
 on:
   pull_request:
