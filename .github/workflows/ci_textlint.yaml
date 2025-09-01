@@ -7,7 +7,7 @@ on:
       - 'books/**/*.md'
       - 'package.json'
       - 'package-lock.json'
-      - '.github/workflows/lint.yml'
+  - '.github/workflows/ci_textlint.yaml'
   workflow_dispatch:
 
 concurrency:
@@ -22,6 +22,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Get changed markdown files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            articles/**/*.md
+            books/**/*.md
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -29,6 +37,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
+        if: steps.changed.outputs.any_changed == 'true'
         run: |
           if [ -f package-lock.json ]; then
             npm ci
@@ -36,5 +45,12 @@ jobs:
             npm install
           fi
 
-      - name: Run textlint
-        run: npm run lint
+      - name: Run textlint on changed files
+        if: steps.changed.outputs.any_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.changed.outputs.all_changed_files }}"
+          npx --no-install textlint ${{ steps.changed.outputs.all_changed_files }}
+
+      - name: No matching changes, skip lint
+        if: steps.changed.outputs.any_changed != 'true'
+        run: echo "No changes in articles/** or books/** markdown files."
