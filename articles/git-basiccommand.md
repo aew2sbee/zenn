@@ -122,7 +122,7 @@ git config --global alias.<指定のコマンド> <省略したいコマンド>
 ### サンプルコマンド
 
 :::message
-今後 `git status` を `git st` として使いたい場合は、下記のコマンドを実行する。
+今後`git status`を`git st`として使いたい場合は、下記のコマンドを実行する。
 :::
 
 ```git
