@@ -1,17 +1,23 @@
+## Zenn の記事/書籍の Markdown に対して textlint を実行する CI
+## - PR の差分 Markdown のみを対象
+## - 変更がなければスキップして時間/リソースを節約
 name: textlint
 
 on:
   pull_request:
+    # 対象ファイルに変更がある PR のみでトリガー
     paths:
       - 'articles/**/*.md'
       - 'books/**/*.md'
       - 'package.json'
       - 'package-lock.json'
-  - '.github/workflows/ci_textlint.yaml'
+      # ワークフロー自体の変更時も実行
+      - '.github/workflows/ci_textlint.yaml'
   workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
+  # 同一 PR/ブランチで新しい実行が来たら古い実行をキャンセル
   cancel-in-progress: true
 
 jobs:
@@ -19,9 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # リポジトリをチェックアウト
       - name: Checkout
         uses: actions/checkout@v4
 
+      # PR 内で変更された Markdown ファイルのみを検出
       - name: Get changed markdown files
         id: changed
         uses: tj-actions/changed-files@v45
@@ -30,12 +38,14 @@ jobs:
             articles/**/*.md
             books/**/*.md
 
+      # Node.js をセットアップ（npm キャッシュを有効化）
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
 
+      # 変更があるときだけ依存関係をインストール
       - name: Install dependencies
         if: steps.changed.outputs.any_changed == 'true'
         run: |
@@ -45,12 +55,16 @@ jobs:
             npm install
           fi
 
+      # 差分の Markdown ファイルに限定して textlint を実行
+      # - npx --no-install: 既にインストール済みのローカル依存を使用
+      # - all_changed_files はスペース区切りのパスリスト
       - name: Run textlint on changed files
         if: steps.changed.outputs.any_changed == 'true'
         run: |
           echo "Changed files: ${{ steps.changed.outputs.all_changed_files }}"
           npx --no-install textlint ${{ steps.changed.outputs.all_changed_files }}
 
+      # 対象の変更がない場合はスキップ（成功として終了）
       - name: No matching changes, skip lint
         if: steps.changed.outputs.any_changed != 'true'
         run: echo "No changes in articles/** or books/** markdown files."
