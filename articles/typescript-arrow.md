@@ -6,7 +6,7 @@ topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]
 published: true # 公開設定（falseにすると下書き）
 ---
 
-## はじめに
+## 🌱 はじめに
 
 この記事では、**TypeScript のアロー関数式(=>)** をまとめております。
 
@@ -14,7 +14,7 @@ published: true # 公開設定（falseにすると下書き）
 @[card](https://oukayuka.booth.pm/items/2368045)
 :::
 
-## 結論
+## 🌱 結論
 
 :::message
 `=>`は、TypeScript のアロー関数式という書き方になります。
@@ -33,12 +33,12 @@ const clac_tax = (price: number) => Math.floor(price * 1.1);
 
 **メリット**
 
-- アロー関数式: **function**を省略する可能
-- アロー関数式 (省略記法): **return**と **{}** を省略する可能
+- アロー関数式: **function**を省略する可能。
+- アロー関数式 (省略記法): **return**と **{}** を省略する可能。
 
 :::
 
-## 1. function を使用した関数
+## 🌱 function を使用した関数
 
 ```ts
 // 機能内容: 渡された金額を消費税込みの金額に計算をする
@@ -49,7 +49,7 @@ const clac_tax = function (price: number) {
 console.log(clac_tax(100));
 ```
 
-:::details 実行結果を確認する
+:::details 実行結果を確認する。
 
 ```bash
 110
@@ -57,10 +57,10 @@ console.log(clac_tax(100));
 
 :::
 
-## 2. アロー関数式
+## 🌱 アロー関数式
 
 ```diff ts
- // 機能内容: 渡された金額を消費税込みの金額に計算をする
+ // 機能内容: 渡された金額を消費税込みの金額に計算をする。
 - const clac_tax = function (price: number) {
   // Math.floor: 小数点を切り捨て
   return Math.floor(price * 1.1);
@@ -72,7 +72,7 @@ console.log(clac_tax(100));
 console.log(clac_tax(100));
 ```
 
-:::details 実行結果を確認する
+:::details 実行結果を確認する。
 
 ```bash
 110
@@ -80,7 +80,7 @@ console.log(clac_tax(100));
 
 :::
 
-## 3. アロー関数式 (省略記法)
+## 🌱 アロー関数式 (省略記法)
 
 ```diff ts
 - const clac_tax = (price: number) => {
@@ -90,20 +90,10 @@ console.log(clac_tax(100));
 console.log(clac_tax(100));
 ```
 
-:::details 実行結果を確認する
+:::details 実行結果を確認する。
 
 ```bash
 110
 ```
 
 :::
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
