@@ -49,7 +49,7 @@ const clac_tax = function (price: number) {
 console.log(clac_tax(100));
 ```
 
-:::details 実行結果を確認する
+:::details 実行結果を確認する。
 
 ```bash
 110
