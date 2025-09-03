@@ -6,7 +6,7 @@ topics: ['python', 'matplotlib', 'vscode', 'データ分析'] # タグ。["markd
 published: true # 公開設定（falseにすると下書き）
 ---
 
-## はじめに
+## 🌱 はじめに
 
 Python のデータ分析の学習を始めたいと思い、
 **Python2 年生 データ分析のしくみ 体験してわかる！会話でまなべる！** を購入しました。
@@ -31,7 +31,7 @@ VScode 上での学習方法の記載はありませんでした。
 - Visual Studio Code
 - matplotlib 3.6.2
 
-## 手順解説
+## 🌱 手順解説
 
 ### 1. グラフを描くコードを準備する
 
@@ -57,25 +57,15 @@ plt.show()
 
 1. VScode で作業中のファイルを開き、そのファイル上で**右クリック**を押してください。
 2. 下記画像のように候補の中に**ターミナルで Python ファイルを実行する**をクリックする
-   ![ターミナルでPythonファイルを実行する](/images/run-matplotlib-vscode.png)
+   ![ターミナルでPythonファイルを実行する](/images/articles/python-matplotlib-vscode/run-matplotlib-vscode.png)
 
 ### 3. 表示されたグラフを確認する
 
 期待通りのグラフが画像として表示されました！
-![右斜め45度に伸びる直線のグラフ](/images/45graph.png)
+![右斜め45度に伸びる直線のグラフ](/images/articles/python-matplotlib-vscode/45graph.png)
 
-## おわりに
+## 🌱 おわりに
 
 Python2 年生 データ分析のしくみ 体験してわかる！会話でまなべる！は、
 データ分析を初めて学習する方にとってはわかりやすい書籍となっておりますので、
 興味がある方は、購入をおすすめします。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
