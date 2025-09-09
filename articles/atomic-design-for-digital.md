@@ -6,10 +6,10 @@ topics: ['atomicdesign', 'design', '初心者向け'] # タグ。["markdown", "r
 published: true # 公開設定（falseにすると下書き）
 ---
 
-## はじめに
+## 🌱 はじめに
 
 Atomic Design について下記の書籍から学びました。
-開発メンバーに共有するために執筆します。
+開発メンバーへ共有するため執筆します。
 @[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
 
 言葉だけでは、理解が難しいと感じましたので、
@@ -20,7 +20,7 @@ Atomic Design について下記の書籍から学びました。
 個人でサイトを画像として保存しイラストを追加した自作画像となります。
 :::
 
-## Atomic Design とは
+## 🌱 Atomic Design とは
 
 > デザインシステムを構築するための方法論です。
 
@@ -37,26 +37,26 @@ Atomic Design について下記の書籍から学びました。
 | Templates | ページ全体の**レイアウト** | ワイヤーフレーム |
 | Pages | **ページそのもの** | ユーザーが見るページ |
 
-## それぞれの役割について
+## 🌱 それぞれの役割について
 
 ### 1. Atoms
 
 - 基本的に**状態**や**振る舞いを持たない**
 - 文章、色、大きさなどの描画に必要な**パラメータは`props`から受け取る**
 - CSS で親要素の大きさに**依存させない**
-- 画像の Atoms なら**URL のみ**を渡して表示する
+- 画像の Atoms なら**URL のみ**を渡して表示する。
 
-下記は、デジタル庁サイトのフッターの Atoms 要素になります
+下記は、デジタル庁サイトのフッターの Atoms 要素になります。
 ![Atomic-Design-Atoms](/images/articles/atomic-design-for-digital/Atomic-Design-Atoms.png)
 _デジタル庁サイトのフッターの Atoms_
 
 ### 2. Molecules
 
-- 基本的に**状態**や**振る舞いを持たない**
-- 汎用的に使うため必要なデータは**親から**受け取る
-- **1 つの役割**を持った UI にする
-- 複数の Atoms を配置し、**必要なデータを子コンポーネントに渡す**
-- それぞれの位置関係を CSS で指定する
+- 基本的に**状態**や**振る舞いを持たない**。
+- 汎用的に使うため必要なデータは**親から**受け取る。
+- **1 つの役割**を持った UI にする。
+- 複数の Atoms を配置し、**必要なデータを子コンポーネントに渡す**。
+- それぞれの位置関係を CSS で指定する。
 
 下記は、デジタル庁サイトのフッターの Molecules 要素になります
 ![Atomic-Design-Molecules](/images/articles/atomic-design-for-digital/Atomic-Design-Molecules.png)
@@ -65,24 +65,24 @@ _デジタル庁サイトのフッターの Molecules_
 ### 3. Organisms
 
 - サインフォームなどの**UI コンポーネント**
-- ドメイン知識に依存したデータを受け取る
+- ドメイン知識に依存したデータを受け取る。
 - Context の参照
-- 見た目：Presentatational Component で実装
-- ロジック：Container Component で実装
+- 見た目：Presentatational Component で実装。
+- ロジック：Container Component で実装。
   ![Atomic-Design-Organisms](/images/articles/atomic-design-for-digital/Atomic-Design-Organisms.png)
   _デジタル庁サイトのフッターの Organisms_
 
 ### 4. Templates
 
-- 複数の Organisms 以下のコンポーネントを配置する
-- コンポーネントを CSS でレイアウトする
+- 複数の Organisms 以下のコンポーネントを配置する。
+- コンポーネントを CSS でレイアウトする。
 
 ### 5. Pages
 
-- Templates に状態管理、router 関係の処理、API コールなどの副作用の実行
-- Context に値を渡す
+- Templates に状態管理、router 関係の処理、API コールなどの副作用の実行。
+- Context に値を渡す。
 
-## デジタル庁のサイトの Atomic Design はどうなっているか
+## 🌱 デジタル庁のサイトの Atomic Design はどうなっているか
 
 #### 加工前：デジタル庁のフッター
 
@@ -92,17 +92,7 @@ _デジタル庁サイトのフッターの Molecules_
 
 ![Atomic-Design-step01](/images/articles/atomic-design-for-digital/Atomic-Design-step01.png)
 
-## おわりに
+## 🌱 おわりに
 
 Atomic-Design の概念に触れてしっかり使いこなせたら便利だなと思いました。
 チーム全体で使うには、チーム力がそこそこいるなと感じました。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
