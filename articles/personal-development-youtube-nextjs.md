@@ -82,7 +82,7 @@ https://youtube.com/shorts/zRPZOHUu-lk?feature=share
 ![worry-3](/images/articles/personal-development-youtube-nextjs/worry-3.png)
 
 一昨昨日、昨日も勉強出来たけど、3 日目の勉強ができない= **三日坊主になる**
-2 日間勉強しても...
+2 日間勉強しても...。
 
 - 誰からも褒めてくれない。
 - 学校みたいに仲間がいるわけではないため、孤独感を感じやすい。
