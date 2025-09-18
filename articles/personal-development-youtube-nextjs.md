@@ -37,7 +37,7 @@ https://www.youtube.com/@aew2sbee
 
 ![worry-1](/images/articles/personal-development-youtube-nextjs/worry-1.png)
 
-いざ、勉強しようと机に座り、教材を開くが...
+いざ、勉強しようと机に座り、教材を開くが...。
 
 - スマホを触っちゃう。
 - いつも気にならないものが気になる。
@@ -59,7 +59,7 @@ https://youtube.com/shorts/HVTPtsJ2kt4?feature=share
 
 ![worry-2](/images/articles/personal-development-youtube-nextjs/worry-2.png)
 
-いざ、始めたのがいいけど...
+いざ、始めたのがいいけど...。
 
 - 10 分で飽きたり。
 - 他の事が気になる。
@@ -81,7 +81,7 @@ https://youtube.com/shorts/zRPZOHUu-lk?feature=share
 
 ![worry-3](/images/articles/personal-development-youtube-nextjs/worry-3.png)
 
-一昨昨日も昨日も勉強出来たけど、3 日目の勉強ができない= **三日坊主になる**
+一昨昨日、昨日も勉強出来たけど、3 日目の勉強ができない= **三日坊主になる**
 2 日間勉強しても...
 
 - 誰からも褒めてくれない。
