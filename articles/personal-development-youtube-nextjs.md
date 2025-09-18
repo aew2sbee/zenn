@@ -51,6 +51,9 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 - スマホで YouTube 配信を開いたら、スマホは触れない
   :::
 
+> 同じ内容を下記のショート動画でも楽しめます。
+> @[card](https://youtube.com/shorts/HVTPtsJ2kt4?feature=share)
+
 ### 2. 集中力が続かない
 
 ![worry-2](/images/articles/personal-development-youtube-nextjs/worry-2.png)
@@ -66,7 +69,11 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 - YouTube 配信では環境音(雨の音、焚き火)と一緒にポモドーロタイマーも併せて起動
   (適度な雑音が集中力を高めてくれます)
 - 2 時間も勉強するのではなく、まずは 25 分だけ！ときめて集中してやすい環境の整備
-  :::
+
+:::
+
+> 同じ内容を下記のショート動画でも楽しめます。
+> @[card](https://youtube.com/shorts/zRPZOHUu-lk?feature=share)
 
 ### 3. 勉強が習慣化しない
 
@@ -85,6 +92,9 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 - 配信画面上には、今集中している仲間が見えるため、孤独感を感じにくい!!
 
 :::
+
+> 同じ内容を下記のショート動画でも楽しめます。
+> @[card](https://youtube.com/shorts/WG0XAZcYZ8o?feature=share)
 
 ## 🌱 サービス説明
 
@@ -210,7 +220,7 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 狙いとしては、**「短い時間でも参加して欲しいと考えております。」**
 （むしろ、長時間を 1 日より短時間を毎日を勉強する姿勢の方がいいと考えております。）
 
-また、下記記事によると平均時間が**13分**なので30分以上勉強した方は平均以上です!!
+また、下記記事によると平均時間が**13 分**なので 30 分以上勉強した方は平均以上です!!
 
 @[card](https://news.yahoo.co.jp/expert/articles/fa5e772fdf159d49fcccf348dc8a9a6a2125c3ae)
 
