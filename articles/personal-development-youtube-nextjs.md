@@ -1,5 +1,5 @@
 ---
-title: '[個人開発] YouTubeでいつもの勉強が「楽しみ!!」にするWeb アプリ' # 記事のタイトル
+title: '[個人開発] YouTubeでいつもの勉強が「楽しみ!!」にするWアプリ' # 記事のタイトル
 emoji: '🏅' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['個人開発', 'youtube', 'nextjs', 'typescript', 'claudecode'] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -23,7 +23,7 @@ https://www.youtube.com/@aew2sbee
 
 :::message
 
-**いつもの勉強が「楽しみ!!」に変える配信にする Web アプリ**
+**いつもの勉強を「楽しみ!!」に変えるアプリ**
 
 :::
 
