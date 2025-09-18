@@ -1,5 +1,5 @@
 ---
-title: '[個人開発] YouTubeでいつもの勉強が「楽しみ!!」に変える配信にする Web アプリ' # 記事のタイトル
+title: '[個人開発] YouTubeでいつもの勉強が「楽しみ!!」にするWeb アプリ' # 記事のタイトル
 emoji: '🏅' # アイキャッチとして使われる絵文字（1文字だけ）
 type: 'tech' # tech: 技術記事 / idea: アイデア記事
 topics: ['個人開発', 'youtube', 'nextjs', 'typescript', 'claudecode'] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -17,7 +17,7 @@ published: true # 公開設定（falseにすると下書き）
 _画面左下に表示されている"Focus tracker"が今回作成したアプリです_
 
 下記リンクから YouTube ライブ配信の様子を確認できます。
-@[card](https://www.youtube.com/@aew2sbee)
+https://www.youtube.com/@aew2sbee
 
 ## 🌱 サービスコンセプト
 
@@ -52,7 +52,8 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
   :::
 
 > 同じ内容を下記のショート動画でも楽しめます。
-> @[card](https://youtube.com/shorts/HVTPtsJ2kt4?feature=share)
+
+https://youtube.com/shorts/HVTPtsJ2kt4?feature=share
 
 ### 2. 集中力が続かない
 
@@ -73,7 +74,8 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 :::
 
 > 同じ内容を下記のショート動画でも楽しめます。
-> @[card](https://youtube.com/shorts/zRPZOHUu-lk?feature=share)
+
+https://youtube.com/shorts/zRPZOHUu-lk?feature=share
 
 ### 3. 勉強が習慣化しない
 
@@ -94,7 +96,8 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 :::
 
 > 同じ内容を下記のショート動画でも楽しめます。
-> @[card](https://youtube.com/shorts/WG0XAZcYZ8o?feature=share)
+
+@[card](https://youtube.com/shorts/WG0XAZcYZ8o?feature=share)
 
 ## 🌱 サービス説明
 
@@ -111,6 +114,10 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 チャット欄に「end」のみを入力すると、約 1 分後に配信画面の左下に
 **Focusing => Finished** に切り替わり、計測が終了します。
 
+> 同じ内容を下記のショート動画で分かりやすく解説してます。
+
+https://youtube.com/shorts/qdPTz4VbKFU?feature=share
+
 ### 2. 「Bot くん」が累計時間の通知と褒めてくれる
 
 ![chat-bot](/images/articles/personal-development-youtube-nextjs/chat-bot.png)
@@ -119,6 +126,10 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 - これまでの配信での集中した **累計時間**
 - **褒め言葉** (ex. 素晴らしい努力ですね, 熱心に取り組まれていますね)
+
+> 同じ内容を下記のショート動画で分かりやすく解説してます。
+
+https://youtube.com/shorts/ftm5KCYG7vs?feature=share
 
 ### 3. 「Monthly Challenge」でみんなで挑戦!!
 
@@ -132,6 +143,10 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 そこで 違うもの目標があれば、**気分転換**や**達成感**を得て
 勉強のやる気に繋がればいいなと考えております。
+
+> 同じ内容を下記のショート動画で分かりやすく解説してます。
+
+https://youtube.com/shorts/Sa-SS6TlqYc?feature=share
 
 ## 🌱 開発動機や背景
 
@@ -304,7 +319,7 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 
 2025 年の年内で**登録者 1000 人**を目指しております!!
 
-@[card](https://www.youtube.com/@aew2sbee)
+https://www.youtube.com/@aew2sbee
 
 本チャンネルに「ご興味がある方」や「一緒に勉強をしてくれる方」はチャンネル登録をよろしくお願いいたします!!
 
