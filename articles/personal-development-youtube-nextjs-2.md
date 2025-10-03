@@ -45,18 +45,18 @@ _実際の私のアナリティクスの内容になります_
 
 ![weekly-image](/images/articles/personal-development-youtube-nextjs-2/weekly-image.png)
 
-過去 7 日間の「集中日数」「7日平均」「最高記録」の概要の表示
-ページネーション機能で`「←前週 」`,  `「次週→ 」`さらに過去の週次のデータを確認することできます。
+過去 7 日間の「集中日数」「7 日平均」「最高記録」の概要の表示
+ページネーション機能で`「←前週 」`, `「次週→ 」`
+さらに過去の週次のデータを確認することできます。
 
 ### 3. 過去 30 日間
 
 ![monthly-image](/images/articles/personal-development-youtube-nextjs-2/monthly-image.png)
-過去 30 日間の「集中日数」「30日平均」「最高記録」の概要の表示
-ページネーション機能で`「←前月 」`,  `「次月→ 」`さらに過去の月次のデータを確認することできます。
-
+過去 30 日間の「集中日数」「30 日平均」「最高記録」の概要の表示
+ページネーション機能で`「←前月 」`, `「次月→ 」`
+さらに過去の月次のデータを確認することできます。
 
 ## 🌱 コンセプト
-
 
 :::message
 
@@ -64,46 +64,57 @@ _実際の私のアナリティクスの内容になります_
 
 :::
 
-
 ### 1. 料金
-YouTubeが収益化もまだなので、サーバー代を抑えるために`GitHub Page`を活用しました。
+
+YouTube が収益化もまだなので、サーバー代を抑えるために`GitHub Page`を活用しました。
 レポジトリが`public`である条件があります。
 
 @[card](https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
-
 また、`GitHub Page`は静的ページ(HTML,CSS,JS)しか利用出来ません。
 そのため、`Next.JS`の`Static Site Generation (SSG)`を活用してこの条件をクリアしました。
 
-> `Static Site Generation (SSG)`とは、ビルド(`npm run build`)時にHTMLとCSSを生成する機能
+> `Static Site Generation (SSG)`とは、ビルド(`npm run build`)時に HTML と CSS を生成する機能
 
 @[card](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation)
 
-
-`計測アプリ`と`アナリティクスアプリ`で共通のDBを持つ必要があります。
+`計測アプリ`と`アナリティクスアプリ`で共通の DB を持つ必要があります。
 以前までは、ローカルで`SQLite`でデータを管理しておりました。
 今回`Supabase`を活用しました。
 
 無料枠だと、**データベース容量：500 MB**らしいです。
 
-今回のアプリの場合、**数千〜1万以上のユーザーを1年間分**が記録できそうなので、
+今回のアプリの場合、**数千〜1 万以上のユーザーを 1 年間分**が記録できそうなので、
 無料枠で活用できそうです。
 
 @[card](https://supabase.com/)
 
-
 ### 2. 運用の手間
-
 
 `アナリティクスアプリ`にデータを追加して、毎日ビルドを必要があります。
 そこで`GitHub Action`を活用しました。
 
 `GitHub Action`の大まかな流れ
-1. 日本時間の毎朝4時に`GitHub Action`が起動する
+
+1. 日本時間の毎朝 4 時に`GitHub Action`が起動する
 2. `GitHub Action`が`Supabase`に昨日のデータだけを取得する
-3. 用意したスクリプトを通じて昨日のデータを専用のJSON形式に変更する
-4. `JSONファイル`を`main`ブランチに自動pushする
-5. 自動push後、SSGで静的ページを作成
+3. 用意したスクリプトを通じて昨日のデータを専用の JSON 形式に変更する
+4. `JSONファイル`を`main`ブランチに自動 push する
+5. 自動 push 後、SSG で静的ページを作成
 6. 静的ページを`GitHub Page`にデプロイする
 
 @[card](https://docs.github.com/ja/actions/get-started/understand-github-actions)
+
+### 3. 認証
+
+`GitHub Page`は静的ページ(HTML,CSS,JS)なので、ログイン/ログアウト機能を実装することができません。
+しかし、他の視聴者の情報を簡単に閲覧出来てしまうのは、サービスとして不完全だと思います。
+
+そこで、YouTube 側で発行している`チャンネルID`を活用しました。
+チャンネル ID はユニークな情報であり、私が管理する必要がないのもいいですね！
+
+また、チャンネル ID は私と本人しか調べることができないので、認証の情報として良いと思いました。
+※チャンネル ID は、チャンネルのマイページから調べる事ができます。
+※登録者がいるチャンネルなら、YouTube 上で検索してマイページを見つけることができる
+
+チャンネル ID を活用することで、他人から情報を閲覧されず、自分だけ情報を自分の情報を見つけられることができます。
