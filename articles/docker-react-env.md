@@ -38,7 +38,7 @@ docker run -td --name="React-env" node:14.17.0 /bin/bash
 
 Docker Desktop を起動し、さきほどのコンテナが作成出来ている事を確認します。
 
-![docker_desktop_step7](/images/docker_desktop_step7.png)
+![docker_desktop_step7](/images/articles/docker-react-env/docker_desktop_step7.png)
 
 ## React アプリを起動する
 
