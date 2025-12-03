@@ -50,7 +50,7 @@ Docker に関する説明等は行いません。
 
 ## Dockerfile ってなんで必要なの？
 
-![docker01](/images/docker01.png)
+![docker01](/images/articles/docker-comprehension/docker01.png)
 
 **解答：Docker イメージから Docker コンテナをビルドするために必要です。**
 
@@ -58,7 +58,7 @@ Docker に関する説明等は行いません。
 あんこ(`Dockerイメージ`)を使い、レシピ(`Dockerfile`)に書かれている調理法(ライブラリーのインストールなど)を行い、たい焼き(`Dockerコンテナ`)を作成する
 
 下記のイメージのように様々なレシピ(`Dockerfile`)があれば、**大好きなあんこのスイーツ**を作る事が出来ます。
-![docker02](/images/docker02.png)
+![docker02](/images/articles/docker-comprehension/docker02.png)
 
 :::message
 1 つの Docker イメージから Dockerfile によってオリジナルの Docker コンテナを作成できる
@@ -66,7 +66,7 @@ Docker に関する説明等は行いません。
 
 ### Python の Docker イメージの場合
 
-![docker03](/images/docker03.png)
+![docker03](/images/articles/docker-comprehension/docker03.png)
 
 Python の Docker イメージから...
 
@@ -76,7 +76,7 @@ Python の Docker イメージから...
 
 ## docker-compose.yml ってなんで必要なの？
 
-![docker04](/images/docker04.png =500x)
+![docker04](/images/articles/docker-comprehension/docker04.png =500x)
 
 **解答：Docker Compose を使用して複数のコンテナを定義し、それらを組み合わせてアプリケーションの実行環境を構築するために必要です。**
 
@@ -84,6 +84,6 @@ Python の Docker イメージから...
 
 ### Django/PostgreSQL の Docker コンテナの場合
 
-![docker05](/images/docker05.png)
+![docker05](/images/articles/docker-comprehension/docker05.png)
 
 上記のイメージのように複数の Docker コンテナ(`django/PostgreSQL`)を組み合わせた Web アプリを動かす環境を作成する事が出来ます。
