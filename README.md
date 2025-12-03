@@ -1,3 +1,1 @@
-# Zenn CLI
-
-* [📘 How to use](https://zenn.dev/zenn/articles/zenn-cli-guide)
+[小倉あん-Zenn](https://zenn.dev/aew2sbee)
