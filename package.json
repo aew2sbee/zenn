@@ -1,11 +1,16 @@
 {
   "scripts": {
-    "lint": "textlint \"articles/**/*.md\" \"books/**/*.md\""
+    "lint": "textlint \"articles/**/*.md\" \"books/**/*.md\"",
+    "lint:md": "markdownlint \"articles/**/*.md\" \"books/**/*.md\"",
+    "format": "prettier --write \"articles/**/*.md\" \"books/**/*.md\"",
+    "format:check": "prettier --check \"articles/**/*.md\" \"books/**/*.md\""
   },
   "dependencies": {
     "zenn-cli": "^0.1.156"
   },
   "devDependencies": {
+    "markdownlint-cli": "^0.46.0",
+    "prettier": "^3.7.4",
     "textlint": "^15.2.2",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
