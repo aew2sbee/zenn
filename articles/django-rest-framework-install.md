@@ -12,7 +12,7 @@ published: true # 公開設定（falseにすると下書き）
 
 `http://127.0.0.1:8000/books/list/`にアクセスして
 下記の画面が表示されるまでを解説します
-![drf-api-step01.png](/images/drf-api-step01.png)
+![drf-api-step01.png](/images/articles/django-rest-framework-install/drf-api-step01.png)
 
 ## 0. ファイル構成の確認
 
@@ -381,35 +381,35 @@ python manage.py runserver
 
 2. `http://127.0.0.1:8000/books/list/`にアクセスする
 3. まだデータを追加していないので、`[]`が確認出来る
-   ![drf-api-step01.png](/images/drf-api-step01.png)
+   ![drf-api-step01.png](/images/articles/django-rest-framework-install/drf-api-step01.png)
 
 ### 2. データを追加する(Create)
 
 1. `Title`欄に書籍のタイトルを入力する
 2. `POST`ボタンをクリックする
-   ![drf-api-step02.png](/images/drf-api-step02.png)
+   ![drf-api-step02.png](/images/articles/django-rest-framework-install/drf-api-step02.png)
 3. さきほど`[]`だったのが、データが追加されたことが確認出来ます。
-   ![drf-api-step03.png](/images/drf-api-step03.png)
+   ![drf-api-step03.png](/images/articles/django-rest-framework-install/drf-api-step03.png)
 
 ### 3. データを更新する(Update)
 
 1. 追加したデータの`id`を URL に追加し、`http://127.0.0.1:8000/books/list/1/`にアクセスする
 2. タイトルを`リーダブルコード`から`新リーダブルコード`に変更する
 3. `POST`ボタンをクリックする
-   ![drf-api-step04.png](/images/drf-api-step04.png)
+   ![drf-api-step04.png](/images/articles/django-rest-framework-install/drf-api-step04.png)
 4. `Title`と`updated_at`が更新されていることを確認出来る
    ※`created_at`は、設定ミスで更新されてしまいました。
-   ![drf-api-step05.png](/images/drf-api-step05.png)
+   ![drf-api-step05.png](/images/articles/django-rest-framework-install/drf-api-step05.png)
 
 ### 2. データを削除する(Delete)
 
 1. `http://127.0.0.1:8000/books/list/1/`にアクセスする
 2. `DELETE`ボタンをクリックする
-   ![drf-api-step06.png](/images/drf-api-step06.png)
+   ![drf-api-step06.png](/images/articles/django-rest-framework-install/drf-api-step06.png)
 3. ポップアップの`Delete`に対してもボタンをクリックする
-   ![drf-api-step07.png](/images/drf-api-step07.png)
+   ![drf-api-step07.png](/images/articles/django-rest-framework-install/drf-api-step07.png)
 4. 初期状態と同じデータが`[]`になる
-   ![drf-api-step01.png](/images/drf-api-step01.png)
+   ![drf-api-step01.png](/images/articles/django-rest-framework-install/drf-api-step01.png)
 
 ## おわりに
 
