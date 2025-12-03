@@ -182,7 +182,7 @@ Quit the server with CONTROL-C.
 2. ブラウザ上でアプリケーションを確認する
    `http://127.0.0.1:8000/`をブラウザの URL 欄に入力しアプリケーションを表示させます。
    無事に Django を起動する事が出来ました。
-   ![Djangoインストール](/images/django-install.png)
+   ![Djangoインストール](/images/articles/django-rest-framework-install/django-install.png)
 
 ## 6. models.py の作成
 

@@ -9,7 +9,7 @@ published: true # 公開設定（falseにすると下書き）
 ## はじめに
 
 この記事では、Django インストールし下記の画面が表示手順を解説します。
-![Djangoインストール](/images/django-install.png)
+![Djangoインストール](/images/articles/django-install/django-install.png)
 
 ## 0. ファイル構成の確認
 
@@ -165,4 +165,4 @@ Quit the server with CONTROL-C.
    :::message
    チュートリアルのロケットを飛ばすことが出来ました！
    :::
-   ![Djangoインストール](/images/django-install.png)
+   ![Djangoインストール](/images/articles/django-install/django-install.png)
