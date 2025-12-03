@@ -12,11 +12,11 @@ published: true # 公開設定（falseにすると下書き）
 下記の画面が表示されるまでを解説したいと思います。
 ![React_step6](/images/articles/docker-react-env/React_step6.png)
 
-| 項目             | 内容                                       |
-| ---------------- | ------------------------------------------ |
-| **対象者**       | ・Docker 初学者                            |
-| **伝えたい内容** | ・Docker コマンドで React を立ち上げる方法 |
-| **前提条件**     | ・node:14.17.0                             |
+|項目|内容|
+|---|---|
+|**対象者**|・Docker 初学者|
+|**伝えたい内容**|・Docker コマンドで React を立ち上げる方法|
+|**前提条件**|・node:14.17.0|
 
 ## Docker DeskTop のインストール
 
@@ -74,7 +74,7 @@ Visual Studio Code から Running 状態のコンテナに接続します。
 ### 4. React アプリを作成する
 
 画面左側の`フォルダーを開く`をクリックし
-`/home `ディレクトリを開きます
+`/home`ディレクトリを開きます
 
 ![React_step4](/images/articles/docker-react-env/React_step4.png)
 
@@ -111,6 +111,7 @@ yarn start
 
 - **Q: 接続先のコンテナの初期のファイル構成とは？**
   - A: 下記の通りです。
+
   ```bash
   /bin: 基本的なユーティリティやコマンドを含むバイナリファイルが格納されます。
   /boot: Linuxカーネルとブートローダーのファイルが格納されます。

@@ -59,7 +59,7 @@ plt.show()
 2. 下記画像のように候補の中に**ターミナルで Python ファイルを実行する**をクリックする。
    ![ターミナルでPythonファイルを実行する](/images/articles/python-matplotlib-vscode/run-matplotlib-vscode.png)
 
-### 3. 表示されたグラフを確認する。
+### 3. 表示されたグラフを確認する
 
 期待通りのグラフが画像として表示されました。
 ![右斜め45度に伸びる直線のグラフ](/images/articles/python-matplotlib-vscode/45graph.png)
