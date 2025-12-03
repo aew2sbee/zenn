@@ -6,7 +6,7 @@
     "format:check": "prettier --check \"articles/**/*.md\" \"books/**/*.md\""
   },
   "dependencies": {
-    "zenn-cli": "^0.1.156"
+    "zenn-cli": "^0.2.10"
   },
   "devDependencies": {
     "markdownlint-cli": "^0.46.0",
