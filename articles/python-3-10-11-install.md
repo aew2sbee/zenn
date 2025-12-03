@@ -14,7 +14,7 @@ Python3.10.11 をインストールする方法を解説します。
 :::message
 ※Python3.10.11 を選んだ理由は、
 2023/08 月時点で`security`かつ`End of support`が長いものを選択しました。
-![python-install-step01](/images/python-install-step01.png)
+![python-install-step01](/images/articles/python-3-10-11-install/python-install-step01.png)
 :::
 
 ## 1. インストーラーをダウンロードする
@@ -26,20 +26,20 @@ Python3.10.11 をインストールする方法を解説します。
 ## 2. ダウンロードされたインストーラーを実行する
 
 `python-3.10.11-amd64.exe`をダブルクリックする
-![python-install-step02](/images/python-install-step02.png)
+![python-install-step02](/images/articles/python-3-10-11-install/python-install-step02.png)
 
 ## 3. インストールを開始する
 
 1. `Add python.exe to PATH`に ✅ を付ける
 2. `Install Now`をクリックし、インストールを開始します
-   ![python-install-step03](/images/python-install-step03.png)
+   ![python-install-step03](/images/articles/python-3-10-11-install/python-install-step03.png)
 3. インストールが完了するまでしばらく待ちます。
-   ![python-install-step04](/images/python-install-step04.png)
+   ![python-install-step04](/images/articles/python-3-10-11-install/python-install-step04.png)
 
 ## 4. インストールが完了する
 
 `Close`をクリックし閉じます。
-![python-install-step05](/images/python-install-step05.png)
+![python-install-step05](/images/articles/python-3-10-11-install/python-install-step05.png)
 
 ## 5. Python の version を確認する
 
@@ -53,4 +53,4 @@ python -V
 ```
 
 3. 下記の画像の通り、`Python 3.10.11`である事を確認する
-   ![python-install-step06](/images/python-install-step06.png)
+   ![python-install-step06](/images/articles/python-3-10-11-install/python-install-step06.png)

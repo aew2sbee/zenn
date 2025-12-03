@@ -12,11 +12,11 @@ published: true # 公開設定（falseにすると下書き）
 開発メンバーにも共有するために本記事を執筆します。
 
 本記事では、`useState`を使って 3 つの下記の画像のような機能ページを作成します。
-![react-usestate-step01](/images/react-usestate-step01.png)
+![react-usestate-step01](/images/articles/react-usestate/react-usestate-step01.png)
 _`+1`ボタンをクリックすると、即座に`Count`が増えるページ_
-![react-usestate-step03](/images/react-usestate-step03.png)
+![react-usestate-step03](/images/articles/react-usestate/react-usestate-step03.png)
 _入力欄に文字を入力すると、即座に`Name`と`Age`に反映するページ_
-![react-usestate-step05](/images/react-usestate-step05.png)
+![react-usestate-step05](/images/articles/react-usestate/react-usestate-step05.png)
 _`Add Task`をクリックすると、即座にタスクが増えるページ_
 
 ### 前提条件
@@ -117,7 +117,7 @@ npm start
 4. 起動が完了したら`http://localhost:3000/`にアクセスする
 
 5. `+1`ボタンでカウントが増えるか確認する
-   ![react-usestate-step02](/images/react-usestate-step02.png)
+   ![react-usestate-step02](/images/articles/react-usestate/react-usestate-step02.png)
    _`+1`ボタンを 3 回クリックすると、`Count`の数が 3 になります_
 
 以上で`useState`のキホンとなります
@@ -189,7 +189,7 @@ npm start
 
 5. 左の入力欄(Name)に適当な文字を入力し、`Name:`の右隣に即座に文字が表示される事を確認する
 6. 右の入力欄(Age)に適当な文字を入力し、`Age:`の右隣に即座に文字が表示され、`Name:`の右隣にされている文字はそのままであること
-   ![react-usestate-step03](/images/react-usestate-step03.png)
+   ![react-usestate-step03](/images/articles/react-usestate/react-usestate-step03.png)
    _左の入力欄(Name)に`ふるた`を入力し、右の入力欄(Age)に`18`と入力したページ_
 
 以上で`useState`で Object を使う解説になります。
@@ -261,9 +261,9 @@ npm start
 4. 起動が完了したら`http://localhost:3000/`にアクセスする
 
 5. 下記の画像のように表示される事を確認する
-   ![react-usestate-step04](/images/react-usestate-step04.png)
+   ![react-usestate-step04](/images/articles/react-usestate/react-usestate-step04.png)
 6. `Add Task`を 3 回クリックして 下記の画像のように表示される事を確認する
-   ![react-usestate-step05](/images/react-usestate-step05.png)
+   ![react-usestate-step05](/images/articles/react-usestate/react-usestate-step05.png)
 
 以上で`useState`で List を使う解説になります。
 
