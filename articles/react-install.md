@@ -60,7 +60,6 @@ published: true # 公開設定（falseにすると下書き）
 
 1. Git Bash を起動する
    検索欄に`git bash`と検索し、**Git Bash**アプリを起動する
-   ![sandbooks-git-step01](/images/sandbooks-git-step01.png)
 
 2. 作業する場所に移動する
    下記コマンドは、ホームディレクトリに一旦移動し、`Work`配下にあるクローンした`sandbooks`に移動します。

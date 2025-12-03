@@ -45,7 +45,6 @@ Python3.10.11 をインストールする方法を解説します。
 
 1. Git Bash を起動する
    検索欄に`git bash`と検索し、**Git Bash**アプリを起動する
-   ![sandbooks-git-step01](/images/sandbooks-git-step01.png)
 2. 下記コマンドを実行する
 
 ```git bash
