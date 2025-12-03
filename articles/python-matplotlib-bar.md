@@ -99,6 +99,6 @@ plt.show()
 
 1. VScode で作業中のファイルを開き、そのファイル上で**右クリック**を押してください。
 2. 下記画像のように候補の中に**ターミナルで Python ファイルを実行する**をクリックする
-   ![ターミナルでPythonファイルを実行する](/images/run-matplotlib-vscode.png)
+   ![ターミナルでPythonファイルを実行する](/images/articles/python-matplotlib-bar/run-matplotlib-vscode.png)
    期待通りのグラフが画像として表示されました！
    ![bar](/images/articles/python-matplotlib-bar/bar.png)

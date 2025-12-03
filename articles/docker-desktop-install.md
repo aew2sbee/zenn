@@ -59,15 +59,15 @@ published: true # 公開設定（falseにすると下書き）
 
 ### 1. Docker
 
-![extension_docker](/images/extension_docker.png)
+![extension_docker](/images/articles/docker-desktop-install/extension_docker.png)
 
 ### 2. Dev Containers
 
-![extension_dev_containers](/images/extension_dev_containers.png)
+![extension_dev_containers](/images/articles/docker-desktop-install/extension_dev_containers.png)
 
 ### 3. WSL
 
-![extension_wsl](/images/extension_wsl.png)
+![extension_wsl](/images/articles/docker-desktop-install/extension_wsl.png)
 
 ## 補足情報
 
@@ -76,5 +76,5 @@ published: true # 公開設定（falseにすると下書き）
   @[card](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
   ![docker_desktop_web](/images/articles/docker-desktop-install/docker_desktop_web.png) 2. インストーラーを実行する
   下記の画像のように手順を進め、WSL の更新を完了させてください。
-  ![Linux_step0](/images/Linux_step0.png)
-  ![Linux_step1](/images/Linux_step1.png)
+  ![Linux_step0](/images/articles/docker-desktop-install/Linux_step0.png)
+  ![Linux_step1](/images/articles/docker-desktop-install/Linux_step1.png)

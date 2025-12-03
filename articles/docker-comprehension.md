@@ -26,7 +26,7 @@ Docker に関する説明等は行いません。
 
 ## Docker イメージとは？
 
-![sweets_anko_pack](/images/sweets_anko_pack.png =250x)
+![sweets_anko_pack](/images/articles/docker-comprehension/sweets_anko_pack.png =250x)
 
 **解答：Docker コンテナを作成するためのスタンドアロンのパッケージです。**
 
@@ -38,7 +38,7 @@ Docker に関する説明等は行いません。
 
 ## Docker コンテナとは？
 
-![sweets_taiyaki1_tsubuan](/images/sweets_taiyaki1_tsubuan.png =250x)
+![sweets_taiyaki1_tsubuan](/images/articles/docker-comprehension/sweets_taiyaki1_tsubuan.png =250x)
 
 **解答：Docker イメージを実行するためのランタイム環境のこと**
 

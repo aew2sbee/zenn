@@ -152,7 +152,7 @@ yarn dev
 ```
 
 ローカル環境にサーバーが起動しました。
-![vite+Reactの画面](/images/vitereact.png)
+![vite+Reactの画面](/images/articles/yarn-error-no-such-option/vitereact.png)
 
 ## おわりに
 

@@ -18,7 +18,7 @@ published: true # 公開設定（falseにすると下書き）
 
 `年齢`と`性別`を入力欄に値を入力すると
 DB から`料金`の値を返してくれる機能があるとします。
-![test-image](/images/test-image.png)
+![test-image](/images/articles/thinking-test-pattern/test-image.png)
 
 詳細の仕様は下記の通りです
 
