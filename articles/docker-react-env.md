@@ -10,7 +10,7 @@ published: true # 公開設定（falseにすると下書き）
 
 以前、Docker コマンドで React を立ち上げる方法の勉強をしたので、執筆します。
 下記の画面が表示されるまでを解説したいと思います。
-![React_step6](/images/React_step6.png)
+![React_step6](/images/articles/docker-react-env/React_step6.png)
 
 | 項目             | 内容                                       |
 | ---------------- | ------------------------------------------ |
@@ -50,7 +50,7 @@ Web アプリを作成する準備が整ったので作成していきます。
 1. Visual Studio Code の左側の`Dcoker`のアイコンをクリックします。
 2. さきほど作成したコンテナを右クリックで`Start`を押し、コンテナを起動します。
 
-![React_step1](/images/React_step1.png)
+![React_step1](/images/articles/docker-react-env/React_step1.png)
 
 :::message
 Dcoker のアイコンをクリックしてもコンテナを確認出来ない場合は、Dcoker Desktop を起動してリロードしてみて下さい
@@ -62,21 +62,21 @@ Visual Studio Code から Running 状態のコンテナに接続します。
 
 1.先ほどのコンテナを右クリックから`Attach Visual Studio Code`をクリックします。 2.新しく Visual Studio Code が起動します。
 
-![React_step2](/images/React_step2.png)
+![React_step2](/images/articles/docker-react-env/React_step2.png)
 
 ### 3. 作成したコンテナと接続できている事を確認する
 
 下記の画像が新しく起動した Visual Studio Code になります。
 パソコンの右下に`チェックマーク`が付いています。
 
-![React_step3](/images/React_step3.png)
+![React_step3](/images/articles/docker-react-env/React_step3.png)
 
 ### 4. React アプリを作成する
 
 画面左側の`フォルダーを開く`をクリックし
 `/home `ディレクトリを開きます
 
-![React_step4](/images/React_step4.png)
+![React_step4](/images/articles/docker-react-env/React_step4.png)
 
 ターミナルを起動し、`/home`ディレクトリで
 下記コマンドを実行し、Web アプリに必要なコードをインストールします。
@@ -105,7 +105,7 @@ yarn start
 問題なく起動したら、上記のようなに
 勝手にブラウザーが起動し、表示されます。
 
-![React_step6](/images/React_step6.png)
+![React_step6](/images/articles/docker-react-env/React_step6.png)
 
 ## 補足情報
 

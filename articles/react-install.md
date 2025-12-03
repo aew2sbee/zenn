@@ -10,7 +10,7 @@ published: true # 公開設定（falseにすると下書き）
 
 社内の有志メンバー向けにローカル環境で React を動かす資料が必要だったので執筆します。
 今回は、下記画像のようにローカル環境で React が実行できるように作業を行います。
-![React_step6](/images/React_step6.png)
+![React_step6](/images/articles/react-install/React_step6.png)
 
 ## 1. Node.js をローカル環境にインストールする
 
@@ -130,5 +130,5 @@ cd Work/sandbooks
    ```
 6. ローカルホストにアクセスする
    `http://localhost:3000/`をブラウザーの URL に入力して Enter キーを押します。
-   ![React_step6](/images/React_step6.png)
+   ![React_step6](/images/articles/react-install/React_step6.png)
    > 【ローカルホスト（Localhost）とは】<br>自分自身のコンピュータ上で実行されているネットワークサーバーを指す言葉です。<br><br>例えば、ウェブ開発の場合、ローカルホストは自分のコンピュータ上で実行されるウェブサーバーを指します。ローカルホストを利用することで、ウェブサイトの動作をブラウザで確認したり、データベースとの連携をテストしたりすることができます。
