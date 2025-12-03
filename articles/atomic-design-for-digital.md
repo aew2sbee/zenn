@@ -29,6 +29,7 @@ Atomic Design について下記の書籍から学びました。
 :::
 
 5 つの階層で構成される(最小順)
+
 | 階層名 | 説明 | 例 |
 | ---- | ---- | ---- |
 | Atoms | **最小の要素** これ以上分割できない | ボタン、アイコン、テキスト |
@@ -84,11 +85,11 @@ _デジタル庁サイトのフッターの Molecules_
 
 ## 🌱 デジタル庁のサイトの Atomic Design はどうなっているか
 
-#### 加工前：デジタル庁のフッター
+### 加工前：デジタル庁のフッター
 
 ![Atomic-Design-step00](/images/articles/atomic-design-for-digital/Atomic-Design-step00.png)
 
-#### 加工後：デジタル庁のフッター
+### 加工後：デジタル庁のフッター
 
 ![Atomic-Design-step01](/images/articles/atomic-design-for-digital/Atomic-Design-step01.png)
 
