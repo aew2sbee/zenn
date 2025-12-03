@@ -1,8 +1,8 @@
 ---
-title: '[Next.js] プロジェクトの始め方-開発モード起動' # 記事のタイトル
-emoji: '⚡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['nextjs', 'フロントエンド', 'typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Next.js] プロジェクトの始め方-開発モード起動" # 記事のタイトル
+emoji: "⚡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["nextjs", "フロントエンド", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -109,10 +109,10 @@ next-js
 
 ```ts
 // before
-import { Button } from '../../../components/button';
+import { Button } from "../../../components/button";
 
 // after
-import { Button } from '@/components/button';
+import { Button } from "@/components/button";
 ```
 
 ### 2. プロジェクト起動(開発モード)
@@ -141,13 +141,3 @@ $ npm run dev
 
 `http://localhost:3000` にアクセスして確認する
 ![next-js-page](/images/articles/nextjs-project-dev/next-js-local.png)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

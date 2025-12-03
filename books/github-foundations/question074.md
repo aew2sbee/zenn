@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Pro'
+title: "GitHub Pro"
 ---
 
 ## Q74: GitHub Pro プランとは何ですか？

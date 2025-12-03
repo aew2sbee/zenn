@@ -1,8 +1,8 @@
 ---
-title: '[GitHub Actions] Pull Request時に自動テスト/prettier/ESLintを実行する' # 記事のタイトル
-emoji: '🐙‍' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['githubactions', 'github', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[GitHub Actions] Pull Request時に自動テスト/prettier/ESLintを実行する" # 記事のタイトル
+emoji: "🐙‍" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["githubactions", "github", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -30,7 +30,7 @@ on:
   # Pull Request時
   pull_request:
     # 対象のブランチを指定
-    branches: ['test_CI/CD']
+    branches: ["test_CI/CD"]
 
 jobs:
   Code-Check:
@@ -45,7 +45,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
       # プロジェクトの依存関係をインストール
       - run: npm ci
       # prettierでコードのフォーマットをチェック
@@ -63,13 +63,3 @@ jobs:
 ## 3. 開発ブランチに取り込み
 
 今後の PR(Pull Request)を出されたときに GitHub Actions が実行する
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

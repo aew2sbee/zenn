@@ -1,5 +1,5 @@
 ---
-title: '拡張情報を使用して外部ツールを Copilot Chat と統合する'
+title: "拡張情報を使用して外部ツールを Copilot Chat と統合する"
 ---
 
 ## Q10: GitHub Copilot Chat を外部ツールと統合するものはどれですか？

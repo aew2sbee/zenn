@@ -1,8 +1,8 @@
 ---
-title: '[個人開発] YouTubeでいつもの勉強が「楽しみ!!」に変える配信にする Web アプリ' # 記事のタイトル
-emoji: '🏅' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['個人開発', 'youtube', 'nextjs', 'typescript', 'claudecode'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[個人開発] YouTubeでいつもの勉強が「楽しみ!!」に変える配信にする Web アプリ" # 記事のタイトル
+emoji: "🏅" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["個人開発", "youtube", "nextjs", "typescript", "claudecode"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -17,7 +17,7 @@ published: true # 公開設定（falseにすると下書き）
 _画面左下に表示されている"Focus tracker"が今回作成したアプリです_
 
 下記リンクから YouTube ライブ配信の様子を確認できます。
-@[card](https://www.youtube.com/@aew2sbee)
+@[card](https://www.youtube.com/channel/UCDV95uUZlqOmxJ0hONnoALw)
 
 ## 🌱 サービスコンセプト
 
@@ -294,7 +294,7 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 
 2025 年の年内で**登録者 1000 人**を目指しております!!
 
-@[card](https://www.youtube.com/@aew2sbee)
+@[card](https://www.youtube.com/channel/UCDV95uUZlqOmxJ0hONnoALw)
 
 本チャンネルに「ご興味がある方」や「一緒に勉強をしてくれる方」はチャンネル登録をよろしくお願いいたします!!
 

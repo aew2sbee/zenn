@@ -1,5 +1,5 @@
 ---
-title: 'Issueについて'
+title: "Issueについて"
 ---
 
 ## Q142: バグ報告の管理にディスカッションではなく GitHub Issues を選ぶ理由とは？

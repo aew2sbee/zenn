@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Discussions'
+title: "GitHub Discussions"
 ---
 
 ## Q96: Issue と Discussion の違いについて、次のうち正しい記述はどれですか？

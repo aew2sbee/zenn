@@ -1,8 +1,8 @@
 ---
-title: '[YouTube API] ライブ/配信中のチャットを取得する' # 記事のタイトル
-emoji: '🎥' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア
-topics: ['python', 'youtubeapi', 'youtubelive', 'youtubedataapi', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[YouTube API] ライブ/配信中のチャットを取得する" # 記事のタイトル
+emoji: "🎥" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["python", "youtubeapi", "youtubelive", "youtubedataapi", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -187,15 +187,3 @@ $ python src/main.py
 [2025-01-31 10:14:46] 小倉あん: テスト
 [2025-01-31 10:14:48] 小倉あん: テスト
 ```
-
-連続で[小倉あん](https://www.youtube.com/@aew2sbee)というアカウントから「テスト」のコメントをタイムスタンプと一緒に取得する事が出来ました！
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

@@ -1,5 +1,5 @@
 ---
-title: 'GitHub のプラン'
+title: "GitHub のプラン"
 ---
 
 ## Q75: GitHub には組織向けの無料版はありますか？

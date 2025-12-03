@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Actions を理解する'
+title: "GitHub Actions を理解する"
 ---
 
 ## Q18: GitHub の継続的インテグレーションと継続的デリバリー（CI/CD）プラットフォームの名前は何ですか？

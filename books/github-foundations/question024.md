@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot のプラン'
+title: "GitHub Copilot のプラン"
 ---
 
 ## Q24: GitHub Copilot Individual と GitHub Copilot Business の違いは何ですか？

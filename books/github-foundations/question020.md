@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Actions による継続的インテグレーションについて'
+title: "GitHub Actions による継続的インテグレーションについて"
 ---
 
 ## Q20: GitHub Action のワークフローはイベントによってトリガーされます。GitHub Action がサポートする有効なイベントはどれですか？(二つ選んでください)

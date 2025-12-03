@@ -1,8 +1,8 @@
 ---
-title: '[TypeScript] enum（列挙型）' # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[TypeScript] enum（列挙型）" # 記事のタイトル
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -42,9 +42,9 @@ enum Test1 {
   THREE,
 }
 
-console.log('Test1.ONE', Test1.ONE);
-console.log('Test1.TWO', Test1.TWO);
-console.log('Test1.THREE', Test1.THREE);
+console.log("Test1.ONE", Test1.ONE);
+console.log("Test1.TWO", Test1.TWO);
+console.log("Test1.THREE", Test1.THREE);
 ```
 
 :::details 実行結果を確認する
@@ -65,14 +65,14 @@ console.log('Test1.THREE', Test1.THREE);
 
 ```typescript
 enum Test2 {
-  ONE = '1',
-  TWO = '2',
-  THREE = '3',
+  ONE = "1",
+  TWO = "2",
+  THREE = "3",
 }
 
-console.log('Test2.ONE', Test2.ONE);
-console.log('Test2.TWO', Test2.TWO);
-console.log('Test2.THREE', Test2.THREE);
+console.log("Test2.ONE", Test2.ONE);
+console.log("Test2.TWO", Test2.TWO);
+console.log("Test2.THREE", Test2.THREE);
 ```
 
 :::details 実行結果を確認する
@@ -98,8 +98,8 @@ enum Test3 {
   Failure = false,
 }
 
-console.log('Test3.ONE', Test3.Success);
-console.log('Test3.TWO', Test3.Failure);
+console.log("Test3.ONE", Test3.Success);
+console.log("Test3.TWO", Test3.Failure);
 ```
 
 :::details 実行結果を確認する
@@ -121,7 +121,7 @@ enum Test4 {
   Float = 1.1,
 }
 
-console.log('Test4.Float', Test4.Float);
+console.log("Test4.Float", Test4.Float);
 ```
 
 :::details 実行結果を確認する
@@ -131,13 +131,3 @@ console.log('Test4.Float', Test4.Float);
 ```
 
 :::
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

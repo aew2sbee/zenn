@@ -1,5 +1,5 @@
 ---
-title: 'Enterprise Managed Users について'
+title: "Enterprise Managed Users について"
 ---
 
 ## Q36: Enterprise Managed Users とは何ですか？

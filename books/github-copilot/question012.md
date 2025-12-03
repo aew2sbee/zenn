@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot からのコンテンツの除外'
+title: "GitHub Copilot からのコンテンツの除外"
 ---
 
 ## Q12: GitHub Copilot は、GitHub Copilot のコンテンツ除外によって無視されるファイルのセマンティック情報を使用できますか？

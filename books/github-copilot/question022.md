@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilotでテストを書く'
+title: "GitHub Copilotでテストを書く"
 ---
 
 ## Q22: GitHub Copilot のスラッシュコマンド「/tests」の主な目的は何ですか？

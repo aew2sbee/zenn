@@ -1,8 +1,8 @@
 ---
-title: '[TypeScript] エラー処理/例外処理の3つの方法' # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[TypeScript] エラー処理/例外処理の3つの方法" # 記事のタイトル
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -58,7 +58,7 @@ null を返すより、**より簡単にデバック**が可能
 const parse = (birthday: string): Date => {
   let data = new Date(birthday);
   if (isVaild(birthday)) {
-    throw new RangeError('Enter a data in the form YYYY/MM/DD');
+    throw new RangeError("Enter a data in the form YYYY/MM/DD");
   }
   return data;
 };
@@ -81,18 +81,8 @@ const parse = (birthday: string): Date => {
 const parse = (birthday: string): Date | InvaildDateFormatError => {
   let data = new Date(birthday);
   if (isVaild(birthday)) {
-    return new InvaildDateFormatError('Enter a data in the form YYYY/MM/DD');
+    return new InvaildDateFormatError("Enter a data in the form YYYY/MM/DD");
   }
   return data;
 };
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

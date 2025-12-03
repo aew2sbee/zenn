@@ -1,5 +1,5 @@
 ---
-title: 'CodeQL'
+title: "CodeQL"
 ---
 
 ## Q46: CodeQL とは何ですか？

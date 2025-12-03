@@ -1,8 +1,8 @@
 ---
-title: '「なんでこんな実装したの？」にならないためのADR' # 記事のタイトル
-emoji: '🤷‍♂️' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['初心者向け', 'ADR'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "「なんでこんな実装したの？」にならないためのADR" # 記事のタイトル
+emoji: "🤷‍♂️" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["初心者向け", "ADR"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: false # 公開設定（falseにすると下書き）
 ---
 
@@ -67,13 +67,3 @@ published: false # 公開設定（falseにすると下書き）
 ```bash
 git clone https://github.com/npryce/adr-tools.git C:\Program Files\Git\usr\bin
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

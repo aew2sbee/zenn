@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot のプラン'
+title: "GitHub Copilot のプラン"
 ---
 
 ## Q122: GitHub Copilot for Business が提供し、GitHub Copilot for Individual が提供しない機能はどれですか？

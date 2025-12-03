@@ -1,8 +1,8 @@
 ---
-title: '[体験談] 未完成な社内図書館アプリ' # 記事のタイトル
-emoji: '🥝' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['初心者向け', '個人開発', 'nextjs', 'react', 'django'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[体験談] 未完成な社内図書館アプリ" # 記事のタイトル
+emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["初心者向け", "個人開発", "nextjs", "react", "django"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -232,13 +232,3 @@ Microsoft Teams の通知で必要な時に確認する楽な運用を可能に�
 @[card](https://www.udemy.com/share/1037Fy3@j8o-426vfY4p_qwjiikuJEKRFiMDdenUIb4u72A3xsU_Lh5IPqtDefGVFAuyBAKANQ==/)
 @[card](https://www.udemy.com/share/103uBq3@FAD6xQiCfghCH0yx7b8KMAwN4r0VdozCC0sN8lPUmY1MyCEcCNE2iurvXNPlgo8G-w==/)
 @[card](https://www.udemy.com/share/103VXW3@0RHYvP5N5d2FJiCSNevN-Do6zccYF5p7tZaHNMBFxcWV5GVDCgGemq72NMJuK0I50g==/)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

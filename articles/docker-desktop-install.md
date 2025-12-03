@@ -1,8 +1,8 @@
 ---
-title: '[Docker] Docker DeskTopのインストール' # 記事のタイトル
-emoji: '🐳' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['python', 'django', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Docker] Docker DeskTopのインストール" # 記事のタイトル
+emoji: "🐳" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["python", "django", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -78,13 +78,3 @@ published: true # 公開設定（falseにすると下書き）
   下記の画像のように手順を進め、WSL の更新を完了させてください。
   ![Linux_step0](/images/Linux_step0.png)
   ![Linux_step1](/images/Linux_step1.png)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

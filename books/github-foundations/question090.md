@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Discussions '
+title: "GitHub Discussions "
 ---
 
 ## Q90: 会話したり、質問したり、お知らせを投稿したり、アイデアを共有したりするためのコミュニティ・フォーラムとして使用されるリポジトリ機能はどれですか？

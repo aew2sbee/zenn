@@ -1,5 +1,5 @@
 ---
-title: 'Issues を無効化する'
+title: "Issues を無効化する"
 ---
 
 ## Q39: リポジトリで issue タブを無効にできますか？

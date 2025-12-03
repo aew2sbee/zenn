@@ -1,8 +1,8 @@
 ---
-title: '[TypeScript] オブジェクト指向らしい設計にする方法' # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[TypeScript] オブジェクト指向らしい設計にする方法" # 記事のタイトル
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -28,7 +28,7 @@ else 句は if 文を複雑にして読みにくく、変更に対応しにく�
 function calculateDiscount(price: number): number | string {
   // ガード節による入力値のチェックし、早期リターンを行う
   if (price <= 0) {
-    return '価格は正の値でなければなりません';
+    return "価格は正の値でなければなりません";
   }
 
   // ガード節を通過した場合の処理
@@ -118,13 +118,3 @@ const result = object.method1().method2().method3();
 メソッドは、何らかの「判断」「加工」「計算」をしなければならない
 インスタンス変数をそのまま返すだけの「getter 」を使わない
 「setter」は、プログラムの挙動を不安定にしバグの原因になる
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

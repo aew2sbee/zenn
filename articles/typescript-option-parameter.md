@@ -1,8 +1,8 @@
 ---
-title: '[TypeScript] 関数の引数を必須ではなくオプションにする' # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[TypeScript] 関数の引数を必須ではなくオプションにする" # 記事のタイトル
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -48,7 +48,7 @@ const announceSong = (song: string, singer?: string) => {
 指定した文字列に文字列を引数として渡したので、問題がない
 
 ```ts
-announceSong('Have fun !', 'ayaka');
+announceSong("Have fun !", "ayaka");
 ```
 
 ```bash
@@ -61,7 +61,7 @@ announceSong('Have fun !', 'ayaka');
 singer は「undefined」が追加された合併型になるので、Error にならない
 
 ```ts
-announceSong('Have fun !', undefined);
+announceSong("Have fun !", undefined);
 ```
 
 ```bash
@@ -85,13 +85,3 @@ const announceSong = (song?: string, singer: string) => {
 ```bash
 A required parameter cannot follow an optional parameter.
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

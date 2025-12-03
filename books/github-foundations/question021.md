@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Marketplaceでのアクションの公開'
+title: "GitHub Marketplaceでのアクションの公開"
 ---
 
 ## Q21: 公開されているGitHub Actionsはどこにありますか？

@@ -1,8 +1,8 @@
 ---
-title: '[Tailwind CSS] 私なりのチートシート' # 記事のタイトル
-emoji: '🍃' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア
-topics: ['css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Tailwind CSS] 私なりのチートシート" # 記事のタイトル
+emoji: "🍃" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["css", "tailwindcss", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -156,9 +156,7 @@ html {
 ```html
 <div class="mb-3">
   <p class="font-black">1行目まで表示</p>
-  <p class="line-clamp-1 pl-3">
-    ああああああああああああああああああああああああああああああああああああああああ
-  </p>
+  <p class="line-clamp-1 pl-3">ああああああああああああああああああああああああああああああああああああああああ</p>
 </div>
 <div class="mb-3">
   <p class="font-black">2行目まで表示</p>
@@ -292,9 +290,7 @@ html {
 ### 10. 上下側にスペーシングを間隔で設定する
 
 ```html
-<div
-  class="flex flex-col justify-center items-start min-h-screen mx-10 bg-gray-50 space-y-4"
->
+<div class="flex flex-col justify-center items-start min-h-screen mx-10 bg-gray-50 space-y-4">
   <div class="h-20 w-20 bg-cyan-200">1</div>
   <div class="h-20 w-20 bg-cyan-200">2</div>
   <div class="h-20 w-20 bg-cyan-200">3</div>
@@ -322,9 +318,7 @@ html {
 
 ```html
 <div class="h-20 w-20 bg-cyan-200">境界線なし</div>
-<div class="h-20 w-20 bg-rose-200 border border-indigo-500">
-  境界線あり<br />1px solid
-</div>
+<div class="h-20 w-20 bg-rose-200 border border-indigo-500">境界線あり<br />1px solid</div>
 ```
 
 ![border](/images/articles/tailwind-css-cheat-sheet/border.png)
@@ -354,18 +348,10 @@ html {
 ### 4. 境界線のスタイルを設定する
 
 ```html
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dashed">
-  点線
-</div>
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dotted">
-  ドット
-</div>
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-double">
-  二重線
-</div>
-<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-hidden">
-  非表示
-</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dashed">点線</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-dotted">ドット</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-double">二重線</div>
+<div class="h-10 w-20 bg-cyan-200 border-indigo-500 border-4 border-hidden">非表示</div>
 ```
 
 ![border-style](/images/articles/tailwind-css-cheat-sheet/border-style.png)
@@ -388,9 +374,7 @@ html {
 ```html
 <div class="flex mt-2 mx-10 bg-gray-50">
   <div class="h-20 bg-cyan-200 w-full">w-full: 親要素いっぱいに広がる</div>
-  <div class="h-20 bg-rose-200 w-auto">
-    w-auto: 内容やコンテンツのサイズに応じて広がる
-  </div>
+  <div class="h-20 bg-rose-200 w-auto">w-auto: 内容やコンテンツのサイズに応じて広がる</div>
 </div>
 ```
 
@@ -414,9 +398,7 @@ html {
 ```html
 <div class="flex mt-2 mx-10 bg-gray-50">
   <div class="h-20 bg-cyan-200 w-full">w-full: 親要素いっぱいに広がる</div>
-  <div class="h-20 bg-rose-200 w-auto">
-    w-auto: 内容やコンテンツのサイズに応じて広がる
-  </div>
+  <div class="h-20 bg-rose-200 w-auto">w-auto: 内容やコンテンツのサイズに応じて広がる</div>
 </div>
 ```
 

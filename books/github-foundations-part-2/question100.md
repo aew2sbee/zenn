@@ -1,5 +1,5 @@
 ---
-title: 'Gist の作成'
+title: "Gist の作成"
 ---
 
 ## Q100:作成した後に、gist を public から secret に変更することはできますか？

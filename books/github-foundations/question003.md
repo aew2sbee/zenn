@@ -1,5 +1,5 @@
 ---
-title: 'Projects について'
+title: "Projects について"
 ---
 
 ## Q3: GitHub のプロジェクト、issues、プルリクエスト間の同期はどのように行われるのですか？

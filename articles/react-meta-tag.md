@@ -1,8 +1,8 @@
 ---
-title: '[React] metaタグを理解する' # 記事のタイトル
-emoji: '🧜‍♀️' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['react', 'typescript', 'nodejs', 'html', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[React] metaタグを理解する" # 記事のタイトル
+emoji: "🧜‍♀️" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["react", "typescript", "nodejs", "html", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -60,10 +60,7 @@ HTML 文書の文字エンコーディングを指定するための記述です
 ### 4. viewport タグ
 
 ```html
-<meta
-  name="viewport"
-  content="width=device-width,initial-scale=1,minimum-scale=1.0"
-/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0" />
 ```
 
 ページの表示領域を指定するための記述です。
@@ -102,11 +99,7 @@ HTML 文書の文字エンコーディングを指定するための記述です
 ### 7. apple-touch-icon
 
 ```html
-<link
-  rel="apple-touch-icon"
-  href="./assets/apple-touch-icon.png"
-  sizes="180x180"
-/>
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" sizes="180x180" />
 ```
 
 スマートフォンでホーム画面に追加したときや、ショートカットを作成した場合に表示されるアイコンを設定するための記述です。
@@ -158,13 +151,3 @@ HTML 文書の文字エンコーディングを指定するための記述です
   </body>
 </html>
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

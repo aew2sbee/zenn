@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot handles data'
+title: "GitHub Copilot handles data"
 ---
 
 ## Q25: GitHub Copilot の回答に対して実行される後処理チェックとは何ですか？

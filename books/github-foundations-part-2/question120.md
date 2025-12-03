@@ -1,5 +1,5 @@
 ---
-title: 'Organizationのロール'
+title: "Organizationのロール"
 ---
 
 ## Q120: 組織内の GitHub Actions に関するセキュリティマネージャーの能力はどれですか？

@@ -1,8 +1,8 @@
 ---
-title: '[Playwright] アクセシビリティツリー(accessibility)を触ってみた' # 記事のタイトル
-emoji: '🎭' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['playwright', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Playwright] アクセシビリティツリー(accessibility)を触ってみた" # 記事のタイトル
+emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -65,12 +65,12 @@ Zenn のトップページでアクセシビリティツリーを可視化した
 ### 1. accessibilityTree を取得
 
 ```ts
-import { chromium } from 'playwright';
+import { chromium } from "playwright";
 
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto('https://zenn.dev/');
+  await page.goto("https://zenn.dev/");
   await page.waitForTimeout(1 * 1000);
 
   const accessibilityTree = await page.accessibility.snapshot();
@@ -905,7 +905,7 @@ $ node playwright-mcp.js
 
 ```ts
 // roleがlinkでフィルターをかける
-console.log(accessibilityTree.children.filter((i) => i.role === 'link'));
+console.log(accessibilityTree.children.filter((i) => i.role === "link"));
 ```
 
 :::details 実行結果を確認する
@@ -1400,13 +1400,3 @@ console.log(accessibilityTree.children.filter((i) => i.role === 'link'));
 | Linux | AT-SPI |
 | Android | AccessibilityNodeInfo |
 | iOS | UIAccessibility |
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

@@ -1,5 +1,5 @@
 ---
-title: 'Organizationのリポジトリロール'
+title: "Organizationのリポジトリロール"
 ---
 
 ## Q145: GitHub リポジトリにファイルを追加するために必要な操作はどれですか？

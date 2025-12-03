@@ -1,8 +1,8 @@
 ---
-title: '[Next.js] Server Componet とClient Componentとは？' # 記事のタイトル
-emoji: '⚡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['nextjs', 'フロントエンド', 'typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Next.js] Server Componet とClient Componentとは？" # 記事のタイトル
+emoji: "⚡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["nextjs", "フロントエンド", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -49,7 +49,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ```tsx
 export default async function ServerComponent() {
-  const res = await fetch('http://localhost:4000/posts');
+  const res = await fetch("http://localhost:4000/posts");
   const posts = await res.json();
   return (
     <div>
@@ -78,9 +78,9 @@ export default async function ServerComponent() {
 :::
 
 ```tsx
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -92,13 +92,3 @@ export default function Counter() {
   );
 }
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

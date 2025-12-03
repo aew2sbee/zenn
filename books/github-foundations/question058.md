@@ -1,5 +1,5 @@
 ---
-title: 'アプリの GitHub Marketplace について'
+title: "アプリの GitHub Marketplace について"
 ---
 
 ## Q58: GitHub Marketplace とは何ですか？

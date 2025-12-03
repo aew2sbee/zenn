@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot のドキュメント'
+title: "GitHub Copilot のドキュメント"
 ---
 
 ## Q20: GitHub Copilot を使って開発者のワークフローを強化することの利点は、次のうちどれでしょう？

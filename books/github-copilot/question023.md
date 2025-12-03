@@ -1,5 +1,5 @@
 ---
-title: 'Enterprise での Copilot ライセンスの使用状況の表示'
+title: "Enterprise での Copilot ライセンスの使用状況の表示"
 ---
 
 ## Q23: GitHub Copilot の企業レベルでの課金サイクル中のシート使用量はどのように計算されますか？

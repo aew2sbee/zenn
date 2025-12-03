@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Pages'
+title: "GitHub Pages"
 ---
 
 ## Q135: GitHub Pages に関する次の記述のうち、正しいものはどれですか？

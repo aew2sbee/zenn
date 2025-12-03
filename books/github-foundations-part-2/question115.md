@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Desktop'
+title: "GitHub Desktop"
 ---
 
 ## Q115: 次のうち、GitHub Desktop から直接実行できないアクションはどれですか？

@@ -1,5 +1,5 @@
 ---
-title: 'GitHub フロー'
+title: "GitHub フロー"
 ---
 
 ## Q73: GitHub フローとは何ですか？

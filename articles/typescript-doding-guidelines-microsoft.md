@@ -1,8 +1,8 @@
 ---
-title: '[TypeScript] 私なりのMicrosoftのコーディングガイドの要約' # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け', 'コーディング規約'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[TypeScript] 私なりのMicrosoftのコーディングガイドの要約" # 記事のタイトル
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け", "コーディング規約"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -285,7 +285,7 @@ function tamperNode(node: ts.Node) {
 ❌ 悪い例：配列やオブジェクトを直接変更
 
 ```ts
-const user = { name: 'Alice', age: 30 };
+const user = { name: "Alice", age: 30 };
 user.age = 31; // ← 直接変更（副作用の原因）
 
 const list = [1, 2, 3];
@@ -295,7 +295,7 @@ list.push(4); // ← 元の配列を直接変更
 ✅ 良い例：コピーして変更（不変）
 
 ```ts
-const user = { name: 'Alice', age: 30 };
+const user = { name: "Alice", age: 30 };
 const updatedUser = { ...user, age: 31 }; // 新しいオブジェクトを作る
 
 const list = [1, 2, 3];
@@ -310,7 +310,7 @@ interface User {
   readonly name: string;
 }
 
-const user: User = { id: 1, name: 'Alice' };
+const user: User = { id: 1, name: "Alice" };
 // user.name = "Bob"; // ❌ エラー！readonlyなので変更不可
 const numbers: readonly number[] = [1, 2, 3];
 // numbers.push(4); // ❌ エラー

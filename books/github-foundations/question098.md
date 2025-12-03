@@ -1,5 +1,5 @@
 ---
-title: 'Wikiについて'
+title: "Wikiについて"
 ---
 
 ## Q98: GitHub Wiki とは何ですか？

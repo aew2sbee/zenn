@@ -1,8 +1,8 @@
 ---
-title: '[Python] seleniumの仕様が変わっていた!?(2023/06時点)' # 記事のタイトル
-emoji: '🐍' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['python', 'selenium'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Python] seleniumの仕様が変わっていた!?(2023/06時点)" # 記事のタイトル
+emoji: "🐍" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["python", "selenium"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -233,13 +233,3 @@ driver.implicitly_wait(10)
 | タグ名                     | `.find_element_by_tag_name("tag name")`                   | `.find_element(By.TAG_NAME, "tag name")`                    |
 | クラス名                   | `.find_element_by_class_name("class name")`               | `.find_element(By.CLASS_NAME, "class name")`                |
 | css セレクタ               | `.find_element_by_css_selector("css selector")`           | `.find_element(By.CSS_SELECTOR, "css selector")`            |
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

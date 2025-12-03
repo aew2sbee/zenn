@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot とは何ですか?'
+title: "GitHub Copilot とは何ですか?"
 ---
 
 ## Q16: GitHub Copilot を説明するのに最も適した選択肢はどれですか？

@@ -1,5 +1,5 @@
 ---
-title: 'GitHub スポンサーについて'
+title: "GitHub スポンサーについて"
 ---
 
 ## Q55: GitHub スポンサープログラムとは何ですか？

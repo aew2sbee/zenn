@@ -1,8 +1,8 @@
 ---
-title: '[AWS]AWS VaultとTerraformでEC2を作成する' # 記事のタイトル
-emoji: '💨' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['aws', 'awsvault', '初心者向け', 'powerShell', 'terraform'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[AWS]AWS VaultとTerraformでEC2を作成する" # 記事のタイトル
+emoji: "💨" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["aws", "awsvault", "初心者向け", "powerShell", "terraform"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -369,13 +369,3 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Windows と Terraform の相性が悪く、環境構築に時間がかかりました。
 MacOS ならもっと楽に出来そうです。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

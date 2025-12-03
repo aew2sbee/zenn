@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Mobile'
+title: "GitHub Mobile"
 ---
 
 ## Q87: GitHub Mobile とは？

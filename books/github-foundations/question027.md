@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Codespaces とは'
+title: "GitHub Codespaces とは"
 ---
 
 ## Q27: リポジトリに貢献するために必要なツールや依存関係がすべてインストールされた、設定済みの開発環境を作成できるGitHubの機能とは？

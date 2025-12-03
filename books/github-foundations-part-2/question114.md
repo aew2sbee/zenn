@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Desktop'
+title: "GitHub Desktop"
 ---
 
 ## Q114: github.com と比較して、GitHub Desktop にはどのような特徴がありますか？

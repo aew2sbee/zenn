@@ -1,5 +1,5 @@
 ---
-title: 'GitHub 認証のしくみ'
+title: "GitHub 認証のしくみ"
 ---
 
 ## Q108: GitHub の認証に、標準的なユーザー名とパスワードの代わりに Personal Access Token (PAT)を使う主なメリットは何ですか？

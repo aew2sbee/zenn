@@ -1,5 +1,5 @@
 ---
-title: 'リポジトリグラフについて'
+title: "リポジトリグラフについて"
 ---
 
 ## Q48: Repository Insights は？

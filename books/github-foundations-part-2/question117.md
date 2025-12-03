@@ -1,5 +1,5 @@
 ---
-title: 'Wiki'
+title: "Wiki"
 ---
 
 ## Q117: GitHub Wiki について正しいのはどれですか？

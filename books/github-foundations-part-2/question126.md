@@ -1,5 +1,5 @@
 ---
-title: 'pull requests について'
+title: "pull requests について"
 ---
 
 ## Q126: GitHub のプルリクエストで有効な状態はどれですか？(4 つ選んでください)

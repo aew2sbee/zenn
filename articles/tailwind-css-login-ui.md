@@ -1,8 +1,8 @@
 ---
-title: '[Tailwind CSS] ログイン画面UI' # 記事のタイトル
-emoji: '🍃' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア
-topics: ['ui', 'css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Tailwind CSS] ログイン画面UI" # 記事のタイトル
+emoji: "🍃" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["ui", "css", "tailwindcss", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -36,9 +36,7 @@ _ボタンに hover したとき_
     <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">ログイン</h2>
     <form action="#" method="POST">
       <div class="mb-4">
-        <label for="email" class="block text-sm font-medium text-gray-700"
-          >メールアドレス</label
-        >
+        <label for="email" class="block text-sm font-medium text-gray-700">メールアドレス</label>
         <input
           type="email"
           id="email"
@@ -49,9 +47,7 @@ _ボタンに hover したとき_
         />
       </div>
       <div class="mb-6 relative">
-        <label for="password" class="block text-sm font-medium text-gray-700"
-          >パスワード</label
-        >
+        <label for="password" class="block text-sm font-medium text-gray-700">パスワード</label>
         <div class="relative">
           <input
             type="password"
@@ -65,21 +61,11 @@ _ボタンに hover したとき_
       </div>
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center">
-          <input
-            type="checkbox"
-            id="remember"
-            name="remember"
-            class="h-4 w-4 text-blue-600 border-gray-300 rounded"
-          />
-          <label for="remember" class="ml-2 block text-sm text-gray-900"
-            >ログイン状態を保持</label
-          >
+          <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-blue-600 border-gray-300 rounded" />
+          <label for="remember" class="ml-2 block text-sm text-gray-900">ログイン状態を保持</label>
         </div>
       </div>
-      <button
-        type="submit"
-        class="w-full bg-sky-500 text-white py-2 px-4 rounded-md shadow hover:bg-sky-600"
-      >
+      <button type="submit" class="w-full bg-sky-500 text-white py-2 px-4 rounded-md shadow hover:bg-sky-600">
         ログイン
       </button>
     </form>
@@ -106,9 +92,7 @@ _ボタンに hover したとき_
     </div>
     <form action="#" method="POST">
       <div class="mb-4">
-        <label for="email" class="block text-sm font-medium text-gray-700"
-          >メールアドレス</label
-        >
+        <label for="email" class="block text-sm font-medium text-gray-700">メールアドレス</label>
         <input
           type="email"
           id="email"
@@ -119,9 +103,7 @@ _ボタンに hover したとき_
         />
       </div>
       <div class="mb-6">
-        <label for="password" class="block text-sm font-medium text-gray-700"
-          >パスワード</label
-        >
+        <label for="password" class="block text-sm font-medium text-gray-700">パスワード</label>
         <input
           type="password"
           id="password"
@@ -133,34 +115,14 @@ _ボタンに hover したとき_
       </div>
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center">
-          <input
-            type="checkbox"
-            id="remember"
-            name="remember"
-            class="h-4 w-4 text-blue-600 border-gray-300 rounded"
-          />
-          <label for="remember" class="ml-2 block text-sm text-gray-900"
-            >ログイン状態を保持</label
-          >
+          <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-blue-600 border-gray-300 rounded" />
+          <label for="remember" class="ml-2 block text-sm text-gray-900">ログイン状態を保持</label>
         </div>
       </div>
-      <button
-        type="submit"
-        class="w-full bg-sky-500 text-white py-2 px-4 rounded-md shadow hover:bg-sky-600"
-      >
+      <button type="submit" class="w-full bg-sky-500 text-white py-2 px-4 rounded-md shadow hover:bg-sky-600">
         ログイン
       </button>
     </form>
   </div>
 </div>
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

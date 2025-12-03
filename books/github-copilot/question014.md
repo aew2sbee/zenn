@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot'
+title: "GitHub Copilot"
 ---
 
 ## Q14: GitHub Copilot を始める最も簡単な方法は何ですか？

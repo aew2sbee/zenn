@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilotのマッチング機能'
+title: "GitHub Copilotのマッチング機能"
 ---
 
 ## Q24: GitHub Copilot の公開コードとのマッチング機能はどのように機能するのですか？

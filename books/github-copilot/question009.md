@@ -1,5 +1,5 @@
 ---
-title: 'Copilot メトリック API を使った時間の経過に伴う使用量の分析'
+title: "Copilot メトリック API を使った時間の経過に伴う使用量の分析"
 ---
 
 ## Q9: GitHub Copilot の Productivity API の使い方は、次のどれに当てはまりますか？

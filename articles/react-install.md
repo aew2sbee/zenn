@@ -1,8 +1,8 @@
 ---
-title: '[React]ローカル環境にTypeScriptで動かす環境を構築' # 記事のタイトル
-emoji: '❄' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['react', 'typescript', 'nodejs'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[React]ローカル環境にTypeScriptで動かす環境を構築" # 記事のタイトル
+emoji: "❄" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["react", "typescript", "nodejs"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -132,13 +132,3 @@ cd Work/sandbooks
    `http://localhost:3000/`をブラウザーの URL に入力して Enter キーを押します。
    ![React_step6](/images/React_step6.png)
    > 【ローカルホスト（Localhost）とは】<br>自分自身のコンピュータ上で実行されているネットワークサーバーを指す言葉です。<br><br>例えば、ウェブ開発の場合、ローカルホストは自分のコンピュータ上で実行されるウェブサーバーを指します。ローカルホストを利用することで、ウェブサイトの動作をブラウザで確認したり、データベースとの連携をテストしたりすることができます。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

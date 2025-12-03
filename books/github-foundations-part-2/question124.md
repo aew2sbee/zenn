@@ -1,5 +1,5 @@
 ---
-title: 'リポジトリの GitHub Discussions'
+title: "リポジトリの GitHub Discussions"
 ---
 
 ## Q124: GitHub ディスカッションで実行できるアクションはどれですか？(三つ選んでください)

@@ -1,5 +1,5 @@
 ---
-title: 'コマンド ラインでの GitHub Copilot の使用'
+title: "コマンド ラインでの GitHub Copilot の使用"
 ---
 
 ## Q21: GitHub Copilot の CLI コマンド機能を正しく説明しているのはどれですか？

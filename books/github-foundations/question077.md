@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Enterprise Server について'
+title: "GitHub Enterprise Server について"
 ---
 
 ## Q77: GitHub の料金プランで、GitHub のセルフホスト・デプロイを提供しているのはどれですか？

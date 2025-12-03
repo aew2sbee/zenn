@@ -1,5 +1,5 @@
 ---
-title: 'codespace の迅速な作成と再開を容易にする'
+title: "codespace の迅速な作成と再開を容易にする"
 ---
 
 ## Q34: GitHub Codespace のdeep linkとは何ですか？

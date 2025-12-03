@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Actions による継続的インテグレーションについて'
+title: "GitHub Actions による継続的インテグレーションについて"
 ---
 
 ## Q19: GitHub Actions の一般的な使用例はどれですか？

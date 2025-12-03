@@ -1,8 +1,8 @@
 ---
-title: '[Docker] 少しだけ分かった気がする「イラスト付き」' # 記事のタイトル
-emoji: '🐳' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['Docker', 'Dockerfile', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Docker] 少しだけ分かった気がする「イラスト付き」" # 記事のタイトル
+emoji: "🐳" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["Docker", "Dockerfile", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -87,13 +87,3 @@ Python の Docker イメージから...
 ![docker05](/images/docker05.png)
 
 上記のイメージのように複数の Docker コンテナ(`django/PostgreSQL`)を組み合わせた Web アプリを動かす環境を作成する事が出来ます。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

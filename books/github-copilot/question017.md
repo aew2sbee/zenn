@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot handles data'
+title: "GitHub Copilot handles data"
 ---
 
 ## Q17: GitHub Copilot では、IDE でのコード提案のデータ保持をどのように扱っていますか？

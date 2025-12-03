@@ -1,5 +1,5 @@
 ---
-title: 'codespace のマシンの種類を変更する'
+title: "codespace のマシンの種類を変更する"
 ---
 
 ## Q32: プロジェクトの実行には適切なハードウェアが必要です。GitHub Codespace 環境に割り当てる CPU コア数をカスタマイズできますか？

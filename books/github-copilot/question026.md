@@ -1,5 +1,5 @@
 ---
-title: 'Quickstart for GitHub Copilot'
+title: "Quickstart for GitHub Copilot"
 ---
 
 ## Q26: GitHub Copilot はどの要素をコンテキストとして使用できますか？

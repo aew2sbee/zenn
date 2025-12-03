@@ -1,8 +1,8 @@
 ---
 title: "[TypeScript] これ('||')とそれ('&&')って何？" # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -39,7 +39,7 @@ published: true # 公開設定（falseにすると下書き）
 4. `NaN`は**falsy な値**のため、次項の`foo`が**最終値**として決定する
 
 ```typescript
-const foo = undefined || null || 0 || NaN || '' || 'foo';
+const foo = undefined || null || 0 || NaN || "" || "foo";
 console.log(foo);
 ```
 
@@ -58,7 +58,7 @@ console.log(foo);
 3. `{}`は**truthy な値**のため、次項の`hoge`が**最終値**として決定する
 
 ```typescript
-const hoge = 100 && [] && {} && 'hoge';
+const hoge = 100 && [] && {} && "hoge";
 console.log(hoge);
 ```
 

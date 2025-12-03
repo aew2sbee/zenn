@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot のリポジトリ カスタム命令を追加する'
+title: "GitHub Copilot のリポジトリ カスタム命令を追加する"
 ---
 
 ## Q11: GitHub Copilot にコンテキストを提供して、リポジトリに合わせた応答を生成するにはどうすればよいでしょうか。

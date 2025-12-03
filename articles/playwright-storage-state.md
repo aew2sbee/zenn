@@ -1,8 +1,8 @@
 ---
-title: '[Playwright] ログイン状態でテストする簡単なやり方' # 記事のタイトル
-emoji: '🎭' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['playwright', 'テスト', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Playwright] ログイン状態でテストする簡単なやり方" # 記事のタイトル
+emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["playwright", "テスト", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -65,7 +65,6 @@ tests
 :::message
 
 - メリット
-
   - `playwright.config.ts`のみのコードの改修済む
   - 各ブラウザー毎で異なる認証情報を設定できる
 
@@ -97,7 +96,6 @@ export default defineConfig({
 :::message
 
 - メリット
-
   - テスト内容に併せて認証情報を切り替えれる
 
 - デメリット

@@ -1,5 +1,5 @@
 ---
-title: 'Organizationのロール'
+title: "Organizationのロール"
 ---
 
 ## Q38: GitHub Organization のロールでないものはどれですか？

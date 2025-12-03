@@ -1,5 +1,5 @@
 ---
-title: 'Git について'
+title: "Git について"
 ---
 
 ## Q69: Git と GitHub の関係は？

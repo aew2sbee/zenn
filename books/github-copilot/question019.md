@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft と GitHub の責任ある AI の 6 つの原則'
+title: "Microsoft と GitHub の責任ある AI の 6 つの原則"
 ---
 
 ## Q19: GitHub Copilot の開発の指針となっている、マイクロソフトの責任ある AI のための 6 つの主要原則を正しく表しているのはどれですか？

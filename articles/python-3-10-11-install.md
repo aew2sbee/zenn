@@ -1,8 +1,8 @@
 ---
-title: '[Python] Python3.10.11をインストールする' # 記事のタイトル
-emoji: '🐍' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['python', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Python] Python3.10.11をインストールする" # 記事のタイトル
+emoji: "🐍" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["python", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -54,13 +54,3 @@ python -V
 
 3. 下記の画像の通り、`Python 3.10.11`である事を確認する
    ![python-install-step06](/images/python-install-step06.png)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

@@ -1,8 +1,8 @@
 ---
-title: '[TypeScript] 残りの引数(...hoge)を配列に格納する' # 記事のタイトル
-emoji: '🛡' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[TypeScript] 残りの引数(...hoge)を配列に格納する" # 記事のタイトル
+emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -31,7 +31,7 @@ const foodList = (...foods: string[]) => foods;
 
 ```ts
 const foodList = (...foods: string[]) => foods;
-console.log(foodList('たまご', '納豆', '豆腐', 'ゼリー', 'めかぶ'));
+console.log(foodList("たまご", "納豆", "豆腐", "ゼリー", "めかぶ"));
 ```
 
 :::details 実行結果を確認する
@@ -48,7 +48,7 @@ console.log(foodList('たまご', '納豆', '豆腐', 'ゼリー', 'めかぶ'))
 
 ```ts
 const foodList = (egg: string, ...foods: string[]) => foods;
-console.log(foodList('たまご', '納豆', '豆腐', 'ゼリー', 'めかぶ'));
+console.log(foodList("たまご", "納豆", "豆腐", "ゼリー", "めかぶ"));
 ```
 
 :::details 実行結果を確認する
@@ -58,13 +58,3 @@ console.log(foodList('たまご', '納豆', '豆腐', 'ゼリー', 'めかぶ'))
 ```
 
 :::
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

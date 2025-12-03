@@ -1,5 +1,5 @@
 ---
-title: 'projects (classic)について'
+title: "projects (classic)について"
 ---
 
 ## Q10: GitHubプロジェクトとGitHubプロジェクトクラシックの違いは何ですか？

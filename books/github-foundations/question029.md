@@ -1,5 +1,5 @@
 ---
-title: 'codespace ライフサイクルについて'
+title: "codespace ライフサイクルについて"
 ---
 
 ## Q29: GitHub Codespace のライフサイクルにはどのような段階がありますか？

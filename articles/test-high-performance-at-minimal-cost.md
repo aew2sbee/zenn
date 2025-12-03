@@ -1,8 +1,8 @@
 ---
-title: '[テスト] 今よりも単体テストを良くする考え方' # 記事のタイトル
-emoji: '🧪' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['テスト', 'typescript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[テスト] 今よりも単体テストを良くする考え方" # 記事のタイトル
+emoji: "🧪" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["テスト", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -69,7 +69,7 @@ const isGreaterThanOrEqualToFive = (value: number): boolean => value >= 5;
 
 ```ts
 // add関数のテスト
-test('AAAパターンでテストコードを実装する', () => {
+test("AAAパターンでテストコードを実装する", () => {
   // 準備(Arrange)
   const arg01 = 1;
   const arg02 = 2;
@@ -96,7 +96,7 @@ test('AAAパターンでテストコードを実装する', () => {
 例えば、インポート時に`as`を使って定義する
 
 ```ts
-import * as sut from './math';
+import * as sut from "./math";
 
 // 実行(Act)
 const result = sut.add(arg01, arg02);
@@ -186,13 +186,3 @@ const result = sut.add(arg01, arg02);
   - テストケースのサイズが小さいほど読みやすくなる
 - テストを実施することがどのくらい難しいのか？
   - 依存関係が少ないほど、テスト実施が簡単になる
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

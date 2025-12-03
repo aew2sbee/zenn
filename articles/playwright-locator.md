@@ -1,8 +1,8 @@
 ---
-title: '[Playwright] ロケーターの種類と使い方' # 記事のタイトル
-emoji: '🎭' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['playwright', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Playwright] ロケーターの種類と使い方" # 記事のタイトル
+emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -254,13 +254,3 @@ const img = await page.getByAltText('title属性の値');
 // <img alt="かわいいいぬ" title="2024/10/15 撮影">に対してのコード
 const img = await page.getByAltText('/2024/10/15 撮影/');
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

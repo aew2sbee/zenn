@@ -1,5 +1,5 @@
 ---
-title: 'プロジェクトへの issue と pull request の追加'
+title: "プロジェクトへの issue と pull request の追加"
 ---
 
 ## Q5: GitHub Project の掲示板に課題やプルリクエストを追加するには、どのような方法がありますか？

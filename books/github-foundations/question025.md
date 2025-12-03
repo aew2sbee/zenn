@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot のクイック スタート'
+title: "GitHub Copilot のクイック スタート"
 ---
 
 ## Q25: GitHub Copilot サブスクリプションを有効化した後、どのように GitHub Copilot を使い始めることができますか？

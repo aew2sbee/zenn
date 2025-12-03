@@ -1,8 +1,8 @@
 ---
-title: '[JavaScript] 一文字ずつ時間差で表示するアニメーション' # 記事のタイトル
-emoji: '🍧' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['html', 'css', 'javascript', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[JavaScript] 一文字ずつ時間差で表示するアニメーション" # 記事のタイトル
+emoji: "🍧" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["html", "css", "javascript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -39,9 +39,9 @@ published: true # 公開設定（falseにすると下書き）
 ### 3. JavaScript ファイルの編集
 
 ```js
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   // js-textというクラスを取得し、elementsという変数を宣言
-  let elements = document.getElementsByClassName('js-text');
+  let elements = document.getElementsByClassName("js-text");
   // animateTextという関数を、elementsの文字数の回数繰り返す
   for (var i = 0; i < elements.length; i++) {
     animateText(elements[i]);
@@ -51,17 +51,17 @@ document.addEventListener('DOMContentLoaded', function (event) {
 function animateText(element) {
   // elementの文字情報のみをtextという変数に代入
   let text = element.innerText;
-  element.innerText = '';
+  element.innerText = "";
 
   // textの一文字ずつをspanタグで囲う
   for (var i = 0; i < text.length; i++) {
-    var span = document.createElement('span');
+    var span = document.createElement("span");
     span.innerText = text[i];
     element.appendChild(span);
   }
 
   // spanで囲った文字をspansに代入
-  let spans = element.getElementsByTagName('span');
+  let spans = element.getElementsByTagName("span");
   // spansのstyleをopacity=1にする処理を、文字数分繰り返す
   for (var j = 0; j < spans.length; j++) {
     (function (index) {
@@ -72,13 +72,3 @@ function animateText(element) {
   }
 }
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

@@ -1,5 +1,5 @@
 ---
-title: 'Pull RequestをIssueにリンクする'
+title: "Pull RequestをIssueにリンクする"
 ---
 
 ## Q91: プルリクエストの説明に issue #11 を追加するとどのような効果がありますか？

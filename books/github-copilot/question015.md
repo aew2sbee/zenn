@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot の使用についてのベスト プラクティス'
+title: "GitHub Copilot の使用についてのベスト プラクティス"
 ---
 
 ## Q15: GitHub Copilot は何を分析して、新しいコードを開発する際に適切な提案をするのですか？

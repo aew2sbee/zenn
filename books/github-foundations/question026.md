@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Codespaces とは'
+title: "GitHub Codespaces とは"
 ---
 
 ## Q26: GitHub Codespace とは何ですか？

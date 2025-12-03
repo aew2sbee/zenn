@@ -1,5 +1,5 @@
 ---
-title: 'codespace ライフサイクルについて'
+title: "codespace ライフサイクルについて"
 ---
 
 ## Q31: GitHub Codespaces のライフサイクルに関する次の記述のうち、正しいものはどれですか？(3 つ選んでください)

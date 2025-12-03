@@ -1,8 +1,8 @@
 ---
-title: '[Tailwind CSS] n行目以降の文章は「...」と表示する' # 記事のタイトル
-emoji: '🍃' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア
-topics: ['css', 'tailwindcss', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Tailwind CSS] n行目以降の文章は「...」と表示する" # 記事のタイトル
+emoji: "🍃" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["css", "tailwindcss", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -59,9 +59,7 @@ html {
 ```html
 <div class="mb-3">
   <p class="font-black">1行目まで表示</p>
-  <p class="line-clamp-1 pl-3">
-    ああああああああああああああああああああああああああああああああああああああああ
-  </p>
+  <p class="line-clamp-1 pl-3">ああああああああああああああああああああああああああああああああああああああああ</p>
 </div>
 <div class="mb-3">
   <p class="font-black">2行目まで表示</p>
@@ -73,13 +71,3 @@ html {
 ```
 
 ![line-clamp](/images/articles/tailwind-css-cheat-sheet/line-clamp.png)
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

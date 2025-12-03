@@ -1,5 +1,5 @@
 ---
-title: 'Team について'
+title: "Team について"
 ---
 
 ## Q51: GitHub teams とは何ですか？

@@ -1,5 +1,5 @@
 ---
-title: 'Organization のモデレーター'
+title: "Organization のモデレーター"
 ---
 
 ## Q52: organization モデレーターのロールとは？

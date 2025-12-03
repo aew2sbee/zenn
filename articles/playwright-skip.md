@@ -1,8 +1,8 @@
 ---
-title: '[Playwright] 条件付きでテストをスキップする' # 記事のタイトル
-emoji: '🎭' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['playwright', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[Playwright] 条件付きでテストをスキップする" # 記事のタイトル
+emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -94,13 +94,3 @@ Running 1 test using 1 worker
 
   1 skipped
 ```
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

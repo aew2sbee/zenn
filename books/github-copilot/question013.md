@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot からのコンテンツの除外'
+title: "GitHub Copilot からのコンテンツの除外"
 ---
 
 ## Q13: What happens when you exclude content from GitHub Copilot? (Choose two)

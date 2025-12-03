@@ -1,5 +1,5 @@
 ---
-title: 'Organizationのリポジトリロール'
+title: "Organizationのリポジトリロール"
 ---
 
 ## Q118: GitHub の組織レベルのリポジトリで利用できるロールは、次のうちどれですか？(5 つ選んでください)

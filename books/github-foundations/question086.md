@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Desktop'
+title: "GitHub Desktop"
 ---
 
 ## Q86: GitHub Desktop とは？

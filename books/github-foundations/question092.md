@@ -1,5 +1,5 @@
 ---
-title: 'pull requests について'
+title: "pull requests について"
 ---
 
 ## Q92: GitHub では、あるブランチの変更を別のブランチにマージする提案を a と呼びます：

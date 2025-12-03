@@ -1,8 +1,8 @@
 ---
-title: '[API設計] 良いAPI(URL)とは' # 記事のタイトル
-emoji: '🩹' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['初心者向け', 'API', 'Oreilly'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[API設計] 良いAPI(URL)とは" # 記事のタイトル
+emoji: "🩹" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["初心者向け", "API", "Oreilly"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -212,13 +212,3 @@ https://api.example.com/friends/100/messages
 Oreilly を初めて読みました。
 自分には難しいと思っていましたが、そこまで難しいと感じなかったです。
 Oreilly は学びが多く気に入りました!
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)
