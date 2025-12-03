@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot のリポジトリ カスタム命令を追加する'
+title: "GitHub Copilot のリポジトリ カスタム命令を追加する"
 ---
 
 ## Q8: GitHub Copilot Editor 設定ファイルについて説明したものはどれですか？

@@ -1,5 +1,5 @@
 ---
-title: '本書について'
+title: "本書について"
 ---
 
 ## はじめに
@@ -36,7 +36,7 @@ title: '本書について'
 ご興味のある方は、ぜひお気軽に遊びに来てください！
 「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
 
-@[card](https://www.youtube.com/@aew2sbee)
+@[card](https://www.youtube.com/channel/UCDV95uUZlqOmxJ0hONnoALw)
 
 ## 翻訳元の問題集サイト
 

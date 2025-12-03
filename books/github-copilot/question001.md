@@ -1,5 +1,5 @@
 ---
-title: '料金'
+title: "料金"
 ---
 
 ## Q1: GitHub Copilot は誰でも無料で使えますか？

@@ -1,8 +1,8 @@
 ---
-title: '[AWS] IAMで読み取り専用ユーザー本人がMFAの設定が出来るようにする方法' # 記事のタイトル
-emoji: '☁️' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['aws', 'iam', '初心者向け'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[AWS] IAMで読み取り専用ユーザー本人がMFAの設定が出来るようにする方法" # 記事のタイトル
+emoji: "☁️" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["aws", "iam", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -53,12 +53,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
     {
       "Sid": "AllowManageOwnAccessKeys",
       "Effect": "Allow",
-      "Action": [
-        "iam:CreateAccessKey",
-        "iam:DeleteAccessKey",
-        "iam:ListAccessKeys",
-        "iam:UpdateAccessKey"
-      ],
+      "Action": ["iam:CreateAccessKey", "iam:DeleteAccessKey", "iam:ListAccessKeys", "iam:UpdateAccessKey"],
       "Resource": "arn:aws:iam::*:user/${aws:username}"
     },
     {
@@ -105,12 +100,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
     {
       "Sid": "AllowManageOwnUserMFA",
       "Effect": "Allow",
-      "Action": [
-        "iam:DeactivateMFADevice",
-        "iam:EnableMFADevice",
-        "iam:ListMFADevices",
-        "iam:ResyncMFADevice"
-      ],
+      "Action": ["iam:DeactivateMFADevice", "iam:EnableMFADevice", "iam:ListMFADevices", "iam:ResyncMFADevice"],
       "Resource": "arn:aws:iam::*:user/${aws:username}"
     },
     {
@@ -241,13 +231,3 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 ## おわりに
 
 セキュリティ対策として大切な設定なので必ず行いたいですね。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

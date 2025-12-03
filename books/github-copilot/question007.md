@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot からのコンテンツの除外'
+title: "GitHub Copilot からのコンテンツの除外"
 ---
 
 ## Q7: Copilot のコンテンツ除外について正しいものはどれですか。(2 つ選択してください)

@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot からのコンテンツの除外'
+title: "GitHub Copilot からのコンテンツの除外"
 ---
 
 ## Q6: GitHub Copilot から特定のファイルを除外する方法を教えてください。

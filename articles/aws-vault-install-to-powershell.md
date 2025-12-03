@@ -1,8 +1,8 @@
 ---
-title: '[AWS] PowerShellにAWS Vaultコマンドを使えるようにする' # 記事のタイトル
-emoji: '☁️' # アイキャッチとして使われる絵文字（1文字だけ）
-type: 'tech' # tech: 技術記事 / idea: アイデア記事
-topics: ['aws', 'awsvault', '初心者向け', 'powerShell', 'terraform'] # タグ。["markdown", "rust", "aws"]のように指定する
+title: "[AWS] PowerShellにAWS Vaultコマンドを使えるようにする" # 記事のタイトル
+emoji: "☁️" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["aws", "awsvault", "初心者向け", "powerShell", "terraform"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 ---
 
@@ -66,13 +66,3 @@ v7.2.0
 
 もっと楽に環境構築出来る気がします。ご存知の方が教えて頂きたいです。🙇‍♀️
 MacOS ならもっと楽ですよね。。
-
-## YouTube のご案内
-
-ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用した作業・勉強配信を行っています。
-集中したいときや、誰かと一緒に頑張りたいときに、ぜひご活用ください。
-
-ご興味のある方は、ぜひお気軽に遊びに来てください！
-「Zenn から来ました!!」とコメントを貰えると泣いて喜びます 🤣
-
-@[card](https://www.youtube.com/@aew2sbee)

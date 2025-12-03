@@ -1,5 +1,5 @@
 ---
-title: 'CLIG での GitHub Copilot のインストール'
+title: "CLIG での GitHub Copilot のインストール"
 ---
 
 ## Q4: CLI に GitHub Copilot 拡張機能をインストールするには、どのコマンドを使用しますか?

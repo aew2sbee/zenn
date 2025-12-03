@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot を使用して IDE でコードの提案を取得する'
+title: "GitHub Copilot を使用して IDE でコードの提案を取得する"
 ---
 
 ## Q3: GitHub Copilot はどの IDE をサポートしていますか？(2 つ選んでください)
