@@ -1,1 +1,1 @@
-[小倉あん-Zenn](https://zenn.dev/aew2sbee)
+[Zenn](https://zenn.dev/aew2sbee)
