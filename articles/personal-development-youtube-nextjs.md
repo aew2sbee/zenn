@@ -3,7 +3,7 @@ title: "[個人開発] YouTubeでいつもの勉強が「楽しみ!!」に変え
 emoji: "🏅" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["個人開発", "youtube", "nextjs", "typescript", "claudecode"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: false # 公開設定（falseにすると下書き）
 ---
 
 ## 🌱 はじめに
