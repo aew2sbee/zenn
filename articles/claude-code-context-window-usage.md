@@ -7,8 +7,11 @@ published: false # 公開設定（falseにすると下書き）
 ---
 
 ## はじめに
-
 この記事では、`Claude Code`でリアルタイムに**コンテキストウィンドウの使用量を把握する**方法を解説します。
+
+:::details 参考資料
+@[card](https://code.claude.com/docs/ja/statusline)
+:::
 
 ## 結論
 
