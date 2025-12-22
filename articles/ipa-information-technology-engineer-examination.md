@@ -12,7 +12,7 @@ published: false # 公開設定（falseにすると下書き）
 その時のコツをまとめております。
 @[card](https://www.ipa.go.jp/shiken/kubun/fe.html)
 
-![ipa-sg-01](/images/articles/ipa-information-security-management-examination/ipa-sg-01.png)
+![ipa-fe-01](/images/articles/ipa-information-technology-engineer-examination/ipa-fe-01.png)
 
 :::message alert
 `問題の傾向`や`出題内容`は公言する事が禁止されているため、
@@ -27,6 +27,8 @@ published: false # 公開設定（falseにすると下書き）
 
 
 ## 1. 科目Aは答えを知らなくても知っている知識で答える
+試験本番や出題年度が異なる過去問
+
 
 ```md
 問１ 大規模言語モデルを用いた自然言語処理において，事前学習済みのモデルに対して行う，
@@ -98,46 +100,52 @@ published: false # 公開設定（falseにすると下書き）
 1. 次に
 
 
-## 科目Bは1問5分以内で回答できる練習する。
+## 科目B: 1問5分以内で回答できる練習する。
 
 
 
 
 ```md
-次のプログラム中の と に入れる正しい答えの組合せを，
-解答群の中から選べ。
+問1 次のプログラム中の [a] と [b] に入れる正しい答えの組合せを，解答群の中から選べ。
 関数 function1 が受け取る引数と，関数 function2 が受け取る引数とが同じとき，
-二つの関数は同じ値を返す。ここで，引数 n と引数 m は正の整数であり，引数 m は引
-数 n よりも 10 以上大きい数とする。
-〔プログラム〕
-○整数型: function1(整数型: n, 整数型: m)
-整数型: count ← 0
-整数型: i
- for (iをnからmまで1ずつ増やす)
- if ((i mod 4)が0と等しい)
- count ← count ＋ 1
- endif
-endfor
-return count
+二つの関数は同じ値を返す。ここで，引数 n と引数 m は正の整数であり，
+引数 m は引数 n よりも 10 以上大きい数とする。
+```
 
-○整数型: function2(整数型: n, 整数型: m)
-整数型: count ← 0
-整数型: tempN ← n
-整数型: i, j
- for ( )
- if ((tempN mod 4)が0と等しい)
- 繰返し処理を終了する
- endif
- tempN ← tempN ＋ 1
- endfor
-for ( )
- count ← count ＋ 1
-endfor
-return count
+```py
+〔プログラム〕
+    ○ 整数型: function1(整数型: n, 整数型: m)
+    整数型: count ← 0
+    整数型: i
+    for (iをnからmまで1ずつ増やす)
+        if ((i mod 4)が0と等しい)
+            count ← count ＋ 1
+        endif
+    endfor
+    return count
+
+    ○ 整数型: function2(整数型: n, 整数型: m)
+    整数型: count ← 0
+    整数型: tempN ← n
+    整数型: i, j
+    for ( [a] )
+        if ((tempN mod 4)が0と等しい)
+            繰返し処理を終了する
+        endif
+        tempN ← tempN ＋ 1
+    endfor
+    for ([b] )
+        count ← count ＋ 1
+    endfor
+    return count
 
 ```
 
+## 科目B: 脳疲労で問題が頭に入らなくても無理やり入れる技術
 
+## 科目B: 疑似言語という言語を新しく覚える
+
+@[card](https://gihyo.jp/book/2024/978-4-297-14271-1)
 
 
 ## 結論
@@ -200,11 +208,11 @@ return count
 
 受験のレベルに合わせた勉強時間の目安を提示してくれる
 
-![ipa-sg-03](/images/articles/ipa-information-security-management-examination/ipa-sg-03.png)
+![ipa-sg-03](/images/articles/ipa-information-technology-engineer-examination/ipa-sg-03.png)
 _勉強目安を聞く_
 
 覚え方や活用方法なども教えてくれる
-![ipa-sg-04](/images/articles/ipa-information-security-management-examination/ipa-sg-04.png)
+![ipa-sg-04](/images/articles/ipa-information-technology-engineer-examination/ipa-sg-04.png)
 _ハイブリット暗号方式について質問_
 
 ### 2. アクティブリコール
@@ -229,10 +237,25 @@ IPA の試験問題では、いかに**苦手分野を減らすか**が重要な
 
 すべての問題を解き直すには時間が足りないため、**必要最小限の問題**を復習する目的でスプレッドシートを活用しました。
 
-![ipa-sg-02](/images/articles/ipa-information-security-management-examination/ipa-sg-02.png)
+![ipa-fe-02](/images/articles/ipa-information-technology-engineer-examination/ipa-fe-02.png)
 _スプレッドシートに結果と分からない単語を記載_
 
 ### 4. ポモドーロタイマー
 
 ポモドーロタイマー（25 分勉強＋ 5 分休憩）を活用しました。
 私は 1 時間も集中し続けることが難しいため、短い時間に分割して効率良く勉強しました。
+
+
+### 活用した書籍と活用方法
+
+
+https://gihyo.jp/book/2024/978-4-297-14425-8
+
+
+@[card](https://gihyo.jp/book/2024/978-4-297-14271-1)
+
+
+https://www.sbcr.jp/product/4815629397/
+
+
+https://r.voyager.co.jp/epm/e1_415730_27112024150108/
