@@ -180,30 +180,30 @@ _スプレッドシートに記録を付ける_
 
 〔プログラム〕
 ```py
-    ○ 整数型: function1(整数型: n, 整数型: m)
-    整数型: count ← 0
-    整数型: i
-    for (iをnからmまで1ずつ増やす)
-        if ((i mod 4)が0と等しい)
-            count ← count ＋ 1
-        endif
-    endfor
-    return count
-
-    ○ 整数型: function2(整数型: n, 整数型: m)
-    整数型: count ← 0
-    整数型: tempN ← n
-    整数型: i, j
-    for ( [a] )
-        if ((tempN mod 4)が0と等しい)
-            繰返し処理を終了する
-        endif
-        tempN ← tempN ＋ 1
-    endfor
-    for ([b] )
+○ 整数型: function1(整数型: n, 整数型: m)
+整数型: count ← 0
+整数型: i
+for (iをnからmまで1ずつ増やす)
+    if ((i mod 4)が0と等しい)
         count ← count ＋ 1
-    endfor
-    return count
+    endif
+endfor
+return count
+
+○ 整数型: function2(整数型: n, 整数型: m)
+整数型: count ← 0
+整数型: tempN ← n
+整数型: i, j
+for ( [a] )
+    if ((tempN mod 4)が0と等しい)
+        繰返し処理を終了する
+    endif
+    tempN ← tempN ＋ 1
+endfor
+for ([b] )
+    count ← count ＋ 1
+endfor
+return count
 
 ```
 
