@@ -8,7 +8,7 @@ published: false # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-この記事では、**YouTube API**を活用して配信中のチャットを取得する方法をまとめております。
+この記事では、**YouTube API**を活用して配信中のチャットを取得する方法をまとめています。
 
 ```bash: 取得イメージ
 $ python src/main.py
@@ -24,17 +24,16 @@ $ python src/main.py
 ## 結論
 
 :::message
-
 1. [Google Cloud](https://console.cloud.google.com/)で「YouTube Data API」の API Key を作成する
 2. `google-api-python-client`を使ってデータを取得する
-   :::
+:::
 
 ## 注意事項
 
 :::message alert
 
-1. **配信中のチャットのみ**しか取得が出来ません！
-2. **10.000 queries**を超えると料金が発生します!
+1. **配信中のチャットのみ**しか取得できません！
+2. **10,000 queries**を超えると料金が発生します!
    ![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api-queries.png)
    _YouTube Data API を初めて検証したときに 1 日の量_
 
@@ -45,7 +44,7 @@ _[拡大版] YouTube Data API を初めて検証したときに 1 日の量_
 ## 1. YouTube Data API Key を発行
 
 [Google Cloud](https://console.cloud.google.com/)で新規プロジェクトを作成する。
-検索窓に「YouTube」と入力し、`YouTube Data API v3`を選択し有効化する
+検索窓に「YouTube」と入力し、`YouTube Data API v3`を選択し有効化する。
 ![youtube-api-queries](/images/articles/youtube-data-api-live-streaming-chat/youtube-api.png)
 
 ## 2. インストール
@@ -91,23 +90,23 @@ Required-by: browser-use, lmnr
 
 :::
 
-## 2. コーディング
+## 3. コーディング
 
 `YOUTUBE_API_KEY`は、[Google Cloud](https://console.cloud.google.com/)で表示されている Key を入力する
 `VIDEO_ID`は、配信中の ID を入力する
 
-例えば、下記動画であれば`VIDEO_ID=FM_T0rNH-Bg`になる
-@[card](https://www.youtube.com/watch?v=FM_T0rNH-Bg)
+例えば、下記動画であれば`VIDEO_ID=B2D3lGOrdVQ`になる
+@[card](https://www.youtube.com/watch?v=B2D3lGOrdVQ)
 
 ```.env:.env
 YOUTUBE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXX
 VIDEO_ID=XXXXXXXXXX
 ```
 
-```py:main.py
+```py:src/main.py
 import os
 from googleapiclient.discovery import build
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from dotenv import load_dotenv
 
 # .envファイルの読み込み
@@ -175,7 +174,7 @@ if __name__ == "__main__":
 
 ```
 
-## 3. 結果
+## 4. 結果
 
 ```bash
 python src/main.py
