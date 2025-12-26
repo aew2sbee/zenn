@@ -55,7 +55,7 @@ touch .prettierrc
 }
 ```
 
-## 5. Prettier を適応させる
+## 5. Prettier を適用させる
 
 下記コマンドで src 配下のコードに適用することができる
 

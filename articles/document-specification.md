@@ -8,7 +8,7 @@ published: false # 公開:true / 非公開:false
 
 ## はじめに
 
-この記事では、**長い文章を省略し先頭の文章のみを表示する方法**を解説します。
+この記事では、**わかりやすい文章を書くためのポイント**を解説します。
 
 :::details 参考資料
 @[card](https://www.socym.co.jp/book/post-19000)

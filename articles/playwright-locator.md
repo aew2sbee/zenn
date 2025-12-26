@@ -86,7 +86,7 @@ const buttons = await page.getByRole('button');
 <input type="range">
 ```
 
-```html:role属性="textboox"
+```html:role属性="textbox"
 上記以外の<input>
 <!-- 複数行のテキスト入力フィールドを作成します。メモやコメントなど長文を入力する場合に使用されます。 -->
 <textarea>
@@ -225,7 +225,7 @@ const text = await page.getByText('テキストの値');
 ```
 
 ```ts: サンプル
-// <a herf="/home">ホーム</a>に対してのコード
+// <a href="/home">ホーム</a>に対してのコード
 const text = await page.getByText('/ホーム/');
 ```
 

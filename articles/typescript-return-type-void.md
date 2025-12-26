@@ -18,7 +18,7 @@ published: true # 公開:true / 非公開:false
 
 :::message
 `void` とは、**return 文を持たない**や**値を返さない return 文**を有する関数の場合、
-戻り値の型を使う事ができる型です。
+戻り値の型を使うことができる型です。
 :::
 
 ## 1. return 文を持たない

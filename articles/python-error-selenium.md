@@ -33,7 +33,7 @@ published: true # 公開:true / 非公開:false
 ### 1. `webdriver.Chrome('./chromedriver.exe')`が使えない
 
 :::message alert
-`webdriver.Chrome('./chromedriver.exe')`でブラウザーをインスタンス化しようとすると
+`webdriver.Chrome('./chromedriver.exe')`でブラウザをインスタンス化しようとすると
 下記のエラーが発生しました。
 
 ```bash
@@ -101,7 +101,7 @@ driver.implicitly_wait(10)
 ### 2. `webdriver.Chrome(ChromeDriverManager().install())`が使えない
 
 :::message alert
-`webdriver.Chrome(ChromeDriverManager().install())`でブラウザーをインスタンス化しようとすると下記のエラーが発生しました。
+`webdriver.Chrome(ChromeDriverManager().install())`でブラウザをインスタンス化しようとすると下記のエラーが発生しました。
 
 ```bash
 AttributeError: 'str' object has no attribute '_ignore_local_proxy'

@@ -13,7 +13,7 @@ published: true # 公開:true / 非公開:false
 ## 結論
 
 :::message
-filter()メソッドを使うこと絞り込むことができます。
+filter()メソッドを使うことで絞り込むことができます。
 
 ```ts
 // 特定のテキストを持つ

@@ -60,7 +60,7 @@ console.log("Test1.THREE", Test1.THREE);
 ## 2. 文字列
 
 :::message
-文字列は指定する事が出来る
+文字列は指定することができる
 :::
 
 ```typescript
@@ -88,7 +88,7 @@ console.log("Test2.THREE", Test2.THREE);
 ## 3. 真偽値
 
 :::message alert
-真偽値は指定する事が出来ない
+真偽値は指定することができない
 
 :::
 
@@ -113,7 +113,7 @@ Type 'boolean' is not assignable to type 'number' as required for computed enum 
 ### 浮動小数点数型
 
 :::message
-浮動小数点数型は指定する事が出来る
+浮動小数点数型は指定することができる
 :::
 
 ```typescript

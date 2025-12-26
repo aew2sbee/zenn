@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## はじめに
 
-この記事では、Playwright で**条件でスキップする** 方法ををまとめております。
+この記事では、Playwright で**条件でスキップする** 方法をまとめております。
 
 :::details 参考資料
 @[card](https://playwright.dev/docs/test-annotations#conditionally-skip-a-test)

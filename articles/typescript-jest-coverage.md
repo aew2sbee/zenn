@@ -146,7 +146,7 @@ Ran all test suites.
 
 ### 6. カバレッジレポートも確認する
 
-`test/coverage/lcov-report/index.html` をブラウザーで表示する
+`test/coverage/lcov-report/index.html` をブラウザで表示する
 ![coverage](/images/articles/jest-coverage/coverage.png)
 
 ## カバレッジレポートの項目

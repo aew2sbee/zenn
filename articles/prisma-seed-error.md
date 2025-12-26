@@ -10,7 +10,7 @@ published: true # 公開:true / 非公開:false
 
 社内で`seed`を導入する話になりました
 しかし、サンプルコードを記述し、`npx prisma db seed`を実行しましたが、
-下記のエラーで`seed`が実行出来ませんでした。
+下記のエラーで`seed`が実行できませんでした。
 
 ```bash
 $ npx prisma db seed
@@ -101,7 +101,7 @@ Error: Command failed with exit code 1: ts-node prisma/seed/seed.ts
 
 ## Error の解決方法
 
-### 1. "ts-node"の version を最新する
+### 1. "ts-node"の version を最新にする
 
 調べたら、**`package.json`の"ts-node"の version を最新**にしたら解決するみたいなので
 `npm install ts-node@latest`を実行して**version を最新**にします。

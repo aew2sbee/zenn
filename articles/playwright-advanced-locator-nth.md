@@ -17,7 +17,7 @@ published: true # 公開:true / 非公開:false
 ## 結論
 
 :::message
-下記メソッドで絞り込みが出来ます。
+下記メソッドで絞り込みができます。
 
 ```ts
 // 最初の要素
@@ -37,7 +37,7 @@ first()
 await page.getByRole("button").first().click();
 ```
 
-## 1. n 番目の要素を取得する
+## 2. n 番目の要素を取得する
 
 ```ts
 // 3番目のボタンをクリックする

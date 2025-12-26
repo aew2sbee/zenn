@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## はじめに
 
-社内の有志メンバーで django rest framework を利用すること決まりました。
+社内の有志メンバーで django rest framework を利用することに決まりました。
 Python3.10.11 をインストールする方法を解説します。
 
 :::message

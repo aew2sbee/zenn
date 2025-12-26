@@ -91,7 +91,7 @@ Added credentials to profile "default" in vault
 `credentials`への`Access Keys`、`Secret Access Key`記述が不要になる
 :::
 
-2. MFA 認証が出来るのか確認するために、下記コマンドを実行する
+2. MFA 認証ができるのか確認するために、下記コマンドを実行する
 
 ```powerShell
 aws-vault exec sandbooks -- aws s3 ls
@@ -368,4 +368,4 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ## おわりに
 
 Windows と Terraform の相性が悪く、環境構築に時間がかかりました。
-MacOS ならもっと楽に出来そうです。
+MacOS ならもっと楽にできそうです。

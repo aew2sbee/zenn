@@ -11,7 +11,7 @@ published: true # 公開:true / 非公開:false
 Python プロジェクトで ModbusTCP 通信環境が必要であり、
 実現した経験があります。
 
-その時に pyModbusTCP ライブラリーに関する情報が少なく、大変でした。
+その時に pyModbusTCP ライブラリに関する情報が少なく、大変でした。
 今回実装方法を紹介して、今後の**誰かの開発の役に立てば良いな**と思います。
 
 ### 対象読者
@@ -31,9 +31,9 @@ Python プロジェクトで ModbusTCP 通信環境が必要であり、
 
 # 手順解説
 
-## ライブラリーの準備
+## ライブラリの準備
 
-### 1. pyModbusTCP ライブラリーをインストールする
+### 1. pyModbusTCP ライブラリをインストールする
 
 下記コマンドでインストールする
 
@@ -41,7 +41,7 @@ Python プロジェクトで ModbusTCP 通信環境が必要であり、
 pip install pyModbusTCP
 ```
 
-### 2. pyModbusTCP ライブラリーを確認する
+### 2. pyModbusTCP ライブラリを確認する
 
 `pyModbusTCP 0.2.0`がインストールされている事が確認できます。
 
@@ -61,7 +61,7 @@ Required-by:
 
 ## サーバー側の実装
 
-### 1. ライブラリー等をインポートする
+### 1. ライブラリ等をインポートする
 
 `ModbusServer`をインポートしてサーバー側に必要な関数等を使えるようにします。
 `datetime`は、ログ用にインポートします。
@@ -134,7 +134,7 @@ class ModbusTCPServer():
 
 ### 4. サーバーを起動する関数の作成する
 
-`ModbusServer`の`.start()`を使って任意のタイミングでサーバーを起動が出来るようにします。
+`ModbusServer`の`.start()`を使って任意のタイミングでサーバーを起動できるようにします。
 サーバーが起動したら、**Start ModbusTCP Server**を出力します。
 
 ```python
@@ -146,7 +146,7 @@ class ModbusTCPServer():
 
 ### 5. サーバーを停止する関数の作成する
 
-`ModbusServer`の`.stop()`を使って任意のタイミングでサーバーを停止が出来るようにします。
+`ModbusServer`の`.stop()`を使って任意のタイミングでサーバーを停止できるようにします。
 サーバーが起動したら、**Stop ModbusTCP Serve**を出力します。
 
 ```python
@@ -252,7 +252,7 @@ class ModbusTCPServer():
 
 ## クライアント側の実装
 
-### 1. ライブラリー等をインポートする
+### 1. ライブラリ等をインポートする
 
 `ModbusClient`をインポートしてクライアント側に必要な関数等を使えるようにします。
 `datetime`は、ログ用にインポートします。
@@ -653,5 +653,5 @@ $ python sample_client_to_server.py
 
 ## おわりに
 
-pyModbusTCP ライブラリーで ModbusTCP 通信環境を構築しました。
-pyModbusTCP ライブラリーについて情報が少なく苦戦しましたが、自分の記事が参考になったら幸いです。
+pyModbusTCP ライブラリで ModbusTCP 通信環境を構築しました。
+pyModbusTCP ライブラリについて情報が少なく苦戦しましたが、自分の記事が参考になったら幸いです。

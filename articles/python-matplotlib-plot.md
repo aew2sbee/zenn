@@ -22,7 +22,7 @@ Python2 年生 データ分析のしくみ 体験してわかる！会話でま�
 
 ## サンプルコード
 
-### 1. ライブラリーをインストール
+### 1. ライブラリをインストール
 
 ```bash
 pip install matplotlib
@@ -30,7 +30,7 @@ pip install pandas
 pip install seaborn
 ```
 
-インストールが出来たか下記コマンドで確認します。
+インストールできたか下記コマンドで確認します。
 
 ```bash
 $ pip show matplotlib

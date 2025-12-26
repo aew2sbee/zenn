@@ -29,7 +29,7 @@ tsconfig.json の **"resolveJsonModule": true,** を追加する
 
 :::
 
-## 0. 前提条件：ディレクトリー構成
+## 0. 前提条件：ディレクトリ構成
 
 ```bash
 .
