@@ -1,5 +1,5 @@
 ---
-title: "[AWS] IAMで読み取り専用ユーザー本人がMFAの設定が出来るようにする方法" # 記事のタイトル
+title: "[AWS] IAMで読み取り専用ユーザー本人がMFAの設定ができるようにする方法" # 記事のタイトル
 emoji: "☁️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["aws", "iam", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -140,7 +140,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 |**AllowManageOwnUserMFA**| IAM ユーザーが自分自身の MFA デバイスを管理するために許可されているアクションが定義されています。具体的には、MFA デバイスの無効化と有効化、MFA デバイスのリストの表示、MFA デバイスの再同期が許可されています                                                         |
 |**DenyAllExceptListedIfNoMFA**| MFA が無効化されている場合に、ユーザーに許可されるアクションを制限する条件が定義されています。MFA が無効な場合、特定のアクション（仮想 MFA デバイスの作成、MFA デバイスの有効化、パスワード変更など）に対してのみ許可され、それ以外のアクションに対しては拒否されます |
 
-### 3. 任意のポリシーを設定する
+### 2. 任意のポリシーを設定する
 
 1. `ポリシー名`の欄に任意の名前を入力します。
    ※今回は、`test-MFA`という名前で作成します。
@@ -150,13 +150,13 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 3. 内容を確認し、`ポリシーの作成`をクリックする
    ![sandbooks-aws-IAM-MFA-step04](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step04.png)
 
-### 4. 成功メッセージを確認する
+### 3. 成功メッセージを確認する
 
 1. 画面上部に`ポリシー test-MFAが作成されました。`を確認する
-2. 任意で設定したポリシー名の`test-MFA`が一覧で確認出来ます。
+2. 任意で設定したポリシー名の`test-MFA`が一覧で確認できます。
    ![sandbooks-aws-IAM-MFA-step05](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step05.png)
 
-### 5. 対象ユーザーに作成したポリシーを付与する
+### 4. 対象ユーザーに作成したポリシーを付与する
 
 1. 左側の`ユーザー`をクリックする
 2. 対象のユーザーをクリックする

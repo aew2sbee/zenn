@@ -28,7 +28,7 @@ export function sayGoodBye(name: string) {
 }
 ```
 
-### 2. サンプル関数をテストコードを作成する
+### 2. サンプル関数のテストコードを作成する
 
 ```ts
 import { greet, sayGoodBye } from "../../src/greet";
@@ -39,11 +39,11 @@ jest.mock("../../src/greet", () => ({
 }));
 
 describe("mockの動作確認1", () => {
-  test("greet関数がJest.mockで定義されていない為、undefinedになる", () => {
+  test("greet関数がJest.mockで定義されていないため、undefinedになる", () => {
     expect(greet).toBe(undefined);
   });
 
-  test("sayGoodBye関数がJest.mockで定義された為、モック化された内容に変更される", () => {
+  test("sayGoodBye関数がJest.mockで定義されたため、モック化された内容に変更される", () => {
     const message = `${sayGoodBye("Taro")} See you.`;
     expect(message).toBe("Good bye, Taro. See you.");
   });
@@ -60,8 +60,8 @@ $ npm test test/unittest/mock01.test.ts
 
  PASS  test/unittest/mock01.test.ts
   mockの動作確認1
-    √ greet関数がJest.mockで定義されていない為、undefinedになる (3 ms)
-    √ sayGoodBye関数がJest.mockで再定義された為、モック化された内容に変更される (1 ms)
+    √ greet関数がJest.mockで定義されていないため、undefinedになる (3 ms)
+    √ sayGoodBye関数がJest.mockで定義されたため、モック化された内容に変更される (1 ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       2 passed, 2 total
@@ -84,7 +84,7 @@ export function sayGoodBye(name: string) {
 }
 ```
 
-### 2. サンプル関数をテストコードを作成する
+### 2. サンプル関数のテストコードを作成する
 
 ```ts
 import { greet, sayGoodBye } from "../../src/greet";
@@ -96,11 +96,11 @@ jest.mock("../../src/greet", () => ({
 }));
 
 describe("mockの動作確認2", () => {
-  test("greet関数がJest.mockで元々の関数を使用すると定義された為、元々の関数の内容になる", () => {
+  test("greet関数がJest.mockで元々の関数を使用すると定義されたため、元々の関数の内容になる", () => {
     expect(greet("Taro")).toBe("Hello! Taro.");
   });
 
-  test("sayGoodBye関数がJest.mockで定義された為、モック化された内容に変更される", () => {
+  test("sayGoodBye関数がJest.mockで定義されたため、モック化された内容に変更される", () => {
     const message = `${sayGoodBye("Taro")} See you.`;
     expect(message).toBe("Good bye, Taro. See you.");
   });
@@ -117,8 +117,8 @@ $ npm test test/unittest/mock02.test.ts
 
  PASS  test/unittest/mock02.test.ts
   mockの動作確認2
-    √ greet関数がJest.mockで元々の関数を使用すると定義された為、元々の関数の内容になる (3 ms)
-    √ sayGoodBye関数がJest.mockで定義された為、モック化された内容に変更される
+    √ greet関数がJest.mockで元々の関数を使用すると定義されたため、元々の関数の内容になる (3 ms)
+    √ sayGoodBye関数がJest.mockで定義されたため、モック化された内容に変更される
 
 Test Suites: 1 passed, 1 total
 Tests:       2 passed, 2 total

@@ -36,7 +36,8 @@ published: true # 公開:true / 非公開:false
 1. 初項の`undefined`は**falsy な値**のため、次項の`null`が対象となる
 2. `null`は**falsy な値**のため、次項の`0`が対象となる
 3. `0`は**falsy な値**のため、次項の`NaN`が対象となる
-4. `NaN`は**falsy な値**のため、次項の`foo`が**最終値**として決定する
+4. `NaN`は**falsy な値**のため、次項の`""`が対象となる
+5. `""`は**falsy な値**のため、次項の`"foo"`が**最終値**として決定する
 
 ```typescript
 const foo = undefined || null || 0 || NaN || "" || "foo";
@@ -55,7 +56,7 @@ console.log(foo);
 
 1. 初項の`100`は**truthy な値**のため、次項の`[]`が対象となる
 2. `[]`は**truthy な値**のため、次項の`{}`が対象となる
-3. `{}`は**truthy な値**のため、次項の`hoge`が**最終値**として決定する
+3. `{}`は**truthy な値**のため、次項の`"hoge"`が**最終値**として決定する
 
 ```typescript
 const hoge = 100 && [] && {} && "hoge";

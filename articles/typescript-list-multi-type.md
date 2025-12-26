@@ -1,5 +1,5 @@
 ---
-title: "[TypeScript] 合併型の配列(複数の型が含まれているを配列)の型定義" # 記事のタイトル
+title: "[TypeScript] 合併型の配列(複数の型が含まれている配列)の型定義" # 記事のタイトル
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -11,17 +11,17 @@ published: true # 公開:true / 非公開:false
 今回は下記書籍で`TypeScript`について学習しました。
 下記内容まで解説します。
 
-- 合併型の配列(複数の型が含まれているを配列)の型定義方法について
+- 合併型の配列（複数の型が含まれている配列）の型定義方法について
 
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
 
 ### 結論
 
 :::message
-文字列と数値の混合の配列のあ場合、`(number | string)[]`を指定する
+文字列と数値の混合の配列の場合、`(number | string)[]`を指定する
 :::
 
-## 1. 文字列のみの配列
+### 1. 文字列のみの配列
 
 ```ts
 const stgList: string[] = ["1", "2", "3", "4", "5"];
@@ -102,7 +102,7 @@ const numOrStgListMulti: (number | string)[][] = [
   [6, 7, 8, 9, 10],
 ];
 
-console.log(numMultiList);
+console.log(numOrStgListMulti);
 ```
 
 実行結果を確認する

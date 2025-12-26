@@ -34,7 +34,7 @@ let basePrice: number = qty * up;
 :::
 
 :::message
-変数を意味の分かる quantity(数量) unitPrice(単価)を単語にすると事で、メソッドが理解しやすい
+変数を意味の分かる quantity(数量) unitPrice(単価)を単語にすることで、メソッドが理解しやすい
 
 ```ts
 let basePrice: number = quantity * unitPrice;
@@ -45,7 +45,7 @@ let basePrice: number = quantity * unitPrice;
 ### 目的ごとに変数を用意する
 
 :::message alert
-`price`という変数を使いまわしているので、改修による影響範囲大きい
+`price`という変数を使いまわしているので、改修による影響範囲が大きい
 
 ```ts
 let price: number = quantity * unitPrice;
@@ -55,15 +55,18 @@ if (price > 1000) price += 500;
 price = price * taxRate();
 ```
 
-目的ごとに変数を分けているので、改修による影響範囲小さい
+:::
+
+:::message
+目的ごとに変数を分けているので、改修による影響範囲が小さい
 
 ```ts
 let basePrice: number = quantity * unitPrice;
 
-let shippingConst: number = 0;
-if (basePrice > 1000) shippingConst = 500;
+let shippingCost: number = 0;
+if (basePrice > 1000) shippingCost = 500;
 
-let shippingCost: number = basePrice * shippingConst * taxRate();
+let itemPrice: number = (basePrice + shippingCost) * taxRate();
 ```
 
 :::
@@ -71,15 +74,15 @@ let shippingCost: number = basePrice * shippingConst * taxRate();
 ### メソッドとして独立する
 
 :::message alert
-**if 文**の有無で可読性が下がります。
+**if 文**の有無で可読性が下がる
 
 ```ts
 let basePrice: number = quantity * unitPrice;
 
-let shippingConst: number = 0;
-if (basePrice > 1000) shippingConst = 500;
+let shippingCost: number = 0;
+if (basePrice > 1000) shippingCost = 500;
 
-let shippingCost: number = basePrice * shippingConst * taxRate();
+let itemPrice: number = (basePrice + shippingCost) * taxRate();
 ```
 
 :::
@@ -87,14 +90,14 @@ let shippingCost: number = basePrice * shippingConst * taxRate();
 :::message
 
 - メソッド名から処理を推察しやすい
-- 改修がメソッド内で留める事が可能
+- 改修がメソッド内で留めることが可能
 
 ```ts
 let basePrice: number = quantity * unitPrice;
 
-let shippingConst: number = getShippingConst(basePrice);
+let shippingCost: number = getShippingCost(basePrice);
 
-let itemPrice: number = basePrice * shippingConst * taxRate();
+let itemPrice: number = (basePrice + shippingCost) * taxRate();
 ```
 
 :::
@@ -102,7 +105,7 @@ let itemPrice: number = basePrice * shippingConst * taxRate();
 ### 値の範囲を制限してプログラムを分かりやすく安全にする
 
 :::message alert
-引数の型を数値がしているが、`9007199254740991`(最大数)まであ加算する事が出来る
+引数の型を数値にしているが、`9007199254740991`(最大数)まで加算することができる
 -> 無駄なテストパターンが発生する
 
 ```ts
@@ -139,12 +142,14 @@ const addNumbers = (num1: Number1To5, num2: Number1To5): number => num1 + num2;
 - 個々の要素の内容が変化する(可能性がある)
 - 0 件の場合の処理
 - 要素の最大数の制限
-  :::
-  :::message
-  ある機能の部分メソッドは、別ファイルとかで管理せず**同じクラス内で管理する**
-  :::
 
-## 場合分けのロジックを整理する
+:::
+
+:::message
+ある機能の部分メソッドは、別ファイルとかで管理せず**同じクラス内で管理する**
+:::
+
+## 2. 場合分けのロジックを整理する
 
 ### なるべく else を使わない
 
@@ -175,7 +180,7 @@ return 2;
 
 :::
 
-## 業務ロジックを分かりやすく整理する
+## 3. 業務ロジックを分かりやすく整理する
 
 ### メソッドをロジックの置き場にする
 

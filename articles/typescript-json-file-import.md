@@ -1,5 +1,5 @@
 ---
-title: "[TypeScript] Jsonファイルを直接インポートする" # 記事のタイトル
+title: "[TypeScript] JSONファイルを直接インポートする" # 記事のタイトル
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -9,7 +9,7 @@ published: true # 公開:true / 非公開:false
 ## はじめに
 
 `TypeScript`をより深く理解したく下記書籍を読みました。
-下記書籍の`Jsonファイルを直接インポートする方法`について学びがあったので、記事として記録します。
+下記書籍の`JSONファイルを直接インポートする方法`について学びがあったので、記事として記録します。
 @[card](https://www.oreilly.co.jp/books/9784873119045/)
 
 ## 結論
@@ -30,7 +30,7 @@ tsconfig.json の`"resolveJsonModule": true,`を追加する
 
 ## 準備
 
-### 1. ディレクトリー構成の確認
+### 1. ディレクトリ構成の確認
 
 ```bash
 .
@@ -39,7 +39,7 @@ tsconfig.json の`"resolveJsonModule": true,`を追加する
 └── tsconfig.json
 ```
 
-### 2. 読み取る対象の Json ファイルの確認
+### 2. 読み取る対象の JSON ファイルの確認
 
 ```json:data.json
 {
@@ -59,13 +59,13 @@ tsconfig.json の`"resolveJsonModule": true,`を追加する
 }
 ```
 
-### 3.Json ファイルを読み取る ts ファイルの編集
+### 3. JSON ファイルを読み取る ts ファイルの編集
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
 ```
 
-### 4.tsconfig.json の編集
+### 4. tsconfig.json の編集
 
 ```json:tsconfig.json
 {
@@ -78,7 +78,7 @@ import * as data from './data.json';
 
 ## 出力確認
 
-### 1. Json ファイルの全てを出力する
+### 1. JSON ファイルの全てを出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
@@ -98,7 +98,7 @@ $ ts-node resolveJsonModule.ts
 }
 ```
 
-### 2. Json ファイルのタイムスタンプを出力する
+### 2. JSON ファイルのタイムスタンプを出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
@@ -113,7 +113,7 @@ $ ts-node resolveJsonModule.ts
 2019-01-01 12:00:00
 ```
 
-### 3. Json ファイルの data の配列を出力する
+### 3. JSON ファイルの data の配列を出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';
@@ -128,7 +128,7 @@ $ ts-node resolveJsonModule.ts
 [ { id: 1, name: 'Michael' }, { id: 2, name: 'John' } ]
 ```
 
-### 4. Json ファイルの data の配列の 0 番目を出力する
+### 4. JSON ファイルの data の配列の 0 番目を出力する
 
 ```ts:resolveJsonModule.ts
 import * as data from './data.json';

@@ -45,7 +45,7 @@ const announceSong = (song: string, singer?: string) => {
 
 ### 1. オプションパラメーターに文字列の引数を渡す
 
-指定した文字列に文字列を引数として渡したので、問題がない
+オプションパラメーターに文字列を引数として渡したので、問題ありません
 
 ```ts
 announceSong("Have fun !", "ayaka");
@@ -58,7 +58,7 @@ announceSong("Have fun !", "ayaka");
 
 ### 2. オプションパラメーターに undefined の引数を渡す
 
-singer は「undefined」が追加された合併型になるので、Error にならない
+singer は「undefined」が追加された合併型になるので、エラーになりません
 
 ```ts
 announceSong("Have fun !", undefined);
@@ -70,7 +70,7 @@ announceSong("Have fun !", undefined);
 
 ### 3. オプションパラメーターは、必ず最後であること
 
-オプションパラメーターを先頭に持ってくると、下記のような Error が発生する
+オプションパラメーターを先頭に持ってくると、下記のようなエラーが発生します
 
 ```ts
 const announceSong = (song?: string, singer: string) => {

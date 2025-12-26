@@ -18,7 +18,7 @@ published: true # 公開:true / 非公開:false
 
 :::message
 `never`とは、**「return 文を持たない」** や **「処理しない関数」** の場合、
-戻り値の型を使う事ができる型です。
+戻り値の型を使うことができる型です。
 :::
 
 ## 1. return 文を持たない
@@ -33,7 +33,7 @@ const fail = (message: string): never => {
 
 :::message alert
 
-return 文を持つ関数(何かしらの処理を有する)ような関数では、下記のようなエラーが発生する
+return 文を持つ関数（何かしらの処理を有する）では、下記のようなエラーが発生します
 (※ 値を返さない return 文は、`undefined` を返します)
 `Type 'undefined' is not assignable to type 'never'.`
 `Unreachable code detected.`

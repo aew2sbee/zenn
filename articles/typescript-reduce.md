@@ -9,13 +9,13 @@ published: true # 公開:true / 非公開:false
 ## 🌱 はじめに
 
 下記書籍で初めて`TypeScript`を学習しました。
-`reduce関数`について学びました。その記録を執筆しします。
+`reduce関数`について学びました。その記録を執筆します。
 @[card](https://oukayuka.booth.pm/items/2368045)
 
 ### 🌱 結論
 
 :::message
-配列の各要素に対して、結合して単一の値を生成するメソッド
+配列の各要素を結合して単一の値を生成するメソッド
 
 ```ts
 const hoge = list.reduce((要素1, 要素2) => 処理);

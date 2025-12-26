@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## はじめに
 
-この記事では、コードをシンプルに書ける**parameter**を解説します。
+この記事では、コードをシンプルに書ける**rest parameter**を解説します。
 
 :::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
@@ -17,7 +17,7 @@ published: true # 公開:true / 非公開:false
 ## 結論
 
 :::message
-最後の引数に「...」を追加すると、1 つの配列に全ての値が格納される
+最後の引数に「...」を追加すると、1 つの配列に全ての値が格納される。
 
 ```ts
 const foodList = (...foods: string[]) => foods;
@@ -25,9 +25,9 @@ const foodList = (...foods: string[]) => foods;
 
 :::
 
-## 1.全ての引数を配列にする
+## 1. 全ての引数を配列にする
 
-全ての引数(...foods)を配列に格納する
+全ての引数(...foods)を配列に格納する。
 
 ```ts
 const foodList = (...foods: string[]) => foods;

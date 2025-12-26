@@ -21,7 +21,7 @@ _`Add Task`をクリックすると、即座にタスクが増えるページ_
 
 ### 前提条件
 
-下記の作業が完了済みを想定しております。
+下記の作業が完了していることを想定しております。
 @[card](https://zenn.dev/aew2sbee/articles/react-install)
 
 ### ファイル構成
@@ -50,7 +50,7 @@ src
 まずは**useState のキホン**を理解します。
 
 :::message
-`useState`のキホン分法は下記の通りになります。
+`useState`のキホン構文は下記の通りになります。
 
 ```ts
 const [状態, 状態更新関数] = useState(初期値);
@@ -58,7 +58,7 @@ const [状態, 状態更新関数] = useState(初期値);
 
 :::
 
-キホン分法を理解できたと思うので、実際にコーディングします
+キホン構文を理解できたと思うので、実際にコーディングします。
 
 1. `useState`を使ったコンポーネントを作成する
 
@@ -90,7 +90,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 // 自作コンポーネントをインポート
-import { Satate } from './components/useState01';
+import { State } from './components/useState01';
 
 function App() {
   return (
@@ -120,11 +120,11 @@ npm start
    ![react-usestate-step02](/images/articles/react-usestate/react-usestate-step02.png)
    _`+1`ボタンを 3 回クリックすると、`Count`の数が 3 になります_
 
-以上で`useState`のキホンとなります
+以上で`useState`のキホンとなります。
 
 ## 2. useState で Object を使う
 
-次は、`useState`を扱うデータを`Object`の場合を解説します
+次は、`useState`を扱うデータを`Object`の場合を解説します。
 
 1. `useState`を使い、扱うデータを`Object`でコンポーネントを作成する
 
@@ -188,7 +188,7 @@ npm start
 4. 起動が完了したら`http://localhost:3000/`にアクセスする
 
 5. 左の入力欄(Name)に適当な文字を入力し、`Name:`の右隣に即座に文字が表示される事を確認する
-6. 右の入力欄(Age)に適当な文字を入力し、`Age:`の右隣に即座に文字が表示され、`Name:`の右隣にされている文字はそのままであること
+6. 右の入力欄(Age)に適当な文字を入力し、`Age:`の右隣に即座に文字が表示され、`Name:`の右隣に表示されている文字はそのままであることを確認する
    ![react-usestate-step03](/images/articles/react-usestate/react-usestate-step03.png)
    _左の入力欄(Name)に`ふるた`を入力し、右の入力欄(Age)に`18`と入力したページ_
 
@@ -196,7 +196,7 @@ npm start
 
 ## 3. useState で配列を使う
 
-次は、`useState`を扱うデータを`List`の場合を解説します
+次は、`useState`を扱うデータを`List`の場合を解説します。
 
 1. `useState`を使い、扱うデータを`List`でコンポーネントを作成する
 
@@ -216,7 +216,7 @@ export const SatateList = () => {
         <>
             <button onClick={addTask}>Add Task</button>
             <ul>
-                // mapを使い、<li>をの要素を作成する
+                // mapを使い、<li>の要素を作成する
                 {taskList.map(task => (
                     <li key={task.id}>Task{task.id}</li>
                 ))}
@@ -270,7 +270,7 @@ npm start
 ## 4. useState で型を指定する
 
 :::message
-`useState`のキホン分法は下記の通りになります。
+`useState`のキホン構文は下記の通りになります。
 
 ```ts
 const [状態, 状態更新関数] = useState<型>(初期値);
@@ -283,7 +283,7 @@ const [状態, 状態更新関数] = useState<型>(初期値);
 import React,  {useState} from "react";
 
 export const State = () => {
-    // 初期値が0のため。数値型を指定する
+    // 初期値が0のため、数値型を指定する
     const [count, setCount] = useState<number>(0)
     return (
         <>
@@ -307,7 +307,7 @@ type TypeProfile = {
 }
 
 export const SatateObject = () => {
-    // 作成した方をuseStateで使う型として利用する
+    // 作成した型をuseStateで使う型として利用する
     const [profile, setProfile] = useState<TypeProfile>({name: '', age: 0})
     return (
         <>
