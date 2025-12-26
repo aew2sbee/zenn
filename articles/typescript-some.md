@@ -17,7 +17,7 @@ published: true # 公開:true / 非公開:false
 ## 結論
 
 :::message
-配列の要素に**指定された条件を満たす**か判定するメソッド
+配列の要素が**指定された条件を満たす**かを判定するメソッド
 
 ```ts
 const hoge = list.some((各要素) => 条件式);
@@ -25,7 +25,7 @@ const hoge = list.some((各要素) => 条件式);
 
 **メリット**
 
-1. 引数として関数を直接に渡すことも可能です。
+1. 引数として関数を直接渡すことも可能です。
 
 ```diff ts
 const numbers = [1, 2, 3, 4, 5];
@@ -55,7 +55,7 @@ const numbers = [1, 2, 3, 4, 5];
 // 配列の要素で1つでも1より大きい値があるかを確認する
 const result = numbers.some((i) => i > 1);
 
-console.log(result(items));
+console.log(result);
 ```
 
 :::details 実行結果を確認する
@@ -74,7 +74,7 @@ const numbers = [1, 2, 3, 4, 5];
 // 配列の要素で1つでも5より大きい値があるかを確認する
 const result = numbers.some((i) => i > 5);
 
-console.log(result(items));
+console.log(result);
 ```
 
 :::details 実行結果を確認する

@@ -64,6 +64,10 @@ published: false # 公開:true / 非公開:false
 <!-- 関連情報・リンク -->
 ```
 
+## ADR ツールの導入
+
+ADR の作成を効率化するためのツール「adr-tools」があります。
+
 ```bash
 git clone https://github.com/npryce/adr-tools.git C:\Program Files\Git\usr\bin
 ```

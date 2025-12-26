@@ -25,7 +25,7 @@ published: true # 公開:true / 非公開:false
 
 ```ts
 const log = (): void => {
-  console.log("Hello Word");
+  console.log("Hello World");
 };
 ```
 
@@ -33,23 +33,23 @@ const log = (): void => {
 
 ```ts
 const log = (): void => {
-  console.log("Hello Word");
+  console.log("Hello World");
   return;
 };
 ```
 
-### 3. 値を返す return 文
+## 3. 値を返す return 文
 
 :::message alert
 
-`true` を返す関数に `void` を指定すると、下記のようなエラーが発生します
+`true` を返す関数に `void` を指定すると、下記のようなエラーが発生します。
 `Type 'boolean' is not assignable to type 'void'.`
 
 :::
 
 ```ts
 const log = (): void => {
-  console.log("Hello Word");
+  console.log("Hello World");
   return true;
 };
 ```
