@@ -105,8 +105,8 @@ https://api.example.com/users/123
 ### 4-1. **小文字**を使う
 
 ⭕ `v1`が`version`を表し、`version 1.0`が予想できる
-⭕ `itmes/123`は、`itmes`の中の`id`が`123`を取得している事が予想できる
-⭕ 別の`itmes`なら`itmes/234`などにしたら取得出来そう
+⭕ `itmes/123`は、`itmes`の中の`id`が`123`を取得していることが予想できる
+⭕ 別の`itmes`なら`itmes/234`などにしたら取得できそう
 
 ```bash: good
 https://api.example.com/v1/itmes/123

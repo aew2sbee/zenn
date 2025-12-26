@@ -36,7 +36,7 @@ docker run -td --name="React-env" node:14.17.0 /bin/bash
 
 ### 2. 作成したコンテナを確認する
 
-Docker Desktop を起動し、さきほどのコンテナが作成出来ている事を確認します。
+Docker Desktop を起動し、さきほどのコンテナが作成できていることを確認します。
 
 ![docker_desktop_step7](/images/articles/docker-react-env/docker_desktop_step7.png)
 
@@ -47,13 +47,13 @@ Docker Desktop を起動し、さきほどのコンテナが作成出来てい�
 Web アプリを作成する準備が整ったので作成していきます。
 まずは、さきほど作成したコンテナを起動します。
 
-1. Visual Studio Code の左側の`Dcoker`のアイコンをクリックします。
+1. Visual Studio Code の左側の`Docker`のアイコンをクリックします。
 2. さきほど作成したコンテナを右クリックで`Start`を押し、コンテナを起動します。
 
 ![React_step1](/images/articles/docker-react-env/React_step1.png)
 
 :::message
-Dcoker のアイコンをクリックしてもコンテナを確認出来ない場合は、Dcoker Desktop を起動してリロードしてみて下さい
+Docker のアイコンをクリックしてもコンテナを確認できない場合は、Docker Desktop を起動してリロードしてみてください
 :::
 
 ### 2. 起動したコンテナに接続する
@@ -93,7 +93,7 @@ sample_app：Web アプリの名前
 --template typescript：typescript で Web アプリを構築する
 :::
 
-### 4. React を起動する
+### 5. React を起動する
 
 下記コマンドを実行して、Web アプリを起動します。
 
@@ -103,7 +103,7 @@ yarn start
 ```
 
 問題なく起動したら、上記のようなに
-勝手にブラウザーが起動し、表示されます。
+勝手にブラウザが起動し、表示されます。
 
 ![React_step6](/images/articles/docker-react-env/React_step6.png)
 

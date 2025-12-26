@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## はじめに
 
-社内の有志メンバーの向けに Docker DeskTop のインストールの方法を解説します。
+社内の有志メンバー向けに Docker Desktop のインストール方法を解説します。
 
 ## Docker DeskTop のインストール
 
@@ -51,7 +51,7 @@ published: true # 公開:true / 非公開:false
 
 ### 5. インストール完了
 
-下記の画像のように Docker Desktop が問題なく起動出来たら OK です！
+下記の画像のように Docker Desktop が問題なく起動できたら OK です！
 
 ![docker_desktop_step6](/images/articles/docker-desktop-install/docker_desktop_step6.png)
 

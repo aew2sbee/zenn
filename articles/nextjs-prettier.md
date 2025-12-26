@@ -27,7 +27,7 @@ npm install prettier --save-dev
 
 ## 2. .prettierrc の作成
 
-プロジェクトのディレクトリー配下に下記コマンドで作成
+プロジェクトのディレクトリ配下に下記コマンドで作成
 
 ```bash
 touch .prettierrc
@@ -57,7 +57,7 @@ touch .prettierrc
 
 ## 5. Prettier を適応させる
 
-下記コマンドで src 配下のコードに適応する事が出来る
+下記コマンドで src 配下のコードに適用することができる
 
 ```bash
 npm run prettier-format

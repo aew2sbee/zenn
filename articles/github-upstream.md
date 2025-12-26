@@ -1,5 +1,5 @@
 ---
-title: "[GitHub] fork元のレポジトリーをupstreamに設定する" # 記事のタイトル
+title: "[GitHub] fork元のリポジトリをupstreamに設定する" # 記事のタイトル
 emoji: "🐙‍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["git", "github", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## はじめに
 
-この記事では、**fork 元のレポジトリーを upstream に設定する方法**を解説します。
+この記事では、**fork 元のリポジトリを upstream に設定する方法**を解説します。
 
 ## 結論
 

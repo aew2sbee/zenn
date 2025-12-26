@@ -54,7 +54,7 @@ src
 ```tsx:src/app/sample/page.tsx
 export default function Page() {
   return (
-    <div>こちらは、sampleディレクトリーに配置したpage.tsxです。</div>
+    <div>こちらは、sampleディレクトリに配置したpage.tsxです。</div>
   )
 }
 ```

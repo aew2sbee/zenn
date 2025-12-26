@@ -15,7 +15,7 @@ published: true # 公開:true / 非公開:false
 ```html
 <input type="checkbox" id="agreement-check" />
 <label for="agreement-check"><a href="#" target="_brank">利用規約</a>に同意する</label>
-<button type="submit" value="登録" class="submit_btn" disabled="”disabled”">登録</button>
+<button type="submit" value="登録" class="submit_btn" disabled>登録</button>
 ```
 
 ## 2. CSS ファイルの編集

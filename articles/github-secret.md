@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## 🌱 はじめに
 
-この記事では、**secrets 情報をマスクされず、出力するを確認方法** を解説します。
+この記事では、**secrets 情報をマスクされずに出力する確認方法** を解説します。
 下記書籍を参考にしながら調査をしました。
 
 :::details 参考資料
@@ -77,6 +77,6 @@ ABCDEFG
 :::
 
 ```bash
-▶ Rub echo "${SECRET_INFO:0:1} ${SECRET_INFO#?}"
+▶ Run echo "${SECRET_INFO:0:1} ${SECRET_INFO#?}"
 A BCDEFG
 ```

@@ -16,7 +16,7 @@ published: true # 公開:true / 非公開:false
 
 ## 1. tsconfig.json の作成
 
-下記コマンドでデフォルトで作成する事が出来ますが、PJ 作成時に作成されます。
+下記コマンドでデフォルトで作成することができますが、PJ 作成時に作成されます。
 
 ```bash
 tsc --init

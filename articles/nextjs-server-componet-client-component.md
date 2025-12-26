@@ -1,5 +1,5 @@
 ---
-title: "[Next.js] Server Componet とClient Componentとは？" # 記事のタイトル
+title: "[Next.js] Server ComponentとClient Componentとは？" # 記事のタイトル
 emoji: "⚡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["nextjs", "フロントエンド", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -9,7 +9,7 @@ published: true # 公開:true / 非公開:false
 ## はじめに
 
 `Next.js`の学習の為に、下記書籍を読みました。
-下記書籍の`Server Componet とClient Component`について学びがあったので、記事として記録します。
+下記書籍の`Server ComponentとClient Component`について学びがあったので、記事として記録します。
 @[card](https://gihyo.jp/book/2024/978-4-297-14061-8)
 
 ## 結論
@@ -28,7 +28,7 @@ published: true # 公開:true / 非公開:false
 - インタラクティブな機能を持つ
 - コンポーネントに保持した値を扱う
 - ブラウザ専用の API を使用する
-- ブラウザ専用の Hool を使用する
+- ブラウザ専用の Hook を使用する
 - React Class コンポーネントを使う
 
 :::
@@ -39,12 +39,12 @@ published: true # 公開:true / 非公開:false
 
 :::message
 **「非同期関数(async function)」** が使える
-⇒ 直接外部 WebAPI のデータを取得してレンダリングする事が可能
+⇒ 直接外部 WebAPI のデータを取得してレンダリングすることが可能
 :::
 
 :::message alert
 何も宣言をしなければ、default ですべてのコンポーネントが SRC として扱われる
-⇒ ブラウザで実行すべき JavaScript が送られない=イベントハンドラー等が出来ない
+⇒ ブラウザで実行すべき JavaScript が送られない=イベントハンドラ等ができない
 :::
 
 ```tsx
@@ -67,7 +67,7 @@ export default async function ServerComponent() {
 
 > ブラウザ/サーバー両方で実行されるコンポーネント
 > :::message
-> ブラウザで実行すべき JavaScript が送れる=イベントハンドラー等が出来る
+> ブラウザで実行すべき JavaScript が送れる=イベントハンドラ等ができる
 > :::
 
 :::message alert

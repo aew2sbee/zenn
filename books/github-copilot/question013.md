@@ -2,7 +2,7 @@
 title: "GitHub Copilot からのコンテンツの除外"
 ---
 
-## Q13: What happens when you exclude content from GitHub Copilot? (Choose two)
+## Q13: GitHub Copilot からコンテンツを除外するとどうなりますか？(2つ選択してください)
 
 ### 選択肢
 

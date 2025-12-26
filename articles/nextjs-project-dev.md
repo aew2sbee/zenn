@@ -46,7 +46,7 @@ $ npx create-next-app
 
 #### What is your project named? … next-js - プロジェクトの名前は何にしますか？
 
-A. 例えば、`next-js`というプロジェクトを作成したら、下記のようなディレクトリー構成になります。
+A. 例えば、`next-js`というプロジェクトを作成したら、下記のようなディレクトリ構成になります。
 
 ```bash
 next-js
@@ -85,7 +85,7 @@ Tailwind CSS は、CSS のフレームワークです。目的のプロジェク
 
 #### Would you like to use src/ directory? … No / Yes - src/を使いますか？
 
-`Yes`と回答すると、下記のディレクトリー構成のように`src`というディレクトリーが生成されます。
+`Yes`と回答すると、下記のディレクトリ構成のように`src`というディレクトリが生成されます。
 
 ```bash
 next-js
@@ -98,14 +98,14 @@ next-js
 
 #### Would you like to use App Router? (recommended) … No / Yes - App Router を使いますか？(推奨)
 
-ルーティング機能について古い機能を使うか？新しい機能(App Router)を使うのか？を訪ねています。推奨事項なので`Yes`と回答します
+ルーティング機能について古い機能を使うか？新しい機能(App Router)を使うのか？を尋ねています。推奨事項なので`Yes`と回答します
 
 ---
 
 #### Would you like to customize the default import alias (@/\*)? … No / Yes - デフォルトの impotr alias をカスタマイズしますか？
 
 こだわりがない場合は、`No`と回答します。
-ちなみに下記のような import 文をパスを省略する事が出来ます。
+ちなみに下記のような import 文のパスを省略することができます。
 
 ```ts
 // before

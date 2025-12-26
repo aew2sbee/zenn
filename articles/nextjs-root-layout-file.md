@@ -14,7 +14,7 @@ published: true # 公開:true / 非公開:false
 
 ### Root layout ファイルとは
 
-> 「app」ディレクトリー直下に配置した layout.tsx のことで
+> 「app」ディレクトリ直下に配置した layout.tsx のことで
 > 複数の画面間で共有される UI を実装するファイルです。
 
 ```bash

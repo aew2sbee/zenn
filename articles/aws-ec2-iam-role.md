@@ -179,7 +179,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 11. ポリシーの一覧に`test-MFA`が追加されていることを確認する
     ![sandbooks-aws-IAM-MFA-step10](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step10.png)
 
-### 6. 本人が MFA 設定を行う
+### 5. 本人が MFA 設定を行う
 
 1. 対象のユーザーでログインをする
    ![sandbooks-aws-IAM-step10](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-step10.png)
@@ -190,13 +190,13 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 4. 登録するデバイス名を`デバイス名`の入力欄に記入する
    :::message alert
    【注意１】
-   他のメンバーと同じデバイス名を登録する事が出来ません。
+   他のメンバーと同じデバイス名を登録することができません。
    **NG** : A さん=iPhone, B さん=iPhone
    **OK** : A さん=iPhone-A, B さん=iPhone-B
    :::
    :::message alert
    【注意２】
-   一度入力したデバイス名は、登録してなくても利用する事が出来ません。
+   一度入力したデバイス名は、登録してなくても利用することができません。
    :::
 5. `認証アプリケーション`を選択する
 6. `次へ`をクリックする
@@ -210,18 +210,18 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
    自分は下記を利用しました。
    @[card](https://www.microsoft.com/ja-jp/security/mobile-authenticator-app)
    ![sandbooks-aws-IAM-MFA-step14](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step14.png)
-8. `QRコードを表示`をクリックし、QR コードさせる
-9. 先ほどインストールした`認証アプリケーション`QR コードを読み込む
+8. `QRコードを表示`をクリックし、QR コードを表示させる
+9. 先ほどインストールした`認証アプリケーション`で QR コードを読み込む
    ![sandbooks-aws-IAM-MFA-step15](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step15.png)
 10. スマホの画面に 30 秒に 1 回 6 桁の数字が表示されるので、連続で 6 桁の数字を 2 回分入力する
 11. `MFAを追加`をクリックする
     ![sandbooks-aws-IAM-MFA-step16](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step16.png)
 12. 成功メッセージを確認する
     ![sandbooks-aws-IAM-MFA-step17](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step17.png)
-13. `多要素認証(MFA)`の一覧に先ほどのデバイス名が登録させている事を確認する
+13. `多要素認証(MFA)`の一覧に先ほどのデバイス名が登録されていることを確認する
     ![sandbooks-aws-IAM-MFA-step18](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step18.png)
 
-### 7. MFA が機能しているのか確認する
+### 6. MFA が機能しているのか確認する
 
 1. 一度サインアウトする
 2. 再度ログインをする

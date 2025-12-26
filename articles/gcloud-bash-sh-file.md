@@ -69,7 +69,7 @@ CRLF を LF に変換する必要があります！
 :::message
 **bash script.sh** を実行する前に**dos2unix .env**を実行する
 :::
-dos2unix: DOS や Windows 環境で作成されたテキストファイルの CRLF を Unix/Linux 環境で使われる LF に変換する事が出来ます
+dos2unix: DOS や Windows 環境で作成されたテキストファイルの CRLF を Unix/Linux 環境で使われる LF に変換することができます
 
 ```bash
 dos2unix .env
@@ -85,4 +85,4 @@ Copying file://files\images\sampleimage.png to gs://sample_bucket/images/samplei
 Average throughput: 1.2MiB/s
 ```
 
-問題なくシェルスクリプトが実行出来ました！
+問題なくシェルスクリプトが実行できました！

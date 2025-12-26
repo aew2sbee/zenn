@@ -8,7 +8,7 @@ published: true # 公開:true / 非公開:false
 
 ## はじめに
 
-この記事では、Django インストールし下記の画面が表示手順を解説します。
+この記事では、Django をインストールし下記の画面が表示される手順を解説します。
 ![Djangoインストール](/images/articles/django-install/django-install.png)
 
 ## 0. ファイル構成の確認
@@ -20,11 +20,11 @@ src
 └─ Django
 ```
 
-## 1. ライブラリーのインストール
+## 1. ライブラリのインストール
 
-django ライブラリーをインストールします。
+django ライブラリをインストールします。
 
-1. `djangoライブラリー`を下記コマンドでインストールする
+1. `djangoライブラリ`を下記コマンドでインストールする
 
 ```bash
 pip install django
@@ -113,7 +113,7 @@ src
 
 ## 4. settings.py の編集
 
-**アプリケーションの起動**が出来るようアプリケーション側の apps.py のクラスを追加します。
+**アプリケーションの起動**ができるようアプリケーション側の apps.py のクラスを追加します。
 
 1. `INSTALLED_APPSの配列`に`'Study.apps.StudyConfig',`を追加します。
 
@@ -163,6 +163,6 @@ Quit the server with CONTROL-C.
 2. ブラウザ上でアプリケーションを確認する
    `http://127.0.0.1:8000/`をブラウザの URL 欄に入力しアプリケーションを表示させます。
    :::message
-   チュートリアルのロケットを飛ばすことが出来ました！
+   チュートリアルのロケットを飛ばすことができました！
    :::
    ![Djangoインストール](/images/articles/django-install/django-install.png)
