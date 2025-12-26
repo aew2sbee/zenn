@@ -3,7 +3,7 @@ title: "[レビュー] 指摘漏れを減らす方法" # 記事のタイトル
 emoji: "🔎" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア記事
 topics: ["システム設計", "設計", "初心者向け", "レビュー"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに

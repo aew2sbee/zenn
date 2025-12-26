@@ -3,7 +3,7 @@ title: "[IPA] 令和7年 情報セキュリティマネジメント試験に合�
 emoji: "💯" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["情報セキュリティマネジメント試験", "IPA", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに

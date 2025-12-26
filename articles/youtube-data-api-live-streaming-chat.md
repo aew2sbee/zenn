@@ -3,7 +3,7 @@ title: "[YouTube API] ライブ/配信中のチャットを取得する" # 記�
 emoji: "🎥" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["python", "youtubeapi", "youtubelive", "youtubedataapi", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: false # 公開:true / 非公開:false
 ---
 
 ## はじめに

@@ -3,7 +3,7 @@ title: "私なりの基本情報技術者試験を攻略する考え方" # 記�
 emoji: "💯" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["基本情報技術者試験", "IPA", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: false # 公開:true / 非公開:false
 ---
 
 ## はじめに

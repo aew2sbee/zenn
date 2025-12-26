@@ -3,12 +3,12 @@ title: "「なんでこんな実装したの？」にならないためのADR" #
 emoji: "🤷‍♂️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["初心者向け", "ADR"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: false # 公開:true / 非公開:false
 ---
 
 ## はじめに
 
-この記事では、**ADR**についてを解説します。
+この記事では、**ADR**について解説します。
 
 :::details 参考資料
 @[card](https://gihyo.jp/magazine/SD)
@@ -17,17 +17,17 @@ published: false # 公開設定（falseにすると下書き）
 ## ADR とは
 
 :::message
-**ADR = Architectue Decisonn Reacords**
-ソフトウェア開発やシステム開発んいおいて、
+**ADR = Architecture Decision Records**
+ソフトウェア開発やシステム開発において、
 アーキテクチャに関する重要な意思決定を記録するドキュメントのこと
 :::
 なぜ、その決定が行われたのかを説明し、
-詳細同じ問題に直面した際にその背景を理解・議論するためのものです
+将来同じ問題に直面した際にその背景を理解・議論するためのものです。
 
 ## ADR のテンプレート
 
 ```md
-# タイトル
+## 1. タイトル
 
 <!-- 意思決定の概要を示す簡潔な表現 -->
 

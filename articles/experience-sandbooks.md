@@ -3,7 +3,7 @@ title: "[体験談] 未完成な社内図書館アプリ" # 記事のタイト�
 emoji: "🥝" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["初心者向け", "個人開発", "nextjs", "react", "django"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
