@@ -8,8 +8,8 @@ published: true # 公開設定（falseにすると下書き）
 
 ## はじめに
 
-nyenv の yarn で vite のアプリを作成しようとした時に
-`yarn: error: no such option: --template`を実行して下記の Error が発生しました。
+anyenv の yarn で vite のアプリを作成しようとした時に
+`yarn: error: no such option: --template`を実行した際に下記の Error が発生しました。
 
 ```bash
 $ yarn create vite hello-world --template=react-ts
@@ -18,7 +18,7 @@ Usage: yarn [options]
 yarn: error: no such option: --template
 ```
 
-色々調べて無事に解決出来ましたので、その方法をご紹介します。
+色々調べて無事に解決できましたので、その方法をご紹介します。
 
 | 項目             | 内容                                                                      |
 | ---------------- | ------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ yarn: error: no such option: --template
 git clone https://github.com/anyenv/anyenv ~/.anyenv
 ```
 
-### 2. nodenv のインストールする
+### 2. nodenv をインストールする
 
 下記コマンドで`nodenv`をインストールします。
 
@@ -56,7 +56,7 @@ exec $SHELL -l
 - **Q: exec $SHELL -l とは？**
 - A: exec $SHELL -l を実行することで、現在のシェルがログインシェルとして再起動され、環境の初期化が行われます。
 
-### 3. プロジェクト作成する
+### 3. プロジェクトを作成する
 
 下記コマンドを実行し、Vite でプロジェクトを作成しようと試みました。
 
@@ -72,7 +72,7 @@ yarn: error: no such option: --template
 
 ### 1. yarn を削除する
 
-yarn の最新バージョンする為に、先ほどインストールした`cmdtest/yarn`を削除します。
+yarn を最新バージョンにする為に、先ほどインストールした`cmdtest/yarn`を削除します。
 
 ```bash
 sudo apt remove cmdtest
@@ -81,7 +81,7 @@ sudo apt remove yarn
 
 ### 2. パッケージ情報を更新する
 
-下記コマンドで arn の公開鍵を取得し、それを APT のキーリングに追加し、
+下記コマンドで Yarn の公開鍵を取得し、それを APT のキーリングに追加し、
 Yarn のリポジトリエントリを作成しています。
 これにより、Yarn を使用してパッケージをインストールできるようになります。
 
@@ -93,33 +93,33 @@ sudo apt-get update
 
 #### 補足
 
-- **Q: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg　とは？**
+- **Q: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg とは？**
 - A: Yarn の公開鍵をダウンロードしています。
   curl は URL からデータを取得するコマンドであり、-sS オプションは進捗情報を非表示にするためのものです。ダウンロードした公開鍵は、パイプ（|）を使用して次のコマンドに渡されます。
-- **Q: sudo apt-key add -　とは？**
+- **Q: sudo apt-key add - とは？**
 - A: 標準入力から受け取ったデータを APT のキーリングに追加します。
   具体的には、公開鍵をキーリングに追加して信頼できるリポジトリとしてマークします。
   これにより、Yarn のパッケージを正しく検証できます。
-- **Q: echo "deb https://dl.yarnpkg.com/debian/ stable main 　とは？**
+- **Q: echo "deb https://dl.yarnpkg.com/debian/ stable main" とは？**
 - A: deb フォーマットの APT リポジトリのエントリを作成します。
   Yarn のパッケージを含むリポジトリの場所とリポジトリ名（stable main）が指定されています。
   また、パイプ（|）を使用して次のコマンドに渡されます。
-- **Q: sudo tee /etc/apt/sources.list.d/yarn.list 　とは？**
+- **Q: sudo tee /etc/apt/sources.list.d/yarn.list とは？**
 - A: 標準入力から受け取ったデータを指定されたファイルに書き込みます。
   この場合、/etc/apt/sources.list.d/yarn.list というファイルに Yarn のリポジトリエントリが書き込まれます。
 
-### 3. yarn の再インストールする
+### 3. yarn を再インストールする
 
-下記コマンドで再インストールします
+下記コマンドで再インストールします。
 
 ```bash
 sudo apt-get install yarn
 ```
 
-### 4. プロジェクト再作成する
+### 4. プロジェクトを再作成する
 
 yarn が正しくインストールできたか
-もう一度同じコマンドを実施します
+もう一度同じコマンドを実施します。
 
 ```bash
 $ yarn create vite hello-world --template=react-ts
