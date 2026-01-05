@@ -3,7 +3,7 @@ title: "[Playwright] アクセシビリティツリー(accessibility)を触っ�
 emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -80,7 +80,7 @@ import { chromium } from "playwright";
 })();
 ```
 
-確かに、ブラウザー情報をデータ化にすれば、処理速度は向上し、正確性は向上しますね。
+確かに、ブラウザ情報をデータ化にすれば、処理速度は向上し、正確性は向上しますね。
 
 :::details 実行結果を確認する
 

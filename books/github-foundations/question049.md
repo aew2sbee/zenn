@@ -14,7 +14,7 @@ title: "コラボレーターを個人リポジトリに招待する"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-コラボレーター-to-a-personal-リポジトリ)
+[公式ドキュメント](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 
 - [x] コラボレーターとは、リポジトリへの書き込み権限を与えられている人です。
 - [ ] コラボレーターとは、リポジトリにコードを投稿した人です。

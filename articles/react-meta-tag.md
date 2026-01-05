@@ -3,7 +3,7 @@ title: "[React] metaタグを理解する" # 記事のタイトル
 emoji: "🧜‍♀️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["react", "typescript", "nodejs", "html", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -12,7 +12,7 @@ published: true # 公開設定（falseにすると下書き）
 
 > meta（メタ）タグとは、検索エンジンやブラウザなどに対して Web ページの情報を伝える HTML タグです。
 > 文字コードの指定や、検索エンジンへのインデックス（検索結果に表示される）の可否など、メタデータと呼ばれる情報を伝えるのがメインの役割となります。
-> ページタイトル（title）やページの説明文（description）など以外は、ユーザーの目入ることはほとんどありませんが、間接的に SEO 効果に影響してくるのでとても重要な要素です。
+> ページタイトル（title）やページの説明文（description）など以外は、ユーザーの目に入ることはほとんどありませんが、間接的に SEO 効果に影響してくるのでとても重要な要素です。
 
 @[card](https://and-ha.com/coding/meta/)
 

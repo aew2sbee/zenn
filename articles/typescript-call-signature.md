@@ -3,7 +3,7 @@ title: "[TypeScript] それぞれで型定義ではなく、呼び出しシグ�
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -45,7 +45,7 @@ const add = (x: number, y: number): number => x + y;
 ## 3. 呼び出しシグネチャで型定義
 
 :::message
-一か所で型定義が出来て、手間が少ない
+一か所で型定義ができて、手間が少ない
 可読性も向上しました。
 :::
 

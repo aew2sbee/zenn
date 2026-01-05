@@ -3,7 +3,7 @@ title: "[TypeScript] 何も返さない関数には、戻り値の型(void)を�
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -18,14 +18,14 @@ published: true # 公開設定（falseにすると下書き）
 
 :::message
 `void` とは、**return 文を持たない**や**値を返さない return 文**を有する関数の場合、
-戻り値の型を使う事ができる型です。
+戻り値の型を使うことができる型です。
 :::
 
 ## 1. return 文を持たない
 
 ```ts
 const log = (): void => {
-  console.log("Hello Word");
+  console.log("Hello World");
 };
 ```
 
@@ -33,23 +33,23 @@ const log = (): void => {
 
 ```ts
 const log = (): void => {
-  console.log("Hello Word");
+  console.log("Hello World");
   return;
 };
 ```
 
-### 3. 値を返す return 文
+## 3. 値を返す return 文
 
 :::message alert
 
-`true` を返す関数に `void` を指定すると、下記のようなエラーが発生します
+`true` を返す関数に `void` を指定すると、下記のようなエラーが発生します。
 `Type 'boolean' is not assignable to type 'void'.`
 
 :::
 
 ```ts
 const log = (): void => {
-  console.log("Hello Word");
+  console.log("Hello World");
   return true;
 };
 ```

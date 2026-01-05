@@ -3,7 +3,7 @@ title: "[React]ローカル環境にTypeScriptで動かす環境を構築" # 記
 emoji: "❄" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["react", "typescript", "nodejs"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -74,7 +74,7 @@ cd Work/sandbooks
 node --version
 ```
 
-4. version が`18.16.1`である事を確認する
+4. version が`18.16.1`であることを確認する
 ```bash
 $ node --version
 v18.16.1
@@ -128,6 +128,6 @@ cd frontend
 yarn start
 ```
 1. ローカルホストにアクセスする
-`http://localhost:3000/`をブラウザーの URL に入力して Enter キーを押します。
+`http://localhost:3000/`をブラウザの URL に入力して Enter キーを押します。
 ![React_step6](/images/articles/react-install/React_step6.png)
 > 【ローカルホスト（Localhost）とは】<br>自分自身のコンピュータ上で実行されているネットワークサーバーを指す言葉です。<br><br>例えば、ウェブ開発の場合、ローカルホストは自分のコンピュータ上で実行されるウェブサーバーを指します。ローカルホストを利用することで、ウェブサイトの動作をブラウザで確認したり、データベースとの連携をテストしたりすることができます。

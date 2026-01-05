@@ -3,7 +3,7 @@ title: "[Python] VScodeでmatplotlibのグラフを表示する方法" # 記事�
 emoji: "🐍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "matplotlib", "vscode", "データ分析"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
@@ -67,5 +67,4 @@ plt.show()
 ## 🌱 おわりに
 
 『Python2 年生 データ分析のしくみ 体験してわかる、会話でまなべる』は、データ分析を初めて学習する方にとってわかりやすい書籍です。
-興味がある方は購入をおすすめします。
 興味がある方は、購入をおすすめします。

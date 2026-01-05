@@ -3,12 +3,12 @@ title: "[Docker] Docker DeskTopのインストール" # 記事のタイトル
 emoji: "🐳" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "django", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
 
-社内の有志メンバーの向けに Docker DeskTop のインストールの方法を解説します。
+社内の有志メンバー向けに Docker Desktop のインストール方法を解説します。
 
 ## Docker DeskTop のインストール
 
@@ -51,7 +51,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ### 5. インストール完了
 
-下記の画像のように Docker Desktop が問題なく起動出来たら OK です！
+下記の画像のように Docker Desktop が問題なく起動できたら OK です！
 
 ![docker_desktop_step6](/images/articles/docker-desktop-install/docker_desktop_step6.png)
 

@@ -3,7 +3,7 @@ title: "[Browser Use] 触ってみた結果と感想" # 記事のタイトル
 emoji: "🧠" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ai", "python", "browseruse", "playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: false # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -64,12 +64,12 @@ published: false # 公開設定（falseにすると下書き）
 ### 7. 業務知識が必要な Web アプリを操作できるのか
 
 結果: **できた**
-補足: 業務知識がない人が操作するには難しい Web アプリを最短で操作することが出来た
+補足: 業務知識がない人が操作するには難しい Web アプリを最短で操作することができた
 :::
 
 ## 0. 前提条件
 
-各システム/ライブラリー等の ver
+各システム/ライブラリ等の ver
 
 ```bash
 $ python -V
@@ -401,7 +401,7 @@ ipt-arrow)[tech](/tech-or-\nidea)[🧵[yarn] yarn: error: no such option:\nXXX�
 
 ## 4. 結果
 
-ちゃんと最新の記事のタイトルを取得することは出来ました！
+ちゃんと最新の記事のタイトルを取得することはできました！
 
 ```json
 {
