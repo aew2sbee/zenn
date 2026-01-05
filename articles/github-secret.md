@@ -3,12 +3,12 @@ title: "[GitHub Actions] secrets情報の中身を出力する" # 記事のタ�
 emoji: "🐙‍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["githubactions", "github", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
 
-この記事では、**secrets 情報をマスクされず、出力するを確認方法** を解説します。
+この記事では、**secrets 情報をマスクされずに出力する確認方法** を解説します。
 下記書籍を参考にしながら調査をしました。
 
 :::details 参考資料
@@ -77,6 +77,6 @@ ABCDEFG
 :::
 
 ```bash
-▶ Rub echo "${SECRET_INFO:0:1} ${SECRET_INFO#?}"
+▶ Run echo "${SECRET_INFO:0:1} ${SECRET_INFO#?}"
 A BCDEFG
 ```

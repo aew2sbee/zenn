@@ -3,7 +3,7 @@ title: "[個人開発] 続編-YouTubeで集中した時間を振り返るWebア�
 emoji: "🏅" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["個人開発", "youtube", "nextjs", "typescript", "claudecode"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: false # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
@@ -71,11 +71,11 @@ _実際の私のアナリティクスの内容になります_
 ### 1. 運用コスト
 
 YouTube が収益化もまだなので、サーバー代を抑えるために`GitHub Page`を活用しました。
-レポジトリが`public`である条件があります。
+リポジトリが`public`である条件があります。
 
 @[card](https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
-また、`GitHub Page`は静的ページ(HTML,CSS,JS)しか利用出来ません。
+また、`GitHub Page`は静的ページ(HTML,CSS,JS)しか利用できません。
 そのため、`Next.JS`の`Static Site Generation (SSG)`を活用してこの条件をクリアしました。
 
 > `Static Site Generation (SSG)`とは、ビルド(`npm run build`)時に HTML と CSS を生成する機能
@@ -120,7 +120,7 @@ YouTube が収益化もまだなので、サーバー代を抑えるために`Gi
 
 チャンネル ID はユニークであり、運営側で管理する必要がない点も利点である。
 
-※チャンネル ID は、チャンネルのマイページから調べる事ができます。
+※チャンネル ID は、チャンネルのマイページから調べることができます。
 ※登録者がいるチャンネルなら、YouTube 上で検索してマイページを見つけることができる
 
 チャンネル ID を用いることで、他人に閲覧されず自分だけが自分のデータを参照できる。

@@ -3,7 +3,7 @@ title: "[Playwright] 複数の要素からn番目を取得する" # 記事のタ
 emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -17,7 +17,7 @@ published: true # 公開設定（falseにすると下書き）
 ## 結論
 
 :::message
-下記メソッドで絞り込みが出来ます。
+下記メソッドで絞り込みができます。
 
 ```ts
 // 最初の要素
@@ -37,7 +37,7 @@ first()
 await page.getByRole("button").first().click();
 ```
 
-## 1. n 番目の要素を取得する
+## 2. n 番目の要素を取得する
 
 ```ts
 // 3番目のボタンをクリックする

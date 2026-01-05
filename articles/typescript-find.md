@@ -3,7 +3,7 @@ title: "[TypeScript] 配列の条件に一致する最初の要素を取得す�
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
@@ -19,7 +19,7 @@ published: true # 公開設定（falseにすると下書き）
 配列の各要素に対して**指定された条件に一致する最初の要素**を返すメソッド
 
 ※要素が存在しない場合は`undefined`を返します。
-しかし、文末に**?? 任意の値**を記述すると任意の値を返す事が出来る
+しかし、文末に**?? 任意の値**を記述すると任意の値を返すことができる
 
 ```ts
 const hoge = list.find((各要素) => 条件式);

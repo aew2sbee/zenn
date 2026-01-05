@@ -3,7 +3,7 @@ title: "[Next.js] tsconfig.jsonの設定" # 記事のタイトル
 emoji: "⚡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["nextjs", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -16,7 +16,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## 1. tsconfig.json の作成
 
-下記コマンドでデフォルトで作成する事が出来ますが、PJ 作成時に作成されます。
+下記コマンドでデフォルトで作成することができますが、PJ 作成時に作成されます。
 
 ```bash
 tsc --init

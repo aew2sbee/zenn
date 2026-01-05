@@ -1,15 +1,15 @@
 ---
-title: "[TypeScript] 🌱ver/let/constの違い" # 記事のタイトル
+title: "[TypeScript] var/let/constの違い" # 記事のタイトル
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
 
-`TypeScript`の学習を始めた時に、サンプルコードを見て`ver/let/const`の違いが分かりませんでした。
-下記書籍で`ver/let/const`の違いを理解したので、執筆しします。
+`TypeScript`の学習を始めた時に、サンプルコードを見て`var/let/const`の違いが分かりませんでした。
+下記書籍で`var/let/const`の違いを理解したので、執筆します。
 
 @[card](https://oukayuka.booth.pm/items/2368045)
 
@@ -18,7 +18,7 @@ published: true # 公開設定（falseにすると下書き）
 :::message
 それぞれの違いは、**再代入**と**再宣言**が可能かどうかになります。
 
-基本的には潜在的なバグを生みにくい順番として**const > let > var**である
+基本的には潜在的なバグを生みにくい順番として**const > let > var**である。
 
 | 変数宣言 | 意味                     | 再代入 | 再宣言 |
 | :------: | :----------------------- | :----: | :----: |
@@ -26,7 +26,7 @@ published: true # 公開設定（falseにすると下書き）
 |   let    | let it be (あるがままに) |   〇   |   ×    |
 |  const   | constant (定数)          |   ×    |   ×    |
 
-理由: 再代入/再宣言が可能なほど意図しない動作が発生するの為
+理由: 再代入/再宣言が可能なほど意図しない動作が発生する為
 → 安定したプログラムを作成する時は、**const**を優先的に使用し、再代入したい場合は、**let**を使用する。
 
 :::
@@ -53,7 +53,7 @@ price = 120;
 console.log(price);
 ```
 
-var の再代入が可能である事が確認出来ました。
+var の再代入が可能である事が確認できました。
 
 ```bash
 ----- 出力結果 -----
@@ -75,7 +75,7 @@ var price = 200;
 console.log(price);
 ```
 
-var の再宣言が可能である事が確認出来ました。
+var の再宣言が可能である事が確認できました。
 
 ```bash
 ----- 出力結果 -----
@@ -105,7 +105,7 @@ price = 120;
 console.log(price);
 ```
 
-let の再代入が可能である事が確認出来ました。
+let の再代入が可能である事が確認できました。
 
 ```bash
 ----- 出力結果 -----

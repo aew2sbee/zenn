@@ -3,7 +3,7 @@ title: "[TypeScript] インターフェース(interface)を継承する" # 記�
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -30,7 +30,7 @@ interface 継承先 extends 継承元 {
 
 **メリット**
 
-- 似たようなコードを複数書くことが軽減する事が可能
+- 似たようなコードを複数書くことが軽減することが可能
 
 **デメリット**
 

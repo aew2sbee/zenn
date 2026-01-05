@@ -3,7 +3,7 @@ title: "[Jest] Typescript環境でカバレッジレポートを表示する" # 
 emoji: "🛡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["jest", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## やり方
@@ -146,7 +146,7 @@ Ran all test suites.
 
 ### 6. カバレッジレポートも確認する
 
-`test/coverage/lcov-report/index.html` をブラウザーで表示する
+`test/coverage/lcov-report/index.html` をブラウザで表示する
 ![coverage](/images/articles/jest-coverage/coverage.png)
 
 ## カバレッジレポートの項目

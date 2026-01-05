@@ -3,7 +3,7 @@ title: "[Next.js] Prettierの導入" # 記事のタイトル
 emoji: "⚡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["nextjs", "prettier", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -27,7 +27,7 @@ npm install prettier --save-dev
 
 ## 2. .prettierrc の作成
 
-プロジェクトのディレクトリー配下に下記コマンドで作成
+プロジェクトのディレクトリ配下に下記コマンドで作成
 
 ```bash
 touch .prettierrc
@@ -55,9 +55,9 @@ touch .prettierrc
 }
 ```
 
-## 5. Prettier を適応させる
+## 5. Prettier を適用させる
 
-下記コマンドで src 配下のコードに適応する事が出来る
+下記コマンドで src 配下のコードに適用することができる
 
 ```bash
 npm run prettier-format

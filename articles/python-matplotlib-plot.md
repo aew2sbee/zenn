@@ -3,7 +3,7 @@ title: "[Python] matplotlibで折れ線グラフを描く" # 記事のタイト�
 emoji: "🐍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "matplotlib", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -22,7 +22,7 @@ Python2 年生 データ分析のしくみ 体験してわかる！会話でま�
 
 ## サンプルコード
 
-### 1. ライブラリーをインストール
+### 1. ライブラリをインストール
 
 ```bash
 pip install matplotlib
@@ -30,7 +30,7 @@ pip install pandas
 pip install seaborn
 ```
 
-インストールが出来たか下記コマンドで確認します。
+インストールできたか下記コマンドで確認します。
 
 ```bash
 $ pip show matplotlib

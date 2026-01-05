@@ -3,12 +3,12 @@ title: "[テスト] Windowsにpictを使えるようにする方法" # 記事の
 emoji: "🧪" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["テスト", "pict", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
 
-この記事では、**Windows10 上で Git bash で CLI で操作できる方法** をまとめております。
+この記事では、**Windows10 上で pict を使えるようにする方法** をまとめております。
 :::details 参考資料
 @[card](https://gihyo.jp/magazine/SD/archive/2024/202402)
 :::

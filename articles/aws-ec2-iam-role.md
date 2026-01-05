@@ -1,9 +1,9 @@
 ---
-title: "[AWS] IAMで読み取り専用ユーザー本人がMFAの設定が出来るようにする方法" # 記事のタイトル
+title: "[AWS] IAMで読み取り専用ユーザー本人がMFAの設定ができるようにする方法" # 記事のタイトル
 emoji: "☁️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["aws", "iam", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -140,7 +140,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 |**AllowManageOwnUserMFA**| IAM ユーザーが自分自身の MFA デバイスを管理するために許可されているアクションが定義されています。具体的には、MFA デバイスの無効化と有効化、MFA デバイスのリストの表示、MFA デバイスの再同期が許可されています                                                         |
 |**DenyAllExceptListedIfNoMFA**| MFA が無効化されている場合に、ユーザーに許可されるアクションを制限する条件が定義されています。MFA が無効な場合、特定のアクション（仮想 MFA デバイスの作成、MFA デバイスの有効化、パスワード変更など）に対してのみ許可され、それ以外のアクションに対しては拒否されます |
 
-### 3. 任意のポリシーを設定する
+### 2. 任意のポリシーを設定する
 
 1. `ポリシー名`の欄に任意の名前を入力します。
    ※今回は、`test-MFA`という名前で作成します。
@@ -150,13 +150,13 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 3. 内容を確認し、`ポリシーの作成`をクリックする
    ![sandbooks-aws-IAM-MFA-step04](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step04.png)
 
-### 4. 成功メッセージを確認する
+### 3. 成功メッセージを確認する
 
 1. 画面上部に`ポリシー test-MFAが作成されました。`を確認する
-2. 任意で設定したポリシー名の`test-MFA`が一覧で確認出来ます。
+2. 任意で設定したポリシー名の`test-MFA`が一覧で確認できます。
    ![sandbooks-aws-IAM-MFA-step05](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step05.png)
 
-### 5. 対象ユーザーに作成したポリシーを付与する
+### 4. 対象ユーザーに作成したポリシーを付与する
 
 1. 左側の`ユーザー`をクリックする
 2. 対象のユーザーをクリックする
@@ -179,7 +179,7 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 11. ポリシーの一覧に`test-MFA`が追加されていることを確認する
     ![sandbooks-aws-IAM-MFA-step10](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step10.png)
 
-### 6. 本人が MFA 設定を行う
+### 5. 本人が MFA 設定を行う
 
 1. 対象のユーザーでログインをする
    ![sandbooks-aws-IAM-step10](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-step10.png)
@@ -190,13 +190,13 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 4. 登録するデバイス名を`デバイス名`の入力欄に記入する
    :::message alert
    【注意１】
-   他のメンバーと同じデバイス名を登録する事が出来ません。
+   他のメンバーと同じデバイス名を登録することができません。
    **NG** : A さん=iPhone, B さん=iPhone
    **OK** : A さん=iPhone-A, B さん=iPhone-B
    :::
    :::message alert
    【注意２】
-   一度入力したデバイス名は、登録してなくても利用する事が出来ません。
+   一度入力したデバイス名は、登録してなくても利用することができません。
    :::
 5. `認証アプリケーション`を選択する
 6. `次へ`をクリックする
@@ -210,18 +210,18 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
    自分は下記を利用しました。
    @[card](https://www.microsoft.com/ja-jp/security/mobile-authenticator-app)
    ![sandbooks-aws-IAM-MFA-step14](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step14.png)
-8. `QRコードを表示`をクリックし、QR コードさせる
-9. 先ほどインストールした`認証アプリケーション`QR コードを読み込む
+8. `QRコードを表示`をクリックし、QR コードを表示させる
+9. 先ほどインストールした`認証アプリケーション`で QR コードを読み込む
    ![sandbooks-aws-IAM-MFA-step15](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step15.png)
 10. スマホの画面に 30 秒に 1 回 6 桁の数字が表示されるので、連続で 6 桁の数字を 2 回分入力する
 11. `MFAを追加`をクリックする
     ![sandbooks-aws-IAM-MFA-step16](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step16.png)
 12. 成功メッセージを確認する
     ![sandbooks-aws-IAM-MFA-step17](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step17.png)
-13. `多要素認証(MFA)`の一覧に先ほどのデバイス名が登録させている事を確認する
+13. `多要素認証(MFA)`の一覧に先ほどのデバイス名が登録されていることを確認する
     ![sandbooks-aws-IAM-MFA-step18](/images/articles/aws-ec2-iam-role/sandbooks-aws-IAM-MFA-step18.png)
 
-### 7. MFA が機能しているのか確認する
+### 6. MFA が機能しているのか確認する
 
 1. 一度サインアウトする
 2. 再度ログインをする

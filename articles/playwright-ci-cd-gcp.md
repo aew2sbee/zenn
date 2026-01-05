@@ -3,7 +3,7 @@ title: "[Playwright] CI/CDで社内環境に対してGitHub ActionsのIPを許�
 emoji: "🎭‍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["playwright", "github", "cicd", "googlecloud", "contest2024"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -51,7 +51,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # WAFのルールが適応に時間が必要なため待機する
+      # WAFのルールが適用に時間が必要なため待機する
       - name: Wait for WAF to apply (up to 3 minutes)
         run: |
           sleep 90
@@ -125,7 +125,7 @@ jobs:
 
 @[card](https://github.com/google-github-actions/auth?tab=readme-ov-file#usage)
 
-### 3. 対象レポジトリーの`Settings`が適切か
+### 3. 対象リポジトリの`Settings`が適切か
 
 下記項目にチェックが付いているのかを確認しました。
 
@@ -207,7 +207,7 @@ Fork 元で新しいブランチを作成し、新しく PR を作成したら�
 ※ 大体 1-3 分の間で有効になることを観測しております。
 
 ```yaml
-# WAFのルールが適応に時間が必要なため待機する
+# WAFのルールが適用に時間が必要なため待機する
 - name: Wait for WAF to apply (up to 3 minutes)
   run: |
     sleep 90

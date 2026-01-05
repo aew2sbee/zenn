@@ -3,7 +3,7 @@ title: "[2025年12月] 私が読んだ技術書たち (49冊)" # 記事のタイ
 emoji: "📖" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["技術書", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに

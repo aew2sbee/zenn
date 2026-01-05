@@ -3,7 +3,7 @@ title: "[Next.js] Root layoutファイルでheaderタグとfooterタグを共通
 emoji: "⚡" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["nextjs", "フロントエンド", "typescript", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -14,7 +14,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ### Root layout ファイルとは
 
-> 「app」ディレクトリー直下に配置した layout.tsx のことで
+> 「app」ディレクトリ直下に配置した layout.tsx のことで
 > 複数の画面間で共有される UI を実装するファイルです。
 
 ```bash

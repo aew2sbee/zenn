@@ -1,5 +1,5 @@
 ---
-title: "GitHub Copilot handles data"
+title: "GitHub Copilot のデータ処理"
 ---
 
 ## Q18: GitHub Copilot のプロキシサービスがプロンプトを処理するときに発生する手順はどれですか？

@@ -3,7 +3,7 @@ title: "[Playwright] 高度なロケーターのfilter()種類と使い方" # �
 emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["playwright", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -13,7 +13,7 @@ published: true # 公開設定（falseにすると下書き）
 ## 結論
 
 :::message
-filter()メソッドを使うこと絞り込むことができます。
+filter()メソッドを使うことで絞り込むことができます。
 
 ```ts
 // 特定のテキストを持つ

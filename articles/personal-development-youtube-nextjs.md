@@ -3,7 +3,7 @@ title: "[個人開発] YouTubeでいつもの勉強が「楽しみ!!」に変え
 emoji: "🏅" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["個人開発", "youtube", "nextjs", "typescript", "claudecode"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
@@ -72,7 +72,7 @@ _画面左下に表示されている"Focus tracker"が今回作成したアプ�
 
 ![worry-3](/images/articles/personal-development-youtube-nextjs/worry-3.png)
 
-一昨昨日も昨日も勉強出来たけど、3 日目の勉強ができない= **三日坊主になる**
+一昨昨日も昨日も勉強できたけど、3 日目の勉強ができない= **三日坊主になる**
 2 日間勉強しても...
 
 - 誰からも褒めてくれない
@@ -288,7 +288,7 @@ Chat 欄に入力できるコマンドを増やせば、出来る事の幅が増
 @[card](https://sqlite.org/)
 
 個人の学習時間を記録するだけなため、軽量な`SQLite`を選定しました。
-今のデータであれば、100 万件記録出来そうなので、運用面でも大丈夫だと思います。
+今のデータであれば、100 万件記録できそうなので、運用面でも大丈夫だと思います。
 
 ## 🌱 最後に
 

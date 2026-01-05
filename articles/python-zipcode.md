@@ -3,7 +3,7 @@ title: "[Python] APIで郵便番号から住所を取得する方法" # 記事�
 emoji: "🐍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["python", "webapi"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## はじめに
@@ -21,7 +21,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ## 手順解説
 
-### 1. requests ライブラリーをインストールする
+### 1. requests ライブラリをインストールする
 
 下記コマンドでインストールする
 
@@ -29,7 +29,7 @@ published: true # 公開設定（falseにすると下書き）
 pip install requests
 ```
 
-### 2. requests ライブラリーを確認する
+### 2. requests ライブラリを確認する
 
 `Version: 2.28.2`がインストールされている事が確認できます。
 
@@ -47,7 +47,7 @@ Requires: certifi, charset-normalizer, idna, urllib3
 Required-by:
 ```
 
-### 3. 使用するライブラリーをインポートする
+### 3. 使用するライブラリをインポートする
 
 使用するファイル内の上段で記載し、インポートします。
 :::message
@@ -94,7 +94,7 @@ pprint(res.json())
 ```python:zipcode.py
 # jsonの中身を見やすいようにpprintを活用
 from pprint import pprint
-# ライブラリーをインポートする
+# ライブラリをインポートする
 import requests
 
 # スカイツリーの郵便番号
@@ -109,7 +109,7 @@ pprint(res.json())
 ```
 
 address1~3 を組み合わせたら、
-`東京都墨田区押上`になり目的の東京スカイツリーの住所を取得する事が出来ました。
+`東京都墨田区押上`になり目的の東京スカイツリーの住所を取得することができました。
 
 ```bash
 $ python zipcode.py

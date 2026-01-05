@@ -3,7 +3,7 @@ title: "[Playwright] ログイン状態でテストする簡単なやり方" # �
 emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["playwright", "テスト", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: true # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
@@ -66,7 +66,7 @@ tests
 
 - メリット
   - `playwright.config.ts`のみのコードの改修済む
-  - 各ブラウザー毎で異なる認証情報を設定できる
+  - 各ブラウザ毎で異なる認証情報を設定できる
 
 - デメリット
   - 共通の認証情報になるので、環境依存には対応できない(STG 環境, PRD 環境等)
@@ -96,7 +96,7 @@ export default defineConfig({
 :::message
 
 - メリット
-  - テスト内容に併せて認証情報を切り替えれる
+  - テスト内容に併せて認証情報を切り替えられる
 
 - デメリット
   - テスト毎に認証情報の json を用意、配置が大変
