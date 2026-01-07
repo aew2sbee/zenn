@@ -1,9 +1,9 @@
-﻿---
+---
 title: "[体験談] これからも「やらかしたくない」から失敗談を整理した" # 記事のタイトル
 emoji: "⚠️" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア記事
 topics: ["失敗談"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
