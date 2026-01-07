@@ -1,7 +1,7 @@
 ---
 title: "[タスク] 私なりの'なぜ'に特化したIssueテンプレート" # 記事のタイトル
 emoji: "🧠" # アイキャッチとして使われる絵文字（1文字だけ）
-type: "tech" # tech: 技術記事 / idea: アイデア記事
+type: "idea" # tech: 技術記事 / idea: アイデア記事
 topics: ["タスク", "チケット", "テンプレート", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開:true / 非公開:false
 ---
