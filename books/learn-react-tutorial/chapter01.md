@@ -81,8 +81,111 @@ export default function MyApp() {
 React のコンポーネント名は常に大文字で始める必要があります
 <MyButton /> が大文字で始まっている
 React のコンポーネントであるということを示す
+HTML タグは小文字である
 :::
 
-## 🌱 参考情報
 
-@[card](https://ja.react.dev/learn#components)
+## 🌱 `/`が必要になるタグとは
+
+:::message alert
+**ポイント**
+`/`がないとエラーが発生する
+```tsx
+export default function Home() {
+  return (
+    // JSX 要素 'img' には対応する終了タグがありません。
+    <img src="/sample.png" >
+  );
+}
+```
+:::
+
+改行・区切り系
+```tsx
+<br />
+<hr />
+```
+
+画像・メディア系
+```tsx
+<img src="..." alt="..." />
+<source />
+<track />
+```
+
+フォーム系
+```tsx
+<input />
+<textarea />   // ※ HTMLでは閉じタグが必要だが JSXでは self-closing 可
+<option />     // ※ children を持たない場合
+```
+
+メタ・ドキュメント系
+（※ 通常は React コンポーネント内では使わない）
+```tsx
+<meta />
+<link />
+<base />
+<area />
+<col />
+<embed />
+<param />
+<wbr />
+```
+
+
+## 🌱 TSXの構文
+<div>...</div> や空の <>...</> ラッパのような共通の親要素で囲む必要があります。
+
+:::message
+**ポイント**
+`<>...</>`の場合のメリットがある
+- HTMLには何も出力されない
+- React 内部だけの「仮の親」
+- DOM を汚さない
+
+:::
+
+```diff tsx
+# - HTMLには何も出力されない
+# - React 内部だけの「仮の親」
+# - DOM を汚さない
+function AboutPage() {
+  return (
++    <>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
++    </>
+  );
+}
+```
+
+or
+
+```diff tsx
+# - 実際のHTMLに <div> が出力される
+# - DOM にノードが1つ増える
+# - CSS・レイアウト・アクセシビリティに影響する
+
+function AboutPage() {
+  return (
++    <div>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
++    </div>
+  );
+}
+```
+
+## 🌱 CSS クラスの書き方
+
+```css
+.avatar {
+  border-radius: 50%;
+}
+```
+
+```tsx
+<img className="avatar" />
+```
+
