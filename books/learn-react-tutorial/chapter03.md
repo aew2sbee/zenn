@@ -38,19 +38,19 @@ return (
 よりコンパクトに記述できます。
 ```diff tsx
 return (
-<div>
+  <div>
 +  {isLoggedIn ? (
 +    <AdminPanel />
 +  ) : (
 +    <LoginForm />
 +  )}
-</div>
+  </div>
 );
 
 ```
 
 ## 🌱 UI領域での論理積（&&）を使った条件付きレンダー
-else 側の処理が不要な場合は、**論理積（AND演算子）**が便利です。
+else 側の処理が不要な場合は、**論理積（AND演算子）** が便利です。
 
 ```diff tsx
 # JavaScripによる文字列結合も可能
