@@ -4,9 +4,9 @@ title: "コンポーネントについて"
 
 ## 🌱 コンポーネントとは
 
-> 独自のロジックと外見を持つ UI（ユーザインターフェース）の部品のことです。
-> コンポーネントは、ボタンのような小さなものである場合も、ページ全体を表す大きなものである場合もあります。
-> マークアップを返す JavaScript 関数です。
+> コンポーネントは、UI（ユーザインターフェース）を部品として切り出したものです。
+> ボタンのような小さな部品にも、ページ全体のような大きな単位にもなります。
+> この章では、JS/TS の関数として UI（JSX）を返す「関数コンポーネント」を扱います。
 
 ```tsx: chapter01/app/page.tsx
 // 「Hello world」を表示させるコンポーネント
@@ -18,14 +18,12 @@ export default function Home() {
 
 ```
 
-@[card](https://github.com/aew2sbee/tech-react/blob/main/chapter01/app/page.tsx)
-
 ## 🌱 拡張子
-TypeScriptのコンポーネントの拡張子は、`tsx`です。
+TypeScript で JSX（<p>...</p> のような記法）を含むファイルは、拡張子を .tsx にします。
 
 :::message alert
 **ポイント**
-`page.tsx` -> `page.ts`に変えると `Build Error`になる
+`.tsx` -> `.ts`に変えると JSX を TypeScript として解釈できず、ビルドエラーになります。
 
 ```bash
 ## Error Type
@@ -56,7 +54,7 @@ Next.js version: 16.1.3 (Turbopack)
 ## 🌱 コンポーネントのネスト
 
 ```tsx
-// ネストされるコンポーネント
+// 子コンポーネント
 function MyButton() {
   return (
     <button>I'm a button</button>
@@ -65,7 +63,7 @@ function MyButton() {
 ```
 
 ```tsx
-// ネストされるコンポーネント
+// 親コンポーネント（子を呼び出す）
 export default function MyApp() {
   return (
     <div>
@@ -78,14 +76,14 @@ export default function MyApp() {
 
 :::message
 **ポイント**
-React のコンポーネント名は常に大文字で始める必要があります
-<MyButton /> が大文字で始まっている
-React のコンポーネントであるということを示す
-HTML タグは小文字である
+- React のコンポーネント名は 大文字で始める必要があります
+- `<MyButton />`が大文字で始まっているのは「React コンポーネント」を表すためです
+- `<button>`のように 小文字で始まるものは HTML タグとして扱われます
 :::
 
 
-## 🌱 `/`が必要になるタグとは
+## 🌱 JSXで self-closing（/>）が必要なタグ
+JSX では、子要素を持たない要素は必ず /> で閉じます。
 
 :::message alert
 **ポイント**
@@ -134,15 +132,14 @@ export default function Home() {
 ```
 
 
-## 🌱 TSXの構文
+## 🌱 TSXの構文（Fragment と div）
+JSX では return の中で要素を複数並べたいとき、必ず1つの親要素で包む必要があります。
+その親要素として、<div> の代わりに **Fragment（<>...</>）**を使うこともできます。
 <div>...</div> や空の <>...</> ラッパのような共通の親要素で囲む必要があります。
 
 :::message
 **ポイント**
-`<>...</>`の場合のメリットがある
-- HTMLには何も出力されない
-- React 内部だけの「仮の親」
-- DOM を汚さない
+- レイアウトや CSS の都合で “親の div が欲しい” ときは div、不要なら Fragment が便利です。
 
 :::
 
@@ -166,7 +163,6 @@ or
 # - 実際のHTMLに <div> が出力される
 # - DOM にノードが1つ増える
 # - CSS・レイアウト・アクセシビリティに影響する
-
 function AboutPage() {
   return (
 +    <div>
@@ -178,6 +174,7 @@ function AboutPage() {
 ```
 
 ## 🌱 CSS クラスの書き方
+JSX では class は予約語のため、代わりに className を使います。
 
 ```css
 .avatar {
