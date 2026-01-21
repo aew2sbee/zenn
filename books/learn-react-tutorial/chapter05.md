@@ -38,7 +38,7 @@ function MyButton() {
   }
 
   return (
-      # 型 'void' を型 'MouseEventHandler<HTMLButtonElement> | undefined' に割り当てることはできません。
+      // 型 'void' を型 'MouseEventHandler<HTMLButtonElement> | undefined' に割り当てることはできません。
 -    <button onClick={handleClick()}>
 +    <button onClick={handleClick}>
       Click me
