@@ -18,10 +18,14 @@ const [count, setCount] = useState(0);
 
 ```
 
+前の値に依存する更新（関数形式）
 ```tsx
-// 前の値に依存する更新（関数形式）
 setCount(c => c + 1)
-// 前の値に依存しない更新
+
+```
+
+前の値に依存しない更新
+```tsx
 setCount(10)
 setText(input)
 
