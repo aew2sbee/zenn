@@ -176,13 +176,12 @@ function AboutPage() {
 ## 🌱 CSS クラスの書き方
 JSX では class は予約語のため、代わりに className を使います。
 
+```tsx
+<img className="avatar" />
+```
+
 ```css
 .avatar {
   border-radius: 50%;
 }
 ```
-
-```tsx
-<img className="avatar" />
-```
-
