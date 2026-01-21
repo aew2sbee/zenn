@@ -2,64 +2,43 @@
 title: "配列処理について"
 ---
 
-## 🌱 条件付きレンダー(if文)
-React には、条件分岐を書くための特別な構文は存在しない
-JavaScript コードを書くときに使うのと同じ手法を使う
+## 🌱 リストのレンダー
+コンポーネントのリストをレンダーする場合は、
+`forループ`や配列の`map()関数`といった`JavaScript`の機能を使って行います。
 
 :::message
 **ポイント**
-if文は、基本的にステートメント（statement）領域に記載する
+`<li>`に`key属性`があることに注意してください。
+
+リスト内の各項目には、兄弟の中でそれを一意に識別するための文字列または数値を渡す必要があります。
+通常、`key`はデータから来るはずで、データベース上の ID などが該当します。
+`React`は、後でアイテムを挿入、削除、並べ替えることがあった際に、何が起こったかを key を使って把握します。
 
 :::
 
-```ts
+```tsx
 const products = [
-  { title: 'Cabbage', id: 1 },
-  { title: 'Garlic', id: 2 },
-  { title: 'Apple', id: 3 },
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
 ];
 
-```
+export default function ShoppingList() {
+  const listItems = products.map(product =>
+    <li
+      key={product.id}
+      style={{
+        color: product.isFruit ? 'magenta' : 'darkgreen'
+      }}
+    >
+      {product.title}
+    </li>
+  );
 
-```ts
-const listItems = products.map(product =>
-  <li key={product.id}>
-    {product.title}
-  </li>
-);
+  return (
+    <ul>{listItems}</ul>
+  );
+}
 
-return (
-  <ul>{listItems}</ul>
-);
-```
-
-
-
-## 🌱 コンポーネントが画面に表示する内容（UI）領域の三項演算子(if文)
-コンパクトなコードで記載することができます。
-```tsx
-const listItems = products.map(product =>
-  <li key={product.id}>
-    {product.title}
-  </li>
-);
-
-return (
-  <ul>{listItems}</ul>
-);
 
 ```
-
-## 🌱 コンポーネントが画面に表示する内容（UI）領域の論理積(if文)
-else側の分岐が不要な条件の時に活躍できます。
-
-```diff tsx
-# JavaScripによる文字列結合も可能
-return (
-  <div>
-+    {isLoggedIn && <AdminPanel />}
-  </div>
-);
-
-```
-
