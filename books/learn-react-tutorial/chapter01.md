@@ -8,7 +8,7 @@ title: "コンポーネント"
 > ボタンのような小さな部品にも、ページ全体のような大きな単位にもなります。
 > この章では、JS/TS の関数として UI（JSX）を返す「関数コンポーネント」を扱います。
 
-```tsx: chapter01/app/page.tsx
+```tsx
 // 「Hello world」を表示させるコンポーネント
 export default function Home() {
   return (
@@ -144,9 +144,9 @@ JSX では return の中で要素を複数並べたいとき、必ず1つの親�
 :::
 
 ```diff tsx
-# - HTMLには何も出力されない
-# - React 内部だけの「仮の親」
-# - DOM を汚さない
+// - HTMLには何も出力されない
+// - React 内部だけの「仮の親」
+// - DOM を汚さない
 function AboutPage() {
   return (
 +    <>
@@ -160,9 +160,9 @@ function AboutPage() {
 or
 
 ```diff tsx
-# - 実際のHTMLに <div> が出力される
-# - DOM にノードが1つ増える
-# - CSS・レイアウト・アクセシビリティに影響する
+// - 実際のHTMLに <div> が出力される
+// - DOM にノードが1つ増える
+// - CSS・レイアウト・アクセシビリティに影響する
 function AboutPage() {
   return (
 +    <div>
