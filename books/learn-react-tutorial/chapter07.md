@@ -86,7 +86,7 @@ export default function App() {
 +    <div style={{ marginTop: 8 }}>
 +      <input value={text} onChange={(e) => setText(e.target.value)} />
 +      <p>入力: {text}</p>
-    </div>
++    </div>
   );
 }
 ```
@@ -156,12 +156,12 @@ export default function App() {
 -        );
 -      })}
 -    </ul>
-        <ItemRow key={name} name={name} />
-      ))}
-    </ul>
-  );
-}
-
++        <ItemRow key={name} name={name} />
++      ))}
++    </ul>
++  );
++}
++
 + function ItemRow({ name }: { name: string }) {
 +   const [checked, setChecked] = useState(false);
 +
