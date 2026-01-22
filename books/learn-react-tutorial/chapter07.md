@@ -2,136 +2,180 @@
 title: "フックの使用"
 ---
 
-## 🌱 フック (Hook)
-`use`で始まる関数のこと
-
-## 🌱 フックはコンポーネントのトップレベルで呼ぶ
-
-```tsx
-"use client";
-import { useState } from "react";
-
-export default function OkExample() {
-  const [count, setCount] = useState(0);
-
-  return <button onClick={() => setCount(count + 1)}>{count}</button>;
-}
-```
-
-
-```tsx
-"use client";
-import { useState } from "react";
-
-export default function NgIfExample({ enabled }: { enabled: boolean }) {
-  if (enabled) {
-    const [count, setCount] = useState(0);
-    return <button onClick={() => setCount(count + 1)}>{count}</button>;
-  }
-  return <p>disabled</p>;
-}
-```
-
-
-```tsx
-"use client";
-import { useState } from "react";
-
-export default function NgHandlerExample() {
-  function handleClick() {
-    const [count, setCount] = useState(0);
-    setCount(count + 1);
-  }
-
-  return <button onClick={handleClick}>click</button>;
-}
-```
-
 :::message
 **ポイント**
-フックには通常の関数より多くの制限があります。
-
-1. フックはコンポーネントのトップレベル（または他のフック内）でのみ呼び出すことができます
-```tsx
-// useState(n): nは初期値
-// count: 現在のstateの変数
-// setCount: stateを更新するための関数
-const [count, setCount] = useState(0);
-// useState は「現在の値」と「更新用の関数」を 配列で返すので、分割代入で受け取ります。
-```
-
-前の値に依存する更新（関数形式）
-```tsx
-setCount(c => c + 1)
-```
-
-前の値に依存しない更新
-```tsx
-setCount(10)
-setText(input)
-```
+- **「フックはトップレベルで」** は、「if や for の内側に入れない」という意味です
+- 迷ったら、フックを使う部分を子コンポーネントに分けるのが一番安全で読みやすいです
 
 :::
 
-```diff tsx
-"use client"
-+ import { useState } from 'react';
-
-export default function MyButton() {
-+   const [count, setCount] = useState(0);
-
-  function handleClick() {
-+     setCount(c => c + 1);
-  }
-
-  return (
-    <button onClick={handleClick}>
-+       Clicked {count} times
-    </button>
-  );
-}
-```
-
-
-## 🌱 コンポーネント間でデータを共有する
-
-
-
-## 🌱 同じコンポーネントを複数の場所でレンダーした場合
-同じ`MyButton`を2回配置すると、それぞれが独自の`state`を持ちます。
-そのため、片方のボタンをクリックしても、もう片方の`count`には影響しません。
-
-:::message
-**ポイント**
-`state`は「コンポーネント関数そのもの」ではなく、画面上の各インスタンス（レンダー結果）ごとに保持されます。
-
-:::
+## 🌱 条件分岐の中で`useState`を呼ぶのはNG
+`React`のフック（例: `useState`）は、毎回レンダーされるたびに同じ順番で呼ばれる必要があります。
+ところが、`if (showEditor) `の中で`useState`を呼ぶと、
+- `showEditor = false`のとき →`useState`は呼ばれない
+- `showEditor = true`のとき →`useState`が急に呼ばれる
+となり、呼び出し順が変わってしまいます。これが「条件分岐の中でフックを呼ぶのがダメ」な理由です。
 
 ```tsx
-"use client"
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
-export default function MyApp() {
+export default function App() {
+  const [showEditor, setShowEditor] = useState(false);
+
+  // NG: 条件の中でフックを呼ぶ
+  if (showEditor) {
+    const [text, setText] = useState("こんにちは");
+    return (
+      <div>
+        <button onClick={() => setShowEditor(false)}>閉じる</button>
+        <input value={text} onChange={(e) => setText(e.target.value)} />
+      </div>
+    );
+  }
+
   return (
     <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
-      <MyButton />
+      <button onClick={() => setShowEditor(true)}>エディタを開く</button>
     </div>
   );
 }
+```
 
-function MyButton() {
-  const [count, setCount] = useState(0);
+下記のように修正する
+-`App`は常に同じ順番で`useState`を呼ぶ
+-`Editor`は「表示されたときだけ」コンポーネントごと登場するので、`Editor`内の`useState`は常にトップレベルで呼ばれる
 
-  function handleClick() {
-    setCount(count + 1);
-  }
+```diff tsx
+"use client";
+import { useState } from "react";
+
+export default function App() {
+  const [showEditor, setShowEditor] = useState(false);
+
+-  if (showEditor) {
+-    const [text, setText] = useState("こんにちは");
+-    return (
+-      <div>
+-        <button onClick={() => setShowEditor(false)}>閉じる</button>
+-        <input value={text} onChange={(e) => setText(e.target.value)} />
+-      </div>
+-    );
+-  }
+-
+-  return (
+-    <div>
+-      <button onClick={() => setShowEditor(true)}>エディタを開く</button>
+-    </div>
++  return (
++    <div>
++      <button onClick={() => setShowEditor((v) => !v)}>
++        {showEditor ? "閉じる" : "エディタを開く"}
++      </button>
++
++      {showEditor && <Editor />}
++    </div>
++  );
++}
++
++function Editor() {
++  // OK: コンポーネントのトップレベルでフック
++  const [text, setText] = useState("こんにちは");
++
++  return (
++    <div style={{ marginTop: 8 }}>
++      <input value={text} onChange={(e) => setText(e.target.value)} />
++      <p>入力: {text}</p>
+    </div>
+  );
+}
+```
+
+## 🌱 ループ（map）の中で`useState`を呼ぶのはNG
+`map`の中で`useState`を呼ぶと、配列の要素数や順序が変わったときに
+**フックの呼び出し回数や順番が変わる可能性**があります。
+
+たとえば、要素の追加・削除・並び替えが起きると、React は「この state はどの行のもの？」を正しく対応づけできなくなります。
+
+```tsx
+"use client";
+import { useState } from "react";
+
+export default function App() {
+  const items = ["りんご", "みかん", "ぶどう"];
 
   return (
-    <button onClick={handleClick}>
-      Clicked {count} times
-    </button>
+    <ul>
+      {items.map((name) => {
+        // NG: map（ループ）の中でフック
+        const [checked, setChecked] = useState(false);
+
+        return (
+          <li key={name}>
+            <label>
+              <input
+                type="checkbox"
+                checked={checked}
+                onChange={() => setChecked((v) => !v)}
+              />
+              {name}
+            </label>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+```
+
+`map`の中では コンポーネントを並べるだけにして、`useState`は`ItemRow`のトップレベルに置きます。
+
+```diff tsx
+"use client";
+import { useState } from "react";
+
+export default function App() {
+  const items = ["りんご", "みかん", "ぶどう"];
+
+  return (
+    <ul>
+      {items.map((name) => {
+-        const [checked, setChecked] = useState(false);
+-
+-        return (
+-          <li key={name}>
+-            <label>
+-              <input
+-                type="checkbox"
+-                checked={checked}
+-                onChange={() => setChecked((v) => !v)}
+-              />
+-              {name}
+-            </label>
+-          </li>
+-        );
+-      })}
+-    </ul>
+        <ItemRow key={name} name={name} />
+      ))}
+    </ul>
+  );
+}
+
++ function ItemRow({ name }: { name: string }) {
++   const [checked, setChecked] = useState(false);
++
++   return (
++     <li>
++       <label>
++         <input
++           type="checkbox"
++           checked={checked}
++           onChange={() => setChecked((v) => !v)}
++         />
++         {name} {checked ? "✅" : ""}
++       </label>
++     </li>
   );
 }
 ```
