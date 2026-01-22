@@ -32,6 +32,21 @@ export default function Page() {
 }
 ```
 
+```tsx: components/Avatar.tsx
+// エクスポート側
+export function Avatar({ person, size }) {
+  return (
+    <img
+      className="avatar"
+      src="https://i.imgur.com/1bX5QH6.jpg"
+      alt="Lin Lanying"
+      width={100}
+      height={100}
+    />
+  );
+}
+```
+
 ```diff tsx
 // インポート側
 import { Avatar } from '@/components/Avatar';
