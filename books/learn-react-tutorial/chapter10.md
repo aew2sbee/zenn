@@ -102,6 +102,36 @@ export default function Page() {
 }
 ```
 
+## 🌱 propsのデフォルト値を指定する
+パラメータ名の直後に`=`とデフォルト値を書くことができます。
+
+```diff tsx: components/Avatar.tsx
+// 子コンポーネント
+ type Person = {
+   name: string;
+   imageUrl: string;
+ };
+
+ type AvatarProps = {
+   person: Person;
+   size: number;
+ };
+
+- export function Avatar() {
++ export function Avatar({ person, size = 100 }: AvatarProps) {
+  return (
+    <img
+      className="avatar"
+      src={person.imageUrl}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
+  );
+}
+```
+
+
 ## 🌱 [おまけ] インラインで型を書く（小さい props のとき）
 
 props の数が少なく、他で再利用しない場合は
