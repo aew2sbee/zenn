@@ -1,12 +1,14 @@
 ---
-title: "コンポーネントに props を渡す"
+title: "コンポーネントにpropsを渡す"
 ---
 
-## 🌱 デフォルトエクスポート
+## 🌱 子コンポーネントに引数を渡す
+React では、**親コンポーネントから子コンポーネントへデータを渡す**ために`props`（プロパティ）という仕組みを使います。
 
+まずは、`props` を使わないシンプルなコンポーネントから見てみましょう。
 
 ```tsx: components/Avatar.tsx
-// エクスポート側
+// 子コンポーネント
 export function Avatar() {
   return (
     <img
@@ -21,6 +23,7 @@ export function Avatar() {
 ```
 
 ```tsx: app/page.tsx
+// 親コンポーネント
 import { Avatar } from '@/components/Avatar';
 
 export default function Page() {
@@ -32,23 +35,55 @@ export default function Page() {
 }
 ```
 
-```tsx: components/Avatar.tsx
-// エクスポート側
-export function Avatar({ person, size }) {
+この時点では、`Avatar`コンポーネントの表示内容はコンポーネント自身の中に固定された値になっています。
+
+
+```diff tsx: components/Avatar.tsx
+// 子コンポーネント
++ type Person = {
++   name: string;
++   imageUrl: string;
++ };
++
++ type AvatarProps = {
++   person: Person;
++   size: number;
++ };
+
+- export function Avatar() {
++ export function Avatar({ person, size }: AvatarProps) {
   return (
     <img
       className="avatar"
-      src="https://i.imgur.com/1bX5QH6.jpg"
-      alt="Lin Lanying"
-      width={100}
-      height={100}
+-      src="https://i.imgur.com/1bX5QH6.jpg"
+-      alt="Lin Lanying"
+-      width={100}
+-      height={100}
++      src={person.imageUrl}
++      alt={person.name}
++      width={size}
++      height={size}
     />
   );
 }
 ```
 
-```diff tsx
-// インポート側
+
+:::message
+**ポイント**
+- props の型を`AvatarProps`として定義する
+- 関数の引数で`{ person, size }`のように分割代入で受け取る
+- 表示に使う値を、すべて`props`経由にする
+
+**「データを表示するだけの再利用しやすいコンポーネント」** になります。
+
+:::
+
+次に、親コンポーネント側から `Avatar` コンポーネントへ
+`props` を渡すように修正します。
+
+```diff tsx: app/page.tsx
+// 親コンポーネント
 import { Avatar } from '@/components/Avatar';
 
 export default function Page() {
@@ -56,7 +91,10 @@ export default function Page() {
     <>
 -    <Avatar />
 +    <Avatar
-+      person={{ name: 'Lin Lanying', imageId: '1bX5QH6' }}
++      person={{
++        name: 'Lin Lanying',
++        imageUrl: 'https://i.imgur.com/1bX5QH6.jpg',
++      }}
 +      size={100}
 +    />
     </>
@@ -64,130 +102,53 @@ export default function Page() {
 }
 ```
 
-https://ja.react.dev/learn/passing-props-to-a-component
+## 🌱 [おまけ] インラインで型を書く（小さい props のとき）
 
+props の数が少なく、他で再利用しない場合は
+型を別で定義せず、その場でインラインに書くこともできます。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-:::message
-**ポイント**
-| 観点           | デフォルトエクスポート | 名前付きエクスポート |
-| ------------ | ----------- | ---------- |
-| 1ファイルに1つだけ   | ◎ 向いている     | △          |
-| 複数の関数・値      | △           | ◎ 向いている    |
-| リファクタしやすさ    | △           | ◎          |
-| IDE補完・型安全    | △           | ◎          |
-| Reactコンポーネント | ○（よく使う）     | ◎（公式推奨寄り）  |
-
-:::
-
-```tsx: Button.tsx
-// エクスポート側
-export default function Button() {
-  return <button>Click</button>;
+```diff tsx: components/Avatar.tsx
+// 子コンポーネント
+- export function Avatar() {
++ export function Avatar({
++   name,
++   imageUrl,
++   size,
++ }: {
++   name: string;
++   imageUrl: string;
++   size: number;
++ }) {
+   return (
+     <img
+-       src="https://i.imgur.com/1bX5QH6.jpg"
+-       alt="Lin Lanying"
+-       width={100}
+-       height={100}
++       className="avatar"
++       src={imageUrl}
++       alt={name}
++       width={size}
++       height={size}
+     />
+  );
 }
 ```
 
-```tsx: page.tsx
-// インポート側
-import { Button } from '@/components/Button';
+```diff tsx: app/page.tsx
+// 親コンポーネント
+import { Avatar } from '@/components/Avatar';
 
 export default function Page() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+-    <Avatar />
++    <Avatar
++      name="Lin Lanying"
++      imageUrl="https://i.imgur.com/1bX5QH6.jpg"
++      size={100}
++    />
+    </>
+  );
 }
-```
-
-## 🌱 名前付きエクスポート
-
-```tsx: Button.tsx
-// エクスポート側
-export function Button() {
-  return <button>Click</button>;
-}
-```
-
-```tsx: page.tsx
-// インポート側
-import { Button } from './Button';
-...
-```
-
-複数エクスポートも可能
-```tsx: Button.tsx
-// エクスポート側
-export function PrimaryButton() {}
-export function SecondaryButton() {}
-```
-
-```tsx: page.tsx
-// インポート側
-import { PrimaryButton, SecondaryButton } from './Button';
-...
-```
-
-
-## 🌱 React・Next.js での実践的な使い分け
-ページ（Next.js）
-
-```tsx: app/Avatar.tsx
-export default function Page() {
-  return <h1>Hello</h1>;
-}
-```
-
-再利用コンポーネント
-```tsx: components/Button.tsx
-// エクスポート側
-export function Button() {}
-```
-
-```tsx: app/page.tsx
-// インポート側
-import { Button } from '@/components/Button';
-
-export default function Page() {
-  return <h1>Hello</h1>;
-}
-```
-
-カスタムフック
-```ts: hooks/useAuth.ts
-// エクスポート側
-export function useAuth() {}
-```
-
-```tsx: app/page.tsx
-// インポート側
-import { useAuth } from '@/hooks/useAuth';
-```
-
-ユーティリティ
-```ts: utils/date.ts
-// エクスポート側
-export function formatDate() {}
-export function parseDate() {}
 ```
