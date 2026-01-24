@@ -129,17 +129,3 @@ export default function Counter() {
 
 この書き方では、`React`が 直前の`state`を順番に使って
 更新を処理するため、複数回の更新が正しく反映されます。
-
-## 🌱 state 内のオブジェクトの更新
-
-
-```tsx
-const [person, setPerson] = useState({
-  name: 'テストA',
-  artwork: {
-    title: 'Blue Nana',
-    city: 'Hamburg',
-    image: 'https://i.imgur.com/Sd1AgUOm.jpg',
-  }
-});
-```
