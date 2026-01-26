@@ -92,3 +92,22 @@ $ npm create storybook@latest
 │  ● Yes / ○ No
 └
 ```
+
+
+```bash
+◇  Playwright browser binaries installed successfully
+│
+◇  Storybook was successfully installed in your project!
+│
+│  To run Storybook manually, run npm run storybook. CTRL+C to stop.
+│
+│  Wanna know more about Storybook? Check out https://storybook.js.org/
+│  Having trouble or want to chat? Join us at https://discord.gg/storybook/
+No Instance(s) Available.
+│
+└
+
+
+┌  storybook v10.2.0
+
+```
