@@ -29,6 +29,7 @@ function MyButton() {
 **重要**
 `handleClick`の末尾に括弧がいらない
 「関数を実行している」のではなく、「関数そのものを渡している」 から
+イベント名の先頭に`handle`が付いた名前にする
 :::
 
 ```diff tsx
@@ -45,5 +46,17 @@ function MyButton() {
     </button>
   );
 }
+
+```
+
+## 🌱 アロー関数
+アロー関数で書くこともできます
+
+```diff tsx
+- <button onClick={function handleClick() {
+-   alert('You clicked me!');
++ <button onClick={() => {
++   alert('You clicked me!');
+}}>
 
 ```
