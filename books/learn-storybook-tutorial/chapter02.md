@@ -27,6 +27,19 @@ $ npm create storybook@latest
 └
 ```
 
+:::message
+**翻訳*
+> ◆  New to Storybook?
+> │  ● Yes: Help me with onboarding
+> │  ○ No: Skip onboarding & don't ask again
+
+Storybookは初めて使いますか？
+- Yes: Storybook初心者向けの案内（オンボーディング）を表示しますか？
+- No: オンボーディングは不要。今後も聞かなくてOK
+:::
+
+
+
 ```bash
 
 $ npm create storybook@latest
@@ -92,6 +105,17 @@ $ npm create storybook@latest
 │  ● Yes / ○ No
 └
 ```
+
+
+:::message
+**翻訳*
+> ◆  Do you want to install Playwright with Chromium now?
+> │  ● Yes / ○ No
+
+Playwright（Chromium）を今すぐインストールしますか？
+- Yes: 今すぐ chromium ブラウザをダウンロード＆セットアップする
+- No: 今はインストールしない
+:::
 
 
 ```bash

@@ -1,10 +1,12 @@
 ---
-title: "コンポーネント"
+title: "Next.jsのインストール"
 ---
 
-## 🌱 コンポーネントとは
+## 🌱 インストール
 
-
+```bash
+npx create-next-app@latest . --yes
+```
 
 ```bash
 $ npx create-next-app@latest . --yes
