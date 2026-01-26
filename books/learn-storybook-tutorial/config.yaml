@@ -1,0 +1,24 @@
+title: '私なりの[Storybook]のまとめ'
+summary: "Storybook公式サイトのチュートリアル ▶ https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/ \n実際に動かして学んだ内容をアウトプットした内容になります"
+topics: ['tailwindcss', 'nextjs', 'ts', 'storybook', '初心者向け'] # トピック（5つまで）
+published: false # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - chapter01
+  - chapter02
+  - chapter03
+  - chapter04
+  - chapter05
+  - chapter06
+  - chapter07
+  - chapter08
+  - chapter09
+  - chapter10
+  - chapter11
+  - chapter12
+  - chapter13
+  - chapter14
+  - chapter15
+  - chapter16
+  - chapter17
+  - chapter18
