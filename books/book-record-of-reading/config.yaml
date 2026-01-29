@@ -1,0 +1,9 @@
+title: '[技術書籍] 私なりのまとめ'
+summary: "自分が読んだ技術書の備忘録"
+topics: ['技術書', '書籍'] # トピック（5つまで）
+published: false # falseだと下書き
+price: 0 # 有料の場合200〜5000
+chapters:
+  - book002
+  - book001
+
