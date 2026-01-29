@@ -2,8 +2,12 @@
 title: "環境構築"
 ---
 
-## 🌱 Next.jsのインストール
+## 🌱 このチャプターのゴール
+ローカル環境で下記キャプチャーが表示されるところまで進めます。
+![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
 
+## 🌱 Next.jsのインストール
+Storybookを動かすには、`Next.js`が必要です。インストールします。
 ```bash
 npx create-next-app@latest . --yes
 ```
@@ -85,6 +89,26 @@ http://localhost:3000 にアクセスして下記画像が表示されます
 ![installed-successfully-nextjs](/images/books/learn-storybook-tutorial/installed-successfully-nextjs.png)
 
 
+`app`ディレクトリを`src`ディレクトリ配下へ移動する(小さなこだわり)
+
+```bash
+mkdir src
+mv app src/
+
+```
+
+```diff bash
+.
+  ├── public
+  ├── node_modules
+- └── app
++ └── src
++     └── app
+
+```
+
+
+
 ## 🌱 Storybookのインストール
 
 ```bash
@@ -112,7 +136,6 @@ $ npm create storybook@latest
 ```
 :::
 
----
 
 オンボーディング(オプション) のインストール
 ► ここでは不要なファイルを増やしたくないので`No`を選択します
