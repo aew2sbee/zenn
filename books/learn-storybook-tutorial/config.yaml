@@ -1,4 +1,4 @@
-title: '私なりの[Storybook]のまとめ'
+title: '[Storybook] 私なりのまとめ'
 summary: "Storybook公式サイトのチュートリアル\n▶ https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/ \n実際に動かして学んだ内容をアウトプットした内容になります"
 topics: ['tailwindcss', 'nextjs', 'ts', 'storybook', '初心者向け'] # トピック（5つまで）
 published: false # falseだと下書き
