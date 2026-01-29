@@ -1,13 +1,21 @@
 ---
-title: "Next.jsのインストール"
+title: "環境構築"
 ---
 
-## 🌱 インストール
+## 🌱 Next.jsのインストール
 
 ```bash
 npx create-next-app@latest . --yes
 ```
 
+:::message
+**ポイント**
+Next.jsがインストールできるために、Node.jsのインストール等はここでは解説しません。
+ご自身でお願いします
+
+:::
+
+:::details ターミナルのログを見る
 ```bash
 $ npx create-next-app@latest . --yes
 Creating a new Next.js app in C:\Users\xxxxx\work\tech-storybook.
@@ -45,5 +53,131 @@ Generating route types...
 
 Success! Created tech-storybook at C:\Users\xxxxx\work\tech-storybook
 
+```
+:::
+
+---
+ローカル環境での起動を確認します。
+```bash
+npm run dev
+```
+
+:::details ターミナルのログを見る
+```bash
+$ npm run dev
+
+> tech-storybook@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.99.1.170:3000
+
+✓ Starting...
+✓ Ready in 1375ms
+ GET / 200 in 2.6s (compile: 2.2s, render: 331ms)
+ GET / 200 in 117ms (compile: 12ms, render: 105ms)
+```
+:::
+
+http://localhost:3000 にアクセスして下記画像が表示されます
+
+![installed-successfully-nextjs](/images/books/learn-storybook-tutorial/installed-successfully-nextjs.png)
+
+
+## 🌱 Storybookのインストール
+
+```bash
+npm create storybook@latest
+```
+
+:::details ターミナルのログを見る
+```bash
+$ npm create storybook@latest
+
+> tech-storybook@0.1.0 npx
+> create-storybook
+
+
+┌  Initializing Storybook
+│
+●  Adding Storybook version 10.2.1 to your project
+│
+◇  Framework detected: nextjs-vite
+│
+◆  What configuration should we install?
+│  ● Recommended: Component development, docs, and testing features.
+│  ○ Minimal: Just the essentials for component development.
 
 ```
+:::
+
+---
+
+オンボーディング(オプション) のインストール
+► ここでは不要なファイルを増やしたくないので`No`を選択します
+
+:::message
+```bash
+◆  New to Storybook?
+│  ● Yes: Help me with onboarding
+│  ○ No: Skip onboarding & don't ask again
+```
+
+**翻訳**
+Storybookは初めて使いますか？
+- Yes: Storybook初心者向けの案内（オンボーディング）を表示しますか？
+  ▶ Storybookの基本構造（stories、Controls、Docs）を知りたい
+- No: オンボーディングは不要。今後も聞かなくてOK
+  ▶ 余計なファイルが増やしたくない/プロジェクト固有のルールがある
+:::
+
+---
+
+:::details ターミナルのログを見る
+```bash
+$ npm create storybook@latest
+
+┌  Initializing Storybook
+│
+●  Adding Storybook version 10.2.1 to your project
+│
+◇  Framework detected: nextjs-vite
+│
+◇  What configuration should we install?
+│  Minimal: Just the essentials for component development.
+│
+●  Storybook collects completely anonymous usage telemetry. We use it to shape
+│  Storybook's roadmap and prioritize features. You can learn more, including how
+│  to opt out, at https://storybook.js.org/telemetry
+│
+◆  Storybook configuration generated
+│
+│  - Configuring ESLint plugin
+│  - Configuring main.ts
+│  - Configuring preview.ts
+│  - Adding Storybook command to package.json
+│  - Copying framework templates
+│
+◆  Dependencies added to package.json
+│
+│  Adding devDependencies:
+│  - storybook@^10.2.1
+│  - @storybook/nextjs-vite@^10.2.1
+│  - vite@^7.3.1
+│  - eslint-plugin-storybook@^10.2.1
+│
+◇  Dependencies installed
+│
+◇  Storybook was successfully installed in your project!
+│
+│  To run Storybook manually, run npm run storybook. CTRL+C to stop.
+│
+│  Wanna know more about Storybook? Check out https://storybook.js.org/
+│  Having trouble or want to chat? Join us at https://discord.gg/storybook/
+```
+:::
+
+インストールが完了すると下記画像が表示されます
+![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
+
