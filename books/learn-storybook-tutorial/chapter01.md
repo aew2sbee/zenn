@@ -3,19 +3,21 @@ title: "環境構築"
 ---
 
 ## 🌱 このチャプターのゴール
-ローカル環境で下記キャプチャーが表示されるところまで進めます。
+ローカル環境で、下記のキャプチャーが表示されるところまで進めます。
+
 ![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
 
 ## 🌱 Next.jsのインストール
-Storybookを動かすには、`Next.js`が必要です。インストールします。
+Storybook を動かすために、まずは `Next.js` をインストールします。
+
 ```bash
 npx create-next-app@latest . --yes
 ```
 
 :::message
 **ポイント**
-Next.jsがインストールできるために、Node.jsのインストール等はここでは解説しません。
-ご自身でお願いします
+`Next.js`をインストールするために必要な`Node.js`の導入などは、ここでは解説しません。
+あらかじめご自身の環境で準備しておいてください。
 
 :::
 
@@ -61,7 +63,9 @@ Success! Created tech-storybook at C:\Users\xxxxx\work\tech-storybook
 :::
 
 ---
-ローカル環境での起動を確認します。
+
+`Next.js`が正しく起動するか確認します。
+
 ```bash
 npm run dev
 ```
@@ -84,12 +88,15 @@ $ npm run dev
 ```
 :::
 
-http://localhost:3000 にアクセスして下記画像が表示されます
+ブラウザで`http://localhost:3000`にアクセスし、下記の画面が表示されれば OK です。
 
 ![installed-successfully-nextjs](/images/books/learn-storybook-tutorial/installed-successfully-nextjs.png)
 
 
-`app`ディレクトリを`src`ディレクトリ配下へ移動する(小さなこだわり)
+## 🌱 `app`ディレクトリを`src`ディレクトリ配下へ移動する(小さなこだわり)
+
+`Next.js`の`app`ディレクトリを`src`配下へ移動します。
+これは必須ではありませんが、個人的な好みとして行っています。
 
 ```bash
 mkdir src
@@ -107,10 +114,8 @@ mv app src/
 
 ```
 
-
-
 ## 🌱 Storybookのインストール
-
+続いて`Storybook`をインストールします。
 ```bash
 npm create storybook@latest
 ```
@@ -201,6 +206,7 @@ $ npm create storybook@latest
 ```
 :::
 
-インストールが完了すると下記画像が表示されます
+`Storybook`のインストールが完了すると、次の画面が表示されます。
+
 ![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
 
