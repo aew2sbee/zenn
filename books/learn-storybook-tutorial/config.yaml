@@ -1,5 +1,5 @@
 title: '[Storybook] 私なりのまとめ'
-summary: "Storybook公式サイトのチュートリアル\n▶ https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/ \nNext.js + Tailwind CSS + TypeScript + Storybookの構成について解説します。\nで実際に動かして学んだ内容をアウトプットした内容になります"
+summary: "Storybook公式サイトのチュートリアル\n▶ https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/ \nNext.js + Tailwind CSS + TypeScript + Storybookの構成について解説します。\n実際に動かして学んだ内容をアウトプットした内容になります"
 topics: ['tailwindcss', 'nextjs', 'ts', 'storybook', '初心者向け'] # トピック（5つまで）
 published: true # falseだと下書き
 price: 0 # 有料の場合200〜5000
