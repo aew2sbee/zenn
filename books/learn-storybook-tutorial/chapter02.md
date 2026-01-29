@@ -3,12 +3,15 @@ title: "自作のUIコンポーネントを登録する"
 ---
 
 ## 🌱 このチャプターのゴール
-ローカル環境で下記キャプチャーが表示されるところまで進めます。
+ローカル環境で`Storybook`を起動し、
+下記キャプチャーのように 自作ボタンが表示されるところまで進めます。
+
 ![original-button](/images/books/learn-storybook-tutorial/original-button.png)
 
 
 ## 🌱 自作のUIコンポーネントの作成
-`color`と`size`を変えられるボタンのサンプルコードを用意しました。
+`color`と`size`を切り替えられる Button コンポーネントを作成します。
+（Tailwind CSS のクラスを切り替えることで見た目を変更します）
 
 ```tsx: src/client/components/ui/Button/Button.tsx
 import * as React from "react";
@@ -53,6 +56,7 @@ export function Button({
 ```
 
 ## 🌱 エクスポート用のファイルの作成
+他の場所から`import`しやすいように、`index.ts`で再エクスポートします。
 
 ```tsx: src/client/components/ui/Button/index.ts
 export { Button } from "./Button";
@@ -61,6 +65,7 @@ export type { ButtonProps } from "./Button";
 ```
 
 ## 🌱 Storybook専用ファイルの作成
+`Storybook`に表示するための`*.stories.tsx`を作成します。
 
 ```tsx: src/client/components/ui/Button/Button.stories.tsx
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
@@ -131,7 +136,7 @@ npm run storybook
 ```
 
 ## 🌱 Storybookの設定ファイルを変更
-`Storybook`の対象範囲を設定します
+`Storybook`が参照する`stories`の対象範囲を設定します。
 
 ```diff ts .storybook/main.ts
 import type { StorybookConfig } from '@storybook/nextjs-vite';
@@ -150,6 +155,9 @@ const config: StorybookConfig = {
 export default config;
 
 ```
+また、プレビュー側で`globals.css`を読み込むようにします
+（Tailwind の見た目を反映させるためです）。
+
 ```diff ts .storybook/preview.ts
 import type { Preview } from '@storybook/nextjs-vite'
 + import '../src/app/globals.css'
@@ -240,5 +248,5 @@ $ npm run storybook
 ```
 :::
 
-下記キャプチャーのように起動が出来たと思います。
+下記キャプチャーのように起動できていれば`OK`です。
 ![local-start-storybook](/images/books/learn-storybook-tutorial/local-start-storybook.png)

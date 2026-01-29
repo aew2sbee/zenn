@@ -3,17 +3,20 @@ title: "GitHub Pagesにデプロイする"
 ---
 
 ## 🌱 このチャプターのゴール
-ローカル環境で見ていた`Storybook`を
-`https://<ユーザー名>.github.io/<リポジトリ名>/`に公開する
+ローカル環境で確認していた `Storybook` を、GitHub Pages に公開します。
+公開URLは次の形式になります。
+
+`https://<ユーザー名>.github.io/<リポジトリ名>/`
 
 ![original-button](/images/books/learn-storybook-tutorial/original-button.png)
 
-▼ 私の場合はこちらから
+▼ 私の場合はこちらから確認できます
 @[card](https://aew2sbee.github.io/tech-storybook/)
 
 
 ## 🌱 Storybookの設定ファイルを変更
-`staticDirs`のパスを変更します
+`staticDirs` のパスを **Windows形式（バックスラッシュ）から、URL/Unix形式（スラッシュ）** に変更します。
+GitHub Actions（Linux環境）でビルドする場合、スラッシュ形式に統一しておくと安全です。
 
 ```diff ts .storybook/main.ts
 import type { StorybookConfig } from '@storybook/nextjs-vite';
@@ -34,16 +37,14 @@ export default config;
 ```
 
 ## 🌱 GitHub上にpublic/を作る
-`public/`にデプロイした内容を配置するため、場所を確保します。
+`public/`をリポジトリに含めるため、空フォルダにならないよう`.gitkeep`を置きます。
 
 ```bash
 touch public/.gitkeep
 ```
 
-
 ## 🌱 GitHub Action専用ファイルを作成する
-`main`ブランチに`push`する or「Run workflow」で手動実行に対応するように
-`yml`を記載します
+`main`ブランチへの`push`をトリガーに自動デプロイし、さらに「Run workflow」から手動実行もできるように`yml`を作成します。
 
 ```yml .github/workflows/storybook-pages.yml
 # ================================
@@ -130,9 +131,10 @@ jobs:
 
 ## 🌱 GitHub > Actionsタブを確認する
 
-`Action`が成功しているのか確認する
+`GitHub`の`Action`タブで、ワークフローが成功していることを確認します。
 
 ![success-github-action](/images/books/learn-storybook-tutorial/success-github-action.png)
 
+成功していれば、次のURLで公開された`Storybook`を確認できます。
 
-`https://<ユーザー名>.github.io/<リポジトリ名>/`から確認できます
+`https://<ユーザー名>.github.io/<リポジトリ名>/`
