@@ -2,12 +2,11 @@
 title: "2021.05: リーダブルコード"
 ---
 
-## 🌱 書影
-![book001](/images/books/book-record-of-reading/book001.jpg)
-
-## 🌱 URL
+## 🌱 書籍情報
 https://www.oreilly.co.jp/books/9784873115658/
 
 ## 🌱 おすすめ度
+🩵🩵🩵🩵🩵: 本業で活かせた
 
 ## 🌱 感想
+関数や変数の命名規則の原則を学べて、本業で活かすことができた。

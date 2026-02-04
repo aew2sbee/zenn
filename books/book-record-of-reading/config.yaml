@@ -1,9 +1,59 @@
 title: '[技術書籍] 私なりのまとめ'
 summary: "自分が読んだ技術書の備忘録"
-topics: ['技術書', '書籍'] # トピック（5つまで）
+topics: ['技術書', '書籍', '読書', '読書メモ'] # トピック（5つまで）
 published: false # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
+  - book052
+  - book051
+  - book050
+  - book049
+  - book048
+  - book047
+  - book046
+  - book045
+  - book044
+  - book043
+  - book042
+  - book041
+  - book040
+  - book039
+  - book038
+  - book037
+  - book036
+  - book035
+  - book034
+  - book033
+  - book032
+  - book031
+  - book030
+  - book029
+  - book028
+  - book027
+  - book026
+  - book025
+  - book024
+  - book023
+  - book022
+  - book021
+  - book020
+  - book019
+  - book018
+  - book017
+  - book016
+  - book015
+  - book014
+  - book013
+  - book012
+  - book011
+  - book010
+  - book009
+  - book008
+  - book007
+  - book006
+  - book005
+  - book004
+  - book003
   - book002
   - book001
 
