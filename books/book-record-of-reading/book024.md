@@ -1,5 +1,5 @@
 ---
-title: "2023.09: SCRUM BOOT CAMP THE BOOK【増補改訂版】 スクラムチームではじめるアジャイル開発"
+title: "2023.09: SCRUM BOOT CAMP THE BOOK"
 ---
 
 ## 🌱 書籍情報
