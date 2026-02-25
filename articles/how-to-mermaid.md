@@ -3,7 +3,7 @@ title: "[Mermaid] 基礎をしっかり学ぶ" # 記事のタイトル
 emoji: "🧜‍♀️‍" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["mermaid", "github", "md", "初心者向け"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開:true / 非公開:false
+published: true # 公開:true / 非公開:false
 ---
 
 ## 🌱 はじめに
@@ -350,7 +350,7 @@ classDiagram
 classDiagram
   class User {
     UserId: id
-   }
+  }
 
   class UserId {
     + value: number
@@ -462,50 +462,71 @@ User "1" --> "*" Order
 
 :::
 
-
+### 6. コメント補足
+`note for XXXX: コメント`でその値についての値オブジェクトの**制約**や**条件**を補足する
 
 ```mermaid
 classDiagram
-    direction LR
+  class User {
+    UserId: id
+  }
 
-    class StudyUser {
-        +ChannelId channelId
-        +UserName userName
-        +IconImageUrl iconImageUrl
-        +TimeSec timeSec
-        +UpdateTime updateTime
-        +IsStudying isStudying
-        updateStatus() void
-    }
+  note for UserId "制約: \n・1以上の整数であること"
 
-    class ChannelId {
-        +string value
-    }
+  class UserId {
+    + value: number
+  }
 
-    class UserName {
-        +string value
-    }
+  User *-- UserId
+```
 
-    class TimeSec {
-        +number value
-    }
+```diff md:User.md
+classDiagram
+  class User {
+    UserId: id
+  }
 
-    class UpdateTime {
-        +Date value
-    }
++  note for UserId "制約: \n・1以上の整数であること"
 
-    class IsStudying {
-        +boolean value
-    }
+  class UserId {
+    + value: number
+  }
 
-    class IconImageUrl {
-        +string value
-    }
+  User *-- UserId
+```
 
-    StudyUser *-- ChannelId
-    StudyUser *-- UserName
-    StudyUser *-- IconImageUrl
-    StudyUser *-- TimeSec
-    StudyUser *-- UpdateTime
-    StudyUser *-- IsStudying
+### 7. おまけ(クラス図を左から右へ)
+`direction LR`を指定するとクラス図を左から右へに変更できます。
+※ デフォルトは、`direction TD`: 上から下へ
+
+```mermaid
+classDiagram
+  direction LR
+  class User {
+    UserId: id
+  }
+
+  note for UserId "制約: \n・1以上の整数であること"
+
+  class UserId {
+    + value: number
+  }
+
+  User *-- UserId
+```
+
+```diff md:User.md
+classDiagram
++  direction LR
+  class User {
+    UserId: id
+  }
+
+  note for UserId "制約: \n・1以上の整数であること"
+
+  class UserId {
+    + value: number
+  }
+
+  User *-- UserId
 ```
