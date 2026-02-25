@@ -19,7 +19,7 @@ https://book.mynavi.jp/ec/products/detail/id=149226
 
 
 :::message alert
-`PlantUM`は`Java`のインストール等の下準備が必要なため、
+`PlantUML`は`Java`のインストール等の下準備が必要なため、
 今回は下準備が少ない`Mermaid（マーメイド）`を学習します。
 :::
 
@@ -31,7 +31,7 @@ https://book.mynavi.jp/ec/products/detail/id=149226
 ▼こんな感じの表現が可能
 
 ```mermaid
-graph LR
+flowchart LR
     A[商品を選ぶ] --> B{在庫はある?}
     B -- はい --> C[カートに入れる]
     B -- いいえ --> D[入荷通知を登録]
@@ -68,7 +68,7 @@ XXX
 
 ## 🌱 サンプル
 ### フローチャート
-`graph TD`を先頭に記載したら、**フローチャート**が表現することできます。
+`graph TD`を先頭に記載したら、**フローチャート**が表現できます。
 
 ```mermaid
 graph TD
@@ -95,7 +95,7 @@ graph TD
 ```
 
 ### シーケンス図
-`sequenceDiagram`を先頭に記載したら、**シーケンス図**が表現することできます。
+`sequenceDiagram`を先頭に記載したら、**シーケンス図**が表現できます。
 
 ```mermaid
 sequenceDiagram
@@ -130,7 +130,7 @@ sequenceDiagram
 ```
 
 ### クラス図
-`classDiagram`を先頭に記載したら、**クラス図**が表現することできます。
+`classDiagram`を先頭に記載したら、**クラス図**が表現できます。
 
 ```mermaid
 classDiagram
@@ -173,7 +173,7 @@ classDiagram
 ```
 
 ### 状態遷移図
-`stateDiagram-v2`を先頭に記載したら、**状態遷移図**が表現することできます。
+`stateDiagram-v2`を先頭に記載したら、**状態遷移図**が表現できます。
 
 ```mermaid
 stateDiagram-v2
@@ -200,7 +200,7 @@ stateDiagram-v2
 ```
 
 ### Entity Relationship図
-`erDiagram`を先頭に記載したら、**Entity Relationship図**が表現することできます。
+`erDiagram`を先頭に記載したら、**Entity Relationship図**が表現できます。
 
 ```mermaid
 erDiagram
@@ -278,13 +278,13 @@ classDiagram
 ```mermaid
 classDiagram
    class User {
-    UserId: ユーザーを識別するID
+    UserId: id
    }
 ```
 ```diff md:User.md
  classDiagram
     class User {
-+      UserId: ユーザーを識別するID
++      UserId: id
    }
 ```
 
@@ -294,7 +294,7 @@ classDiagram
 ```mermaid
 classDiagram
   class User {
-    UserId: ユーザーを識別するID
+    UserId: id
    }
 
   class UserId {
@@ -305,7 +305,7 @@ classDiagram
 ```diff md:User.md
 classDiagram
     class User {
-      UserId: ユーザーを識別するID
+      UserId: id
    }
 
 +    class UserId {
@@ -329,7 +329,7 @@ classDiagram
 
 **Public**
 
-- 記述:  `-`
+- 記述:  `+`
 - 説明: どこからでも
 - 用途: 操作（メソッド）に付ける。外部への窓口。
 
@@ -349,7 +349,7 @@ classDiagram
 ```mermaid
 classDiagram
   class User {
-    UserId: ユーザーを識別するID
+    UserId: id
    }
 
   class UserId {
@@ -362,7 +362,7 @@ classDiagram
 ```diff md:User.md
 classDiagram
   class User {
-    UserId: ユーザーを識別するID
+    UserId: id
   }
 
   class UserId {
