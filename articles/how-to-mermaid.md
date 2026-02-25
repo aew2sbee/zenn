@@ -26,6 +26,7 @@ https://book.mynavi.jp/ec/products/detail/id=149226
 ## 🌱 Mermaid（マーメイド）とは
 :::message
 テキスト（コード）を書くだけで、綺麗な図を自動生成してくれるツール
+
 ---
 ▼こんな感じの表現が可能
 
@@ -245,4 +246,266 @@ erDiagram
     }
 ```
 
-## 🌱 クラス図をもっと詳しく
+## 🌱 クラス図を値オブジェクト（Value Object）で意識する
+
+### 1. 宣言
+`classDiagram`と書き、クラス図を書くことを宣言します
+
+```diff md:User.md
++ classDiagram
+```
+
+---
+
+### 2. クラス名 (Class Name)の定義
+`class XXXX {}`を書いてクラスの定義します
+```mermaid
+classDiagram
+   class User {
+   }
+```
+```diff md:User.md
+ classDiagram
++    class User {
++   }
+```
+
+---
+
+### 3. 属性 (Attribute)の定義
+`class XXXX {}`の内側にクラスの属性を記載します。
+※ 説明を簡素にしたいので、`UserId`だけにします
+```mermaid
+classDiagram
+   class User {
+    UserId: ユーザーを識別するID
+   }
+```
+```diff md:User.md
+ classDiagram
+    class User {
++      UserId: ユーザーを識別するID
+   }
+```
+
+### 4. 値オブジェクト (Value Object / VO)の定義
+クラス名の下に値オブジェクトのクラスを定義します。
+
+```mermaid
+classDiagram
+  class User {
+    UserId: ユーザーを識別するID
+   }
+
+  class UserId {
+    + value: number
+  }
+```
+
+```diff md:User.md
+classDiagram
+    class User {
+      UserId: ユーザーを識別するID
+   }
+
++    class UserId {
++      + value: number
++    }
+```
+
+
+:::message
+**可視性記号の一覧**
+
+---
+
+**Private**
+
+- 記述:  `-`
+- 説明: そのクラス内のみ
+- 用途: 属性（データ）に付ける。直接触らせない。
+
+---
+
+**Public**
+
+- 記述:  `-`
+- 説明: どこからでも
+- 用途: 操作（メソッド）に付ける。外部への窓口。
+
+---
+
+**Protected**
+
+- 記述:  `#`
+- 説明: 子クラスまで
+- 用途: 継承を使う場合に稀に使う。
+
+:::
+
+
+### 5. 関係性(Relationships)の定義
+最下段に関係性を定義します。
+```mermaid
+classDiagram
+  class User {
+    UserId: ユーザーを識別するID
+   }
+
+  class UserId {
+    + value: number
+  }
+
+  User *-- UserId
+```
+
+```diff md:User.md
+classDiagram
+  class User {
+    UserId: ユーザーを識別するID
+  }
+
+  class UserId {
+    + value: number
+  }
+
++  User *-- UserId
+```
+
+:::message
+**リレーションシップの一覧**
+
+---
+
+**継承 (Inheritance)**
+
+- 記述:  `<|--`
+- 説明:「AはBの一種である」
+- 用途: 親クラスの性質を引き継ぐ時に使う
+
+```mermaid
+classDiagram
+  Animal <|-- Dog : 継承
+```
+
+```md
+Animal <|-- Dog : 継承
+```
+
+---
+
+**コンポジション (Composition)**
+
+- 記述: `*--`
+- 説明:「強力な親子関係」
+- 用途: 親が消えると子も消える関係性の時に使う
+
+```mermaid
+classDiagram
+  User *-- UserId : 強く所有
+```
+
+```md
+User *-- UserId : 強く所有
+```
+
+---
+
+**集約 (Aggregation)**
+
+- 記述: `o--`
+- 説明:「弱めの親子関係」
+- 用途: 親が消えても、子は独立して存在できる関係性の時に使う
+
+```mermaid
+classDiagram
+  Library o-- Book : 集めている
+```
+
+```md
+Library o-- Book : 集めている
+```
+
+---
+
+**関連 (Association)**
+
+- 記述: `-->` or `--`
+- 説明:「AがBを知っている・利用している」
+- 用途: 親が消えても、子は独立して存在できる関係性の時に使う
+
+```mermaid
+classDiagram
+  User --> Item : 購入する
+```
+
+```md
+User --> Item : 購入する
+```
+
+---
+
+**多重度**
+
+- 記述: `"n"`
+- 説明:「1対1」や「1対多」
+- 用途: 多重度関係性の時に使う
+
+```mermaid
+classDiagram
+  User "1" --> "*" Order
+```
+
+```md
+User "1" --> "*" Order
+```
+
+:::
+
+
+
+```mermaid
+classDiagram
+    direction LR
+
+    class StudyUser {
+        +ChannelId channelId
+        +UserName userName
+        +IconImageUrl iconImageUrl
+        +TimeSec timeSec
+        +UpdateTime updateTime
+        +IsStudying isStudying
+        updateStatus() void
+    }
+
+    class ChannelId {
+        +string value
+    }
+
+    class UserName {
+        +string value
+    }
+
+    class TimeSec {
+        +number value
+    }
+
+    class UpdateTime {
+        +Date value
+    }
+
+    class IsStudying {
+        +boolean value
+    }
+
+    class IconImageUrl {
+        +string value
+    }
+
+    StudyUser *-- ChannelId
+    StudyUser *-- UserName
+    StudyUser *-- IconImageUrl
+    StudyUser *-- TimeSec
+    StudyUser *-- UpdateTime
+    StudyUser *-- IsStudying
+```
