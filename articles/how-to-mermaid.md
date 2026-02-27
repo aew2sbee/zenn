@@ -495,7 +495,7 @@ classDiagram
   User *-- UserId
 ```
 
-### 7. おまけ(namespace)
+### 7. おまけ(値オブジェクトのグループ分け)
 `namespace XXXX {}`でグループ分けをする
 
 ```mermaid
