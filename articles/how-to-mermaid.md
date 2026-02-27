@@ -495,7 +495,44 @@ classDiagram
   User *-- UserId
 ```
 
-### 7. おまけ(クラス図を左から右へ)
+### 7. おまけ(namespace)
+`namespace XXXX {}`でグループ分けをする
+
+```mermaid
+classDiagram
+  class User {
+    UserId: id
+  }
+
+  note for UserId "制約: \n・1以上の整数であること"
+
+  namespace userDomain {
+    class UserId {
+      + value: number
+    }
+  }
+
+  User *-- UserId
+```
+
+```diff md:User.md
+classDiagram
+  class User {
+    UserId: id
+  }
+
+  note for UserId "制約: \n・1以上の整数であること"
+
++  namespace userDomain {
+    class UserId {
+      + value: number
+    }
++  }
+
+  User *-- UserId
+```
+
+### 8. おまけ(クラス図を左から右へ)
 `direction LR`を指定するとクラス図を左から右へに変更できます。
 ※ デフォルトは、`direction TD`: 上から下へ
 
