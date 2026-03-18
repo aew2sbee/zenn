@@ -216,8 +216,8 @@ graph TD
 
     %% アプリケーション層からドメイン層へ
     AS --> Transaction
-    AS --> Entity
-    AS --> DS
+    AS -.->|単体のエンティティを操作する| Entity
+    AS -.->|複数のエンティティを操作する| DS
     AS --> RepoInt
 
     %% ドメイン層内の関係
