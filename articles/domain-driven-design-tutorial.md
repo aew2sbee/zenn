@@ -109,37 +109,13 @@ https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/
 **中核の業務領域**以外は、外注や経験が浅いメンバーが対応することが可能です。
 
 ### 2. 誤訳が少なくなる
+言語として同じ意味だが、立場によって大事にする意味が変わる
+例えば、「野菜」なら農家🧑‍🌾、料理人🧑‍🍳、運送関係者🧑‍🔧下記のようになると考えます。
 
-登場人物
-🙎: お客さん 👨‍⚖️: チームリーダー 👨‍💻: プログラマー
-
----
-👨‍⚖️チームリーダー:「どんなシステムが欲しいですか？」
-🙎お客さん:　　　「**"素敵な"** 本を見つけれるシステムが欲しい」
-👨‍⚖️チームリーダー:「承知しました。**"素敵な"** 本を見つけれるシステムですね。」
-👨‍⚖️チームリーダー:「早速、設計とシステム開発をしますね。」
-
-👨‍⚖️チームリーダー: (頭の中ではどのようにシステムにするか思考中・・・)
-
--- この時点で、誤訳が発生!! --
-
-👨‍⚖️チームリーダー:「本を見つけれるシステムだから、`Bookテーブル`から本のタイトルでデータを取得する仕様にしよう!!」
-👨‍⚖️チームリーダー: (仕様①：`Bookテーブル`から本のタイトルを`like句`でデータを取得する。）
-👨‍⚖️チームリーダー:「設計書が出来たぞ!! 」
-👨‍⚖️チームリーダー:「設計書通りにシステム開発をお願いします 」
-👨‍💻プログラマー:　「かしこまりました。」
-👨‍💻プログラマー:　「コードを書いて、`Bookテーブル`から本のタイトルを`like句`でデータを取得できるようになったぞ!!」
-👨‍💻プログラマー:　「テストコードも書いて、仕様通りに動作するシステムにするぞ!!」
-👨‍💻プログラマー:　「出来ました。リリースします。」
-👨‍⚖️チームリーダー:「ありがとう。お客さんに連絡します。」
-
-👨‍⚖️チームリーダー:「納品しました。ご確認をよろしくお願いいたします」
-🙎お客さん:「ありがとうございます。確認します。」
-🙎お客さん:「違う... (これじゃただの検索できるだけじゃん)」
-👨‍⚖️チームリーダー:「ん？どうかしましたか？」
-
----
-
+各登場人物
+- 農家🧑‍🌾: [ 品種, 播種日, 収穫予定日, 農薬, 収穫量 ]
+- 料理人🧑‍🍳: [ 鮮度, 鮮度, 味, 原価, アレルギー情報 ]
+- 運送関係者🧑‍🔧: [ 重量, 体積, 設定温度（冷蔵/常温）, 積み上げ厳禁 ]
 
 ### 3. ディレクトリ構成に悩まなくなる
 
@@ -153,9 +129,6 @@ https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/
 
 
 ### 2. 細かい部分でルールや考え方に個人差が発生しやすい
-
-
-
 
 
 ## 🌱 ドメイン駆動設計に登場する専門用語
@@ -177,35 +150,84 @@ https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/
 2.
 
 
-## 🌱 
+## 🌱 おすすめの読書順
+
+### 1. ドメイン駆動設計をはじめよう
+個人的には、この書籍から読み進めるのが良いと思いました。
+理由は、ドメイン駆動設計の専用用語を丁寧に解説されている点でした。
+
+ドメイン駆動設計の専用用語をベースに設計や実装を解説しています。
+自分も専用用語を曖昧の理解をしたまま、設計や実装を解説ページを読みました。
+しかし、分かったような気がするが実際に手を動かせない。
+
+
+オライリー書籍なので小難しいイメージがありますが、専用用語を丁寧に解説されているのでおすすめです。
+
+https://www.oreilly.co.jp//books/9784814400737/
+
+
+### 2. ドメイン駆動設計入門 ボトムアップでわかる！ドメイン駆動設計の基本
+
+https://www.shoeisha.co.jp/book/detail/9784798150727
+
+
+### 3. つくりながら学ぶ！ ドメイン駆動設計 実践入門
+
+https://book.mynavi.jp/ec/products/detail/id=149226
+
 
 ````mermaid
-classDiagram
-    class Player {
-        <<Entity>>
-        +PlayerId id
-        +PlayerName name
-        +MagicPower mp
-        +levelUp()
-    }
-    class MagicPower {
-        <<ValueObject>>
-        +int value
-        +add(amount)
-    }
-    class PlayerRepository {
-        <<Interface>>
-        +save(Player)
-        +findById(Id)
-    }
-    class EvolutionService {
-        <<DomainService>>
-        +canEvolve(Player)
-    }
+graph TD
+    %% 外部（システムの利用者）
+    External[ブラウザ / 外部システム]
 
-    Player *-- MagicPower
-    EvolutionService ..> Player : 判定
-    PlayerRepository ..> Player : 永続化
+    subgraph UI_Layer [ユーザーインターフェース層 / プレゼンテーション層]
+        Component[UIコンポーネント]
+        Controller[コントローラー]
+        Presenter[プレゼンター / レスポンス変換]
+    end
+
+    subgraph Application_Layer [アプリケーション層]
+        AS[アプリケーションサービス]
+        Transaction[トランザクション制御]
+    end
+
+    subgraph Domain_Layer [ドメイン層]
+        Entity[エンティティ]
+        VO[値オブジェクト]
+        DS[ドメインサービス]
+        RepoInt[リポジトリインターフェース]
+    end
+
+    subgraph Infrastructure_Layer [インフラストラクチャ層]
+        RepoImpl[リポジトリの実装 / DBアクセス]
+        ExternalAPI[外部APIクライアント]
+        MailService[通知・メール送信]
+    end
+
+    %% --- 依存関係と流れ ---
+
+    %% 外部からUI層へ
+    External --> Controller
+
+    %% UI層からアプリケーション層へ
+    Controller --> AS
+    Component --> AS
+
+    %% アプリケーション層からドメイン層へ
+    AS --> Transaction
+    AS --> Entity
+    AS --> DS
+    AS --> RepoInt
+
+    %% ドメイン層内の関係
+    DS --> Entity
+    Entity --> VO
+
+    %% インフラストラクチャ層への依存
+    RepoInt -.->|実装| RepoImpl
+    AS -.->|利用| ExternalAPI
+    AS -.->|利用| MailService
 ````
 
 
