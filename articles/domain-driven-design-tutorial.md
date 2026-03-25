@@ -259,10 +259,11 @@ graph TD
     %% 外部（システムの利用者）
     External[ブラウザ / 外部システム]
 
-    subgraph UI_Layer [ユーザーインターフェース層 / プレゼンテーション層]
+    UserInterface[ユーザーインターフェース]
+
+    subgraph UI_Layer [プレゼンテーション層]
         Component[UIコンポーネント]
-        Controller[コントローラー]
-        Presenter[プレゼンター / レスポンス変換]
+        RESTAPI[REST API]
     end
 
     subgraph Application_Layer [アプリケーション層]
@@ -286,11 +287,12 @@ graph TD
     %% --- 依存関係と流れ ---
 
     %% 外部からUI層へ
-    External --> Controller
+    External --> UserInterface
 
     %% UI層からアプリケーション層へ
-    Controller --> AS
+    UserInterface --> AS
     Component --> AS
+    RESTAPI --> AS
 
     %% アプリケーション層からドメイン層へ
     AS --> Transaction
