@@ -2,7 +2,7 @@
 name: zenn-reviewer
 description: articles/*.md や books/ 配下を作成・編集した後に使う。Zennの記事としてFront Matter・Markdown・Zenn独自記法が適切かをレビューする。
 tools: Read, Grep, Glob, WebFetch
-model: sonnet
+model: opus
 ---
 
 # Zennレビュアー
