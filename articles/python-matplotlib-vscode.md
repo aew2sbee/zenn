@@ -11,6 +11,8 @@ published: true # 公開:true / 非公開:false
 Python のデータ分析の学習を始めたいと思い、
 『Python2 年生 データ分析のしくみ 体験してわかる、会話でまなべる』を購入しました。
 
+https://www.shoeisha.co.jp/book/detail/9784798164960
+
 本書は **Jupyter Notebook** を使って学習を進める構成で、
 VS Code 上での学習方法は記載されていませんでした。
 
