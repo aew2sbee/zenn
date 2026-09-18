@@ -4,4 +4,4 @@
 <!-- AI向け: 変更理由を1文で書く。例: タイトルと本文で用語が異なり、読者が混乱するため -->
 
 ## 🌱 変更点
-<!-- AI向け: 変更ファイルごとに1行で書く。記事は published の値を併記する。例: articles/xxxxx.md（published: true）: タイトルを「〜」に修正 -->
+<!-- AI向け: 変更ファイルごとに「- 」で始まる1行で書く。記事は published の値を併記する。例: - articles/xxxxx.md（published: true）: タイトルを「〜」に修正 -->
