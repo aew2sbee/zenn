@@ -1,0 +1,5 @@
+{
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "コミットメッセージは必ず日本語で、Conventional Commits形式(feat/fix/docs/refactor/test/chore)で記述してください。" }
+  ]
+}
