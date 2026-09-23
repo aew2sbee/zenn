@@ -24,7 +24,7 @@ Docker コンテナ上に Node.js の環境を作り、VS Code から接続し�
 |---|---|
 |**対象者**|・Docker 初学者|
 |**伝えたい内容**|・Docker コンテナ上に Node.js の環境を作り、VS Code から接続して React アプリを起動する方法|
-|**前提条件**|・Docker Desktop をインストール済み<br>・VS Code と拡張機能（Docker、Dev Containers）をインストール済み|
+|**前提条件**|・Docker Desktop をインストール済み<br>・VS Code と拡張機能（Docker、Dev Containers）をインストール済み<br>※現在、Docker 拡張機能のコンテナ管理機能は「Container Tools」拡張機能に移行しています|
 |**使用するイメージ**|・node:14.17.0（Docker Hub から取得するため、ローカルへの Node.js のインストールは不要）|
 
 Docker Desktop のインストールは、下記の記事を参考にしてください。
