@@ -10,6 +10,9 @@ published: true # 公開:true / 非公開:false
 
 Python のデータ分析の学習を始めたいと思い、
 森 巧尚『Python2年生 データ分析のしくみ 体験してわかる！会話でまなべる！』（翔泳社）を購入しました。
+
+https://www.shoeisha.co.jp/book/detail/9784798164960
+
 そこで、matplotlib でヒストグラムを描く方法を学びました。
 
 学習した内容をまとめます。
