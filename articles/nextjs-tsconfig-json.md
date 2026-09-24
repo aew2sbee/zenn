@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**tsconfig.json の設定方法** をまとめています。
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2022/978-4-297-12916-3)
-:::
 
 ## 🌱 1. tsconfig.json の作成
 
