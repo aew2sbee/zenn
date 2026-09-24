@@ -9,14 +9,14 @@ published: true # 公開:true / 非公開:false
 ## 🌱 はじめに
 
 Python のデータ分析の学習を始めたいと思い、
-Python2 年生 データ分析のしくみ 体験してわかる！会話でまなべる！を購入しました。
-そこで`pandas`の使い方を学びました。
+森 巧尚『Python2年生 データ分析のしくみ 体験してわかる！会話でまなべる！』（翔泳社）を購入しました。
+そこで、`pandas`の使い方を学びました。
 
-学習した内容を執筆します。
+学習した内容をまとめます。
 
 | 項目             | 内容                                                           |
 | ---------------- | -------------------------------------------------------------- |
-| **対象者**       | ・pandas で中央値を求める方法を知りたい方<br>・Python 微経験者 |
+| **対象者**       | ・pandas で中央値を求める方法を知りたい方<br>・Python を少し触ったことがある方 |
 | **伝えたい内容** | ・pandas で中央値を求める方法                                  |
 | **前提条件**     | ・Python 3.9.10<br>・pandas 1.5.2                              |
 
@@ -36,18 +36,19 @@ pip install pandas
 $ pip show pandas
 Name: pandas
 Version: 1.5.2
-Summary: Powerful data structures for data analysis, time series, and statisticsHome-page: https://pandas.pydata.org
+Summary: Powerful data structures for data analysis, time series, and statistics
+Home-page: https://pandas.pydata.org
 Author: The Pandas Development Team
 Author-email: pandas-dev@python.org
 License: BSD-3-Clause
-Location: /home/furuta/.local/lib/python3.9/site-packages
+Location: /home/user/.local/lib/python3.9/site-packages
 Requires: numpy, python-dateutil, pytz
 Required-by:
 ```
 
-### 2. pandas.median()でコーディングする
+### 2. median()でコーディングする
 
-```python: python-median.py
+```python:python-median.py
 import pandas as pd
 
 data = {
@@ -55,9 +56,9 @@ data = {
     "大阪の気温(2020年)": [8.6, 8.0, 11.4, 13.7, 20.8, 24.9, 26.0, 30.7, 25.8, 18.7, 14.7, 8.7]
 }
 df = pd.DataFrame(data)
-# 全てのデータを出力する
+# 列ごとの中央値をまとめて出力する
 print(df.median())
-# 個別のデータを出力する
+# 列を指定して中央値を出力する
 print("東京の気温(2020年) =", df["東京の気温(2020年)"].median())
 print("大阪の気温(2020年) =", df["大阪の気温(2020年)"].median())
 ```
