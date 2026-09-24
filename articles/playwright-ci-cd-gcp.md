@@ -1,0 +1,332 @@
+---
+title: "[Playwright] CI/CDで社内環境に対してGitHub ActionsのIPを許可する in GCP編" # 記事のタイトル
+emoji: "🎭" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["playwright", "github", "cicd", "googlecloud", "contest2024"] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開:true / 非公開:false
+---
+
+## 🌱 はじめに
+
+この記事では、**社内で初めて Playwright を CI/CD に組み込んだ時に苦労した点と対策**を解説します。
+
+:::details 実際に使った yaml
+
+```yaml
+name: Playwright Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: "projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider"
+          service_account: "example@project.iam.gserviceaccount.com"
+
+      # GitHub ActionsのIPは可変のため、GitHub Actionsのアクセスを許可するルールをWAFに追加する
+      - name: Allow Security-Policy
+        run: |
+          IP=$(curl -f -s http://whatismyip.akamai.com)
+          echo "The IP address is: $IP"
+          gcloud compute security-policies rules create NUMBER --action allow --security-policy XXXXX --description "GitHub Actions IP" --src-ip-ranges ${IP}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      # WAFのルールが適用に時間が必要なため待機する
+      - name: Wait for WAF to apply (up to 3 minutes)
+        run: |
+          sleep 90
+          for i in {1..3}; do
+            if curl -f https://example.com; then
+              echo "Success"
+              break
+            fi
+            echo "Retrying in 30 seconds..."
+            sleep 30
+          done
+
+      # テスト実行
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      # 先ほど追加したWAFの許可ルールを削除する
+      - name: Delete Security-Policy
+        if: ${{ always() }}
+        run: |
+          gcloud compute security-policies rules delete NUMBER --security-policy XXXXX --quiet
+```
+
+:::
+
+:::message alert
+**yaml を参考にする際の注意**
+
+- yaml のバージョン（`google-github-actions/auth@v2`、`actions/checkout@v4`、`actions/setup-node@v4`、Node.js 18）は執筆当時のものです。現在は新しいバージョンが出ているため、最新版を確認してください。
+- `http://whatismyip.akamai.com` は暗号化されていない HTTP で IP を取得しています。通信が改ざんされると、任意の IP が WAF の許可ルールに追加されるおそれがあるため、HTTPS で取得できるサービス（例: `https://api.ipify.org`）の利用や、取得した値の検証を検討してください。
+- GitHub がホストするランナーの IP は、クラウド事業者の共有アドレスです。許可している間は、同じ IP を使う第三者からも到達できる可能性があるため、許可は一時的なものにして必ず削除してください。より安全にするなら、セルフホストランナーや固定 IP の利用を検討してください。
+:::
+
+## 🌱 1. google-github-actions/auth のエラーが解消できない
+
+このエラーを解消するのに大変時間を要しました。
+
+:::message alert
+`GitHub Actions`での実行時のエラー
+
+```bash
+google-github-actions/auth failed with: gitHub Actions did not inject $ACTIONS_ID_TOKEN_REQUEST_TOKEN or $ACTIONS_ID_TOKEN_REQUEST_URL into this job. This most likely means the GitHub Actions workflow permissions are incorrect, or this job is being run from a fork. For more information, please see https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
+```
+
+:::
+上記のエラーを解消する時に試したことを列挙します。
+お困りの方の参考になれば幸いです。
+
+### 1. `id-token`の書き込み権限を許可する
+
+当時 `id-token`の書き込み権限を許可しても上記のエラーは解消しませんでした。
+（`id-token: write` は OIDC 認証に必須の設定です。ただし、fork からの PR ではこれだけでは足りませんでした）
+
+```diff yaml
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
++    # Add "id-token" with the intended permissions.
++    permissions:
++      id-token: write
++      contents: read
+    steps:
+```
+
+@[card](https://github.com/google-github-actions/auth?tab=readme-ov-file#usage)
+
+### 2. `google-github-actions/auth`の書き方が正しいか
+
+下記項目について確認しました。
+
+- `google-github-actions/auth`の ver
+- `workload_identity_provider`の値
+- `service_account`の値
+
+```yaml
+- uses: google-github-actions/auth@v2
+  with:
+    workload_identity_provider: "projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider"
+    service_account: "example@project.iam.gserviceaccount.com"
+```
+
+@[card](https://github.com/google-github-actions/auth?tab=readme-ov-file#usage)
+
+### 3. 対象リポジトリの`Settings`が適切か
+
+下記項目にチェックが付いているのかを確認しました。
+
+- [x] **Fork pull request workflows** > Run workflows from fork pull requests
+- [x] **Workflow permissions** > Read and write permissions
+
+![gihub-setting](/images/articles/playwright-ci-cd-gcp/gihub-setting.png)
+
+:::message
+
+**下記項目は組織アカウントで許可されていませんでした。**
+
+---
+
+**Send write tokens to workflows from fork pull requests.**
+This tells Actions to send tokens with write permissions to workflows from pull requests originating from repository forks. Note that doing so will give maintainers of those forks write permissions against the source repository.
+
+> フォークされたリポジトリからのプルリクエストに対して、書き込み権限のトークンを送信する。
+
+> これにより、Actions はフォークされたリポジトリから送られたプルリクエストに対して、書き込み権限を持つトークンをワークフローに送信します。なお、この設定を有効にすると、フォークの管理者が元のリポジトリに対して書き込み権限を持つことになります。
+
+---
+
+**Send secrets and variables to workflows from fork pull requests.**
+This tells Actions to send repository secrets and variables to workflows from pull requests originating from repository forks.
+
+> フォークされたリポジトリからのプルリクエストに対して、シークレットと変数を送信する。
+
+> これにより、Actions はフォークされたリポジトリから送られたプルリクエストに対して、リポジトリのシークレットと変数をワークフローに送信します。
+
+---
+
+**Choose whether GitHub Actions can create pull requests or submit approving pull request reviews.**
+Allow GitHub Actions to create and approve pull requests
+
+> GitHub Actions にプルリクエストを作成したり、プルリクエストを承認するレビューを送信させるかどうかを選択する。
+
+> GitHub Actions がプルリクエストを作成および承認できるように許可します。
+
+---
+
+:::
+
+:::message alert
+**上記の設定は、エラーの解消には不要でした**（解消したのは「6. Fork 元から実行する」です）。
+`Read and write permissions` や、fork の PR に書き込みトークン・シークレットを渡す設定は、権限が必要以上に広がるため有効にしないでください。
+OIDC 認証に必要な権限は、yaml の `permissions`（`id-token: write`）で最小限に付与します。
+:::
+
+### 4. `service_account`を CLI から作成する
+
+当初は GUI から`service_account`を作成しておりましたが、`CLI`で実行すると必要な設定ができるみたいです。
+Workload Identity Federation とサービスアカウントの設定手順は、下記の README（Setup）が参考になります。
+
+@[card](https://github.com/google-github-actions/auth?tab=readme-ov-file#setup)
+
+※インフラ担当の方に依頼したので詳細はよく分かりません。
+
+### 5. `google-github-actions/auth`の前に`actions/checkout`を追加する
+
+下記サイトを参考に`actions/checkout`を追加しましたが、解消には繋がりませんでした。
+
+@[card](https://github.com/google-github-actions/auth?tab=readme-ov-file#prerequisites)
+
+```diff yaml
++ - uses: actions/checkout@v4
+  - uses: google-github-actions/auth@v2
+    with:
+      workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+      service_account: 'example@project.iam.gserviceaccount.com'
+```
+
+### 6. Fork 先から実行するのではなく、Fork 元から実行する
+
+この対応で`google-github-actions/auth`のエラーが解消されました。
+
+:::message
+Fork 元で新しいブランチを作成し、新しく PR を作成したら、解消されました!
+:::
+
+fork からの `pull_request` イベントでは、GITHUB_TOKEN が読み取り専用になり、`id-token: write` も付与されません。
+そのため、`ACTIONS_ID_TOKEN_REQUEST_TOKEN` などが注入されず、OIDC による認証ができなかったのが原因です。
+（`pull_request_target` を使って回避する方法は、fork のコードに権限を渡すことになりセキュリティ上危険なので避けてください）
+
+## 🌱 2. WAF が有効になるのに時間がかかる
+
+当たり前の話かもしれませんが、WAF は即座に反映されません。
+そのため、WAF 設定が有効になるのを待つ必要があります。
+
+方法はいくつかあると思いますが、自分は下記コードを yaml に追加しました。
+※ 大体 1-3 分の間で有効になることを観測しております。
+
+```yaml
+# WAFのルールが適用に時間が必要なため待機する
+- name: Wait for WAF to apply (up to 3 minutes)
+  run: |
+    sleep 90
+    for i in {1..3}; do
+      if curl -f https://example.com; then
+        echo "Success"
+        break
+      fi
+      echo "Retrying in 30 seconds..."
+      sleep 30
+    done
+```
+
+:::message alert
+このループは、3回とも失敗しても最後に `sleep 30` が実行されて正常終了するため、WAF が反映されないままテストに進みます。
+失敗時に止めたい場合は、`break` の代わりに `exit 0` を使い、ループの後に `exit 1` を追加します。
+:::
+
+## 🌱 3. Job ごとで GitHub Actions の IP が変わる
+
+当初は各 Job を管理しやすいように細かく分けましたが、Job ごとに IP が変わってしまいました。
+そのため、`allow-security-policy`で許可した IP 以外で`Playwright`が実行されて`403 Forbidden`が表示されて困りました。
+しかし、下記サイトを読み各 Job を 1 つにまとめ`403 Forbidden`を解消しました。
+
+@[card](https://zenn.dev/hsaki/articles/github-actions-component)
+
+下記のように`yaml`を変更しました。
+
+```diff yaml
+jobs:
+-  allow-security-policy:
+-    runs-on: ubuntu-latest
+-    steps:
+-    # --- 以下略 ---
+-
+-  run-playwright-tests
+-    runs-on: ubuntu-latest
+-    steps:
+-    # --- 以下略 ---
+-
+-  delete-security-policy
+-    runs-on: ubuntu-latest
+-    steps:
+-    # --- 以下略 ---
+
++  e2e-tests:
++    runs-on: ubuntu-latest
++    steps:
++    # --- 以下略 ---
+```
+
+## 🌱 4. 海外アクセスブロックよりも優先度を高くする
+
+既存の WAF に、国外からのアクセスを拒否するルールがありました。
+GitHub Actions のランナーは海外の IP から接続するため、上記のルールよりも優先度を高くする必要があります。
+Cloud Armor では priority の数値が小さいほど優先されるため、国外拒否ルールより小さい値（NUMBER）を指定します。
+
+## 🌱 5. Playwright のために追加した WAF のルールは必ず削除する
+
+試行錯誤中は、処理が最後まで進まないケースがあります。
+その際、前回の WAF のルールが残ったままになり、次回実行時に下記のエラーが発生しておりました。
+※ そのたびにインフラ担当の方に削除連絡をしておりました。
+
+:::message alert
+
+```bash
+ERROR: (gcloud.compute.security-policies.rules.create) Could not fetch resource:
+ - Invalid value for field 'resource.priority': 'NUMBER'. Cannot have rules with the same priorities.
+```
+
+:::
+
+`if: ${{ always() }}`を追加し、**テストの失敗/キャンセル/処理の失敗**でも削除処理を実行する必要があります。
+（ランナーの強制終了などでは実行されない場合もあるため、ルールが残ったときは手動で削除します）
+
+```diff yaml
+    # 先ほど追加したWAFの許可ルールを削除する
+    - name: Delete Security-Policy
++      if: ${{ always() }}
+      run: |
+        gcloud compute security-policies rules delete NUMBER --security-policy XXXXX --quiet
+```
+
+## 🌱 6. 連続で CI/CD はできない
+
+WAF の優先度を固定の数値にしているため、`priority`の重複エラーが発生します。
+再度確認したい場合は、**前回の処理が終わるのを待つ or キャンセルする**必要があります。
+
+さらに、並行して実行すると、後から始まった実行は作成に失敗しますが、`always()` の削除処理は実行されるため、先に実行中のルールを消してしまいます。
+ワークフローに `concurrency` を設定して直列化する、作成に成功したときだけ削除する（`if: ${{ always() && steps.<作成ステップのid>.outcome == 'success' }}`）などの対策を検討してください。
+
+:::message alert
+
+```bash
+ERROR: (gcloud.compute.security-policies.rules.create) Could not fetch resource:
+ - Invalid value for field 'resource.priority': 'NUMBER'. Cannot have rules with the same priorities.
+```
+
+:::
