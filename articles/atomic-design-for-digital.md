@@ -162,6 +162,6 @@ Atomic Design の概念に触れ、しっかり使いこなせたら便利だな
 
 ## 🌱 参考
 
-- [TypeScript と React/Next.js でつくる実践 Web アプリケーション開発](https://gihyo.jp/book/2022/978-4-297-12916-3)
-- [Atomic Design by Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)
-- [デジタル庁](https://www.digital.go.jp/)
+https://gihyo.jp/book/2022/978-4-297-12916-3
+https://atomicdesign.bradfrost.com/chapter-2/
+https://www.digital.go.jp/
