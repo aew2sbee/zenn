@@ -13,9 +13,7 @@ published: true # 公開:true / 非公開:false
 複数の要素に一致するロケーターをそのまま `click()` すると、strict mode violation のエラーになります。
 そのようなときに、何番目の要素を操作するかを指定できるのが、これらのメソッドです。
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-14220-9)
-:::
 
 ## 🌱 結論
 
