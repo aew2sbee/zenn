@@ -21,8 +21,11 @@ published: true # 公開:true / 非公開:false
 :::message alert
 `GitHub Copilot`は更新が非常に速く、掲載しているスクリーンショットは執筆時点のものです。
 その後、拡張機能の提供形態・チャットのモード構成・課金方式がいずれも変更されています。
-操作の考え方は大きく変わっていませんが、実際の画面や名称は[公式ドキュメント](https://code.visualstudio.com/docs/copilot/overview)で確認してください。
+操作の考え方は大きく変わっていませんが、実際の画面や名称は公式ドキュメントで確認してください。
 :::
+
+https://code.visualstudio.com/docs/copilot/overview
+
 
 ## 🌱 前提条件
 
@@ -32,8 +35,10 @@ published: true # 公開:true / 非公開:false
 
 サインインすれば無料プラン（GitHub Copilot Free）でも利用できますが、月あたりの利用回数に上限があります。
 会社のアカウントで使う場合は、組織側での利用者の割り当てが必要です。
-詳細は[GitHub Copilot のプラン](https://docs.github.com/ja/copilot/get-started/plans)を確認してください。
+詳細はGitHub Copilot のプランを確認してください。
 :::
+
+https://docs.github.com/ja/copilot/get-started/plans
 
 ## 🌱 拡張機能のインストール
 
@@ -44,8 +49,10 @@ published: true # 公開:true / 非公開:false
 :::message alert
 現在の`VSCode`では`GitHub Copilot`が標準搭載されているため、**この手順は不要**です。
 拡張機能を個別にインストールするのではなく、ステータスバーの Copilot アイコンからサインインして利用を開始します。
-最新の手順は[VS Code のセットアップ手順](https://code.visualstudio.com/docs/copilot/setup)を確認してください。
+最新の手順はVS Code のセットアップ手順を確認してください。
 :::
+
+https://code.visualstudio.com/docs/copilot/setup
 
 ## 🌱 コード補完の使い方
 
@@ -140,8 +147,10 @@ Agent モードでも、ファイルの編集やコマンドの実行は、原�
 :::message alert
 上記は執筆時点のモード構成です。
 その後 Edit モードは廃止され、差分編集は Agent に統合されました。現在は計画を立てる Plan モードが加わっています。
-最新のモード構成は[チャットモードのドキュメント](https://code.visualstudio.com/docs/copilot/chat/chat-modes)を確認してください。
+最新のモード構成はチャットモードのドキュメントを確認してください。
 :::
+
+https://code.visualstudio.com/docs/copilot/chat/chat-modes
 
 ### モデルを選択する
 
@@ -152,11 +161,14 @@ AI のモデルを選択します。
 
 :::message
 モデルによって、月ごとの利用枠の消費量が変わります。
-課金の仕組みは変更されているため、最新の内容は[GitHub Copilot の課金ドキュメント](https://docs.github.com/ja/copilot/concepts/billing)を確認してください。
+課金の仕組みは変更されているため、最新の内容はGitHub Copilot の課金ドキュメントを確認してください。
+
 なお、コード補完はこの利用枠を消費せず、すべてのプランに含まれています。
 
 また、表示されるモデルは契約プランや組織の設定によって異なります。無料プランではモデルを選べない場合があります。
 :::
+
+https://docs.github.com/ja/copilot/concepts/billing
 
 ## 🌱 おわりに
 
@@ -172,7 +184,6 @@ AI のモデルを選択します。
 チャットは、コードについて聞きたいときは **Ask**、実装そのものを任せたいときは **Agent** と使い分けます。
 
 ## 🌱 参考
-
-- [GitHub Copilot のドキュメント](https://docs.github.com/ja/copilot)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
-- [GitHub Copilot のキーボードショートカット](https://docs.github.com/ja/copilot/reference/keyboard-shortcuts)
+https://docs.github.com/ja/copilot
+https://code.visualstudio.com/docs/copilot/overview
+https://docs.github.com/ja/copilot/reference/keyboard-shortcuts
