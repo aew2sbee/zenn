@@ -10,11 +10,9 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**基本的な Tailwind CSS**を解説します。
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
-:::
 
-:::details 前提条件
+## 🌱 前提条件
 
 1. 下記サイトで表示を確認しています。
 
@@ -40,7 +38,6 @@ published: true # 公開:true / 非公開:false
 
 5. 記事中の px の値は、ルートの文字サイズが 16px（`1rem = 16px`）の場合の値です。
 
-:::
 
 :::message
 本記事は Tailwind CSS v3 の仕様で書いています。v4 では、色の値が rgb から oklch に変わったほか、`shadow-sm`→`shadow-xs`、`shadow`→`shadow-sm`、`rounded`→`rounded-sm`のように一部のクラス名が変わりました。
