@@ -125,6 +125,6 @@ AWS の操作は、ルートユーザー（AWS アカウント作成時のすべ
 
 ## 🌱 参考
 
-- [IAM ロールに切り替える (コンソール) - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_roles_use_switch-role-console.html)
-- [ロールを切り替えるアクセス許可をユーザーに付与する - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html)
-- [CloudTrail userIdentity 要素 - AWS CloudTrail](https://docs.aws.amazon.com/ja_jp/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_roles_use_switch-role-console.html
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_roles_use_permissions-to-switch.html
+https://docs.aws.amazon.com/ja_jp/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html
