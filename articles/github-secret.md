@@ -14,9 +14,7 @@ GitHub Actions の secrets は、ログに出力すると `***` にマスクさ�
 この記事では、**secrets が正しく設定されているかを確認する方法**を解説します。
 野村友規『GitHub CI/CD実践ガイド』（技術評論社）を参考にしながら調査しました。
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-14173-8)
-:::
 
 :::message alert
 **secrets の値をログに出力すると、漏えいにつながります。**
