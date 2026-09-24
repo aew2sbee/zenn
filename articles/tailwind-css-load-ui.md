@@ -11,15 +11,13 @@ published: true # 公開:true / 非公開:false
 この記事では、**ロード UI/スケルトン UI の実装方法**を解説します。
 以下のコードは、下記サイトで表示を確認しています。
 
-@[card](https://play.tailwindcss.com/)
-
 :::message
 コードは Tailwind CSS v3 で表示を確認したものです。
 :::
 
-:::details 参考資料
+https://play.tailwindcss.com/
+
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
-:::
 
 ## 🌱 1. iPhone で見かけそうな UI
 
