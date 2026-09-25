@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、コードをシンプルに書ける**配列の末尾の値を取得する方法**を解説します。
 
-:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
-:::
 
 ## 🌱 結論
 
