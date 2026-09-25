@@ -10,11 +10,9 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**長い文章を省略し、先頭の数行だけを表示する方法**を解説します。
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
-:::
 
-:::details 前提条件
+## 🌱 前提条件
 
 1. 下記サイトで表示を確認しています。
 
@@ -37,8 +35,6 @@ published: true # 公開:true / 非公開:false
    ```
 
 4. `line-clamp-*`は、Tailwind CSS v3.3 以降で使えます。v3.2 以前は`@tailwindcss/line-clamp`プラグインが必要です。
-
-:::
 
 ## 🌱 結論
 
