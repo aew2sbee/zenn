@@ -122,5 +122,5 @@ published: true # 公開:true / 非公開:false
 
 ## 🌱 参考
 
-- [日常における情報セキュリティ対策 - IPA](https://www.ipa.go.jp/security/anshin/measures/everyday.html)
-- [NIST SP 800-63B-4 Digital Identity Guidelines: Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b.html)
+https://www.ipa.go.jp/security/anshin/measures/everyday.html
+https://pages.nist.gov/800-63-4/sp800-63b.html
