@@ -17,9 +17,7 @@ published: true # 公開:true / 非公開:false
 現在の Tailwind Play は Tailwind CSS v4 で動いています。v4 では影の大きさの段階が変わったため、影がスクリーンショットより一段小さく表示されます。画像と同じ見た目にしたい場合は、`shadow-sm`を`shadow-xs`に、`shadow`を`shadow-sm`に置き換えてください。
 :::
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
-:::
 
 ## 🌱 1. ログイン情報入力前画面
 
