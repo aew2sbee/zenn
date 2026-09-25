@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**TypeScript のジェネリクス関数** をまとめています。
 
-:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784873119045/)
-:::
 
 ## 🌱 結論
 
