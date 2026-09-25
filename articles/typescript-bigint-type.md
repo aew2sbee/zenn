@@ -9,13 +9,13 @@ published: true # 公開:true / 非公開:false
 ## 🌱 はじめに
 
 この記事では、**TypeScript の bigint 型** をまとめています。
-:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784873119045/)
 @[card](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 @[card](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER)
-:::
 
+:::message
 ※コードは TypeScript 5.9 で確認しています。
+:::
 
 ## 🌱 結論
 
