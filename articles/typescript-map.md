@@ -11,9 +11,7 @@ published: true # 公開:true / 非公開:false
 この記事では、配列の各要素に処理を行い、その結果を新しい配列として返す**map メソッド**を解説します。
 map は JavaScript 標準の配列メソッド（`Array.prototype.map`）で、TypeScript でもそのまま使えます。
 
-:::details 参考資料
 @[card](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-:::
 
 ## 🌱 結論
 
