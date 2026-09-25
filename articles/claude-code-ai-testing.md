@@ -16,10 +16,6 @@ Claude Code は、Anthropic が提供する AI コーディングツールです
 
 フィボナッチ数は、0, 1, 1, 2, 3, 5, 8, … のように、直前の 2 つの数を足していく数列の値です。
 
-検証に使ったコードは、下記のリポジトリで公開しています。
-
-@[card](https://github.com/aew2sbee/claude-code-ai-testing)
-
 ## 🌱 結論
 
 :::message
