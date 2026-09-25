@@ -9,10 +9,9 @@ published: true # 公開:true / 非公開:false
 ## 🌱 はじめに
 
 この記事では、**TypeScript の filter** をまとめています。
-`filter`は JavaScript の配列メソッド（`Array.prototype.filter`）で、TypeScript でもそのまま使えます。
-:::details 参考資料
+`filter`は JavaScript の配列メソッド（`Array.prototype.filter`）で、TypeScript でもそのまま使えます
+
 @[card](https://oukayuka.booth.pm/items/2368045)
-:::
 
 ## 🌱 結論
 
