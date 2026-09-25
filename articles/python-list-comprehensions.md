@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、`Python`の**内包表記**についてまとめています。
 
-:::details 参考資料
 @[card](https://gihyo.jp/magazine/SD/archive/2025/202502)
-:::
 
 ## 🌱 結論
 
