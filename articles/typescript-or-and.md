@@ -12,9 +12,7 @@ published: true # 公開:true / 非公開:false
 ショートサーキット評価とは、左から順に評価し、結果が決まった時点で残りの項（演算子の左右に置かれた値）を評価しない仕組みです。`||`と`&&`の評価の仕方は、JavaScript の仕様をそのまま引き継いでいます。
 本記事のコードは、TypeScript Playground（https://www.typescriptlang.org/play ）に貼り付けて`Run`を押すと試せます。
 
-:::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
-:::
 
 ## 🌱 結論
 
