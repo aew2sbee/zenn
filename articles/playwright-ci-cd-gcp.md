@@ -261,7 +261,7 @@ fork からの `pull_request` イベントでは、GITHUB_TOKEN が読み取り�
 
 ```diff yaml
 jobs:
--  allow-security-policy:
+-  allow-security-policy:                                  
 -    runs-on: ubuntu-latest
 -    steps:
 -    # --- 以下略 ---
@@ -275,7 +275,6 @@ jobs:
 -    runs-on: ubuntu-latest
 -    steps:
 -    # --- 以下略 ---
-
 +  e2e-tests:
 +    runs-on: ubuntu-latest
 +    steps:
