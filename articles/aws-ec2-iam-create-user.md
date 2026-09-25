@@ -151,8 +151,8 @@ AWS アカウントに利用者ごとのユーザーを作り、必要な権限�
 
 ## 🌱 参考
 
-- [IAM ユーザーの作成（AWS 公式）](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_users_create.html)
-- [IAM のセキュリティのベストプラクティス](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html)
-- [ReadOnlyAccess ポリシーのリファレンス](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html)
-- [IAM ユーザーとしてサインインする](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_users_sign-in.html)
-- [IAM での多要素認証 (MFA)](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa.html)
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_users_create.html
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html
+https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReadOnlyAccess.html
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_users_sign-in.html
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa.html
