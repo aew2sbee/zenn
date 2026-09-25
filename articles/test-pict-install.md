@@ -9,9 +9,8 @@ published: true # 公開:true / 非公開:false
 ## 🌱 はじめに
 
 この記事では、**Windows10 上で PICT を使えるようにする方法** をまとめています。
-:::details 参考資料
+
 @[card](https://gihyo.jp/magazine/SD/archive/2024/202402)
-:::
 
 ### 前提条件
 
