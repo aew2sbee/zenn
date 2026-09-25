@@ -11,9 +11,7 @@ published: true # 公開:true / 非公開:false
 この記事では、**TypeScript の every** をまとめています。
 `every`は JavaScript の配列メソッド（`Array.prototype.every`）で、TypeScript でもそのまま使えます。
 
-:::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
-:::
 
 ## 🌱 結論
 
