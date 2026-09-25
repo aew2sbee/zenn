@@ -234,10 +234,3 @@ AIのQAは、出力が正しいかどうかだけでなく、
 
 6つ全部を最初から見るのは大変なので、
 私は問題が起きたときの被害が大きい `安全性` と `意図しない操作の実行` から着手する予定です。
-
-## 🌱 参考
-
-- [QAエンジニア入門 〜チームで品質を高める連携のしかた〜](https://gihyo.jp/book/2026/978-4-297-15832-3)
-- [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/)（プロンプトインジェクションと緩和策）
-- [AIプロダクト品質保証ガイドライン（QA4AIコンソーシアム）](http://www.qa4ai.jp/)
-- [育児・介護休業法について（厚生労働省）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000130583.html)
