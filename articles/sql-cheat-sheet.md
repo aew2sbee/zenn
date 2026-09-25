@@ -14,9 +14,7 @@ published: true # 公開:true / 非公開:false
 本記事のSQLは、PostgreSQL を前提にしています。`SERIAL`などの一部の書き方は、DBMS（MySQL・SQLite・Oracle など）によって異なります。
 :::
 
-:::details 参考資料
 @[card](https://www.shoeisha.co.jp/book/detail/9784798179612)
-:::
 
 ## 🌱 前提条件
 
