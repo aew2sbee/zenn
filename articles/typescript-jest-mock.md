@@ -15,9 +15,7 @@ Jest 30.5、ts-jest、TypeScript 5.9 で動作を確認しています。ts-jest
 ファイル構成は、`src/greet.ts`（テスト対象）と`test/unittest/`配下のテストファイルです。
 :::
 
-:::details 参考資料
 @[card](https://www.shoeisha.co.jp/book/detail/9784798178189)
-:::
 
 ## 🌱 未実装の関数をモックで定義する
 
