@@ -13,11 +13,9 @@ published: true # 公開:true / 非公開:false
 
 本記事の実行結果は、Node.js で実行したときの表示です。TypeScript Playground（https://www.typescriptlang.org/play ）に貼り付けて`Run`を押しても試せます（表示の形式は少し異なります）。
 
-:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
 @[card](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 @[card](https://www.typescriptlang.org/docs/handbook/2/functions.html#rest-parameters-and-arguments)
-:::
 
 ## 🌱 結論
 
