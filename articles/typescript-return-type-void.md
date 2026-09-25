@@ -13,10 +13,8 @@ published: true # 公開:true / 非公開:false
 
 本記事のコードは、TypeScript Playground（https://www.typescriptlang.org/play ）に貼り付けると、エラーの有無を確認できます。
 
-:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
 @[card](https://www.typescriptlang.org/docs/handbook/2/functions.html#void)
-:::
 
 ## 🌱 結論
 
