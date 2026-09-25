@@ -2,24 +2,50 @@
 title: "環境構築"
 ---
 
+## 🌱 この本について
+`Storybook`は、UIコンポーネントをアプリ本体から切り離して、1つずつ表示・確認できるカタログツールです。
+ボタンの色やサイズなどの表示パターンを一覧で確認でき、デザイナーやチームメンバーとの共有にも使えます。
+
+本書では、[Storybook公式チュートリアル](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)を参考に、`Next.js` + `Tailwind CSS` + `TypeScript`の構成で`Storybook`を動かし、GitHub Pagesに公開するまでを扱います。
+公式チュートリアルは`React` + `Vite`の構成のため、本書とは手順が異なります。
+
+| チャプター | 内容 |
+|---|---|
+| 環境構築 | `Next.js`と`Storybook`をインストールする |
+| 自作のUIコンポーネントを登録する | 自作のボタンを`Storybook`に表示する |
+| GitHub Pagesにデプロイする | `Storybook`をGitHub Pagesに公開する |
+| ブランチごとにGitHub Pagesを用意する | ブランチごとに別のURLで公開する |
+
+**前提**
+- `Node.js`、`npm`、`Git`がインストールされていること
+- GitHubアカウントを持っていること
+
+**動作確認したバージョン（執筆時点）**
+- OS: Windows
+- Next.js: 16.1.6
+- Storybook: 10.2.1
+
+:::message
+**ポイント**
+`@latest`を指定してインストールすると、本書と異なるバージョンが入り、ログや生成されるファイルが本書と変わる場合があります。
+本書と同じバージョンで試したい場合は、`npx create-next-app@16.1.6`、`npm create storybook@10.2.1`のようにバージョンを指定してください。
+:::
+
 ## 🌱 このチャプターのゴール
 ローカル環境で、下記のキャプチャーが表示されるところまで進めます。
 
 ![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
 
 ## 🌱 Next.jsのインストール
-Storybook を動かすために、まずは `Next.js` をインストールします。
+本書では`Next.js`上で`Storybook`を動かすため、まず`Next.js`を用意します。
+作業用のフォルダを作成して移動し、ターミナルで次のコマンドを実行します。
+フォルダ名は`package.json`のプロジェクト名にもなります（本書では`tech-storybook`）。
 
 ```bash
+mkdir tech-storybook
+cd tech-storybook
 npx create-next-app@latest . --yes
 ```
-
-:::message
-**ポイント**
-`Next.js`をインストールするために必要な`Node.js`の導入などは、ここでは解説しません。
-あらかじめご自身の環境で準備しておいてください。
-
-:::
 
 :::details ターミナルのログを見る
 ```bash
@@ -79,7 +105,6 @@ $ npm run dev
 
 ▲ Next.js 16.1.6 (Turbopack)
 - Local:         http://localhost:3000
-- Network:       http://10.99.1.170:3000
 
 ✓ Starting...
 ✓ Ready in 1375ms
@@ -88,12 +113,13 @@ $ npm run dev
 ```
 :::
 
-ブラウザで`http://localhost:3000`にアクセスし、下記の画面が表示されれば OK です。
+ブラウザで`http://localhost:3000`にアクセスし、下記の画面が表示されればOKです。
+確認できたら、ターミナルで`Ctrl+C`を押して停止します。
 
 ![installed-successfully-nextjs](/images/books/learn-storybook-tutorial/installed-successfully-nextjs.png)
 
 
-## 🌱 `app`ディレクトリを`src`ディレクトリ配下へ移動する(小さなこだわり)
+## 🌱 `app`ディレクトリを`src`ディレクトリ配下へ移動する（小さなこだわり）
 
 `Next.js`の`app`ディレクトリを`src`配下へ移動します。
 これは必須ではありませんが、個人的な好みとして行っています。
@@ -104,7 +130,7 @@ mv app src/
 
 ```
 
-```diff bash
+```diff text
 .
   ├── public
   ├── node_modules
@@ -114,36 +140,37 @@ mv app src/
 
 ```
 
+移動後に`npm run dev`を実行し、同じ画面が表示されることを確認します。
+
+:::message
+**ポイント**
+`@/*`のインポートエイリアスを使う場合は、`tsconfig.json`の`paths`を`"@/*": ["./src/*"]`に変更してください。
+:::
+
 ## 🌱 Storybookのインストール
 続いて`Storybook`をインストールします。
 ```bash
 npm create storybook@latest
 ```
 
-:::details ターミナルのログを見る
+実行すると、インストールする構成を聞かれます。
+▶ ここでは最小構成から必要なものを追加していくため、`Minimal`を選択します
+
+:::message
 ```bash
-$ npm create storybook@latest
-
-> tech-storybook@0.1.0 npx
-> create-storybook
-
-
-┌  Initializing Storybook
-│
-●  Adding Storybook version 10.2.1 to your project
-│
-◇  Framework detected: nextjs-vite
-│
 ◆  What configuration should we install?
 │  ● Recommended: Component development, docs, and testing features.
 │  ○ Minimal: Just the essentials for component development.
-
 ```
+
+**翻訳**
+どの構成をインストールしますか？
+- Recommended: コンポーネント開発、ドキュメント、テストの機能を含む推奨構成
+- Minimal: コンポーネント開発に必要な最小限の構成
 :::
 
-
-オンボーディング(オプション) のインストール
-► ここでは不要なファイルを増やしたくないので`No`を選択します
+`Recommended`を選んだ場合は、続けてオンボーディング（初心者向けの案内）を表示するかを聞かれます。
+▶ 不要なファイルを増やしたくないので`No`を選択します
 
 :::message
 ```bash
@@ -154,10 +181,10 @@ $ npm create storybook@latest
 
 **翻訳**
 Storybookは初めて使いますか？
-- Yes: Storybook初心者向けの案内（オンボーディング）を表示しますか？
+- Yes: 初心者向けの案内（オンボーディング）を表示してほしい
   ▶ Storybookの基本構造（stories、Controls、Docs）を知りたい
 - No: オンボーディングは不要。今後も聞かなくてOK
-  ▶ 余計なファイルが増やしたくない/プロジェクト固有のルールがある
+  ▶ 余計なファイルを増やしたくない/プロジェクト固有のルールがある
 :::
 
 ---
@@ -206,7 +233,9 @@ $ npm create storybook@latest
 ```
 :::
 
-`Storybook`のインストールが完了すると、次の画面が表示されます。
+`Framework detected: nextjs-vite`は、`Storybook`が`Next.js`用の構成（ビルドツールに`Vite`を使う構成）を自動で選んだことを示しています。
+
+インストールが完了すると、`Storybook`が起動して次の画面が表示されます。
+ブラウザが自動で開かない場合は、`npm run storybook`を実行して`http://localhost:6006`を開いてください。
 
 ![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
-

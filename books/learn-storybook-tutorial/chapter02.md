@@ -4,19 +4,92 @@ title: "自作のUIコンポーネントを登録する"
 
 ## 🌱 このチャプターのゴール
 ローカル環境で`Storybook`を起動し、
-下記キャプチャーのように 自作ボタンが表示されるところまで進めます。
+下記キャプチャーのように自作ボタンが表示されるところまで進めます。
 
 ![original-button](/images/books/learn-storybook-tutorial/original-button.png)
 
 
+## 🌱 Storybookの設定ファイルを変更
+コンポーネントを作成する前に、`Storybook`の設定を変更します。
+
+### `@storybook/addon-docs`の追加
+addonは、`Storybook`に機能を追加するプラグインです。
+`@storybook/addon-docs`を入れると、`tags: ["autodocs"]`を付けたコンポーネントについて、propsの一覧や各ストーリーをまとめたドキュメントページ（Docs）が自動で作成されます。
+赤枠のように、コンポーネントの使い方を1ページで確認できて便利なので追加します。
+（`Minimal`構成には含まれていないため、自分で追加する必要があります）
+
+![storybook-addon-docs](/images/books/learn-storybook-tutorial/storybook-addon-docs.png)
+
+`Storybook`本体とバージョンをそろえてインストールします。
+本体のバージョンは`package.json`の`storybook`で確認できます（本書では`10.2.1`）。
+
+```bash
+npm i -D @storybook/addon-docs@10.2.1
+```
+
+### `.storybook/main.ts`の変更
+`Storybook`が読み込む`stories`の対象範囲と、追加したaddonを設定します。
+`Storybook`は、`stories`のパターンに一致するファイルをストーリーとして読み込みます。
+`../src/**/*.stories.@(js|jsx|ts|tsx)`は、`src`配下のすべての階層にある`〇〇.stories.tsx`などのファイルという意味です。
+
+```diff ts:.storybook/main.ts
+import type { StorybookConfig } from '@storybook/nextjs-vite';
+
+const config: StorybookConfig = {
+  "stories": [
+-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)"
++    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+  ],
+-  "addons": [],
++  "addons": ["@storybook/addon-docs"],
+  "framework": "@storybook/nextjs-vite",
+  "staticDirs": [
+    "..\\public"
+  ]
+};
+export default config;
+
+```
+
+:::message
+**ポイント**
+`"..\\public"`はWindowsで生成した場合の値です。macOSやLinuxでは、最初から`"../public"`になっています。
+:::
+
+### `.storybook/preview.ts`の変更
+プレビュー側で`globals.css`を読み込むようにします
+（Tailwind の見た目を反映させるためです）。
+
+```diff ts:.storybook/preview.ts
+import type { Preview } from '@storybook/nextjs-vite'
++ import '../src/app/globals.css'
+
+const preview: Preview = {
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
+    },
+  },
+};
+
+export default preview;
+
+```
+
 ## 🌱 自作のUIコンポーネントの作成
-`color`と`size`を切り替えられる Button コンポーネントを作成します。
+`src/client/components/ui/Button/`フォルダを作成し、以下の3ファイルを作成します。
+（フォルダ構成は個人的な好みです。任意の場所で構いません）
+
+まず、`color`と`size`を切り替えられる Button コンポーネントを作成します。
 （Tailwind CSS のクラスを切り替えることで見た目を変更します）
 
-```tsx: src/client/components/ui/Button/Button.tsx
+```tsx:src/client/components/ui/Button/Button.tsx
 import * as React from "react";
 
-export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+export type ButtonProps = Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "color"> & {
   color?: "primary" | "secondary";
   size?: "small" | "medium" | "large";
 };
@@ -55,10 +128,13 @@ export function Button({
 
 ```
 
+`ButtonHTMLAttributes`を合成することで、`onClick`や`disabled`など通常のbutton属性もそのまま受け取れるようにしています。
+`ButtonHTMLAttributes`にはもともと`color`属性があるため、`Omit`で除いてから独自の`color`を定義しています。
+
 ## 🌱 エクスポート用のファイルの作成
 他の場所から`import`しやすいように、`index.ts`で再エクスポートします。
 
-```tsx: src/client/components/ui/Button/index.ts
+```ts:src/client/components/ui/Button/index.ts
 export { Button } from "./Button";
 export type { ButtonProps } from "./Button";
 
@@ -66,8 +142,9 @@ export type { ButtonProps } from "./Button";
 
 ## 🌱 Storybook専用ファイルの作成
 `Storybook`に表示するための`*.stories.tsx`を作成します。
+ストーリーとは、コンポーネントの表示パターン1つ分のことです。
 
-```tsx: src/client/components/ui/Button/Button.stories.tsx
+```tsx:src/client/components/ui/Button/Button.stories.tsx
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { fn } from 'storybook/test';
 import { Button } from '.';
@@ -84,11 +161,11 @@ const meta = {
   // 詳細: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   // argTypes の詳細設定（Storybook Controls 用）
-  // 詳細: https://storybook.js.org/docs/api/argtypes
+  // 詳細: https://storybook.js.org/docs/api/arg-types
   argTypes: {},
   // fn を使って onClick をスパイすることで、
   // クリック時に Actions パネルへイベントが表示されるようになります
-  // 詳細: https://storybook.js.org/docs/essentials/actions#action-args
+  // 詳細: https://storybook.js.org/docs/essentials/actions
   args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
@@ -131,94 +208,9 @@ export const SizeSmall: Story = {
 
 ```
 
-```bash
-npm run storybook
-```
-
-## 🌱 Storybookの設定ファイルを変更
-`Storybook`が参照する`stories`の対象範囲を設定します。
-
-```diff ts .storybook/main.ts
-import type { StorybookConfig } from '@storybook/nextjs-vite';
-
-const config: StorybookConfig = {
-  "stories": [
--    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)"
-+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [],
-  "framework": "@storybook/nextjs-vite",
-  "staticDirs": [
-    "..\\public"
-  ]
-};
-export default config;
-
-```
-また、プレビュー側で`globals.css`を読み込むようにします
-（Tailwind の見た目を反映させるためです）。
-
-```diff ts .storybook/preview.ts
-import type { Preview } from '@storybook/nextjs-vite'
-+ import '../src/app/globals.css'
-
-const preview: Preview = {
-  parameters: {
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/,
-      },
-    },
-  },
-};
-
-export default preview;
-
-```
-
-## 🌱 storybook/addon-docsの追加
-`@storybook/addon-docs`を追加します。
-赤枠の通りでドキュメント情報を追加することが出来ます。
-便利なので追加します。
-
-![storybook-addon-docs](/images/books/learn-storybook-tutorial/storybook-addon-docs.png)
-
-```bash
-npm i -D @storybook/addon-docs
-```
-
-:::details ターミナルのログを見る
-```bash
-$ npm i -D @storybook/addon-docs
-
-added 3 packages, and audited 484 packages in 3s
-
-179 packages are looking for funding
-  run `npm fund` for details
-
-found 0 vulnerabilities
-```
-:::
-
-`.storybook/main.ts`も更新します
-```diff ts .storybook/main.ts
-import type { StorybookConfig } from '@storybook/nextjs-vite';
-
-const config: StorybookConfig = {
-  "stories": [
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
--  "addons": [],
-+  "addons": ["@storybook/addon-docs"],
-  "framework": "@storybook/nextjs-vite",
-  "staticDirs": [
-    "..\\public"
-  ]
-};
-export default config;
-
-```
+- `export default meta`: このファイル全体の共通設定です。`component`で対象のコンポーネントを、`title`でサイドバーに表示する名前（`UI/Button`）を指定します
+- `export const 名前: Story`: ストーリー1つ分です。`args`はコンポーネントに渡すpropsで、`ColorPrimary`などの名前がサイドバーに並びます
+- `fn()`: クリックされたことを記録する関数です。Storybook画面下部の`Actions`タブで、クリックの履歴を確認できます
 
 ## 🌱 ローカル環境での起動
 
@@ -241,12 +233,12 @@ $ npm run storybook
 │ │   Storybook ready!                                 │
 │ │                                                    │
 │ │   - Local:             http://localhost:6006/      │
-│ │   - On your network:   http://10.99.1.170:6006/    │
 │ ╰────────────────────────────────────────────────────╯
 │
 ●  240 ms for manager and 692 ms for preview
 ```
 :::
 
-下記キャプチャーのように起動できていれば`OK`です。
+下記キャプチャーのように起動できていればOKです。
+
 ![local-start-storybook](/images/books/learn-storybook-tutorial/local-start-storybook.png)
