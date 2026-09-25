@@ -18,9 +18,7 @@ published: true # 公開:true / 非公開:false
 画像は Tailwind CSS v3 で表示したものです。v4 では、ボタンにマウスを乗せたときのカーソルが指の形（`pointer`）から矢印（`default`）に変わりました。指の形にしたい場合は、`cursor-pointer`を追加してください。
 :::
 
-:::details 参考資料
 @[card](https://gihyo.jp/book/2024/978-4-297-13943-8)
-:::
 
 ## 🌱 1. 「登録」のボタン
 
