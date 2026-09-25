@@ -216,5 +216,5 @@ SSH の許可元は「自分の IP」に絞ることをおすすめします。
 
 ## 🌱 参考
 
-- [インスタンスの停止と開始の仕組み - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/how-ec2-instance-stop-start-works.html)
-- [無料利用枠の使用状況を追跡する - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-free-tier-usage.html)
+https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/how-ec2-instance-stop-start-works.html
+https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-free-tier-usage.html
