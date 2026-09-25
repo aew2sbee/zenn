@@ -1,7 +1,7 @@
 # zenn
 
-[Zenn](https://zenn.dev/) に投稿するブログ記事を管理するリポジトリです。
-[Zenn CLI](https://zenn.dev/zenn/articles/zenn-cli-guide) を使ってローカルで記事を書き、GitHub 連携で Zenn に公開します。
+- [Zenn](https://zenn.dev/) に投稿するブログ記事を管理するリポジトリです。
+- [Zenn CLI](https://zenn.dev/zenn/articles/zenn-cli-guide) を使ってローカルで記事を書き、GitHub 連携で Zenn に公開します。
 
 ## 技術スタック
 
