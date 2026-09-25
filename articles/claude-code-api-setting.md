@@ -19,10 +19,8 @@ published: true # 公開:true / 非公開:false
 スクリーンショットは執筆時点（2025年、WSL 環境）のものです。
 :::
 
-:::details 参考資料
 @[card](https://code.claude.com/docs/ja/settings)
 @[card](https://code.claude.com/docs/ja/authentication)
-:::
 
 ## 🌱 結論
 
