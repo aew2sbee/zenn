@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、Playwright で**条件付きでテストをスキップする**方法をまとめております。
 
-:::details 参考資料
 @[card](https://playwright.dev/docs/test-annotations#conditionally-skip-a-test)
-:::
 
 ## 🌱 結論
 
