@@ -410,8 +410,6 @@ MFA を登録しただけの既存セッションでは`false`のままで拒否
 
 ## 🌱 参考
 
-@[card](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/reference_policies_examples_aws_my-sec-creds-self-manage.html)
-
-@[card](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
-
-@[card](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa.html)
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/reference_policies_examples_aws_my-sec-creds-self-manage.html
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html
+https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa.html
