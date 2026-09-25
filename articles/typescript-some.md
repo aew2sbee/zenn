@@ -13,10 +13,8 @@ published: true # 公開:true / 非公開:false
 
 本記事の実行結果は、Node.js で実行したときの表示です。TypeScript Playground（https://www.typescriptlang.org/play ）に貼り付けて`Run`を押しても試せます。
 
-:::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
 @[card](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
-:::
 
 ## 🌱 結論
 
