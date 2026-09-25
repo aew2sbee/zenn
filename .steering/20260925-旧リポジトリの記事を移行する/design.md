@@ -15,7 +15,7 @@
 5. レビュー指摘を修正してコミットする
 6. `npx zenn preview` で表示を確認する
 7. push して PR を作成する
-8. TODO.md の該当項目にチェックを付ける
+8. TODO.md の該当項目にチェックを付け、PR番号を併記する
 
 ## 🌱 詳細
 <!-- AI向け: 流れの各ステップで必要なルール（命名規則・判断基準・使うツールなど）を書く。形式は自由。 -->
@@ -25,12 +25,12 @@
 - ベースブランチ: main
 
 ### コピー
-- コピー元: `C:\Users\aew2s\work\zenn\articles\<slug>.md`
-- コピー先: `C:\Users\aew2s\work\dev-zenn\articles\<slug>.md`
+- コピー元: `C:\Users\aew2s\work\zenn-bk\articles\<slug>.md`
+- コピー先: `C:\Users\aew2s\work\zenn\articles\<slug>.md`
 - ファイル名（スラッグ）は変更しない
 
 ### 画像
-- 記事本文から `/images/articles/` で始まる参照パスを抽出し、同じパスで `C:\Users\aew2s\work\zenn\images\` から `C:\Users\aew2s\work\dev-zenn\images\` へコピーする
+- 記事本文から `/images/articles/` で始まる参照パスを抽出し、同じパスで `C:\Users\aew2s\work\zenn-bk\images\` から `C:\Users\aew2s\work\zenn\images\` へコピーする
 - 画像ディレクトリ名はスラッグから推測せず、参照パスに従う
 - 外部URL（`https://` で始まるもの）の画像はコピーしない
 - 記事が参照していない画像はコピーしない
@@ -38,13 +38,55 @@
 
 | スラッグ | 画像ディレクトリ | 枚数 |
 |---|---|---|
+| ai-github-copilot | images/articles/ai-github-copilot | 7 |
+| atomic-design-for-digital | images/articles/atomic-design-for-digital | 5 |
+| aws-ec2-iam-create-user | images/articles/aws-ec2-iam-create-user | 11 |
 | aws-ec2-iam-role | images/articles/aws-ec2-iam-role | 21 |
+| aws-ec2-iam-why-role | images/articles/aws-ec2-iam-why-role | 2 |
+| aws-ec2-vscode | images/articles/aws-ec2-vscode | 13 |
+| aws-ec2-web-server | images/articles/aws-ec2-web-server | 17 |
+| book-secure-web-app-password | images/articles/secure-web-app-password | 4 |
+| claude-code-ai-testing | images/articles/claude-code-ai-testing | 1 |
+| claude-code-api-setting | images/articles/claude-code-api-setting | 2 |
 | django-install | images/articles/django-install | 1 |
 | django-rest-framework-install | images/articles/django-rest-framework-install | 8 |
+| docker-comprehension | images/articles/docker-comprehension | 7 |
+| docker-desktop-install | images/articles/docker-desktop-install | 13 |
+| docker-react-env | images/articles/docker-react-env | 6 |
+| github-branch-protection-ruleset | images/articles/github-branch-protection-ruleset | 7 |
+| github-copilot-commit-message-japanese | images/articles/github-copilot-commit-message-japanese | 1 |
+| github-reviewers-me | images/articles/github-reviewers-me | 1 |
+| http-timestamp | images/articles/http-timestamp | 2 |
+| ipa-information-security-management-examination | images/articles/ipa-information-security-management-examination | 4 |
+| ipa-information-technology-engineer-examination | images/articles/ipa-information-technology-engineer-examination | 2 |
+| nextjs-page-tsx | images/articles/nextjs-page-tsx | 1 |
+| nextjs-project-dev | images/articles/nextjs-project-dev | 1 |
+| nextjs-root-layout-file | images/articles/nextjs-root-layout-file | 2 |
+| playwright-ci-cd-gcp | images/articles/playwright-ci-cd-gcp | 1 |
+| python-3-10-11-install | images/articles/python-3-10-11-install | 6 |
+| python-matplotlib-45graph | images/articles/python-matplotlib-45graph | 2 |
+| python-matplotlib-bar | images/articles/python-matplotlib-bar | 2 |
+| python-matplotlib-hist | images/articles/python-matplotlib-hist | 2 |
+| python-matplotlib-pie | images/articles/python-matplotlib-pie | 2 |
+| python-matplotlib-plot | images/articles/python-matplotlib-plot | 2 |
+| python-matplotlib-vscode | images/articles/python-matplotlib-vscode | 2 |
+| react-install | images/articles/react-install | 12 |
+| react-usestate | images/articles/react-usestate | 5 |
+| security-cross-sitescripting-link | images/articles/http-cross-sitescripting-link | 2 |
+| security-cross-sitescripting | images/articles/http-cross-sitescripting | 2 |
+| tailwind-css-button-ui | images/articles/tailwind-css-cheat-design | 3 |
+| tailwind-css-cheat-sheet | images/articles/tailwind-css-cheat-sheet | 52 |
+| tailwind-css-line-clamp | images/articles/tailwind-css-cheat-sheet | 1 |
+| tailwind-css-login-ui | images/articles/tailwind-css-login-ui | 3 |
+| terraform-aws-vault-ec2 | images/articles/terraform-aws-vault-ec2 | 11 |
+| test-pict-install | images/articles/test-pict-install | 1 |
+| thinking-test-pattern | images/articles/thinking-test-pattern | 1 |
+| typescript-jest-coverage | images/articles/jest-coverage | 1 |
 | yarn-error-no-such-option | images/articles/yarn-error-no-such-option | 1 |
 
 ### Front Matter
 - published は旧リポジトリの値を引き継ぎ、レビュー指摘があっても変更しない
+- 例外: react-usestate、test-black-white-box、test-design-document-template は旧リポジトリで false だが true にする
 - published 以外の項目は旧リポジトリの値を引き継ぐ。レビュー指摘がある場合のみ修正する
 
 ### 本文
