@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**JSON ファイルを直接インポートする方法** をまとめています。
 
-:::details 参考資料
 @[card](https://www.oreilly.co.jp/books/9784814400362/)
-:::
 
 ## 🌱 結論
 
