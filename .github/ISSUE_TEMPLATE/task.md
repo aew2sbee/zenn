@@ -3,7 +3,7 @@ name: タスク
 about: 記事の作成・修正などの作業を登録する
 title: ""
 labels: []
-assignees: []
+assignees: ["aew2sbee"]
 ---
 
 <!-- AI向け: 見出しは追加しない。事実のみを書き、所感・補足は書かない。 -->
