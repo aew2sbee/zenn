@@ -10,9 +10,7 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**TypeScript のアロー関数式(=>)** をまとめています。
 
-:::details 参考資料
 @[card](https://oukayuka.booth.pm/items/2368045)
-:::
 
 ## 🌱 結論
 
