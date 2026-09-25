@@ -99,9 +99,3 @@ Scoop を使って AWS Vault をインストールし、PowerShell でバージ�
 実際に使うには、`aws-vault add <プロファイル名>` でアクセスキーを登録し、`aws-vault exec <プロファイル名> -- terraform plan` のようにコマンドを実行します。
 
 もっと楽に環境構築できる方法をご存じの方がいれば、教えていただきたいです。🙇‍♀️
-
-## 🌱 参考
-
-- [Scoop](https://scoop.sh)
-- [ByteNess/aws-vault - GitHub](https://github.com/ByteNess/aws-vault)
-- [99designs/aws-vault - GitHub](https://github.com/99designs/aws-vault)
