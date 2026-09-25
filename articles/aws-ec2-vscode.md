@@ -155,8 +155,3 @@ VSCode から実行したときにも鍵ファイルが見つかるように、`
 - AWS コンソールで SSH コマンドをコピーし、秘密鍵のパスを書き換える
 - VSCode のリモートエクスプローラーから SSH コマンドを実行し、config に接続情報を保存する
 - インスタンスを停止・開始したら、config の `HostName` を更新する
-
-## 🌱 参考
-
-- [Remote Development using SSH - Visual Studio Code](https://code.visualstudio.com/docs/remote/ssh)
-- [Amazon EC2 インスタンスの IP アドレス指定 - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/using-instance-addressing.html)
