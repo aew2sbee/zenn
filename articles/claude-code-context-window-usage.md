@@ -13,10 +13,8 @@ published: true # 公開:true / 非公開:false
 コンテキストウィンドウとは、Claude が一度に参照できる会話やファイル内容の上限量で、トークン（AI が文章を処理する単位）の数で数えます。
 上限に近づくと古い内容が要約されるため、使用量を見ながら `/compact` や `/clear` を使うタイミングを判断できると便利です。
 
-:::details 参考資料
 @[card](https://code.claude.com/docs/ja/statusline)
 @[card](https://ccusage.com/guide/statusline)
-:::
 
 ## 🌱 結論
 
