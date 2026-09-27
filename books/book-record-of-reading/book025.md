@@ -10,8 +10,5 @@ https://www.shoeisha.co.jp/book/detail/9784798179612
 
 SQLiteを使い、先生と生徒の対話形式で、SQLによるデータベースの作成から基本的なデータ操作までを体験しながら学ぶ初心者向けの入門書。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🩵: 本業で活かせた
-
-## 🌱 感想
-SQL 未経験のため本業でも避けていたが、基本操作ができるまでに成長できた。
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/sql-cheat-sheet

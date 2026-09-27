@@ -10,8 +10,5 @@ https://www.shoeisha.co.jp/book/detail/9784798188874
 
 初心者でも挫折しないことをコンセプトにした情報セキュリティマネジメント試験の学習書。過去問題の分析から出題されやすい内容に絞り、科目Aの知識と科目Bの長文問題の解き方を解説している。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🤍: 勉強になった
-
-## 🌱 感想
-専門用語を網羅的に確認でき、資格に合格できました！
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/ipa-information-security-management-examination
