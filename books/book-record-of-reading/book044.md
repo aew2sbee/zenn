@@ -9,4 +9,4 @@ https://gihyo.jp/magazine/SD/archive/2025/202502
 🩵🩵🩵🩵🤍: 勉強になった
 
 ## 🌱 感想
-Python の基礎を学ぶことが出来た
+Python の基礎を学ぶことができた。

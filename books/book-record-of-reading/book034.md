@@ -9,4 +9,4 @@ https://gihyo.jp/magazine/SD/archive/2024/202401
 🩵🩵🤍🤍🤍: 期待度が高すぎた
 
 ## 🌱 感想
-GitHub Copilot の設定等の情報で拡張機能の情報がもっと欲しかった
+GitHub Copilot の設定などの情報はあったが、拡張機能の情報がもっと欲しかった。

@@ -1,5 +1,5 @@
 ---
-title: "2023.04: 初めてのTypeScript"
+title: '2023.04: 初めてのTypeScript'
 ---
 
 ## 🌱 書籍情報

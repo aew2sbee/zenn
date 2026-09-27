@@ -1,5 +1,5 @@
 ---
-title: "2023.05: プログラミングTypeScript"
+title: '2023.05: プログラミングTypeScript'
 ---
 
 ## 🌱 書籍情報

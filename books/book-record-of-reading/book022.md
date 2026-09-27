@@ -1,5 +1,5 @@
 ---
-title: "2023.08: Web API: The Good Parts"
+title: '2023.08: Web API: The Good Parts'
 ---
 
 ## 🌱 書籍情報

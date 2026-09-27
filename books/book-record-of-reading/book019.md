@@ -1,5 +1,5 @@
 ---
-title: "2023.06: マンガでわかるDocker ④ 〜Compose編〜"
+title: '2023.06: マンガでわかるDocker ④ 〜Compose編〜'
 ---
 
 ## 🌱 書籍情報

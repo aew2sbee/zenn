@@ -9,4 +9,4 @@ https://gihyo.jp/magazine/SD/archive/2024/202405
 🩵🩵🩵🤍🤍: 復習になった
 
 ## 🌱 感想
-TypeScript の復習につながったが、本業に活かせる情報を見つけられなかった
+TypeScript の復習につながったが、本業に活かせる情報を見つけられなかった。

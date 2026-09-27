@@ -1,5 +1,5 @@
 ---
-title: "2023.03: りあクト！ TypeScriptで始めるつらくないReact開発【② React基礎編】"
+title: '2023.03: りあクト！ TypeScriptで始めるつらくないReact開発【② React基礎編】'
 ---
 
 ## 🌱 書籍情報

@@ -1,5 +1,5 @@
 ---
-title: "2023.08: TypeScriptとReact/Next.jsでつくる 実践Webアプリケーション開発"
+title: '2023.08: TypeScriptとReact/Next.jsでつくる 実践Webアプリケーション開発'
 ---
 
 ## 🌱 書籍情報
