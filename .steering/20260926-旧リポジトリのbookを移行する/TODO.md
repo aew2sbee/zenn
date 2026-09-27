@@ -8,6 +8,6 @@
 - [x] learn-storybook-tutorial → #162
 - [ ] learn-react-tutorial
 - [ ] github-copilot
-- [ ] book-record-of-reading
+- [x] book-record-of-reading → #163
 - [ ] github-foundations-part-2
 - [ ] github-foundations
