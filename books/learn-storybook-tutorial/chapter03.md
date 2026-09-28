@@ -3,7 +3,7 @@ title: "GitHub Pagesにデプロイする"
 ---
 
 ## 🌱 このチャプターのゴール
-ローカル環境で確認していた `Storybook` を、GitHub Pages に公開します。
+ローカル環境で確認していた`Storybook`を、GitHub Pagesに公開します。
 公開URLは次の形式になります。
 
 `https://<ユーザー名>.github.io/<リポジトリ名>/`
@@ -11,27 +11,35 @@ title: "GitHub Pagesにデプロイする"
 ![original-button](/images/books/learn-storybook-tutorial/original-button.png)
 
 ▼ 私の場合はこちらから確認できます
+
 @[card](https://aew2sbee.github.io/poc-storybook/)
 
 - GitHub Pages: GitHubが提供する、静的サイトを無料で公開できるサービスです
 - GitHub Actions: `push`などをきっかけに、ビルドやデプロイを自動で実行する仕組みです
 
-:::message
-**前提**
-GitHubで空のリポジトリを作成し、ここまでのプロジェクトを登録しておきます。
+## 🌱 GitHubリポジトリを用意する
+GitHubでリポジトリを作成し、ここまでのプロジェクトを登録します。
+作成時は、次の2点に注意してください。
+
+- 公開範囲は`Public`にする（GitHub Freeプランでは、`Private`リポジトリでGitHub Pagesを使えません）
+- README、`.gitignore`、ライセンスは追加しない（追加すると、最初の`push`が拒否されます）
+
 `create-next-app`で`git init`は済んでいるため、次のコマンドで登録できます。
 
 ```bash
 git remote add origin https://github.com/<ユーザー名>/<リポジトリ名>.git
 git add .
 git commit -m "Storybookを追加"
+git branch -M main
 git push -u origin main
 ```
-:::
+
+`git branch -M main`は、ブランチ名を`main`にそろえるコマンドです。
+初回の`push`ではGitHubの認証画面が表示されるため、サインインしてください。
 
 ## 🌱 Storybookの設定ファイルを変更
 `staticDirs`は、画像などの静的ファイルを置いたフォルダを`Storybook`に知らせる設定です。
-Windowsでインストールした場合、`staticDirs` のパスは **Windows形式（バックスラッシュ）** で生成されます。
+Windowsでインストールした場合、`staticDirs`のパスは **Windows形式（バックスラッシュ）** で生成されます。
 GitHub Actions（Linux環境）では`\`がパスの区切りとして解釈されず、フォルダが見つからないためビルドに失敗する可能性があります。
 そのため、**URL/Unix形式（スラッシュ）** に変更します（Windowsでもスラッシュ形式で動作します）。
 
@@ -40,7 +48,7 @@ import type { StorybookConfig } from '@storybook/nextjs-vite';
 
 const config: StorybookConfig = {
   "stories": [
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
   "addons": ["@storybook/addon-docs"],
   "framework": "@storybook/nextjs-vite",
@@ -53,11 +61,15 @@ export default config;
 
 ```
 
+詳細は公式ドキュメントを参照してください。
+
+@[card](https://storybook.js.org/docs/configure/integration/images-and-assets)
+
 :::message
 **ポイント**
-`staticDirs`で指定した`public/`がリポジトリに無いと、ビルドが失敗します。
+`staticDirs`で指定した`public/`がリポジトリにないと、ビルドが失敗します。
 `create-next-app`で作成した`public/`には最初からsvgファイルがあるため、通常は対応不要です。
-svgファイルを削除して`public/`が空になった場合は、Gitは空のフォルダを管理できないため、`.gitkeep`という空ファイルを置いてフォルダを残します。
+Gitは空のフォルダを管理できません。svgファイルを削除して`public/`が空になった場合は、`.gitkeep`という空ファイルを置いてフォルダを残します。
 
 ```bash
 # macOS / Linux
@@ -69,7 +81,7 @@ New-Item public/.gitkeep -ItemType File
 
 ## 🌱 GitHub Actions専用ファイルを作成する
 `main`ブランチへの`push`をトリガーに自動デプロイし、さらに「Run workflow」から手動実行もできるように`yml`を作成します。
-なお、`secrets.GITHUB_TOKEN`などの認証情報はGitHubが自動で用意するため、自分で作成する必要はありません。
+なお、デプロイ時の認証は`permissions`の`id-token: write`によってGitHubが自動で行うため、トークンを自分で作成する必要はありません。
 
 ```yml:.github/workflows/storybook-pages.yml
 # ================================
@@ -95,8 +107,8 @@ permissions:
   pages: write     # GitHub Pages へデプロイする権限
   id-token: write  # OIDC で deploy-pages が認証するために必要
 
-# 同時に複数デプロイが走ると競合しやすいので、1つずつ順番に実行する設定
-# （実行中のデプロイはキャンセルせず、完了を待つ）
+# 同時に実行するデプロイを1つだけにする設定
+# （実行中のものはキャンセルしない。待機中のものは最新の1件だけが残る）
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -157,10 +169,16 @@ jobs:
         uses: actions/deploy-pages@v5
 ```
 
+- `npm run build-storybook`: チャプター「環境構築」の`npm create storybook`で、`package.json`に自動で追加されたスクリプトです
+
 :::message
 **ポイント**
 `node-version`は、ローカル環境と同じメジャーバージョンを指定してください。
-アクションのバージョン（`@v7`など）は執筆時点のものです。
+アクションのバージョン（`@v7`など）は執筆時点のものです。最新のバージョンは各アクションのリリースページで確認できます。
+- [actions/checkout](https://github.com/actions/checkout/releases)
+- [actions/setup-node](https://github.com/actions/setup-node/releases)
+- [actions/upload-pages-artifact](https://github.com/actions/upload-pages-artifact/releases)
+- [actions/deploy-pages](https://github.com/actions/deploy-pages/releases)
 :::
 
 ## 🌱 GitHub > Settings > Pagesを編集する
@@ -168,6 +186,7 @@ jobs:
 - Settings > Pages > Build and deployment > Source: `GitHub Actions`
 
 詳細は公式ドキュメントを参照してください。
+
 @[card](https://docs.github.com/ja/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
 ## 🌱 mainブランチへpushする

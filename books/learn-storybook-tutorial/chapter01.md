@@ -6,8 +6,8 @@ title: "環境構築"
 `Storybook`は、UIコンポーネントをアプリ本体から切り離して、1つずつ表示・確認できるカタログツールです。
 ボタンの色やサイズなどの表示パターンを一覧で確認でき、デザイナーやチームメンバーとの共有にも使えます。
 
-本書では、[Storybook公式チュートリアル](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)を参考に、`Next.js` + `Tailwind CSS` + `TypeScript`の構成で`Storybook`を動かし、GitHub Pagesに公開するまでを扱います。
-公式チュートリアルは`React` + `Vite`の構成のため、本書とは手順が異なります。
+本書では、[Storybook公式チュートリアル](https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/)を参考に、`Next.js` + `Tailwind CSS` + `TypeScript`の構成で`Storybook`を動かし、GitHub Pagesへの公開と、ブランチごとに別のURLで公開する方法までを扱います。
+公式チュートリアルは`React` + `Vite`（ソースコードをブラウザで動く形に変換・配信するビルドツール）の構成のため、本書とは手順が異なります。
 
 | チャプター | 内容 |
 |---|---|
@@ -17,11 +17,12 @@ title: "環境構築"
 | ブランチごとにGitHub Pagesを用意する | ブランチごとに別のURLで公開する |
 
 **前提**
-- `Node.js`、`npm`、`Git`がインストールされていること
+- `Node.js`（20.9以上）、`npm`、`Git`がインストールされていること
 - GitHubアカウントを持っていること
+- Reactのコンポーネントとprops、TypeScriptの型の基本が分かること
 
 **動作確認したバージョン（執筆時点）**
-- OS: Windows
+- OS: Windows（ターミナルはPowerShell）
 - Next.js: 16.1.6
 - Storybook: 10.2.1
 
@@ -47,8 +48,13 @@ cd tech-storybook
 npx create-next-app@latest . --yes
 ```
 
+- `.`: 今いるフォルダにプロジェクトを作成します
+- `--yes`: 質問を省略し、既定の設定（`TypeScript`、`Tailwind CSS`、`ESLint`、App Routerなど）で作成します
+
+初回は`Ok to proceed? (y)`とパッケージのインストールを確認されるため、`y`を入力して`Enter`を押します。
+
 :::details ターミナルのログを見る
-```bash
+```text
 $ npx create-next-app@latest . --yes
 Creating a new Next.js app in C:\Users\xxxxx\work\tech-storybook.
 
@@ -97,7 +103,7 @@ npm run dev
 ```
 
 :::details ターミナルのログを見る
-```bash
+```text
 $ npm run dev
 
 > tech-storybook@0.1.0 dev
@@ -119,10 +125,13 @@ $ npm run dev
 ![installed-successfully-nextjs](/images/books/learn-storybook-tutorial/installed-successfully-nextjs.png)
 
 
-## 🌱 `app`ディレクトリを`src`ディレクトリ配下へ移動する（小さなこだわり）
+## 🌱 `app`ディレクトリを`src`ディレクトリ配下へ移動する
 
 `Next.js`の`app`ディレクトリを`src`配下へ移動します。
-これは必須ではありませんが、個人的な好みとして行っています。
+`Next.js`としては必須ではなく、個人的な好みで行っています。
+ただし、以降のチャプターは`src/app`の構成を前提に進めるため、この手順も実施してください。
+
+PowerShellまたはGit Bashで、次のコマンドを実行します（コマンドプロンプトには`mv`がありません）。
 
 ```bash
 mkdir src
@@ -141,10 +150,12 @@ mv app src/
 ```
 
 移動後に`npm run dev`を実行し、同じ画面が表示されることを確認します。
+確認できたら、`Ctrl+C`で停止します。
 
 :::message
 **ポイント**
-`@/*`のインポートエイリアスを使う場合は、`tsconfig.json`の`paths`を`"@/*": ["./src/*"]`に変更してください。
+インポートエイリアス（`import x from "@/app/..."`のように、`@/`から始まるパスで読み込む書き方）を使う場合は、`tsconfig.json`の`paths`を`"@/*": ["./src/*"]`に変更してください。
+本書のコードでは使っていないため、変更しなくても動作します。
 :::
 
 ## 🌱 Storybookのインストール
@@ -153,11 +164,30 @@ mv app src/
 npm create storybook@latest
 ```
 
-実行すると、インストールする構成を聞かれます。
-▶ ここでは最小構成から必要なものを追加していくため、`Minimal`を選択します
+実行すると、最初に`Storybook`を初めて使うかを聞かれます。
+▶ 最小構成から必要なものを追加していくため、`No`を選択します
 
 :::message
-```bash
+```text
+◆  New to Storybook?
+│  ● Yes: Help me with onboarding
+│  ○ No: Skip onboarding & don't ask again
+```
+
+**翻訳**
+Storybookは初めて使いますか？
+- Yes: 初心者向けの案内（オンボーディング）を表示してほしい
+- No: オンボーディングは不要。今後も聞かなくてOK
+:::
+
+`Yes`を選ぶと、次の構成の質問は表示されず、`Recommended`構成が自動で選ばれます。
+以前に`No`を選んだことがある環境では、この質問は表示されません。
+
+続いて、インストールする構成を聞かれます。
+▶ `Minimal`を選択します
+
+:::message
+```text
 ◆  What configuration should we install?
 │  ● Recommended: Component development, docs, and testing features.
 │  ○ Minimal: Just the essentials for component development.
@@ -169,28 +199,10 @@ npm create storybook@latest
 - Minimal: コンポーネント開発に必要な最小限の構成
 :::
 
-`Recommended`を選んだ場合は、続けてオンボーディング（初心者向けの案内）を表示するかを聞かれます。
-▶ 不要なファイルを増やしたくないので`No`を選択します
-
-:::message
-```bash
-◆  New to Storybook?
-│  ● Yes: Help me with onboarding
-│  ○ No: Skip onboarding & don't ask again
-```
-
-**翻訳**
-Storybookは初めて使いますか？
-- Yes: 初心者向けの案内（オンボーディング）を表示してほしい
-  ▶ Storybookの基本構造（stories、Controls、Docs）を知りたい
-- No: オンボーディングは不要。今後も聞かなくてOK
-  ▶ 余計なファイルを増やしたくない/プロジェクト固有のルールがある
-:::
-
 ---
 
 :::details ターミナルのログを見る
-```bash
+```text
 $ npm create storybook@latest
 
 ┌  Initializing Storybook
@@ -234,8 +246,12 @@ $ npm create storybook@latest
 :::
 
 `Framework detected: nextjs-vite`は、`Storybook`が`Next.js`用の構成（ビルドツールに`Vite`を使う構成）を自動で選んだことを示しています。
+詳細は公式ドキュメントを参照してください。
+@[card](https://storybook.js.org/docs/get-started/frameworks/nextjs-vite)
 
 インストールが完了すると、`Storybook`が起動して次の画面が表示されます。
 ブラウザが自動で開かない場合は、`npm run storybook`を実行して`http://localhost:6006`を開いてください。
 
 ![installed-successfully-storybook](/images/books/learn-storybook-tutorial/installed-successfully-storybook.png)
+
+確認できたら、ターミナルで`Ctrl+C`を押して停止します。

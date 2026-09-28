@@ -4,34 +4,39 @@ title: "ブランチごとにGitHub Pagesを用意する"
 
 ## 🌱 このチャプターのゴール
 
-`main` と `develop` で **それぞれ別の URL** に Storybook を公開し、ブランチごとのデザイン差分をブラウザで確認できるようにします。
+`main`と`develop`で **それぞれ別のURL** に`Storybook`を公開し、ブランチごとのデザイン差分をブラウザで確認できるようにします。
 
 
 ![main-develop-design](/images/books/learn-storybook-tutorial/main-develop-design.png)
 *左: `main`ブランチのデザイン / 右: `develop`ブランチのデザイン*
 
 ▼ `main`ブランチの内容はこちらから確認できます
+
 @[card](https://aew2sbee.github.io/poc-storybook/)
 
 ▼ `develop`ブランチの内容はこちらから確認できます
+
 @[card](https://aew2sbee.github.io/poc-storybook/develop/)
 
-## 🌱 chapter03の方式との違い
-chapter03で使った`actions/deploy-pages`は、デプロイのたびにサイト全体を置き換えます。
-そのため、ブランチごとに別のフォルダへ公開することができません。
+## 🌱 前のチャプターの方式との違い
+チャプター「GitHub Pagesにデプロイする」で使った`actions/deploy-pages`は、デプロイのたびにサイト全体を置き換えます。
+そのため、ブランチごとに別のフォルダへは公開できません。
+詳細は公式ドキュメントを参照してください。
 
-そこで、公開用のファイルを置く専用ブランチ`gh-pages`を用意し、ブランチごとのサブディレクトリにファイルを追加していく方式に切り替えます。
+@[card](https://docs.github.com/ja/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+
+そこで、公開用のファイルを置く専用ブランチ`gh-pages`を用意し、ブランチごとのフォルダにファイルを追加していく方式に切り替えます。
 `gh-pages`ブランチへのデプロイには、[peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages)を使います。
 
 ## 🌱 GitHub Actionsのワークフローを置き換える
-chapter03で作成した`.github/workflows/storybook-pages.yml`の中身を、すべて以下の内容に置き換えます。
+チャプター「GitHub Pagesにデプロイする」で作成した`.github/workflows/storybook-pages.yml`の中身を、すべて以下の内容に置き換えます。
 
-この Workflow では、次のような動きをします。
+このワークフローは、次のように動作します。
 
-- `main` ブランチの場合
-  → `gh-pages` ブランチのルート（`/`）に Storybook をデプロイ
-- `main` 以外のブランチの場合
-  → ブランチ名をもとにしたサブディレクトリにデプロイ
+- `main`ブランチの場合
+  → `gh-pages`ブランチのルート（`/`）に`Storybook`をデプロイ
+- `main`以外のブランチの場合
+  → ブランチ名をもとにしたフォルダにデプロイ
     （例: `develop` → `/develop`、`feature/button` → `/feature-button`）
 
 ```yml:.github/workflows/storybook-pages.yml
@@ -45,6 +50,8 @@ name: Deploy Storybook to GitHub Pages (per-branch)
 on:
   push:
     # ここに並んだブランチがデプロイ対象になります（必要に応じて追加OK）
+    # "feature/**" は feature/button のように feature/ から始まるすべてのブランチが対象
+    # ここにないブランチは公開されません
     branches:
       - main
       - develop
@@ -55,8 +62,8 @@ on:
 permissions:
   contents: write
 
-# gh-pages ブランチへの push が競合しないよう、1つずつ順番に実行する
-# （実行中のデプロイはキャンセルせず、完了を待つ）
+# gh-pages ブランチへの push が競合しないよう、同時に実行するデプロイを1つだけにする
+# （実行中のものはキャンセルしない。待機中のものは最新の1件だけが残る）
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -104,7 +111,7 @@ jobs:
           publish_dir: storybook-static
           keep_files: true
 
-      # main 以外: サブディレクトリへ
+      # main 以外: ブランチ名のフォルダへ
       - name: Deploy branch to subdir
         if: github.ref_name != 'main'
         uses: peaceiris/actions-gh-pages@v4
@@ -117,15 +124,17 @@ jobs:
 
 ```
 
+- `github.ref_name` / `GITHUB_REF_NAME`: `push`されたブランチ名（例: `main`、`develop`、`feature/button`）が入ります
 - `sed 's/\//-/g'`: ブランチ名の`/`をすべて`-`に置き換えます
 - `echo "dir=..." >> $GITHUB_OUTPUT`: 置き換えた名前を、このステップの出力値`dir`として保存します
 - `steps.dest.outputs.dir`: 上のステップ（`id: dest`）が出力した値を参照しています
-- `keep_files: true`: `gh-pages`ブランチにある既存のファイルを消さずに上書きします。これがないと、他のブランチ用に公開したフォルダが削除されます
+- `secrets.GITHUB_TOKEN`: `gh-pages`ブランチへ`push`するための認証情報です。GitHubが自動で用意するため、自分で作成する必要はありません
+- `keep_files: true`: `gh-pages`ブランチにある既存のファイルを残したまま、新しいファイルを追加・上書きします。`main`のステップは`destination_dir`を指定せずルートに公開するため、これがないと他のブランチ用のフォルダまで削除されます（[公式README](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-keeping-existing-files-keep_files)）
 
 :::message
 **ポイント**
-ブランチ名に`/`（スラッシュ）が入る場合（例: `feature/button`）は、URL 用に`feature-button`のように変換されます。
-ただし、`feature/a-b`と`feature-a/b`のように、別のブランチが同じフォルダ名になると互いに上書きされます。
+ブランチ名に`/`（スラッシュ）が入る場合（例: `feature/button`）は、URL用に`feature-button`のように変換されます。
+ただし、`feature/a-b`と`feature/a/b`のように、別のブランチが同じフォルダ名（`feature-a-b`）になると互いに上書きされます。
 :::
 
 :::message alert
@@ -145,11 +154,24 @@ git commit -m "ブランチごとにGitHub Pagesへ公開する"
 git push
 ```
 
-続いて`develop`ブランチを作成し、Buttonの色などを変更して`push`します。
+続いて`develop`ブランチを作成し、Buttonの色を変更します。
+ここでは、`primary`の色を水色（`sky`）からピンク（`pink`）に変更します。
 
 ```bash
 git switch -c develop
-# Button.tsx の色などを変更する
+```
+
+```diff tsx:src/client/components/ui/Button/Button.tsx
+const colorMap = {
+-  primary: "bg-sky-400 text-white hover:bg-sky-500 active:bg-sky-600",
++  primary: "bg-pink-400 text-white hover:bg-pink-500 active:bg-pink-600",
+  secondary: "border border-slate-300 bg-white text-slate-900 hover:bg-slate-50 active:bg-slate-100",
+} as const;
+```
+
+変更を`develop`ブランチに`push`します。
+
+```bash
 git add .
 git commit -m "Buttonのデザインを変更"
 git push -u origin develop
@@ -159,20 +181,26 @@ git push -u origin develop
 成功すると`gh-pages`ブランチが作成されます。
 
 ## 🌱 GitHub > Settings > Pagesを編集する
-本章では公開用のファイルを`gh-pages`ブランチに置く方式に変えたため、Pagesの公開元もそのブランチに切り替えます。
-chapter03で設定した Source を`GitHub Actions`から次のように変更します。
+このチャプターでは公開用のファイルを`gh-pages`ブランチに置く方式に変えたため、Pagesの公開元もそのブランチに切り替えます。
+チャプター「GitHub Pagesにデプロイする」で設定したSourceを、`GitHub Actions`から次のように変更します。
 - Source: `Deploy from a branch`
 - Branch: `gh-pages` / `/(root)`
 
 ![setting-github-action](/images/books/learn-storybook-tutorial/setting-github-action.png)
 
+詳細は公式ドキュメントを参照してください。
+
+@[card](https://docs.github.com/ja/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
 :::message
 **ポイント**
-Branch に`gh-pages`が表示されない場合は、前の手順のワークフローが成功しているかを確認してください。
+Branchに`gh-pages`が表示されない場合は、前の手順のワークフローが成功しているかを確認してください。
 :::
 
 ## 🌱 公開URLを確認する
-次のURLで、ブランチごとの`Storybook`が表示されることを確認します。
+Sourceを切り替えると、`Actions`タブで`pages build and deployment`というワークフローが実行されます。
+完了するまで数分かかり、その間は404や古い内容が表示されます。
+完了後、次のURLでブランチごとの`Storybook`が表示されることを確認します。
 
 - `main`: `https://<ユーザー名>.github.io/<リポジトリ名>/`
 - `develop`: `https://<ユーザー名>.github.io/<リポジトリ名>/develop/`
