@@ -2,6 +2,13 @@
 title: "コンポーネント"
 ---
 
+## 🌱 この本について
+React 公式サイトのチュートリアル（https://ja.react.dev/learn ）を実際に動かしながら学んだ内容のまとめです。
+
+- 動作確認の環境: Next.js 16.1.3（App Router）+ TypeScript
+- サンプルコードは `app/<任意のディレクトリ>/page.tsx` などに置き、`npm run dev` で起動して確認しています
+- Next.js の App Router では、`useState` などのフックやイベントハンドラを使うファイルの先頭に `"use client";` が必要です。付けないとサーバーコンポーネントとして扱われ、エラーになります
+
 ## 🌱 コンポーネントとは
 
 > コンポーネントは、UI（ユーザインターフェース）を部品として切り出したものです。
@@ -19,13 +26,13 @@ export default function Home() {
 ```
 
 ## 🌱 拡張子
-TypeScript で JSX（<p>...</p> のような記法）を含むファイルは、拡張子を .tsx にします。
+TypeScript で JSX（`<p>...</p>` のような記法）を含むファイルは、拡張子を `.tsx` にします。
 
 :::message alert
 **ポイント**
 `.tsx` -> `.ts`に変えると JSX を TypeScript として解釈できず、ビルドエラーになります。
 
-```bash
+```text
 ## Error Type
 Build Error
 
@@ -76,14 +83,15 @@ export default function MyApp() {
 
 :::message
 **ポイント**
-- React のコンポーネント名は 大文字で始める必要があります
+- React のコンポーネント名は大文字で始める必要があります
 - `<MyButton />`が大文字で始まっているのは「React コンポーネント」を表すためです
-- `<button>`のように 小文字で始まるものは HTML タグとして扱われます
+- `<button>`のように小文字で始まるものは HTML タグとして扱われます
 :::
 
 
 ## 🌱 JSXで self-closing（/>）が必要なタグ
-JSX では、子要素を持たない要素は必ず /> で閉じます。
+JSX では、`<img>` や `<br>` などの空要素（子要素を持てない要素）は必ず `/>` で閉じます。
+子要素を持たない要素も `/>` で閉じられます。
 
 :::message alert
 **ポイント**
@@ -118,8 +126,7 @@ export default function Home() {
 <option />     // ※ children を持たない場合
 ```
 
-メタ・ドキュメント系
-（※ 通常は React コンポーネント内では使わない）
+その他の空要素
 ```tsx
 <meta />
 <link />
@@ -132,14 +139,13 @@ export default function Home() {
 ```
 
 
-## 🌱 TSXの構文（Fragment と div）
-JSX では return の中で要素を複数並べたいとき、必ず1つの親要素で包む必要があります。
-その親要素として、<div> の代わりに **Fragment（<>...</>）**を使うこともできます。
-<div>...</div> や空の <>...</> ラッパのような共通の親要素で囲む必要があります。
+## 🌱 JSXの構文（Fragment と div）
+JSX では return の中で要素を複数並べたいとき、`<div>...</div>` などの1つの親要素で包む必要があります。
+親要素として、`<div>` の代わりに Fragment（`<>...</>`）を使うこともできます。
 
 :::message
 **ポイント**
-- レイアウトや CSS の都合で “親の div が欲しい” ときは div、不要なら Fragment が便利です。
+- レイアウトや CSS の都合で「親の div が欲しい」ときは div、不要なら Fragment が便利です。
 
 :::
 
@@ -185,3 +191,7 @@ JSX では class は予約語のため、代わりに className を使います�
   border-radius: 50%;
 }
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn/your-first-component
+- https://ja.react.dev/learn/writing-markup-with-jsx

@@ -14,8 +14,8 @@ HTML の中に JavaScript を差し込める、というイメージを持つと
 :::
 
 ```diff tsx
-# user.nameを表示するには
-# {user.name} は JavaScript の変数
+// user.nameを表示するには
+// {user.name} は JavaScript の変数
 return (
   <h1>
 +    {user.name}
@@ -28,8 +28,8 @@ return (
 JSX の属性（`className` や `src` など）にも、`{}` を使って `JavaScript` の値を渡せます。
 
 ```diff tsx
-# className="avatar" は CSS クラスとして "avatar" 文字列を渡す
-# src={user.imageUrl} は JavaScript の user.imageUrl 変数の値を読み込み、その値を src 属性として渡します
+// className="avatar" は CSS クラスとして "avatar" 文字列を渡す
+// src={user.imageUrl} は JavaScript の user.imageUrl 変数の値を読み込み、その値を src 属性として渡します
 return (
   <img
 +    className="avatar"
@@ -44,7 +44,6 @@ return (
 そのため、`{}`を二重に書く形になります。
 
 ```diff tsx
-# JavaScripによる文字列結合も可能
 return (
     <img
 +       style={{
@@ -56,3 +55,5 @@ return (
 
 ```
 
+## 🌱 参考
+- https://ja.react.dev/learn/javascript-in-jsx-with-curly-braces

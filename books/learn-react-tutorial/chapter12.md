@@ -8,7 +8,12 @@ title: "条件付きレンダー"
 
 まずは、シンプルなコンポーネントを見てみましょう。
 ```tsx
-function Item({ name, isPacked }) {
+type ItemProps = {
+  name: string;
+  isPacked: boolean;
+};
+
+function Item({ name, isPacked }: ItemProps) {
   return <li className="item">{name}</li>;
 }
 ```
@@ -18,7 +23,7 @@ function Item({ name, isPacked }) {
 `return`の前で`if`文を使って分岐できます。
 
 ```diff tsx
-function Item({ name, isPacked }) {
+function Item({ name, isPacked }: ItemProps) {
 +  if (isPacked) {
 +    return <li className="item">{name} ✅</li>;
 +  }
@@ -38,7 +43,7 @@ function Item({ name, isPacked }) {
 その場合は`null`を返します。
 
 ```diff tsx
-function Item({ name, isPacked }) {
+function Item({ name, isPacked }: ItemProps) {
 + if (isPacked) {
 +   return null;
 + }
@@ -55,7 +60,7 @@ function Item({ name, isPacked }) {
 ## 🌱 条件 (三項) 演算子`? :`
 JSX の中で一部の表示だけを切り替えたい場合は、**三項演算子**が便利です。
 ```diff tsx
-function Item({ name, isPacked }) {
+function Item({ name, isPacked }: ItemProps) {
 -  if (isPacked) {
 -    return <li className="item">{name} ✅</li>;
 -  }
@@ -76,10 +81,10 @@ function Item({ name, isPacked }) {
 
 ## 🌱 論理 AND 演算子`&&`
 「条件が`true`のときだけ何かを表示したい」場合は、
-**論理 AND（&&）**がよく使われます。
+**論理 AND（&&）** がよく使われます。
 
 ```diff tsx
-function Item({ name, isPacked }) {
+function Item({ name, isPacked }: ItemProps) {
 - return <li className="item">{name}</li>;
 + return (
 +   <li className="item">
@@ -96,14 +101,15 @@ function Item({ name, isPacked }) {
 :::
 
 ## 🌱 && の左辺に数値を置かない
-`&&`を使うときに 初心者がつまずきやすい注意点があります。
+`&&`を使うときに初心者がつまずきやすい注意点があります。
 ```tsx
 messageCount && <p>New messages</p>
 ```
 一見問題なさそうですが、`messageCount`が`0`の場合、
-- `0`は`falsy`
-- しかし 評価結果は`0`
+- `0`は`falsy`（if などで`false`と同じ扱いになる値。`0`、`''`、`null`、`undefined`など）
+- しかし評価結果は`0`
 - `React`は`0`を表示してしまう
+
 という挙動になります。
 
 ```tsx
@@ -114,5 +120,8 @@ messageCount > 0 && <p>New messages</p>
 
 :::message
 **ポイント**
-`&&`の左側には, `true / false`や比較式（`>`, `<`, `===`など）を置くようにすると安全です。
+`&&`の左側には、`true / false`や比較式（`>`, `<`, `===`など）を置くようにすると安全です。
 :::
+
+## 🌱 参考
+- https://ja.react.dev/learn/conditional-rendering

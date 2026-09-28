@@ -33,13 +33,12 @@ function App() {
   );
 }
 ```
-ここで <Card> タグの 内側に書かれている`JSX`が、
+ここで `<Card>` タグの内側に書かれている`JSX`が、
 そのまま`Card`コンポーネントの`children`として渡されます。
 
----
-
-childrenの中身はどうなっている？
-このとき、`Card`の`{children}`には次の`JSX`が入ります。
+## 🌱 children の中身
+このとき、`Card`の`children`には`<h2>`と`<p>`の2要素が配列として渡されます。
+イメージとしては次の`JSX`と同等です。
 ```tsx
 <>
   <h2>タイトル</h2>
@@ -47,3 +46,6 @@ childrenの中身はどうなっている？
 </>
 
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn/passing-props-to-a-component

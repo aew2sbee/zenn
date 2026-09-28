@@ -14,13 +14,16 @@ React の `useState` では、配列も state として持てます。
 | 要素置換 | `splice`, `arr[i] = ...`（代入） | `map` |
 | 並び替え | `reverse`, `sort`（※破壊的） | `toReversed`, `toSorted`（またはコピーしてから `reverse/sort`） |
 
-> ⚠️ `reverse()` と `sort()` は **元の配列を直接変更（破壊的）**します。
-> state に対して使う場合は、`[...arr].sort()` のように **コピーしてから**使うか、`toSorted()` / `toReversed()`（対応環境なら）を使います。
+並び替えは本章のサンプルでは扱いません。
+
+> ⚠️ `reverse()` と `sort()` は **元の配列を直接変更（破壊的）** します。
+> state に対して使う場合は、`[...arr].sort()` のように **コピーしてから**使うか、`toSorted()` / `toReversed()`（ES2023 で追加されたメソッド。実行環境が対応している場合）を使います。
 
 
 ## 🌱 配列に要素を追加（末尾に追加）
 
 ```diff jsx
+"use client";
 import { useState } from 'react';
 
 let nextId = 0;
@@ -59,13 +62,14 @@ export default function List() {
 :::message
 **ポイント**
 - `push()`は配列を直接変更するため`state`では避ける
-- `setArtists([...artists, newItem])`で 新しい配列を作る
+- `setArtists([...artists, newItem])`で新しい配列を作る
 :::
 
 
 ## 🌱 配列から要素を削除（条件に合う要素を除外）
 
 ```diff jsx
+"use client";
 import { useState } from 'react';
 
 let initialArtists = [
@@ -114,6 +118,7 @@ export default function List() {
 ## 🌱 配列内の要素を置換（特定の要素だけ更新）
 
 ```diff jsx
+"use client";
 import { useState } from 'react';
 
 let initialCounters = [0, 0, 0];
@@ -154,13 +159,15 @@ export default function CounterList() {
 
 :::message
 **ポイント**
-- `map()`で 新しい配列を作りながら、更新したい要素だけ差し替える
+- `map()`で新しい配列を作りながら、更新したい要素だけ差し替える
+- この例は要素の並び替えや削除がない固定長の配列なので、`index`を`key`にしても問題ありません
 :::
 
 ## 🌱 配列への挿入（途中に 1 件入れる）
 
 
 ```diff jsx
+"use client";
 import { useState } from 'react';
 
 let nextId = 3;
@@ -220,29 +227,17 @@ export default function List() {
 
 
 ## 🌱 state 内の配列を更新（オブジェクト配列の更新例）
-`useState`は配列も`state`として持てます。
-ただし `React`の`state`は 直接書き換えず（ミュータブルにせず）、新しい配列を作って更新する必要があります。
-
-たとえば「特定の要素だけ更新したい」場合は、`map()`を使って**新しい配列**を作るのが定番です。
+オブジェクト配列の特定要素だけを更新する場合も、`map()`を使って**新しい配列**を作るのが定番です。
 ```tsx
+"use client";
 import { useState } from "react";
 
-/**
- * 1件のアート作品データの型
- * - id: 作品を一意に識別するためのID（keyにも使う）
- * - title: 表示するタイトル
- * - seen: チェック済みかどうか（見た/見てない）
- */
 type Artwork = {
   id: number;
   title: string;
   seen: boolean;
 };
 
-/**
- * 初期表示するリスト（stateの初期値として使う）
- * ※ 配列の中身は Artwork 型のオブジェクト
- */
 const initialList: Artwork[] = [
   { id: 0, title: "Big Bellies", seen: false },
   { id: 1, title: "Lunar Landscape", seen: false },
@@ -250,26 +245,13 @@ const initialList: Artwork[] = [
 ];
 
 export default function BucketList() {
-  /**
-   * list: 画面に表示するリスト（state）
-   * setList: list を更新するときに使う関数
-   */
   const [list, setList] = useState<Artwork[]>(initialList);
 
-  /**
-   * チェックボックスのON/OFFを受け取って、該当する作品の seen を更新する
-   * - artworkId: 更新対象の作品ID
-   * - nextSeen: 更新後の seen（checkboxの状態）
-   *
-   * ✅ポイント:
-   * Reactのstateは「直接書き換え」ではなく「新しい配列を作って差し替え」ます。
-   */
   const handleToggle = (artworkId: Artwork["id"], nextSeen: boolean) => {
     // setList に関数を渡すと、常に最新の state(prev) を使って更新できる
     setList((prev) =>
-      // mapで「新しい配列」を作る（元の配列は壊さない）
+      // 該当IDだけスプレッドでコピーして seen を差し替え、それ以外はそのまま返す
       prev.map((artwork) =>
-        // 該当IDだけ seen を nextSeen に更新し、それ以外はそのまま返す
         artwork.id === artworkId ? { ...artwork, seen: nextSeen } : artwork
       )
     );
@@ -279,18 +261,11 @@ export default function BucketList() {
     <>
       <h1>Art Bucket List</h1>
       <h2>My list of art to see:</h2>
-
-      {/* 子コンポーネントに、表示用データ(artworks)と更新用関数(onToggle)を渡す */}
       <ItemList artworks={list} onToggle={handleToggle} />
     </>
   );
 }
 
-/**
- * ItemListコンポーネントが受け取るpropsの型
- * - artworks: 表示する作品一覧
- * - onToggle: チェック状態が変わったときに呼ぶ関数
- */
 type ItemListProps = {
   artworks: Artwork[];
   onToggle: (artworkId: Artwork["id"], nextSeen: boolean) => void;
@@ -299,22 +274,17 @@ type ItemListProps = {
 function ItemList({ artworks, onToggle }: ItemListProps) {
   return (
     <ul>
-      {/* 配列を map して <li> を並べる */}
       {artworks.map((artwork) => (
-        // key は「リストの各要素を一意に識別するため」必須
         <li key={artwork.id}>
           <label>
             <input
               type="checkbox"
-              // チェック状態は state(artwork.seen) と同期させる（制御コンポーネント）
               checked={artwork.seen}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                // e.target.checked は「チェックされてるか」の真偽値
                 // 親から受け取った onToggle を呼んで state を更新してもらう
                 onToggle(artwork.id, e.target.checked);
               }}
             />
-            {/* タイトルを表示 */}
             {artwork.title}
           </label>
         </li>
@@ -323,118 +293,36 @@ function ItemList({ artworks, onToggle }: ItemListProps) {
   );
 }
 
-
 ```
 
-## 🌱 オブジェクト更新の「コピー」を楽にする：Immer（use-immer）
+## 🌱 配列更新の「コピー」を楽にする：Immer（use-immer）
 配列やオブジェクトが深くなると、`...`のコピーが増えてコードが読みにくくなりがちです。
 そこで`Immer`を使うと、見た目は「直接書き換え」に近い書き方のまま、内部でイミュータブルな更新を作ってくれます。
+上のコードから、変更する部分だけを抜き出します（インストール方法は前の章を参照）。
 
 ```diff tsx
 - import { useState } from "react";
-+ import { useImmer } from 'use-immer';
++ import { useImmer } from "use-immer";
 
-/**
- * 1件のアート作品データの型
- * - id: 作品を一意に識別するためのID（keyにも使う）
- * - title: 表示するタイトル
- * - seen: チェック済みかどうか（見た/見てない）
- */
-type Artwork = {
-  id: number;
-  title: string;
-  seen: boolean;
-};
+  // ...
 
-/**
- * 初期表示するリスト（stateの初期値として使う）
- * ※ 配列の中身は Artwork 型のオブジェクト
- */
-const initialList: Artwork[] = [
-  { id: 0, title: "Big Bellies", seen: false },
-  { id: 1, title: "Lunar Landscape", seen: false },
-  { id: 2, title: "Terracotta Army", seen: true },
-];
-
-export default function BucketList() {
-  /**
-   * list: 画面に表示するリスト（state）
-   * setList: list を更新するときに使う関数
-   */
 -  const [list, setList] = useState<Artwork[]>(initialList);
 +  const [list, updateList] = useImmer<Artwork[]>(initialList);
 
-  /**
-   * チェックボックスのON/OFFを受け取って、該当する作品の seen を更新する
-   * - artworkId: 更新対象の作品ID
-   * - nextSeen: 更新後の seen（checkboxの状態）
-   *
-   * ✅ポイント:
-   * Reactのstateは「直接書き換え」ではなく「新しい配列を作って差し替え」ます。
-   */
   const handleToggle = (artworkId: Artwork["id"], nextSeen: boolean) => {
-    // setList に関数を渡すと、常に最新の state(prev) を使って更新できる
 -    setList((prev) =>
--      // mapで「新しい配列」を作る（元の配列は壊さない）
 -      prev.map((artwork) =>
--        // 該当IDだけ seen を nextSeen に更新し、それ以外はそのまま返す
 -        artwork.id === artworkId ? { ...artwork, seen: nextSeen } : artwork
 -      )
 -    );
-+    updateList(draft => {
-+      const artwork = draft.find(a =>
-+        a.id === artworkId
-+      );
-+      artwork.seen = nextSeen;
++    // draft を直接書き換えるだけでよい
++    updateList((draft) => {
++      const artwork = draft.find((a) => a.id === artworkId);
++      if (artwork) artwork.seen = nextSeen;
 +    });
   };
-
-  return (
-    <>
-      <h1>Art Bucket List</h1>
-      <h2>My list of art to see:</h2>
-
-      {/* 子コンポーネントに、表示用データ(artworks)と更新用関数(onToggle)を渡す */}
-      <ItemList artworks={list} onToggle={handleToggle} />
-    </>
-  );
-}
-
-/**
- * ItemListコンポーネントが受け取るpropsの型
- * - artworks: 表示する作品一覧
- * - onToggle: チェック状態が変わったときに呼ぶ関数
- */
-type ItemListProps = {
-  artworks: Artwork[];
-  onToggle: (artworkId: Artwork["id"], nextSeen: boolean) => void;
-};
-
-function ItemList({ artworks, onToggle }: ItemListProps) {
-  return (
-    <ul>
-      {/* 配列を map して <li> を並べる */}
-      {artworks.map((artwork) => (
-        // key は「リストの各要素を一意に識別するため」必須
-        <li key={artwork.id}>
-          <label>
-            <input
-              type="checkbox"
-              // チェック状態は state(artwork.seen) と同期させる（制御コンポーネント）
-              checked={artwork.seen}
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                // e.target.checked は「チェックされてるか」の真偽値
-                // 親から受け取った onToggle を呼んで state を更新してもらう
-                onToggle(artwork.id, e.target.checked);
-              }}
-            />
-            {/* タイトルを表示 */}
-            {artwork.title}
-          </label>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn/updating-arrays-in-state
+- https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted

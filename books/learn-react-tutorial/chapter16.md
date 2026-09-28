@@ -7,9 +7,9 @@ title: "useState"
 コンポーネントは、現在の入力値や選択中の画像、
 ショッピングカートの状態などを「覚えておく」必要があります。
 
-`React`では、このような コンポーネント固有のメモリを`state`と呼びます。
+`React`では、このようなコンポーネント固有のメモリを`state`と呼びます。
 
-`useState`フックを使用すると、コンポーネントに`state`を追加することができます。
+`useState`フックを使用すると、コンポーネントに`state`を追加できます。
 
 ```tsx
 const [index, setIndex] = useState(0);
@@ -17,7 +17,9 @@ const [showMore, setShowMore] = useState(false);
 ```
 
 以下は、`state`を使って表示内容を切り替える例です。
+`./data.js`の`sculptureList`は、公式チュートリアルの同じ例に含まれるデータ（`name`、`artist`、`description`、`url`、`alt`を持つオブジェクトの配列）です。
 ```tsx
+"use client";
 import { useState } from 'react';
 import { sculptureList } from './data.js';
 
@@ -65,15 +67,16 @@ export default function Gallery() {
 
 ```
 
-## 🌱 “+3” をクリックしても 1 しかスコアが増えない不具合
+## 🌱 「+3」をクリックしても 1 しかスコアが増えない不具合
 `state`を更新すると、新しい再レンダーが予約されますが、
 すでに実行中のコード内で参照している`state`の値は変わりません。
 
 そのため、以下のコードでは
 `setScore(score + 1)`を複数回呼び出しても、
-すべて 同じ`score`の値を元に計算されてしまいます。
+すべて同じ`score`の値を元に計算されてしまいます。
 
 ```tsx
+"use client";
 import { useState } from 'react';
 
 export default function Counter() {
@@ -101,13 +104,14 @@ export default function Counter() {
 この問題は、更新用関数を渡すことで解決できます。
 
 ```diff tsx
+"use client";
 import { useState } from 'react';
 
 export default function Counter() {
   const [score, setScore] = useState(0);
 
   function increment() {
-      // state を設定する際に更新用関数を渡すことでこれを修正することができます。
+    // state を設定する際に更新用関数を渡すことで修正できます
 -    setScore(score + 1);
 +    setScore(s => s + 1);
   }
@@ -127,5 +131,10 @@ export default function Counter() {
 
 ```
 
-この書き方では、`React`が 直前の`state`を順番に使って
+この書き方では、`React`が直前の`state`を順番に使って
 更新を処理するため、複数回の更新が正しく反映されます。
+「+3」をクリックすると、スコアが 3 増えます。
+
+## 🌱 参考
+- https://ja.react.dev/learn/state-a-components-memory
+- https://ja.react.dev/learn/queueing-a-series-of-state-updates

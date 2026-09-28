@@ -7,7 +7,7 @@ React では、**親コンポーネントから子コンポーネントへデー
 
 まずは、`props` を使わないシンプルなコンポーネントから見てみましょう。
 
-```tsx: components/Avatar.tsx
+```tsx:components/Avatar.tsx
 // 子コンポーネント
 export function Avatar() {
   return (
@@ -22,7 +22,7 @@ export function Avatar() {
 }
 ```
 
-```tsx: app/page.tsx
+```tsx:app/page.tsx
 // 親コンポーネント
 import { Avatar } from '@/components/Avatar';
 
@@ -38,7 +38,7 @@ export default function Page() {
 この時点では、`Avatar`コンポーネントの表示内容はコンポーネント自身の中に固定された値になっています。
 
 
-```diff tsx: components/Avatar.tsx
+```diff tsx:components/Avatar.tsx
 // 子コンポーネント
 + type Person = {
 +   name: string;
@@ -82,7 +82,7 @@ export default function Page() {
 次に、親コンポーネント側から `Avatar` コンポーネントへ
 `props` を渡すように修正します。
 
-```diff tsx: app/page.tsx
+```diff tsx:app/page.tsx
 // 親コンポーネント
 import { Avatar } from '@/components/Avatar';
 
@@ -103,9 +103,10 @@ export default function Page() {
 ```
 
 ## 🌱 propsのデフォルト値を指定する
-パラメータ名の直後に`=`とデフォルト値を書くことができます。
+パラメータ名の直後に`=`とデフォルト値を書けます。
+型では`size?: number`のように`?`を付けて省略可能にします。親が`size`を省略すると、100 が使われます。
 
-```diff tsx: components/Avatar.tsx
+```diff tsx:components/Avatar.tsx
 // 子コンポーネント
  type Person = {
    name: string;
@@ -114,10 +115,11 @@ export default function Page() {
 
  type AvatarProps = {
    person: Person;
-   size: number;
+-   size: number;
++   size?: number;
  };
 
-- export function Avatar() {
+- export function Avatar({ person, size }: AvatarProps) {
 + export function Avatar({ person, size = 100 }: AvatarProps) {
   return (
     <img
@@ -137,7 +139,7 @@ export default function Page() {
 props の数が少なく、他で再利用しない場合は
 型を別で定義せず、その場でインラインに書くこともできます。
 
-```diff tsx: components/Avatar.tsx
+```diff tsx:components/Avatar.tsx
 // 子コンポーネント
 - export function Avatar() {
 + export function Avatar({
@@ -165,7 +167,7 @@ props の数が少なく、他で再利用しない場合は
 }
 ```
 
-```diff tsx: app/page.tsx
+```diff tsx:app/page.tsx
 // 親コンポーネント
 import { Avatar } from '@/components/Avatar';
 
@@ -182,3 +184,6 @@ export default function Page() {
   );
 }
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn/passing-props-to-a-component

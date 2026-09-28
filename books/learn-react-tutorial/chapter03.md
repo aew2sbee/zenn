@@ -2,14 +2,15 @@
 title: "条件式"
 ---
 
-## 🌱 条件付きレンダー(if文)
+## 🌱 条件付きレンダー（if文）
 React には、条件分岐専用の特別な構文は存在しません。
 その代わり、JavaScript で普段使っている条件分岐の書き方をそのまま利用します。
 
 :::message
 **ポイント**
-if 文は JSX の中では直接書けないため、
-**基本的にステートメント（statement）領域に記載します**
+JSX の `{}` の中には値を返す「式」しか書けず、if は「文」なので直接書けません。
+そのため、if 文は**基本的にステートメント（statement）領域に記載します**。
+ステートメント領域とは、`return` より前の通常の JavaScript を書く部分のことです。
 
 :::
 
@@ -33,9 +34,9 @@ return (
 
 ```
 
-## 🌱 UI領域での三項演算子（if文）
+## 🌱 UI領域での三項演算子（if文の代わり）
 条件分岐がシンプルな場合は、**三項演算子**を使うことで
-よりコンパクトに記述できます。
+よりコンパクトに記述できます。三項演算子は式なので、JSX の `{}` の中に書けます。
 ```diff tsx
 return (
   <div>
@@ -53,7 +54,6 @@ return (
 else 側の処理が不要な場合は、**論理積（AND演算子）** が便利です。
 
 ```diff tsx
-# JavaScripによる文字列結合も可能
 return (
   <div>
 +    {isLoggedIn && <AdminPanel />}
@@ -62,3 +62,6 @@ return (
 
 ```
 
+## 🌱 参考
+- https://ja.react.dev/learn
+- https://ja.react.dev/learn/conditional-rendering

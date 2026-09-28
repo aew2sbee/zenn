@@ -2,9 +2,13 @@
 title: "フックの使用"
 ---
 
+## 🌱 フックのルール
+フックとは、`useState` のように `use` で始まる React の関数のことです。
+フックはコンポーネント関数の一番外側（トップレベル）でのみ呼び出せます。
+
 :::message
 **ポイント**
-- **「フックはトップレベルで」** は、「if や for の内側に入れない」という意味です
+- **「フックはトップレベルで」** は、「if・ループ・ネストした関数の中や、早期 return の後で呼ばない」という意味です
 - 迷ったら、フックを使う部分を子コンポーネントに分けるのが一番安全で読みやすいです
 
 :::
@@ -14,6 +18,7 @@ title: "フックの使用"
 ところが、`if (showEditor) `の中で`useState`を呼ぶと、
 - `showEditor = false`のとき →`useState`は呼ばれない
 - `showEditor = true`のとき →`useState`が急に呼ばれる
+
 となり、呼び出し順が変わってしまいます。これが「条件分岐の中でフックを呼ぶのがダメ」な理由です。
 
 ```tsx
@@ -43,8 +48,9 @@ export default function App() {
 ```
 
 下記のように修正する
--`App`は常に同じ順番で`useState`を呼ぶ
--`Editor`は「表示されたときだけ」コンポーネントごと登場するので、`Editor`内の`useState`は常にトップレベルで呼ばれる
+
+- `App`は常に同じ順番で`useState`を呼ぶ
+- `Editor`は「表示されたときだけ」コンポーネントごと登場するので、`Editor`内の`useState`は常にトップレベルで呼ばれる
 
 ```diff tsx
 "use client";
@@ -128,7 +134,7 @@ export default function App() {
 }
 ```
 
-`map`の中では コンポーネントを並べるだけにして、`useState`は`ItemRow`のトップレベルに置きます。
+`map`の中ではコンポーネントを並べるだけにして、`useState`は`ItemRow`のトップレベルに置きます。
 
 ```diff tsx
 "use client";
@@ -139,7 +145,8 @@ export default function App() {
 
   return (
     <ul>
-      {items.map((name) => {
+-      {items.map((name) => {
++      {items.map((name) => (
 -        const [checked, setChecked] = useState(false);
 -
 -        return (
@@ -179,3 +186,6 @@ export default function App() {
   );
 }
 ```
+
+## 🌱 参考
+- https://ja.react.dev/reference/rules/rules-of-hooks

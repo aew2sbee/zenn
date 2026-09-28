@@ -40,3 +40,7 @@ export default function ShoppingList() {
   );
 }
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn
+- https://ja.react.dev/learn/rendering-lists

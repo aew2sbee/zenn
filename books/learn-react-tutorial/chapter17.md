@@ -4,11 +4,14 @@ title: "useState-オブジェクト"
 
 ## 🌱 state 内のオブジェクトの更新
 `useState`はオブジェクトも state として持てます。
-ただし `React`の`state`は 直接書き換えず（ミュータブルにせず）、新しいオブジェクトを作って更新する必要があります。
+ただし`React`の`state`は直接書き換えず（ミューテートせず）、新しいオブジェクトを作って更新する必要があります。
+直接書き換えても React は変更を検知できず、再レンダーされないためです。
 
-特にネストしたオブジェクトは、更新したい階層まで 段階的にコピーしてから値を上書きします。
+新しいオブジェクトは、スプレッド構文（`...person`：`person`の中身を展開してコピーする構文）で作ります。
+特にネストしたオブジェクトは、更新したい階層まで段階的にコピーしてから値を上書きします。
 
 ```tsx
+"use client";
 import { useState } from "react";
 
 type Person = {
@@ -74,7 +77,7 @@ export default function Form() {
 
   return (
     <>
-      {/* value に state を紐づけ、onChange で state を更新する（制御コンポーネント） */}
+      {/* value に state を紐づけ、onChange で state を更新する（制御コンポーネント：入力値を state で管理するコンポーネント） */}
       <label>
         Name:
         <input value={person.name} onChange={handleNameChange} />
@@ -115,15 +118,16 @@ export default function Form() {
 
 ## 🌱 オブジェクト更新の「コピー」を楽にする：Immer（use-immer）
 ネストが深くなるほど、スプレッドでのコピーは長くなりがちです。
-そこで`use-immer`を使うと、見た目はミュータブルに書きつつ、
-内部では イミュータブル更新として`state`を作ってくれます。
+そこで`use-immer`を使うと、見た目は直接書き換えるように書きつつ、
+内部では元のオブジェクトを変更しない更新（イミュータブル更新）として`state`を作ってくれます。
 
-インストール
+インストール（プロジェクトのルート、`package.json`がある場所で実行します。成功すると`package.json`の`dependencies`に`use-immer`が追加されます）
 ```bash
 npm install use-immer
 ```
 
 ```diff tsx
+"use client";
 - import { useState } from 'react';
 + import { useImmer } from 'use-immer';
 
@@ -156,9 +160,8 @@ export default function Form() {
     });
   }
 
-
-  // 3) artwork.title を更新するハンドラ
-  // ネストされたオブジェクトは「2段階」でコピーしてから更新する
+  // artwork.title を更新するハンドラ
+  // ネストされたオブジェクトも draft を直接書き換えるだけでよい
   function handleTitleChange(e: React.ChangeEvent<HTMLInputElement>) {
 -    setPerson({
 -      ...person,
@@ -171,7 +174,7 @@ export default function Form() {
     });
   }
 
-  // 4) artwork.city を更新するハンドラ
+  // artwork.city を更新するハンドラ
   function handleCityChange(e: React.ChangeEvent<HTMLInputElement>) {
 -    setPerson({
 -      ...person,
@@ -184,7 +187,7 @@ export default function Form() {
     });
   }
 
-  // 5) artwork.image を更新するハンドラ
+  // artwork.image を更新するハンドラ
   function handleImageChange(e: React.ChangeEvent<HTMLInputElement>) {
 -    setPerson({
 -      ...person,
@@ -234,3 +237,6 @@ export default function Form() {
 
 
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn/updating-objects-in-state

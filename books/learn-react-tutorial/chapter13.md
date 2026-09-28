@@ -2,7 +2,7 @@
 title: "リストのレンダー"
 ---
 
-## 🌱 key のルール
+## 🌱 配列を map で表示する
 配列データを `<li>` タグで囲んで表示するコンポーネントを作成できます。
 
 ```tsx
@@ -25,10 +25,10 @@ export default function List() {
 
 :::message alert
 **ポイント**
-`Warning: Each child in a list should have a unique “key” prop.`
+`Each child in a list should have a unique "key" prop.`
 
 配列の各アイテムには、`key`を渡す必要があります。
-`key`とは、配列内の他のアイテムと区別できるようにするための 一意な文字列または数値 です。
+`key`とは、配列内の他のアイテムと区別できるようにするための一意な文字列または数値です。
 
 :::
 
@@ -55,20 +55,25 @@ export default function List() {
 -    <li>{person}</li>
 +  const listItems = people.map((person) => (
 +    <li key={person.id}>{person.name}</li>
-  );
+-  );
++  ));
   return <ul>{listItems}</ul>;
 }
 
 ```
 
-## 🌱 keyの値は何で設定するべきなのか？
+## 🌱 key のルール
 - データベースの主キーや ID は必然的に一意になるため、その値を`key`として利用できます。
 
 :::message alert
 **ポイント**
-- 異なる配列に対応する`JSX`ノードには同じキーを使用することができます。
-- キーはレンダー間で安定している必要があります
+- 異なる配列に対応する`JSX`ノードには同じ`key`を使用できます。
+- `key`はレンダー間で安定している必要があります
   並び替えや追加・削除が起きても同じ要素を同じものとして扱えるため
-- レンダーの最中に`key`を生成してはいけません。
-  そのため、`key`には`index`ではなく、データに含まれる`id`のような「安定していて一意な値」を使います。
+- `key={Math.random()}`のように、レンダーの最中に`key`を生成してはいけません。
+- 項目の順序が変わりうる場合、`index`を`key`にすると並び替えや削除で要素との対応がずれるため避けます。
+  データに含まれる`id`のような「安定していて一意な値」を使います。
 :::
+
+## 🌱 参考
+- https://ja.react.dev/learn/rendering-lists

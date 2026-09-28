@@ -3,21 +3,21 @@ title: "画面の更新"
 ---
 
 ## 🌱 コンポーネントに情報を「記憶」させる
-コンポーネントに state（状態） を追加すると、値を保持できるようになります。
-そして state を更新すると、React が再レンダーを行い、画面表示が更新されます。
+コンポーネントに state（状態）を追加すると、値を保持できるようになります。
+そして state を更新すると、React が再レンダー（コンポーネント関数をもう一度呼び出して表示を作り直すこと）を行い、画面表示が更新されます。
 
 :::message
 **ポイント**
-useState は「現在の値」と「更新用の関数」を 配列で返すので、分割代入で受け取ります。
+useState は「現在の値」と「更新用の関数」を配列で返すので、分割代入で受け取ります。
 ```tsx
 // useState(n): nは初期値
 // count: 現在のstateの変数
 // setCount: stateを更新するための関数
 const [count, setCount] = useState(0);
-// useState は「現在の値」と「更新用の関数」を 配列で返すので、分割代入で受け取ります。
+// useState は「現在の値」と「更新用の関数」を配列で返すので、分割代入で受け取ります。
 ```
 
-前の値に依存する更新（関数形式）
+前の値に依存する更新（関数形式）。関数形式が必要な理由は「useState」の章で説明します。
 ```tsx
 setCount(c => c + 1)
 ```
@@ -87,3 +87,7 @@ function MyButton() {
   );
 }
 ```
+
+## 🌱 参考
+- https://ja.react.dev/learn
+- https://ja.react.dev/learn/state-a-components-memory
