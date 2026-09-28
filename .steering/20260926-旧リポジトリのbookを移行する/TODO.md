@@ -9,5 +9,5 @@
 - [x] learn-react-tutorial → #171
 - [x] github-copilot → #172
 - [x] book-record-of-reading → #163
-- [ ] github-foundations-part-2
+- [x] github-foundations-part-2 → #173
 - [ ] github-foundations
