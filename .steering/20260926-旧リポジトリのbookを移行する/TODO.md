@@ -10,4 +10,4 @@
 - [x] github-copilot → #172
 - [x] book-record-of-reading → #163
 - [x] github-foundations-part-2 → #173
-- [ ] github-foundations
+- [x] github-foundations → #174
