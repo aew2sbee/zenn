@@ -7,11 +7,11 @@ title: "GitHub のプラン"
 ### 選択肢
 
 - すべて
-- エンタープライズ
-- プロ
-- チーム
-- チームとエンタープライズ
-- 無料
+- Enterprise
+- Pro
+- Team
+- Team と Enterprise
+- Free
 
 ### 回答欄
 
@@ -19,10 +19,10 @@ title: "GitHub のプラン"
 [公式ドキュメント](https://github.com/pricing)
 
 - [x] すべて
-- [ ] エンタープライズ
-- [ ] プロ
-- [ ] チーム
-- [ ] チームとエンタープライズ
-- [ ] 無料
+- [ ] Enterprise
+- [ ] Pro
+- [ ] Team
+- [ ] Team と Enterprise
+- [ ] Free
 
 :::

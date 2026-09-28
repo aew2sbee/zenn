@@ -14,7 +14,7 @@ title: "Dependabot を使用してサプライ チェーンを安全に保つ"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/code-security/dependabot)
+[公式ドキュメント](https://docs.github.com/ja/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
 
 - [x] Dependabot
 - [ ] GitHub Copilot

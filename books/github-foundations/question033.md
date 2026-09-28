@@ -8,8 +8,8 @@ title: "開発コンテナーの概要"
 
 - `.devcontainer/devcontainer.json` 設定ファイルを作成する。
 - リポジトリのルートにカスタム Dockerfile を作成する。
-- `.github/codespaces.yml`設定ファイルを作成します。
-- リポジトリをインストールしたカスタム・マシン・イメージを作成する
+- `.github/codespaces.yml` 設定ファイルを作成する。
+- リポジトリをインストールしたカスタムマシンイメージを作成する。
 
 ### 回答欄
 
@@ -18,7 +18,7 @@ title: "開発コンテナーの概要"
 
 - [x] `.devcontainer/devcontainer.json` 設定ファイルを作成する。
 - [ ] リポジトリのルートにカスタム Dockerfile を作成する。
-- [ ] `.github/codespaces.yml`設定ファイルを作成します。
-- [ ] リポジトリをインストールしたカスタム・マシン・イメージを作成する
+- [ ] `.github/codespaces.yml` 設定ファイルを作成する。
+- [ ] リポジトリをインストールしたカスタムマシンイメージを作成する。
 
 :::

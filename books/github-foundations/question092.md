@@ -1,8 +1,8 @@
 ---
-title: "pull requests について"
+title: "プルリクエストについて"
 ---
 
-## Q92: GitHub では、あるブランチの変更を別のブランチにマージする提案を a と呼びます
+## Q92: GitHub で、あるブランチの変更を別のブランチにマージする提案を何と呼びますか？
 
 ### 選択肢
 
@@ -10,7 +10,7 @@ title: "pull requests について"
 - Gist
 - Issue
 - Commit
-- A merge branch
+- マージブランチ
 
 ### 回答欄
 
@@ -21,6 +21,6 @@ title: "pull requests について"
 - [ ] Gist
 - [ ] Issue
 - [ ] Commit
-- [ ] A merge branch
+- [ ] マージブランチ
 
 :::

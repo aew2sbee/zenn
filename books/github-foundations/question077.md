@@ -2,7 +2,7 @@
 title: "GitHub Enterprise Server について"
 ---
 
-## Q77: GitHub の料金プランで、GitHub のセルフホスト・デプロイを提供しているのはどれですか？
+## Q77: GitHub の料金プランで、セルフホスト型のデプロイを提供しているのはどれですか？
 
 ### 選択肢
 
@@ -10,8 +10,8 @@ title: "GitHub Enterprise Server について"
 - Pro
 - Team
 - Free
-- All of them
-- None of them
+- すべて
+- いずれでもない
 
 ### 回答欄
 
@@ -22,7 +22,7 @@ title: "GitHub Enterprise Server について"
 - [ ] Pro
 - [ ] Team
 - [ ] Free
-- [ ] All of them
-- [ ] None of them
+- [ ] すべて
+- [ ] いずれでもない
 
 :::

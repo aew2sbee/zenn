@@ -1,8 +1,8 @@
 ---
-title: "GitHub Actions による継続的インテグレーションについて"
+title: "ワークフローをトリガーするイベント"
 ---
 
-## Q20: GitHub Action のワークフローはイベントによってトリガーされます。GitHub Action がサポートする有効なイベントはどれですか？(二つ選んでください)
+## Q20: GitHub Actions のワークフローはイベントによってトリガーされます。GitHub Actions がサポートする有効なイベントはどれですか？（2 つ選択してください）
 
 ### 選択肢
 
@@ -15,7 +15,7 @@ title: "GitHub Actions による継続的インテグレーションについて
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/actions/automating-builds-and-tests/about-continuous-integration)
+[公式ドキュメント](https://docs.github.com/ja/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 
 - [x] ブランチにコミットがプッシュされたとき
 - [x] プルリクエストが作成されたとき

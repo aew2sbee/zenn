@@ -1,8 +1,8 @@
 ---
-title: "Issues を無効化する"
+title: "Issue を無効化する"
 ---
 
-## Q39: リポジトリで issue タブを無効にできますか？
+## Q39: リポジトリで Issue タブを無効にできますか？
 
 ### 選択肢
 
@@ -14,7 +14,7 @@ title: "Issues を無効化する"
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues)
 
-- [x] Yes
-- [ ] No(issue、Wiki、プロジェクトなどの機能は、リポジトリの設定で無効にすることができます。)
+- [x] Yes（Issue、Wiki、プロジェクトなどの機能は、リポジトリの設定で無効にできます。）
+- [ ] No
 
 :::

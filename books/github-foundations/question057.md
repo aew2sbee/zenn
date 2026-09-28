@@ -14,7 +14,7 @@ title: "人をフォローする"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/get-started/quickstart/be-social#following-people)
+[公式ドキュメント](https://docs.github.com/ja/get-started/exploring-projects-on-github/following-people)
 
 - [x] そのユーザーの公開活動について、あなたの個人ダッシュボードに通知が届きます。
 - [ ] そのユーザーの個人ダッシュボードに、あなたの公開活動に関する通知が届きます。

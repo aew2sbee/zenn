@@ -2,7 +2,7 @@
 title: "GitHub Copilot"
 ---
 
-## Q22: これらのツールのうち、AI ペアプログラマーとして機能し、コーディング中にオートコンプリートスタイルの提案を提供するものはどれだろう？
+## Q22: AI ペアプログラマーとして機能し、コーディング中にオートコンプリートのような提案をするツールはどれですか？
 
 ### 選択肢
 
@@ -14,7 +14,7 @@ title: "GitHub Copilot"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/copilot/quickstart#introduction)
+[公式ドキュメント](https://docs.github.com/ja/copilot/get-started/what-is-github-copilot)
 
 - [x] GitHub Copilot
 - [ ] GitHub AI Aid

@@ -6,19 +6,19 @@ title: "コミュニティからのアクティビティの更新を受ける"
 
 ### 選択肢
 
-- ユーザーが `octocat` をフォローしているからです。
+- あなたが `octocat` をフォローしているからです。
 - 最近 `octocat` ユーザーのプロフィールにアクセスしたからです。
 - あなたが `octocat/my-repo` リポジトリに貢献したからです。
-- `octocat/my-repo` リポジトリをスターにしたからです。
+- `octocat/my-repo` リポジトリにスターを付けたからです。
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-user-account-settings/about-your-personal-dashboard#staying-updated-with-activity-from-the-community)
+[公式ドキュメント](https://docs.github.com/ja/get-started/exploring-projects-on-github/following-people)
 
-- [x] ユーザーが `octocat` をフォローしているからです。
+- [x] あなたが `octocat` をフォローしているからです。
 - [ ] 最近 `octocat` ユーザーのプロフィールにアクセスしたからです。
 - [ ] あなたが `octocat/my-repo` リポジトリに貢献したからです。
-- [ ] `octocat/my-repo` リポジトリをスターにしたからです。
+- [ ] `octocat/my-repo` リポジトリにスターを付けたからです。
 
 :::

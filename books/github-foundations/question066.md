@@ -14,7 +14,7 @@ title: "分散バージョン管理システム Git について"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://about.gitlab.com/topics/version-control/benefits-distributed-version-control-system/)
+[公式ドキュメント](https://docs.github.com/ja/get-started/using-git/about-git#about-version-control-and-git)
 
 - [x] 開発者は、リポジトリとその履歴の完全なコピーをローカルマシンに持つことができる。
 - [ ] システムを使用するチームメンバー間のタスクが容易に分散されることを意味する。

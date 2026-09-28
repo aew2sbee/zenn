@@ -2,7 +2,7 @@
 title: "Copilot へのアクセス権の取得"
 ---
 
-## Q23: GitHub Copilotは無料で使えますか？
+## Q23: GitHub Copilot は無料で使えますか？
 
 ### 選択肢
 
@@ -14,11 +14,11 @@ title: "Copilot へのアクセス権の取得"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/copilot/about-github-copilot/what-is-github-copilot#for-individuals)
+[公式ドキュメント](https://docs.github.com/ja/copilot/get-started/what-is-github-copilot)
 
 - [ ] いいえ
 - [ ] はい
-- [x] はい、ただし学生、教師、または人気のあるオープンソースプロジェクトのメンテナーの場合に限ります
+- [x] はい、ただし学生、教師、または人気のあるオープンソースプロジェクトのメンテナーの場合に限ります（翻訳元の問題作成時点の正解です。現在は、誰でも利用できる Copilot Free プランがあります。）
 - [ ] はい、ただし公開リポジトリで作業している個人のみ対象です
 
 :::
