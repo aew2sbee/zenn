@@ -6,7 +6,7 @@
 <!-- AI向け: 作業単位ごとに「- [ ] 」で始まる1行を書く。完了したらチェックを付け、PR番号を併記する。例: - [x] learn-react-tutorial → #160 -->
 
 - [x] learn-storybook-tutorial → #162
-- [ ] learn-react-tutorial
+- [x] learn-react-tutorial → #171
 - [ ] github-copilot
 - [x] book-record-of-reading → #163
 - [ ] github-foundations-part-2
