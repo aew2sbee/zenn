@@ -6,15 +6,15 @@ title: "料金"
 
 ### 選択肢
 
-- No
-- Yes
+- いいえ
+- はい
 
 ### 回答欄
 
 :::details 回答を見る
 [公式ドキュメント](https://github.com/features/copilot/plans)
 
-- [ ] No
-- [x] Yes
+- [ ] いいえ
+- [x] はい（Copilot Free プランがあり、月ごとの利用上限の範囲内で無料で使えます。）
 
 :::

@@ -2,23 +2,23 @@
 title: "GitHub Copilot からのコンテンツの除外"
 ---
 
-## Q13: GitHub Copilot からコンテンツを除外するとどうなりますか？(2つ選択してください)
+## Q13: GitHub Copilot からコンテンツを除外するとどうなりますか？（2 つ選択してください）
 
 ### 選択肢
 
-- 影響を受けるファイルではコード補完が利用できなくなります。
-- 影響を受けるファイルの内容は、他のファイルのコード補完候補に通知されません。
-- 影響を受けるファイルの内容は、引き続き GitHub Copilot チャットの応答に反映されます。
-- 影響を受けるファイルでは、コード補完機能は影響を受けません。
+- 対象ファイルではコード補完が利用できなくなる
+- 対象ファイルの内容は、他のファイルでのコード補完の提案に使われなくなる
+- 対象ファイルの内容は、引き続き GitHub Copilot Chat の応答に使われる
+- 対象ファイルでも、コード補完はこれまでどおり使える
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/copilot/managing-copilot/configuring-and-auditing-content-exclusion/excluding-content-from-github-copilot#about-content-exclusions-for-copilot)
+[公式ドキュメント](https://docs.github.com/ja/copilot/concepts/context/content-exclusion#about-content-exclusion-for-copilot)
 
-- [x] 影響を受けるファイルではコード補完が利用できなくなります。
-- [x] 影響を受けるファイルの内容は、他のファイルのコード補完候補に通知されません。
-- [ ] 影響を受けるファイルの内容は、引き続き GitHub Copilot チャットの応答に反映されます。
-- [ ] 影響を受けるファイルでは、コード補完機能は影響を受けません。
+- [x] 対象ファイルではコード補完が利用できなくなる
+- [x] 対象ファイルの内容は、他のファイルでのコード補完の提案に使われなくなる
+- [ ] 対象ファイルの内容は、引き続き GitHub Copilot Chat の応答に使われる
+- [ ] 対象ファイルでも、コード補完はこれまでどおり使える
 
 :::

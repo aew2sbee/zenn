@@ -1,24 +1,24 @@
 ---
-title: "GitHub Copilot のデータ処理"
+title: "GitHub Copilot のデータ処理（プロキシでの前処理）"
 ---
 
-## Q18: GitHub Copilot のプロキシサービスがプロンプトを処理するときに発生する手順はどれですか？
+## Q18: GitHub Copilot のプロキシサービスがプロンプトを処理するときに行われるものはどれですか？
 
 ### 選択肢
 
-- 有害言語のテスト、関連性チェック、ハッキング未遂の検出
-- 複数のプログラミング言語への翻訳と構文検証
+- 複数のプログラミング言語への翻訳と構文の検証
 - サンドボックス環境でのコードの自動コンパイルと実行
+- 有害な言語のチェック、関連性のチェック、プロンプトを使ったハッキングの試みの検出
 - 参照チェックのための公開リポジトリへの直接送信
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://resources.github.com/learn/pathways/copilot/essentials/how-github-copilot-handles-data/)
+[公式ドキュメント](https://learn.microsoft.com/ja-jp/training/modules/introduction-prompt-engineering-with-github-copilot/3-github-copilot-user-prompt-process-flow)
 
-- [x] 有害言語のテスト、関連性チェック、ハッキング未遂の検出
-- [ ] 複数のプログラミング言語への翻訳と構文検証
+- [ ] 複数のプログラミング言語への翻訳と構文の検証
 - [ ] サンドボックス環境でのコードの自動コンパイルと実行
+- [x] 有害な言語のチェック、関連性のチェック、プロンプトを使ったハッキングの試みの検出
 - [ ] 参照チェックのための公開リポジトリへの直接送信
 
 :::
