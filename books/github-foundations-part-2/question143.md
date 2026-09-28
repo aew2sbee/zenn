@@ -8,15 +8,15 @@ title: "ディスカッションについて"
 
 - プロジェクトに関する特定のタスクやバグを追跡するとき。
 - プロジェクトのアイデアについて自由形式のフィードバックを求めるとき。
-- プロジェクトのマイルストーンをチームに発表するとき
+- プロジェクトのマイルストーンをチームに発表するとき。
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/discussions/collaborating-with-your-community-using-discussions/about-discussions#discussions-and-issues)
+[公式ドキュメント](https://docs.github.com/ja/discussions/guides/best-practices-for-community-conversations-on-github)
 
 - [x] プロジェクトに関する特定のタスクやバグを追跡するとき。
 - [ ] プロジェクトのアイデアについて自由形式のフィードバックを求めるとき。
-- [ ] プロジェクトのマイルストーンをチームに発表するとき
+- [ ] プロジェクトのマイルストーンをチームに発表するとき。
 
 :::

@@ -1,5 +1,5 @@
 ---
-title: "Issueについて"
+title: "Issue について"
 ---
 
 ## Q139: GitHub Issues がディスカッションよりも効果的なシナリオとは？

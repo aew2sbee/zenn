@@ -9,7 +9,7 @@ title: "Markdown とは"
 - `- [ ] and - [x]`
 - `# TODO: and # DONE:`
 - `// TODO: and // DONE:`
-- `<taskand <done>`
+- `<task> and <done>`
 
 ### 回答欄
 
@@ -19,6 +19,6 @@ title: "Markdown とは"
 - [x] `- [ ] and - [x]`
 - [ ] `# TODO: and # DONE:`
 - [ ] `// TODO: and // DONE:`
-- [ ] `<taskand <done>`
+- [ ] `<task> and <done>`
 
 :::

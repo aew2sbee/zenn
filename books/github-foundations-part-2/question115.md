@@ -6,18 +6,18 @@ title: "GitHub Desktop"
 
 ### 選択肢
 
-- 変更の保存
-- GitHub アクションの管理
+- 変更のスタッシュ（stash）
+- GitHub Actions の管理
 - ブランチの切り替え
 - 変更のコミット
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/actions/quickstart#prerequisites)
+[公式ドキュメント](https://docs.github.com/ja/desktop/overview/about-github-desktop)
 
-- [ ] 変更の保存
-- [x] GitHub アクションの管理
+- [ ] 変更のスタッシュ（stash）
+- [x] GitHub Actions の管理（GitHub Actions の管理は GitHub Desktop の機能ではなく、github.com などで行います。）
 - [ ] ブランチの切り替え
 - [ ] 変更のコミット
 

@@ -13,7 +13,7 @@ title: "Git コマンド"
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://git-scm.com/docs/git#_getting_help)
+[公式ドキュメント](https://git-scm.com/docs/git-help)
 
 - [ ] `git status`
 - [ ] `git init`

@@ -2,7 +2,7 @@
 title: "GitHub 管理とは"
 ---
 
-## Q106:GitHub の組織階層にはどのようなレベルがありますか？(3 つ選んでください)
+## Q106: GitHub の組織階層にはどのようなレベルがありますか？（3 つ選択してください）
 
 ### 選択肢
 
@@ -19,8 +19,8 @@ title: "GitHub 管理とは"
 
 - [x] Team level
 - [x] Organization level
-- [ ] Personal level(GitHub Personal はアカウントの一種で、GitHub の組織階層ではありません。)
-- [ ] Pro level (GitHub Pro はアカウントの一種で、GitHub の組織階層ではありません。)
+- [ ] Personal level（GitHub Personal はアカウントの一種で、GitHub の組織階層ではありません。）
+- [ ] Pro level（GitHub Pro はアカウントの一種で、GitHub の組織階層ではありません。）
 - [x] Enterprise level
 
 :::

@@ -2,7 +2,7 @@
 title: "GitHub Desktop"
 ---
 
-## Q114: github.com と比較して、GitHub Desktop にはどのような特徴がありますか？
+## Q114: github.com と比較して、GitHub Desktop 独自の機能はどれですか？
 
 ### 選択肢
 
@@ -15,6 +15,7 @@ title: "GitHub Desktop"
 
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/desktop/making-changes-in-a-branch/viewing-the-branch-history-in-github-desktop)
+
 [公式ドキュメント](https://docs.github.com/ja/repositories/viewing-activity-and-data-for-your-repository/using-the-activity-view-to-see-changes-to-a-repository)
 
 - [ ] リポジトリをローカルマシンにクローンする

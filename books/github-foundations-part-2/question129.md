@@ -1,24 +1,24 @@
 ---
-title: "Organizationのロール"
+title: "Organization のロール"
 ---
 
 ## Q129: 組織内のどのロールが、プライベートリポジトリのセキュリティアラートを表示および管理できますか
 
 ### 選択肢
 
-- Outside collaborators
-- Repository maintainers
-- Organization owners and Security managers
-- Billing managers
+- 外部コラボレーター
+- リポジトリのメンテナー
+- Organization のオーナーとセキュリティマネージャー
+- 課金マネージャー
 
 ### 回答欄
 
 :::details 回答を見る
 [公式ドキュメント](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
-- [ ] Outside collaborators(外部共同作業者は、リポジトリ固有の権限のみを持ち、セキュリティ権限を持つ組織メンバーではありません。)
-- [ ] Repository maintainers(リポジトリメンテナは、特定のリポジトリ設定を管理できますが、組織全体のセキュリティアラートへのデフォルトアクセス権はありません。)
-- [x] Organization owners and Security managers(組織の所有者とセキュリティ管理者は、プライベートリポジトリを含め、セキュリティアラートを表示および管理できます。)
-- [ ] Billing managers
+- [ ] 外部コラボレーター（外部コラボレーターはリポジトリ単位の権限しか持たず、セキュリティ権限を持つ Organization のメンバーではありません。）
+- [ ] リポジトリのメンテナー（メンテナーは一部のリポジトリ設定を管理できますが、Organization 全体のセキュリティアラートには既定でアクセスできません。）
+- [x] Organization のオーナーとセキュリティマネージャー（Organization のオーナーとセキュリティマネージャーは、プライベートリポジトリを含めてセキュリティアラートを表示・管理できます。）
+- [ ] 課金マネージャー（課金マネージャーは支払い関連の設定のみを管理でき、セキュリティアラートにはアクセスできません。）
 
 :::

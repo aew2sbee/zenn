@@ -2,7 +2,7 @@
 title: "Gist の作成"
 ---
 
-## Q100:作成した後に、gist を public から secret に変更することはできますか？
+## Q100: 作成した後に、gist を public から secret に変更することはできますか？
 
 ### 選択肢
 
@@ -15,6 +15,6 @@ title: "Gist の作成"
 [公式ドキュメント](https://docs.github.com/ja/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists)
 
 - [ ] Yes
-- [x] No(gist を作成した後、それを公開から秘密に変換することはできません。)
+- [x] No（作成済みの public gist を secret に変更することはできません。）
 
 :::

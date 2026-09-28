@@ -1,5 +1,5 @@
 ---
-title: "Organizationのロール"
+title: "Organization のロール"
 ---
 
 ## Q120: 組織内の GitHub Actions に関するセキュリティマネージャーの能力はどれですか？
@@ -7,17 +7,17 @@ title: "Organizationのロール"
 ### 選択肢
 
 - 組織全体で許可またはブロックされるアクションを設定できる。
-- 90 日以上経過したプライベートリポジトリのすべてのワークフローを削除できる。
+- 90 日以上経過したプライベートリポジトリのワークフロー実行をすべて削除できる。
 - 組織内のリポジトリのコードレビューをオフにすることができます。
 - ブランチ保護ルールの「マージ前にステータスチェックをパスする必要がある」を削除することができます。
 
 ### 回答欄
 
 :::details 回答を見る
-[公式ドキュメント](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
+[公式ドキュメント](https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization)
 
-- [x] 組織全体で許可またはブロックされるアクションを設定できる。
-- [ ] 90 日以上経過したプライベートリポジトリのすべてのワークフローを削除できる。
+- [x] 組織全体で許可またはブロックされるアクションを設定できる。（翻訳元の問題集の正解です。現在の公式ドキュメントでは、セキュリティマネージャーの権限は全リポジトリの読み取り、セキュリティアラートの管理、セキュリティ機能の設定で、Actions のポリシー設定は含まれていません。）
+- [ ] 90 日以上経過したプライベートリポジトリのワークフロー実行をすべて削除できる。
 - [ ] 組織内のリポジトリのコードレビューをオフにすることができます。
 - [ ] ブランチ保護ルールの「マージ前にステータスチェックをパスする必要がある」を削除することができます。
 
