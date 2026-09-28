@@ -7,7 +7,7 @@
 
 - [x] learn-storybook-tutorial → #162
 - [x] learn-react-tutorial → #171
-- [ ] github-copilot
+- [x] github-copilot → #172
 - [x] book-record-of-reading → #163
 - [ ] github-foundations-part-2
 - [ ] github-foundations
