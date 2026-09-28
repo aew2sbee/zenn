@@ -11,10 +11,10 @@ title: "ブランチごとにGitHub Pagesを用意する"
 *左: `main`ブランチのデザイン / 右: `develop`ブランチのデザイン*
 
 ▼ `main`ブランチの内容はこちらから確認できます
-@[card](https://aew2sbee.github.io/tech-storybook/)
+@[card](https://aew2sbee.github.io/poc-storybook/)
 
 ▼ `develop`ブランチの内容はこちらから確認できます
-@[card](https://aew2sbee.github.io/tech-storybook/develop)
+@[card](https://aew2sbee.github.io/poc-storybook/develop/)
 
 ## 🌱 chapter03の方式との違い
 chapter03で使った`actions/deploy-pages`は、デプロイのたびにサイト全体を置き換えます。

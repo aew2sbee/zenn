@@ -11,7 +11,7 @@ title: "GitHub Pagesにデプロイする"
 ![original-button](/images/books/learn-storybook-tutorial/original-button.png)
 
 ▼ 私の場合はこちらから確認できます
-@[card](https://aew2sbee.github.io/tech-storybook/)
+@[card](https://aew2sbee.github.io/poc-storybook/)
 
 - GitHub Pages: GitHubが提供する、静的サイトを無料で公開できるサービスです
 - GitHub Actions: `push`などをきっかけに、ビルドやデプロイを自動で実行する仕組みです
