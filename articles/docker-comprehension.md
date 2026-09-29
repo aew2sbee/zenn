@@ -48,7 +48,7 @@ Docker の網羅的な解説やコマンドの使い方は扱いません。
 
 ## 🌱 Dockerfile ってなんで必要なの？
 
-![Dockerイメージ・Dockerfile・Dockerコンテナの関係を表した図](/images/articles/docker-comprehension/docker01.png)
+![ベースイメージとDockerfileからdocker buildで独自のイメージを作り、docker runでコンテナを複数起動する流れを、あんこ・レシピ・たい焼きで表した図](/images/articles/docker-comprehension/docker-build-run.drawio.png)
 
 **回答：ベースとなる Docker イメージをもとに、独自の Docker イメージをビルド（作成）するために必要です。**
 
@@ -57,7 +57,7 @@ Docker の網羅的な解説やコマンドの使い方は扱いません。
 そのイメージを起動すると、たい焼き（`Docker コンテナ`）になります。
 
 :::message
-正確な流れは次のとおりです（上の図では、途中のイメージのビルドを省略しています）。
+流れをまとめると、次のとおりです。
 
 ベースイメージ ＋ Dockerfile →（`docker build`）→ 独自のイメージ →（`docker run`）→ コンテナ
 :::
