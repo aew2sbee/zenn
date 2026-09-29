@@ -94,7 +94,7 @@ export function sayGoodBye(name: string) {
 
 `jest.requireActual`で元のモジュールの中身を展開し、`sayGoodBye`だけを上書きします。そのため、`greet`は元の実装のまま使えます。
 
-1つ目の章のファクトリ関数だけの場合と比べると、テストから見えるモジュールの中身は次のように変わります。
+「未実装の関数をモックで定義する」のファクトリ関数だけの場合と比べると、テストから見えるモジュールの中身は次のように変わります。
 
 ![ファクトリ関数だけの場合はgreetがundefinedになり、requireActualで展開してから上書きする場合はgreetが元の実装のまま使えることを比べた図](/images/articles/typescript-jest-mock/jest-mock-comparison.drawio.png)
 
