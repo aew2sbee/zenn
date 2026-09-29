@@ -201,6 +201,10 @@ User: arn:aws:iam::XXXXXXXXXXXX:user/test_user is not authorized to perform: iam
 - **Allow（許可）**: IAM ユーザーが**自分自身の**認証情報（パスワード・MFA デバイスなど）を管理できるようにする
 - **Deny（拒否）**: MFA 認証されていない状態では、MFA の設定に必要な操作**以外**をすべて禁止する
 
+このポリシーを付与してから MFA 認証済みになるまでに、使える操作は次のように変わります。
+
+![ポリシーの付与、MFAデバイスの登録、MFA付きの再サインインの順に、セッションごとに使える操作と拒否される操作が変わる流れを表した図](/images/articles/aws-ec2-iam-role/mfa-session-states.drawio.png)
+
 #### ポリシーの読み方
 
 |記述|意味|
