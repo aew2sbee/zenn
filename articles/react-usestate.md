@@ -139,6 +139,10 @@ const [状態, 状態更新関数] = useState(初期値);
 そのため、`...profile`（スプレッド構文）で、変更しないキーの値を引き継ぎます。
 :::
 
+`age`だけを更新する場合を例に、2つの書き方を比べると次のようになります。
+
+![setProfileにageだけを渡すとnameが消え、...profileでコピーしてからageを上書きするとnameが引き継がれることを比べた図](/images/articles/react-usestate/usestate-object-update.drawio.png)
+
 1. `useState`でオブジェクトを扱うコンポーネントを作成する
 
    ```tsx:src/components/useState02.tsx
