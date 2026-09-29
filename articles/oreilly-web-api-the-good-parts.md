@@ -194,7 +194,7 @@ https://api.example.com/friends/100/messages
 `limit`/`offset`のような**相対位置**ではなく、`id`やタイムスタンプを基準にした**絶対位置**（例: `?max_id=12345&limit=20`）でページネーションを行う
 :::
 
-新しい順に並んだデータを3件ずつ取得する例で、2つの方式を比べると次のようになります。
+新しい順に並んだデータを3件ずつ取得する例で、1ページ目を取得した後に新しいデータが追加された場合を比べると、次のようになります。
 
 ![1ページ目の取得後にデータが追加されたとき、相対位置では重複が起き、絶対位置ではズレないことを比べた図](/images/articles/oreilly-web-api-the-good-parts/pagination-offset-vs-max-id.drawio.png)
 
