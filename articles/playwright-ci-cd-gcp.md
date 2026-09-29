@@ -12,7 +12,7 @@ published: true # 公開:true / 非公開:false
 
 ワークフローの全体像と、各ステップで苦労した点の対応は次のとおりです。
 
-![GitHub ActionsのランナーがWorkload Identityで認証し、Cloud ArmorにIPの許可ルールを追加してPlaywrightのテストを実行し、最後にルールを削除する流れを表した図](/images/articles/playwright-ci-cd-gcp/ci-overview.drawio.png)
+![GitHub ActionsのランナーがWorkload Identity連携で認証し、Cloud ArmorにIPの許可ルールを追加してPlaywrightのテストを実行し、最後にルールを削除する流れを表した図](/images/articles/playwright-ci-cd-gcp/ci-overview.drawio.png)
 
 :::details 実際に使った yaml
 
@@ -259,9 +259,11 @@ fork からの `pull_request` イベントでは、GITHUB_TOKEN が読み取り�
 そのため、`allow-security-policy`で許可した IP 以外で`Playwright`が実行されて`403 Forbidden`が表示されて困りました。
 しかし、下記サイトを読み各 Job を 1 つにまとめ`403 Forbidden`を解消しました。
 
-![Jobを3つに分けるとランナーのIPが変わって403になり、1つのJobにまとめると同じIPで実行されて成功することを比べた図](/images/articles/playwright-ci-cd-gcp/job-ip-comparison.drawio.png)
-
 @[card](https://zenn.dev/hsaki/articles/github-actions-component)
+
+Job を分けた場合と、1つにまとめた場合の違いは次のとおりです。
+
+![Jobを3つに分けるとランナーのIPが変わって403になり、1つのJobにまとめると同じIPで実行されて成功することを比べた図](/images/articles/playwright-ci-cd-gcp/job-ip-comparison.drawio.png)
 
 下記のように`yaml`を変更しました。
 
