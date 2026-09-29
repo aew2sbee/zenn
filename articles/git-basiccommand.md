@@ -25,11 +25,11 @@ Git コマンドのチートシートがあったら便利だと思い執筆し�
 - うろ覚えだったコマンドを再認識できる。
 - Git コマンドを省略する方法を理解できる。
 
-### コマンドと領域の対応
+## 🌱 コマンドと領域の対応
 
-この記事で扱うコマンドが、どの領域からどの領域へ変更を動かすのかをまとめると、次のようになります。
+この記事で扱うコマンドのうち、add・commit・push・clone・pull が、どの領域からどの領域へ変更を動かすのかをまとめると、次のようになります。
 
-![作業ツリー・ステージングエリア・ローカルリポジトリ・リモートリポジトリの間で、add・commit・push・clone・pullが変更を動かす向きを表した図](/images/articles/git-basiccommand/git-areas-commands.drawio.png)
+![作業ツリー・ステージングエリア・ローカルリポジトリ・リモートリポジトリの間で、add・commit・push・clone・pull（fetchとmerge）が変更を動かす向きを表した図](/images/articles/git-basiccommand/git-areas-commands.drawio.png)
 
 ## 🌱 clone コマンド
 
