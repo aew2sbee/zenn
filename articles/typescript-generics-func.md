@@ -24,6 +24,10 @@ const 関数名 = <関数内で扱うデータ型>(引数名: 関数内で扱う
 
 :::
 
+呼び出し時に渡した型引数が型パラメーター `T` に入り、引数と戻り値の型が決まる流れを図にすると、次のようになります。
+
+![呼び出し側の型引数numberが定義側の型パラメーターTに入り、引数の型がnumber[]、戻り値の型がnumber | undefinedに決まることを表した図](/images/articles/typescript-generics-func/type-parameter.drawio.png)
+
 ## 🌱 1. それぞれのデータ型で関数を作成する
 
 :::message alert
