@@ -825,5 +825,55 @@ JOIN addresses a ON a.user_id = u.id;
 参考: https://learn.microsoft.com/ja-jp/ef/core/querying/single-split-queries
 :::
 
+### 📌 N+1問題とは？
+一覧を取得するクエリを1回実行したあと、一覧の件数（N件）の分だけ関連データを取得するクエリが1件ずつ実行され、合計 1 + N 回のクエリが発行される問題。
+
+:::details 🤖 Claude に相談した内容
+ORMで関連データを「必要になった時点で読み込む」（lazy loading、遅延読み込み）設定にしていると、ループの中で関連データにアクセスするたびにクエリが発行される。
+
+```csharp
+// 遅延読み込みが有効なとき
+var users = context.Users.ToList();        // 1回目: ユーザー一覧を取得
+foreach (var user in users)
+{
+    Console.WriteLine(user.Orders.Count);  // ユーザーごとに注文を取得（N回）
+}
+```
+
+実際に発行されるSQLは次のようになる。
+
+```sql
+SELECT * FROM users;                        -- 1回
+SELECT * FROM orders WHERE user_id = 1;     -- ユーザー1人目
+SELECT * FROM orders WHERE user_id = 2;     -- ユーザー2人目
+SELECT * FROM orders WHERE user_id = 3;     -- ユーザー3人目
+-- ユーザーが1,000人いれば、合計 1 + 1,000 = 1,001回
+```
+
+![N+1問題ではユーザーの人数分だけ注文を取得するクエリが発行され、まとめて読み込むとクエリが2回で済むことを示した図](/images/books/book-record-of-reading/book059-n-plus-1.drawio.png)
+
+- 1回ごとのクエリは速くても、DBとの往復が件数の分だけ発生するので、全体では遅くなる。
+- コードを見ただけでは、ループの中でクエリが発行されていることに気づきにくい。開発中はデータが少なく問題にならず、本番のデータ量で初めて遅くなることが多い。
+- 対策は、関連データを最初にまとめて読み込むこと（eager loading）。EF Core なら `Include()` を使う。
+
+```csharp
+var users = context.Users
+    .Include(u => u.Orders)  // 注文もまとめて読み込む
+    .ToList();
+```
+
+**デカルト積問題との関係**
+`Include()` で関連をまとめて読み込むと、今度はJOINによる「デカルト積問題」が起きる可能性がある。とくに1対多の関連を複数まとめて読み込むときに起きやすい。
+
+| 読み込み方 | クエリの回数 | 起きやすい問題 |
+| --- | --- | --- |
+| 必要になった時点で読み込む（遅延読み込み） | 1 + N 回 | N+1問題 |
+| まとめてJOINで読み込む（`Include()`） | 1回 | デカルト積問題 |
+| 関連ごとに分けて読み込む（`Include()` + `AsSplitQuery()`） | 関連の数 + 1 回 | 大きな問題は起きにくいが、クエリの回数は少し増える |
+
+参考: https://learn.microsoft.com/ja-jp/ef/core/querying/related-data/
+参考: https://learn.microsoft.com/ja-jp/ef/core/performance/efficient-querying
+:::
+
 
 
