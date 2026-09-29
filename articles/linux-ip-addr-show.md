@@ -55,6 +55,10 @@ ip addr show
 3. 「複数のネットワーク(NAT用・ホストオンリー用など)にどう繋がっているか」を把握したいとき
    - 今回のUbuntuには、インターネットに出るための`enp0s3`(NATアダプター)に加えて、アダプター2を追加すると`enp0s8`(ホストオンリーアダプター)も表示されるようになります。これはUbuntuという1台のPCに「外出用の玄関(NAT)」と「自宅内だけで使う勝手口(ホストオンリー)」という2つの出入り口が付いているようなもので、`ip addr show`を見ればどちらの出入り口が今どのIPアドレスで開いているかが一目で分かります。
 
+今回の環境で、ホストOS・VirtualBox・Ubuntuのインターフェースがどうつながっているかを図にすると、次のようになります。
+
+![ホストOSの中のVirtualBoxのNATとUbuntuのlo・enp0s3・enp0s8の関係と、インターネットやホストOSへの通信経路を表した構成図](/images/articles/linux-ip-addr-show/virtualbox-network.drawio.png)
+
 ## 🌱 検証
 ### 1. コマンドを実行する
 ```bash
