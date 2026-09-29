@@ -16,6 +16,8 @@ fork元の変更を取り込むために、fork元のリポジトリを `upstrea
 - `origin`: 自分の fork（clone したリポジトリ）
 - `upstream`: fork元のリポジトリ
 
+![upstream・origin・ローカルの関係と、fork元の変更を取り込む流れ](/images/articles/github-upstream/fork-upstream-flow.drawio.png)
+
 `upstream` は慣習的に使われている名前で、Git の予約語ではありません。
 
 ## 🌱 結論
@@ -82,6 +84,7 @@ URL を変更したい場合は、`git remote set-url upstream <URL>` を実行�
 ## 🌱 3. fork元の変更を取り込む
 
 upstream を登録したら、下記のコマンドで fork元の変更を取り込みます。
+「はじめに」の図の ① fetch → ② merge → ③ push の順に実行します（② の前に `git switch main` で main ブランチに切り替えます）。
 デフォルトブランチ名が `main` 以外（`master` など）の場合は、読み替えてください。
 
 ```bash
