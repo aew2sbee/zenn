@@ -40,8 +40,9 @@ Terraform で AWS のリソースを管理するために、AWS Vault で取得�
 
 ![aws-vaultがMFA付きのAssumeRoleで一時的な認証情報を取得し、Terraformに渡してEC2を作成する流れを表した図](/images/articles/terraform-aws-vault-ec2/aws-vault-auth-flow.drawio.png)
 
-- ①は「3.」の`aws-vault add default`、②〜⑦は`aws-vault exec sandbooks -- terraform ...`を実行したときの流れです
+- ①は「3.」の`aws-vault add default`、②〜⑧は`aws-vault exec sandbooks -- terraform ...`を実行したときの流れです
 - ③で読む`~/.aws/config`は「2.」で設定します
+- 一時的な認証情報がキャッシュされている間（約1時間）は④〜⑥が省かれ、MFA コードを再入力する必要はありません
 
 ## 🌱 1. AWS CLI をインストール
 
