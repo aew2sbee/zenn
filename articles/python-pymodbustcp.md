@@ -438,7 +438,7 @@ import time
 
 以降の手順で動かすサーバーとクライアントの関係は、次のとおりです。
 
-![1つのスクリプトの中で、別スレッドのサーバーのdata_bankに値を直接書き込み、クライアントがTCP経由で読み出す流れを表した図](/images/articles/python-pymodbustcp/modbus-server-client.drawio.png)
+![1つのスクリプトの中で、サーバーのdata_bankに値を直接書き込み、別スレッドで待ち受けるサーバーからクライアントがTCP経由で読み出す流れを表した図](/images/articles/python-pymodbustcp/modbus-server-client.drawio.png)
 
 インポートした自作クラスをインスタンス化し、通信環境を準備します。
 
