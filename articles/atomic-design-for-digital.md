@@ -69,9 +69,9 @@ Pages は Templates に実データを適用したもので、実際のコンテ
 
 ここからは、各階層をコンポーネントとして実装するときの指針です。
 
-先に全体像として、各階層の責務とデータの受け渡しを図にすると、次のようになります。
+先に全体像として、参考書籍の React での実装例にもとづいて、各階層の責務とデータの受け渡しを図にすると、次のようになります。
 
-![Pagesだけが副作用を実行し、propsでTemplatesからAtomsへデータを渡し、OrganismsがContextを参照する流れを表した図](/images/articles/atomic-design-for-digital/atomic-design-data-flow.drawio.png)
+![Pagesが主に副作用を実行し、propsでTemplatesからAtomsへデータを渡し、OrganismsがContextを参照する流れを表した図](/images/articles/atomic-design-for-digital/atomic-design-data-flow.drawio.png)
 
 ### 1. Atoms
 
