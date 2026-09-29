@@ -1411,6 +1411,8 @@ console.log(accessibilityTree.children.filter((i) => i.role === "link"));
 
 ![ブラウザが構築したアクセシビリティツリーを、支援技術はOSのアクセシビリティAPI経由で、PlaywrightはCDP経由で取得することを表した図](/images/articles/playwright-accessibilitytree/accessibility-tree-paths.drawio.png)
 
+各 OS のアクセシビリティ API は、次のとおりです。
+
 | OS / プラットフォーム | アクセシビリティ API |
 | ---- | ---- |
 | Windows | UI Automation (UIA) / MSAA・IAccessible2 |
