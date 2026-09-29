@@ -38,6 +38,10 @@ published: true # 公開:true / 非公開:false
 
 :::
 
+2つのコンポーネントが、どこで実行され、ブラウザに何が送られるかを比べると、次のようになります。
+
+![Server ComponentとClient Componentの実行場所と、ブラウザに送られるものを比べた図](/images/articles/nextjs-server-componet-client-component/execution-location.drawio.png)
+
 ## 🌱 Server Component(RSC)とは
 
 > サーバー上（リクエスト時またはビルド時）でのみ実行されるコンポーネント
@@ -88,6 +92,10 @@ export default async function ServerComponent() {
 `"use client"` を記載したファイルから import されるコンポーネントは、再宣言しなくても Client Component として扱われる（境界は import 関係で決まる）。
 一方、Server Component から `children` として渡したコンポーネントは、Server Component のまま。
 :::
+
+import 関係と children の関係を図にすると、次のようになります。
+
+![use clientの境界がimport関係で決まり、childrenとして渡したコンポーネントはServer Componentのままになることを表した図](/images/articles/nextjs-server-componet-client-component/use-client-boundary.drawio.png)
 
 ```tsx
 "use client";
