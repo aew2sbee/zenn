@@ -93,6 +93,8 @@ export default async function ServerComponent() {
 一方、Server Component から `children` として渡したコンポーネントは、Server Component のまま。
 :::
 
+import 関係と children の関係を図にすると、次のようになります。
+
 ![use clientの境界がimport関係で決まり、childrenとして渡したコンポーネントはServer Componentのままになることを表した図](/images/articles/nextjs-server-componet-client-component/use-client-boundary.drawio.png)
 
 ```tsx
