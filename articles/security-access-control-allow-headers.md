@@ -63,7 +63,7 @@ CORSは、ブラウザが「別オリジンのレスポンスをJavaScriptに渡
 `curl`のようなブラウザ以外のクライアントは、許可リストにないオリジンからでもリクエストを送り、レスポンスを受け取れます。APIを保護するには、認証・認可が別途必要です。
 :::
 
-ブラウザ・フロントエンド・APIサーバーのやり取りを図にすると、次のようになります。
+Webページ（JavaScript）・ブラウザ・APIサーバーのやり取りを図にすると、次のようになります。
 
 ![許可リストにあるオリジンと、ないオリジンでのプリフライトリクエストの流れを表したシーケンス図](/images/articles/security-access-control-allow-headers/cors-preflight-flow.drawio.png)
 
