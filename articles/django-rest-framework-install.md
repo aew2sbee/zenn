@@ -400,6 +400,10 @@ urlpatterns = [
 
 @[card](https://www.django-rest-framework.org/api-guide/routers/)
 
+ここまでに作成したファイルを、1回のリクエストが通る順に図にすると、次のようになります。
+
+![ブラウザからのリクエストがconfig/urls.py、books/urls.pyのルーター、BooksViewSetを通り、モデルとDB、シリアライザーを経てJSONで返る流れを表した図](/images/articles/django-rest-framework-install/drf-request-flow.drawio.png)
+
 ## 🌱 動作確認
 
 DRF には、ブラウザから API を試せる画面（Browsable API）が標準で付いています。この画面を使って、CRUD の動作を確認します。
