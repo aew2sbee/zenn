@@ -402,7 +402,7 @@ urlpatterns = [
 
 ここまでに作成したファイルを、1回のリクエストが通る順に図にすると、次のようになります。
 
-![ブラウザからのリクエストがconfig/urls.py、books/urls.pyのルーター、BooksViewSetを通り、モデルとDB、シリアライザーを経てJSONで返る流れを表した図](/images/articles/django-rest-framework-install/drf-request-flow.drawio.png)
+![ブラウザからのリクエストがconfig/urls.py、books/urls.pyのルーター、BooksViewSetを通り、モデルとDBを扱い、シリアライザーで変換して、BooksViewSetからJSONで返る流れを表した図](/images/articles/django-rest-framework-install/drf-request-flow.drawio.png)
 
 ## 🌱 動作確認
 
