@@ -1407,6 +1407,10 @@ console.log(accessibilityTree.children.filter((i) => i.role === "link"));
 各 OS には独自のアクセシビリティ API があり、ブラウザは構築したアクセシビリティツリーを、この API を通じてスクリーンリーダーなどの支援技術に提供します。
 なお、Playwright は OS の API ではなく、ブラウザのプロトコル（Chromium なら CDP）経由でこの情報を取得しています。
 
+2つの取得経路を図にすると、次のようになります。
+
+![ブラウザが構築したアクセシビリティツリーを、支援技術はOSのアクセシビリティAPI経由で、PlaywrightはCDP経由で取得することを表した図](/images/articles/playwright-accessibilitytree/accessibility-tree-paths.drawio.png)
+
 | OS / プラットフォーム | アクセシビリティ API |
 | ---- | ---- |
 | Windows | UI Automation (UIA) / MSAA・IAccessible2 |
