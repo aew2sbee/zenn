@@ -194,6 +194,10 @@ https://api.example.com/friends/100/messages
 `limit`/`offset`のような**相対位置**ではなく、`id`やタイムスタンプを基準にした**絶対位置**（例: `?max_id=12345&limit=20`）でページネーションを行う
 :::
 
+新しい順に並んだデータを3件ずつ取得する例で、2つの方式を比べると次のようになります。
+
+![1ページ目の取得後にデータが追加されたとき、相対位置では重複が起き、絶対位置ではズレないことを比べた図](/images/articles/oreilly-web-api-the-good-parts/pagination-offset-vs-max-id.drawio.png)
+
 ❌ **相対位置**だと、データ数が増えるとパフォーマンスが下がる
 ❌ **相対位置**だと、データの更新によってデータの順番がズレると取得するデータもズレる
 
@@ -208,9 +212,13 @@ HTTP のキャッシュには、下記の2つの方式があります。
 
 > レスポンスデータに有効期限（`Cache-Control: max-age`、`Expires`）を設定する。期限内はサーバーにアクセスせずキャッシュを使い、期限が切れたら再度アクセスする
 
+![Expiration Modelで、有効期限内はキャッシュを使い、期限切れ後にサーバーから再取得する流れを表したシーケンス図](/images/articles/oreilly-web-api-the-good-parts/cache-expiration.drawio.png)
+
 ### Validation Model (検証モデル)
 
 > 保持しているキャッシュが最新であるかを、条件付きリクエスト（`If-None-Match`、`If-Modified-Since`）でサーバーに確認する。更新がなければ`304 Not Modified`が返り、キャッシュを使う。更新があれば新しいデータを受け取る
+
+![Validation Modelで、条件付きリクエストを送り、更新がなければ304、更新があれば200で新しいデータを受け取る流れを表したシーケンス図](/images/articles/oreilly-web-api-the-good-parts/cache-validation.drawio.png)
 
 ## 🌱 おわりに
 
