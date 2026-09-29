@@ -43,4 +43,24 @@ JOIN addresses a ON a.user_id = u.id;
 参考: https://learn.microsoft.com/ja-jp/ef/core/querying/single-split-queries
 :::
 
+#### 第1特集「自走AIのためのハーネス設計入門」: 内部ハーネスと外部ハーネスとは？
+:::details 🤖 Claude に相談した内容
+ハーネスは、AIエージェントのうちモデル（LLM）以外の部分すべてを指す。ツールの呼び出し、コンテキスト管理、権限の制御などが含まれる。ハーネスは誰が用意するかによって2層に分けられる。
+
+| | 内部ハーネス（inner harness） | 外部ハーネス（outer harness） |
+| --- | --- | --- |
+| 用意する人 | エージェントの開発元 | エージェントを使う人 |
+| 具体例 | Claude Code や Codex 本体に組み込まれたシステムプロンプト、ツール呼び出し、サブエージェント、コード検索 | CLAUDE.md、MCPサーバー、スキル、フック、レビュー用エージェント、テストやLint |
+| 変更できるか | できない（開発元のリリースを待つ） | 自分で自由に変更できる |
+
+- 内部ハーネスは製品に最初から備わっている土台で、利用者は選ぶことしかできない。
+- 外部ハーネスは、その上に利用者が自分のプロジェクトに合わせて組み立てる部分。AIにルールを守らせたり、出力をテストやレビューで検証したりする仕組みはここに作る。
+- 自分で改善できるのは外部ハーネスなので、「ハーネス設計」で主に工夫するのは外部ハーネスになる。
+
+このレポジトリで言えば、`CLAUDE.md` や `.claude/agents/` 配下のレビュー用エージェントが外部ハーネスにあたる。
+
+参考: https://martinfowler.com/articles/harness-engineering.html
+参考: https://codagent.beehiiv.com/p/harnesses-explained
+:::
+
 ### 💡 覚えておきたいこと
