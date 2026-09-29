@@ -42,6 +42,10 @@ router.get('/', (req: Request, res: Response) => {
 
 :::
 
+リクエストとレスポンスで、どちらのヘッダーがどの向きに流れるかを図にすると、次のようになります。
+
+![クライアントがAccept-Languageを送り、サーバーが言語を決めてContent-Language付きのレスポンスを返す流れを表したシーケンス図](/images/articles/http-accept-lang/accept-language-flow.drawio.png)
+
 :::message alert
 **本記事のコードの注意点**
 
