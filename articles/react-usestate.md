@@ -140,6 +140,7 @@ const [状態, 状態更新関数] = useState(初期値);
 :::
 
 `age`だけを更新する場合を例に、2つの書き方を比べると次のようになります。
+なお、NG の書き方は TypeScript では型エラーになります。図の NG は、型チェックがない場合（JavaScript）の実行結果です。
 
 ![setProfileにageだけを渡すとnameが消え、...profileでコピーしてからageを上書きするとnameが引き継がれることを比べた図](/images/articles/react-usestate/usestate-object-update.drawio.png)
 
