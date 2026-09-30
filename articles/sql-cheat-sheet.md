@@ -148,6 +148,10 @@ SELECT sales.item_name FROM sales
 INNER JOIN items ON sales.id = items.id
 ```
 
+前提条件の2つのテーブルで、どの行が結合されるかを図にすると、次のようになります。
+
+![salesとitemsでidが一致する1〜3の行だけが結合され、結果にリンゴ・バナナ・イチゴが返ることを表した図](/images/articles/sql-cheat-sheet/inner-join.drawio.png)
+
 ---
 
 ### 2. 条件を含めてテーブルを結合してデータを取得する
