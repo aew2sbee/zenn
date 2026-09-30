@@ -196,6 +196,10 @@ console.log(prices);
 
 ## 🌱 スコープの違い
 
+変数を使える範囲（スコープ）を図にすると、次のようになります。
+
+![varはブロックの外側（関数全体、この例ではファイル全体）で使え、letとconstはブロックの中だけで使えることを比べた図](/images/articles/typescript-ver-let-const/var-let-scope.drawio.png)
+
 `var`のスコープは関数単位のため、`if`などのブロック内で宣言しても、ブロックの外から使えます。
 
 ```ts
