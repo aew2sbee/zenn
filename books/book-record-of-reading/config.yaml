@@ -5,7 +5,8 @@ published: true # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
   - intro
-  - book059
+  - book064
+  - book060
   - book058
   - book057
   - book056
