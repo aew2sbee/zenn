@@ -10,8 +10,5 @@ https://books.bunshun.jp/ud/book/num/9784163917689
 
 米マイクロソフトのエンジニアである著者が、「手を動かす前に理解に時間をかける」「脳を酷使しない」など、生産性を高める仕事の進め方を紹介している。
 
-## 🌱 おすすめ度
-
-
-## 🌱 感想
-
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/book-increase-productivity

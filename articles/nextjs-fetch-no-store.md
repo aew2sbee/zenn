@@ -38,6 +38,10 @@ fetch 関数のオプションに `{ cache: 'no-store' }` を追加する
 Next.js（App Router）の場合は、サーバー側で fetch の結果を保存し（Data Cache）、以降のリクエストやビルドで再利用します。
 `{ cache: 'no-store' }` を指定すると、リクエストのたびにデータを取得し直します。
 
+オプションの有無で fetch の流れがどう変わるかを図にすると、次のようになります（Next.js 14 の場合）。
+
+![Next.js 14で、オプションなしの場合はData Cacheに保存した結果を再利用し、no-storeの場合は毎回外部APIから取得する流れを比べたシーケンス図](/images/articles/nextjs-fetch-no-store/data-cache-flow.drawio.png)
+
 ## 🌱 使い分け
 
 ### 1. 動的データ

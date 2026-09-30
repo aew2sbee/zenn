@@ -36,6 +36,10 @@ Docker Desktop のインストールは、下記の記事を参考にしてく�
 - **イメージ**: 環境の設計図。今回は Node.js が入った `node:14.17.0` を使います。
 - **コンテナ**: イメージから作った実際の実行環境。この中で React を動かします。
 
+この記事で作る環境の全体像は、次のとおりです。
+
+![ホストPCのターミナル・VS Code・ブラウザと、Dockerコンテナ内のReactのコードや3000番ポートの関係を表した構成図](/images/articles/docker-react-env/docker-react-env-overview.drawio.png)
+
 ## 🌱 コンテナを作成する
 
 ### 1. docker run コマンド

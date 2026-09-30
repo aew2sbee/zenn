@@ -10,8 +10,7 @@ https://gihyo.jp/book/2024/978-4-297-14220-9
 
 E2Eテストを「ユーザーの視点でWebシステムの動作を確認する自動テスト」と定義し、Playwrightを使ってその目的からノウハウまでをハンズオン形式で解説している。CIへの組み込み方やユニットテストとの棲み分けも扱っている。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🩵: 本業で活かせた
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/playwright-advanced-locator-nth
 
-## 🌱 感想
-Playwright の基礎を学べて、本業に活かせた！
+https://zenn.dev/aew2sbee/articles/playwright-locator

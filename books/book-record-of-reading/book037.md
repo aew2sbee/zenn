@@ -10,8 +10,13 @@ https://www.shoeisha.co.jp/book/detail/9784798169477
 
 安全なWebアプリケーションを開発するための基本知識を、フロントエンドエンジニア向けに解説したセキュリティの入門書。HTTPやオリジンといった基礎から、XSS・CSRFなどの攻撃の仕組みと対策までを、サンプルアプリを使ったハンズオンで学ぶ。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🤍: 勉強になった
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/http-accept-lang
 
-## 🌱 感想
-セキュリティ用語の説明からハンズオンの内容まで記載されており、ためになった！
+https://zenn.dev/aew2sbee/articles/http-timestamp
+
+https://zenn.dev/aew2sbee/articles/security-access-control-allow-headers
+
+https://zenn.dev/aew2sbee/articles/security-cross-sitescripting-link
+
+https://zenn.dev/aew2sbee/articles/security-cross-sitescripting

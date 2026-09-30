@@ -50,6 +50,10 @@ published: true # 公開:true / 非公開:false
 
 ※ 上記は、境界の値とその前後の値を選ぶ方式です。境界の値とその外側の値だけを選ぶ場合は、0、1、100、101 の **4 パターン**になります。
 
+同値分割法と境界値分析で選ぶ値を、数直線で比べると次のようになります。
+
+![1以上100以下の仕様に対して、同値分割法の3グループと、境界値分析で選ぶ値を数直線上に表した図](/images/articles/test-black-white-box/equivalence-boundary.drawio.png)
+
 ### デシジョンテーブルテスト（決定表）
 
 :::message
@@ -152,5 +156,9 @@ const toPositive = (value: number): number => {
   return result;
 };
 ```
+
+このコードの処理の流れを図にすると、次のようになります。
+
+![toPositive関数の処理の流れで、value=-5では真の経路だけを通り、偽の経路はvalue=5で通ることを表した図](/images/articles/test-black-white-box/branch-coverage.drawio.png)
 
 分岐網羅を 100%にするには、`5`のように条件が偽になる値もテストします。

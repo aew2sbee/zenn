@@ -10,6 +10,10 @@ published: true # 公開:true / 非公開:false
 
 この記事では、**社内で初めて Playwright を CI/CD に組み込んだ時に苦労した点と対策**を解説します。
 
+ワークフローの全体像と、各ステップで苦労した点の対応は次のとおりです。
+
+![GitHub ActionsのランナーがWorkload Identity連携で認証し、Cloud ArmorにIPの許可ルールを追加してPlaywrightのテストを実行し、最後にルールを削除する流れを表した図](/images/articles/playwright-ci-cd-gcp/ci-overview.drawio.png)
+
 :::details 実際に使った yaml
 
 ```yaml
@@ -256,6 +260,10 @@ fork からの `pull_request` イベントでは、GITHUB_TOKEN が読み取り�
 しかし、下記サイトを読み各 Job を 1 つにまとめ`403 Forbidden`を解消しました。
 
 @[card](https://zenn.dev/hsaki/articles/github-actions-component)
+
+Job を分けた場合と、1つにまとめた場合の違いは次のとおりです。
+
+![Jobを3つに分けるとランナーのIPが変わって403になり、1つのJobにまとめると同じIPで実行されて成功することを比べた図](/images/articles/playwright-ci-cd-gcp/job-ip-comparison.drawio.png)
 
 下記のように`yaml`を変更しました。
 
