@@ -6,8 +6,9 @@ price: 0 # 有料の場合200〜5000
 chapters:
   - intro
   - book064
+  - book061
+  - book060
   - book059
-  - book062
   - book058
   - book057
   - book056
