@@ -78,7 +78,7 @@ IAM では、1人のユーザーに付けた複数のポリシーの許可が合
 
 ### スイッチロールした場合
 
-![スイッチロールでEC2の権限を持つロールに切り替え、EC2を操作する様子を表した図](/images/articles/aws-ec2-iam-why-role/AWS-IAM-role-step02.png)
+![IAMユーザーがスイッチロールでEC2の更新権限を持つロールに切り替え、EC2を操作する様子を表した図](/images/articles/aws-ec2-iam-why-role/switch-role.drawio.png)
 *スイッチロールで EC2 の権限を持つロールに切り替えて操作するイメージ図*
 
 1. EC2 の権限を許可するロールを作成する
@@ -111,6 +111,9 @@ AWS の操作は、ルートユーザー（AWS アカウント作成時のすべ
 
 一方、メンバーごとに IAM ユーザーを発行し、そこからスイッチロールする運用にすると、CloudTrail の AssumeRole のイベントで「いつ、誰が、どのロールに切り替えたのか」を確認できます。
 切り替えた後の操作も、ロールのセッション情報から元のユーザーをたどれます。
+
+![共有ユーザーで運用した場合と、メンバーごとのユーザーからスイッチロールした場合のCloudTrailの記録を比べた図](/images/articles/aws-ec2-iam-why-role/cloudtrail-comparison.drawio.png)
+*共有ユーザーとスイッチロールで、CloudTrail の記録から分かることを比べた図*
 
 ## 🌱 おわりに
 
