@@ -1,0 +1,24 @@
+---
+title: "コラボレーターを個人リポジトリに招待する"
+---
+
+## Q49: リポジトリのコラボレーターとは？
+
+### 選択肢
+
+- コラボレーターとは、リポジトリへの書き込み権限を与えられている人です。
+- コラボレーターとは、リポジトリにコードを投稿した人です。
+- コラボレーターとは、リポジトリに資金を提供する人のことです。
+- コラボレーターとは、リポジトリに Issue やプルリクエストを作成した人のことです。
+
+### 回答欄
+
+:::details 回答を見る
+[公式ドキュメント](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+
+- [x] コラボレーターとは、リポジトリへの書き込み権限を与えられている人です。
+- [ ] コラボレーターとは、リポジトリにコードを投稿した人です。
+- [ ] コラボレーターとは、リポジトリに資金を提供する人のことです。（これはスポンサーです。）
+- [ ] コラボレーターとは、リポジトリに Issue やプルリクエストを作成した人のことです。
+
+:::

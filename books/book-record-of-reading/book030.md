@@ -10,8 +10,5 @@ https://book.mynavi.jp/ec/products/detail/id=134252
 
 単体テストと統合テストの定義を明確にしたうえで、価値のあるテストとは何か、どのテストをリファクタリング・削除すべきかを解説している。コード例はC#だが、どの言語にも適用できる内容。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🤍: 勉強になった
-
-## 🌱 感想
-テストコードの構成を学ぶことができた！
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/test-high-performance-at-minimal-cost

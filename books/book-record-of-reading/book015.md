@@ -10,8 +10,5 @@ https://www.shuwasystem.co.jp/book/9784798046143.html
 
 よいコードを書くための指針となる前提・原則・思想（プリンシプル）を101項目にまとめて解説している。
 
-## 🌱 おすすめ度
-
-
-## 🌱 感想
-
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/book-principlesofprogramming

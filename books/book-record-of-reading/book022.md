@@ -10,8 +10,5 @@ https://www.oreilly.co.jp/books/9784873116860/
 
 「設計の美しいAPIは、使いやすい、変更しやすい、頑強である」という考えのもと、JSONやXMLを返すWeb APIの設計・開発・運用の考え方と、避けるべき落とし穴を解説している。
 
-## 🌱 おすすめ度
-
-
-## 🌱 感想
-
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/oreilly-web-api-the-good-parts
