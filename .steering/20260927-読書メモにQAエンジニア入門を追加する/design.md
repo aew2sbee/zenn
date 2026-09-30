@@ -9,7 +9,7 @@
 ## 🌱 作業の流れ
 <!-- AI向け: 1単位の作業を番号付きリストで順に書く。 -->
 1. `docs/book063-qa-engineer` ブランチを作成する
-2. book063.md に書籍情報と本の概要を書き、config.yaml に book063 を追加する
+2. book062.md に書籍情報と本の概要を書き、config.yaml に book062 を追加する
 3. 下書きPRを作成する
 4. 読む目的と読書メモを書く
 5. サブエージェントでレビューする
@@ -25,11 +25,11 @@
 - ベースブランチ: `docs/book-record-of-reading-notes`（#164）。#164 のマージ後に main に変更する
 
 ### チャプター
-- ファイル: `books/book-record-of-reading/book063.md`
+- ファイル: `books/book-record-of-reading/book062.md`
 - タイトル: `2026.09: QAエンジニア入門`
 - 見出しの順: 書籍情報 → 本の概要 → 読む目的 → 読書メモ → 作成した記事（記事がある場合のみ）
 - 書籍情報のURL: https://gihyo.jp/book/2026/978-4-297-15832-3
 
 ### config.yaml
-- chapters の `book059`（読書中）の直後に、読了年月の新しい順になるよう book063 を追加する
-- 同時に追加する book060〜book064 のPRはすべて同じ位置を変更するため、後からマージするPRでは並び順（book064 → book063 → book062 → book061 → book060）を保って競合を解消する
+- chapters の `book064` の直後、`book061` の直前に、読了年月の新しい順になるよう book062 を追加する
+- 同時に追加する book060〜book064 のPRはすべて同じ位置を変更するため、後からマージするPRでは並び順（book064 → book062 → book061 → book060）を保って競合を解消する
