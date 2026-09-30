@@ -10,8 +10,5 @@ https://gihyo.jp/book/2024/978-4-297-14425-8
 
 基本情報技術者試験の問題集。シラバス9.0に対応し、科目Aは頻出・重要問題を、科目Bはアルゴリズムと擬似言語の問題を図解で解説している。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🤍: 勉強になった
-
-## 🌱 感想
-掲載されている問題を6〜7周解いて、無事に合格できました。
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/ipa-information-technology-engineer-examination

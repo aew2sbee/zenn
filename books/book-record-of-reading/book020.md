@@ -10,8 +10,9 @@ https://gihyo.jp/book/2022/978-4-297-12916-3
 
 React/Next.jsとTypeScriptでWebアプリケーションを開発する入門書。Next.jsによる開発の基礎と、最新のフロントエンド開発の方法を学べる。
 
-## 🌱 おすすめ度
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/atomic-design-for-digital
 
+https://zenn.dev/aew2sbee/articles/nextjs-prettier
 
-## 🌱 感想
-
+https://zenn.dev/aew2sbee/articles/nextjs-tsconfig-json

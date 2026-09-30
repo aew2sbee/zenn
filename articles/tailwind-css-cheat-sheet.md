@@ -328,6 +328,10 @@ published: true # 公開:true / 非公開:false
 画像内の文字は修正前のもの（どちらも「横幅=128px」）です。下段の`box-content`は、width の外側に padding と border が加わるため、全体の横幅は 148px になります。
 :::
 
+横幅の内訳を図にすると、次のようになります。
+
+![box-borderではpaddingとborderを含めて横幅128px、box-contentではcontentが128pxで全体の横幅が148pxになることを比べた図](/images/articles/tailwind-css-cheat-sheet/box-sizing.drawio.png)
+
 ## 🌱 ボーダー
 
 ### 1. 境界線を設定する
@@ -472,6 +476,10 @@ published: true # 公開:true / 非公開:false
 :::message
 Tailwind CSS はモバイルファーストのため、`sm:hidden`は「640px 以上で非表示（640px 未満では表示）」になります。画像内の文字は修正前の「〜未満の場合のみ非表示」のままですが、表示結果は上記のとおりです。
 :::
+
+画面の横幅ごとに、どの要素が表示されるかを図にすると次のようになります。
+
+![sm:hiddenから2xl:hiddenまでの各クラスについて、画面の横幅ごとに表示と非表示が切り替わる位置を表した図](/images/articles/tailwind-css-cheat-sheet/responsive-breakpoints.drawio.png)
 
 ![620px](/images/articles/tailwind-css-cheat-sheet/620px.png)
 *横幅:620px*

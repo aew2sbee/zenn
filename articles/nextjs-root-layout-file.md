@@ -20,6 +20,10 @@ published: true # 公開:true / 非公開:false
 
 Root layout ファイルは必須で、`<html>` タグと `<body>` タグを含める必要があります。app 配下のすべてのページに適用されます。
 
+この記事で作る layout.tsx と各ページの関係を図にすると、次のようになります。
+
+![layout.tsxのheaderとfooterは全ページ共通で、childrenの位置にアクセスしたURLに応じたpage.tsxの内容が差し込まれることを表した図](/images/articles/nextjs-root-layout-file/root-layout-children.drawio.png)
+
 ```text
 src
 └── app
