@@ -286,6 +286,10 @@ root@c4f422135b83:/#
 
 ## 🌱 5. ディレクトリ移動
 
+以降の「6.」〜「9.」では、次の図の順番でディレクトリを移動しながら操作します。現在地が変わるので、図と照らし合わせながら進めてください。
+
+![/root（~）の下にsampleとmemo.mdを作成し、.bashrcを表示した後、memo.mdを~に移動するまでの操作と現在地の変化を表した図](/images/articles/linux-command-line-interface/directory-operations.drawio.png)
+
 :::message
 目的のディレクトリへ移動
 
