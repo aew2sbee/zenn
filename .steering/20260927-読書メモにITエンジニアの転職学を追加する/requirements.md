@@ -34,5 +34,5 @@
 
 ## 🌱 完了条件
 <!-- AI向け: 完了とみなせる状態を「- [ ] 」で始まる1行ずつ書く。1項目は1条件にし、確認できる状態で書く。例: - [ ] 対象記事が articles/ 配下に存在し、npx zenn preview で表示できる -->
-- [ ] TODO.md のチェックリストがすべて完了している
-- [ ] books/book-record-of-reading/book060.md が存在し、npx zenn preview で表示できる
+- [x] TODO.md のチェックリストがすべて完了している
+- [x] books/book-record-of-reading/book060.md が存在し、npx zenn preview で表示できる
