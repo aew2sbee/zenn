@@ -12,3 +12,8 @@ ITエンジニアの転職を専門とするエージェントが、実際の年
 
 ## 🌱 読む目的
 - AIコーディングエージェント(Claude Code)の登場により、今後のキャリアについて考えることが増えたため
+
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/job-change-age-30s
+
+https://zenn.dev/aew2sbee/articles/job-change-resume
