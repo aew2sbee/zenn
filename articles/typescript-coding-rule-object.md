@@ -84,6 +84,10 @@ const total = items.totalPrice();
 なお、`array.filter().map()`のように、同じ種類のオブジェクトを返すメソッドチェーンは、このルールの対象外と考えてよいです。
 :::
 
+内部をたどる呼び出しと、処理を依頼する呼び出しを比べると、次のようになります。
+
+![呼び出し側がCustomer・Order・Itemsをたどる場合と、Customerに処理を依頼して内部の構造を隠す場合を比べた図](/images/articles/typescript-coding-rule-object/law-of-demeter.drawio.png)
+
 ## 🌱 5. 名前を省略しない
 
 オブジェクト指向は、利用者の関心事とソフトウェアのプログラム単位とを直接的に関連付ける技法です。
