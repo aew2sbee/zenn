@@ -1,12 +1,12 @@
-title: '[読書メモ] 技術書を読みながら考えたこと'
+title: '[読書メモ] 技術書で学んだこと'
 summary: "技術書を読んで分からなかったことや学んだことを、章ごとに記録した読書メモ"
 topics: ['技術書', '書籍', '読書', '読書メモ'] # トピック（5つまで）
 published: true # falseだと下書き
 price: 0 # 有料の場合200〜5000
 chapters:
   - intro
+  - book064
   - book059
-  - book060
   - book058
   - book057
   - book056
