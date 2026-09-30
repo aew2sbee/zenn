@@ -10,8 +10,7 @@ https://book.mynavi.jp/ec/products/detail/id=149226
 
 オンライン書店のカタログ管理を題材に、イベントストーミングによる業務分析、UMLによるモデリング、TypeScriptでの実装まで、ドメイン駆動設計を設計から実装へ落とし込む流れを体験できる。
 
-## 🌱 おすすめ度
-🩵🩵🩵🩵🩵: スキルアップに繋がった
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/domain-driven-design-tutorial
 
-## 🌱 感想
-私が知る限り、ドメイン駆動設計を`TypeScript`でコード解説している書籍は現時点でこれだけで、とても参考になりました。
+https://zenn.dev/aew2sbee/articles/how-to-mermaid

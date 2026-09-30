@@ -10,8 +10,7 @@ https://gihyo.jp/book/2017/978-4-7741-9087-7
 
 修正のたびに影響範囲が広がるといったトラブルの原因はソフトウェアの設計にあるとし、大規模求人サイトの主任設計者だった著者が、コード例を示しながら変更しやすい設計の考え方とやり方を解説している。
 
-## 🌱 おすすめ度
+## 🌱 作成した記事
+https://zenn.dev/aew2sbee/articles/typescript-coding-rule-object
 
-
-## 🌱 感想
-
+https://zenn.dev/aew2sbee/articles/typescript-object-orientation

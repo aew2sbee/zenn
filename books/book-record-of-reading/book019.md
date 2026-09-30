@@ -9,9 +9,3 @@ https://booth.pm/ja/items/3109503
 公式ページの紹介文を要約しています。
 
 Docker Composeのメリットや docker-compose.yml の書き方を、マンガで解説している。
-
-## 🌱 おすすめ度
-
-
-## 🌱 感想
-
