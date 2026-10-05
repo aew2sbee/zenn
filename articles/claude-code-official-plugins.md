@@ -113,7 +113,7 @@ README には、「Anthropic はプラグインに含まれる MCP サーバー�
 | 項目 | 単体のスキル | プラグイン |
 |---|---|---|
 | 中身 | `SKILL.md` と同梱ファイル | スキル・サブエージェント・フック・MCP サーバーなどの組み合わせ |
-| 入れ方 | フォルダを `~/.claude/skills/` などに置く | `/plugin` コマンドでインストールする |
+| 入れ方 | フォルダを `~/.claude/skills/` などに置く | `claude plugin install` コマンドでインストールする |
 | 更新 | 自分でファイルを差し替える | マーケットプレイスから更新される |
 | 呼び出し名 | `/スキル名` | `/プラグイン名:スキル名` |
 | 止め方 | フォルダを消す、移動する | 無効化・アンインストールのコマンドがある |
@@ -139,35 +139,46 @@ README には、「Anthropic はプラグインに含まれる MCP サーバー�
 
 ## 🌱 インストール方法
 
-### 一覧から選んでインストールする
+ここでは、ターミナルで実行する `claude plugin` コマンド（CLI）を使ってインストールします。
+Claude Code を起動しなくても実行でき、セットアップ用のスクリプトにも書いておけます。
 
-Claude Code を起動して `/plugin` を実行すると、プラグインの管理画面が開きます。
+### マーケットプレイスを登録する
 
-1. **Discover** タブで、インストールしたいプラグインを探す（文字を入力すると絞り込めます）
-2. プラグインを選んで **Enter** を押し、詳細を確認する
-3. インストールする範囲（スコープ）を選ぶ
+公式マーケットプレイスは通常、最初から登録されています。
+次のコマンドで、登録済みのマーケットプレイスを確認できます。
 
-詳細画面の **Will install** には、そのプラグインが追加するスキル・サブエージェント・フックなどが表示されます。
-
-**Discover** タブに何も表示されないときは、公式マーケットプレイスが登録されていない可能性があります。次のコマンドで追加してください。
-
-```text
-/plugin marketplace add anthropics/claude-plugins-official
+```bash
+claude plugin marketplace list
 ```
 
-### コマンドでインストールする
+一覧に `claude-plugins-official` がないときは、次のコマンドで追加してください。
 
-名前が分かっている場合は、`プラグイン名@マーケットプレイス名` の形で指定します。
-
-```text
-/plugin install commit-commands@claude-plugins-official
+```bash
+claude plugin marketplace add anthropics/claude-plugins-official
 ```
 
-このコマンドはすぐにはインストールせず、詳細画面を開きます。内容を確認して、スコープを選ぶとインストールされます。
-この方法か **Marketplaces** タブから詳細画面を開くと、公式マーケットプレイスのプラグインでは、コンテキストを使う量の目安（**Context cost**）も確認できます（**Discover** タブから開いた場合は表示されません）。
+### プラグインをインストールする
 
-インストールが終わって `Plugin is now active.` と表示されれば、すぐに使えます。
-`Run /reload-plugins to activate.` と表示された場合は、Claude Code が自動で読み込み直します。キャッシュについての警告が出て保留になったときは、`/reload-plugins --force` を実行します。
+`プラグイン名@マーケットプレイス名` の形で指定します。
+
+```bash
+claude plugin install commit-commands@claude-plugins-official
+```
+
+`--scope`（`-s`）を省略すると user スコープになります。
+project スコープや local スコープで入れるときは、対象のリポジトリのフォルダに移動してから実行します。
+
+```bash
+cd path/to/your-repository
+claude plugin install commit-commands@claude-plugins-official --scope project
+```
+
+インストールしたプラグインは、次に Claude Code を起動したとき、または起動中のセッションで `/reload-plugins` を実行したときに読み込まれます。
+次のコマンドの一覧に表示されていれば成功です。
+
+```bash
+claude plugin list
+```
 
 ### スコープを選ぶ
 
@@ -185,23 +196,9 @@ project スコープでは、設定ファイルをコミットすると、チー
 ただし、プラグイン本体は各自のパソコンに自動ではダウンロードされないため、メンバーもそれぞれ同じコマンドでインストールする必要があります。
 チームに配るプラグインは、中身をチームで確認してから決めると安全です。
 
-### シェルからインストールする
-
-Claude Code を起動せずに、ターミナルからインストールすることもできます。セットアップ用のスクリプトに書いておくときに便利です。
-project スコープや local スコープで入れるときは、対象のリポジトリのフォルダに移動してから実行します。
-
-```bash
-cd path/to/your-repository
-claude plugin install commit-commands@claude-plugins-official --scope project
-```
-
-`--scope` を省略すると user スコープになります。
-インストールしたプラグインは、次に Claude Code を起動したとき、または起動中のセッションで `/reload-plugins` を実行したときに読み込まれます。`/plugin` の **Installed** タブに表示されていれば成功です。
-
 ### 管理する
 
-インストール後は、`/plugin` の **Installed** タブで、有効化・無効化・更新・アンインストールができます。
-シェルからは次のコマンドで操作できます。
+インストール後は、次のコマンドで有効化・無効化・更新・アンインストールができます。
 
 ```bash
 claude plugin disable commit-commands@claude-plugins-official    # 無効化
@@ -214,8 +211,8 @@ claude plugin uninstall commit-commands@claude-plugins-official  # アンイン�
 公式マーケットプレイスは自動更新が有効なため、通常は `update` を実行する必要はありません。
 
 :::message
-有効なプラグインが会話に追加しているコンテキストの量は、ターミナルで `claude plugin details <プラグイン名>` を実行すると確認できます。
-`/plugin` の **Installed** タブでは、最近使っていないプラグインが **Not used recently** にまとめて表示されるため、整理するときの目安になります。
+有効なプラグインが会話に追加しているコンテキストの量は、`claude plugin details <プラグイン名>` を実行すると確認できます。
+なお、Claude Code の中で `/plugin` を実行すると管理画面が開き、一覧から選んでインストールすることもできます。**Installed** タブでは、最近使っていないプラグインが **Not used recently** にまとめて表示されるため、整理するときの目安になります。
 :::
 
 https://code.claude.com/docs/en/plugins/install
@@ -562,9 +559,9 @@ Code-with-Claude Makers キット（M5Stack Cardputer-Adv という小型のコ�
 Anthropic の公式スキル（`anthropics/skills`）も、プラグインとしてまとめてインストールできます。
 このマーケットプレイスは自動では登録されないため、先に追加します。
 
-```text
-/plugin marketplace add anthropics/skills
-/plugin install document-skills@anthropic-agent-skills
+```bash
+claude plugin marketplace add anthropics/skills
+claude plugin install document-skills@anthropic-agent-skills
 ```
 
 追加するときはリポジトリ名（`anthropics/skills`）を指定しますが、インストールするときの `@` の後ろには、マーケットプレイス名（`anthropic-agent-skills`）を指定します。
