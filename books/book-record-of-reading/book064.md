@@ -55,6 +55,22 @@ LSP では役割を2つに分ける。
 参考: https://microsoft.github.io/language-server-protocol/
 :::
 
+### 📌 Vimの始め方
+Git for Windows の Git Bash や macOS には最初から Vim が含まれているため、インストールしなくてもすぐに始められる。まずはターミナルで次のコマンドを実行して、Vim が入っているかを確認する。
+
+```bash
+vim --version
+```
+
+:::details 🤖 Claude に相談した内容
+- バージョン情報が表示されれば、そのまま使える。表示されない場合は、Vim の公式サイトからインストーラーを入手するか、Windows なら `winget install vim.vim` でインストールする。
+- Git Bash や macOS に含まれている Vim も、ソースコードは GitHub の [vim/vim](https://github.com/vim/vim)（Vim 本家のリポジトリ）と同じもの。Git Bash は MSYS2、macOS は Apple がそれぞれビルドして同梱している。
+- 配布元によって、バージョンが本家の最新より少し古かったり、有効になっている機能（Python 連携や GUI など）が違ったりする。ただし、基本操作を覚える分には違いはない。
+- Vim 本体を入れずに Vim の操作だけを試したい場合は、VS Code の拡張機能「Vim」（VSCodeVim）を使う方法もある。
+
+参考: https://www.vim.org/download.php
+:::
+
 ### 📌 vimtutor ja で日本語のチュートリアルを始められる
 ターミナルで `vimtutor ja` を実行すると、Vim に付属している日本語のチュートリアルが開く。
 
