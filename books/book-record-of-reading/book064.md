@@ -73,6 +73,82 @@ Vim は、キー入力の意味がモードによって変わる。起動直後�
 参考: https://vimhelp.org/intro.txt.html#vim-modes
 :::
 
+### 📌 Vimの文法とは？
+Vim のノーマルモードでは、「回数」「操作」「移動」のキーを組み合わせて、文を作るように編集の指示を組み立てる。この考え方は「Vim の文法」と呼ばれる。Vim のヘルプでは、回数をカウント（count）、削除やコピーなどの操作をオペレーター（operator）、カーソルの移動をモーション（motion）と呼んでいる。
+
+| 部品 | 意味 | 例 |
+| --- | --- | --- |
+| カウント | 何回行うか | `3`、`4` |
+| オペレーター | 何をするか | `d`（削除）、`y`（コピー）、`c`（削除して入力を始める） |
+| モーション | どこへ動くか（どこまでを対象にするか） | `j`（下へ1行）、`w`（次の単語へ）、`gg`（先頭行へ） |
+
+サンプルとして、`3j4ddggp` を紹介する。
+
+| 入力 | 意味 |
+| --- | --- |
+| `3j` | カーソルを3行下へ移動する（カウント + モーション） |
+| `4dd` | カーソル行から4行を削除する（カウント + オペレーター。`dd` のようにオペレーターを2回重ねると、行単位の操作になる）。削除した行は、貼り付けに使えるように記憶される |
+| `gg` | ファイルの先頭行へ移動する（モーション） |
+| `p` | 記憶している行を、カーソル行の下に貼り付ける |
+
+カーソルが1行目にある状態で実行すると、次のように4〜7行目が1行目の下へ移動する。
+
+```text
+実行前   実行後
+1行目    1行目
+2行目    4行目
+3行目    5行目
+4行目    6行目
+5行目    7行目
+6行目    2行目
+7行目    3行目
+8行目    8行目
+```
+
+:::details 🤖 Claude に相談した内容
+このように数字・操作・移動を組み合わせて書くことには、次のメリットがある。
+
+- **マウスや矢印キーを使わずに済む**: 範囲をドラッグで選んで切り取り、貼り付け先までスクロールする操作が、ホームポジションに手を置いたまま8回のキー入力で終わる。
+- **覚えるものが少ない**: 「回数」「操作（`d` で削除、`y` でコピーなど）」「移動（`j`、`gg` など）」を組み合わせる仕組みのため、少ない部品から多くの操作を作れる。たとえば `4dd` を `4yy` に変えると、削除ではなくコピーになる。
+- **繰り返しやすい**: 直前の変更は `.` で繰り返せる。また、いくつかのキー操作をまとめて記録して何度も実行する、マクロという機能にも使える。
+
+補足:
+
+- オペレーターを入力して、モーションを待っている間の状態は、オペレーター待機モード（Operator-pending mode）と呼ばれる。たとえば `d` の後に `w` を入力すると、`dw`（次の単語の先頭までを削除）になる。
+- `p` はカーソル行の「下」に貼り付けるため、1行目の上（ファイルの一番上）に移動したい場合は、`p` の代わりに `P` を使う。
+- 削除した内容は、貼り付けに使う一時的な保存場所（レジスタ）に入る。Vim の「削除」は、ほかのエディタの「切り取り」に近い。
+- 削除の前に移動しすぎた場合などは、`u` で直前の操作を取り消せる。
+
+参考: https://vimhelp.org/motion.txt.html#operator
+参考: https://vimhelp.org/change.txt.html#dd
+参考: https://vimhelp.org/change.txt.html#p
+:::
+
+### 📌 単語単位で移動するには？
+ノーマルモードでは、`w`・`b`・`e` で単語単位にカーソルを移動できる。大文字の `W`・`B`・`E` もあり、小文字とは「どこまでを1単語とみなすか」が違う。
+
+| キー | 動き |
+| --- | --- |
+| `w` / `W` | 次の単語の先頭へ進む |
+| `b` / `B` | 前の単語の先頭へ戻る |
+| `e` / `E` | 単語の末尾へ進む |
+
+小文字は `.` や `=` などの記号でも区切るのに対して、大文字は空白だけで区切る。`vim.opt.number = true` という行で、先頭の `v` から移動したときに止まる位置は次のとおり。
+
+![vim.opt.number = true の行で、小文字のwは記号でも止まりながら6回で行末の単語へ進むのに対し、大文字のWは空白で区切られた=とtrueにだけ止まる様子を示した図。eとEは単語の末尾に止まり、bとBはwとWと同じ位置に逆向きに止まる](/images/books/book-record-of-reading/book064-vim-word-motion.drawio.png)
+
+:::details 🤖 Claude に相談した内容
+- Vim のヘルプでは、小文字で移動する単位を word、大文字で移動する単位を WORD と呼び分けている。
+  - word: 英数字と `_` の並び、または記号の並び。空白も区切りになる。
+  - WORD: 空白以外の文字の並び。記号を含んでいても、空白がなければ1つの WORD になる。
+- 記号の多いコードの中を細かく移動したいときは小文字、`vim.opt.number` や URL、ファイルパスのようなまとまりを一気に飛び越えたいときは大文字が向いている。
+- Vim の文法のモーションなので、オペレーターと組み合わせられる。たとえば `dw` は次の単語の先頭までを削除し、`dW` は次の WORD の先頭までを削除する。
+- 図の止まる位置は、Git Bash に付属する Vim 9.1 で実際に移動して確認した。
+
+参考: https://vimhelp.org/motion.txt.html#word-motions
+参考: https://vimhelp.org/motion.txt.html#word
+:::
+
 ### 📌 vimtutorで基本操作を練習する
 ターミナルで `vimtutor ja` を実行すると、Vim に付属している日本語のチュートリアルが開く。
 
@@ -89,6 +165,67 @@ vimtutor ja
 - 日本語版のチュートリアルファイルの名前は、Vim のバージョンによって異なる。Git Bash に付属する Vim 9.1（パッチ 785 まで適用）では `tutor.ja.utf-8` だった。新しい版では、`tutor1.ja` と `tutor2.ja` の2章構成になっている。
 
 参考: https://vimhelp.org/usr_01.txt.html#vimtutor
+:::
+
+### 📌 Vimのヘルプを開くには？
+ノーマルモードで `:help` と入力して `Enter` を押すと、Vim に付属しているヘルプが開く。調べたいコマンドがある場合は、`:help dd` のように後ろに付けて指定する。
+
+```vim
+:help
+:help dd
+```
+
+Git Bash の Vim 9.1 で `:help` を実行すると、次のようなヘルプ（英語）が表示された。移動のしかた、ヘルプの閉じ方、リンク先へのジャンプのしかた、調べたい項目の指定方法が、最初にまとめられている。
+
+```text
+help.txt        For Vim version 9.1.  Last change: 2024 May 27
+
+                        VIM - main help file
+                                                                         k
+      Move around:  Use the cursor keys, or "h" to go left,            h   l
+                    "j" to go down, "k" to go up, "l" to go right.       j
+Close this window:  Use ":q<Enter>".
+   Get out of Vim:  Use ":qa!<Enter>" (careful, all changes are lost!).
+
+Jump to a subject:  Position the cursor on a tag (e.g. bars) and hit CTRL-].
+   With the mouse:  ":set mouse=a" to enable the mouse (in xterm or GUI).
+                    Double-click the left mouse button on a tag, e.g. bars.
+        Jump back:  Type CTRL-O.  Repeat to go further back.
+
+Get specific help:  It is possible to go directly to whatever you want help
+                    on, by giving an argument to the :help command.
+                    Prepend something to specify the context:  help-context
+
+                          WHAT                  PREPEND    EXAMPLE
+                      Normal mode command                  :help x
+                      Visual mode command         v_       :help v_u
+                      Insert mode command         i_       :help i_<Esc>
+                      Command-line command        :        :help :quit
+                      Command-line editing        c_       :help c_<Del>
+                      Vim command argument        -        :help -r
+                      Option                      '        :help 'textwidth'
+                      Regular expression          /        :help /[
+```
+
+:::details 🤖 Claude に相談した内容
+- `:help` は `:h` と省略できる。ヘルプは画面を上下に分けたウィンドウに開き、`:q` で閉じられる。
+- 同じキーでもモードによって意味が違うため、ヘルプでは次のような書き方でモードを指定する。
+
+| 調べたいもの | 書き方 | 例 |
+| --- | --- | --- |
+| ノーマルモードのコマンド | そのまま書く | `:help dd` |
+| インサートモードのキー | 先頭に `i_` | `:help i_CTRL-W` |
+| ビジュアルモードのキー | 先頭に `v_` | `:help v_g_CTRL-A` |
+| `:` で始まるコマンド | 先頭に `:` | `:help :w` |
+| オプション（設定項目） | `'` で囲む | `:help 'number'` |
+
+- `Ctrl` を使うキーは、`Ctrl`+`a` なら `CTRL-A` のように書く。
+- ヘルプの中で色が付いた単語（リンク）にカーソルを置き、`Ctrl`+`]` を押すと、その項目へジャンプできる。`Ctrl`+`o` で元の場所に戻れる。
+- 名前の途中まで入力して `Tab` を押すと、候補を補完できる。`Ctrl`+`d` を押すと、候補が一覧で表示される。
+- 項目名が分からないときは、`:helpgrep 単語` で、ヘルプ全体をその単語で検索できる。
+- Git Bash に付属する Vim のヘルプは英語版だけだった。日本語版のヘルプを使いたい場合は、vim-jp が翻訳している [vimdoc-ja](https://github.com/vim-jp/vimdoc-ja) をプラグインとして入れる。ブラウザで読むなら、Web 版の [vimhelp.org](https://vimhelp.org/)（英語）や、[vim-jp の日本語版](https://vim-jp.org/vimdoc-ja/)がある。
+
+参考: https://vimhelp.org/helphelp.txt.html
 :::
 
 ### 📌 LSPとは？
