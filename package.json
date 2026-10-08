@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/aew2sbee/zenn#readme",
   "dependencies": {
-    "zenn-cli": "^0.5.4"
+    "zenn-cli": "^0.5.5"
   }
 }
