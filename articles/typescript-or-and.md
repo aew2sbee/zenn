@@ -37,6 +37,10 @@ published: true # 公開:true / 非公開:false
 
 @[card](https://developer.mozilla.org/ja/docs/Glossary/Falsy)
 
+2つの演算子で、左項の判定によって返す値が分かれる流れを図にすると、次のようになります。
+
+![OR演算子とAND演算子で、左項がtruthyかどうかによって左項を返すか右項を評価して返すかが逆になることを比べたフロー図](/images/articles/typescript-or-and/or-and-short-circuit.drawio.png)
+
 ### 右項が評価されない例
 
 結果が決まった時点で、右項は評価されません。下記のコードでは、`console.log`は実行されません。

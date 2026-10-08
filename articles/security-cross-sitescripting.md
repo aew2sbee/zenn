@@ -37,6 +37,10 @@ URLパラメータなどの値を画面に表示するときは、`innerHTML`で
 DOM-based XSSは、ブラウザ上のJavaScriptが、URLなど攻撃者が操作できる値を`innerHTML`などの危険な処理に渡すことで発生するXSSです。
 サーバーを経由せず、ブラウザ上だけで発生するため、クライアント側のコードで対策します。
 
+本記事の検証で使う例で、攻撃の流れと対策前後の違いを図にすると、次のようになります。
+
+![攻撃者が作ったURLの値をinnerHTMLに渡すとHTMLとして解析されてalertが実行され、textContentに渡すと文字のまま表示されることを表した図](/images/articles/security-cross-sitescripting/dom-xss-flow.drawio.png)
+
 ## 🌱 検証
 
 1. DOM-based XSSの脆弱性があるHTMLファイルを作成し、`xss.html`として保存する

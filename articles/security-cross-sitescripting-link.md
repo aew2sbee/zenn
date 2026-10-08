@@ -46,6 +46,10 @@ https://www.shoeisha.co.jp/book/detail/9784798169477
 - URLパーサーは、スキームの大文字を小文字にし、先頭の空白や途中のタブ・改行を取り除きます。そのため、`JavaScript:`や、途中にタブを挟んだ`java（タブ）script:`のような書き方でも`javascript:`として判定でき、検証をすり抜けられません。
 :::
 
+入力値が正規化されてから判定されるまでの流れを図にすると、次のようになります。
+
+![JavaScript:やタブ・空白を含む入力値をnew URL()で正規化してからprotocolを判定し、http:かhttps:のときだけhrefに設定する流れを表した図](/images/articles/security-cross-sitescripting-link/url-protocol-check.drawio.png)
+
 ## 🌱 検証
 
 1. DOM型クロスサイトスクリプティングの脆弱性があるHTMLファイルを作成し、`xss.html`として保存します。
